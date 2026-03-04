@@ -30,10 +30,6 @@
 - 主导潜空间扩散框架实现与实验验证，搭建可复现训练—评估—消融流程
 - 组织对比实验与 ablation，定位增益来源，整理论文所需图表与结论
 
-**材料（Links）**
-- Paper：`research/papers/MICCAI-BST-LDM.pdf`
-- Code/复现：`research/projects/BST-LDM/`（若暂不公开可标注 TBD）
-
 ---
 
 ## R2｜MC-GAN：MRI+临床表格条件的 PET 合成（ARCAI 接收）
@@ -55,9 +51,6 @@
 - 与团队协作完成生成模型实现、对比实验与消融，整理论文图表与结论
 - 与扩散版本形成互补：GAN 提供强基线与快速生成方案
 
-**材料（Links）**
-- Paper：`research/papers/ARCAI-MC-GAN.pdf`
-- Code：`TBD`
 
 ---
 
@@ -77,9 +70,6 @@
 **结果（So what）**
 - 在 ADNI/NACC 上多指标领先，AUC 表现稳定（并提供了模块替换与消融）
 
-**材料（Links）**
-- Paper：`research/papers/TMI-AFF-GMamba.pdf`
-- Code：`TBD`
 
 ---
 
@@ -97,9 +87,6 @@
 **结果（So what）**
 - 多数据集上带来 NSE/RMSE 的一致改善，并提供开源代码链接
 
-**材料（Links）**
-- Paper：`research/papers/TGRS-TFRN-Streamflow.pdf`
-- Code：项目开源仓库（见论文链接，或在此处补充）
 
 ---
 
@@ -119,10 +106,6 @@
 
 **结果（So what）**
 - 在多目标 VLM 上取得更高的攻击成功率，揭示自动驾驶 VLM 的关键安全风险点
-
-**材料（Links）**
-- Paper：`research/papers/T-ITS-ISFusion-Attack.pdf`
-- Code：`TBD`
 
 ---
 
@@ -157,9 +140,6 @@
 - 基于 PyTorch/MONAI 的训练与推理 pipeline（预处理、采样、阈值策略、误差分析）
 - 组织对比实验与消融，输出核心指标与可解释性材料，支撑论文/项目交付
 
-**材料（Links）**
-- Paper：`internship/papers/NPJ-Interpretable-MA-HeadCT.pdf`
-- 复现/展示：`internship/projects/NCCT-CritiScan/`（可公开部分）
 
 ---
 
@@ -173,8 +153,6 @@
 **结果**
 - 源域测试准确率 99.61%，Precision/Recall/F1 均 > 0.996（竞赛报告与实验记录）
 
-**材料（Links）**
-- Report：`competitions/HuaweiCup-Bearing/华为杯第二十二届中国研究生数学建模大赛.pdf`
 
 ---
 
@@ -187,8 +165,6 @@
 **结果**
 - 渗透率预测：R²=0.9603、MSE=0.0006、MAE=0.0143（综合最优）
 - 用户情感预测：Transformer 相较 SVM 误差显著下降（报告中给出具体对比）
-**材料（Links）**
-- Report：`competitions/AppliedStats-Case/第八届全国应用统计专业学位研究生案例大赛.pdf`
 
 ---
 
@@ -200,8 +176,6 @@
 **结果**
 - 车辆单独配送 14 点：得到总距离与总时长方案
 - 30 点协同配送：求得两个物资集中点与总配送时间（报告给出数值结果）
-**材料（Links）**
-- Report：`competitions/ElectricalCup-DroneTruck/第十四届电工杯数学建模.pdf`
 
 ---
 
@@ -213,8 +187,6 @@
 - 指派：构建指派模型，按“距离优先”策略实现工人负载均衡
 **结果**
 - 给出最优批次数（报告中给出最优为 73 批）与对应方案文件说明
-**材料（Links）**
-- Report：`competitions/HuazhongCup-Sorting/十四届华中杯.pdf`
 
 ---
 
@@ -225,8 +197,6 @@
 - 相关关系：Pearson 相关与热力图
 - 联动建模：VAR + Granger 因果检验 + 稳定性分析
 - 决策优化：帕累托思想的动态规划模型 + 遗传算法求解，并加入单品数量/最小陈列量等约束
-**材料（Links）**
-- Report：`competitions/FreshRetail-VegPricing/2023年全国大学生数学竞赛.pdf`
 
 ---
 
