@@ -1,0 +1,2667 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "file",
+   "name": "google-vertex.ts",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "summary": "Google Vertex AI provider：凭据/项目/区域解析与请求构建。",
+   "tags": [
+    "provider",
+    "vertex",
+    "google",
+    "api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    70,
+    311
+   ],
+   "summary": "Vertex 流式主实现：认证、请求与流消费。",
+   "tags": [
+    "streaming",
+    "vertex"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    313,
+    347
+   ],
+   "summary": "Vertex 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    349,
+    365
+   ],
+   "summary": "创建 Vertex 客户端（服务账号认证）。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:createClientWithApiKey",
+   "type": "function",
+   "name": "createClientWithApiKey",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    367,
+    378
+   ],
+   "summary": "以 API key 创建 Vertex 客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:buildHttpOptions",
+   "type": "function",
+   "name": "buildHttpOptions",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    380,
+    397
+   ],
+   "summary": "构建 HTTP 选项。",
+   "tags": [
+    "http",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:resolveProject",
+   "type": "function",
+   "name": "resolveProject",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    433,
+    444
+   ],
+   "summary": "解析 GCP 项目 ID。",
+   "tags": [
+    "gcp",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    454,
+    507
+   ],
+   "summary": "构建 Vertex 请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:getDisabledThinkingConfig",
+   "type": "function",
+   "name": "getDisabledThinkingConfig",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    520,
+    534
+   ],
+   "summary": "生成禁用 thinking 的配置。",
+   "tags": [
+    "thinking",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:getGemini3ThinkingLevel",
+   "type": "function",
+   "name": "getGemini3ThinkingLevel",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    536,
+    560
+   ],
+   "summary": "映射 Gemini 3 thinking 级别。",
+   "tags": [
+    "thinking",
+    "mapping"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-vertex.ts:getGoogleBudget",
+   "type": "function",
+   "name": "getGoogleBudget",
+   "filePath": "packages/ai/src/api/google-vertex.ts",
+   "lineRange": [
+    562,
+    592
+   ],
+   "summary": "计算思考 token 预算。",
+   "tags": [
+    "budget",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/mistral-conversations.ts",
+   "type": "file",
+   "name": "mistral-conversations.ts",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "summary": "Mistral Conversations API provider：聊天负载构建、流消费与消息转换。",
+   "tags": [
+    "provider",
+    "mistral",
+    "api",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    49,
+    110
+   ],
+   "summary": "Mistral 流式主实现。",
+   "tags": [
+    "streaming",
+    "mistral"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    115,
+    136
+   ],
+   "summary": "Mistral 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:createOutput",
+   "type": "function",
+   "name": "createOutput",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    138,
+    156
+   ],
+   "summary": "创建流式输出对象。",
+   "tags": [
+    "output",
+    "factory"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:createMistralToolCallIdNormalizer",
+   "type": "function",
+   "name": "createMistralToolCallIdNormalizer",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    158,
+    178
+   ],
+   "summary": "创建工具调用 id 归一化器。",
+   "tags": [
+    "tool",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:formatMistralError",
+   "type": "function",
+   "name": "formatMistralError",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    190,
+    202
+   ],
+   "summary": "格式化 Mistral 错误信息。",
+   "tags": [
+    "error",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:buildRequestOptions",
+   "type": "function",
+   "name": "buildRequestOptions",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    218,
+    243
+   ],
+   "summary": "构建请求选项。",
+   "tags": [
+    "request",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:buildChatPayload",
+   "type": "function",
+   "name": "buildChatPayload",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    245,
+    273
+   ],
+   "summary": "构建聊天请求负载。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:getMistralCachedPromptTokens",
+   "type": "function",
+   "name": "getMistralCachedPromptTokens",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    279,
+    298
+   ],
+   "summary": "提取缓存 prompt token 计数。",
+   "tags": [
+    "cache",
+    "usage"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:consumeChatStream",
+   "type": "function",
+   "name": "consumeChatStream",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    300,
+    493
+   ],
+   "summary": "消费聊天流并转换事件。",
+   "tags": [
+    "streaming",
+    "parsing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:toFunctionTools",
+   "type": "function",
+   "name": "toFunctionTools",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    495,
+    508
+   ],
+   "summary": "转换工具为 Mistral 函数格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:stripSymbolKeys",
+   "type": "function",
+   "name": "stripSymbolKeys",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    510,
+    524
+   ],
+   "summary": "去除对象中的 Symbol 键。",
+   "tags": [
+    "utility",
+    "serialization"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:toChatMessages",
+   "type": "function",
+   "name": "toChatMessages",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    526,
+    611
+   ],
+   "summary": "转换消息为 Mistral 聊天格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:buildToolResultText",
+   "type": "function",
+   "name": "buildToolResultText",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    613,
+    632
+   ],
+   "summary": "构建工具结果文本。",
+   "tags": [
+    "tool",
+    "text"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:mapToolChoice",
+   "type": "function",
+   "name": "mapToolChoice",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    649,
+    660
+   ],
+   "summary": "映射工具选择策略。",
+   "tags": [
+    "tool",
+    "mapping"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/mistral-conversations.ts:mapChatStopReason",
+   "type": "function",
+   "name": "mapChatStopReason",
+   "filePath": "packages/ai/src/api/mistral-conversations.ts",
+   "lineRange": [
+    662,
+    677
+   ],
+   "summary": "映射聊天 stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "file",
+   "name": "openai-codex-responses.ts",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "summary": "OpenAI Codex Responses provider：HTTP 与 WebSocket 双通道流、会话缓存与重试。",
+   "tags": [
+    "provider",
+    "codex",
+    "websocket",
+    "api"
+   ],
+   "complexity": "complex",
+   "languageNotes": "包含 WebSocket 会话复用、输入增量缓存与 SSE 回退的完整实现。"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getRetryAfterDelayMs",
+   "type": "function",
+   "name": "getRetryAfterDelayMs",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    146,
+    171
+   ],
+   "summary": "从响应头解析重试延迟。",
+   "tags": [
+    "retry",
+    "headers"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:sleep",
+   "type": "function",
+   "name": "sleep",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    185,
+    197
+   ],
+   "summary": "可中止的延时函数。",
+   "tags": [
+    "utility",
+    "async"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:compressRequestBodyZstd",
+   "type": "function",
+   "name": "compressRequestBodyZstd",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    225,
+    238
+   ],
+   "summary": "使用 zstd 压缩请求体。",
+   "tags": [
+    "compression",
+    "request"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    244,
+    504
+   ],
+   "summary": "Codex 流式主实现：HTTP 与 WebSocket 通道分发。",
+   "tags": [
+    "streaming",
+    "codex"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    506,
+    524
+   ],
+   "summary": "Codex 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:buildRequestBody",
+   "type": "function",
+   "name": "buildRequestBody",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    530,
+    597
+   ],
+   "summary": "构建 Codex 请求体。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getServiceTierCostMultiplier",
+   "type": "function",
+   "name": "getServiceTierCostMultiplier",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    599,
+    611
+   ],
+   "summary": "获取 service tier 成本乘数。",
+   "tags": [
+    "pricing",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:applyServiceTierPricing",
+   "type": "function",
+   "name": "applyServiceTierPricing",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    613,
+    626
+   ],
+   "summary": "应用 service tier 定价到用量。",
+   "tags": [
+    "pricing",
+    "usage"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:processStream",
+   "type": "function",
+   "name": "processStream",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    657,
+    671
+   ],
+   "summary": "处理 HTTP 响应流。",
+   "tags": [
+    "streaming",
+    "processing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:extractCodexEventError",
+   "type": "function",
+   "name": "extractCodexEventError",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    709,
+    720
+   ],
+   "summary": "从事件中提取错误信息。",
+   "tags": [
+    "error",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getOrCreateWebSocketDebugStats",
+   "type": "function",
+   "name": "getOrCreateWebSocketDebugStats",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    876,
+    894
+   ],
+   "summary": "获取或创建 WebSocket 调试统计。",
+   "tags": [
+    "websocket",
+    "stats"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getOpenAICodexWebSocketDebugStats",
+   "type": "function",
+   "name": "getOpenAICodexWebSocketDebugStats",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    896,
+    899
+   ],
+   "summary": "获取 WebSocket 调试统计快照。",
+   "tags": [
+    "websocket",
+    "stats"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:resetOpenAICodexWebSocketDebugStats",
+   "type": "function",
+   "name": "resetOpenAICodexWebSocketDebugStats",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    901,
+    909
+   ],
+   "summary": "重置 WebSocket 调试统计。",
+   "tags": [
+    "websocket",
+    "stats"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:closeOpenAICodexWebSocketSessions",
+   "type": "function",
+   "name": "closeOpenAICodexWebSocketSessions",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    911,
+    925
+   ],
+   "summary": "关闭指定会话的 WebSocket。",
+   "tags": [
+    "websocket",
+    "cleanup"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getWebSocketConstructor",
+   "type": "function",
+   "name": "getWebSocketConstructor",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    956,
+    987
+   ],
+   "summary": "解析可用的 WebSocket 构造函数。",
+   "tags": [
+    "websocket",
+    "env"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:scheduleSessionWebSocketExpiry",
+   "type": "function",
+   "name": "scheduleSessionWebSocketExpiry",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1024,
+    1035
+   ],
+   "summary": "安排 WebSocket 会话过期。",
+   "tags": [
+    "websocket",
+    "session"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:connectWebSocket",
+   "type": "function",
+   "name": "connectWebSocket",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1037,
+    1113
+   ],
+   "summary": "建立 WebSocket 连接。",
+   "tags": [
+    "websocket",
+    "connect"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:acquireWebSocket",
+   "type": "function",
+   "name": "acquireWebSocket",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1115,
+    1210
+   ],
+   "summary": "获取可复用的 WebSocket 会话。",
+   "tags": [
+    "websocket",
+    "session"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:extractWebSocketError",
+   "type": "function",
+   "name": "extractWebSocketError",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1212,
+    1231
+   ],
+   "summary": "提取 WebSocket 错误。",
+   "tags": [
+    "websocket",
+    "error"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:extractWebSocketCloseError",
+   "type": "function",
+   "name": "extractWebSocketCloseError",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1233,
+    1250
+   ],
+   "summary": "提取 WebSocket 关闭错误。",
+   "tags": [
+    "websocket",
+    "error"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:decodeWebSocketData",
+   "type": "function",
+   "name": "decodeWebSocketData",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1252,
+    1267
+   ],
+   "summary": "解码 WebSocket 消息数据。",
+   "tags": [
+    "websocket",
+    "decoding"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:getCachedWebSocketInputDelta",
+   "type": "function",
+   "name": "getCachedWebSocketInputDelta",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1400,
+    1420
+   ],
+   "summary": "计算缓存请求的输入增量。",
+   "tags": [
+    "websocket",
+    "cache"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:buildCachedWebSocketRequestBody",
+   "type": "function",
+   "name": "buildCachedWebSocketRequestBody",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1422,
+    1439
+   ],
+   "summary": "构建基于缓存的请求体。",
+   "tags": [
+    "websocket",
+    "cache"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:processWebSocketStream",
+   "type": "function",
+   "name": "processWebSocketStream",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1455,
+    1542
+   ],
+   "summary": "处理 WebSocket 事件流并输出。",
+   "tags": [
+    "websocket",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:parseErrorResponse",
+   "type": "function",
+   "name": "parseErrorResponse",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1548,
+    1573
+   ],
+   "summary": "解析错误响应。",
+   "tags": [
+    "error",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:extractAccountId",
+   "type": "function",
+   "name": "extractAccountId",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1579,
+    1590
+   ],
+   "summary": "从 token 提取账户 id。",
+   "tags": [
+    "auth",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:buildBaseCodexHeaders",
+   "type": "function",
+   "name": "buildBaseCodexHeaders",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1592,
+    1612
+   ],
+   "summary": "构建基础 Codex 请求头。",
+   "tags": [
+    "headers",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:buildSSEHeaders",
+   "type": "function",
+   "name": "buildSSEHeaders",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1614,
+    1632
+   ],
+   "summary": "构建 SSE 请求头。",
+   "tags": [
+    "headers",
+    "sse"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-codex-responses.ts:buildWebSocketHeaders",
+   "type": "function",
+   "name": "buildWebSocketHeaders",
+   "filePath": "packages/ai/src/api/openai-codex-responses.ts",
+   "lineRange": [
+    1634,
+    1650
+   ],
+   "summary": "构建 WebSocket 请求头。",
+   "tags": [
+    "headers",
+    "websocket"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "file",
+   "name": "openai-completions.ts",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "summary": "OpenAI Completions/Chat Completions provider：兼容层、缓存控制注入与消息转换。",
+   "tags": [
+    "provider",
+    "openai",
+    "completions",
+    "api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:hasToolHistory",
+   "type": "function",
+   "name": "hasToolHistory",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    78,
+    90
+   ],
+   "summary": "判断消息是否含工具历史。",
+   "tags": [
+    "tool",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:getDeferredToolNames",
+   "type": "function",
+   "name": "getDeferredToolNames",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    92,
+    102
+   ],
+   "summary": "提取延迟加载工具名。",
+   "tags": [
+    "tool",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:isEncryptedReasoningDetail",
+   "type": "function",
+   "name": "isEncryptedReasoningDetail",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    128,
+    140
+   ],
+   "summary": "判断推理详情是否加密。",
+   "tags": [
+    "reasoning",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    200,
+    614
+   ],
+   "summary": "Chat Completions 流式主实现。",
+   "tags": [
+    "streaming",
+    "openai"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    616,
+    634
+   ],
+   "summary": "非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    636,
+    679
+   ],
+   "summary": "创建 Chat Completions 客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    681,
+    890
+   ],
+   "summary": "构建请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:buildChatTemplateValues",
+   "type": "function",
+   "name": "buildChatTemplateValues",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    892,
+    907
+   ],
+   "summary": "构建聊天模板值。",
+   "tags": [
+    "template",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:resolveChatTemplateKwargValue",
+   "type": "function",
+   "name": "resolveChatTemplateKwargValue",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    909,
+    928
+   ],
+   "summary": "解析模板关键字参数。",
+   "tags": [
+    "template",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:getCompatCacheControl",
+   "type": "function",
+   "name": "getCompatCacheControl",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    930,
+    940
+   ],
+   "summary": "按兼容模式获取缓存控制。",
+   "tags": [
+    "cache",
+    "compat"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToSystemPrompt",
+   "type": "function",
+   "name": "addCacheControlToSystemPrompt",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    952,
+    962
+   ],
+   "summary": "为系统提示添加缓存控制。",
+   "tags": [
+    "cache",
+    "prompt"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToLastConversationMessage",
+   "type": "function",
+   "name": "addCacheControlToLastConversationMessage",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    964,
+    976
+   ],
+   "summary": "为最后会话消息添加缓存控制。",
+   "tags": [
+    "cache",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToLastTool",
+   "type": "function",
+   "name": "addCacheControlToLastTool",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    978,
+    988
+   ],
+   "summary": "为最后工具添加缓存控制。",
+   "tags": [
+    "cache",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToTextContent",
+   "type": "function",
+   "name": "addCacheControlToTextContent",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1007,
+    1044
+   ],
+   "summary": "为文本内容添加缓存控制。",
+   "tags": [
+    "cache",
+    "content"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:convertMessages",
+   "type": "function",
+   "name": "convertMessages",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1046,
+    1335
+   ],
+   "summary": "转换消息为 Chat Completions 格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:convertTools",
+   "type": "function",
+   "name": "convertTools",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1337,
+    1372
+   ],
+   "summary": "转换工具为 Chat Completions 格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:parseChunkUsage",
+   "type": "function",
+   "name": "parseChunkUsage",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1374,
+    1410
+   ],
+   "summary": "解析流式 chunk 用量。",
+   "tags": [
+    "usage",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1412,
+    1436
+   ],
+   "summary": "映射 stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:detectCompat",
+   "type": "function",
+   "name": "detectCompat",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1443,
+    1536
+   ],
+   "summary": "检测模型兼容模式。",
+   "tags": [
+    "compat",
+    "detection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-completions.ts:getCompat",
+   "type": "function",
+   "name": "getCompat",
+   "filePath": "packages/ai/src/api/openai-completions.ts",
+   "lineRange": [
+    1542,
+    1575
+   ],
+   "summary": "获取模型兼容模式配置。",
+   "tags": [
+    "compat",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "type": "file",
+   "name": "openai-prompt-cache.ts",
+   "filePath": "packages/ai/src/api/openai-prompt-cache.ts",
+   "summary": "OpenAI prompt cache key 截断工具。",
+   "tags": [
+    "cache",
+    "utility",
+    "openai"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-prompt-cache.ts:clampOpenAIPromptCacheKey",
+   "type": "function",
+   "name": "clampOpenAIPromptCacheKey",
+   "filePath": "packages/ai/src/api/openai-prompt-cache.ts",
+   "lineRange": [
+    3,
+    8
+   ],
+   "summary": "截断 OpenAI prompt cache key。",
+   "tags": [
+    "cache",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "file",
+   "name": "openai-responses-shared.ts",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "summary": "OpenAI Responses 共享实现：消息/工具转换与响应流处理。",
+   "tags": [
+    "openai",
+    "responses",
+    "shared",
+    "conversion"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:parseTextSignature",
+   "type": "function",
+   "name": "parseTextSignature",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    54,
+    72
+   ],
+   "summary": "解析文本签名。",
+   "tags": [
+    "parsing",
+    "signature"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:convertToolResultOutput",
+   "type": "function",
+   "name": "convertToolResultOutput",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    76,
+    103
+   ],
+   "summary": "转换工具结果输出块。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesMessages",
+   "type": "function",
+   "name": "convertResponsesMessages",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    136,
+    338
+   ],
+   "summary": "转换消息为 Responses 格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesTools",
+   "type": "function",
+   "name": "convertResponsesTools",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    344,
+    380
+   ],
+   "summary": "转换工具为 Responses 格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:processResponsesStream",
+   "type": "function",
+   "name": "processResponsesStream",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    416,
+    740
+   ],
+   "summary": "处理 Responses SSE 流并输出事件。",
+   "tags": [
+    "streaming",
+    "processing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses-shared.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/ai/src/api/openai-responses-shared.ts",
+   "lineRange": [
+    742,
+    772
+   ],
+   "summary": "映射 Responses stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:createClientWithApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:buildHttpOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:resolveProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:getDisabledThinkingConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:getGemini3ThinkingLevel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "function:packages/ai/src/api/google-vertex.ts:getGoogleBudget",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:createOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:createMistralToolCallIdNormalizer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:formatMistralError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:buildRequestOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:buildChatPayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:getMistralCachedPromptTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:consumeChatStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:toFunctionTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:stripSymbolKeys",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:toChatMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:buildToolResultText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:mapToolChoice",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "function:packages/ai/src/api/mistral-conversations.ts:mapChatStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/utils/hash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getRetryAfterDelayMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:sleep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:compressRequestBodyZstd",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:buildRequestBody",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getServiceTierCostMultiplier",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:applyServiceTierPricing",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:processStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:extractCodexEventError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getOrCreateWebSocketDebugStats",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getOpenAICodexWebSocketDebugStats",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getOpenAICodexWebSocketDebugStats",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:resetOpenAICodexWebSocketDebugStats",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:resetOpenAICodexWebSocketDebugStats",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:closeOpenAICodexWebSocketSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:closeOpenAICodexWebSocketSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getWebSocketConstructor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:scheduleSessionWebSocketExpiry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:connectWebSocket",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:acquireWebSocket",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:extractWebSocketError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:extractWebSocketCloseError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:decodeWebSocketData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:getCachedWebSocketInputDelta",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:buildCachedWebSocketRequestBody",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:processWebSocketStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:parseErrorResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:extractAccountId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:buildBaseCodexHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:buildSSEHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "function:packages/ai/src/api/openai-codex-responses.ts:buildWebSocketHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/session-resources.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/abort-signals.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/deferred-tools.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/src/utils/uuid.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:hasToolHistory",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:getDeferredToolNames",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:isEncryptedReasoningDetail",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:buildChatTemplateValues",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:resolveChatTemplateKwargValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:getCompatCacheControl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToSystemPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToLastConversationMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToLastTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:addCacheControlToTextContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:convertMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:convertMessages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:convertTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:parseChunkUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:detectCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "function:packages/ai/src/api/openai-completions.ts:getCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/hash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "target": "function:packages/ai/src/api/openai-prompt-cache.ts:clampOpenAIPromptCacheKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "target": "function:packages/ai/src/api/openai-prompt-cache.ts:clampOpenAIPromptCacheKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:parseTextSignature",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:convertToolResultOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesMessages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:convertResponsesTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:processResponsesStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:processResponsesStream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/utils/hash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/ai/src/api/openai-responses-shared.ts:processResponsesStream",
+   "target": "function:packages/ai/src/api/openai-responses-shared.ts:mapStopReason",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/api/openai-completions.ts:buildParams",
+   "target": "function:packages/ai/src/api/openai-completions.ts:convertMessages",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/cache-retention.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/constrained-sampling.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/deferred-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-vertex.ts",
+   "target": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/test/max-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/mistral-conversations.ts",
+   "target": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "target": "file:packages/ai/test/openai-codex-stream.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "target": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-completions.ts",
+   "target": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

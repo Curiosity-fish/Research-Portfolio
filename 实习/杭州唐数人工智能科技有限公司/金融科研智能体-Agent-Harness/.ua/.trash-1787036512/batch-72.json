@@ -1,0 +1,434 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "仓库文本文件行尾(Line Ending)规则:默认 LF,Windows 脚本(.bat/.cmd/.ps1)保留 CRLF,并标记生成文件。",
+      "tags": [
+        "configuration",
+        "git",
+        "line-endings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.github/APPROVED_CONTRIBUTORS",
+      "type": "file",
+      "name": "APPROVED_CONTRIBUTORS",
+      "filePath": ".github/APPROVED_CONTRIBUTORS",
+      "summary": "仓库受信任贡献者名单文本清单,供自动化流程(机器人/合并策略)识别白名单成员。",
+      "tags": [
+        "configuration",
+        "community",
+        "allowlist"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.husky/pre-commit",
+      "type": "file",
+      "name": "pre-commit",
+      "filePath": ".husky/pre-commit",
+      "summary": "husky pre-commit 钩子:提交前运行 lockfile 变更检查、format/lint/typecheck(npm run check)与按需浏览器 smoke 测试,并重新暂存格式化后的文件。",
+      "tags": [
+        "git",
+        "hook",
+        "pre-commit",
+        "ci"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.npmrc",
+      "type": "file",
+      "name": ".npmrc",
+      "filePath": ".npmrc",
+      "summary": "npm 仓库级配置:强制 save-exact 精确版本依赖,并设置最小发布年龄限制。",
+      "tags": [
+        "configuration",
+        "npm",
+        "dependency-pinning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_root",
+      "type": "file",
+      "name": ".graphify_root",
+      "filePath": "graphify-out/.graphify_root",
+      "summary": "graphify 工具生成的仓库根标记文件(空),标识图数据的根位置。",
+      "tags": [
+        "tooling",
+        "marker",
+        "graphify"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/last_query_stamp",
+      "type": "file",
+      "name": "last_query_stamp",
+      "filePath": "graphify-out/cache/last_query_stamp",
+      "summary": "graphify 缓存的时间戳标记文件(空),用于记录最近一次查询。",
+      "tags": [
+        "tooling",
+        "cache",
+        "marker"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/stat-index.json",
+      "type": "config",
+      "name": "stat-index.json",
+      "filePath": "graphify-out/cache/stat-index.json",
+      "summary": "graphify 生成的仓库文件统计索引缓存:路径到大小/mtime/词数/哈希的映射,供增量分析使用。",
+      "tags": [
+        "cache",
+        "graphify",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.tfa/skills/add-llm-provider.md",
+      "type": "document",
+      "name": "add-llm-provider.md",
+      "filePath": ".tfa/skills/add-llm-provider.md",
+      "summary": "为 packages/ai 新增 LLM provider 的分步检查清单文档:核心类型、provider 实现、懒加载注册、模型生成、测试矩阵与 coding-agent 接线。",
+      "tags": [
+        "documentation",
+        "llm-provider",
+        "checklist",
+        "guide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/agent/docs/harness-v2.md",
+      "type": "document",
+      "name": "harness-v2.md",
+      "filePath": "packages/agent/docs/harness-v2.md",
+      "summary": "AgentHarness v2 设计文档:定义会话树/lane/操作日志/全局事实四部分模型、确定性子步进、events+hooks API、崩溃恢复与 v3 会话兼容语义。",
+      "tags": [
+        "documentation",
+        "harness",
+        "design-doc",
+        "session-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:packages/agent/docs/telemetry-schema.md",
+      "type": "document",
+      "name": "telemetry-schema.md",
+      "filePath": "packages/agent/docs/telemetry-schema.md",
+      "summary": "agent 遥测 schema 参考文档(自动生成):定义 tfa.ai.* 等 span 的事件、属性、错误条件与 schema 版本。",
+      "tags": [
+        "documentation",
+        "telemetry",
+        "schema",
+        "observability"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/agent/src/harness/session/jsonl.ts",
+      "type": "file",
+      "name": "jsonl.ts",
+      "filePath": "packages/agent/src/harness/session/jsonl.ts",
+      "summary": "harness session 的 JSONL 仓库 barrel,重导出 JsonlSessionRepo 实现与创建/列表/元数据等类型。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "session",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/src/harness/tools/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/agent/src/harness/tools/index.ts",
+      "summary": "harness 工具集 barrel,重导出 bash/edit/read/write 工具工厂与 ExecutionToolContext 等类型。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "tools",
+        "harness"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/agent/vitest.config.ts",
+      "summary": "agent 包 vitest 配置:通过 alias 将 telemetry/ai/agent 等 workspace 包映射到源码入口,启用全局模式与 30s 超时。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest",
+        "monorepo"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/vitest.harness.config.ts",
+      "type": "file",
+      "name": "vitest.harness.config.ts",
+      "filePath": "packages/agent/vitest.harness.config.ts",
+      "summary": "harness 专用 vitest 配置:限定 test/harness/** 测试,并对 harness 源码启用 v8 覆盖率收集。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest",
+        "coverage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/bedrock-provider.d.ts",
+      "type": "file",
+      "name": "bedrock-provider.d.ts",
+      "filePath": "packages/ai/bedrock-provider.d.ts",
+      "summary": "包根级 bedrock-provider 类型重导出 stub,指向 dist 构建产物的类型。",
+      "tags": [
+        "barrel",
+        "type-definition",
+        "re-export"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/bedrock-provider.js",
+      "type": "file",
+      "name": "bedrock-provider.js",
+      "filePath": "packages/ai/bedrock-provider.js",
+      "summary": "包根级 bedrock-provider 入口 stub,重导出 dist 构建产物,提供稳定子路径导入。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "re-export"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/scripts/generate-test-image.ts",
+      "type": "file",
+      "name": "generate-test-image.ts",
+      "filePath": "packages/ai/scripts/generate-test-image.ts",
+      "summary": "用 canvas 生成 200x200 红色圆形测试图片(PNG),写入 ai 包 test/data 供图片相关测试使用。",
+      "tags": [
+        "script",
+        "test-data",
+        "generation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/data-json.d.ts",
+      "type": "file",
+      "name": "data-json.d.ts",
+      "filePath": "packages/ai/src/providers/data-json.d.ts",
+      "summary": "为 provider 数据目录下的 *.json 导入提供默认导出 unknown 类型的模块声明。",
+      "tags": [
+        "type-definition",
+        "declaration",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/test/lazy-module-load.test.ts",
+      "type": "file",
+      "name": "lazy-module-load.test.ts",
+      "filePath": "packages/ai/test/lazy-module-load.test.ts",
+      "summary": "验证 provider SDK 懒加载:导入根 barrel 不加载任何 SDK,按需访问具体 provider 时才加载对应 SDK。",
+      "tags": [
+        "test",
+        "lazy-loading",
+        "providers",
+        "barrel"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/test/lazy-module-load.test.ts:runProbe",
+      "type": "function",
+      "name": "runProbe",
+      "filePath": "packages/ai/test/lazy-module-load.test.ts",
+      "summary": "在子进程中用 node:module registerHooks 探测导入根入口时实际加载了哪些 provider SDK,并解析探针输出。",
+      "tags": [
+        "test",
+        "probe",
+        "child-process"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        23,
+        63
+      ]
+    },
+    {
+      "id": "file:packages/ai/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/ai/vitest.config.ts",
+      "summary": "ai 包 vitest 配置:alias telemetry 包到源码入口,启用全局模式与 30s 超时。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/client/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/client/vitest.config.ts",
+      "summary": "client 包 vitest 配置:alias protocol 包到源码入口。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/README.md",
+      "summary": "examples 目录总览:介绍 sdk/(编程式用法)与 extensions/(事件、工具、命令、UI、外部集成等)示例并链接相关文档。",
+      "tags": [
+        "documentation",
+        "examples",
+        "overview"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/extensions/README.md",
+      "summary": "扩展示例目录文档:按生命周期与安全、自定义工具、命令与 UI、外部集成等分类,以表格列出各扩展的用途。",
+      "tags": [
+        "documentation",
+        "extensions",
+        "examples"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/coding-agent/examples/extensions/custom-provider-anthropic/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/package.json",
+      "summary": "自定义 Anthropic provider 扩展示例的包清单,声明 ./index.ts 扩展入口并依赖 @anthropic-ai/sdk。",
+      "tags": [
+        "configuration",
+        "extension",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/package.json",
+      "summary": "自定义 GitLab Duo provider 扩展示例包清单,声明 ./index.ts 扩展入口且无额外依赖。",
+      "tags": [
+        "configuration",
+        "extension",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/test/lazy-module-load.test.ts",
+      "target": "function:packages/ai/test/lazy-module-load.test.ts:runProbe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "document:packages/agent/docs/harness-v2.md",
+      "target": "file:packages/agent/src/harness/session/jsonl.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/agent/docs/harness-v2.md",
+      "target": "file:packages/agent/src/harness/tools/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/agent/docs/telemetry-schema.md",
+      "target": "document:packages/agent/docs/harness-v2.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/vitest.harness.config.ts",
+      "target": "file:packages/agent/src/harness/session/jsonl.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/agent/vitest.harness.config.ts",
+      "target": "file:packages/agent/src/harness/tools/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/coding-agent/examples/README.md",
+      "target": "document:packages/coding-agent/examples/extensions/README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/README.md",
+      "target": "config:packages/coding-agent/examples/extensions/custom-provider-anthropic/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/README.md",
+      "target": "config:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:.husky/pre-commit",
+      "target": "file:scripts/check-lockfile-commit.mjs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:.husky/pre-commit",
+      "target": "file:scripts/check-browser-smoke.mjs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

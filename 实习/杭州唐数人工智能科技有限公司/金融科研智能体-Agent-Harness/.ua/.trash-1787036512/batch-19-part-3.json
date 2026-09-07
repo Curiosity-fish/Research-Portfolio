@@ -1,0 +1,621 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "type": "file",
+   "name": "storage.ts",
+   "filePath": "packages/agent/src/harness/session/jsonl/storage.ts",
+   "summary": "实现 JSONL 会话存储（JsonlSessionStorage）：追加写会话变更、读取状态与搜索。",
+   "tags": [
+    "harness",
+    "jsonl",
+    "存储",
+    "追加写"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/jsonl/storage.ts:JsonlSessionStorage",
+   "type": "class",
+   "name": "JsonlSessionStorage",
+   "filePath": "packages/agent/src/harness/session/jsonl/storage.ts",
+   "lineRange": [
+    22,
+    243
+   ],
+   "summary": "JSONL 会话存储实现。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/jsonl/types.ts",
+   "type": "file",
+   "name": "types.ts",
+   "filePath": "packages/agent/src/harness/session/jsonl/types.ts",
+   "summary": "JSONL 会话类型定义（re-export 组合）。",
+   "tags": [
+    "harness",
+    "jsonl",
+    "types"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/memory.ts",
+   "type": "file",
+   "name": "memory.ts",
+   "filePath": "packages/agent/src/harness/session/memory.ts",
+   "summary": "实现内存会话存储与仓库（InMemorySessionStorage/InMemorySessionRepo）。",
+   "tags": [
+    "harness",
+    "session",
+    "内存存储"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionStorage",
+   "type": "class",
+   "name": "InMemorySessionStorage",
+   "filePath": "packages/agent/src/harness/session/memory.ts",
+   "lineRange": [
+    25,
+    193
+   ],
+   "summary": "内存会话存储。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionRepo",
+   "type": "class",
+   "name": "InMemorySessionRepo",
+   "filePath": "packages/agent/src/harness/session/memory.ts",
+   "lineRange": [
+    195,
+    239
+   ],
+   "summary": "内存会话仓库。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/search.ts",
+   "type": "file",
+   "name": "search.ts",
+   "filePath": "packages/agent/src/harness/session/search.ts",
+   "summary": "实现会话搜索：扫描会话目录并按条件过滤（ScanningSessionSearch）。",
+   "tags": [
+    "harness",
+    "session",
+    "搜索"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/search.ts:getFileSystemResultOrThrow",
+   "type": "function",
+   "name": "getFileSystemResultOrThrow",
+   "filePath": "packages/agent/src/harness/session/search.ts",
+   "lineRange": [
+    22,
+    28
+   ],
+   "summary": "获取文件系统结果或抛错。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/search.ts:createScanningSessionSearch",
+   "type": "function",
+   "name": "createScanningSessionSearch",
+   "filePath": "packages/agent/src/harness/session/search.ts",
+   "lineRange": [
+    65,
+    71
+   ],
+   "summary": "创建扫描式会话搜索。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/search.ts:ScanningSessionSearch",
+   "type": "class",
+   "name": "ScanningSessionSearch",
+   "filePath": "packages/agent/src/harness/session/search.ts",
+   "lineRange": [
+    35,
+    63
+   ],
+   "summary": "扫描会话目录的搜索实现。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/session.ts",
+   "type": "file",
+   "name": "session.ts",
+   "filePath": "packages/agent/src/harness/session/session.ts",
+   "summary": "实现 Session 类：会话状态封装、JSON 序列化校验与快照管理。",
+   "tags": [
+    "harness",
+    "session",
+    "核心"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/session.ts:assertJsonSerializable",
+   "type": "function",
+   "name": "assertJsonSerializable",
+   "filePath": "packages/agent/src/harness/session/session.ts",
+   "lineRange": [
+    42,
+    100
+   ],
+   "summary": "断言对象可 JSON 序列化。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/session.ts:Session",
+   "type": "class",
+   "name": "Session",
+   "filePath": "packages/agent/src/harness/session/session.ts",
+   "lineRange": [
+    102,
+    294
+   ],
+   "summary": "harness 会话对象。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/state.ts",
+   "type": "file",
+   "name": "state.ts",
+   "filePath": "packages/agent/src/harness/session/state.ts",
+   "summary": "实现 SessionState：会话状态机，跟踪消息、操作、工具批次与配置。",
+   "tags": [
+    "harness",
+    "session",
+    "状态机"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/session/state.ts:SessionState",
+   "type": "class",
+   "name": "SessionState",
+   "filePath": "packages/agent/src/harness/session/state.ts",
+   "lineRange": [
+    49,
+    302
+   ],
+   "summary": "harness 会话状态。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "type": "file",
+   "name": "conformance.ts",
+   "filePath": "packages/agent/src/harness/session/testing/conformance.ts",
+   "summary": "会话后端一致性测试：定义 conformance 用例工厂，验证各存储后端行为一致。",
+   "tags": [
+    "harness",
+    "session",
+    "测试",
+    "conformance"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/testing/conformance.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/agent/src/harness/session/testing/conformance.ts",
+   "lineRange": [
+    22,
+    40
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/testing/conformance.ts:operationStarted",
+   "type": "function",
+   "name": "operationStarted",
+   "filePath": "packages/agent/src/harness/session/testing/conformance.ts",
+   "lineRange": [
+    42,
+    59
+   ],
+   "summary": "标记操作开始。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/testing/conformance.ts:createCase",
+   "type": "function",
+   "name": "createCase",
+   "filePath": "packages/agent/src/harness/session/testing/conformance.ts",
+   "lineRange": [
+    75,
+    89
+   ],
+   "summary": "创建测试用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/session/testing/conformance.ts:createSessionBackendConformance",
+   "type": "function",
+   "name": "createSessionBackendConformance",
+   "filePath": "packages/agent/src/harness/session/testing/conformance.ts",
+   "lineRange": [
+    92,
+    993
+   ],
+   "summary": "创建会话后端一致性测试套件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/agent/src/harness/session/testing/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/agent/src/harness/session/testing/index.ts",
+   "summary": "会话测试桶文件：导出 conformance 相关类型与工厂。",
+   "tags": [
+    "barrel",
+    "harness",
+    "测试"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "class:packages/agent/src/harness/session/jsonl/storage.ts:JsonlSessionStorage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "class:packages/agent/src/harness/session/jsonl/storage.ts:JsonlSessionStorage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionStorage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionStorage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionRepo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "class:packages/agent/src/harness/session/memory.ts:InMemorySessionRepo",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "function:packages/agent/src/harness/session/search.ts:getFileSystemResultOrThrow",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "function:packages/agent/src/harness/session/search.ts:getFileSystemResultOrThrow",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "function:packages/agent/src/harness/session/search.ts:createScanningSessionSearch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "function:packages/agent/src/harness/session/search.ts:createScanningSessionSearch",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "class:packages/agent/src/harness/session/search.ts:ScanningSessionSearch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "function:packages/agent/src/harness/session/session.ts:assertJsonSerializable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "function:packages/agent/src/harness/session/session.ts:assertJsonSerializable",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "class:packages/agent/src/harness/session/session.ts:Session",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "class:packages/agent/src/harness/session/session.ts:Session",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/state.ts",
+   "target": "class:packages/agent/src/harness/session/state.ts:SessionState",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/state.ts",
+   "target": "class:packages/agent/src/harness/session/state.ts:SessionState",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "function:packages/agent/src/harness/session/testing/conformance.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "function:packages/agent/src/harness/session/testing/conformance.ts:operationStarted",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "function:packages/agent/src/harness/session/testing/conformance.ts:createCase",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "function:packages/agent/src/harness/session/testing/conformance.ts:createSessionBackendConformance",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "function:packages/agent/src/harness/session/testing/conformance.ts:createSessionBackendConformance",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "file:packages/agent/src/harness/session/jsonl/codec.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "file:packages/agent/src/harness/session/jsonl/errors.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "file:packages/agent/src/harness/session/jsonl/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "file:packages/agent/src/harness/session/state.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/storage.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/types.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/jsonl/types.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "file:packages/agent/src/harness/session/session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "file:packages/agent/src/harness/session/state.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/memory.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "file:packages/agent/src/harness/session/session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/search.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/session.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/state.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "file:packages/agent/src/harness/session/testing/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/session/testing/conformance.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

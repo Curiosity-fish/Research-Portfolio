@@ -1,0 +1,77 @@
+/* 设计令牌：全站唯一的颜色/尺寸来源，Element Plus 主题与组件均引用此处变量
+   配色延续旧前端 school-api（暖米底 + 金棕品牌色），值与旧项目 style.css 保持一致 */
+
+:root {
+  /* 品牌色（金棕，旧项目 --brand 体系） */
+  --brand: #9a6d12;
+  --brand-hover: #805a0e;
+  --brand-active: #6b4e0f;
+  --brand-bg: #f6eedb;
+  --brand-bg-strong: #ede3c8;
+  --brand-light: #f6eedb;
+  --brand-text: #6b4e0f;
+
+  /* 功能色（旧项目状态色体系） */
+  --success: #166534;
+  --success-bg: #f0fdf4;
+  --success-border: #bbf7d0;
+  --warning: #92400e;
+  --warning-bg: #fffbeb;  --warning-border: #fde68a;
+  --danger: #991b1b;
+  --danger-bg: #fef2f2;
+  --danger-border: #fecaca;
+  --info: #686158;
+
+  /* 背景层级（暖米系） */
+  --bg-page: #f4f1ea;
+  --bg-sidebar: #fcfaf5;
+  --bg-card: #fffefb;
+  --bg-hover: #ede7d9;
+  --bg-active: #f6eedb;
+  --bg-mask: rgba(41, 37, 31, 0.45);
+
+  /* 文字 */
+  --text-primary: #29251f;
+  --text-secondary: #686158;
+  --text-muted: #827a70;
+  --text-disabled: #a39d94;
+  --text-inverse: #ffffff;
+  --placeholder: #9c958b;
+
+  /* 边框 */
+  --border-default: #d8d2c7;
+  --border-light: #e6e1d8;
+
+  /* 布局尺寸 */
+  --sidebar-width: 232px;
+  --sidebar-collapsed-width: 64px;
+  --page-padding: 16px;
+
+  /* 表格行高：AdaptiveTable 的行数计算与单元格 padding 必须同步修改 */
+  --table-row-height: 44px;
+  --table-header-height: 40px;
+
+  /* 圆角与阴影（旧项目阴影为着色阴影，贴合暖米底） */
+  --radius-sm: 7px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-card: 0 1px 2px rgba(107, 78, 15, 0.05);
+  --shadow-pop: 0 8px 32px rgba(107, 78, 15, 0.16);
+
+  /* 字体 */
+  --font-family:
+    'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* ≥1600px 屏幕加大内容区内边距，密度填充的缓冲带 */
+@media (min-width: 1600px) {
+  :root {
+    --page-padding: 24px;
+  }
+}
+
+/* Dashboard 大屏增强（远观档位）：仅展示模式开启时由根元素类名启用 */
+.app-display-mode {
+  --display-scale: 1.5;
+}

@@ -1,0 +1,239 @@
+{
+ "nodes": [
+  {
+   "id": "file:scripts/package-workspaces.mjs",
+   "type": "file",
+   "name": "package-workspaces.mjs",
+   "filePath": "scripts/package-workspaces.mjs",
+   "summary": "递归扫描 packages 目录查找 workspace 包（跳过 node_modules 等目录），返回排序后的包目录列表，供发布与版本同步脚本复用。",
+   "tags": [
+    "utility",
+    "monorepo",
+    "workspaces",
+    "build-system"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:scripts/release.mjs",
+   "type": "file",
+   "name": "release.mjs",
+   "filePath": "scripts/release.mjs",
+   "summary": "发布编排脚本：校验/计算目标版本，清理 stale workspace lock 条目，更新各包 CHANGELOG 并添加 [Unreleased] 段，暂存变更供发布使用。",
+   "tags": [
+    "release",
+    "ci-cd",
+    "build-system",
+    "monorepo"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:scripts/sync-versions.js",
+   "type": "file",
+   "name": "sync-versions.js",
+   "filePath": "scripts/sync-versions.js",
+   "summary": "校验所有非 private workspace 包版本一致（lockstep），并将 workspace 内部依赖版本同步为对应包的当前版本。",
+   "tags": [
+    "utility",
+    "monorepo",
+    "versioning",
+    "build-system"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:scripts/package-workspaces.mjs:findPackageDirectories",
+   "type": "function",
+   "name": "findPackageDirectories",
+   "filePath": "scripts/package-workspaces.mjs",
+   "lineRange": [
+    6,
+    24
+   ],
+   "summary": "递归遍历目录收集包含 package.json 的 workspace 包目录并排序返回。",
+   "tags": [
+    "utility",
+    "monorepo",
+    "workspaces"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:scripts/release.mjs:run",
+   "type": "function",
+   "name": "run",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    35,
+    46
+   ],
+   "summary": "同步执行 shell 命令，失败时打印错误信息并退出进程。",
+   "tags": [
+    "utility",
+    "process"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:scripts/release.mjs:compareVersions",
+   "type": "function",
+   "name": "compareVersions",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    53,
+    65
+   ],
+   "summary": "按点分版本号逐段比较两个版本的大小关系。",
+   "tags": [
+    "utility",
+    "versioning"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:scripts/release.mjs:removeStaleWorkspaceLockEntries",
+   "type": "function",
+   "name": "removeStaleWorkspaceLockEntries",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    71,
+    99
+   ],
+   "summary": "扫描 workspace 包目录并从根 lock 文件移除过期的 workspace 条目。",
+   "tags": [
+    "utility",
+    "monorepo",
+    "build-system"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:scripts/release.mjs:bumpOrSetVersion",
+   "type": "function",
+   "name": "bumpOrSetVersion",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    111,
+    134
+   ],
+   "summary": "计算或校验目标发布版本并写入根与各包 package.json。",
+   "tags": [
+    "release",
+    "versioning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:scripts/release.mjs:updateChangelogsForRelease",
+   "type": "function",
+   "name": "updateChangelogsForRelease",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    142,
+    161
+   ],
+   "summary": "将各包 changelog 的 [Unreleased] 内容归档到指定版本段。",
+   "tags": [
+    "release",
+    "changelog"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:scripts/release.mjs:addUnreleasedSection",
+   "type": "function",
+   "name": "addUnreleasedSection",
+   "filePath": "scripts/release.mjs",
+   "lineRange": [
+    163,
+    178
+   ],
+   "summary": "为各包 changelog 重新添加空的 [Unreleased] 段。",
+   "tags": [
+    "release",
+    "changelog"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "file:scripts/package-workspaces.mjs",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:scripts/sync-versions.js",
+   "target": "file:scripts/package-workspaces.mjs",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:scripts/package-workspaces.mjs",
+   "target": "function:scripts/package-workspaces.mjs:findPackageDirectories",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/package-workspaces.mjs",
+   "target": "function:scripts/package-workspaces.mjs:findPackageDirectories",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:run",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:compareVersions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:removeStaleWorkspaceLockEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:bumpOrSetVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:updateChangelogsForRelease",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:scripts/release.mjs",
+   "target": "function:scripts/release.mjs:addUnreleasedSection",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "function:scripts/release.mjs:removeStaleWorkspaceLockEntries",
+   "target": "function:scripts/package-workspaces.mjs:findPackageDirectories",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

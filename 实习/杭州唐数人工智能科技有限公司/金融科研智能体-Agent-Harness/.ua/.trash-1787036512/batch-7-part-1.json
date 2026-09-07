@@ -1,0 +1,922 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/openrouter-cache-control-models.test.ts",
+   "type": "file",
+   "name": "openrouter-cache-control-models.test.ts",
+   "filePath": "packages/ai/test/openrouter-cache-control-models.test.ts",
+   "summary": "OpenRouter 缓存控制模型支持测试。",
+   "tags": [
+    "test",
+    "openrouter",
+    "cache"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/openrouter-cache-write-repro.test.ts",
+   "type": "file",
+   "name": "openrouter-cache-write-repro.test.ts",
+   "filePath": "packages/ai/test/openrouter-cache-write-repro.test.ts",
+   "summary": "OpenRouter 缓存写入复现测试。",
+   "tags": [
+    "test",
+    "openrouter",
+    "cache"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openrouter-images.test.ts",
+   "type": "file",
+   "name": "openrouter-images.test.ts",
+   "filePath": "packages/ai/test/openrouter-images.test.ts",
+   "summary": "OpenRouter 图像生成测试。",
+   "tags": [
+    "test",
+    "openrouter",
+    "images"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/overflow.test.ts",
+   "type": "file",
+   "name": "overflow.test.ts",
+   "filePath": "packages/ai/test/overflow.test.ts",
+   "summary": "上下文溢出错误消息识别测试。",
+   "tags": [
+    "test",
+    "overflow",
+    "context"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/overflow.test.ts:createErrorMessage",
+   "type": "function",
+   "name": "createErrorMessage",
+   "filePath": "packages/ai/test/overflow.test.ts",
+   "lineRange": [
+    5,
+    30
+   ],
+   "summary": "构造溢出错误消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/provider-error-body-passthrough.test.ts",
+   "type": "file",
+   "name": "provider-error-body-passthrough.test.ts",
+   "filePath": "packages/ai/test/provider-error-body-passthrough.test.ts",
+   "summary": "Provider 错误正文透传测试。",
+   "tags": [
+    "test",
+    "error-body",
+    "passthrough"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "type": "file",
+   "name": "provider-error-body-regression.test.ts",
+   "filePath": "packages/ai/test/provider-error-body-regression.test.ts",
+   "summary": "Provider 错误正文回归测试。",
+   "tags": [
+    "test",
+    "error-body",
+    "regression"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/provider-retry.test.ts",
+   "type": "file",
+   "name": "provider-retry.test.ts",
+   "filePath": "packages/ai/test/provider-retry.test.ts",
+   "summary": "Provider 重试逻辑测试。",
+   "tags": [
+    "test",
+    "retry",
+    "provider"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/qwen-token-plan-models.test.ts",
+   "type": "file",
+   "name": "qwen-token-plan-models.test.ts",
+   "filePath": "packages/ai/test/qwen-token-plan-models.test.ts",
+   "summary": "Qwen token plan 模型注册测试。",
+   "tags": [
+    "test",
+    "qwen",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/responseid.test.ts",
+   "type": "file",
+   "name": "responseid.test.ts",
+   "filePath": "packages/ai/test/responseid.test.ts",
+   "summary": "响应 id（response id）透传测试。",
+   "tags": [
+    "test",
+    "response-id",
+    "passthrough"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/responseid.test.ts:expectResponseId",
+   "type": "function",
+   "name": "expectResponseId",
+   "filePath": "packages/ai/test/responseid.test.ts",
+   "lineRange": [
+    12,
+    23
+   ],
+   "summary": "断言响应 id 透传。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/sampling-options.test.ts",
+   "type": "file",
+   "name": "sampling-options.test.ts",
+   "filePath": "packages/ai/test/sampling-options.test.ts",
+   "summary": "采样选项（temperature/top_p 等）透传测试。",
+   "tags": [
+    "test",
+    "sampling",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/sampling-options.test.ts:makeCompletionsModel",
+   "type": "function",
+   "name": "makeCompletionsModel",
+   "filePath": "packages/ai/test/sampling-options.test.ts",
+   "lineRange": [
+    25,
+    39
+   ],
+   "summary": "构造 Completions 测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/sampling-options.test.ts:makeAnthropicModel",
+   "type": "function",
+   "name": "makeAnthropicModel",
+   "filePath": "packages/ai/test/sampling-options.test.ts",
+   "lineRange": [
+    41,
+    54
+   ],
+   "summary": "构造 Anthropic 测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/sampling-options.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/sampling-options.test.ts",
+   "lineRange": [
+    56,
+    75
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/stream.test.ts",
+   "type": "file",
+   "name": "stream.test.ts",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "summary": "通用流式行为测试：文本、工具调用、thinking、图像与多轮对话。",
+   "tags": [
+    "test",
+    "stream",
+    "integration"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:basicTextGeneration",
+   "type": "function",
+   "name": "basicTextGeneration",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    46,
+    73
+   ],
+   "summary": "基础文本生成测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:handleToolCall",
+   "type": "function",
+   "name": "handleToolCall",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    75,
+    151
+   ],
+   "summary": "工具调用流测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:handleStreaming",
+   "type": "function",
+   "name": "handleStreaming",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    153,
+    181
+   ],
+   "summary": "流式输出测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:handleThinking",
+   "type": "function",
+   "name": "handleThinking",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    183,
+    218
+   ],
+   "summary": "thinking 事件测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:handleImage",
+   "type": "function",
+   "name": "handleImage",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    220,
+    265
+   ],
+   "summary": "图像输出测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/stream.test.ts:multiTurn",
+   "type": "function",
+   "name": "multiTurn",
+   "filePath": "packages/ai/test/stream.test.ts",
+   "lineRange": [
+    267,
+    347
+   ],
+   "summary": "多轮对话测试。",
+   "tags": [
+    "test",
+    "stream"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/supports-xhigh.test.ts",
+   "type": "file",
+   "name": "supports-xhigh.test.ts",
+   "filePath": "packages/ai/test/supports-xhigh.test.ts",
+   "summary": "xhigh reasoning effort 支持检测测试。",
+   "tags": [
+    "test",
+    "xhigh",
+    "reasoning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/telemetry-options.test.ts",
+   "type": "file",
+   "name": "telemetry-options.test.ts",
+   "filePath": "packages/ai/test/telemetry-options.test.ts",
+   "summary": "Telemetry 选项透传与上报字段测试。",
+   "tags": [
+    "test",
+    "telemetry",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/telemetry-options.test.ts:completedStream",
+   "type": "function",
+   "name": "completedStream",
+   "filePath": "packages/ai/test/telemetry-options.test.ts",
+   "lineRange": [
+    46,
+    72
+   ],
+   "summary": "构造完成的流并断言 telemetry。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/tfa-messages.test.ts",
+   "type": "file",
+   "name": "tfa-messages.test.ts",
+   "filePath": "packages/ai/test/tfa-messages.test.ts",
+   "summary": "TFA Messages provider 测试：本地服务器端到端验证事件流。",
+   "tags": [
+    "test",
+    "tfa",
+    "messages"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/tfa-messages.test.ts:startServer",
+   "type": "function",
+   "name": "startServer",
+   "filePath": "packages/ai/test/tfa-messages.test.ts",
+   "lineRange": [
+    27,
+    66
+   ],
+   "summary": "启动本地测试服务器。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/tfa-messages.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/ai/test/tfa-messages.test.ts",
+   "lineRange": [
+    68,
+    81
+   ],
+   "summary": "创建指向本地服务器的模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/together-models.test.ts",
+   "type": "file",
+   "name": "together-models.test.ts",
+   "filePath": "packages/ai/test/together-models.test.ts",
+   "summary": "Together AI 模型注册测试。",
+   "tags": [
+    "test",
+    "together",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/tokens.test.ts",
+   "type": "file",
+   "name": "tokens.test.ts",
+   "filePath": "packages/ai/test/tokens.test.ts",
+   "summary": "中止场景下的 token 统计测试。",
+   "tags": [
+    "test",
+    "tokens",
+    "abort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/tokens.test.ts:testTokensOnAbort",
+   "type": "function",
+   "name": "testTokensOnAbort",
+   "filePath": "packages/ai/test/tokens.test.ts",
+   "lineRange": [
+    20,
+    84
+   ],
+   "summary": "验证中止时的 token 统计。",
+   "tags": [
+    "test",
+    "tokens"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/tool-call-id-normalization.test.ts",
+   "type": "file",
+   "name": "tool-call-id-normalization.test.ts",
+   "filePath": "packages/ai/test/tool-call-id-normalization.test.ts",
+   "summary": "工具调用 id 归一化测试。",
+   "tags": [
+    "test",
+    "tool-call",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/openrouter-cache-control-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-cache-write-repro.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-images.test.ts",
+   "target": "file:packages/ai/src/images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-images.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/overflow.test.ts",
+   "target": "function:packages/ai/test/overflow.test.ts:createErrorMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/overflow.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/overflow.test.ts",
+   "target": "file:packages/ai/src/utils/overflow.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-passthrough.test.ts",
+   "target": "file:packages/ai/src/images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-passthrough.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/provider-retry.test.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/qwen-token-plan-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/responseid.test.ts",
+   "target": "function:packages/ai/test/responseid.test.ts:expectResponseId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/responseid.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/responseid.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/responseid.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/responseid.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/sampling-options.test.ts",
+   "target": "function:packages/ai/test/sampling-options.test.ts:makeCompletionsModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/sampling-options.test.ts",
+   "target": "function:packages/ai/test/sampling-options.test.ts:makeAnthropicModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/sampling-options.test.ts",
+   "target": "function:packages/ai/test/sampling-options.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/sampling-options.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/sampling-options.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:basicTextGeneration",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:handleToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:handleStreaming",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:handleThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:handleImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "function:packages/ai/test/stream.test.ts:multiTurn",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/src/utils/typebox-helpers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/stream.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/supports-xhigh.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "function:packages/ai/test/telemetry-options.test.ts:completedStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/images-api-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/images-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/telemetry-options.test.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tfa-messages.test.ts",
+   "target": "function:packages/ai/test/tfa-messages.test.ts:startServer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/tfa-messages.test.ts",
+   "target": "function:packages/ai/test/tfa-messages.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/tfa-messages.test.ts",
+   "target": "file:packages/ai/src/api/tfa-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tfa-messages.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/together-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/together-models.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "function:packages/ai/test/tokens.test.ts:testTokensOnAbort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tokens.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-id-normalization.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-id-normalization.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-id-normalization.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

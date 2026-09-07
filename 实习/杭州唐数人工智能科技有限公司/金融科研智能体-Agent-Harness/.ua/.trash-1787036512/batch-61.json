@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement-and-review.md",
+      "type": "document",
+      "name": "implement-and-review.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/prompts/implement-and-review.md",
+      "summary": "定义实现-审查-修改链式工作流提示词：worker 实现、reviewer 审查、worker 应用反馈，通过 {previous} 占位符在步骤间传递输出。",
+      "tags": [
+        "subagent",
+        "workflow",
+        "chain",
+        "提示词模板",
+        "implement-and-review"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "type": "document",
+      "name": "implement.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "summary": "定义完整实现链式工作流提示词：scout 收集相关代码、planner 制定计划、worker 执行实现，步骤间以 {previous} 传递上下文。",
+      "tags": [
+        "subagent",
+        "workflow",
+        "chain",
+        "提示词模板",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/prompts/scout-and-plan.md",
+      "type": "document",
+      "name": "scout-and-plan.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/prompts/scout-and-plan.md",
+      "summary": "定义侦察+规划链式工作流提示词：scout 收集相关代码后由 planner 制定实现计划，仅返回计划、不执行实现。",
+      "tags": [
+        "subagent",
+        "workflow",
+        "chain",
+        "提示词模板",
+        "planning"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement-and-review.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement-and-review.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/reviewer.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/scout.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/scout-and-plan.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/scout.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/scout-and-plan.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement-and-review.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/prompts/scout-and-plan.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/prompts/implement.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

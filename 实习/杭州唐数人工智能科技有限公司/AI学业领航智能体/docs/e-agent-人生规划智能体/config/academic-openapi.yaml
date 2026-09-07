@@ -1,0 +1,119 @@
+openapi: 3.1.0
+info:
+  title: Academic Navigation Agent API
+  version: 1.0.0
+  description: 供 E-Agent API 工具使用的学生本人数据只读接口模板。
+servers:
+  - url: http://127.0.0.1:18080
+security:
+  - bearerAuth: []
+paths:
+  /api/student/dashboard:
+    get:
+      operationId: get_student_dashboard
+      summary: 获取当前学生学业总览
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/eagent/health:
+    get:
+      operationId: check_local_database
+      summary: 验证本地数据库连接
+      responses:
+        "200":
+          description: 返回数据库名称、数据库时间和关键表行数
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/student/profile:
+    get:
+      operationId: get_student_profile
+      summary: 获取当前学生五维画像
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/student/gpa-trend:
+    get:
+      operationId: get_gpa_trend
+      summary: 获取当前学生 GPA 趋势
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: array
+  /api/student/alerts:
+    get:
+      operationId: get_student_alerts
+      summary: 获取当前学生预警
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: size
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/development/paths:
+    get:
+      operationId: get_development_paths
+      summary: 获取五条发展路径匹配结果
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: array
+  /api/development/analyze:
+    post:
+      operationId: analyze_development_goal
+      summary: 分析目标发展路径差距
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [targetKey]
+              properties:
+                targetKey:
+                  type: string
+                  enum: [graduate, overseas, civil, institution, employment]
+                targetLabel:
+                  type: string
+                targetScore:
+                  type: integer
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

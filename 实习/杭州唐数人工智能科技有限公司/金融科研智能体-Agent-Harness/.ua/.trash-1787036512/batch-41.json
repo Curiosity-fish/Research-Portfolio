@@ -1,0 +1,599 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/protocol/src/cbor/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/protocol/src/cbor/index.ts",
+   "summary": "protocol cbor 子模块的 barrel 文件：集中 re-export decodeCbor、encodeCbor、CborError 与 CBOR 默认限制常量，作为协议包的 CBOR 公共入口。",
+   "tags": [
+    "barrel",
+    "entry-point",
+    "re-export",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/protocol/src/codec.ts",
+   "type": "file",
+   "name": "codec.ts",
+   "filePath": "packages/protocol/src/codec.ts",
+   "summary": "协议编解码层：对客户端/服务端消息做严格校验，组合 CBOR 编解码与 frame 分帧，并提供带最大帧长限制的流式消息解码器（Client/ServerMessageDecoder）。",
+   "tags": [
+    "serialization",
+    "protocol",
+    "codec",
+    "validation",
+    "service"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/protocol/src/framing.ts",
+   "type": "file",
+   "name": "framing.ts",
+   "filePath": "packages/protocol/src/framing.ts",
+   "summary": "协议帧层：定义定长头 frame 的编码（encodeFrame）、完整性校验（assertCompleteFrame）以及基于状态机的流式 FrameDecoder，支持最大帧长限制与错误态。",
+   "tags": [
+    "serialization",
+    "protocol",
+    "framing",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/protocol/src/schemas.ts",
+   "type": "file",
+   "name": "schemas.ts",
+   "filePath": "packages/protocol/src/schemas.ts",
+   "summary": "协议消息的 schema 定义文件：使用 typebox 组合子导出 54 个 schema（会话、转录条目、快照、模型元数据等），并附带 JSON value 的严格结构校验辅助。",
+   "tags": [
+    "type-definition",
+    "validation",
+    "schema",
+    "protocol"
+   ],
+   "complexity": "complex",
+   "languageNotes": "大量 typebox Type 组合子常量导出，构成协议的类型层。"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:isProtocolValue",
+   "type": "function",
+   "name": "isProtocolValue",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    25,
+    39
+   ],
+   "summary": "递归校验值是否为可传输的协议类型（基本类型/数组/对象），支持可选属性模式并检测循环引用。",
+   "tags": [
+    "validation",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:parseClientMessage",
+   "type": "function",
+   "name": "parseClientMessage",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    41,
+    46
+   ],
+   "summary": "校验并解析客户端消息，非法输入抛 ProtocolValidationError。",
+   "tags": [
+    "validation",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:parseServerMessage",
+   "type": "function",
+   "name": "parseServerMessage",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    48,
+    53
+   ],
+   "summary": "校验并解析服务端消息，非法输入抛 ProtocolValidationError。",
+   "tags": [
+    "validation",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:encodeProtocolMessage",
+   "type": "function",
+   "name": "encodeProtocolMessage",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    60,
+    76
+   ],
+   "summary": "通用编码管线：解析校验消息后经 CBOR 编码并封装为 frame，同时校验帧完整性。",
+   "tags": [
+    "serialization",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:encodeClientMessage",
+   "type": "function",
+   "name": "encodeClientMessage",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    79,
+    81
+   ],
+   "summary": "将客户端消息编码为带 frame 的字节流。",
+   "tags": [
+    "serialization",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:encodeServerMessage",
+   "type": "function",
+   "name": "encodeServerMessage",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    84,
+    86
+   ],
+   "summary": "将服务端消息编码为带 frame 的字节流。",
+   "tags": [
+    "serialization",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:createClientMessageDecoder",
+   "type": "function",
+   "name": "createClientMessageDecoder",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    162,
+    164
+   ],
+   "summary": "工厂函数：创建客户端消息的流式解码器。",
+   "tags": [
+    "factory",
+    "decoder",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:createServerMessageDecoder",
+   "type": "function",
+   "name": "createServerMessageDecoder",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    166,
+    168
+   ],
+   "summary": "工厂函数：创建服务端消息的流式解码器。",
+   "tags": [
+    "factory",
+    "decoder",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/codec.ts:isSupportedProtocolVersion",
+   "type": "function",
+   "name": "isSupportedProtocolVersion",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    170,
+    172
+   ],
+   "summary": "判断给定协议版本号是否受支持。",
+   "tags": [
+    "validation",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/framing.ts:encodeFrame",
+   "type": "function",
+   "name": "encodeFrame",
+   "filePath": "packages/protocol/src/framing.ts",
+   "lineRange": [
+    28,
+    39
+   ],
+   "summary": "将 payload 编码为带定长头的 frame（含长度字段）。",
+   "tags": [
+    "serialization",
+    "framing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/protocol/src/framing.ts:assertCompleteFrame",
+   "type": "function",
+   "name": "assertCompleteFrame",
+   "filePath": "packages/protocol/src/framing.ts",
+   "lineRange": [
+    42,
+    53
+   ],
+   "summary": "校验 frame 头声明的长度与实际 payload 长度一致，超限抛 FrameError。",
+   "tags": [
+    "validation",
+    "framing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/protocol/src/codec.ts:ProtocolValidationError",
+   "type": "class",
+   "name": "ProtocolValidationError",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    18,
+    23
+   ],
+   "summary": "协议消息校验失败时抛出的专用错误类型。",
+   "tags": [
+    "validation",
+    "error-handling"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/protocol/src/codec.ts:ValidatedMessageDecoder",
+   "type": "class",
+   "name": "ValidatedMessageDecoder",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    88,
+    126
+   ],
+   "summary": "内部流式消息解码器：累积 frame 后逐条 CBOR 解码并解析为协议消息，带最大帧长限制与失败态。",
+   "tags": [
+    "streaming",
+    "decoder",
+    "protocol"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/protocol/src/codec.ts:ClientMessageDecoder",
+   "type": "class",
+   "name": "ClientMessageDecoder",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    129,
+    143
+   ],
+   "summary": "面向客户端消息的流式解码器封装。",
+   "tags": [
+    "decoder",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/protocol/src/codec.ts:ServerMessageDecoder",
+   "type": "class",
+   "name": "ServerMessageDecoder",
+   "filePath": "packages/protocol/src/codec.ts",
+   "lineRange": [
+    146,
+    160
+   ],
+   "summary": "面向服务端消息的流式解码器封装。",
+   "tags": [
+    "decoder",
+    "protocol"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/protocol/src/framing.ts:FrameError",
+   "type": "class",
+   "name": "FrameError",
+   "filePath": "packages/protocol/src/framing.ts",
+   "lineRange": [
+    12,
+    17
+   ],
+   "summary": "frame 层（长度/完整性）错误类型。",
+   "tags": [
+    "error-handling",
+    "framing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/protocol/src/framing.ts:FrameDecoder",
+   "type": "class",
+   "name": "FrameDecoder",
+   "filePath": "packages/protocol/src/framing.ts",
+   "lineRange": [
+    58,
+    165
+   ],
+   "summary": "状态机驱动的流式 frame 解码器：逐块消费字节并产出完整 frame，支持最大帧长限制与显式 fail 错误态。",
+   "tags": [
+    "streaming",
+    "decoder",
+    "framing"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "file:packages/protocol/src/cbor/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "file:packages/protocol/src/framing.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "file:packages/protocol/src/schemas.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:isProtocolValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:parseClientMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:parseServerMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:encodeProtocolMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:encodeClientMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:encodeServerMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:createClientMessageDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:createServerMessageDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:isSupportedProtocolVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "function:packages/protocol/src/framing.ts:encodeFrame",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "function:packages/protocol/src/framing.ts:assertCompleteFrame",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ProtocolValidationError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ValidatedMessageDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ClientMessageDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ServerMessageDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "class:packages/protocol/src/framing.ts:FrameError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "class:packages/protocol/src/framing.ts:FrameDecoder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:parseClientMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:parseServerMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:encodeClientMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:encodeServerMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:createClientMessageDecoder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:createServerMessageDecoder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "function:packages/protocol/src/codec.ts:isSupportedProtocolVersion",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "function:packages/protocol/src/framing.ts:encodeFrame",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "function:packages/protocol/src/framing.ts:assertCompleteFrame",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ProtocolValidationError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ClientMessageDecoder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/codec.ts",
+   "target": "class:packages/protocol/src/codec.ts:ServerMessageDecoder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "class:packages/protocol/src/framing.ts:FrameError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/protocol/src/framing.ts",
+   "target": "class:packages/protocol/src/framing.ts:FrameDecoder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/protocol/src/codec.ts:encodeProtocolMessage",
+   "target": "function:packages/protocol/src/framing.ts:encodeFrame",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/protocol/src/codec.ts:encodeProtocolMessage",
+   "target": "function:packages/protocol/src/framing.ts:assertCompleteFrame",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/protocol/src/codec.ts:encodeProtocolMessage",
+   "target": "function:packages/protocol/src/cbor/decoder.ts:encodeCbor",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

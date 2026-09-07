@@ -1,0 +1,344 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "type": "file",
+   "name": "register-builtins.ts",
+   "filePath": "packages/ai/src/providers/images/register-builtins.ts",
+   "summary": "注册内置图像生成 provider（OpenRouter 懒加载）。",
+   "tags": [
+    "images",
+    "registry",
+    "builtin",
+    "lazy"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/providers/images/register-builtins.ts:createLazyLoadErrorImages",
+   "type": "function",
+   "name": "createLazyLoadErrorImages",
+   "filePath": "packages/ai/src/providers/images/register-builtins.ts",
+   "lineRange": [
+    11,
+    21
+   ],
+   "summary": "创建懒加载失败的图像 provider 代理。",
+   "tags": [
+    "lazy",
+    "images"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/providers/images/register-builtins.ts:generateImagesOpenRouter",
+   "type": "function",
+   "name": "generateImagesOpenRouter",
+   "filePath": "packages/ai/src/providers/images/register-builtins.ts",
+   "lineRange": [
+    30,
+    41
+   ],
+   "summary": "OpenRouter 图像生成转发。",
+   "tags": [
+    "images",
+    "openrouter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/providers/images/register-builtins.ts:registerBuiltInImagesApiProviders",
+   "type": "function",
+   "name": "registerBuiltInImagesApiProviders",
+   "filePath": "packages/ai/src/providers/images/register-builtins.ts",
+   "lineRange": [
+    43,
+    48
+   ],
+   "summary": "注册内置图像 provider。",
+   "tags": [
+    "registry",
+    "images"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/session-resources.ts",
+   "type": "file",
+   "name": "session-resources.ts",
+   "filePath": "packages/ai/src/session-resources.ts",
+   "summary": "会话资源清理注册：按 sessionId 追踪并清理临时资源。",
+   "tags": [
+    "session",
+    "cleanup",
+    "resources"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/session-resources.ts:registerSessionResourceCleanup",
+   "type": "function",
+   "name": "registerSessionResourceCleanup",
+   "filePath": "packages/ai/src/session-resources.ts",
+   "lineRange": [
+    5,
+    10
+   ],
+   "summary": "注册会话资源清理函数。",
+   "tags": [
+    "session",
+    "cleanup"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/session-resources.ts:cleanupSessionResources",
+   "type": "function",
+   "name": "cleanupSessionResources",
+   "filePath": "packages/ai/src/session-resources.ts",
+   "lineRange": [
+    12,
+    24
+   ],
+   "summary": "清理指定会话的全部资源。",
+   "tags": [
+    "session",
+    "cleanup"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/types.ts",
+   "type": "file",
+   "name": "types.ts",
+   "filePath": "packages/ai/src/types.ts",
+   "summary": "AI 包核心类型定义：消息、模型、provider 选项与事件类型。",
+   "tags": [
+    "type-definition",
+    "api",
+    "types"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/src/utils/abort-signals.ts",
+   "type": "file",
+   "name": "abort-signals.ts",
+   "filePath": "packages/ai/src/utils/abort-signals.ts",
+   "summary": "合并多个 AbortSignal 为单一信号的工具。",
+   "tags": [
+    "abort",
+    "signal",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/abort-signals.ts:combineAbortSignals",
+   "type": "function",
+   "name": "combineAbortSignals",
+   "filePath": "packages/ai/src/utils/abort-signals.ts",
+   "lineRange": [
+    6,
+    41
+   ],
+   "summary": "合并多个 AbortSignal 为单一信号。",
+   "tags": [
+    "abort",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "function:packages/ai/src/providers/images/register-builtins.ts:createLazyLoadErrorImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "function:packages/ai/src/providers/images/register-builtins.ts:generateImagesOpenRouter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "function:packages/ai/src/providers/images/register-builtins.ts:generateImagesOpenRouter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "function:packages/ai/src/providers/images/register-builtins.ts:registerBuiltInImagesApiProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "function:packages/ai/src/providers/images/register-builtins.ts:registerBuiltInImagesApiProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "file:packages/ai/src/api/openrouter-images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "file:packages/ai/src/images-api-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/session-resources.ts",
+   "target": "function:packages/ai/src/session-resources.ts:registerSessionResourceCleanup",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/session-resources.ts",
+   "target": "function:packages/ai/src/session-resources.ts:registerSessionResourceCleanup",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/session-resources.ts",
+   "target": "function:packages/ai/src/session-resources.ts:cleanupSessionResources",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/session-resources.ts",
+   "target": "function:packages/ai/src/session-resources.ts:cleanupSessionResources",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/api/tfa-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort-signals.ts",
+   "target": "function:packages/ai/src/utils/abort-signals.ts:combineAbortSignals",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort-signals.ts",
+   "target": "function:packages/ai/src/utils/abort-signals.ts:combineAbortSignals",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "nodes": [
+  {
+   "id": "document:.tfa/prompts/cl.md",
+   "type": "document",
+   "name": "cl.md",
+   "filePath": ".tfa/prompts/cl.md",
+   "summary": "changelog 审计 prompt：发布前逐提交核对各包 CHANGELOG 条目、跨包重复规则与格式要求。",
+   "tags": [
+    "documentation",
+    "prompt",
+    "changelog",
+    "release"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "document:.tfa/prompts/is.md",
+   "type": "document",
+   "name": "is.md",
+   "filePath": ".tfa/prompts/is.md",
+   "summary": "issue 分析 prompt：指示 agent 读取并独立分析 GitHub issue（打 inprogress 标签），不信任 issue 内的分析，定位根因并给出修复/实现建议。",
+   "tags": [
+    "documentation",
+    "prompt",
+    "issue-triage",
+    "github"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:.tfa/prompts/pr.md",
+   "type": "document",
+   "name": "pr.md",
+   "filePath": ".tfa/prompts/pr.md",
+   "summary": "PR 审查 prompt：通过 gh 读取 PR 全文与 diff，按 What it does/Good/Bad/Ugly/Tests 结构化模板输出审查结论。",
+   "tags": [
+    "documentation",
+    "prompt",
+    "code-review",
+    "github"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:.tfa/prompts/sa.md",
+   "type": "document",
+   "name": "sa.md",
+   "filePath": ".tfa/prompts/sa.md",
+   "summary": "安全公告更新 prompt：通过 gh 获取/更新 GitHub security advisory 草稿，严格控制发布与 CVE 请求权限，并说明 API 限制。",
+   "tags": [
+    "documentation",
+    "prompt",
+    "security",
+    "github"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "document:.tfa/prompts/wr.md",
+   "type": "document",
+   "name": "wr.md",
+   "filePath": ".tfa/prompts/wr.md",
+   "summary": "任务收尾 prompt：更新 changelog、提交并推送代码、按规则发布 issue/PR 评论并关闭 issue。",
+   "tags": [
+    "documentation",
+    "prompt",
+    "workflow",
+    "github"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "document:.tfa/prompts/pr.md",
+   "target": "document:.tfa/prompts/is.md",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:.tfa/prompts/wr.md",
+   "target": "document:.tfa/prompts/pr.md",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:.tfa/prompts/wr.md",
+   "target": "document:.tfa/prompts/is.md",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

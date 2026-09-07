@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/session-backends/sqlite-node/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/session-backends/sqlite-node/CHANGELOG.md",
+      "summary": "sqlite-node 后端变更日志：包重命名、以 v4 lane-based SessionRepo 契约替换旧 SQLite schema，并新增有界 active-branch 查询、持久操作记录、全局事实、共享序列与 fenced writer 租约。",
+      "tags": [
+        "documentation",
+        "changelog",
+        "sqlite",
+        "session-backend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/session-backends/sqlite-node/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/session-backends/sqlite-node/README.md",
+      "summary": "介绍 sqlite-node session 后端：node:sqlite 适配器、SqliteSessionRepository、迁移、物化视图与可选 FTS 搜索的用法示例。",
+      "tags": [
+        "documentation",
+        "sqlite",
+        "session-backend",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/session-backends/sqlite-node/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/session-backends/sqlite-node/package.json",
+      "summary": "sqlite-node 包元数据：build 脚本在 tsgo 编译后复制 SQLite migrations，脚本含 clean/build/test/coverage，依赖 tfa-ai 与 tfa-agent-core。",
+      "tags": [
+        "configuration",
+        "sqlite",
+        "build-system",
+        "npm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/session-backends/sqlite-node/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/session-backends/sqlite-node/tsconfig.build.json",
+      "summary": "sqlite-node 构建用 tsconfig：继承根 tsconfig.base，rootDir=src、outDir=dist，生成声明文件并编译 src 源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/session-backends/sqlite-node/README.md",
+      "target": "file:packages/session-backends/sqlite-node/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/session-backends/sqlite-node/CHANGELOG.md",
+      "target": "document:packages/session-backends/sqlite-node/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/session-backends/sqlite-node/package.json",
+      "target": "config:packages/session-backends/sqlite-node/tsconfig.build.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/session-backends/sqlite-node/tsconfig.build.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/session-backends/sqlite-node/tsconfig.build.json",
+      "target": "file:packages/session-backends/sqlite-node/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/session-backends/sqlite-node/package.json",
+      "target": "config:packages/ai/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/session-backends/sqlite-node/package.json",
+      "target": "config:packages/agent/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

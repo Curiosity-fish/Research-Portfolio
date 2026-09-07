@@ -1,0 +1,137 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览与目标",
+    "description": "README 是进入 TFA Agent Harness 的第一站：这是一个基于 npm workspaces 的 monorepo，核心是可自行扩展的 coding agent。它列出五个核心包——tfa-coding-agent、tfa-agent-core、tfa-ai、tfa-tui 与 tfa-telemetry——并说明权限模型、容器化方案、开发命令与供应链加固策略。读完这一页即可理解整个仓库的分层结构，为后续深入代码奠定基础。",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "CLI 入口与启动链路",
+    "description": "启动链从 cli.ts 开始：解析命令行参数后构建运行时并进入交互/非交互模式。main.ts 作为 CLI 主入口，负责加载配置与设置、创建 SessionManager、处理 fork 与会话选择，最后驱动主循环；config.ts 则集中处理安装方法检测、包目录与配置路径解析。这三个文件回答了“用户运行 tfa 命令后发生了什么”这个最基本的问题，也是依赖分析中距离入口最近的一层。",
+    "nodeIds": [
+      "file:packages/coding-agent/src/cli.ts",
+      "file:packages/coding-agent/src/main.ts",
+      "file:packages/coding-agent/src/config.ts"
+    ],
+    "languageLesson": "TypeScript 常用“薄入口 + 业务委托”组织 CLI：cli.ts 只做参数解析与引导，真正逻辑放在 main.ts 与被注入的 service 中，便于测试与复用。"
+  },
+  {
+    "order": 3,
+    "title": "SDK 公共 API 与 monorepo",
+    "description": "承接启动链路，这一步看 coding-agent 的对外契约：src/index.ts 是 SDK 统一出口（barrel），重新导出类型、工具函数、事件系统、扩展运行时与模型注册等全部公共 API，fan-in 达 130，是扩展与示例的主要依赖点。根 package.json 定义 npm workspaces 与 build/test/check/release 脚本，说明 monorepo 如何组织包边界；sdk.md 面向第三方开发者解释如何以库的形式集成 agent。",
+    "nodeIds": [
+      "file:packages/coding-agent/src/index.ts",
+      "config:package.json",
+      "document:packages/coding-agent/docs/sdk.md"
+    ],
+    "languageLesson": "TypeScript barrel 文件用 `export * from './...'` 仅做 re-export 而不含实现，既收敛公共 API 表面，也让内部模块可自由重构而不破坏外部契约。"
+  },
+  {
+    "order": 4,
+    "title": "核心 Agent 运行时",
+    "description": "这一步进入 agent-runtime 层：agent 包（tfa-agent-core）是纯粹的运行时，负责 tool calling、会话状态管理与遥测，不依赖任何 UI。coding-agent 侧的 agent-session-runtime.ts 在 AgentSession 之上封装会话创建与服务装配，session-manager.ts 则实现会话文件的读写、迁移、列表与树遍历。agent/README.md 用 AgentMessage 与 LLM Message 的对比解释消息流与事件流，是理解“agent 如何思考与行动”的钥匙。",
+    "nodeIds": [
+      "file:packages/agent/src/index.ts",
+      "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+      "file:packages/coding-agent/src/core/session-manager.ts",
+      "document:packages/agent/README.md"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "事件总线与系统提示词",
+    "description": "Agent 运行时的两个关键机制：event-bus.ts 提供轻量的事件订阅/发布，让模块间解耦通信；system-prompt.ts 则根据配置与工具列表动态构建发送给 LLM 的系统提示词，整合身份说明、能力描述与工具使用规范。二者共同决定 agent 会话的“神经传导”与行为约束，是理解自可扩展 agent 内部协作的核心。",
+    "nodeIds": [
+      "file:packages/coding-agent/src/core/event-bus.ts",
+      "file:packages/coding-agent/src/core/system-prompt.ts"
+    ],
+    "languageLesson": "发布-订阅（pub/sub）模式通过事件总线解耦生产者与消费者；在 agent 场景中它让工具执行、UI 渲染与模型回调互不阻塞。"
+  },
+  {
+    "order": 6,
+    "title": "内置工具系统",
+    "description": "工具（tool）是 agent 与外部世界交互的接口：tools/index.ts 汇总导出 bash/edit/find/grep/ls/read/write 等内置工具的定义与工厂函数，提供按名称创建工具的统一入口。bash.ts 展示典型工具实现——spawn 子进程执行 shell 命令，支持超时、环境注入、输出累积与 abort 清理。model-registry.ts 则管理 provider 注册、模型列表与 API key 缓存，把“能做什么”与“用什么模型做”串起来。",
+    "nodeIds": [
+      "file:packages/coding-agent/src/core/tools/index.ts",
+      "file:packages/coding-agent/src/core/tools/bash.ts",
+      "file:packages/coding-agent/src/core/model-registry.ts"
+    ],
+    "languageLesson": "agent 工具通常用“定义（schema）+ 执行（handler）”二元结构：定义描述参数与副作用供 LLM 选择，handler 负责真实执行与结果渲染。"
+  },
+  {
+    "order": 7,
+    "title": "统一 AI Provider 层",
+    "description": "tfa-ai 是统一的多 provider LLM API：types.ts 定义消息、模型、provider options 与事件类型，是全仓库 fan-in 最高的文件（157），几乎所有上层都依赖它。models.ts 的 ModelsImpl 统一管理多 provider 的凭据、刷新、认证与流式/完整推理调用，index.ts 作为 barrel 汇总导出。ai/README.md 展示如何通过统一接口切换 OpenAI、Anthropic、Google 等 provider 而无需改动业务代码。",
+    "nodeIds": [
+      "file:packages/ai/src/index.ts",
+      "file:packages/ai/src/types.ts",
+      "file:packages/ai/src/models.ts",
+      "document:packages/ai/README.md"
+    ],
+    "languageLesson": "“统一抽象 + provider 适配器”是 LLM SDK 的经典模式：上层只面对统一 Message/Model 类型，差异被收敛到各 provider 的请求/流转换层。"
+  },
+  {
+    "order": 8,
+    "title": "Provider 实现与认证",
+    "description": "接着统一抽象看具体实现：compat.ts 是 provider 注册/解析的兼容层，提供统一 stream/complete 接口；providers/all.ts 汇总内置 provider 与模型数据。anthropic-messages.ts 展示单一 provider 的完整适配——请求构建、SSE 流解析、thinking/工具转换与缓存控制；oauth.ts 处理 OAuth 凭据、设备码与登录回调。model-catalog.ts 把嵌套模型定义展平为可查询目录，支撑模型解析与选择。",
+    "nodeIds": [
+      "file:packages/ai/src/compat.ts",
+      "file:packages/ai/src/providers/all.ts",
+      "file:packages/ai/src/api/anthropic-messages.ts",
+      "file:packages/ai/src/oauth.ts",
+      "file:packages/ai/src/model-catalog.ts"
+    ],
+    "languageLesson": "SSE 流式解析与工具调用转换是 provider 适配器的主要复杂度来源；统一流接口（stream/complete）让上层无需关心各厂商的传输细节。"
+  },
+  {
+    "order": 9,
+    "title": "TUI 终端界面",
+    "description": "TUI 层负责把 agent 会话变成可交互的终端体验：tui/src/index.ts 是 tfa-tui 库的总出口，导出组件、终端能力检测、图片渲染与键盘/颜色工具。interactive-mode.ts 是 coding agent 的交互模式主模块，负责渲染与全部用户交互（选择器、命令、扩展 UI），业务逻辑委托给 AgentSession；theme.ts 实现主题校验、颜色解析与终端背景检测。tui/README.md 介绍的差分渲染与可互换渲染器是这套 UI 的性能关键。",
+    "nodeIds": [
+      "file:packages/tui/src/index.ts",
+      "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+      "document:packages/tui/README.md"
+    ],
+    "languageLesson": "差分渲染（differential rendering）只重绘变化区域而非整帧刷新，是 TUI 在慢终端上保持流畅的核心技巧。"
+  },
+  {
+    "order": 10,
+    "title": "会话持久化与 SQLite",
+    "description": "数据层回答“agent 的记忆存在哪里”：sqlite-node 会话后端基于 node:sqlite，初始迁移定义 sessions、entries、lanes、records、facts 等 11 张表及配套索引，支撑会话树、分支、并行车道与 token 统计。sessions 主表通过 id 与 parent_session_id 组织会话树，metadata JSON 保存扩展字段。这是理解多版本会话格式与迁移（migration）策略的落点。",
+    "nodeIds": [
+      "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+      "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:sessions",
+      "file:packages/session-backends/sqlite-node/src/index.ts"
+    ],
+    "languageLesson": "SQL 迁移应有序且可重复应用：每份迁移文件递增变更 schema，让数据库与代码同步演进；JSON 列 + 外键的混合设计兼顾灵活性与关系查询。"
+  },
+  {
+    "order": 11,
+    "title": "协议、服务与客户端",
+    "description": "仓库把 RPC 链路拆成三个包：protocol 定义协议类型契约，server 提供服务器公共类型与工厂，client 提供客户端类与传输封装，三者共同支撑远程/嵌入式集成。shell 包（tfa-shell）提供 ShellSessionService、HTTP 服务与 FintechToolRegistry/MarketDataSource 金融扩展机制，是项目“金融科技”定位的具体体现。理解这套分层就能明白 agent 如何被其他进程或前端复用。",
+    "nodeIds": [
+      "file:packages/protocol/src/index.ts",
+      "file:packages/server/src/index.ts",
+      "file:packages/client/src/index.ts",
+      "file:packages/shell/src/index.ts"
+    ],
+    "languageLesson": "协议/服务/客户端三包分层让类型契约（protocol）成为唯一事实来源，server 与 client 可以独立演进、跨语言复用。"
+  },
+  {
+    "order": 12,
+    "title": "扩展生态与 CI/CD 交付",
+    "description": "收尾俯瞰“自可扩展”与“交付管线”：extensions.md 与 examples/extensions/tools.ts 演示如何用 defineTool 注册自定义工具、挂接事件与 UI；containerization.md 给出 Gondolin、Docker、OpenShell 三种隔离方案。ci.yml 在 push/PR 时执行构建+检查+测试，build-binaries.yml 则负责多平台二进制构建、npm 发布与 GitHub release 编排，体现供应链加固的落地。",
+    "nodeIds": [
+      "document:packages/coding-agent/docs/extensions.md",
+      "file:packages/coding-agent/examples/extensions/tools.ts",
+      "document:packages/coding-agent/docs/containerization.md",
+      "pipeline:.github/workflows/ci.yml",
+      "pipeline:.github/workflows/build-binaries.yml"
+    ],
+    "languageLesson": "GitHub Actions 用 `on` 定义触发、`jobs` 并行、`steps` 串行；发布流水线把“构建产物”与“发布动作”分离，便于审计与回滚。"
+  }
+]

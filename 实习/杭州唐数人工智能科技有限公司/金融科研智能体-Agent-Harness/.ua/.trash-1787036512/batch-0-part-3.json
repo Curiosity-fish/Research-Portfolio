@@ -1,0 +1,1616 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/experimental.ts",
+   "type": "file",
+   "name": "experimental.ts",
+   "filePath": "packages/coding-agent/src/core/experimental.ts",
+   "summary": "导出实验特性开关函数，供内部模块判断是否启用实验功能。",
+   "tags": [
+    "feature-flag",
+    "utility",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/experimental.ts:areExperimentalFeaturesEnabled",
+   "type": "function",
+   "name": "areExperimentalFeaturesEnabled",
+   "filePath": "packages/coding-agent/src/core/experimental.ts",
+   "lineRange": [
+    1,
+    3
+   ],
+   "summary": "返回是否启用实验特性。",
+   "tags": [
+    "feature-flag",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "type": "file",
+   "name": "ansi-to-html.ts",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "summary": "将 ANSI 转义序列转换为带内联样式的 HTML，支持 256 色、SGR 样式与逐行转换，用于导出会话 HTML。",
+   "tags": [
+    "ansi",
+    "html",
+    "export",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:color256ToHex",
+   "type": "function",
+   "name": "color256ToHex",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    37,
+    58
+   ],
+   "summary": "将 256 色 ANSI 索引映射为十六进制颜色。",
+   "tags": [
+    "ansi",
+    "color"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:createEmptyStyle",
+   "type": "function",
+   "name": "createEmptyStyle",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    81,
+    90
+   ],
+   "summary": "创建空的样式对象。",
+   "tags": [
+    "style",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:styleToInlineCSS",
+   "type": "function",
+   "name": "styleToInlineCSS",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    92,
+    101
+   ],
+   "summary": "将样式对象转为内联 CSS 字符串。",
+   "tags": [
+    "style",
+    "css"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:applySgrCode",
+   "type": "function",
+   "name": "applySgrCode",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    110,
+    190
+   ],
+   "summary": "应用 SGR 转义参数更新当前样式。",
+   "tags": [
+    "ansi",
+    "parsing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiToHtml",
+   "type": "function",
+   "name": "ansiToHtml",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    198,
+    250
+   ],
+   "summary": "将 ANSI 文本转换为带内联样式的 HTML。",
+   "tags": [
+    "ansi",
+    "html"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiLinesToHtml",
+   "type": "function",
+   "name": "ansiLinesToHtml",
+   "filePath": "packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "lineRange": [
+    256,
+    258
+   ],
+   "summary": "逐行转换 ANSI 文本为 HTML。",
+   "tags": [
+    "ansi",
+    "html"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "type": "file",
+   "name": "tool-renderer.ts",
+   "filePath": "packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "summary": "为导出 HTML 生成工具调用与结果的自定义渲染器，覆盖 read/bash/edit/write 等内置工具。",
+   "tags": [
+    "export",
+    "html",
+    "tool-renderer",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/export-html/tool-renderer.ts:createToolHtmlRenderer",
+   "type": "function",
+   "name": "createToolHtmlRenderer",
+   "filePath": "packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "lineRange": [
+    58,
+    172
+   ],
+   "summary": "创建工具调用/结果的自定义 HTML 渲染器工厂。",
+   "tags": [
+    "factory",
+    "html",
+    "tool"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "type": "file",
+   "name": "footer-data-provider.ts",
+   "filePath": "packages/coding-agent/src/core/footer-data-provider.ts",
+   "summary": "Footer 数据提供者：异步解析 git 分支、扩展状态与 provider 计数，通过事件订阅驱动 TUI footer 刷新。",
+   "tags": [
+    "footer",
+    "git",
+    "provider",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/footer-data-provider.ts:findGitPaths",
+   "type": "function",
+   "name": "findGitPaths",
+   "filePath": "packages/coding-agent/src/core/footer-data-provider.ts",
+   "lineRange": [
+    16,
+    48
+   ],
+   "summary": "向上查找 cwd 所属的 git 仓库根目录。",
+   "tags": [
+    "git",
+    "fs"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/footer-data-provider.ts:resolveBranchWithGitAsync",
+   "type": "function",
+   "name": "resolveBranchWithGitAsync",
+   "filePath": "packages/coding-agent/src/core/footer-data-provider.ts",
+   "lineRange": [
+    62,
+    81
+   ],
+   "summary": "异步解析当前 git 分支。",
+   "tags": [
+    "git",
+    "async"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/footer-data-provider.ts:FooterDataProvider",
+   "type": "class",
+   "name": "FooterDataProvider",
+   "filePath": "packages/coding-agent/src/core/footer-data-provider.ts",
+   "lineRange": [
+    99,
+    382
+   ],
+   "summary": "footer 数据提供者：git 分支、扩展状态与 provider 计数，支持事件订阅与刷新。",
+   "tags": [
+    "provider",
+    "git",
+    "footer"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "file",
+   "name": "keybindings.ts",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "summary": "键位绑定配置管理：加载、迁移 legacy 格式、排序并与默认配置合并，供 TUI 交互层使用。",
+   "tags": [
+    "keybindings",
+    "config",
+    "migration",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/keybindings.ts:toKeybindingsConfig",
+   "type": "function",
+   "name": "toKeybindingsConfig",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "lineRange": [
+    275,
+    287
+   ],
+   "summary": "将旧格式键位映射转换为新配置结构。",
+   "tags": [
+    "config",
+    "migration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/keybindings.ts:migrateKeybindingsConfig",
+   "type": "function",
+   "name": "migrateKeybindingsConfig",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "lineRange": [
+    289,
+    309
+   ],
+   "summary": "迁移 legacy 键位配置到新格式。",
+   "tags": [
+    "config",
+    "migration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/keybindings.ts:orderKeybindingsConfig",
+   "type": "function",
+   "name": "orderKeybindingsConfig",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "lineRange": [
+    311,
+    327
+   ],
+   "summary": "对键位配置按默认顺序排序。",
+   "tags": [
+    "config",
+    "ordering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/keybindings.ts:loadRawConfig",
+   "type": "function",
+   "name": "loadRawConfig",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "lineRange": [
+    329,
+    338
+   ],
+   "summary": "从文件加载原始键位配置 JSON。",
+   "tags": [
+    "fs",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/keybindings.ts:KeybindingsManager",
+   "type": "class",
+   "name": "KeybindingsManager",
+   "filePath": "packages/coding-agent/src/core/keybindings.ts",
+   "lineRange": [
+    340,
+    368
+   ],
+   "summary": "键位管理器：加载、重载并合并默认配置。",
+   "tags": [
+    "manager",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "type": "file",
+   "name": "client.ts",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "summary": "llama.cpp 推理服务器 HTTP 客户端：模型列表、加载/卸载、下载与进度监控，含请求与错误处理。",
+   "tags": [
+    "llama",
+    "client",
+    "http",
+    "model"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:linkSignal",
+   "type": "function",
+   "name": "linkSignal",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    57,
+    66
+   ],
+   "summary": "将中止信号链接到 AbortController。",
+   "tags": [
+    "abort",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:sleep",
+   "type": "function",
+   "name": "sleep",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    68,
+    84
+   ],
+   "summary": "可中止的延时函数。",
+   "tags": [
+    "utility",
+    "async"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:parseLoadProgress",
+   "type": "function",
+   "name": "parseLoadProgress",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    86,
+    106
+   ],
+   "summary": "解析模型加载进度数据。",
+   "tags": [
+    "parsing",
+    "progress"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:parseDownloadProgress",
+   "type": "function",
+   "name": "parseDownloadProgress",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    108,
+    127
+   ],
+   "summary": "解析模型下载进度数据。",
+   "tags": [
+    "parsing",
+    "progress"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:formatBytes",
+   "type": "function",
+   "name": "formatBytes",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    129,
+    139
+   ],
+   "summary": "格式化字节数为可读字符串。",
+   "tags": [
+    "format",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:normalizeLlamaServerUrl",
+   "type": "function",
+   "name": "normalizeLlamaServerUrl",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    141,
+    150
+   ],
+   "summary": "规范化 llama 服务器 URL。",
+   "tags": [
+    "url",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/client.ts:llamaInferenceUrl",
+   "type": "function",
+   "name": "llamaInferenceUrl",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    152,
+    154
+   ],
+   "summary": "拼接推理端点 URL。",
+   "tags": [
+    "url",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/extensions/llama/client.ts:LlamaClient",
+   "type": "class",
+   "name": "LlamaClient",
+   "filePath": "packages/coding-agent/src/extensions/llama/client.ts",
+   "lineRange": [
+    156,
+    332
+   ],
+   "summary": "llama.cpp HTTP 客户端：请求、模型列表/加载/卸载/下载与等待。",
+   "tags": [
+    "client",
+    "http"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "type": "file",
+   "name": "huggingface.ts",
+   "filePath": "packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "summary": "HuggingFace API 客户端：搜索与查看模型详情，自动从环境或配置解析 HF token。",
+   "tags": [
+    "huggingface",
+    "client",
+    "model-search",
+    "llm"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/huggingface.ts:findHuggingFaceToken",
+   "type": "function",
+   "name": "findHuggingFaceToken",
+   "filePath": "packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "lineRange": [
+    46,
+    61
+   ],
+   "summary": "从环境变量或配置文件查找 HF token。",
+   "tags": [
+    "auth",
+    "token"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/extensions/llama/huggingface.ts:HuggingFaceClient",
+   "type": "class",
+   "name": "HuggingFaceClient",
+   "filePath": "packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "lineRange": [
+    63,
+    158
+   ],
+   "summary": "HuggingFace API 客户端：搜索与模型详情。",
+   "tags": [
+    "client",
+    "http"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/src/extensions/llama/index.ts",
+   "summary": "Llama 扩展入口：注册 /llama 命令、自定义 provider 与 TUI，管理 llama.cpp 服务器和模型加载流程。",
+   "tags": [
+    "extension",
+    "llama",
+    "provider",
+    "entry-point"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/index.ts:configuredClient",
+   "type": "function",
+   "name": "configuredClient",
+   "filePath": "packages/coding-agent/src/extensions/llama/index.ts",
+   "lineRange": [
+    29,
+    40
+   ],
+   "summary": "按配置构建或复用 LlamaClient 实例。",
+   "tags": [
+    "factory",
+    "client"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/index.ts:llamaExtension",
+   "type": "function",
+   "name": "llamaExtension",
+   "filePath": "packages/coding-agent/src/extensions/llama/index.ts",
+   "lineRange": [
+    42,
+    228
+   ],
+   "summary": "扩展主函数：注册 /llama 命令、provider、UI 与模型管理逻辑。",
+   "tags": [
+    "extension",
+    "llama"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "type": "file",
+   "name": "provider.ts",
+   "filePath": "packages/coding-agent/src/extensions/llama/provider.ts",
+   "summary": "将 LlamaClient 封装为 AI provider，转换模型元数据并通过 Pi 模型协议提供推理能力。",
+   "tags": [
+    "provider",
+    "llama",
+    "model",
+    "adapter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/provider.ts:toPiModel",
+   "type": "function",
+   "name": "toPiModel",
+   "filePath": "packages/coding-agent/src/extensions/llama/provider.ts",
+   "lineRange": [
+    28,
+    51
+   ],
+   "summary": "将 llama 模型元数据转换为 Pi 模型对象。",
+   "tags": [
+    "model",
+    "adapter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/provider.ts:createLlamaProvider",
+   "type": "function",
+   "name": "createLlamaProvider",
+   "filePath": "packages/coding-agent/src/extensions/llama/provider.ts",
+   "lineRange": [
+    58,
+    150
+   ],
+   "summary": "创建基于 llama.cpp 的 AI provider。",
+   "tags": [
+    "provider",
+    "factory"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "type": "file",
+   "name": "ui.ts",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "summary": "Llama 扩展的 TUI 层：模型列表、HF 搜索、下载/加载进度条、状态与连接错误提示。",
+   "tags": [
+    "llama",
+    "tui",
+    "ui",
+    "progress"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/ui.ts:contextLabel",
+   "type": "function",
+   "name": "contextLabel",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    32,
+    42
+   ],
+   "summary": "生成模型上下文长度标签。",
+   "tags": [
+    "format",
+    "label"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/ui.ts:frame",
+   "type": "function",
+   "name": "frame",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    64,
+    75
+   ],
+   "summary": "构建带主题边框的文本帧。",
+   "tags": [
+    "tui",
+    "layout"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/ui.ts:showLlamaUi",
+   "type": "function",
+   "name": "showLlamaUi",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    480,
+    492
+   ],
+   "summary": "启动 Llama TUI 交互主流程。",
+   "tags": [
+    "tui",
+    "llama"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/extensions/llama/ui.ts:runWithProgress",
+   "type": "function",
+   "name": "runWithProgress",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    494,
+    542
+   ],
+   "summary": "运行带进度条反馈的异步任务。",
+   "tags": [
+    "progress",
+    "async"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/extensions/llama/ui.ts:HuggingFaceSearch",
+   "type": "class",
+   "name": "HuggingFaceSearch",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    96,
+    274
+   ],
+   "summary": "HF 模型搜索框：输入过滤、调度搜索与结果展示。",
+   "tags": [
+    "search",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/extensions/llama/ui.ts:LlamaView",
+   "type": "class",
+   "name": "LlamaView",
+   "filePath": "packages/coding-agent/src/extensions/llama/ui.ts",
+   "lineRange": [
+    276,
+    478
+   ],
+   "summary": "Llama 模型管理主视图：列表、选择、下载与状态展示。",
+   "tags": [
+    "view",
+    "llama"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/migrations.ts",
+   "type": "file",
+   "name": "migrations.ts",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "summary": "配置与数据迁移：将旧版 auth/sessions/commands/tools/扩展目录迁移到新布局，并输出弃用警告。",
+   "tags": [
+    "migration",
+    "config",
+    "upgrade",
+    "cli"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateAuthToAuthJson",
+   "type": "function",
+   "name": "migrateAuthToAuthJson",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    21,
+    73
+   ],
+   "summary": "将旧 auth.json 凭据迁移到新格式。",
+   "tags": [
+    "migration",
+    "auth"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateSessionsFromAgentRoot",
+   "type": "function",
+   "name": "migrateSessionsFromAgentRoot",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    84,
+    131
+   ],
+   "summary": "将会话目录从 agent 根目录迁移到新位置。",
+   "tags": [
+    "migration",
+    "session"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateCommandsToPrompts",
+   "type": "function",
+   "name": "migrateCommandsToPrompts",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    137,
+    155
+   ],
+   "summary": "将自定义命令目录迁移为 prompts 目录。",
+   "tags": [
+    "migration",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateKeybindingsConfigFile",
+   "type": "function",
+   "name": "migrateKeybindingsConfigFile",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    157,
+    172
+   ],
+   "summary": "迁移键位配置文件到新位置/格式。",
+   "tags": [
+    "migration",
+    "keybindings"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateToolsToBin",
+   "type": "function",
+   "name": "migrateToolsToBin",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    177,
+    216
+   ],
+   "summary": "将工具脚本迁移到 bin 目录。",
+   "tags": [
+    "migration",
+    "tools"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:checkDeprecatedExtensionDirs",
+   "type": "function",
+   "name": "checkDeprecatedExtensionDirs",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    222,
+    252
+   ],
+   "summary": "检查并报告废弃的扩展目录。",
+   "tags": [
+    "migration",
+    "extension"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:migrateExtensionSystem",
+   "type": "function",
+   "name": "migrateExtensionSystem",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    257,
+    272
+   ],
+   "summary": "执行扩展系统相关迁移。",
+   "tags": [
+    "migration",
+    "extension"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:showDeprecationWarnings",
+   "type": "function",
+   "name": "showDeprecationWarnings",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    277,
+    298
+   ],
+   "summary": "汇总并展示弃用警告。",
+   "tags": [
+    "warning",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/migrations.ts:runMigrations",
+   "type": "function",
+   "name": "runMigrations",
+   "filePath": "packages/coding-agent/src/migrations.ts",
+   "lineRange": [
+    305,
+    315
+   ],
+   "summary": "依次执行全部迁移并输出警告。",
+   "tags": [
+    "migration",
+    "entry-point"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/experimental.ts",
+   "target": "function:packages/coding-agent/src/core/experimental.ts:areExperimentalFeaturesEnabled",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/experimental.ts",
+   "target": "function:packages/coding-agent/src/core/experimental.ts:areExperimentalFeaturesEnabled",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:color256ToHex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:createEmptyStyle",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:styleToInlineCSS",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:applySgrCode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiToHtml",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiToHtml",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiLinesToHtml",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/ansi-to-html.ts:ansiLinesToHtml",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/tool-renderer.ts:createToolHtmlRenderer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "function:packages/coding-agent/src/core/export-html/tool-renderer.ts:createToolHtmlRenderer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "function:packages/coding-agent/src/core/footer-data-provider.ts:findGitPaths",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "function:packages/coding-agent/src/core/footer-data-provider.ts:findGitPaths",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "function:packages/coding-agent/src/core/footer-data-provider.ts:resolveBranchWithGitAsync",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "class:packages/coding-agent/src/core/footer-data-provider.ts:FooterDataProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "class:packages/coding-agent/src/core/footer-data-provider.ts:FooterDataProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "file:packages/coding-agent/src/utils/fs-watch.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "function:packages/coding-agent/src/core/keybindings.ts:toKeybindingsConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "function:packages/coding-agent/src/core/keybindings.ts:migrateKeybindingsConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "function:packages/coding-agent/src/core/keybindings.ts:migrateKeybindingsConfig",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "function:packages/coding-agent/src/core/keybindings.ts:orderKeybindingsConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "function:packages/coding-agent/src/core/keybindings.ts:loadRawConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "class:packages/coding-agent/src/core/keybindings.ts:KeybindingsManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "class:packages/coding-agent/src/core/keybindings.ts:KeybindingsManager",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:linkSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:sleep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:parseLoadProgress",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:parseDownloadProgress",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:formatBytes",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:formatBytes",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:normalizeLlamaServerUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:normalizeLlamaServerUrl",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:llamaInferenceUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/client.ts:llamaInferenceUrl",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/client.ts:LlamaClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/client.ts:LlamaClient",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/huggingface.ts:findHuggingFaceToken",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/huggingface.ts:findHuggingFaceToken",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/huggingface.ts:HuggingFaceClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/huggingface.ts:HuggingFaceClient",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/index.ts:configuredClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/index.ts:llamaExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/index.ts:llamaExtension",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/provider.ts:toPiModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/provider.ts:createLlamaProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/provider.ts:createLlamaProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:contextLabel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:frame",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:showLlamaUi",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:showLlamaUi",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:runWithProgress",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "function:packages/coding-agent/src/extensions/llama/ui.ts:runWithProgress",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/ui.ts:HuggingFaceSearch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "class:packages/coding-agent/src/extensions/llama/ui.ts:LlamaView",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/ui.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateAuthToAuthJson",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateAuthToAuthJson",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateSessionsFromAgentRoot",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateSessionsFromAgentRoot",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateCommandsToPrompts",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateKeybindingsConfigFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateToolsToBin",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:checkDeprecatedExtensionDirs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:migrateExtensionSystem",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:showDeprecationWarnings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:showDeprecationWarnings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:runMigrations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "function:packages/coding-agent/src/migrations.ts:runMigrations",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/experimental.ts",
+   "target": "file:packages/coding-agent/test/experimental.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "target": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "target": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "file:packages/coding-agent/test/footer-data-provider.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "target": "file:packages/coding-agent/test/footer-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "target": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "target": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "target": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "target": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,818 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "type": "file",
+   "name": "overlay-non-capturing.test.ts",
+   "filePath": "packages/tui/test/overlay-non-capturing.test.ts",
+   "summary": "Overlay 非捕获输入模式（事件穿透）的测试。",
+   "tags": [
+    "test",
+    "overlay",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/test/overlay-non-capturing.test.ts:StaticOverlay",
+   "type": "class",
+   "name": "StaticOverlay",
+   "filePath": "packages/tui/test/overlay-non-capturing.test.ts",
+   "summary": "测试用静态 overlay 组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    8,
+    20
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/overlay-non-capturing.test.ts:EmptyContent",
+   "type": "class",
+   "name": "EmptyContent",
+   "filePath": "packages/tui/test/overlay-non-capturing.test.ts",
+   "summary": "测试用空内容组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    27
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/overlay-non-capturing.test.ts:FocusableOverlay",
+   "type": "class",
+   "name": "FocusableOverlay",
+   "filePath": "packages/tui/test/overlay-non-capturing.test.ts",
+   "summary": "测试用可聚焦 overlay 组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    29,
+    47
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/regression-regional-indicator-width.test.ts",
+   "type": "file",
+   "name": "regression-regional-indicator-width.test.ts",
+   "filePath": "packages/tui/test/regression-regional-indicator-width.test.ts",
+   "summary": "地区指示符（国旗 emoji）宽度的回归测试。",
+   "tags": [
+    "test",
+    "width",
+    "regression"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/test/settings-list.test.ts",
+   "type": "file",
+   "name": "settings-list.test.ts",
+   "filePath": "packages/tui/test/settings-list.test.ts",
+   "summary": "SettingsList 组件行为的测试。",
+   "tags": [
+    "test",
+    "settings-list"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/test/tab-width.test.ts",
+   "type": "file",
+   "name": "tab-width.test.ts",
+   "filePath": "packages/tui/test/tab-width.test.ts",
+   "summary": "Tab 宽度渲染的测试。",
+   "tags": [
+    "test",
+    "tab-width"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/tab-width.test.ts:FullViewportContent",
+   "type": "class",
+   "name": "FullViewportContent",
+   "filePath": "packages/tui/test/tab-width.test.ts",
+   "summary": "测试用全视口内容组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    8,
+    14
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/tab-width.test.ts:CapturingVirtualTerminal",
+   "type": "class",
+   "name": "CapturingVirtualTerminal",
+   "filePath": "packages/tui/test/tab-width.test.ts",
+   "summary": "测试用捕获输出虚拟终端。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    16,
+    27
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/tab-width.test.ts:TabStatusOverlay",
+   "type": "class",
+   "name": "TabStatusOverlay",
+   "filePath": "packages/tui/test/tab-width.test.ts",
+   "summary": "测试用 tab 状态 overlay 组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    29,
+    35
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/terminal.test.ts",
+   "type": "file",
+   "name": "terminal.test.ts",
+   "filePath": "packages/tui/test/terminal.test.ts",
+   "summary": "ProcessTerminal 行为的测试。",
+   "tags": [
+    "test",
+    "terminal",
+    "process"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/tui/test/truncate-to-width.test.ts",
+   "type": "file",
+   "name": "truncate-to-width.test.ts",
+   "filePath": "packages/tui/test/truncate-to-width.test.ts",
+   "summary": "文本按宽度截断的测试。",
+   "tags": [
+    "test",
+    "truncation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "file",
+   "name": "tui-alt-screen.test.ts",
+   "filePath": "packages/tui/test/tui-alt-screen.test.ts",
+   "summary": "TuiAltScreen 备用屏幕渲染行为的测试。",
+   "tags": [
+    "test",
+    "alt-screen"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/test/tui-alt-screen.test.ts:RecordingTerminal",
+   "type": "class",
+   "name": "RecordingTerminal",
+   "filePath": "packages/tui/test/tui-alt-screen.test.ts",
+   "summary": "测试用记录输出终端。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    20,
+    37
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "type": "file",
+   "name": "tui-cell-size-input.test.ts",
+   "filePath": "packages/tui/test/tui-cell-size-input.test.ts",
+   "summary": "单元格尺寸输入（图片）处理的测试。",
+   "tags": [
+    "test",
+    "cell-size"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/tui-cell-size-input.test.ts:InputRecorder",
+   "type": "class",
+   "name": "InputRecorder",
+   "filePath": "packages/tui/test/tui-cell-size-input.test.ts",
+   "summary": "测试用输入记录器。",
+   "tags": [
+    "class",
+    "component",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    8,
+    20
+   ]
+  },
+  {
+   "id": "function:packages/tui/test/tui-cell-size-input.test.ts:withImageTerminal",
+   "type": "function",
+   "name": "withImageTerminal",
+   "filePath": "packages/tui/test/tui-cell-size-input.test.ts",
+   "summary": "函数 withImageTerminal：实现其核心逻辑，参数：fn。",
+   "tags": [
+    "function",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    43
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "type": "file",
+   "name": "viewport-overwrite-repro.ts",
+   "filePath": "packages/tui/test/viewport-overwrite-repro.ts",
+   "summary": "视口覆盖问题的重现脚本（流式输出覆盖 bug 复现）。",
+   "tags": [
+    "repro",
+    "script",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/viewport-overwrite-repro.ts:Lines",
+   "type": "class",
+   "name": "Lines",
+   "filePath": "packages/tui/test/viewport-overwrite-repro.ts",
+   "summary": "重现脚本用行容器组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    27,
+    46
+   ]
+  },
+  {
+   "id": "function:packages/tui/test/viewport-overwrite-repro.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/tui/test/viewport-overwrite-repro.ts",
+   "summary": "函数 main：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    56,
+    96
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "file",
+   "name": "virtual-terminal.ts",
+   "filePath": "packages/tui/test/virtual-terminal.ts",
+   "summary": "测试用虚拟终端：捕获输出、跟踪光标、行状态与样式。",
+   "tags": [
+    "test-util",
+    "virtual-terminal"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/virtual-terminal.ts:VirtualTerminal",
+   "type": "class",
+   "name": "VirtualTerminal",
+   "filePath": "packages/tui/test/virtual-terminal.ts",
+   "summary": "测试用虚拟终端：捕获输出并跟踪光标/样式。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    11,
+    218
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/word-navigation.test.ts",
+   "type": "file",
+   "name": "word-navigation.test.ts",
+   "filePath": "packages/tui/test/word-navigation.test.ts",
+   "summary": "单词导航工具的测试。",
+   "tags": [
+    "test",
+    "navigation"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "class:packages/tui/test/overlay-non-capturing.test.ts:StaticOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "class:packages/tui/test/overlay-non-capturing.test.ts:EmptyContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "class:packages/tui/test/overlay-non-capturing.test.ts:FocusableOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/overlay-non-capturing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/regression-regional-indicator-width.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/regression-regional-indicator-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/settings-list.test.ts",
+   "target": "file:packages/tui/src/components/settings-list.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/test/settings-list.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "class:packages/tui/test/tab-width.test.ts:FullViewportContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "class:packages/tui/test/tab-width.test.ts:CapturingVirtualTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "class:packages/tui/test/tab-width.test.ts:TabStatusOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tab-width.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/tab-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/tab-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/tab-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/terminal.test.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/terminal.test.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "file:packages/tui/test/terminal.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/terminal.ts",
+   "target": "file:packages/tui/test/terminal.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/truncate-to-width.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/truncate-to-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "class:packages/tui/test/tui-alt-screen.test.ts:RecordingTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/components/h-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/components/image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/components/scroll-view.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/components/text.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/components/v-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/src/tui-alt-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/v-stack.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/terminal-image.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/test/tui-alt-screen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "class:packages/tui/test/tui-cell-size-input.test.ts:InputRecorder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "function:packages/tui/test/tui-cell-size-input.test.ts:withImageTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/terminal-image.ts",
+   "target": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/tui-cell-size-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "target": "class:packages/tui/test/viewport-overwrite-repro.ts:Lines",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "target": "function:packages/tui/test/viewport-overwrite-repro.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/terminal.ts",
+   "target": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/viewport-overwrite-repro.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/virtual-terminal.ts",
+   "target": "class:packages/tui/test/virtual-terminal.ts:VirtualTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/virtual-terminal.ts",
+   "target": "class:packages/tui/test/virtual-terminal.ts:VirtualTerminal",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/test/virtual-terminal.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/terminal.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/word-navigation.test.ts",
+   "target": "file:packages/tui/src/word-navigation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/word-navigation.ts",
+   "target": "file:packages/tui/test/word-navigation.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/tui/test/tui-cell-size-input.test.ts:withImageTerminal",
+   "target": "function:packages/tui/src/terminal-image.ts:resetCapabilitiesCache",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/test/tui-cell-size-input.test.ts:withImageTerminal",
+   "target": "function:packages/tui/src/terminal-image.ts:resetCapabilitiesCache",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

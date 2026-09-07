@@ -1,0 +1,393 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/format-resume-command.test.ts",
+   "type": "file",
+   "name": "format-resume-command.test.ts",
+   "filePath": "packages/coding-agent/test/format-resume-command.test.ts",
+   "summary": "resume 命令格式化逻辑测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "unit"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/format-resume-command.test.ts:createSessionManager",
+   "type": "function",
+   "name": "createSessionManager",
+   "filePath": "packages/coding-agent/test/format-resume-command.test.ts",
+   "lineRange": [
+    36,
+    50
+   ],
+   "summary": "构造会话管理器测试桩。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/git-ssh-url.test.ts",
+   "type": "file",
+   "name": "git-ssh-url.test.ts",
+   "filePath": "packages/coding-agent/test/git-ssh-url.test.ts",
+   "summary": "git SSH URL 解析与安全校验测试。",
+   "tags": [
+    "test",
+    "git",
+    "url"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts",
+   "type": "file",
+   "name": "interactive-mode-anthropic-warning.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts",
+   "summary": "Anthropic 订阅认证 API key 警告逻辑测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "auth"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-clone-command.test.ts",
+   "type": "file",
+   "name": "interactive-mode-clone-command.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-clone-command.test.ts",
+   "summary": "interactive 模式 clone 命令处理测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "command"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-compaction.test.ts",
+   "type": "file",
+   "name": "interactive-mode-compaction.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-compaction.test.ts",
+   "summary": "interactive 模式会话压缩（compaction）流程测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "compaction"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-import-command.test.ts",
+   "type": "file",
+   "name": "interactive-mode-import-command.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-import-command.test.ts",
+   "summary": "interactive 模式 import 命令与文件导入测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "command"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-startup-input.test.ts",
+   "type": "file",
+   "name": "interactive-mode-startup-input.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-startup-input.test.ts",
+   "summary": "interactive 模式启动时预填输入测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "startup"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/interactive-mode-startup-input.test.ts:createSubmitContext",
+   "type": "function",
+   "name": "createSubmitContext",
+   "filePath": "packages/coding-agent/test/interactive-mode-startup-input.test.ts",
+   "lineRange": [
+    33,
+    49
+   ],
+   "summary": "构造启动输入提交上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-suspend.test.ts",
+   "type": "file",
+   "name": "interactive-mode-suspend.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-suspend.test.ts",
+   "summary": "interactive 模式 Ctrl+Z 挂起处理测试。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "suspend"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "type": "file",
+   "name": "interactive-tui.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-tui.test.ts",
+   "summary": "interactive TUI 集成测试：使用虚拟终端驱动完整交互。",
+   "tags": [
+    "test",
+    "tui",
+    "integration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/test/interactive-tui.test.ts:RecordingTerminal",
+   "type": "class",
+   "name": "RecordingTerminal",
+   "filePath": "packages/coding-agent/test/interactive-tui.test.ts",
+   "lineRange": [
+    19,
+    38
+   ],
+   "summary": "记录输出的终端测试类。",
+   "tags": [
+    "test",
+    "terminal"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "type": "file",
+   "name": "keybindings-migration.test.ts",
+   "filePath": "packages/coding-agent/test/keybindings-migration.test.ts",
+   "summary": "键位绑定配置迁移测试。",
+   "tags": [
+    "test",
+    "keybindings",
+    "migration"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "type": "file",
+   "name": "llama-extension.test.ts",
+   "filePath": "packages/coding-agent/test/llama-extension.test.ts",
+   "summary": "llama 扩展测试：以 HTTP mock 验证模型加载/下载与 provider 行为。",
+   "tags": [
+    "test",
+    "llama",
+    "extension"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/format-resume-command.test.ts",
+   "target": "function:packages/coding-agent/test/format-resume-command.test.ts:createSessionManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/format-resume-command.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/format-resume-command.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/format-resume-command.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/git-ssh-url.test.ts",
+   "target": "file:packages/coding-agent/src/utils/git.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-clone-command.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-compaction.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-import-command.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-import-command.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-startup-input.test.ts",
+   "target": "function:packages/coding-agent/test/interactive-mode-startup-input.test.ts:createSubmitContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-startup-input.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-suspend.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "target": "class:packages/coding-agent/test/interactive-tui.test.ts:RecordingTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/keybindings-migration.test.ts",
+   "target": "file:packages/coding-agent/src/migrations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/core/event-bus.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/huggingface.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/llama-extension.test.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

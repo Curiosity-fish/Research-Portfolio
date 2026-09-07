@@ -1,0 +1,1982 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/utils/deferred-tools.ts",
+   "type": "file",
+   "name": "deferred-tools.ts",
+   "filePath": "packages/ai/src/utils/deferred-tools.ts",
+   "summary": "将消息中的延迟加载工具拆分为启用列表与待加载列表的工具。",
+   "tags": [
+    "tool",
+    "deferred",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/deferred-tools.ts:splitDeferredTools",
+   "type": "function",
+   "name": "splitDeferredTools",
+   "filePath": "packages/ai/src/utils/deferred-tools.ts",
+   "lineRange": [
+    8,
+    39
+   ],
+   "summary": "从消息中拆分启用与延迟加载的工具。",
+   "tags": [
+    "tool",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "file",
+   "name": "diagnostics.ts",
+   "filePath": "packages/ai/src/utils/diagnostics.ts",
+   "summary": "诊断工具：格式化抛出值、提取错误并在 assistant 消息上追加诊断。",
+   "tags": [
+    "diagnostics",
+    "error",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/diagnostics.ts:formatThrownValue",
+   "type": "function",
+   "name": "formatThrownValue",
+   "filePath": "packages/ai/src/utils/diagnostics.ts",
+   "lineRange": [
+    15,
+    19
+   ],
+   "summary": "格式化异常值文本。",
+   "tags": [
+    "format",
+    "error"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/diagnostics.ts:extractDiagnosticError",
+   "type": "function",
+   "name": "extractDiagnosticError",
+   "filePath": "packages/ai/src/utils/diagnostics.ts",
+   "lineRange": [
+    21,
+    30
+   ],
+   "summary": "提取诊断错误详情。",
+   "tags": [
+    "error",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/diagnostics.ts:createAssistantMessageDiagnostic",
+   "type": "function",
+   "name": "createAssistantMessageDiagnostic",
+   "filePath": "packages/ai/src/utils/diagnostics.ts",
+   "lineRange": [
+    32,
+    38
+   ],
+   "summary": "创建 assistant 消息诊断。",
+   "tags": [
+    "diagnostics",
+    "factory"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/diagnostics.ts:appendAssistantMessageDiagnostic",
+   "type": "function",
+   "name": "appendAssistantMessageDiagnostic",
+   "filePath": "packages/ai/src/utils/diagnostics.ts",
+   "lineRange": [
+    40,
+    45
+   ],
+   "summary": "向消息追加诊断信息。",
+   "tags": [
+    "diagnostics",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/error-body.ts",
+   "type": "file",
+   "name": "error-body.ts",
+   "filePath": "packages/ai/src/utils/error-body.ts",
+   "summary": "Provider 错误归一化：从响应提取状态/正文并格式化为统一错误文本。",
+   "tags": [
+    "error",
+    "normalization",
+    "provider",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/error-body.ts:normalizeProviderError",
+   "type": "function",
+   "name": "normalizeProviderError",
+   "filePath": "packages/ai/src/utils/error-body.ts",
+   "lineRange": [
+    38,
+    54
+   ],
+   "summary": "归一化 provider 错误对象。",
+   "tags": [
+    "error",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/error-body.ts:formatProviderError",
+   "type": "function",
+   "name": "formatProviderError",
+   "filePath": "packages/ai/src/utils/error-body.ts",
+   "lineRange": [
+    128,
+    135
+   ],
+   "summary": "格式化归一化后的 provider 错误。",
+   "tags": [
+    "error",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/error-body.ts:truncateErrorText",
+   "type": "function",
+   "name": "truncateErrorText",
+   "filePath": "packages/ai/src/utils/error-body.ts",
+   "lineRange": [
+    137,
+    140
+   ],
+   "summary": "截断错误文本。",
+   "tags": [
+    "error",
+    "truncate"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/error-body.ts:safeJsonStringify",
+   "type": "function",
+   "name": "safeJsonStringify",
+   "filePath": "packages/ai/src/utils/error-body.ts",
+   "lineRange": [
+    142,
+    149
+   ],
+   "summary": "安全序列化对象。",
+   "tags": [
+    "serialization",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/estimate.ts",
+   "type": "file",
+   "name": "estimate.ts",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "summary": "上下文 token 估算工具：估算消息、工具与整个 context 的 token 用量。",
+   "tags": [
+    "estimate",
+    "tokens",
+    "context",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:calculateContextTokens",
+   "type": "function",
+   "name": "calculateContextTokens",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    17,
+    19
+   ],
+   "summary": "从用量计算上下文 token。",
+   "tags": [
+    "estimate",
+    "usage"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:estimateTextTokens",
+   "type": "function",
+   "name": "estimateTextTokens",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    37,
+    39
+   ],
+   "summary": "估算文本 token 数。",
+   "tags": [
+    "estimate",
+    "text"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:estimateTextAndImageContentTokens",
+   "type": "function",
+   "name": "estimateTextAndImageContentTokens",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    41,
+    43
+   ],
+   "summary": "估算文本与图像内容 token。",
+   "tags": [
+    "estimate",
+    "content"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:estimateMessageTokens",
+   "type": "function",
+   "name": "estimateMessageTokens",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    45,
+    61
+   ],
+   "summary": "估算单条消息 token。",
+   "tags": [
+    "estimate",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:getLastAssistantUsageInfo",
+   "type": "function",
+   "name": "getLastAssistantUsageInfo",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    63,
+    87
+   ],
+   "summary": "获取最后 assistant 消息的用量信息。",
+   "tags": [
+    "usage",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:estimateMessages",
+   "type": "function",
+   "name": "estimateMessages",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    89,
+    103
+   ],
+   "summary": "估算消息列表 token。",
+   "tags": [
+    "estimate",
+    "messages"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/estimate.ts:estimateContextTokens",
+   "type": "function",
+   "name": "estimateContextTokens",
+   "filePath": "packages/ai/src/utils/estimate.ts",
+   "lineRange": [
+    114,
+    143
+   ],
+   "summary": "估算整个 context 的 token 用量。",
+   "tags": [
+    "estimate",
+    "context"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "file",
+   "name": "event-stream.ts",
+   "filePath": "packages/ai/src/utils/event-stream.ts",
+   "summary": "事件流抽象：EventStream 基类与 assistant 消息事件流实现。",
+   "tags": [
+    "event-stream",
+    "streaming",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/event-stream.ts:createAssistantMessageEventStream",
+   "type": "function",
+   "name": "createAssistantMessageEventStream",
+   "filePath": "packages/ai/src/utils/event-stream.ts",
+   "lineRange": [
+    86,
+    88
+   ],
+   "summary": "创建 assistant 消息事件流。",
+   "tags": [
+    "factory",
+    "event-stream"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/ai/src/utils/event-stream.ts:EventStream",
+   "type": "class",
+   "name": "EventStream",
+   "filePath": "packages/ai/src/utils/event-stream.ts",
+   "lineRange": [
+    4,
+    67
+   ],
+   "summary": "事件流基类：push 事件并支持结束与结果收集。",
+   "tags": [
+    "event-stream",
+    "base"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/ai/src/utils/event-stream.ts:AssistantMessageEventStream",
+   "type": "class",
+   "name": "AssistantMessageEventStream",
+   "filePath": "packages/ai/src/utils/event-stream.ts",
+   "lineRange": [
+    69,
+    83
+   ],
+   "summary": "assistant 消息事件流实现。",
+   "tags": [
+    "event-stream",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/hash.ts",
+   "type": "file",
+   "name": "hash.ts",
+   "filePath": "packages/ai/src/utils/hash.ts",
+   "summary": "字符串短哈希工具。",
+   "tags": [
+    "hash",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/hash.ts:shortHash",
+   "type": "function",
+   "name": "shortHash",
+   "filePath": "packages/ai/src/utils/hash.ts",
+   "lineRange": [
+    2,
+    13
+   ],
+   "summary": "生成字符串短哈希。",
+   "tags": [
+    "hash",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/headers.ts",
+   "type": "file",
+   "name": "headers.ts",
+   "filePath": "packages/ai/src/utils/headers.ts",
+   "summary": "请求头转换工具：将 Headers 对象转为纯记录。",
+   "tags": [
+    "headers",
+    "conversion",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/headers.ts:headersToRecord",
+   "type": "function",
+   "name": "headersToRecord",
+   "filePath": "packages/ai/src/utils/headers.ts",
+   "lineRange": [
+    3,
+    9
+   ],
+   "summary": "将 Headers 转换为记录。",
+   "tags": [
+    "headers",
+    "conversion"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/headers.ts:providerHeadersToRecord",
+   "type": "function",
+   "name": "providerHeadersToRecord",
+   "filePath": "packages/ai/src/utils/headers.ts",
+   "lineRange": [
+    11,
+    18
+   ],
+   "summary": "将 provider headers 转换为记录。",
+   "tags": [
+    "headers",
+    "conversion"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "file",
+   "name": "json-parse.ts",
+   "filePath": "packages/ai/src/utils/json-parse.ts",
+   "summary": "JSON 解析修复工具：修复损坏 JSON 并支持流式增量解析。",
+   "tags": [
+    "json",
+    "parsing",
+    "repair",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/json-parse.ts:escapeControlCharacter",
+   "type": "function",
+   "name": "escapeControlCharacter",
+   "filePath": "packages/ai/src/utils/json-parse.ts",
+   "lineRange": [
+    10,
+    25
+   ],
+   "summary": "转义 JSON 中的控制字符。",
+   "tags": [
+    "json",
+    "escaping"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/json-parse.ts:repairJson",
+   "type": "function",
+   "name": "repairJson",
+   "filePath": "packages/ai/src/utils/json-parse.ts",
+   "lineRange": [
+    32,
+    83
+   ],
+   "summary": "修复损坏的 JSON 字符串。",
+   "tags": [
+    "json",
+    "repair"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/json-parse.ts:parseJsonWithRepair",
+   "type": "function",
+   "name": "parseJsonWithRepair",
+   "filePath": "packages/ai/src/utils/json-parse.ts",
+   "lineRange": [
+    85,
+    95
+   ],
+   "summary": "解析 JSON，失败时自动修复。",
+   "tags": [
+    "json",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/json-parse.ts:parseStreamingJson",
+   "type": "function",
+   "name": "parseStreamingJson",
+   "filePath": "packages/ai/src/utils/json-parse.ts",
+   "lineRange": [
+    104,
+    124
+   ],
+   "summary": "解析流式部分 JSON。",
+   "tags": [
+    "json",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "type": "file",
+   "name": "node-http-proxy.ts",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "summary": "HTTP 代理解析：根据环境变量（http_proxy/no_proxy 等）为请求目标解析代理 URL。",
+   "tags": [
+    "proxy",
+    "http",
+    "env",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyEnv",
+   "type": "function",
+   "name": "getProxyEnv",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "lineRange": [
+    13,
+    23
+   ],
+   "summary": "读取代理相关环境变量。",
+   "tags": [
+    "proxy",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/node-http-proxy.ts:parseProxyTargetUrl",
+   "type": "function",
+   "name": "parseProxyTargetUrl",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "lineRange": [
+    25,
+    35
+   ],
+   "summary": "解析代理目标 URL。",
+   "tags": [
+    "proxy",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/node-http-proxy.ts:shouldProxyHostname",
+   "type": "function",
+   "name": "shouldProxyHostname",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "lineRange": [
+    37,
+    67
+   ],
+   "summary": "判断主机名是否应走代理（no_proxy 检查）。",
+   "tags": [
+    "proxy",
+    "detection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyForUrl",
+   "type": "function",
+   "name": "getProxyForUrl",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "lineRange": [
+    69,
+    87
+   ],
+   "summary": "为 URL 解析代理地址。",
+   "tags": [
+    "proxy",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/node-http-proxy.ts:resolveHttpProxyUrlForTarget",
+   "type": "function",
+   "name": "resolveHttpProxyUrlForTarget",
+   "filePath": "packages/ai/src/utils/node-http-proxy.ts",
+   "lineRange": [
+    92,
+    112
+   ],
+   "summary": "解析目标 URL 的 HTTP 代理并返回配置。",
+   "tags": [
+    "proxy",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/utils/overflow.ts",
+   "type": "file",
+   "name": "overflow.ts",
+   "filePath": "packages/ai/src/utils/overflow.ts",
+   "summary": "上下文溢出检测：判断消息是否导致上下文窗口溢出并识别可恢复长度。",
+   "tags": [
+    "overflow",
+    "context",
+    "detection",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/overflow.ts:isContextOverflow",
+   "type": "function",
+   "name": "isContextOverflow",
+   "filePath": "packages/ai/src/utils/overflow.ts",
+   "lineRange": [
+    134,
+    163
+   ],
+   "summary": "判断消息是否导致上下文溢出。",
+   "tags": [
+    "overflow",
+    "detection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/overflow.ts:isRecoverableLength",
+   "type": "function",
+   "name": "isRecoverableLength",
+   "filePath": "packages/ai/src/utils/overflow.ts",
+   "lineRange": [
+    171,
+    173
+   ],
+   "summary": "判断输出长度是否可恢复。",
+   "tags": [
+    "overflow",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/overflow.ts:getOverflowPatterns",
+   "type": "function",
+   "name": "getOverflowPatterns",
+   "filePath": "packages/ai/src/utils/overflow.ts",
+   "lineRange": [
+    178,
+    180
+   ],
+   "summary": "返回溢出检测模式。",
+   "tags": [
+    "overflow",
+    "patterns"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "file",
+   "name": "provider-env.ts",
+   "filePath": "packages/ai/src/utils/provider-env.ts",
+   "summary": "Provider 环境变量读取：兼容 Bun 沙箱环境变量的解析工具。",
+   "tags": [
+    "env",
+    "provider",
+    "bun",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-env.ts:getBunSandboxEnvValue",
+   "type": "function",
+   "name": "getBunSandboxEnvValue",
+   "filePath": "packages/ai/src/utils/provider-env.ts",
+   "lineRange": [
+    15,
+    39
+   ],
+   "summary": "读取 Bun 沙箱环境变量。",
+   "tags": [
+    "env",
+    "bun"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-env.ts:getProviderEnvValue",
+   "type": "function",
+   "name": "getProviderEnvValue",
+   "filePath": "packages/ai/src/utils/provider-env.ts",
+   "lineRange": [
+    45,
+    52
+   ],
+   "summary": "读取 provider 环境变量。",
+   "tags": [
+    "env",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "file",
+   "name": "provider-retry.ts",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "summary": "Provider 请求重试：判断可重试错误、计算退避延迟并以可中止睡眠重试。",
+   "tags": [
+    "retry",
+    "provider",
+    "backoff",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-retry.ts:isRetryableProviderError",
+   "type": "function",
+   "name": "isRetryableProviderError",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "lineRange": [
+    23,
+    35
+   ],
+   "summary": "判断错误是否可重试。",
+   "tags": [
+    "retry",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-retry.ts:validateServerRetryDelayMs",
+   "type": "function",
+   "name": "validateServerRetryDelayMs",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "lineRange": [
+    37,
+    49
+   ],
+   "summary": "校验服务端重试延迟。",
+   "tags": [
+    "retry",
+    "validation"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-retry.ts:getRetryDelayMs",
+   "type": "function",
+   "name": "getRetryDelayMs",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "lineRange": [
+    51,
+    67
+   ],
+   "summary": "计算退避延迟。",
+   "tags": [
+    "retry",
+    "backoff"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-retry.ts:abortableSleep",
+   "type": "function",
+   "name": "abortableSleep",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "lineRange": [
+    75,
+    95
+   ],
+   "summary": "可中止的延时函数。",
+   "tags": [
+    "async",
+    "abort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/provider-retry.ts:retryProviderRequest",
+   "type": "function",
+   "name": "retryProviderRequest",
+   "filePath": "packages/ai/src/utils/provider-retry.ts",
+   "lineRange": [
+    105,
+    125
+   ],
+   "summary": "带重试与退避的请求执行。",
+   "tags": [
+    "retry",
+    "provider"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "file",
+   "name": "sanitize-unicode.ts",
+   "filePath": "packages/ai/src/utils/sanitize-unicode.ts",
+   "summary": "清理 Unicode 代理对（surrogate）以修复损坏文本。",
+   "tags": [
+    "unicode",
+    "sanitize",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/sanitize-unicode.ts:sanitizeSurrogates",
+   "type": "function",
+   "name": "sanitizeSurrogates",
+   "filePath": "packages/ai/src/utils/sanitize-unicode.ts",
+   "lineRange": [
+    21,
+    25
+   ],
+   "summary": "清理孤立的 Unicode 代理对。",
+   "tags": [
+    "unicode",
+    "sanitize"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/text.ts",
+   "type": "file",
+   "name": "text.ts",
+   "filePath": "packages/ai/src/utils/text.ts",
+   "summary": "文本内容提取工具：将消息内容拼接为纯文本。",
+   "tags": [
+    "text",
+    "content",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/text.ts:contentText",
+   "type": "function",
+   "name": "contentText",
+   "filePath": "packages/ai/src/utils/text.ts",
+   "lineRange": [
+    6,
+    12
+   ],
+   "summary": "将内容块拼接为文本。",
+   "tags": [
+    "text",
+    "content"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/typebox-helpers.ts",
+   "type": "file",
+   "name": "typebox-helpers.ts",
+   "filePath": "packages/ai/src/utils/typebox-helpers.ts",
+   "summary": "TypeBox 辅助：StringEnum 工具函数用于构建字符串枚举 schema。",
+   "tags": [
+    "typebox",
+    "schema",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/typebox-helpers.ts:StringEnum",
+   "type": "function",
+   "name": "StringEnum",
+   "filePath": "packages/ai/src/utils/typebox-helpers.ts",
+   "lineRange": [
+    14,
+    24
+   ],
+   "summary": "构建字符串枚举 TypeBox schema。",
+   "tags": [
+    "typebox",
+    "schema"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/utils/uuid.ts",
+   "type": "file",
+   "name": "uuid.ts",
+   "filePath": "packages/ai/src/utils/uuid.ts",
+   "summary": "UUIDv7 生成器：基于时间戳与随机字节实现。",
+   "tags": [
+    "uuid",
+    "utility",
+    "id"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/uuid.ts:uuidv7",
+   "type": "function",
+   "name": "uuidv7",
+   "filePath": "packages/ai/src/utils/uuid.ts",
+   "lineRange": [
+    15,
+    48
+   ],
+   "summary": "生成 UUIDv7。",
+   "tags": [
+    "uuid",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/utils/validation.ts",
+   "type": "file",
+   "name": "validation.ts",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "summary": "工具调用参数校验：按 JSON Schema 类型强制转换并校验工具参数。",
+   "tags": [
+    "validation",
+    "json-schema",
+    "tool",
+    "coercion"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:matchesJsonType",
+   "type": "function",
+   "name": "matchesJsonType",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    29,
+    48
+   ],
+   "summary": "判断值是否匹配 JSON 类型。",
+   "tags": [
+    "validation",
+    "type"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:coercePrimitiveByType",
+   "type": "function",
+   "name": "coercePrimitiveByType",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    58,
+    130
+   ],
+   "summary": "按类型强制转换原始值。",
+   "tags": [
+    "coercion",
+    "validation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:applySchemaObjectCoercion",
+   "type": "function",
+   "name": "applySchemaObjectCoercion",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    132,
+    153
+   ],
+   "summary": "对对象应用 schema 强制转换。",
+   "tags": [
+    "coercion",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:applySchemaArrayCoercion",
+   "type": "function",
+   "name": "applySchemaArrayCoercion",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    155,
+    172
+   ],
+   "summary": "对数组应用 schema 强制转换。",
+   "tags": [
+    "coercion",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:coerceWithUnionSchema",
+   "type": "function",
+   "name": "coerceWithUnionSchema",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    174,
+    191
+   ],
+   "summary": "对联合 schema 进行强制转换。",
+   "tags": [
+    "coercion",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "type": "function",
+   "name": "coerceWithJsonSchema",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    193,
+    237
+   ],
+   "summary": "按 JSON Schema 递归强制转换值。",
+   "tags": [
+    "coercion",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:getValidator",
+   "type": "function",
+   "name": "getValidator",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    239,
+    248
+   ],
+   "summary": "获取 schema 校验器。",
+   "tags": [
+    "validation",
+    "factory"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:formatValidationPath",
+   "type": "function",
+   "name": "formatValidationPath",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    250,
+    261
+   ],
+   "summary": "格式化校验错误路径。",
+   "tags": [
+    "validation",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:validateToolCall",
+   "type": "function",
+   "name": "validateToolCall",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    270,
+    276
+   ],
+   "summary": "校验工具调用。",
+   "tags": [
+    "validation",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/validation.ts:validateToolArguments",
+   "type": "function",
+   "name": "validateToolArguments",
+   "filePath": "packages/ai/src/utils/validation.ts",
+   "lineRange": [
+    285,
+    317
+   ],
+   "summary": "校验并转换工具参数。",
+   "tags": [
+    "validation",
+    "tool"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/utils/deferred-tools.ts",
+   "target": "function:packages/ai/src/utils/deferred-tools.ts:splitDeferredTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/deferred-tools.ts",
+   "target": "function:packages/ai/src/utils/deferred-tools.ts:splitDeferredTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/deferred-tools.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:formatThrownValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:formatThrownValue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:extractDiagnosticError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:extractDiagnosticError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:createAssistantMessageDiagnostic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:createAssistantMessageDiagnostic",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:appendAssistantMessageDiagnostic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/diagnostics.ts",
+   "target": "function:packages/ai/src/utils/diagnostics.ts:appendAssistantMessageDiagnostic",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:normalizeProviderError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:normalizeProviderError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:formatProviderError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:formatProviderError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:truncateErrorText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:truncateErrorText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:safeJsonStringify",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "function:packages/ai/src/utils/error-body.ts:safeJsonStringify",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:calculateContextTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:calculateContextTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateTextTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateTextTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateTextAndImageContentTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateTextAndImageContentTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateMessageTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateMessageTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:getLastAssistantUsageInfo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateContextTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateContextTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "function:packages/ai/src/utils/event-stream.ts:createAssistantMessageEventStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "function:packages/ai/src/utils/event-stream.ts:createAssistantMessageEventStream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "class:packages/ai/src/utils/event-stream.ts:EventStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "class:packages/ai/src/utils/event-stream.ts:EventStream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "class:packages/ai/src/utils/event-stream.ts:AssistantMessageEventStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "class:packages/ai/src/utils/event-stream.ts:AssistantMessageEventStream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/hash.ts",
+   "target": "function:packages/ai/src/utils/hash.ts:shortHash",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/hash.ts",
+   "target": "function:packages/ai/src/utils/hash.ts:shortHash",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/headers.ts",
+   "target": "function:packages/ai/src/utils/headers.ts:headersToRecord",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/headers.ts",
+   "target": "function:packages/ai/src/utils/headers.ts:headersToRecord",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/headers.ts",
+   "target": "function:packages/ai/src/utils/headers.ts:providerHeadersToRecord",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/headers.ts",
+   "target": "function:packages/ai/src/utils/headers.ts:providerHeadersToRecord",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/headers.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:escapeControlCharacter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:repairJson",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:repairJson",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:parseJsonWithRepair",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:parseJsonWithRepair",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:parseStreamingJson",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/json-parse.ts",
+   "target": "function:packages/ai/src/utils/json-parse.ts:parseStreamingJson",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:parseProxyTargetUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:shouldProxyHostname",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyForUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:resolveHttpProxyUrlForTarget",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:resolveHttpProxyUrlForTarget",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:isContextOverflow",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:isContextOverflow",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:isRecoverableLength",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:isRecoverableLength",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:getOverflowPatterns",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "function:packages/ai/src/utils/overflow.ts:getOverflowPatterns",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-env.ts",
+   "target": "function:packages/ai/src/utils/provider-env.ts:getBunSandboxEnvValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-env.ts",
+   "target": "function:packages/ai/src/utils/provider-env.ts:getProviderEnvValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-env.ts",
+   "target": "function:packages/ai/src/utils/provider-env.ts:getProviderEnvValue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-env.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:isRetryableProviderError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:validateServerRetryDelayMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:getRetryDelayMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:abortableSleep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:retryProviderRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:retryProviderRequest",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "target": "function:packages/ai/src/utils/sanitize-unicode.ts:sanitizeSurrogates",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "target": "function:packages/ai/src/utils/sanitize-unicode.ts:sanitizeSurrogates",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/text.ts",
+   "target": "function:packages/ai/src/utils/text.ts:contentText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/text.ts",
+   "target": "function:packages/ai/src/utils/text.ts:contentText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/text.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/typebox-helpers.ts",
+   "target": "function:packages/ai/src/utils/typebox-helpers.ts:StringEnum",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/typebox-helpers.ts",
+   "target": "function:packages/ai/src/utils/typebox-helpers.ts:StringEnum",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/uuid.ts",
+   "target": "function:packages/ai/src/utils/uuid.ts:uuidv7",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/uuid.ts",
+   "target": "function:packages/ai/src/utils/uuid.ts:uuidv7",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:matchesJsonType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:coercePrimitiveByType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:applySchemaObjectCoercion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:applySchemaArrayCoercion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:coerceWithUnionSchema",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:getValidator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:formatValidationPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:validateToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:validateToolCall",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:validateToolArguments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "function:packages/ai/src/utils/validation.ts:validateToolArguments",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "target": "function:packages/ai/src/utils/validation.ts:coercePrimitiveByType",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "target": "function:packages/ai/src/utils/validation.ts:coerceWithUnionSchema",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "target": "function:packages/ai/src/utils/validation.ts:applySchemaObjectCoercion",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/validation.ts:coerceWithJsonSchema",
+   "target": "function:packages/ai/src/utils/validation.ts:applySchemaArrayCoercion",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/provider-retry.ts:retryProviderRequest",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:abortableSleep",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/provider-retry.ts:retryProviderRequest",
+   "target": "function:packages/ai/src/utils/provider-retry.ts:getRetryDelayMs",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/json-parse.ts:parseJsonWithRepair",
+   "target": "function:packages/ai/src/utils/json-parse.ts:repairJson",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/json-parse.ts:parseStreamingJson",
+   "target": "function:packages/ai/src/utils/json-parse.ts:repairJson",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyForUrl",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyEnv",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyForUrl",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:parseProxyTargetUrl",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/node-http-proxy.ts:getProxyForUrl",
+   "target": "function:packages/ai/src/utils/node-http-proxy.ts:shouldProxyHostname",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/estimate.ts:estimateContextTokens",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateMessages",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/utils/estimate.ts:estimateMessages",
+   "target": "function:packages/ai/src/utils/estimate.ts:estimateMessageTokens",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/deferred-tools.ts",
+   "target": "file:packages/ai/test/deferred-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/estimate.ts",
+   "target": "file:packages/ai/test/context-estimate.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "file:packages/ai/test/context-overflow.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/overflow.ts",
+   "target": "file:packages/ai/test/overflow.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/error-body.ts",
+   "target": "file:packages/ai/test/error-body.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/provider-retry.ts",
+   "target": "file:packages/ai/test/provider-retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/validation.ts",
+   "target": "file:packages/ai/test/validation.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "target": "file:packages/ai/test/node-http-proxy.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/uuid.ts",
+   "target": "file:packages/ai/test/uuid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "target": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

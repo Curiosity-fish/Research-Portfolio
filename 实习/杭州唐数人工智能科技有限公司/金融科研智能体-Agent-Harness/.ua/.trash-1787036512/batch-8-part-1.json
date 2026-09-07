@@ -1,0 +1,686 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/cli.ts",
+   "type": "file",
+   "name": "cli.ts",
+   "filePath": "packages/coding-agent/src/cli.ts",
+   "summary": "CLI 入口文件：引导解析参数、构建运行时并启动交互/非交互模式。",
+   "tags": [
+    "cli",
+    "entry-point",
+    "bootstrap"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "file",
+   "name": "args.ts",
+   "filePath": "packages/coding-agent/src/cli/args.ts",
+   "summary": "CLI 参数解析：定义全部命令行 flag、校验 thinking 级别并输出帮助文本。",
+   "tags": [
+    "cli",
+    "args",
+    "parsing",
+    "help"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/args.ts:isValidThinkingLevel",
+   "type": "function",
+   "name": "isValidThinkingLevel",
+   "filePath": "packages/coding-agent/src/cli/args.ts",
+   "lineRange": [
+    61,
+    63
+   ],
+   "summary": "校验 thinking 级别是否合法。",
+   "tags": [
+    "validation",
+    "thinking"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/args.ts:parseArgs",
+   "type": "function",
+   "name": "parseArgs",
+   "filePath": "packages/coding-agent/src/cli/args.ts",
+   "lineRange": [
+    65,
+    226
+   ],
+   "summary": "解析全部 CLI 参数并返回结构化选项。",
+   "tags": [
+    "parsing",
+    "cli"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/args.ts:printHelp",
+   "type": "function",
+   "name": "printHelp",
+   "filePath": "packages/coding-agent/src/cli/args.ts",
+   "lineRange": [
+    228,
+    418
+   ],
+   "summary": "输出 CLI 帮助文本。",
+   "tags": [
+    "cli",
+    "help"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "type": "file",
+   "name": "config-selector.ts",
+   "filePath": "packages/coding-agent/src/cli/config-selector.ts",
+   "summary": "CLI 配置选择器：交互式选择项目/全局配置范围。",
+   "tags": [
+    "cli",
+    "config",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/config-selector.ts:selectConfig",
+   "type": "function",
+   "name": "selectConfig",
+   "filePath": "packages/coding-agent/src/cli/config-selector.ts",
+   "lineRange": [
+    20,
+    56
+   ],
+   "summary": "交互式选择配置范围。",
+   "tags": [
+    "selector",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "type": "file",
+   "name": "credential-print.ts",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "summary": "CLI 凭据打印：解析打印命令、校验参数并从模型运行时解析凭据输出。",
+   "tags": [
+    "cli",
+    "credentials",
+    "print"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/credential-print.ts:isCredentialPrintHelp",
+   "type": "function",
+   "name": "isCredentialPrintHelp",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    18,
+    22
+   ],
+   "summary": "判断是否为凭据打印帮助请求。",
+   "tags": [
+    "cli",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/credential-print.ts:printCredentialPrintHelp",
+   "type": "function",
+   "name": "printCredentialPrintHelp",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    24,
+    30
+   ],
+   "summary": "打印凭据命令帮助。",
+   "tags": [
+    "cli",
+    "help"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/credential-print.ts:parseCredentialPrintCommand",
+   "type": "function",
+   "name": "parseCredentialPrintCommand",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    33,
+    64
+   ],
+   "summary": "解析凭据打印子命令。",
+   "tags": [
+    "parsing",
+    "credentials"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/credential-print.ts:validateCredentialPrintArgs",
+   "type": "function",
+   "name": "validateCredentialPrintArgs",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    66,
+    76
+   ],
+   "summary": "校验凭据打印参数。",
+   "tags": [
+    "validation",
+    "credentials"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/credential-print.ts:resolveCredentialForPrint",
+   "type": "function",
+   "name": "resolveCredentialForPrint",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    84,
+    151
+   ],
+   "summary": "解析并格式化要打印的凭据。",
+   "tags": [
+    "credentials",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/cli/credential-print.ts:CredentialPrintError",
+   "type": "class",
+   "name": "CredentialPrintError",
+   "filePath": "packages/coding-agent/src/cli/credential-print.ts",
+   "lineRange": [
+    16,
+    16
+   ],
+   "summary": "凭据打印错误类型。",
+   "tags": [
+    "error",
+    "class"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "type": "file",
+   "name": "file-processor.ts",
+   "filePath": "packages/coding-agent/src/cli/file-processor.ts",
+   "summary": "CLI 文件参数处理：读取传入文件内容与图像供初始消息使用。",
+   "tags": [
+    "cli",
+    "file",
+    "processing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/file-processor.ts:processFileArguments",
+   "type": "function",
+   "name": "processFileArguments",
+   "filePath": "packages/coding-agent/src/cli/file-processor.ts",
+   "lineRange": [
+    24,
+    87
+   ],
+   "summary": "处理文件参数：读取内容与图像。",
+   "tags": [
+    "file",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "type": "file",
+   "name": "initial-message.ts",
+   "filePath": "packages/coding-agent/src/cli/initial-message.ts",
+   "summary": "构建 CLI 初始用户消息：合并文件文本、图像与 stdin 内容。",
+   "tags": [
+    "cli",
+    "message",
+    "builder"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/initial-message.ts:buildInitialMessage",
+   "type": "function",
+   "name": "buildInitialMessage",
+   "filePath": "packages/coding-agent/src/cli/initial-message.ts",
+   "lineRange": [
+    20,
+    43
+   ],
+   "summary": "构建初始用户消息。",
+   "tags": [
+    "message",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/list-models.ts",
+   "type": "file",
+   "name": "list-models.ts",
+   "filePath": "packages/coding-agent/src/cli/list-models.ts",
+   "summary": "CLI 模型列表：格式化并列出可用模型，支持搜索过滤。",
+   "tags": [
+    "cli",
+    "models",
+    "list"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/list-models.ts:formatTokenCount",
+   "type": "function",
+   "name": "formatTokenCount",
+   "filePath": "packages/coding-agent/src/cli/list-models.ts",
+   "lineRange": [
+    14,
+    24
+   ],
+   "summary": "格式化 token 数量。",
+   "tags": [
+    "format",
+    "tokens"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/list-models.ts:listModels",
+   "type": "function",
+   "name": "listModels",
+   "filePath": "packages/coding-agent/src/cli/list-models.ts",
+   "lineRange": [
+    29,
+    115
+   ],
+   "summary": "列出模型并支持搜索。",
+   "tags": [
+    "models",
+    "cli"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/cli.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli.ts",
+   "target": "file:packages/coding-agent/src/main.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:isValidThinkingLevel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:isValidThinkingLevel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:parseArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:parseArgs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:printHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "function:packages/coding-agent/src/cli/args.ts:printHelp",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "function:packages/coding-agent/src/cli/config-selector.ts:selectConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "function:packages/coding-agent/src/cli/config-selector.ts:selectConfig",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:isCredentialPrintHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:isCredentialPrintHelp",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:printCredentialPrintHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:printCredentialPrintHelp",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:parseCredentialPrintCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:parseCredentialPrintCommand",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:validateCredentialPrintArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:validateCredentialPrintArgs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:resolveCredentialForPrint",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "function:packages/coding-agent/src/cli/credential-print.ts:resolveCredentialForPrint",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "class:packages/coding-agent/src/cli/credential-print.ts:CredentialPrintError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "class:packages/coding-agent/src/cli/credential-print.ts:CredentialPrintError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "function:packages/coding-agent/src/cli/file-processor.ts:processFileArguments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "function:packages/coding-agent/src/cli/file-processor.ts:processFileArguments",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/coding-agent/src/utils/image-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/coding-agent/src/utils/mime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "target": "function:packages/coding-agent/src/cli/initial-message.ts:buildInitialMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "target": "function:packages/coding-agent/src/cli/initial-message.ts:buildInitialMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "function:packages/coding-agent/src/cli/list-models.ts:formatTokenCount",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "function:packages/coding-agent/src/cli/list-models.ts:listModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "function:packages/coding-agent/src/cli/list-models.ts:listModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "file:packages/coding-agent/src/core/auth-guidance.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/list-models.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

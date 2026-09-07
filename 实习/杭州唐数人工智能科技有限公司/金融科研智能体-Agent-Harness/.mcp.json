@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "agentmemory": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "C:\\Program Files\\nodejs\\npx.cmd",
+        "-y",
+        "@agentmemory/mcp"
+      ],
+      "env": {
+        "AGENTMEMORY_URL": "http://localhost:3111",
+        "AGENTMEMORY_SECRET": "",
+        "AGENTMEMORY_TOOLS": "all"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# 本地开发配置（非 Docker 方式运行 go run ./cmd/server 时使用）
+# 数据库与 Redis 走 Docker 主 compose 映射到宿主机的端口
+server:
+  port: 8080
+  env: development
+  log_level: info
+
+database:
+  url: "postgres://postgres:postgres@localhost:15432/school_api_v1?sslmode=disable"
+
+redis:
+  url: "redis://localhost:16379/0"
+
+jwt:
+  secret: "change-me-in-production-min-16-chars"
+  expire_hours: 24
+
+encryption:
+  key: "Mi5fHSrERZlARSzsLm06gUuvKBFrVjQCvQ+HyDKN7wc="

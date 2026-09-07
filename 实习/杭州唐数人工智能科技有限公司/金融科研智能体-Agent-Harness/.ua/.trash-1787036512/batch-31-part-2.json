@@ -1,0 +1,1345 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/tui/src/autocomplete.ts",
+   "type": "file",
+   "name": "autocomplete.ts",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "组合式自动补全 provider：命令补全与基于 fd 的路径补全，支持引号、作用域与评分排序。",
+   "tags": [
+    "component",
+    "autocomplete",
+    "provider",
+    "fd"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/autocomplete.ts:CombinedAutocompleteProvider",
+   "type": "class",
+   "name": "CombinedAutocompleteProvider",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "组合命令与文件路径补全的 provider，支持 fd 查询、作用域与评分排序。",
+   "tags": [
+    "class",
+    "provider"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    273,
+    786
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:buildFdPathQuery",
+   "type": "function",
+   "name": "buildFdPathQuery",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "构造 fd 路径查询表达式。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    17,
+    43
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:findUnclosedQuoteStart",
+   "type": "function",
+   "name": "findUnclosedQuoteStart",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "函数 findUnclosedQuoteStart：查找UnclosedQuoteStart 相关逻辑，参数：text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    54,
+    68
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:extractQuotedPrefix",
+   "type": "function",
+   "name": "extractQuotedPrefix",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "函数 extractQuotedPrefix：提取QuotedPrefix 相关逻辑，参数：text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    74,
+    92
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:parsePathPrefix",
+   "type": "function",
+   "name": "parsePathPrefix",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "函数 parsePathPrefix：解析PathPrefix 相关逻辑，参数：prefix。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    94,
+    105
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:buildCompletionValue",
+   "type": "function",
+   "name": "buildCompletionValue",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "构建补全插入值（含引号/空格处理）。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    107,
+    121
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/autocomplete.ts:walkDirectoryWithFd",
+   "type": "function",
+   "name": "walkDirectoryWithFd",
+   "filePath": "packages/tui/src/autocomplete.ts",
+   "summary": "使用 fd 命令递归遍历目录并返回补全候选。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    124,
+    217
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/box.ts",
+   "type": "file",
+   "name": "box.ts",
+   "filePath": "packages/tui/src/components/box.ts",
+   "summary": "盒式布局容器组件 Box，支持边框、内边距与内容定位。",
+   "tags": [
+    "component",
+    "layout",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/box.ts:Box",
+   "type": "class",
+   "name": "Box",
+   "filePath": "packages/tui/src/components/box.ts",
+   "summary": "盒式布局容器组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    14,
+    137
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/editor.ts",
+   "type": "file",
+   "name": "editor.ts",
+   "filePath": "packages/tui/src/components/editor.ts",
+   "summary": "多行文本编辑器组件：语法高亮、行号、自动补全、多光标、包裹与按键处理。",
+   "tags": [
+    "component",
+    "editor",
+    "tui",
+    "text-editing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/components/editor.ts:Editor",
+   "type": "class",
+   "name": "Editor",
+   "filePath": "packages/tui/src/components/editor.ts",
+   "summary": "多行文本编辑器核心组件：文本状态、语法高亮、自动补全、包裹与按键处理。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    270,
+    2363
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/editor.ts:segmentWithMarkers",
+   "type": "function",
+   "name": "segmentWithMarkers",
+   "filePath": "packages/tui/src/components/editor.ts",
+   "summary": "函数 segmentWithMarkers：实现其核心逻辑，参数：text、baseSegmenter、validIds。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    39,
+    91
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "type": "function",
+   "name": "wordWrapLine",
+   "filePath": "packages/tui/src/components/editor.ts",
+   "summary": "函数 wordWrapLine：实现其核心逻辑，参数：line、maxWidth、preSegmented。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    114,
+    206
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/editor.ts:createScrollBorder",
+   "type": "function",
+   "name": "createScrollBorder",
+   "filePath": "packages/tui/src/components/editor.ts",
+   "summary": "函数 createScrollBorder：创建ScrollBorder 相关逻辑，参数：direction、hiddenLineCount、width。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    259,
+    268
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/h-stack.ts",
+   "type": "file",
+   "name": "h-stack.ts",
+   "filePath": "packages/tui/src/components/h-stack.ts",
+   "summary": "水平堆叠布局组件 HStack。",
+   "tags": [
+    "component",
+    "layout",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/components/h-stack.ts:HStack",
+   "type": "class",
+   "name": "HStack",
+   "filePath": "packages/tui/src/components/h-stack.ts",
+   "summary": "水平堆叠布局组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    5,
+    44
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/input.ts",
+   "type": "file",
+   "name": "input.ts",
+   "filePath": "packages/tui/src/components/input.ts",
+   "summary": "单行输入组件：文本编辑、历史导航、提示与按键绑定。",
+   "tags": [
+    "component",
+    "input",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/components/input.ts:Input",
+   "type": "class",
+   "name": "Input",
+   "filePath": "packages/tui/src/components/input.ts",
+   "summary": "单行输入组件：编辑、历史导航与提示。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    19,
+    447
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/scroll-view.ts",
+   "type": "file",
+   "name": "scroll-view.ts",
+   "filePath": "packages/tui/src/components/scroll-view.ts",
+   "summary": "滚动视图组件：内容裁剪、滚动条绘制与偏移管理。",
+   "tags": [
+    "component",
+    "scroll",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/scroll-view.ts:ScrollView",
+   "type": "class",
+   "name": "ScrollView",
+   "filePath": "packages/tui/src/components/scroll-view.ts",
+   "summary": "滚动视图组件：裁剪、滚动条与偏移。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    16,
+    195
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/settings-list.ts",
+   "type": "file",
+   "name": "settings-list.ts",
+   "filePath": "packages/tui/src/components/settings-list.ts",
+   "summary": "设置项列表组件：分组展示、切换与编辑设置值。",
+   "tags": [
+    "component",
+    "settings",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/components/settings-list.ts:SettingsList",
+   "type": "class",
+   "name": "SettingsList",
+   "filePath": "packages/tui/src/components/settings-list.ts",
+   "summary": "设置项列表组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    34,
+    249
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/stack.ts",
+   "type": "file",
+   "name": "stack.ts",
+   "filePath": "packages/tui/src/components/stack.ts",
+   "summary": "通用堆叠布局组件 Stack：尺寸规范化与剩余空间分配算法。",
+   "tags": [
+    "component",
+    "layout",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/stack.ts:Stack",
+   "type": "class",
+   "name": "Stack",
+   "filePath": "packages/tui/src/components/stack.ts",
+   "summary": "堆叠布局组件：尺寸分配算法。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    32,
+    80
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/stack.ts:visibleStackEntries",
+   "type": "function",
+   "name": "visibleStackEntries",
+   "filePath": "packages/tui/src/components/stack.ts",
+   "summary": "函数 visibleStackEntries：实现其核心逻辑，参数：entries、viewport。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    82,
+    87
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/stack.ts:distribute",
+   "type": "function",
+   "name": "distribute",
+   "filePath": "packages/tui/src/components/stack.ts",
+   "summary": "函数 distribute：实现其核心逻辑，参数：sizes、entries、amount、mode。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    95,
+    133
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/stack.ts:allocateStackSizes",
+   "type": "function",
+   "name": "allocateStackSizes",
+   "filePath": "packages/tui/src/components/stack.ts",
+   "summary": "函数 allocateStackSizes：分配StackSizes 相关逻辑，参数：entries、intrinsicSizes、availableSize、gap。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    135,
+    154
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/text.ts",
+   "type": "file",
+   "name": "text.ts",
+   "filePath": "packages/tui/src/components/text.ts",
+   "summary": "文本组件 Text：样式化文本渲染（颜色、加粗等）。",
+   "tags": [
+    "component",
+    "text",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/text.ts:Text",
+   "type": "class",
+   "name": "Text",
+   "filePath": "packages/tui/src/components/text.ts",
+   "summary": "样式化文本渲染组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    7,
+    106
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/v-stack.ts",
+   "type": "file",
+   "name": "v-stack.ts",
+   "filePath": "packages/tui/src/components/v-stack.ts",
+   "summary": "垂直堆叠布局组件 VStack。",
+   "tags": [
+    "component",
+    "layout",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/components/v-stack.ts:VStack",
+   "type": "class",
+   "name": "VStack",
+   "filePath": "packages/tui/src/components/v-stack.ts",
+   "summary": "垂直堆叠布局组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    3,
+    31
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/editor-component.ts",
+   "type": "file",
+   "name": "editor-component.ts",
+   "filePath": "packages/tui/src/editor-component.ts",
+   "summary": "Editor 组件与 TUI 屏幕层的集成封装，桥接编辑器与渲染循环。",
+   "tags": [
+    "component",
+    "editor",
+    "integration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/tui/src/fuzzy.ts",
+   "type": "file",
+   "name": "fuzzy.ts",
+   "filePath": "packages/tui/src/fuzzy.ts",
+   "summary": "fzf 风格模糊匹配：评分算法与按查询过滤列表。",
+   "tags": [
+    "utility",
+    "fuzzy",
+    "scoring"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/tui/src/fuzzy.ts:fuzzyMatch",
+   "type": "function",
+   "name": "fuzzyMatch",
+   "filePath": "packages/tui/src/fuzzy.ts",
+   "summary": "函数 fuzzyMatch：实现其核心逻辑，参数：query、text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    12,
+    93
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/fuzzy.ts:fuzzyFilter",
+   "type": "function",
+   "name": "fuzzyFilter",
+   "filePath": "packages/tui/src/fuzzy.ts",
+   "summary": "函数 fuzzyFilter：实现其核心逻辑，参数：items、query、getText。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    99,
+    137
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/latex.ts",
+   "type": "file",
+   "name": "latex.ts",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "LaTeX 解析与终端渲染：AST 布局、分数/根号/上下标等排版。",
+   "tags": [
+    "renderer",
+    "latex",
+    "layout",
+    "parser"
+   ],
+   "complexity": "complex",
+   "languageNotes": "以 AST + 布局节点方式渲染 LaTeX，支持分数、根号、上下标与多行拼接。"
+  },
+  {
+   "id": "class:packages/tui/src/latex.ts:LatexParser",
+   "type": "class",
+   "name": "LatexParser",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "LaTeX 解析器：构建 AST 并计算布局。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    682,
+    1196
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/latex.ts:replaceCharacters",
+   "type": "function",
+   "name": "replaceCharacters",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "函数 replaceCharacters：实现其核心逻辑，参数：value、replacements。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    503,
+    513
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/latex.ts:formatScript",
+   "type": "function",
+   "name": "formatScript",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "函数 formatScript：格式化Script 相关逻辑，参数：value、kind。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    515,
+    528
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/latex.ts:joinLayouts",
+   "type": "function",
+   "name": "joinLayouts",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "函数 joinLayouts：拼接Layouts 相关逻辑，参数：layouts。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    584,
+    607
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/latex.ts:renderLayout",
+   "type": "function",
+   "name": "renderLayout",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "函数 renderLayout：渲染Layout 相关逻辑，参数：source、nodes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    609,
+    680
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/latex.ts:renderLatex",
+   "type": "function",
+   "name": "renderLatex",
+   "filePath": "packages/tui/src/latex.ts",
+   "summary": "将 LaTeX 源码渲染为终端布局文本。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1207,
+    1225
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "class:packages/tui/src/autocomplete.ts:CombinedAutocompleteProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "class:packages/tui/src/autocomplete.ts:CombinedAutocompleteProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:buildFdPathQuery",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:findUnclosedQuoteStart",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:extractQuotedPrefix",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:parsePathPrefix",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:buildCompletionValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "function:packages/tui/src/autocomplete.ts:walkDirectoryWithFd",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "file:packages/tui/src/fuzzy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/box.ts",
+   "target": "class:packages/tui/src/components/box.ts:Box",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/box.ts",
+   "target": "class:packages/tui/src/components/box.ts:Box",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/box.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/box.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "class:packages/tui/src/components/editor.ts:Editor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "class:packages/tui/src/components/editor.ts:Editor",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "function:packages/tui/src/components/editor.ts:segmentWithMarkers",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "function:packages/tui/src/components/editor.ts:createScrollBorder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/autocomplete.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/components/select-list.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/kill-ring.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/undo-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/editor.ts",
+   "target": "file:packages/tui/src/word-navigation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "class:packages/tui/src/components/h-stack.ts:HStack",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "class:packages/tui/src/components/h-stack.ts:HStack",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "file:packages/tui/src/components/stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "class:packages/tui/src/components/input.ts:Input",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "class:packages/tui/src/components/input.ts:Input",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/kill-ring.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/undo-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/input.ts",
+   "target": "file:packages/tui/src/word-navigation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "class:packages/tui/src/components/scroll-view.ts:ScrollView",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "class:packages/tui/src/components/scroll-view.ts:ScrollView",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "file:packages/tui/src/layout-node.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "class:packages/tui/src/components/settings-list.ts:SettingsList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "class:packages/tui/src/components/settings-list.ts:SettingsList",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/src/components/input.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/src/fuzzy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/settings-list.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "class:packages/tui/src/components/stack.ts:Stack",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "class:packages/tui/src/components/stack.ts:Stack",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "function:packages/tui/src/components/stack.ts:visibleStackEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "function:packages/tui/src/components/stack.ts:visibleStackEntries",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "function:packages/tui/src/components/stack.ts:distribute",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "function:packages/tui/src/components/stack.ts:allocateStackSizes",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "function:packages/tui/src/components/stack.ts:allocateStackSizes",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "file:packages/tui/src/layout-node.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/stack.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "class:packages/tui/src/components/text.ts:Text",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "class:packages/tui/src/components/text.ts:Text",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/v-stack.ts",
+   "target": "class:packages/tui/src/components/v-stack.ts:VStack",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/v-stack.ts",
+   "target": "class:packages/tui/src/components/v-stack.ts:VStack",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/v-stack.ts",
+   "target": "file:packages/tui/src/components/stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/editor-component.ts",
+   "target": "file:packages/tui/src/autocomplete.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/editor-component.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/fuzzy.ts",
+   "target": "function:packages/tui/src/fuzzy.ts:fuzzyMatch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/fuzzy.ts",
+   "target": "function:packages/tui/src/fuzzy.ts:fuzzyMatch",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/fuzzy.ts",
+   "target": "function:packages/tui/src/fuzzy.ts:fuzzyFilter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/fuzzy.ts",
+   "target": "function:packages/tui/src/fuzzy.ts:fuzzyFilter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "class:packages/tui/src/latex.ts:LatexParser",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:replaceCharacters",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:formatScript",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:joinLayouts",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:renderLayout",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:renderLatex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "function:packages/tui/src/latex.ts:renderLatex",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/latex.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/tui.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/tui.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/tui.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:wordWrapLine",
+   "target": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:createScrollBorder",
+   "target": "function:packages/tui/src/tui.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:createScrollBorder",
+   "target": "function:packages/tui/src/tui.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/components/editor.ts:createScrollBorder",
+   "target": "function:packages/tui/src/utils.ts:sliceByColumn",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/tui/src/latex.ts:renderLayout",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

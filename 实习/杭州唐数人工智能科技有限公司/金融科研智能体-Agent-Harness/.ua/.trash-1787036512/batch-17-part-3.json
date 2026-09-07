@@ -1,0 +1,518 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "type": "file",
+   "name": "6162-extension-active-tools-next-turn.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "summary": "回归测试扩展活动工具在下一轮次中的保持。",
+   "tags": [
+    "test",
+    "extensions",
+    "tools",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "type": "file",
+   "name": "6324-branch-summary-ambient-auth.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "summary": "回归测试分支摘要的环境认证（ambient auth）行为。",
+   "tags": [
+    "test",
+    "branch-summary",
+    "auth",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "type": "file",
+   "name": "6363-agent-settled-event.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "summary": "回归测试 agent settled 事件的触发。",
+   "tags": [
+    "test",
+    "事件",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts:createWaitTool",
+   "type": "function",
+   "name": "createWaitTool",
+   "filePath": "packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "lineRange": [
+    7,
+    18
+   ],
+   "summary": "构造等待工具。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "type": "file",
+   "name": "6647-compaction-retries-transient-stream-drop.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "summary": "回归测试压缩时瞬时流中断的重试。",
+   "tags": [
+    "test",
+    "compaction",
+    "重试",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "type": "file",
+   "name": "6768-copilot-compaction-base-url.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "summary": "回归测试 Copilot 压缩 base URL 配置。",
+   "tags": [
+    "test",
+    "compaction",
+    "copilot",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts:seedCompactableSession",
+   "type": "function",
+   "name": "seedCompactableSession",
+   "filePath": "packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "lineRange": [
+    14,
+    39
+   ],
+   "summary": "准备可压缩的会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6904-dns-transport-retry.test.ts",
+   "type": "file",
+   "name": "6904-dns-transport-retry.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6904-dns-transport-retry.test.ts",
+   "summary": "回归测试 DNS 传输错误的重试。",
+   "tags": [
+    "test",
+    "dns",
+    "重试",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "type": "file",
+   "name": "7027-credential-refresh-hang.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "summary": "回归测试凭据刷新挂起时的恢复行为。",
+   "tags": [
+    "test",
+    "凭据刷新",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7150-rpc-prompt-during-compaction.test.ts",
+   "type": "file",
+   "name": "7150-rpc-prompt-during-compaction.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7150-rpc-prompt-during-compaction.test.ts",
+   "summary": "回归测试压缩过程中 RPC 提示的处理。",
+   "tags": [
+    "test",
+    "rpc",
+    "compaction",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "type": "file",
+   "name": "7253-manual-compact-during-response.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "summary": "回归测试响应期间手动压缩的行为。",
+   "tags": [
+    "test",
+    "compaction",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "type": "file",
+   "name": "7290-json-stream-linear.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "summary": "回归测试 JSON 流输出的线性性。",
+   "tags": [
+    "test",
+    "json",
+    "流式",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts:createWaitTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts:seedCompactableSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6904-dns-transport-retry.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6904-dns-transport-retry.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7150-rpc-prompt-during-compaction.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7150-rpc-prompt-during-compaction.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "target": "file:packages/coding-agent/src/modes/json-event.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6162-extension-active-tools-next-turn.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6324-branch-summary-ambient-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6363-agent-settled-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6647-compaction-retries-transient-stream-drop.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6768-copilot-compaction-base-url.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6904-dns-transport-retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7027-credential-refresh-hang.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7150-rpc-prompt-during-compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7253-manual-compact-during-response.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/json-event.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7290-json-stream-linear.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,981 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/client/test/sessions.test.ts",
+      "type": "file",
+      "name": "sessions.test.ts",
+      "filePath": "packages/client/test/sessions.test.ts",
+      "summary": "测试会话的创建、附加与订阅流程。",
+      "tags": [
+        "test",
+        "client",
+        "sessions",
+        "lifecycle"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/client/test/state.test.ts",
+      "type": "file",
+      "name": "state.test.ts",
+      "filePath": "packages/client/test/state.test.ts",
+      "summary": "测试客户端状态快照与事件应用逻辑。",
+      "tags": [
+        "test",
+        "client",
+        "state",
+        "snapshot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/client/test/support.ts",
+      "type": "file",
+      "name": "support.ts",
+      "filePath": "packages/client/test/support.ts",
+      "summary": "客户端测试辅助：内存字节服务器、会话快照、客户端创建与请求收集。",
+      "tags": [
+        "test",
+        "support",
+        "mock-server",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/client/test/support.ts:sessionSnapshot",
+      "type": "function",
+      "name": "sessionSnapshot",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        88,
+        105
+      ],
+      "summary": "构造测试用会话快照。",
+      "tags": [
+        "test",
+        "fixture",
+        "snapshot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/client/test/support.ts:createClient",
+      "type": "function",
+      "name": "createClient",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        107,
+        111
+      ],
+      "summary": "创建测试客户端实例。",
+      "tags": [
+        "test",
+        "fixture",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/client/test/support.ts:connectClient",
+      "type": "function",
+      "name": "connectClient",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        113,
+        127
+      ],
+      "summary": "连接测试客户端并等待就绪。",
+      "tags": [
+        "test",
+        "fixture",
+        "connect"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/client/test/support.ts:collectRequests",
+      "type": "function",
+      "name": "collectRequests",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        129,
+        135
+      ],
+      "summary": "收集客户端发送的请求消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "requests"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/client/test/support.ts:attachSession",
+      "type": "function",
+      "name": "attachSession",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        137,
+        153
+      ],
+      "summary": "附加测试会话。",
+      "tags": [
+        "test",
+        "fixture",
+        "session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/client/test/support.ts:MemoryByteServer",
+      "type": "class",
+      "name": "MemoryByteServer",
+      "filePath": "packages/client/test/support.ts",
+      "lineRange": [
+        14,
+        78
+      ],
+      "summary": "内存字节服务器，模拟对端收发消息。",
+      "tags": [
+        "test",
+        "mock-server",
+        "transport",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/client/test/unix.test.ts",
+      "type": "file",
+      "name": "unix.test.ts",
+      "filePath": "packages/client/test/unix.test.ts",
+      "summary": "测试 Unix socket 传输的连接与通信。",
+      "tags": [
+        "test",
+        "client",
+        "unix",
+        "transport"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/coding-agent/src/client/remote-session.ts",
+      "type": "file",
+      "name": "remote-session.ts",
+      "filePath": "packages/coding-agent/src/client/remote-session.ts",
+      "summary": "实现远程会话 RemoteSession：桥接本地 coding-agent 与会话服务器，支持操作提交、中止与模型切换。",
+      "tags": [
+        "remote-session",
+        "client",
+        "orchestration",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:packages/coding-agent/src/client/remote-session.ts:RemoteSession",
+      "type": "class",
+      "name": "RemoteSession",
+      "filePath": "packages/coding-agent/src/client/remote-session.ts",
+      "lineRange": [
+        66,
+        420
+      ],
+      "summary": "远程会话类：桥接本地会话服务器，管理连接、操作提交、中止、模型切换与重连。",
+      "tags": [
+        "remote-session",
+        "client",
+        "orchestration",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/coding-agent/src/client/transcript.ts",
+      "type": "file",
+      "name": "transcript.ts",
+      "filePath": "packages/coding-agent/src/client/transcript.ts",
+      "summary": "实现 transcript 状态管理：快照/进度应用、条目选择与工具输入解析。",
+      "tags": [
+        "transcript",
+        "state",
+        "client",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/src/client/transcript.ts:createTranscriptState",
+      "type": "function",
+      "name": "createTranscriptState",
+      "filePath": "packages/coding-agent/src/client/transcript.ts",
+      "lineRange": [
+        28,
+        35
+      ],
+      "summary": "创建 transcript 状态对象。",
+      "tags": [
+        "transcript",
+        "state",
+        "factory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptSnapshot",
+      "type": "function",
+      "name": "applyTranscriptSnapshot",
+      "filePath": "packages/coding-agent/src/client/transcript.ts",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "应用 transcript 快照。",
+      "tags": [
+        "transcript",
+        "snapshot",
+        "apply"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptProgress",
+      "type": "function",
+      "name": "applyTranscriptProgress",
+      "filePath": "packages/coding-agent/src/client/transcript.ts",
+      "lineRange": [
+        42,
+        75
+      ],
+      "summary": "应用进度事件并更新 transcript 条目。",
+      "tags": [
+        "transcript",
+        "progress",
+        "apply"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/src/client/transcript.ts:selectTranscript",
+      "type": "function",
+      "name": "selectTranscript",
+      "filePath": "packages/coding-agent/src/client/transcript.ts",
+      "lineRange": [
+        77,
+        94
+      ],
+      "summary": "选择当前激活的 transcript。",
+      "tags": [
+        "transcript",
+        "selection",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/client/remote-session-lifecycle.test.ts",
+      "type": "file",
+      "name": "remote-session-lifecycle.test.ts",
+      "filePath": "packages/coding-agent/test/client/remote-session-lifecycle.test.ts",
+      "summary": "测试远程会话的生命周期（打开、提交、中止与重连）。",
+      "tags": [
+        "test",
+        "remote-session",
+        "lifecycle",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "type": "file",
+      "name": "remote-session-ownership.test.ts",
+      "filePath": "packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "summary": "测试远程会话的所有权冲突与附加行为。",
+      "tags": [
+        "test",
+        "remote-session",
+        "ownership",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/remote-session-ownership.test.ts:respondToAttach",
+      "type": "function",
+      "name": "respondToAttach",
+      "filePath": "packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "lineRange": [
+        6,
+        16
+      ],
+      "summary": "模拟服务器对附加请求的响应。",
+      "tags": [
+        "test",
+        "fixture",
+        "mock",
+        "attach"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/client/remote-session.test.ts",
+      "type": "file",
+      "name": "remote-session.test.ts",
+      "filePath": "packages/coding-agent/test/client/remote-session.test.ts",
+      "summary": "测试远程会话的基础行为（快照、模型与操作）。",
+      "tags": [
+        "test",
+        "remote-session",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/test/client/support.ts",
+      "type": "file",
+      "name": "support.ts",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "summary": "远程会话测试辅助：内存服务器、快照、连接与远程会话创建。",
+      "tags": [
+        "test",
+        "support",
+        "mock-server",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/support.ts:sessionSnapshot",
+      "type": "function",
+      "name": "sessionSnapshot",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "lineRange": [
+        57,
+        74
+      ],
+      "summary": "构造测试用会话快照。",
+      "tags": [
+        "test",
+        "fixture",
+        "snapshot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/support.ts:connectClient",
+      "type": "function",
+      "name": "connectClient",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "lineRange": [
+        76,
+        89
+      ],
+      "summary": "连接测试客户端。",
+      "tags": [
+        "test",
+        "fixture",
+        "connect"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/support.ts:collectRequests",
+      "type": "function",
+      "name": "collectRequests",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "lineRange": [
+        91,
+        97
+      ],
+      "summary": "收集客户端请求消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "requests"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/support.ts:openRemoteSession",
+      "type": "function",
+      "name": "openRemoteSession",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "lineRange": [
+        99,
+        111
+      ],
+      "summary": "打开远程会话并附加。",
+      "tags": [
+        "test",
+        "fixture",
+        "remote-session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/coding-agent/test/client/support.ts:MemoryServer",
+      "type": "class",
+      "name": "MemoryServer",
+      "filePath": "packages/coding-agent/test/client/support.ts",
+      "lineRange": [
+        14,
+        47
+      ],
+      "summary": "内存会话服务器，模拟协议对端。",
+      "tags": [
+        "test",
+        "mock-server",
+        "protocol",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "type": "file",
+      "name": "transcript.test.ts",
+      "filePath": "packages/coding-agent/test/client/transcript.test.ts",
+      "summary": "测试 transcript 状态与进度应用逻辑。",
+      "tags": [
+        "test",
+        "transcript",
+        "state",
+        "client"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/test/client/transcript.test.ts:snapshot",
+      "type": "function",
+      "name": "snapshot",
+      "filePath": "packages/coding-agent/test/client/transcript.test.ts",
+      "lineRange": [
+        10,
+        35
+      ],
+      "summary": "构造测试用 transcript 快照。",
+      "tags": [
+        "test",
+        "fixture",
+        "snapshot",
+        "transcript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/protocol/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/protocol/src/index.ts",
+      "summary": "protocol 包统一出口（barrel），重新导出协议类型。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "protocol",
+        "exports"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/protocol/test/cbor/cbor.test.ts",
+      "type": "file",
+      "name": "cbor.test.ts",
+      "filePath": "packages/protocol/test/cbor/cbor.test.ts",
+      "summary": "测试 CBOR 编解码的十六进制往返行为。",
+      "tags": [
+        "test",
+        "protocol",
+        "cbor",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/client/test/sessions.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/sessions.test.ts",
+      "target": "file:packages/client/test/support.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/state.test.ts",
+      "target": "file:packages/client/test/support.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:sessionSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:sessionSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:createClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:createClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:connectClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:connectClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:collectRequests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:collectRequests",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:attachSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "function:packages/client/test/support.ts:attachSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "class:packages/client/test/support.ts:MemoryByteServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "class:packages/client/test/support.ts:MemoryByteServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/support.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/client/src/unix.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/remote-session.ts",
+      "target": "class:packages/coding-agent/src/client/remote-session.ts:RemoteSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/remote-session.ts",
+      "target": "class:packages/coding-agent/src/client/remote-session.ts:RemoteSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/remote-session.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/remote-session.ts",
+      "target": "file:packages/coding-agent/src/client/transcript.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/remote-session.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:createTranscriptState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:createTranscriptState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:applyTranscriptProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:selectTranscript",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "function:packages/coding-agent/src/client/transcript.ts:selectTranscript",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/src/client/transcript.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-lifecycle.test.ts",
+      "target": "file:packages/coding-agent/test/client/support.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-lifecycle.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "function:packages/coding-agent/test/client/remote-session-ownership.test.ts:respondToAttach",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "file:packages/coding-agent/src/client/remote-session.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "file:packages/coding-agent/test/client/support.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session.test.ts",
+      "target": "file:packages/coding-agent/test/client/support.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:sessionSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:sessionSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:connectClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:connectClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:collectRequests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:collectRequests",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:openRemoteSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "function:packages/coding-agent/test/client/support.ts:openRemoteSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "class:packages/coding-agent/test/client/support.ts:MemoryServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "class:packages/coding-agent/test/client/support.ts:MemoryServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "file:packages/coding-agent/src/client/remote-session.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/support.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "target": "function:packages/coding-agent/test/client/transcript.test.ts:snapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "target": "file:packages/coding-agent/src/client/transcript.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/protocol/test/cbor/cbor.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/client/test/sessions.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/client/src/unix.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/client/test/unix.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-lifecycle.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/remote-session-ownership.test.ts",
+      "target": "file:packages/coding-agent/src/client/remote-session.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "target": "file:packages/coding-agent/src/client/transcript.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/client/transcript.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/protocol/test/cbor/cbor.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "class:packages/coding-agent/src/client/remote-session.ts:RemoteSession",
+      "target": "class:packages/client/src/client.ts:TfaClient",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

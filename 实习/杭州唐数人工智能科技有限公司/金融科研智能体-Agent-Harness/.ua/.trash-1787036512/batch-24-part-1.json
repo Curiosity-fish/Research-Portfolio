@@ -1,0 +1,1677 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/ai/src/cli.ts",
+      "type": "file",
+      "name": "cli.ts",
+      "filePath": "packages/ai/src/cli.ts",
+      "summary": "ai 包的登录 CLI：交互式登录各 provider、处理认证问答并保存凭据。",
+      "tags": [
+        "cli",
+        "login",
+        "auth",
+        "provider",
+        "entry-point"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/cli.ts:answerPrompt",
+      "type": "function",
+      "name": "answerPrompt",
+      "filePath": "packages/ai/src/cli.ts",
+      "lineRange": [
+        31,
+        43
+      ],
+      "summary": "处理认证提示（选择 provider、输入 key 等）的问答逻辑。",
+      "tags": [
+        "cli",
+        "prompt",
+        "interaction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/cli.ts:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "packages/ai/src/cli.ts",
+      "lineRange": [
+        45,
+        77
+      ],
+      "summary": "执行 provider 登录流程并保存凭据。",
+      "tags": [
+        "cli",
+        "login",
+        "auth"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/cli.ts:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "packages/ai/src/cli.ts",
+      "lineRange": [
+        79,
+        114
+      ],
+      "summary": "CLI 入口：解析命令并分发到登录等子命令。",
+      "tags": [
+        "entry-point",
+        "cli",
+        "main"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/compat/extension-oauth-types.ts",
+      "type": "file",
+      "name": "extension-oauth-types.ts",
+      "filePath": "packages/ai/src/compat/extension-oauth-types.ts",
+      "summary": "提供扩展兼容用的 OAuth 凭据类型定义。",
+      "tags": [
+        "type-definition",
+        "oauth",
+        "compat",
+        "credentials"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/images-models.ts",
+      "type": "file",
+      "name": "images-models.ts",
+      "filePath": "packages/ai/src/images-models.ts",
+      "summary": "实现图片生成模型管理：ImagesModelsImpl 维护 provider、凭据与图片生成调用。",
+      "tags": [
+        "images",
+        "models",
+        "provider",
+        "generation",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/images-models.ts:createImagesModels",
+      "type": "function",
+      "name": "createImagesModels",
+      "filePath": "packages/ai/src/images-models.ts",
+      "lineRange": [
+        227,
+        229
+      ],
+      "summary": "创建图片生成模型实例（入口函数）。",
+      "tags": [
+        "images",
+        "models",
+        "factory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/images-models.ts:createImagesProvider",
+      "type": "function",
+      "name": "createImagesProvider",
+      "filePath": "packages/ai/src/images-models.ts",
+      "lineRange": [
+        251,
+        275
+      ],
+      "summary": "为图片 provider 创建模型入口与配置。",
+      "tags": [
+        "images",
+        "provider",
+        "factory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/ai/src/images-models.ts:ImagesModelsImpl",
+      "type": "class",
+      "name": "ImagesModelsImpl",
+      "filePath": "packages/ai/src/images-models.ts",
+      "lineRange": [
+        97,
+        225
+      ],
+      "summary": "图片生成模型实现类：管理 provider 注册、模型查询、刷新认证与图片生成。",
+      "tags": [
+        "images",
+        "models",
+        "service",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/model-catalog.ts",
+      "type": "file",
+      "name": "model-catalog.ts",
+      "filePath": "packages/ai/src/model-catalog.ts",
+      "summary": "提供模型目录展平工具 flattenModelCatalog，将嵌套模型定义转换为扁平结构。",
+      "tags": [
+        "models",
+        "catalog",
+        "utility",
+        "flattening"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/model-catalog.ts:flattenModelCatalog",
+      "type": "function",
+      "name": "flattenModelCatalog",
+      "filePath": "packages/ai/src/model-catalog.ts",
+      "lineRange": [
+        22,
+        27
+      ],
+      "summary": "将嵌套模型目录展平为扁平列表。",
+      "tags": [
+        "models",
+        "catalog",
+        "utility",
+        "flattening"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/models-store.ts",
+      "type": "file",
+      "name": "models-store.ts",
+      "filePath": "packages/ai/src/models-store.ts",
+      "summary": "实现内存模型存储 InMemoryModelsStore，支持模型条目读写与删除。",
+      "tags": [
+        "models",
+        "storage",
+        "memory",
+        "store"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/ai/src/models-store.ts:InMemoryModelsStore",
+      "type": "class",
+      "name": "InMemoryModelsStore",
+      "filePath": "packages/ai/src/models-store.ts",
+      "lineRange": [
+        27,
+        45
+      ],
+      "summary": "内存模型存储类：提供模型条目的读、写与删除。",
+      "tags": [
+        "models",
+        "storage",
+        "memory",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "packages/ai/src/models.ts",
+      "summary": "核心模型管理：ModelsImpl 管理多 provider、凭据、刷新、认证与流式/完整推理调用。",
+      "tags": [
+        "models",
+        "provider",
+        "service",
+        "streaming",
+        "management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:mergeHeaders",
+      "type": "function",
+      "name": "mergeHeaders",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        238,
+        252
+      ],
+      "summary": "合并多个 headers 对象。",
+      "tags": [
+        "http",
+        "headers",
+        "merge",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:createModels",
+      "type": "function",
+      "name": "createModels",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        735,
+        737
+      ],
+      "summary": "创建模型管理实例（入口函数）。",
+      "tags": [
+        "models",
+        "factory",
+        "entry"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:createProvider",
+      "type": "function",
+      "name": "createProvider",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        762,
+        862
+      ],
+      "summary": "根据 provider 配置创建 provider 实现并注册到模型管理。",
+      "tags": [
+        "provider",
+        "factory",
+        "registration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:hasApi",
+      "type": "function",
+      "name": "hasApi",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        874,
+        876
+      ],
+      "summary": "判断 provider 是否支持指定 API 能力。",
+      "tags": [
+        "provider",
+        "capability",
+        "check"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:calculateCost",
+      "type": "function",
+      "name": "calculateCost",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        878,
+        898
+      ],
+      "summary": "根据用量计算模型调用成本。",
+      "tags": [
+        "cost",
+        "usage",
+        "calculation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:getSupportedThinkingLevels",
+      "type": "function",
+      "name": "getSupportedThinkingLevels",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        902,
+        911
+      ],
+      "summary": "返回 provider 支持的思考级别列表。",
+      "tags": [
+        "thinking",
+        "provider",
+        "levels"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:clampThinkingLevel",
+      "type": "function",
+      "name": "clampThinkingLevel",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        913,
+        932
+      ],
+      "summary": "将思考级别限制到支持范围内。",
+      "tags": [
+        "thinking",
+        "validation",
+        "clamping"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/models.ts:modelsAreEqual",
+      "type": "function",
+      "name": "modelsAreEqual",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        938,
+        944
+      ],
+      "summary": "比较两个模型定义是否相等。",
+      "tags": [
+        "models",
+        "comparison",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/ai/src/models.ts:ModelsImpl",
+      "type": "class",
+      "name": "ModelsImpl",
+      "filePath": "packages/ai/src/models.ts",
+      "lineRange": [
+        254,
+        733
+      ],
+      "summary": "模型管理实现类：管理 provider 生命周期、凭据、刷新、认证与 stream/complete 调用。",
+      "tags": [
+        "models",
+        "provider",
+        "service",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/ai/src/oauth.ts",
+      "type": "file",
+      "name": "oauth.ts",
+      "filePath": "packages/ai/src/oauth.ts",
+      "summary": "重新导出 OAuth 相关类型（凭据、设备码、登录回调与提示选项）。",
+      "tags": [
+        "type-definition",
+        "oauth",
+        "exports",
+        "barrel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/all.ts",
+      "type": "file",
+      "name": "all.ts",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "summary": "汇总并导出全部内置 provider 与模型数据，提供查询函数与运行时注册列表。",
+      "tags": [
+        "provider",
+        "models",
+        "registry",
+        "aggregation",
+        "barrel"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:getBuiltinModel",
+      "type": "function",
+      "name": "getBuiltinModel",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        60,
+        66
+      ],
+      "summary": "按 ID 查询内置模型定义。",
+      "tags": [
+        "models",
+        "query",
+        "builtin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:getBuiltinProviders",
+      "type": "function",
+      "name": "getBuiltinProviders",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        68,
+        70
+      ],
+      "summary": "返回全部内置 provider 列表。",
+      "tags": [
+        "provider",
+        "builtin",
+        "list"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:getBuiltinModelDataGeneratedAt",
+      "type": "function",
+      "name": "getBuiltinModelDataGeneratedAt",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        73,
+        76
+      ],
+      "summary": "返回内置模型数据生成时间戳。",
+      "tags": [
+        "models",
+        "metadata",
+        "timestamp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:getBuiltinModels",
+      "type": "function",
+      "name": "getBuiltinModels",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        78,
+        85
+      ],
+      "summary": "返回全部内置模型列表。",
+      "tags": [
+        "models",
+        "builtin",
+        "list"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "type": "function",
+      "name": "builtinProviders",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        88,
+        130
+      ],
+      "summary": "构造并返回内置 provider 的映射表。",
+      "tags": [
+        "provider",
+        "builtin",
+        "registry"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:builtinModels",
+      "type": "function",
+      "name": "builtinModels",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        133,
+        139
+      ],
+      "summary": "返回内置模型目录映射。",
+      "tags": [
+        "models",
+        "builtin",
+        "catalog"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:builtinImagesProviders",
+      "type": "function",
+      "name": "builtinImagesProviders",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        142,
+        144
+      ],
+      "summary": "返回内置图片 provider 列表。",
+      "tags": [
+        "images",
+        "provider",
+        "builtin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/all.ts:builtinImagesModels",
+      "type": "function",
+      "name": "builtinImagesModels",
+      "filePath": "packages/ai/src/providers/all.ts",
+      "lineRange": [
+        147,
+        153
+      ],
+      "summary": "返回内置图片模型列表。",
+      "tags": [
+        "images",
+        "models",
+        "builtin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/amazon-bedrock.models.ts",
+      "type": "file",
+      "name": "amazon-bedrock.models.ts",
+      "filePath": "packages/ai/src/providers/amazon-bedrock.models.ts",
+      "summary": "定义 Amazon Bedrock 内置模型数据常量。",
+      "tags": [
+        "models",
+        "bedrock",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "type": "file",
+      "name": "amazon-bedrock.ts",
+      "filePath": "packages/ai/src/providers/amazon-bedrock.ts",
+      "summary": "实现 Amazon Bedrock provider 定义与认证配置。",
+      "tags": [
+        "provider",
+        "bedrock",
+        "definition",
+        "aws"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/amazon-bedrock.ts:amazonBedrockProvider",
+      "type": "function",
+      "name": "amazonBedrockProvider",
+      "filePath": "packages/ai/src/providers/amazon-bedrock.ts",
+      "lineRange": [
+        82,
+        90
+      ],
+      "summary": "返回 Amazon Bedrock provider 定义，配置认证与模型列表。",
+      "tags": [
+        "provider",
+        "bedrock",
+        "definition",
+        "aws"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/ant-ling.models.ts",
+      "type": "file",
+      "name": "ant-ling.models.ts",
+      "filePath": "packages/ai/src/providers/ant-ling.models.ts",
+      "summary": "定义 Ant Ling 内置模型数据常量。",
+      "tags": [
+        "models",
+        "ant-ling",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/ant-ling.ts",
+      "type": "file",
+      "name": "ant-ling.ts",
+      "filePath": "packages/ai/src/providers/ant-ling.ts",
+      "summary": "实现 Ant Ling provider 定义。",
+      "tags": [
+        "provider",
+        "ant-ling",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/ant-ling.ts:antLingProvider",
+      "type": "function",
+      "name": "antLingProvider",
+      "filePath": "packages/ai/src/providers/ant-ling.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Ant Ling provider 定义。",
+      "tags": [
+        "provider",
+        "ant-ling",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/anthropic.models.ts",
+      "type": "file",
+      "name": "anthropic.models.ts",
+      "filePath": "packages/ai/src/providers/anthropic.models.ts",
+      "summary": "定义 Anthropic 内置模型数据常量。",
+      "tags": [
+        "models",
+        "anthropic",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/anthropic.ts",
+      "type": "file",
+      "name": "anthropic.ts",
+      "filePath": "packages/ai/src/providers/anthropic.ts",
+      "summary": "实现 Anthropic provider 定义，支持 API key 与 OAuth 认证。",
+      "tags": [
+        "provider",
+        "anthropic",
+        "auth",
+        "definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/anthropic.ts:anthropicApiKeyAuth",
+      "type": "function",
+      "name": "anthropicApiKeyAuth",
+      "filePath": "packages/ai/src/providers/anthropic.ts",
+      "lineRange": [
+        9,
+        41
+      ],
+      "summary": "构造 Anthropic API key 认证（支持环境变量读取）。",
+      "tags": [
+        "auth",
+        "anthropic",
+        "api-key"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/anthropic.ts:anthropicProvider",
+      "type": "function",
+      "name": "anthropicProvider",
+      "filePath": "packages/ai/src/providers/anthropic.ts",
+      "lineRange": [
+        43,
+        59
+      ],
+      "summary": "返回 Anthropic provider 定义，支持 API key 与 OAuth 两种认证。",
+      "tags": [
+        "provider",
+        "anthropic",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/azure-openai-responses.models.ts",
+      "type": "file",
+      "name": "azure-openai-responses.models.ts",
+      "filePath": "packages/ai/src/providers/azure-openai-responses.models.ts",
+      "summary": "定义 Azure OpenAI Responses 内置模型数据常量。",
+      "tags": [
+        "models",
+        "azure",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/src/cli.ts",
+      "target": "function:packages/ai/src/cli.ts:answerPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/cli.ts",
+      "target": "function:packages/ai/src/cli.ts:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/cli.ts",
+      "target": "function:packages/ai/src/cli.ts:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/cli.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/cli.ts",
+      "target": "file:packages/ai/src/providers/all.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/compat/extension-oauth-types.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "function:packages/ai/src/images-models.ts:createImagesModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "function:packages/ai/src/images-models.ts:createImagesModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "function:packages/ai/src/images-models.ts:createImagesProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "function:packages/ai/src/images-models.ts:createImagesProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "class:packages/ai/src/images-models.ts:ImagesModelsImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/auth/context.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/auth/credential-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/auth/resolve.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/images-models.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/model-catalog.ts",
+      "target": "function:packages/ai/src/model-catalog.ts:flattenModelCatalog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/model-catalog.ts",
+      "target": "function:packages/ai/src/model-catalog.ts:flattenModelCatalog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/model-catalog.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models-store.ts",
+      "target": "class:packages/ai/src/models-store.ts:InMemoryModelsStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models-store.ts",
+      "target": "class:packages/ai/src/models-store.ts:InMemoryModelsStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models-store.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:mergeHeaders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:createModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:createModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:createProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:createProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:hasApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:hasApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:calculateCost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:calculateCost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:getSupportedThinkingLevels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:getSupportedThinkingLevels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:clampThinkingLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:clampThinkingLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:modelsAreEqual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "function:packages/ai/src/models.ts:modelsAreEqual",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "class:packages/ai/src/models.ts:ModelsImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/api/lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/auth/context.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/auth/credential-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/auth/resolve.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/models-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/models.ts",
+      "target": "file:packages/ai/src/utils/abort.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinProviders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinProviders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModelDataGeneratedAt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModelDataGeneratedAt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:getBuiltinModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinImagesProviders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinImagesProviders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinImagesModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "function:packages/ai/src/providers/all.ts:builtinImagesModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/images-models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/ant-ling.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/anthropic.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/baseten.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/cerebras.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/deepseek.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/fireworks.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/github-copilot.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/google-vertex.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/google.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/groq.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/huggingface.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/kimi-coding.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/minimax-cn.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/minimax.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/mistral.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/moonshotai-cn.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/moonshotai.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/nvidia.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/openai-codex.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/openai.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/opencode-go.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/opencode.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/openrouter-images.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/openrouter.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/radius.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/together.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/xai.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/xiaomi.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/zai-coding-cn.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/providers/zai.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/all.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "function:packages/ai/src/providers/amazon-bedrock.ts:amazonBedrockProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "function:packages/ai/src/providers/amazon-bedrock.ts:amazonBedrockProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "file:packages/ai/src/api/bedrock-converse-stream.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+      "target": "file:packages/ai/src/providers/amazon-bedrock.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "function:packages/ai/src/providers/ant-ling.ts:antLingProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "function:packages/ai/src/providers/ant-ling.ts:antLingProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/ant-ling.ts",
+      "target": "file:packages/ai/src/providers/ant-ling.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "function:packages/ai/src/providers/anthropic.ts:anthropicApiKeyAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "function:packages/ai/src/providers/anthropic.ts:anthropicProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "function:packages/ai/src/providers/anthropic.ts:anthropicProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/env-api-keys.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/anthropic.ts",
+      "target": "file:packages/ai/src/providers/anthropic.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/ai/src/models.ts:createProvider",
+      "target": "function:packages/ai/src/api/lazy.ts:lazyApi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "target": "function:packages/ai/src/providers/anthropic.ts:anthropicProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "target": "function:packages/ai/src/providers/deepseek.ts:deepseekProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/providers/all.ts:builtinProviders",
+      "target": "function:packages/ai/src/providers/cloudflare-workers-ai.ts:cloudflareWorkersAIProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/images-models.ts:createImagesProvider",
+      "target": "function:packages/ai/src/models.ts:createProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

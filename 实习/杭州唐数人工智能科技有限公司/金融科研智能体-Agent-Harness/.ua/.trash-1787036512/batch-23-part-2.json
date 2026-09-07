@@ -1,0 +1,1450 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/ai/src/api/openrouter-images.lazy.ts",
+      "type": "file",
+      "name": "openrouter-images.lazy.ts",
+      "filePath": "packages/ai/src/api/openrouter-images.lazy.ts",
+      "summary": "惰性加载 OpenRouter 图片生成 API 适配器。",
+      "tags": [
+        "api",
+        "openrouter",
+        "lazy",
+        "images"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/api/openrouter-images.lazy.ts:openrouterImagesApi",
+      "type": "function",
+      "name": "openrouterImagesApi",
+      "filePath": "packages/ai/src/api/openrouter-images.lazy.ts",
+      "lineRange": [
+        3,
+        10
+      ],
+      "summary": "返回惰性加载的 OpenRouter 图片生成 API 函数。",
+      "tags": [
+        "api",
+        "openrouter",
+        "lazy",
+        "images"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "type": "file",
+      "name": "tfa-messages.lazy.ts",
+      "filePath": "packages/ai/src/api/tfa-messages.lazy.ts",
+      "summary": "惰性加载 TFA Messages API 适配器的单行工厂。",
+      "tags": [
+        "api",
+        "tfa",
+        "lazy",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/api/tfa-messages.lazy.ts:tfaMessagesApi",
+      "type": "function",
+      "name": "tfaMessagesApi",
+      "filePath": "packages/ai/src/api/tfa-messages.lazy.ts",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "返回惰性加载的 TFA Messages API 函数。",
+      "tags": [
+        "api",
+        "tfa",
+        "lazy",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/auth/context.ts",
+      "type": "file",
+      "name": "context.ts",
+      "filePath": "packages/ai/src/auth/context.ts",
+      "summary": "构造默认 provider 认证上下文，从环境变量读取 provider 相关配置。",
+      "tags": [
+        "auth",
+        "context",
+        "env",
+        "provider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/context.ts:defaultProviderAuthContext",
+      "type": "function",
+      "name": "defaultProviderAuthContext",
+      "filePath": "packages/ai/src/auth/context.ts",
+      "lineRange": [
+        23,
+        45
+      ],
+      "summary": "构造默认 provider 认证上下文，从 process.env 读取环境变量。",
+      "tags": [
+        "auth",
+        "context",
+        "env",
+        "provider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/auth/credential-store.ts",
+      "type": "file",
+      "name": "credential-store.ts",
+      "filePath": "packages/ai/src/auth/credential-store.ts",
+      "summary": "实现内存凭据存储 InMemoryCredentialStore，支持链式读、写、改、删凭据。",
+      "tags": [
+        "auth",
+        "credential",
+        "storage",
+        "memory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:packages/ai/src/auth/credential-store.ts:InMemoryCredentialStore",
+      "type": "class",
+      "name": "InMemoryCredentialStore",
+      "filePath": "packages/ai/src/auth/credential-store.ts",
+      "lineRange": [
+        9,
+        67
+      ],
+      "summary": "内存凭据存储类：维护凭据与读取链，支持排队、读取、列表、修改与删除。",
+      "tags": [
+        "auth",
+        "credential",
+        "storage",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/auth/helpers.ts",
+      "type": "file",
+      "name": "helpers.ts",
+      "filePath": "packages/ai/src/auth/helpers.ts",
+      "summary": "提供认证辅助：从环境变量构造 API key 认证，以及惰性 OAuth 包装。",
+      "tags": [
+        "auth",
+        "helper",
+        "api-key",
+        "oauth"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/helpers.ts:envApiKeyAuth",
+      "type": "function",
+      "name": "envApiKeyAuth",
+      "filePath": "packages/ai/src/auth/helpers.ts",
+      "lineRange": [
+        9,
+        31
+      ],
+      "summary": "从环境变量读取 API key 构造认证。",
+      "tags": [
+        "auth",
+        "api-key",
+        "env",
+        "helper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/helpers.ts:lazyOAuth",
+      "type": "function",
+      "name": "lazyOAuth",
+      "filePath": "packages/ai/src/auth/helpers.ts",
+      "lineRange": [
+        40,
+        59
+      ],
+      "summary": "包装 OAuth 流程为惰性加载形式，按需触发登录。",
+      "tags": [
+        "auth",
+        "oauth",
+        "lazy",
+        "wrapper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "type": "file",
+      "name": "anthropic.ts",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "summary": "实现 Anthropic OAuth 登录与令牌刷新流程，包含本地回调服务器与 PKCE 兑换。",
+      "tags": [
+        "auth",
+        "oauth",
+        "anthropic",
+        "login",
+        "refresh"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:getNodeApis",
+      "type": "function",
+      "name": "getNodeApis",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        38,
+        50
+      ],
+      "summary": "获取 Node 环境下的 http/crypto 等 API。",
+      "tags": [
+        "auth",
+        "node",
+        "apis",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:parseAuthorizationInput",
+      "type": "function",
+      "name": "parseAuthorizationInput",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        52,
+        80
+      ],
+      "summary": "解析授权码输入（URL 或代码）。",
+      "tags": [
+        "auth",
+        "oauth",
+        "parsing",
+        "authorization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:formatErrorDetails",
+      "type": "function",
+      "name": "formatErrorDetails",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        82,
+        97
+      ],
+      "summary": "格式化 OAuth 错误详情文本。",
+      "tags": [
+        "auth",
+        "oauth",
+        "error",
+        "formatting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:startCallbackServer",
+      "type": "function",
+      "name": "startCallbackServer",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        99,
+        168
+      ],
+      "summary": "启动本地 HTTP 回调服务器以接收授权码。",
+      "tags": [
+        "auth",
+        "oauth",
+        "server",
+        "callback"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:postJson",
+      "type": "function",
+      "name": "postJson",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        170,
+        188
+      ],
+      "summary": "发送 JSON POST 请求（令牌兑换用）。",
+      "tags": [
+        "auth",
+        "http",
+        "json",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:exchangeAuthorizationCode",
+      "type": "function",
+      "name": "exchangeAuthorizationCode",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        190,
+        232
+      ],
+      "summary": "用授权码兑换访问令牌。",
+      "tags": [
+        "auth",
+        "oauth",
+        "token",
+        "exchange"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:loginAnthropic",
+      "type": "function",
+      "name": "loginAnthropic",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        234,
+        312
+      ],
+      "summary": "执行完整 Anthropic OAuth 登录流程并保存凭据。",
+      "tags": [
+        "auth",
+        "oauth",
+        "login",
+        "anthropic"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/anthropic.ts:refreshAnthropicToken",
+      "type": "function",
+      "name": "refreshAnthropicToken",
+      "filePath": "packages/ai/src/auth/oauth/anthropic.ts",
+      "lineRange": [
+        317,
+        353
+      ],
+      "summary": "刷新 Anthropic 访问令牌。",
+      "tags": [
+        "auth",
+        "oauth",
+        "refresh",
+        "token"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "type": "file",
+      "name": "device-code.ts",
+      "filePath": "packages/ai/src/auth/oauth/device-code.ts",
+      "summary": "实现 OAuth device code 流程的轮询与可中止睡眠逻辑。",
+      "tags": [
+        "auth",
+        "oauth",
+        "device-code",
+        "polling"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/device-code.ts:abortableSleep",
+      "type": "function",
+      "name": "abortableSleep",
+      "filePath": "packages/ai/src/auth/oauth/device-code.ts",
+      "lineRange": [
+        26,
+        44
+      ],
+      "summary": "可中止的延迟函数，配合 AbortSignal 使用。",
+      "tags": [
+        "async",
+        "sleep",
+        "abort",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/device-code.ts:pollOAuthDeviceCodeFlow",
+      "type": "function",
+      "name": "pollOAuthDeviceCodeFlow",
+      "filePath": "packages/ai/src/auth/oauth/device-code.ts",
+      "lineRange": [
+        46,
+        98
+      ],
+      "summary": "轮询 OAuth 设备授权端点直到用户授权或超时。",
+      "tags": [
+        "oauth",
+        "device-code",
+        "polling",
+        "async"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "type": "file",
+      "name": "github-copilot.ts",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "summary": "实现 GitHub Copilot OAuth 登录、令牌刷新与模型启用，支持企业域名。",
+      "tags": [
+        "auth",
+        "oauth",
+        "copilot",
+        "login",
+        "models"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:normalizeDomain",
+      "type": "function",
+      "name": "normalizeDomain",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        40,
+        49
+      ],
+      "summary": "规范化 GitHub Copilot 域名。",
+      "tags": [
+        "copilot",
+        "domain",
+        "normalization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:getUrls",
+      "type": "function",
+      "name": "getUrls",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        51,
+        61
+      ],
+      "summary": "构造 Copilot OAuth 相关 URL。",
+      "tags": [
+        "copilot",
+        "oauth",
+        "urls"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:getGitHubCopilotBaseUrl",
+      "type": "function",
+      "name": "getGitHubCopilotBaseUrl",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        77,
+        86
+      ],
+      "summary": "推导 GitHub Copilot API 基础 URL。",
+      "tags": [
+        "copilot",
+        "url",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:parseAvailableCopilotModelIds",
+      "type": "function",
+      "name": "parseAvailableCopilotModelIds",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        92,
+        113
+      ],
+      "summary": "解析可用的 Copilot 模型 ID 列表。",
+      "tags": [
+        "copilot",
+        "models",
+        "parsing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:fetchAvailableGitHubCopilotModelIds",
+      "type": "function",
+      "name": "fetchAvailableGitHubCopilotModelIds",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        115,
+        134
+      ],
+      "summary": "从 GitHub 拉取可用的 Copilot 模型 ID。",
+      "tags": [
+        "copilot",
+        "models",
+        "fetch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:startDeviceFlow",
+      "type": "function",
+      "name": "startDeviceFlow",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        145,
+        200
+      ],
+      "summary": "启动 GitHub Copilot 设备授权流程。",
+      "tags": [
+        "copilot",
+        "oauth",
+        "device-code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:pollForGitHubAccessToken",
+      "type": "function",
+      "name": "pollForGitHubAccessToken",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        202,
+        250
+      ],
+      "summary": "轮询获取 GitHub Copilot 访问令牌。",
+      "tags": [
+        "copilot",
+        "oauth",
+        "polling",
+        "token"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:refreshGitHubCopilotAccessToken",
+      "type": "function",
+      "name": "refreshGitHubCopilotAccessToken",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        252,
+        287
+      ],
+      "summary": "刷新 GitHub Copilot 访问令牌。",
+      "tags": [
+        "copilot",
+        "oauth",
+        "refresh",
+        "token"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:refreshGitHubCopilotToken",
+      "type": "function",
+      "name": "refreshGitHubCopilotToken",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        292,
+        302
+      ],
+      "summary": "刷新 Copilot 令牌并处理刷新失败。",
+      "tags": [
+        "copilot",
+        "oauth",
+        "refresh",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:enableGitHubCopilotModel",
+      "type": "function",
+      "name": "enableGitHubCopilotModel",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        308,
+        335
+      ],
+      "summary": "为某个模型启用 GitHub Copilot 访问。",
+      "tags": [
+        "copilot",
+        "models",
+        "enable"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:enableAllGitHubCopilotModels",
+      "type": "function",
+      "name": "enableAllGitHubCopilotModels",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        341,
+        352
+      ],
+      "summary": "为全部可用模型启用 GitHub Copilot 访问。",
+      "tags": [
+        "copilot",
+        "models",
+        "enable",
+        "bulk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/github-copilot.ts:loginGitHubCopilot",
+      "type": "function",
+      "name": "loginGitHubCopilot",
+      "filePath": "packages/ai/src/auth/oauth/github-copilot.ts",
+      "lineRange": [
+        354,
+        392
+      ],
+      "summary": "执行完整 GitHub Copilot OAuth 登录并保存凭据。",
+      "tags": [
+        "auth",
+        "oauth",
+        "login",
+        "copilot"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "type": "file",
+      "name": "kimi-coding.ts",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "summary": "实现 Kimi Coding OAuth 登录：设备授权、令牌轮询与刷新。",
+      "tags": [
+        "auth",
+        "oauth",
+        "kimi",
+        "device-code",
+        "refresh"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:trustedHttpUrl",
+      "type": "function",
+      "name": "trustedHttpUrl",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        58,
+        67
+      ],
+      "summary": "校验 HTTP URL 是否为受信任的地址。",
+      "tags": [
+        "security",
+        "url",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:startDeviceAuthorization",
+      "type": "function",
+      "name": "startDeviceAuthorization",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        69,
+        117
+      ],
+      "summary": "发起 Kimi Coding 设备授权请求。",
+      "tags": [
+        "oauth",
+        "device-code",
+        "authorization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:parseTokenResponse",
+      "type": "function",
+      "name": "parseTokenResponse",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        119,
+        139
+      ],
+      "summary": "解析令牌响应 JSON。",
+      "tags": [
+        "oauth",
+        "token",
+        "parsing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:pollForToken",
+      "type": "function",
+      "name": "pollForToken",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        141,
+        207
+      ],
+      "summary": "轮询 Kimi Coding 令牌端点直到授权完成。",
+      "tags": [
+        "oauth",
+        "polling",
+        "token",
+        "async"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:sleep",
+      "type": "function",
+      "name": "sleep",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        209,
+        222
+      ],
+      "summary": "简单的延迟辅助函数。",
+      "tags": [
+        "async",
+        "sleep",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:refreshToken",
+      "type": "function",
+      "name": "refreshToken",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        228,
+        279
+      ],
+      "summary": "刷新 Kimi Coding 访问令牌，处理可重试失败。",
+      "tags": [
+        "oauth",
+        "refresh",
+        "token",
+        "retry"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/kimi-coding.ts:loginKimiCoding",
+      "type": "function",
+      "name": "loginKimiCoding",
+      "filePath": "packages/ai/src/auth/oauth/kimi-coding.ts",
+      "lineRange": [
+        281,
+        293
+      ],
+      "summary": "执行 Kimi Coding OAuth 登录流程。",
+      "tags": [
+        "auth",
+        "oauth",
+        "login",
+        "kimi"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "file",
+      "name": "load.ts",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "summary": "注册并暴露各内置 OAuth 流程的惰性加载函数。",
+      "tags": [
+        "auth",
+        "oauth",
+        "loader",
+        "registry"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:registerBundledOAuthFlowLoaders",
+      "type": "function",
+      "name": "registerBundledOAuthFlowLoaders",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        27,
+        29
+      ],
+      "summary": "注册全部内置 OAuth 流程的加载函数。",
+      "tags": [
+        "oauth",
+        "loader",
+        "registry"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadAnthropicOAuth",
+      "type": "function",
+      "name": "loadAnthropicOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        31,
+        34
+      ],
+      "summary": "惰性加载 Anthropic OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "anthropic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadOpenAICodexOAuth",
+      "type": "function",
+      "name": "loadOpenAICodexOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        36,
+        39
+      ],
+      "summary": "惰性加载 OpenAI Codex OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "openai-codex"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadGitHubCopilotOAuth",
+      "type": "function",
+      "name": "loadGitHubCopilotOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        41,
+        44
+      ],
+      "summary": "惰性加载 GitHub Copilot OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "copilot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadOpenRouterOAuth",
+      "type": "function",
+      "name": "loadOpenRouterOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        46,
+        49
+      ],
+      "summary": "惰性加载 OpenRouter OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "openrouter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadKimiCodingOAuth",
+      "type": "function",
+      "name": "loadKimiCodingOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        51,
+        54
+      ],
+      "summary": "惰性加载 Kimi Coding OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "kimi"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadXaiOAuth",
+      "type": "function",
+      "name": "loadXaiOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        56,
+        59
+      ],
+      "summary": "惰性加载 xAI OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "xai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/auth/oauth/load.ts:loadRadiusOAuth",
+      "type": "function",
+      "name": "loadRadiusOAuth",
+      "filePath": "packages/ai/src/auth/oauth/load.ts",
+      "lineRange": [
+        61,
+        68
+      ],
+      "summary": "惰性加载 Radius OAuth 流程。",
+      "tags": [
+        "oauth",
+        "loader",
+        "radius"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/src/api/openrouter-images.lazy.ts",
+      "target": "function:packages/ai/src/api/openrouter-images.lazy.ts:openrouterImagesApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/api/openrouter-images.lazy.ts",
+      "target": "function:packages/ai/src/api/openrouter-images.lazy.ts:openrouterImagesApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/api/openrouter-images.lazy.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "target": "function:packages/ai/src/api/tfa-messages.lazy.ts:tfaMessagesApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "target": "function:packages/ai/src/api/tfa-messages.lazy.ts:tfaMessagesApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "target": "file:packages/ai/src/api/lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/context.ts",
+      "target": "function:packages/ai/src/auth/context.ts:defaultProviderAuthContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/context.ts",
+      "target": "function:packages/ai/src/auth/context.ts:defaultProviderAuthContext",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/context.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/credential-store.ts",
+      "target": "class:packages/ai/src/auth/credential-store.ts:InMemoryCredentialStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/credential-store.ts",
+      "target": "class:packages/ai/src/auth/credential-store.ts:InMemoryCredentialStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/credential-store.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/credential-store.ts",
+      "target": "file:packages/ai/src/utils/abort.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/helpers.ts",
+      "target": "function:packages/ai/src/auth/helpers.ts:envApiKeyAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/helpers.ts",
+      "target": "function:packages/ai/src/auth/helpers.ts:envApiKeyAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/helpers.ts",
+      "target": "function:packages/ai/src/auth/helpers.ts:lazyOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/helpers.ts",
+      "target": "function:packages/ai/src/auth/helpers.ts:lazyOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/helpers.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:getNodeApis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:parseAuthorizationInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:formatErrorDetails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:startCallbackServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:postJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:exchangeAuthorizationCode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:loginAnthropic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "function:packages/ai/src/auth/oauth/anthropic.ts:refreshAnthropicToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "file:packages/ai/src/auth/oauth/oauth-page.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "file:packages/ai/src/auth/oauth/pkce.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+      "target": "file:packages/ai/src/utils/provider-env.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "target": "function:packages/ai/src/auth/oauth/device-code.ts:abortableSleep",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "target": "function:packages/ai/src/auth/oauth/device-code.ts:pollOAuthDeviceCodeFlow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "target": "function:packages/ai/src/auth/oauth/device-code.ts:pollOAuthDeviceCodeFlow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:normalizeDomain",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:getUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:getGitHubCopilotBaseUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:parseAvailableCopilotModelIds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:fetchAvailableGitHubCopilotModelIds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:startDeviceFlow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:pollForGitHubAccessToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:refreshGitHubCopilotAccessToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:refreshGitHubCopilotToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:enableGitHubCopilotModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:enableAllGitHubCopilotModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "function:packages/ai/src/auth/oauth/github-copilot.ts:loginGitHubCopilot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+      "target": "file:packages/ai/src/providers/github-copilot.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:trustedHttpUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:startDeviceAuthorization",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:parseTokenResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:pollForToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:sleep",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:refreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "function:packages/ai/src/auth/oauth/kimi-coding.ts:loginKimiCoding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "file:packages/ai/src/auth/oauth/device-code.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+      "target": "file:packages/ai/src/utils/provider-env.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:registerBundledOAuthFlowLoaders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:registerBundledOAuthFlowLoaders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadAnthropicOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadAnthropicOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadOpenAICodexOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadOpenAICodexOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadGitHubCopilotOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadGitHubCopilotOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadOpenRouterOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadOpenRouterOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadKimiCodingOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadKimiCodingOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadXaiOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadXaiOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadRadiusOAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "function:packages/ai/src/auth/oauth/load.ts:loadRadiusOAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/auth/oauth/load.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/ai/src/auth/oauth/github-copilot.ts:loginGitHubCopilot",
+      "target": "function:packages/ai/src/auth/oauth/device-code.ts:pollOAuthDeviceCodeFlow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/auth/oauth/kimi-coding.ts:loginKimiCoding",
+      "target": "function:packages/ai/src/auth/oauth/device-code.ts:pollOAuthDeviceCodeFlow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

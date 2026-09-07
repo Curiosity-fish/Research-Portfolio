@@ -1,0 +1,905 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "type": "file",
+   "name": "armin.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "summary": "TUI 动画组件：ASCII 文字效果引擎，支持打字机、扫描线、故障、溶解等 CRT 风格动画。",
+   "tags": [
+    "tui",
+    "animation",
+    "ascii",
+    "effect"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/armin.ts:buildFinalGrid",
+   "type": "function",
+   "name": "buildFinalGrid",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "lineRange": [
+    48,
+    58
+   ],
+   "summary": "将各帧渲染结果合并为最终网格。",
+   "tags": [
+    "animation",
+    "grid"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/armin.ts:ArminComponent",
+   "type": "class",
+   "name": "ArminComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "lineRange": [
+    60,
+    382
+   ],
+   "summary": "ASCII 动画组件：管理多种文字效果（打字机/扫描线/故障/溶解/CRT）的帧循环与渲染。",
+   "tags": [
+    "component",
+    "animation"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "type": "file",
+   "name": "assistant-message.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "summary": "TUI 组件：渲染 assistant 消息，支持隐藏思考块、自定义隐藏标签、输出缩进与内容更新。",
+   "tags": [
+    "tui",
+    "message",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/assistant-message.ts:AssistantMessageComponent",
+   "type": "class",
+   "name": "AssistantMessageComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "lineRange": [
+    14,
+    197
+   ],
+   "summary": "渲染 assistant 消息内容与思考块，支持隐藏与输出缩进。",
+   "tags": [
+    "component",
+    "message"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "type": "file",
+   "name": "bash-execution.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "summary": "TUI 组件：渲染 bash 工具执行过程，支持输出追加、展开/折叠、完成状态与命令展示。",
+   "tags": [
+    "tui",
+    "bash",
+    "tool",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/bash-execution.ts:BashExecutionComponent",
+   "type": "class",
+   "name": "BashExecutionComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "lineRange": [
+    21,
+    220
+   ],
+   "summary": "渲染 bash 工具调用：输出追加、展开/折叠与完成状态展示。",
+   "tags": [
+    "component",
+    "bash"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "type": "file",
+   "name": "bordered-loader.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "summary": "带边框的加载组件：显示加载状态，支持中止信号与输入处理。",
+   "tags": [
+    "tui",
+    "loader",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts:BorderedLoader",
+   "type": "class",
+   "name": "BorderedLoader",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "lineRange": [
+    7,
+    68
+   ],
+   "summary": "带边框加载指示器，支持中止与输入处理。",
+   "tags": [
+    "component",
+    "loader"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "type": "file",
+   "name": "branch-summary-message.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "summary": "TUI 组件：渲染 git 分支摘要消息，支持展开/折叠显示细节。",
+   "tags": [
+    "tui",
+    "branch-summary",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts:BranchSummaryMessageComponent",
+   "type": "class",
+   "name": "BranchSummaryMessageComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "lineRange": [
+    10,
+    58
+   ],
+   "summary": "渲染 git 分支摘要消息并可展开细节。",
+   "tags": [
+    "component",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "type": "file",
+   "name": "compaction-summary-message.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "summary": "TUI 组件：渲染会话压缩（compaction）摘要消息，支持展开/折叠。",
+   "tags": [
+    "tui",
+    "compaction",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts:CompactionSummaryMessageComponent",
+   "type": "class",
+   "name": "CompactionSummaryMessageComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "lineRange": [
+    10,
+    59
+   ],
+   "summary": "渲染会话压缩摘要消息并可展开细节。",
+   "tags": [
+    "component",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "type": "file",
+   "name": "countdown-timer.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "summary": "倒计时定时器工具：超时后触发回调并支持销毁。",
+   "tags": [
+    "timer",
+    "utility",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts:CountdownTimer",
+   "type": "class",
+   "name": "CountdownTimer",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "lineRange": [
+    7,
+    39
+   ],
+   "summary": "倒计时定时器，超时触发回调并支持销毁。",
+   "tags": [
+    "timer",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "type": "file",
+   "name": "custom-editor.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "summary": "TUI 自定义编辑器组件：处理键盘输入并将动作转发给回调。",
+   "tags": [
+    "tui",
+    "editor",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/custom-editor.ts:CustomEditor",
+   "type": "class",
+   "name": "CustomEditor",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "lineRange": [
+    7,
+    90
+   ],
+   "summary": "自定义编辑器：处理输入动作并回调。",
+   "tags": [
+    "component",
+    "editor"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "type": "file",
+   "name": "custom-entry.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "summary": "TUI 组件：渲染自定义会话条目（extension entry），支持展开与内容重建。",
+   "tags": [
+    "tui",
+    "entry",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/custom-entry.ts:CustomEntryComponent",
+   "type": "class",
+   "name": "CustomEntryComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "lineRange": [
+    11,
+    62
+   ],
+   "summary": "渲染自定义会话条目，支持展开与内容重建。",
+   "tags": [
+    "component",
+    "entry"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "type": "file",
+   "name": "daxnuts.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "summary": "TUI 动画组件：基于图像数据与颜色映射的 ASCII 动画演示（Daxnuts）。",
+   "tags": [
+    "tui",
+    "animation",
+    "ascii",
+    "image"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:parseImage",
+   "type": "function",
+   "name": "parseImage",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "lineRange": [
+    17,
+    31
+   ],
+   "summary": "解析图像数据为像素数组。",
+   "tags": [
+    "parsing",
+    "image"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:buildImage",
+   "type": "function",
+   "name": "buildImage",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "lineRange": [
+    39,
+    55
+   ],
+   "summary": "构建颜色映射后的图像帧。",
+   "tags": [
+    "image",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:DaxnutsComponent",
+   "type": "class",
+   "name": "DaxnutsComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "lineRange": [
+    57,
+    164
+   ],
+   "summary": "ASCII 图像动画组件：渲染并循环播放图像帧。",
+   "tags": [
+    "component",
+    "animation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "type": "file",
+   "name": "diff.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "summary": "TUI diff 渲染工具：解析 unified diff 文本并渲染行内（intra-line）差异高亮。",
+   "tags": [
+    "diff",
+    "rendering",
+    "tui",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/diff.ts:renderIntraLineDiff",
+   "type": "function",
+   "name": "renderIntraLineDiff",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "lineRange": [
+    26,
+    66
+   ],
+   "summary": "计算并渲染行内差异高亮。",
+   "tags": [
+    "diff",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/diff.ts:renderDiff",
+   "type": "function",
+   "name": "renderDiff",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "lineRange": [
+    79,
+    147
+   ],
+   "summary": "渲染 unified diff 文本为带主题高亮的行。",
+   "tags": [
+    "diff",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "file",
+   "name": "dynamic-border.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "summary": "动态边框组件：根据内容宽度自适应渲染边框。",
+   "tags": [
+    "tui",
+    "border",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts:DynamicBorder",
+   "type": "class",
+   "name": "DynamicBorder",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "lineRange": [
+    11,
+    25
+   ],
+   "summary": "自适应宽度渲染动态边框。",
+   "tags": [
+    "component",
+    "border"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/armin.ts:buildFinalGrid",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/armin.ts:ArminComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/armin.ts:ArminComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/assistant-message.ts:AssistantMessageComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/assistant-message.ts:AssistantMessageComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/markdown-transform.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/bash-execution.ts:BashExecutionComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/bash-execution.ts:BashExecutionComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/core/tools/truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/visual-truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts:BorderedLoader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts:BorderedLoader",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bordered-loader.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts:BranchSummaryMessageComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts:BranchSummaryMessageComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "file:packages/coding-agent/src/core/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/branch-summary-message.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts:CompactionSummaryMessageComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts:CompactionSummaryMessageComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "file:packages/coding-agent/src/core/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/compaction-summary-message.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts:CountdownTimer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts:CountdownTimer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/custom-editor.ts:CustomEditor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/custom-editor.ts:CustomEditor",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/custom-entry.ts:CustomEntryComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/custom-entry.ts:CustomEntryComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-entry.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:parseImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:buildImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:DaxnutsComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/daxnuts.ts:DaxnutsComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/daxnuts.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/diff.ts:renderIntraLineDiff",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/diff.ts:renderDiff",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/diff.ts:renderDiff",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts:DynamicBorder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts:DynamicBorder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "target": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "target": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

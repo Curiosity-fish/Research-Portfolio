@@ -1,0 +1,1347 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "type": "file",
+   "name": "model-runtime-auth-options.test.ts",
+   "filePath": "packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "summary": "测试模型运行时的认证选项构造与传递行为。",
+   "tags": [
+    "test",
+    "model-runtime",
+    "auth"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-auth-options.test.ts:authOptions",
+   "type": "function",
+   "name": "authOptions",
+   "filePath": "packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "lineRange": [
+    6,
+    21
+   ],
+   "summary": "构造认证选项。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-auth-options.test.ts:testModel",
+   "type": "function",
+   "name": "testModel",
+   "filePath": "packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "lineRange": [
+    23,
+    33
+   ],
+   "summary": "构造测试用模型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "type": "file",
+   "name": "model-runtime-cloudflare-compat.test.ts",
+   "filePath": "packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "summary": "测试模型运行时对 Cloudflare 兼容 provider 的支持。",
+   "tags": [
+    "test",
+    "model-runtime",
+    "cloudflare",
+    "兼容性"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts:createCloudflareRuntime",
+   "type": "function",
+   "name": "createCloudflareRuntime",
+   "filePath": "packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "lineRange": [
+    45,
+    57
+   ],
+   "summary": "构造 Cloudflare 兼容的模型运行时。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "type": "file",
+   "name": "model-runtime-credential-sync.test.ts",
+   "filePath": "packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "summary": "测试模型运行时凭据同步与缓存失效行为。",
+   "tags": [
+    "test",
+    "model-runtime",
+    "凭据同步"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-credential-sync.test.ts:model",
+   "type": "function",
+   "name": "model",
+   "filePath": "packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "lineRange": [
+    6,
+    19
+   ],
+   "summary": "构造测试用模型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-credential-sync.test.ts:provider",
+   "type": "function",
+   "name": "provider",
+   "filePath": "packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "lineRange": [
+    21,
+    50
+   ],
+   "summary": "构造测试用 provider。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "type": "file",
+   "name": "model-runtime-modify-models-compat.test.ts",
+   "filePath": "packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "summary": "测试模型运行时对模型配置修改（modifyModels）的兼容处理。",
+   "tags": [
+    "test",
+    "model-runtime",
+    "models",
+    "兼容性"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts:model",
+   "type": "function",
+   "name": "model",
+   "filePath": "packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "lineRange": [
+    17,
+    30
+   ],
+   "summary": "构造测试用模型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "file",
+   "name": "model-runtime-test-utils.ts",
+   "filePath": "packages/coding-agent/test/model-runtime-test-utils.ts",
+   "summary": "模型运行时测试辅助模块：创建模型注册表与获取运行时实例。",
+   "tags": [
+    "test",
+    "utility",
+    "model-runtime"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createModelRegistry",
+   "type": "function",
+   "name": "createModelRegistry",
+   "filePath": "packages/coding-agent/test/model-runtime-test-utils.ts",
+   "lineRange": [
+    15,
+    24
+   ],
+   "summary": "创建模型注册表。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createInMemoryModelRegistry",
+   "type": "function",
+   "name": "createInMemoryModelRegistry",
+   "filePath": "packages/coding-agent/test/model-runtime-test-utils.ts",
+   "lineRange": [
+    26,
+    28
+   ],
+   "summary": "创建内存模型注册表。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/model-runtime-test-utils.ts:getModelRuntime",
+   "type": "function",
+   "name": "getModelRuntime",
+   "filePath": "packages/coding-agent/test/model-runtime-test-utils.ts",
+   "lineRange": [
+    30,
+    34
+   ],
+   "summary": "获取模型运行时实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/models-store.test.ts",
+   "type": "file",
+   "name": "models-store.test.ts",
+   "filePath": "packages/coding-agent/test/models-store.test.ts",
+   "summary": "测试模型存储的读写与持久化行为。",
+   "tags": [
+    "test",
+    "models-store",
+    "存储"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/models-store.test.ts:model",
+   "type": "function",
+   "name": "model",
+   "filePath": "packages/coding-agent/test/models-store.test.ts",
+   "lineRange": [
+    24,
+    37
+   ],
+   "summary": "构造测试用模型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "type": "file",
+   "name": "plan-mode-extension.test.ts",
+   "filePath": "packages/coding-agent/test/plan-mode-extension.test.ts",
+   "summary": "测试 plan-mode 扩展在会话中的注册与执行行为。",
+   "tags": [
+    "test",
+    "plan-mode",
+    "extensions"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/plan-mode-extension.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/coding-agent/test/plan-mode-extension.test.ts",
+   "lineRange": [
+    13,
+    31
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/plan-mode-extension.test.ts:setup",
+   "type": "function",
+   "name": "setup",
+   "filePath": "packages/coding-agent/test/plan-mode-extension.test.ts",
+   "lineRange": [
+    33,
+    103
+   ],
+   "summary": "初始化扩展测试环境。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/plan-mode-utils.test.ts",
+   "type": "file",
+   "name": "plan-mode-utils.test.ts",
+   "filePath": "packages/coding-agent/test/plan-mode-utils.test.ts",
+   "summary": "测试 plan-mode 工具函数（待办提取、步骤标记等）。",
+   "tags": [
+    "test",
+    "plan-mode",
+    "工具函数"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/print-mode.test.ts",
+   "type": "file",
+   "name": "print-mode.test.ts",
+   "filePath": "packages/coding-agent/test/print-mode.test.ts",
+   "summary": "测试 print 模式的事件输出与退出行为。",
+   "tags": [
+    "test",
+    "print-mode",
+    "输出"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/print-mode.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/coding-agent/test/print-mode.test.ts",
+   "lineRange": [
+    33,
+    56
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/print-mode.test.ts:createRuntimeHost",
+   "type": "function",
+   "name": "createRuntimeHost",
+   "filePath": "packages/coding-agent/test/print-mode.test.ts",
+   "lineRange": [
+    58,
+    87
+   ],
+   "summary": "构造运行时宿主。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/radius.test.ts",
+   "type": "file",
+   "name": "radius.test.ts",
+   "filePath": "packages/coding-agent/test/radius.test.ts",
+   "summary": "测试 RADIUS provider 的配置与模型调用行为。",
+   "tags": [
+    "test",
+    "radius",
+    "provider"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/radius.test.ts:radiusConfig",
+   "type": "function",
+   "name": "radiusConfig",
+   "filePath": "packages/coding-agent/test/radius.test.ts",
+   "lineRange": [
+    21,
+    36
+   ],
+   "summary": "构造 RADIUS 配置。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc-client-clone.test.ts",
+   "type": "file",
+   "name": "rpc-client-clone.test.ts",
+   "filePath": "packages/coding-agent/test/rpc-client-clone.test.ts",
+   "summary": "测试 RPC 客户端实例的克隆行为。",
+   "tags": [
+    "test",
+    "rpc",
+    "client"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc-client-process-exit.test.ts",
+   "type": "file",
+   "name": "rpc-client-process-exit.test.ts",
+   "filePath": "packages/coding-agent/test/rpc-client-process-exit.test.ts",
+   "summary": "测试 RPC 客户端在服务进程退出时的处理。",
+   "tags": [
+    "test",
+    "rpc",
+    "进程退出"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc-example.ts",
+   "type": "file",
+   "name": "rpc-example.ts",
+   "filePath": "packages/coding-agent/test/rpc-example.ts",
+   "summary": "RPC 客户端使用示例脚本：演示连接 RPC 服务并执行命令。",
+   "tags": [
+    "example",
+    "rpc",
+    "脚本"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/rpc-example.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/coding-agent/test/rpc-example.ts",
+   "lineRange": [
+    13,
+    84
+   ],
+   "summary": "示例脚本主流程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc-jsonl.test.ts",
+   "type": "file",
+   "name": "rpc-jsonl.test.ts",
+   "filePath": "packages/coding-agent/test/rpc-jsonl.test.ts",
+   "summary": "测试 RPC JSONL 行读写工具。",
+   "tags": [
+    "test",
+    "rpc",
+    "jsonl"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "file",
+   "name": "rpc-prompt-response-semantics.test.ts",
+   "filePath": "packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "summary": "测试 RPC 模式的提示与响应语义，覆盖事件流转与消息内容。",
+   "tags": [
+    "test",
+    "rpc",
+    "语义",
+    "事件"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "lineRange": [
+    59,
+    77
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:createRuntimeHost",
+   "type": "function",
+   "name": "createRuntimeHost",
+   "filePath": "packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "lineRange": [
+    98,
+    171
+   ],
+   "summary": "构造运行时宿主。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:startRpcMode",
+   "type": "function",
+   "name": "startRpcMode",
+   "filePath": "packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "lineRange": [
+    173,
+    185
+   ],
+   "summary": "启动 RPC 模式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/rpc.test.ts",
+   "type": "file",
+   "name": "rpc.test.ts",
+   "filePath": "packages/coding-agent/test/rpc.test.ts",
+   "summary": "RPC 端到端测试：客户端与服务进程的完整交互。",
+   "tags": [
+    "test",
+    "rpc",
+    "集成"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-auth-options.test.ts:authOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-auth-options.test.ts:testModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts:createCloudflareRuntime",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-credential-sync.test.ts:model",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-credential-sync.test.ts:provider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts:model",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createModelRegistry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createModelRegistry",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createInMemoryModelRegistry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:createInMemoryModelRegistry",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:getModelRuntime",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "function:packages/coding-agent/test/model-runtime-test-utils.ts:getModelRuntime",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/models-store.test.ts",
+   "target": "function:packages/coding-agent/test/models-store.test.ts:model",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "function:packages/coding-agent/test/plan-mode-extension.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "function:packages/coding-agent/test/plan-mode-extension.test.ts:setup",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/print-mode.test.ts",
+   "target": "function:packages/coding-agent/test/print-mode.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/print-mode.test.ts",
+   "target": "function:packages/coding-agent/test/print-mode.test.ts:createRuntimeHost",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "function:packages/coding-agent/test/radius.test.ts:radiusConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-example.ts",
+   "target": "function:packages/coding-agent/test/rpc-example.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:createRuntimeHost",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:startRpcMode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "file:packages/coding-agent/src/core/model-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "target": "file:packages/coding-agent/src/core/models-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/models-store.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/models-store.test.ts",
+   "target": "file:packages/coding-agent/src/core/models-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "file:packages/coding-agent/examples/extensions/plan-mode/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/plan-mode-utils.test.ts",
+   "target": "file:packages/coding-agent/examples/extensions/plan-mode/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/print-mode.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/print-mode.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/print-mode.test.ts",
+   "target": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "file:packages/coding-agent/src/core/radius.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/radius.test.ts",
+   "target": "file:packages/coding-agent/test/test-network-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-client-clone.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-client-process-exit.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-example.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-jsonl.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/rpc.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-auth-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-registry.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-cloudflare-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-credential-sync.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-registry.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-modify-models-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-registry.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/models-store.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/models-store.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/models-store.ts",
+   "target": "file:packages/coding-agent/test/models-store.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/plan-mode/index.ts",
+   "target": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "target": "file:packages/coding-agent/test/plan-mode-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/plan-mode/utils.ts",
+   "target": "file:packages/coding-agent/test/plan-mode-utils.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/print-mode.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/print-mode.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/coding-agent/test/print-mode.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/radius.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/radius.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/radius.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/radius.ts",
+   "target": "file:packages/coding-agent/test/radius.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/test/rpc-client-clone.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/test/rpc-client-process-exit.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/test/rpc-example.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "target": "file:packages/coding-agent/test/rpc-jsonl.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/rpc.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/test/rpc.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/coding-agent/test/rpc-prompt-response-semantics.test.ts:createRuntimeHost",
+   "target": "function:packages/coding-agent/test/utilities.ts:createTestResourceLoader",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

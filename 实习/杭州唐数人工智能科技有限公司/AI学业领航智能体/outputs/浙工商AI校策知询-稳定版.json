@@ -1,0 +1,558 @@
+{
+  "user_id": 1,
+  "description": "浙江工商大学全日制普通本科生学生手册政策问答。用户问题直连知识库检索，回答仅基于检索证据。",
+  "status": 1,
+  "category": "其他",
+  "guide_word": "你好，我是浙江工商大学 AI 校策知询助手。\n\n我依据当前接入的《浙江工商大学学生手册（2025 汇编）》协助解读全日制普通本科生的学籍、课程成绩、转专业、休复学、奖助学金、宿舍、处分申诉等校内规则。\n\n你可以直接提问，例如“补考不及格怎么办？”或“转专业有哪些限制？”。涉及本学期通知、申请时间、材料、金额和个案审批时，我会提示你向对应学院或职能部门核实最新要求。",
+  "update_time": "2026-08-20T14:09:35",
+  "name": "浙工商AI校策知询-稳定版",
+  "logo": "",
+  "is_public": 0,
+  "flow_type": 10,
+  "create_time": "2026-08-20T14:03:08",
+  "id": "82d29f23e3c944ba8e77d60685a0ab2c",
+  "nodes": [
+    {
+      "id": "start_4a3f1",
+      "data": {
+        "v": "3",
+        "id": "start_4a3f1",
+        "name": "true",
+        "type": "start",
+        "expand": true,
+        "description": "true",
+        "group_params": [
+          {
+            "name": "开场引导",
+            "params": [
+              {
+                "key": "guide_word",
+                "type": "textarea",
+                "label": "true",
+                "value": "你好，我是浙江工商大学 AI 校策知询助手。\n\n我依据当前接入的《浙江工商大学学生手册（2025 汇编）》协助解读全日制普通本科生的学籍、课程成绩、转专业、休复学、奖助学金、宿舍、处分申诉等校内规则。\n\n你可以直接提问，例如“补考不及格怎么办？”或“转专业有哪些限制？”。涉及本学期通知、申请时间、材料、金额和个案审批时，我会提示你向对应学院或职能部门核实最新要求。",
+                "placeholder": "true"
+              },
+              {
+                "key": "guide_question",
+                "help": "true",
+                "type": "input_list",
+                "label": "true",
+                "value": [
+                  "转专业有哪些限制？",
+                  "补考不及格怎么办？",
+                  "国家奖学金如何申请？",
+                  "休学后怎样复学？",
+                  "违纪处分可以申诉吗？",
+                  ""
+                ],
+                "placeholder": "true"
+              }
+            ]
+          },
+          {
+            "name": "全局变量",
+            "params": [
+              {
+                "key": "user_info",
+                "type": "var",
+                "label": "true",
+                "value": "",
+                "global": "key"
+              },
+              {
+                "key": "current_time",
+                "type": "var",
+                "label": "true",
+                "value": "",
+                "global": "key"
+              },
+              {
+                "key": "chat_history",
+                "type": "chat_history_num",
+                "value": 20,
+                "global": "key"
+              },
+              {
+                "key": "preset_question",
+                "help": "true",
+                "type": "input_list",
+                "label": "true",
+                "value": [
+                  {
+                    "key": "38a96a",
+                    "value": ""
+                  }
+                ],
+                "global": "item:input_list",
+                "placeholder": "true"
+              },
+              {
+                "key": "custom_variables",
+                "help": "true",
+                "type": "global_var",
+                "label": "true",
+                "value": [],
+                "global": "item:input_list"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "flowNode",
+      "dragging": false,
+      "measured": {
+        "width": 333,
+        "height": 877
+      },
+      "position": {
+        "x": 198.75278412184102,
+        "y": 142.88209791320097
+      },
+      "selected": false
+    },
+    {
+      "id": "input_1ca67",
+      "data": {
+        "v": "2",
+        "id": "input_1ca67",
+        "tab": {
+          "value": "dialog_input",
+          "options": [
+            {
+              "key": "dialog_input",
+              "help": "true",
+              "label": "true"
+            },
+            {
+              "key": "form_input",
+              "help": "true",
+              "label": "true"
+            }
+          ]
+        },
+        "name": "接收政策问题",
+        "type": "input",
+        "description": "请直接描述你想了解的校内政策，例如“我大二能转专业吗？”",
+        "group_params": [
+          {
+            "name": "",
+            "params": [
+              {
+                "key": "user_input",
+                "tab": "dialog_input",
+                "type": "var",
+                "label": "true",
+                "global": "key"
+              },
+              {
+                "key": "dialog_files_content",
+                "tab": "dialog_input",
+                "type": "var",
+                "label": "true",
+                "global": "key"
+              },
+              {
+                "key": "dialog_files_content_size",
+                "min": 0,
+                "tab": "dialog_input",
+                "type": "char_number",
+                "label": "true",
+                "value": 15000
+              },
+              {
+                "key": "dialog_file_accept",
+                "tab": "dialog_input",
+                "type": "select_fileaccept",
+                "label": "true",
+                "value": "all"
+              },
+              {
+                "key": "dialog_image_files",
+                "tab": "dialog_input",
+                "help": "true",
+                "type": "var",
+                "label": "true",
+                "global": "key"
+              },
+              {
+                "key": "form_input",
+                "tab": "form_input",
+                "type": "form",
+                "label": "true",
+                "value": [],
+                "global": "item:form_input"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "flowNode",
+      "dragging": false,
+      "measured": {
+        "width": 333,
+        "height": 417
+      },
+      "position": {
+        "x": 598.3957270464246,
+        "y": 154.69852165212816
+      },
+      "selected": false
+    },
+    {
+      "id": "knowledge_retriever_ea7b5",
+      "type": "flowNode",
+      "position": {
+        "x": 1506.9098481377423,
+        "y": 218.6789040195946
+      },
+      "data": {
+        "id": "knowledge_retriever_ea7b5",
+        "name": "文档知识库检索",
+        "description": "根据用户问题从知识库中检索相关内容，结合检索结果调用大模型生成最终结果，支持多个问题并行执行。",
+        "type": "knowledge_retriever",
+        "v": 2,
+        "group_params": [
+          {
+            "name": "知识库检索设置",
+            "params": [
+              {
+                "key": "user_question",
+                "label": "true",
+                "global": "self=user_prompt",
+                "type": "user_question",
+                "test": "var",
+                "help": "true",
+                "linkage": "retrieved_result",
+                "value": [
+                  "input_1ca67.user_input"
+                ],
+                "placeholder": "true",
+                "required": true,
+                "varZh": {
+                  "input_1ca67.user_input": "接收政策问题/user_input"
+                }
+              },
+              {
+                "key": "knowledge",
+                "label": "true",
+                "type": "knowledge_select_multi",
+                "placeholder": "true",
+                "value": {
+                  "type": "knowledge",
+                  "value": [
+                    {
+                      "key": 37,
+                      "label": " 浙工商本科学生手册"
+                    }
+                  ]
+                },
+                "required": true
+              },
+              {
+                "key": "metadata_filter",
+                "label": "true",
+                "type": "metadata_filter",
+                "value": {
+                  "enabled": false
+                }
+              },
+              {
+                "key": "advanced_retrieval_switch",
+                "label": "true",
+                "type": "search_switch",
+                "value": {
+                  "keyword_weight": 0.5,
+                  "vector_weight": 0.5,
+                  "user_auth": false,
+                  "search_switch": true,
+                  "rerank_flag": false,
+                  "rerank_model": "",
+                  "max_chunk_size": 15000
+                }
+              }
+            ]
+          },
+          {
+            "name": "输出",
+            "params": [
+              {
+                "key": "retrieved_result",
+                "label": "true",
+                "type": "var",
+                "global": "code:value.map(el => ({ label: el.label, value: el.key }))",
+                "value": [
+                  {
+                    "key": "retrieved_output",
+                    "label": "retrieved_output"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "measured": {
+        "width": 333,
+        "height": 555
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "llm_9ac29",
+      "data": {
+        "v": "2",
+        "id": "llm_9ac29",
+        "tab": {
+          "value": "single",
+          "options": [
+            {
+              "key": "single",
+              "label": "true"
+            },
+            {
+              "key": "batch",
+              "label": "true"
+            }
+          ]
+        },
+        "name": "证据约束政策答复",
+        "type": "llm",
+        "description": "调用大模型回答用户问题或者处理任务。",
+        "group_params": [
+          {
+            "params": [
+              {
+                "key": "batch_variable",
+                "tab": "batch",
+                "help": "true",
+                "test": "var",
+                "type": "user_question",
+                "label": "true",
+                "value": [],
+                "global": "self",
+                "linkage": "output",
+                "required": true,
+                "placeholder": "true"
+              }
+            ]
+          },
+          {
+            "name": "模型设置",
+            "params": [
+              {
+                "key": "model_id",
+                "type": "eagent_model",
+                "label": "true",
+                "value": 4,
+                "required": true,
+                "placeholder": "true"
+              },
+              {
+                "key": "temperature",
+                "step": 0.1,
+                "type": "slide",
+                "label": "true",
+                "scope": [
+                  0,
+                  2
+                ],
+                "value": 0.2
+              }
+            ]
+          },
+          {
+            "name": "提示词",
+            "params": [
+              {
+                "key": "system_prompt",
+                "test": "var",
+                "type": "var_textarea",
+                "label": "true",
+                "value": "你是“浙江工商大学 AI 校策知询助手”。服务对象是全日制普通本科生。当前知识范围仅为《浙江工商大学学生手册（2025 汇编）》。\n\n你只能依据输入中的“手册检索证据”作答，不能使用训练记忆补充校内规则，不能把用户描述当作已核实事实。回答的目标是帮助学生理解规定、判断自己还需确认什么，并给出下一步行动；你不能替学校作审批决定。\n\n回答规则：\n1. 证据直接覆盖问题时，先给简短结论，再说明适用条件、限制或后果和建议动作。关键结论必须在“依据”中标注制度名称、条款或检索片段中实际存在的页码。没有定位信息时，不要编页码。\n2. 不要因为问题涉及年级、申请或个案就拒答。先根据证据说明通用规则；只有一个事实会改变规则分支且确实无法判断时，最后只追问一个问题。\n3. 证据为空、不相关、问题超出本科学生手册范围、或用户要求确认本学期日期、金额、材料、名单、审批结果时，明确说明当前手册无法确认，并建议联系所在学院教务办、教务处、学生处或学生资助中心等对应部门。不得编造联系人、金额、日期或办理入口。\n4. 手册是“2025 汇编”，其中制度可能后续修订。涉及办理时间、收费、资助金额、申请材料、名单和最终资格时，结尾必须写“请以学校及相关部门最新通知为准”。\n5. 禁止“你一定可以”“肯定不能”“保证获批”等承诺性语言。处分、申诉、退学、资助等高影响事项保持中立和尊重。\n6. 不索取或处理身份证号、银行卡、病历、家庭收入等敏感信息。\n\n直接输出给学生看的 Markdown。不要输出 JSON、代码块、route、字段名或任何程序化结构。\n\n证据充分时按此格式回答：\n**结论**\n一句准确、非承诺性的结论。\n\n**适用条件或规则**\n- 要点 1\n- 要点 2\n\n**你现在可以做什么**\n1. 行动 1\n2. 行动 2\n\n**依据**\n- 《制度名称》：第X条或检索片段中存在的页码\n\n证据不足或超范围时，用两三句话说明原因和建议确认的部门类别，不要编造政策。"
+              },
+              {
+                "key": "user_prompt",
+                "test": "var",
+                "type": "var_textarea",
+                "label": "true",
+                "value": "用户问题：{{#input_1ca67.user_input#}}\n\n仅可使用的手册检索证据：{{#knowledge_retriever_ea7b5.retrieved_output#}}\n\n请直接输出给学生看的 Markdown 答复。",
+                "required": true,
+                "varZh": {
+                  "input_1ca67.user_input": "接收政策问题/user_input",
+                  "knowledge_retriever_ea7b5.retrieved_output": "文档知识库检索/retrieved_output"
+                }
+              },
+              {
+                "key": "image_prompt",
+                "help": "true",
+                "type": "image_prompt",
+                "label": "true",
+                "value": []
+              }
+            ]
+          },
+          {
+            "name": "输出",
+            "params": [
+              {
+                "key": "output_user",
+                "help": "true",
+                "type": "switch",
+                "label": "true",
+                "value": false
+              },
+              {
+                "key": "output",
+                "help": "true",
+                "type": "var",
+                "label": "true",
+                "value": [],
+                "global": "code:value.map(el => ({ label: el.label, value: el.key }))"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "flowNode",
+      "measured": {
+        "width": 333,
+        "height": 831
+      },
+      "position": {
+        "x": 2000.5653300250976,
+        "y": 339.72690888415394
+      },
+      "selected": false
+    },
+    {
+      "id": "output_5e46e",
+      "data": {
+        "v": "2",
+        "id": "output_5e46e",
+        "name": "输出",
+        "type": "output",
+        "description": "可向用户发送文本和文件，并且支持进行更丰富的交互，例如请求用户批准进行某项敏感操作、允许用户在模型输出内容的基础上直接修改并提交。",
+        "group_params": [
+          {
+            "params": [
+              {
+                "key": "message",
+                "type": "var_textarea_file",
+                "label": "true",
+                "value": {
+                  "msg": "{{#llm_9ac29.output#}}",
+                  "files": []
+                },
+                "global": "key",
+                "required": true,
+                "placeholder": "true",
+                "varZh": {
+                  "llm_9ac29.output": "证据约束政策答复/output"
+                }
+              },
+              {
+                "key": "output_result",
+                "type": "output_form",
+                "label": "用户输入内容",
+                "value": {
+                  "type": "",
+                  "value": ""
+                },
+                "global": "value.type=input",
+                "options": [],
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      "type": "flowNode",
+      "dragging": false,
+      "measured": {
+        "width": 333,
+        "height": 462
+      },
+      "position": {
+        "x": 3911.04238482013,
+        "y": -129.54871951494061
+      },
+      "selected": false
+    },
+    {
+      "id": "end_daacc",
+      "data": {
+        "v": "1",
+        "id": "end_daacc",
+        "name": "结束",
+        "type": "end",
+        "description": "工作流运行到此结束。",
+        "group_params": []
+      },
+      "type": "flowNode",
+      "measured": {
+        "width": 333,
+        "height": 134
+      },
+      "position": {
+        "x": 4887.946066853501,
+        "y": 296.163213026697
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "xy-edge__start_4a3f1right_handle-input_1ca67left_handle",
+      "type": "customEdge",
+      "source": "start_4a3f1",
+      "target": "input_1ca67",
+      "animated": true,
+      "sourceHandle": "right_handle",
+      "targetHandle": "left_handle"
+    },
+    {
+      "id": "xy-edge__input_1ca67right_handle-knowledge_retriever_ea7b5left_handle",
+      "type": "customEdge",
+      "source": "input_1ca67",
+      "target": "knowledge_retriever_ea7b5",
+      "animated": true,
+      "sourceHandle": "right_handle",
+      "targetHandle": "left_handle"
+    },
+    {
+      "id": "xy-edge__knowledge_retriever_ea7b5right_handle-llm_9ac29left_handle",
+      "type": "customEdge",
+      "source": "knowledge_retriever_ea7b5",
+      "target": "llm_9ac29",
+      "animated": true,
+      "sourceHandle": "right_handle",
+      "targetHandle": "left_handle"
+    },
+    {
+      "id": "xy-edge__llm_9ac29right_handle-output_5e46eleft_handle",
+      "type": "customEdge",
+      "source": "llm_9ac29",
+      "target": "output_5e46e",
+      "animated": true,
+      "sourceHandle": "right_handle",
+      "targetHandle": "left_handle"
+    },
+    {
+      "id": "xy-edge__output_5e46eright_handle-end_daaccleft_handle",
+      "type": "customEdge",
+      "source": "output_5e46e",
+      "target": "end_daacc",
+      "animated": true,
+      "sourceHandle": "right_handle",
+      "targetHandle": "left_handle"
+    }
+  ],
+  "viewport": {
+    "x": 16.856783444777648,
+    "y": 266.84848598336237,
+    "zoom": 0.3076345160414947
+  },
+  "source": "localhost:3001"
+}

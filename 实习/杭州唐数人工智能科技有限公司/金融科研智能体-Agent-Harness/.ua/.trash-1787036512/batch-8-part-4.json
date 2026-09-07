@@ -1,0 +1,1560 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "type": "file",
+   "name": "wrapper.ts",
+   "filePath": "packages/coding-agent/src/core/extensions/wrapper.ts",
+   "summary": "工具包装：将注册工具包装为带运行器上下文的执行函数。",
+   "tags": [
+    "extension",
+    "wrapper",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTool",
+   "type": "function",
+   "name": "wrapRegisteredTool",
+   "filePath": "packages/coding-agent/src/core/extensions/wrapper.ts",
+   "lineRange": [
+    17,
+    37
+   ],
+   "summary": "包装单个注册工具。",
+   "tags": [
+    "wrapper",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTools",
+   "type": "function",
+   "name": "wrapRegisteredTools",
+   "filePath": "packages/coding-agent/src/core/extensions/wrapper.ts",
+   "lineRange": [
+    43,
+    45
+   ],
+   "summary": "批量包装注册工具。",
+   "tags": [
+    "wrapper",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "file",
+   "name": "http-dispatcher.ts",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "summary": "HTTP dispatcher 配置：undici 客户端、代理与空闲超时设置。",
+   "tags": [
+    "http",
+    "dispatcher",
+    "undici",
+    "proxy"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/http-dispatcher.ts:parseHttpIdleTimeoutMs",
+   "type": "function",
+   "name": "parseHttpIdleTimeoutMs",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "lineRange": [
+    19,
+    35
+   ],
+   "summary": "解析 HTTP 空闲超时配置。",
+   "tags": [
+    "http",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/http-dispatcher.ts:formatHttpIdleTimeoutMs",
+   "type": "function",
+   "name": "formatHttpIdleTimeoutMs",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "lineRange": [
+    37,
+    43
+   ],
+   "summary": "格式化 HTTP 空闲超时。",
+   "tags": [
+    "http",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/http-dispatcher.ts:applyHttpProxySettings",
+   "type": "function",
+   "name": "applyHttpProxySettings",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "lineRange": [
+    45,
+    50
+   ],
+   "summary": "应用 HTTP 代理设置。",
+   "tags": [
+    "proxy",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/http-dispatcher.ts:createUndiciOriginDispatcher",
+   "type": "function",
+   "name": "createUndiciOriginDispatcher",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "lineRange": [
+    68,
+    79
+   ],
+   "summary": "创建 undici origin dispatcher。",
+   "tags": [
+    "undici",
+    "dispatcher"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/http-dispatcher.ts:configureHttpDispatcher",
+   "type": "function",
+   "name": "configureHttpDispatcher",
+   "filePath": "packages/coding-agent/src/core/http-dispatcher.ts",
+   "lineRange": [
+    81,
+    111
+   ],
+   "summary": "配置全局 HTTP dispatcher。",
+   "tags": [
+    "http",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "file",
+   "name": "model-resolver.ts",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "summary": "模型解析：匹配模型模式/别名、解析作用域并恢复会话模型。",
+   "tags": [
+    "model",
+    "resolver",
+    "selection"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:findExactModelReferenceMatch",
+   "type": "function",
+   "name": "findExactModelReferenceMatch",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    86,
+    128
+   ],
+   "summary": "查找精确模型引用匹配。",
+   "tags": [
+    "model",
+    "matching"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:tryMatchModel",
+   "type": "function",
+   "name": "tryMatchModel",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    134,
+    164
+   ],
+   "summary": "尝试匹配模型模式。",
+   "tags": [
+    "model",
+    "matching"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:buildFallbackModel",
+   "type": "function",
+   "name": "buildFallbackModel",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    173,
+    187
+   ],
+   "summary": "构建回退模型。",
+   "tags": [
+    "model",
+    "fallback"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:parseModelPattern",
+   "type": "function",
+   "name": "parseModelPattern",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    202,
+    255
+   ],
+   "summary": "解析模型模式字符串。",
+   "tags": [
+    "model",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeFromModels",
+   "type": "function",
+   "name": "resolveModelScopeFromModels",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    280,
+    360
+   ],
+   "summary": "从模型列表解析模型作用域。",
+   "tags": [
+    "model",
+    "scope"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeWithDiagnostics",
+   "type": "function",
+   "name": "resolveModelScopeWithDiagnostics",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    362,
+    368
+   ],
+   "summary": "解析模型作用域并收集诊断。",
+   "tags": [
+    "model",
+    "scope"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScope",
+   "type": "function",
+   "name": "resolveModelScope",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    370,
+    380
+   ],
+   "summary": "解析模型作用域。",
+   "tags": [
+    "model",
+    "scope"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:resolveCliModel",
+   "type": "function",
+   "name": "resolveCliModel",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    404,
+    604
+   ],
+   "summary": "解析 CLI 指定的模型。",
+   "tags": [
+    "model",
+    "cli"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:findInitialModel",
+   "type": "function",
+   "name": "findInitialModel",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    620,
+    700
+   ],
+   "summary": "查找初始模型。",
+   "tags": [
+    "model",
+    "initialization"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/model-resolver.ts:restoreModelFromSession",
+   "type": "function",
+   "name": "restoreModelFromSession",
+   "filePath": "packages/coding-agent/src/core/model-resolver.ts",
+   "lineRange": [
+    705,
+    774
+   ],
+   "summary": "从会话恢复模型。",
+   "tags": [
+    "model",
+    "restore"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "file",
+   "name": "package-manager.ts",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "summary": "包管理器：安装/更新/移除 npm 与 git 来源的扩展包，管理资源收集与清单。",
+   "tags": [
+    "package-manager",
+    "npm",
+    "git",
+    "resources"
+   ],
+   "complexity": "complex",
+   "languageNotes": "2600+ 行的大型管理器类，统一处理 npm/git 安装与文件收集。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:getEnv",
+   "type": "function",
+   "name": "getEnv",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    6,
+    23
+   ],
+   "summary": "读取环境变量。",
+   "tags": [
+    "env",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:getExtensionTempFolder",
+   "type": "function",
+   "name": "getExtensionTempFolder",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    215,
+    220
+   ],
+   "summary": "获取扩展临时目录。",
+   "tags": [
+    "extension",
+    "paths"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:prefixIgnorePattern",
+   "type": "function",
+   "name": "prefixIgnorePattern",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    222,
+    243
+   ],
+   "summary": "为 ignore 模式添加前缀。",
+   "tags": [
+    "ignore",
+    "patterns"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:addIgnoreRules",
+   "type": "function",
+   "name": "addIgnoreRules",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    245,
+    263
+   ],
+   "summary": "添加 ignore 规则。",
+   "tags": [
+    "ignore",
+    "patterns"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:splitPatterns",
+   "type": "function",
+   "name": "splitPatterns",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    277,
+    288
+   ],
+   "summary": "拆分模式列表。",
+   "tags": [
+    "patterns",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectFiles",
+   "type": "function",
+   "name": "collectFiles",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    290,
+    339
+   ],
+   "summary": "按模式收集目录文件。",
+   "tags": [
+    "files",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectSkillEntries",
+   "type": "function",
+   "name": "collectSkillEntries",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    343,
+    415
+   ],
+   "summary": "收集技能目录条目。",
+   "tags": [
+    "skills",
+    "collection"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:findGitRepoRoot",
+   "type": "function",
+   "name": "findGitRepoRoot",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    421,
+    433
+   ],
+   "summary": "查找 git 仓库根。",
+   "tags": [
+    "git",
+    "paths"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectAncestorAgentsSkillDirs",
+   "type": "function",
+   "name": "collectAncestorAgentsSkillDirs",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    435,
+    454
+   ],
+   "summary": "收集祖先目录的 AGENTS 技能目录。",
+   "tags": [
+    "skills",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoPromptEntries",
+   "type": "function",
+   "name": "collectAutoPromptEntries",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    456,
+    491
+   ],
+   "summary": "收集自动 prompt 条目。",
+   "tags": [
+    "prompts",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoThemeEntries",
+   "type": "function",
+   "name": "collectAutoThemeEntries",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    493,
+    528
+   ],
+   "summary": "收集自动主题条目。",
+   "tags": [
+    "themes",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:resolveExtensionEntries",
+   "type": "function",
+   "name": "resolveExtensionEntries",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    530,
+    558
+   ],
+   "summary": "解析扩展目录条目。",
+   "tags": [
+    "extension",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoExtensionEntries",
+   "type": "function",
+   "name": "collectAutoExtensionEntries",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    560,
+    612
+   ],
+   "summary": "收集自动扩展条目。",
+   "tags": [
+    "extension",
+    "collection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:matchesAnyPattern",
+   "type": "function",
+   "name": "matchesAnyPattern",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    628,
+    654
+   ],
+   "summary": "判断路径是否匹配任意 glob 模式。",
+   "tags": [
+    "patterns",
+    "matching"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:matchesAnyExactPattern",
+   "type": "function",
+   "name": "matchesAnyExactPattern",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    661,
+    679
+   ],
+   "summary": "判断路径是否匹配精确模式。",
+   "tags": [
+    "patterns",
+    "matching"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:isEnabledByOverrides",
+   "type": "function",
+   "name": "isEnabledByOverrides",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    685,
+    702
+   ],
+   "summary": "判断文件是否被覆盖规则启用。",
+   "tags": [
+    "patterns",
+    "matching"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:applyPatterns",
+   "type": "function",
+   "name": "applyPatterns",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    712,
+    758
+   ],
+   "summary": "对路径列表应用模式过滤。",
+   "tags": [
+    "patterns",
+    "filtering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/package-manager.ts:applyAutoloadDisabledPatterns",
+   "type": "function",
+   "name": "applyAutoloadDisabledPatterns",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    760,
+    777
+   ],
+   "summary": "应用禁用自动加载的模式。",
+   "tags": [
+    "patterns",
+    "filtering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/package-manager.ts:DefaultPackageManager",
+   "type": "class",
+   "name": "DefaultPackageManager",
+   "filePath": "packages/coding-agent/src/core/package-manager.ts",
+   "lineRange": [
+    779,
+    2677
+   ],
+   "summary": "默认包管理器：解析/安装/更新/移除 npm 与 git 来源，并收集包资源。",
+   "tags": [
+    "package-manager",
+    "npm",
+    "git"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/project-trust.ts",
+   "type": "file",
+   "name": "project-trust.ts",
+   "filePath": "packages/coding-agent/src/core/project-trust.ts",
+   "summary": "项目信任解析：提示选择信任级别并保存结果。",
+   "tags": [
+    "trust",
+    "security",
+    "prompt"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/project-trust.ts:selectProjectTrustOption",
+   "type": "function",
+   "name": "selectProjectTrustOption",
+   "filePath": "packages/coding-agent/src/core/project-trust.ts",
+   "lineRange": [
+    28,
+    38
+   ],
+   "summary": "选择项目信任选项。",
+   "tags": [
+    "trust",
+    "prompt"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/project-trust.ts:resolveProjectTrusted",
+   "type": "function",
+   "name": "resolveProjectTrusted",
+   "filePath": "packages/coding-agent/src/core/project-trust.ts",
+   "lineRange": [
+    46,
+    96
+   ],
+   "summary": "解析项目是否受信任。",
+   "tags": [
+    "trust",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "type": "file",
+   "name": "prompt-templates.ts",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "summary": "Prompt 模板：从目录加载模板、参数替换与命令参数解析。",
+   "tags": [
+    "prompt",
+    "templates",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:parseCommandArgs",
+   "type": "function",
+   "name": "parseCommandArgs",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    24,
+    55
+   ],
+   "summary": "解析命令参数。",
+   "tags": [
+    "parsing",
+    "command"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:substituteArgs",
+   "type": "function",
+   "name": "substituteArgs",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    70,
+    102
+   ],
+   "summary": "替换模板中的参数。",
+   "tags": [
+    "template",
+    "substitution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplateFromFile",
+   "type": "function",
+   "name": "loadTemplateFromFile",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    104,
+    133
+   ],
+   "summary": "从文件加载模板。",
+   "tags": [
+    "template",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplatesFromDir",
+   "type": "function",
+   "name": "loadTemplatesFromDir",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    138,
+    175
+   ],
+   "summary": "从目录加载模板。",
+   "tags": [
+    "template",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:loadPromptTemplates",
+   "type": "function",
+   "name": "loadPromptTemplates",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    194,
+    263
+   ],
+   "summary": "加载全部 prompt 模板。",
+   "tags": [
+    "template",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/prompt-templates.ts:expandPromptTemplate",
+   "type": "function",
+   "name": "expandPromptTemplate",
+   "filePath": "packages/coding-agent/src/core/prompt-templates.ts",
+   "lineRange": [
+    269,
+    285
+   ],
+   "summary": "展开模板文本。",
+   "tags": [
+    "template",
+    "expansion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "type": "file",
+   "name": "provider-attribution.ts",
+   "filePath": "packages/coding-agent/src/core/provider-attribution.ts",
+   "summary": "Provider 归属头：为模型/会话构建默认归属请求头并合并。",
+   "tags": [
+    "provider",
+    "attribution",
+    "headers"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/provider-attribution.ts:getDefaultAttributionHeaders",
+   "type": "function",
+   "name": "getDefaultAttributionHeaders",
+   "filePath": "packages/coding-agent/src/core/provider-attribution.ts",
+   "lineRange": [
+    36,
+    65
+   ],
+   "summary": "构建默认归属请求头。",
+   "tags": [
+    "headers",
+    "attribution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/provider-attribution.ts:getSessionHeaders",
+   "type": "function",
+   "name": "getSessionHeaders",
+   "filePath": "packages/coding-agent/src/core/provider-attribution.ts",
+   "lineRange": [
+    67,
+    77
+   ],
+   "summary": "构建会话归属头。",
+   "tags": [
+    "headers",
+    "session"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/provider-attribution.ts:mergeProviderAttributionHeaders",
+   "type": "function",
+   "name": "mergeProviderAttributionHeaders",
+   "filePath": "packages/coding-agent/src/core/provider-attribution.ts",
+   "lineRange": [
+    79,
+    97
+   ],
+   "summary": "合并归属请求头。",
+   "tags": [
+    "headers",
+    "merge"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "function:packages/coding-agent/src/core/extensions/wrapper.ts:wrapRegisteredTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/wrapper.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:parseHttpIdleTimeoutMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:parseHttpIdleTimeoutMs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:formatHttpIdleTimeoutMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:formatHttpIdleTimeoutMs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:applyHttpProxySettings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:applyHttpProxySettings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:createUndiciOriginDispatcher",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:configureHttpDispatcher",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "function:packages/coding-agent/src/core/http-dispatcher.ts:configureHttpDispatcher",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:findExactModelReferenceMatch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:findExactModelReferenceMatch",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:tryMatchModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:buildFallbackModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:parseModelPattern",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:parseModelPattern",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeFromModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeFromModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeWithDiagnostics",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeWithDiagnostics",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScope",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScope",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveCliModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveCliModel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:findInitialModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:findInitialModel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:restoreModelFromSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:restoreModelFromSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/coding-agent/src/core/defaults.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:getEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:getExtensionTempFolder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:getExtensionTempFolder",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:prefixIgnorePattern",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:addIgnoreRules",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:splitPatterns",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectFiles",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectSkillEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:findGitRepoRoot",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectAncestorAgentsSkillDirs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoPromptEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoThemeEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:resolveExtensionEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:collectAutoExtensionEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:matchesAnyPattern",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:matchesAnyExactPattern",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:isEnabledByOverrides",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:applyPatterns",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "function:packages/coding-agent/src/core/package-manager.ts:applyAutoloadDisabledPatterns",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "class:packages/coding-agent/src/core/package-manager.ts:DefaultPackageManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "class:packages/coding-agent/src/core/package-manager.ts:DefaultPackageManager",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/core/output-guard.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/core/tfa-manifest.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/git.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "function:packages/coding-agent/src/core/project-trust.ts:selectProjectTrustOption",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "function:packages/coding-agent/src/core/project-trust.ts:resolveProjectTrusted",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "function:packages/coding-agent/src/core/project-trust.ts:resolveProjectTrusted",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/project-trust.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:parseCommandArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:parseCommandArgs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:substituteArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:substituteArgs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplateFromFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplatesFromDir",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadPromptTemplates",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadPromptTemplates",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:expandPromptTemplate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:expandPromptTemplate",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "function:packages/coding-agent/src/core/provider-attribution.ts:getDefaultAttributionHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "function:packages/coding-agent/src/core/provider-attribution.ts:getSessionHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "function:packages/coding-agent/src/core/provider-attribution.ts:mergeProviderAttributionHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "function:packages/coding-agent/src/core/provider-attribution.ts:mergeProviderAttributionHeaders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "target": "file:packages/coding-agent/src/core/telemetry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeWithDiagnostics",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:resolveModelScopeFromModels",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/model-resolver.ts:tryMatchModel",
+   "target": "function:packages/coding-agent/src/core/model-resolver.ts:findExactModelReferenceMatch",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplatesFromDir",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplateFromFile",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/prompt-templates.ts:loadPromptTemplates",
+   "target": "function:packages/coding-agent/src/core/prompt-templates.ts:loadTemplatesFromDir",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

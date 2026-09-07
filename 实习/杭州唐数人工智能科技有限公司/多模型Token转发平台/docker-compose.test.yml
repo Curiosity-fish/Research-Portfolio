@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: school_api_v1_test
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d school_api_v1_test"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: "no"
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: "no"
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      APP_DATABASE__URL: postgres://postgres:postgres@postgres:5432/school_api_v1_test?sslmode=disable
+      APP_REDIS__URL: redis://redis:6379/0
+    restart: "no"

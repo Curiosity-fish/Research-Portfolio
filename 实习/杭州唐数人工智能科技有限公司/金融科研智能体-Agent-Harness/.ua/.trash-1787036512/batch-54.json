@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "tags": [
+        "package-config",
+        "npm",
+        "llm",
+        "build"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/ai/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/ai/package.json",
+      "summary": "tfa-ai 包（packages/ai）的 package.json，声明多 provider LLM API 库的包信息、bin（CLI 入口）、exports 映射、构建/测试脚本与依赖。"
+    },
+    {
+      "tags": [
+        "tsconfig",
+        "typescript",
+        "build"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/ai/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/ai/tsconfig.build.json",
+      "summary": "tfa-ai 构建用 TypeScript 配置，继承根 tsconfig.base.json 并编译 src 目录。"
+    },
+    {
+      "tags": [
+        "docs",
+        "changelog",
+        "版本记录"
+      ],
+      "complexity": "moderate",
+      "id": "document:packages/ai/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/ai/CHANGELOG.md",
+      "summary": "tfa-ai 的版本变更日志（Unreleased 至历史版本），记录 Breaking Changes / Added / Changed / Fixed 条目。"
+    },
+    {
+      "tags": [
+        "docs",
+        "usage-guide",
+        "llm-provider",
+        "auth"
+      ],
+      "complexity": "moderate",
+      "id": "document:packages/ai/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/ai/README.md",
+      "summary": "tfa-ai 库文档，覆盖支持的 providers、安装与快速开始、Provider 工厂与内置 provider 目录、模型查询、静态目录读取、动态 provider、auth 解析与请求头变换。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/ai/package.json",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/ai/package.json",
+      "target": "file:packages/ai/src/cli.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/ai/tsconfig.build.json",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/ai/README.md",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/ai/README.md",
+      "target": "file:packages/ai/src/providers/all.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/ai/CHANGELOG.md",
+      "target": "document:packages/ai/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

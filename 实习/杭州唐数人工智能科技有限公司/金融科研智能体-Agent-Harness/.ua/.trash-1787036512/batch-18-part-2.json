@@ -1,0 +1,680 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "type": "file",
+   "name": "wad-finder.ts",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "summary": "doom-overlay 示例：查找 WAD 游戏文件。",
+   "tags": [
+    "example",
+    "extensions",
+    "doom",
+    "文件查找"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:findWadFile",
+   "type": "function",
+   "name": "findWadFile",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "lineRange": [
+    13,
+    32
+   ],
+   "summary": "查找可用的 WAD 文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:ensureWadFile",
+   "type": "function",
+   "name": "ensureWadFile",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "lineRange": [
+    35,
+    55
+   ],
+   "summary": "确保 WAD 文件存在。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+   "summary": "扩展示例：动态资源（dynamic-resources）演示。",
+   "tags": [
+    "example",
+    "extensions",
+    "动态资源"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "type": "file",
+   "name": "dynamic-tools.ts",
+   "filePath": "packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "summary": "扩展示例：动态工具（dynamic-tools）演示，按轮次注入工具。",
+   "tags": [
+    "example",
+    "extensions",
+    "动态工具"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/dynamic-tools.ts:dynamicToolsExtension",
+   "type": "function",
+   "name": "dynamicToolsExtension",
+   "filePath": "packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "lineRange": [
+    24,
+    74
+   ],
+   "summary": "创建动态工具扩展实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/event-bus.ts",
+   "type": "file",
+   "name": "event-bus.ts",
+   "filePath": "packages/coding-agent/examples/extensions/event-bus.ts",
+   "summary": "扩展示例：订阅并转发 agent 事件总线事件。",
+   "tags": [
+    "example",
+    "extensions",
+    "event-bus"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/file-trigger.ts",
+   "type": "file",
+   "name": "file-trigger.ts",
+   "filePath": "packages/coding-agent/examples/extensions/file-trigger.ts",
+   "summary": "扩展示例：监听文件变化触发扩展行为。",
+   "tags": [
+    "example",
+    "extensions",
+    "文件触发"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/git-checkpoint.ts",
+   "type": "file",
+   "name": "git-checkpoint.ts",
+   "filePath": "packages/coding-agent/examples/extensions/git-checkpoint.ts",
+   "summary": "扩展示例：在关键节点创建 git checkpoint。",
+   "tags": [
+    "example",
+    "extensions",
+    "git",
+    "checkpoint"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "type": "file",
+   "name": "git-merge-and-resolve.ts",
+   "filePath": "packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "summary": "扩展示例：检测 git 合并冲突并帮助解决。",
+   "tags": [
+    "example",
+    "extensions",
+    "git",
+    "冲突解决"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts:findConflicts",
+   "type": "function",
+   "name": "findConflicts",
+   "filePath": "packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "lineRange": [
+    27,
+    54
+   ],
+   "summary": "查找合并冲突文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts:formatConflicts",
+   "type": "function",
+   "name": "formatConflicts",
+   "filePath": "packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "lineRange": [
+    62,
+    71
+   ],
+   "summary": "格式化冲突信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "summary": "扩展示例：gondolin 扩展，为 guest 环境实现文件与 grep 操作的工具代理。",
+   "tags": [
+    "example",
+    "extensions",
+    "gondolin",
+    "工具代理"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinReadOps",
+   "type": "function",
+   "name": "createGondolinReadOps",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    84,
+    99
+   ],
+   "summary": "创建 gondolin 读取操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinWriteOps",
+   "type": "function",
+   "name": "createGondolinWriteOps",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    101,
+    110
+   ],
+   "summary": "创建 gondolin 写入操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinLsOps",
+   "type": "function",
+   "name": "createGondolinLsOps",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    122,
+    135
+   ],
+   "summary": "创建 gondolin 列表操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:walkGuestFiles",
+   "type": "function",
+   "name": "walkGuestFiles",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    137,
+    170
+   ],
+   "summary": "遍历 guest 文件系统。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:matchesToolGlob",
+   "type": "function",
+   "name": "matchesToolGlob",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    172,
+    181
+   ],
+   "summary": "判断路径是否匹配工具 glob。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinFindOps",
+   "type": "function",
+   "name": "createGondolinFindOps",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    183,
+    204
+   ],
+   "summary": "创建 gondolin 查找操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:appendGrepBlock",
+   "type": "function",
+   "name": "appendGrepBlock",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    215,
+    237
+   ],
+   "summary": "追加 grep 结果块。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:executeGondolinGrep",
+   "type": "function",
+   "name": "executeGondolinGrep",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    239,
+    313
+   ],
+   "summary": "执行 gondolin grep 操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinBashOps",
+   "type": "function",
+   "name": "createGondolinBashOps",
+   "filePath": "packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "lineRange": [
+    324,
+    363
+   ],
+   "summary": "创建 gondolin bash 操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/hello.ts",
+   "type": "file",
+   "name": "hello.ts",
+   "filePath": "packages/coding-agent/examples/extensions/hello.ts",
+   "summary": "最小扩展示例：输出 hello 消息。",
+   "tags": [
+    "example",
+    "extensions",
+    "hello"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/hidden-thinking-label.ts",
+   "type": "file",
+   "name": "hidden-thinking-label.ts",
+   "filePath": "packages/coding-agent/examples/extensions/hidden-thinking-label.ts",
+   "summary": "扩展示例：隐藏/修改思考标签的渲染。",
+   "tags": [
+    "example",
+    "extensions",
+    "thinking",
+    "渲染"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/inline-bash.ts",
+   "type": "file",
+   "name": "inline-bash.ts",
+   "filePath": "packages/coding-agent/examples/extensions/inline-bash.ts",
+   "summary": "扩展示例：内联 bash 执行与结果注入。",
+   "tags": [
+    "example",
+    "extensions",
+    "bash"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/input-transform-streaming.ts",
+   "type": "file",
+   "name": "input-transform-streaming.ts",
+   "filePath": "packages/coding-agent/examples/extensions/input-transform-streaming.ts",
+   "summary": "扩展示例：流式输入转换（input transform streaming）。",
+   "tags": [
+    "example",
+    "extensions",
+    "input-transform",
+    "流式"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/input-transform.ts",
+   "type": "file",
+   "name": "input-transform.ts",
+   "filePath": "packages/coding-agent/examples/extensions/input-transform.ts",
+   "summary": "扩展示例：输入转换（input transform）钩子。",
+   "tags": [
+    "example",
+    "extensions",
+    "input-transform"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/interactive-shell.ts",
+   "type": "file",
+   "name": "interactive-shell.ts",
+   "filePath": "packages/coding-agent/examples/extensions/interactive-shell.ts",
+   "summary": "扩展示例：在 TUI 中提供交互式 shell 面板。",
+   "tags": [
+    "example",
+    "extensions",
+    "shell",
+    "交互式"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/interactive-shell.ts:isInteractiveCommand",
+   "type": "function",
+   "name": "isInteractiveCommand",
+   "filePath": "packages/coding-agent/examples/extensions/interactive-shell.ts",
+   "lineRange": [
+    109,
+    129
+   ],
+   "summary": "判断命令是否为交互式命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/kimi-deferred-tools.ts",
+   "type": "file",
+   "name": "kimi-deferred-tools.ts",
+   "filePath": "packages/coding-agent/examples/extensions/kimi-deferred-tools.ts",
+   "summary": "扩展示例：Kimi 延迟工具（deferred tools）演示。",
+   "tags": [
+    "example",
+    "extensions",
+    "kimi",
+    "延迟工具"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:findWadFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:findWadFile",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:ensureWadFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts:ensureWadFile",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "target": "function:packages/coding-agent/examples/extensions/dynamic-tools.ts:dynamicToolsExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "target": "function:packages/coding-agent/examples/extensions/dynamic-tools.ts:dynamicToolsExtension",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "target": "function:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts:findConflicts",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "target": "function:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts:formatConflicts",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinReadOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinWriteOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinLsOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:walkGuestFiles",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:matchesToolGlob",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinFindOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:appendGrepBlock",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:executeGondolinGrep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/gondolin/index.ts:createGondolinBashOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/interactive-shell.ts",
+   "target": "function:packages/coding-agent/examples/extensions/interactive-shell.ts:isInteractiveCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dynamic-tools.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/event-bus.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/file-trigger.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/git-checkpoint.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/gondolin/index.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/hello.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/hello.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/hidden-thinking-label.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/inline-bash.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/input-transform-streaming.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/input-transform.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/interactive-shell.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/kimi-deferred-tools.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

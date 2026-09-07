@@ -1,0 +1,1134 @@
+{
+    "user_id":  1,
+    "description":  "",
+    "status":  1,
+    "category":  "其他",
+    "guide_word":  "你好，我是 AI 人生规划助手。\n\n我可以结合你的学业数据，帮你比较考研、留学、就业、考公考编等方向，并一起制定大学阶段的行动路线。\n\n你可以直接问我“我适合考研还是工作”，也可以说“帮我规划大学剩余阶段”。我们先从你目前最想解决的问题开始。",
+    "update_time":  "2026-08-14T15:50:37",
+    "logo":  "",
+    "name":  "规划2",
+    "is_public":  0,
+    "flow_type":  10,
+    "create_time":  "2026-08-14T14:48:36",
+    "id":  "dddf018e4b26470f96b27bc5e622028a",
+    "nodes":  [
+                  {
+                      "id":  "start_c1fbd",
+                      "data":  {
+                                   "v":  "3",
+                                   "id":  "start_c1fbd",
+                                   "name":  "开始",
+                                   "type":  "start",
+                                   "description":  "工作流运行的起始节点。",
+                                   "group_params":  [
+                                                        {
+                                                            "name":  "开场引导",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "guide_word",
+                                                                               "type":  "textarea",
+                                                                               "label":  "true",
+                                                                               "value":  "你好，我是 AI 人生规划助手。\n\n我可以结合你的学业数据，帮你比较考研、留学、就业、考公考编等方向，并一起制定大学阶段的行动路线。\n\n你可以直接问我“我适合考研还是工作”，也可以说“帮我规划大学剩余阶段”。我们先从你目前最想解决的问题开始。",
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "guide_question",
+                                                                               "help":  "true",
+                                                                               "type":  "input_list",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             "我现在适合考研还是工作？",
+                                                                                             ""
+                                                                                         ],
+                                                                               "placeholder":  "true"
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "全局变量",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "user_info",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  "",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "current_time",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  "",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "chat_history",
+                                                                               "type":  "chat_history_num",
+                                                                               "value":  20,
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "preset_question",
+                                                                               "help":  "true",
+                                                                               "type":  "input_list",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             {
+                                                                                                 "key":  "ee7f2a",
+                                                                                                 "value":  ""
+                                                                                             }
+                                                                                         ],
+                                                                               "global":  "item:input_list",
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "custom_variables",
+                                                                               "help":  "true",
+                                                                               "type":  "global_var",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "item:input_list"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  749
+                                   },
+                      "position":  {
+                                       "x":  -191.36547609284253,
+                                       "y":  220.8621948858342
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "input_195af",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "input_195af",
+                                   "tab":  {
+                                               "value":  "dialog_input",
+                                               "options":  [
+                                                               {
+                                                                   "key":  "dialog_input",
+                                                                   "help":  "true",
+                                                                   "label":  "true"
+                                                               },
+                                                               {
+                                                                   "key":  "form_input",
+                                                                   "help":  "true",
+                                                                   "label":  "true"
+                                                               }
+                                                           ]
+                                           },
+                                   "name":  "输入",
+                                   "type":  "input",
+                                   "description":  "接收用户在会话页面的输入，支持 2 种形式：对话框输入，表单输入。",
+                                   "group_params":  [
+                                                        {
+                                                            "name":  "",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "user_input",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_files_content",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_files_content_size",
+                                                                               "min":  0,
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "char_number",
+                                                                               "label":  "true",
+                                                                               "value":  15000
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_file_accept",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "select_fileaccept",
+                                                                               "label":  "true",
+                                                                               "value":  "all"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_image_files",
+                                                                               "tab":  "dialog_input",
+                                                                               "help":  "true",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "form_input",
+                                                                               "tab":  "form_input",
+                                                                               "type":  "form",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "item:form_input"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  417
+                                   },
+                      "position":  {
+                                       "x":  306.51347146063597,
+                                       "y":  292.1473365099117
+                                   }
+                  },
+                  {
+                      "id":  "knowledge_retriever_ba9b1",
+                      "data":  {
+                                   "v":  2,
+                                   "id":  "knowledge_retriever_ba9b1",
+                                   "name":  "文档知识库检索",
+                                   "type":  "knowledge_retriever",
+                                   "description":  "根据用户问题从知识库中检索相关内容，结合检索结果调用大模型生成最终结果，支持多个问题并行执行。",
+                                   "group_params":  [
+                                                        {
+                                                            "name":  "知识库检索设置",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "user_question",
+                                                                               "help":  "true",
+                                                                               "test":  "var",
+                                                                               "type":  "user_question",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             "input_195af.user_input"
+                                                                                         ],
+                                                                               "varZh":  {
+                                                                                             "input_195af.user_input":  "输入/user_input"
+                                                                                         },
+                                                                               "global":  "self=user_prompt",
+                                                                               "linkage":  "retrieved_result",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "knowledge",
+                                                                               "type":  "knowledge_select_multi",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "type":  "knowledge",
+                                                                                             "value":  [
+                                                                                                           {
+                                                                                                               "key":  35,
+                                                                                                               "label":  "人生决策与路径库"
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "key":  34,
+                                                                                                               "label":  "AI人生规划"
+                                                                                                           }
+                                                                                                       ]
+                                                                                         },
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "metadata_filter",
+                                                                               "type":  "metadata_filter",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "enabled":  false
+                                                                                         }
+                                                                           },
+                                                                           {
+                                                                               "key":  "advanced_retrieval_switch",
+                                                                               "type":  "search_switch",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "keyword_weight":  0.5,
+                                                                                             "vector_weight":  0.5,
+                                                                                             "user_auth":  false,
+                                                                                             "search_switch":  false,
+                                                                                             "rerank_flag":  false,
+                                                                                             "rerank_model":  "",
+                                                                                             "max_chunk_size":  15000
+                                                                                         }
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "输出",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "retrieved_result",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             {
+                                                                                                 "key":  "retrieved_user_input",
+                                                                                                 "label":  "retrieved_user_input"
+                                                                                             }
+                                                                                         ],
+                                                                               "global":  "code:value.map(el =\u003e ({ label: el.label, value: el.key }))"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  555
+                                   },
+                      "position":  {
+                                       "x":  775.4572765962996,
+                                       "y":  175.50051060933217
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "agent_f1be7",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "agent_f1be7",
+                                   "tab":  {
+                                               "value":  "single",
+                                               "options":  [
+                                                               {
+                                                                   "key":  "single",
+                                                                   "label":  "true"
+                                                               },
+                                                               {
+                                                                   "key":  "batch",
+                                                                   "label":  "true"
+                                                               }
+                                                           ]
+                                           },
+                                   "name":  "助手",
+                                   "type":  "agent",
+                                   "description":  "AI 自主进行任务规划，选择合适的知识库、数据库或工具进行调用。",
+                                   "group_params":  [
+                                                        {
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "batch_variable",
+                                                                               "tab":  "batch",
+                                                                               "help":  "true",
+                                                                               "test":  "var",
+                                                                               "type":  "user_question",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "self",
+                                                                               "linkage":  "output",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "模型设置",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "model_id",
+                                                                               "type":  "agent_model",
+                                                                               "label":  "true",
+                                                                               "value":  4,
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "temperature",
+                                                                               "step":  0.1,
+                                                                               "type":  "slide",
+                                                                               "label":  "true",
+                                                                               "scope":  [
+                                                                                             0,
+                                                                                             2
+                                                                                         ],
+                                                                               "value":  0.4
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "提示词",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "system_prompt",
+                                                                               "test":  "var",
+                                                                               "type":  "var_textarea",
+                                                                               "label":  "true",
+                                                                               "value":  "\n你是浙江师范大学学生端的“AI 人生规划”助手，负责在正式生成规划前，先快速理解学生现状，并给出初步可行方向。\n\n你必须遵守以下规则：1. 能用数据库、API 工具或学生上下文得到的客观信息，不得重复询问。典型信息包括 GPA、排名、专业、年级、五维画像、预警和已有发展路径。2. 第一轮回答必须先给方向，再问补充。回答中至少包含 2-3 个初步方向、每个方向的判断依据和 1 个推荐主方向。3. 一轮最多问 3 个问题，问题必须对下一步决策有实际价值。优先问偏好、约束和可执行性，例如：“你更看重稳定还是成长空间？”“家庭对你出省或出国是否有明确限制？”“你现在每周能稳定投入多少小时？”4. 不要一次要求用户填写大量信息，不要连续多轮只问问题不推进。5. 使用温和、专业、非标签化的语言。不把学生归类为“不适合学习”“肯定考不上”。6. 如果检索结果或数据库返回为空，明确说“暂未读取到相关数据”，不要编造。7. 如果用户表达明显心理危机、自伤念头、严重经济或家庭危机，立即切换为安全响应，提供支持渠道，不继续做学业规划。\n\n\n\n\n## 知识库查询工具介绍\n当需要查询知识库来解决用户问题时，调用知识库查询工具，将用户需求改写成合适的 query 作为知识库工具的入参。",
+                                                                               "varZh":  {
+                                                                                             "start_c1fbd.current_time":  "开始/current_time"
+                                                                                         },
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "user_prompt",
+                                                                               "test":  "var",
+                                                                               "type":  "var_textarea",
+                                                                               "label":  "true",
+                                                                               "value":  "\n## 学生本轮输入（其中已包含前端注入的学生客观数据）\n{{#input_195af.user_input#}}\n\n请先给出 2-3 个初步方向，并说明判断依据。若已有数据足以缩小方向，直接给出推荐主方向和备选方向。最后提出不超过 3 个补充问题，以便下一轮生成更具体的规划。\n",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "chat_history_flag",
+                                                                               "help":  "true",
+                                                                               "step":  1,
+                                                                               "type":  "slide_switch",
+                                                                               "label":  "true",
+                                                                               "scope":  [
+                                                                                             0,
+                                                                                             100
+                                                                                         ],
+                                                                               "value":  {
+                                                                                             "flag":  true,
+                                                                                             "value":  50
+                                                                                         }
+                                                                           },
+                                                                           {
+                                                                               "key":  "image_prompt",
+                                                                               "help":  "true",
+                                                                               "type":  "image_prompt",
+                                                                               "label":  "true",
+                                                                               "value":  ""
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "知识库",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "knowledge_id",
+                                                                               "type":  "knowledge_select_multi",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "type":  "knowledge",
+                                                                                             "value":  [
+                                                                                                           {
+                                                                                                               "key":  35,
+                                                                                                               "label":  "人生决策与路径库"
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "key":  34,
+                                                                                                               "label":  "AI人生规划"
+                                                                                                           }
+                                                                                                       ]
+                                                                                         },
+                                                                               "placeholder":  "true"
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "数据库",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "sql_agent",
+                                                                               "type":  "sql_config",
+                                                                               "value":  {
+                                                                                             "open":  false,
+                                                                                             "db_name":  "",
+                                                                                             "db_address":  "",
+                                                                                             "db_password":  "",
+                                                                                             "db_username":  "",
+                                                                                             "database_engine":  "mysql"
+                                                                                         }
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "工具",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "tool_list",
+                                                                               "type":  "add_tool",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             {
+                                                                                                 "key":  "98"
+                                                                                             }
+                                                                                         ]
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "输出",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "output_user",
+                                                                               "help":  "true",
+                                                                               "type":  "switch",
+                                                                               "label":  "true",
+                                                                               "value":  true
+                                                                           },
+                                                                           {
+                                                                               "key":  "output",
+                                                                               "help":  "true",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "code:value.map(el =\u003e ({ label: el.label, value: el.key }))"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  1201
+                                   },
+                      "position":  {
+                                       "x":  1322.6613715439914,
+                                       "y":  176.91139320922397
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "output_dd0cf",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "output_dd0cf",
+                                   "name":  "输出",
+                                   "type":  "output",
+                                   "description":  "可向用户发送文本和文件，并且支持进行更丰富的交互，例如请求用户批准进行某项敏感操作、允许用户在模型输出内容的基础上直接修改并提交。",
+                                   "group_params":  [
+                                                        {
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "message",
+                                                                               "type":  "var_textarea_file",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "msg":  "{{#agent_f1be7.output#}}",
+                                                                                             "files":  [
+
+                                                                                                       ]
+                                                                                         },
+                                                                               "varZh":  {
+                                                                                             "agent_f1be7.output":  "助手/output"
+                                                                                         },
+                                                                               "global":  "key",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "output_result",
+                                                                               "type":  "output_form",
+                                                                               "label":  "用户输入内容",
+                                                                               "value":  {
+                                                                                             "type":  "",
+                                                                                             "value":  ""
+                                                                                         },
+                                                                               "global":  "value.type=input",
+                                                                               "options":  [
+
+                                                                                           ],
+                                                                               "required":  false
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  462
+                                   },
+                      "position":  {
+                                       "x":  1925.0306250101369,
+                                       "y":  259.20068725401484
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "end_ccddf",
+                      "data":  {
+                                   "v":  "1",
+                                   "id":  "end_ccddf",
+                                   "name":  "结束",
+                                   "type":  "end",
+                                   "description":  "工作流运行到此结束。",
+                                   "group_params":  [
+
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  134
+                                   },
+                      "position":  {
+                                       "x":  4232.887661947661,
+                                       "y":  639.1065303566868
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "qa_retriever_6f891",
+                      "data":  {
+                                   "v":  "1",
+                                   "id":  "qa_retriever_6f891",
+                                   "name":  "QA知识库检索",
+                                   "type":  "qa_retriever",
+                                   "description":  "从 QA 知识库中检索问题以及对应的答案。",
+                                   "group_params":  [
+                                                        {
+                                                            "name":  "检索设置",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "user_question",
+                                                                               "test":  "var",
+                                                                               "type":  "var_select",
+                                                                               "label":  "true",
+                                                                               "value":  "input_195af.user_input",
+                                                                               "varZh":  {
+                                                                                             "input_195af.user_input":  "输入/user_input"
+                                                                                         },
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "qa_knowledge_id",
+                                                                               "type":  "qa_select_multi",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             {
+                                                                                                 "key":  36,
+                                                                                                 "label":  "人生规划安全FAQ"
+                                                                                             }
+                                                                                         ],
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "score",
+                                                                               "help":  "true",
+                                                                               "step":  0.01,
+                                                                               "type":  "slide",
+                                                                               "label":  "true",
+                                                                               "scope":  [
+                                                                                             0.01,
+                                                                                             0.99
+                                                                                         ],
+                                                                               "value":  0.28
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "输出",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "retrieved_result",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  "",
+                                                                               "global":  "key"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  495
+                                   },
+                      "position":  {
+                                       "x":  827.0389695736736,
+                                       "y":  884.4292237244674
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "input_cf4f2",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "input_cf4f2",
+                                   "tab":  {
+                                               "value":  "dialog_input",
+                                               "options":  [
+                                                               {
+                                                                   "key":  "dialog_input",
+                                                                   "help":  "true",
+                                                                   "label":  "true"
+                                                               },
+                                                               {
+                                                                   "key":  "form_input",
+                                                                   "help":  "true",
+                                                                   "label":  "true"
+                                                               }
+                                                           ]
+                                           },
+                                   "name":  "输入2",
+                                   "type":  "input",
+                                   "description":  "接收用户在会话页面的输入，支持 2 种形式：对话框输入，表单输入。",
+                                   "group_params":  [
+                                                        {
+                                                            "name":  "",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "user_input",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_files_content",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_files_content_size",
+                                                                               "min":  0,
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "char_number",
+                                                                               "label":  "true",
+                                                                               "value":  15000
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_file_accept",
+                                                                               "tab":  "dialog_input",
+                                                                               "type":  "select_fileaccept",
+                                                                               "label":  "true",
+                                                                               "value":  "all"
+                                                                           },
+                                                                           {
+                                                                               "key":  "dialog_image_files",
+                                                                               "tab":  "dialog_input",
+                                                                               "help":  "true",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "global":  "key"
+                                                                           },
+                                                                           {
+                                                                               "key":  "form_input",
+                                                                               "tab":  "form_input",
+                                                                               "type":  "form",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "item:form_input"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  417
+                                   },
+                      "position":  {
+                                       "x":  2609.628732351255,
+                                       "y":  185.32951367680928
+                                   }
+                  },
+                  {
+                      "id":  "agent_4121f",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "agent_4121f",
+                                   "tab":  {
+                                               "value":  "single",
+                                               "options":  [
+                                                               {
+                                                                   "key":  "single",
+                                                                   "label":  "true"
+                                                               },
+                                                               {
+                                                                   "key":  "batch",
+                                                                   "label":  "true"
+                                                               }
+                                                           ]
+                                           },
+                                   "name":  "助手2",
+                                   "type":  "agent",
+                                   "description":  "AI 自主进行任务规划，选择合适的知识库、数据库或工具进行调用。",
+                                   "group_params":  [
+                                                        {
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "batch_variable",
+                                                                               "tab":  "batch",
+                                                                               "help":  "true",
+                                                                               "test":  "var",
+                                                                               "type":  "user_question",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "self",
+                                                                               "linkage":  "output",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "模型设置",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "model_id",
+                                                                               "type":  "agent_model",
+                                                                               "label":  "true",
+                                                                               "value":  4,
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "temperature",
+                                                                               "step":  0.1,
+                                                                               "type":  "slide",
+                                                                               "label":  "true",
+                                                                               "scope":  [
+                                                                                             0,
+                                                                                             2
+                                                                                         ],
+                                                                               "value":  0.7
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "提示词",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "system_prompt",
+                                                                               "test":  "var",
+                                                                               "type":  "var_textarea",
+                                                                               "label":  "true",
+                                                                               "value":  "\n你是浙江师范大学学生端的“AI 人生规划”主规划师。你的任务是把学生的客观学业数据、第一轮方向判断、本轮补充信息和知识库依据整合成一份可执行的人生规划。\n\n核心规则：1. 区分四类信息：   - 事实：来自数据库、API 或学生明确陈述。   - 推断：由事实合理推导。   - 建议：模型给出的可执行方案。   - 待核实：政策、分数线、时间、岗位要求等外部信息。2. 规划必须个性化，避免空泛套话。引用 GPA、排名、五维画像、专业、预警和第一轮判断时，要说明这些信息如何影响结论。3. 至少给出 1 个主路径和 1 个备选路径，并给出切换条件。4. 每条行动必须包含：做什么、为什么、什么时间前完成、如何判断完成。5. 覆盖未来 3 个月、本学年和大学剩余阶段，但大学剩余阶段可以更简洁。6. 所有重大选择只提供决策依据，不替学生做最终决定。7. 不夸大任何路径的成功率，不承诺“一定上岸”“一定高薪”。8. 如果学生数据存在明显学业风险，先处理短期学业恢复，再谈长期目标。9. 如果发现心理危机或高风险信号，使用安全响应模板，不输出考试技巧和升学规划。10. 政策、报考、课程、绩点等学校规则必须以官方信息为准；不确定时明确标注“请以学校官方通知为准”。\n\n\n\n\n## 知识库查询工具介绍\n当需要查询知识库来解决用户问题时，调用知识库查询工具，将用户需求改写成合适的 query 作为知识库工具的入参。",
+                                                                               "varZh":  {
+                                                                                             "start_c1fbd.current_time":  "开始/current_time"
+                                                                                         },
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "user_prompt",
+                                                                               "test":  "var",
+                                                                               "type":  "var_textarea",
+                                                                               "label":  "true",
+                                                                               "value":  "\n## 学生本轮补充（其中已包含前端注入的学生客观数据）\n{{#input_cf4f2.user_input#}}\n\n请生成一份完整但不过度冗长的人生规划。\n",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "chat_history_flag",
+                                                                               "help":  "true",
+                                                                               "step":  1,
+                                                                               "type":  "slide_switch",
+                                                                               "label":  "true",
+                                                                               "scope":  [
+                                                                                             0,
+                                                                                             100
+                                                                                         ],
+                                                                               "value":  {
+                                                                                             "flag":  true,
+                                                                                             "value":  29
+                                                                                         }
+                                                                           },
+                                                                           {
+                                                                               "key":  "image_prompt",
+                                                                               "help":  "true",
+                                                                               "type":  "image_prompt",
+                                                                               "label":  "true",
+                                                                               "value":  ""
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "知识库",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "knowledge_id",
+                                                                               "type":  "knowledge_select_multi",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "type":  "knowledge",
+                                                                                             "value":  [
+                                                                                                           {
+                                                                                                               "key":  35,
+                                                                                                               "label":  "人生决策与路径库"
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "key":  34,
+                                                                                                               "label":  "AI人生规划"
+                                                                                                           }
+                                                                                                       ]
+                                                                                         },
+                                                                               "placeholder":  "true"
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "数据库",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "sql_agent",
+                                                                               "type":  "sql_config",
+                                                                               "value":  {
+                                                                                             "open":  false,
+                                                                                             "db_name":  "",
+                                                                                             "db_address":  "",
+                                                                                             "db_password":  "",
+                                                                                             "db_username":  "",
+                                                                                             "database_engine":  "mysql"
+                                                                                         }
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "工具",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "tool_list",
+                                                                               "type":  "add_tool",
+                                                                               "label":  "true",
+                                                                               "value":  [
+                                                                                             {
+                                                                                                 "key":  "98"
+                                                                                             }
+                                                                                         ]
+                                                                           }
+                                                                       ]
+                                                        },
+                                                        {
+                                                            "name":  "输出",
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "output_user",
+                                                                               "help":  "true",
+                                                                               "type":  "switch",
+                                                                               "label":  "true",
+                                                                               "value":  true
+                                                                           },
+                                                                           {
+                                                                               "key":  "output",
+                                                                               "help":  "true",
+                                                                               "type":  "var",
+                                                                               "label":  "true",
+                                                                               "value":  [
+
+                                                                                         ],
+                                                                               "global":  "code:value.map(el =\u003e ({ label: el.label, value: el.key }))"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "dragging":  false,
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  1201
+                                   },
+                      "position":  {
+                                       "x":  3075.3087307096616,
+                                       "y":  275.59347811632415
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "output_056f8",
+                      "data":  {
+                                   "v":  "2",
+                                   "id":  "output_056f8",
+                                   "name":  "输出2",
+                                   "type":  "output",
+                                   "description":  "可向用户发送文本和文件，并且支持进行更丰富的交互，例如请求用户批准进行某项敏感操作、允许用户在模型输出内容的基础上直接修改并提交。",
+                                   "group_params":  [
+                                                        {
+                                                            "params":  [
+                                                                           {
+                                                                               "key":  "message",
+                                                                               "type":  "var_textarea_file",
+                                                                               "label":  "true",
+                                                                               "value":  {
+                                                                                             "msg":  "{{#agent_4121f.output#}}",
+                                                                                             "files":  [
+
+                                                                                                       ]
+                                                                                         },
+                                                                               "varZh":  {
+                                                                                             "agent_4121f.output":  "助手2/output"
+                                                                                         },
+                                                                               "global":  "key",
+                                                                               "required":  true,
+                                                                               "placeholder":  "true"
+                                                                           },
+                                                                           {
+                                                                               "key":  "output_result",
+                                                                               "type":  "output_form",
+                                                                               "label":  "用户输入内容",
+                                                                               "value":  {
+                                                                                             "type":  "",
+                                                                                             "value":  ""
+                                                                                         },
+                                                                               "global":  "value.type=input",
+                                                                               "options":  [
+
+                                                                                           ],
+                                                                               "required":  false
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ]
+                               },
+                      "type":  "flowNode",
+                      "measured":  {
+                                       "width":  333,
+                                       "height":  462
+                                   },
+                      "position":  {
+                                       "x":  3598.429433711398,
+                                       "y":  480.738851842495
+                                   },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "note_6104f",
+                      "type":  "noteNode",
+                      "position":  {
+                                       "x":  157.52182027236688,
+                                       "y":  1316.8572221608592
+                                   },
+                      "data":  {
+                                   "id":  "note_6104f",
+                                   "group_params":  [
+
+                                                    ],
+                                   "type":  "note",
+                                   "value":  ""
+                               },
+                      "measured":  {
+                                       "width":  240,
+                                       "height":  112
+                                   }
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "xy-edge__start_c1fbdright_handle-input_195afleft_handle",
+                      "type":  "customEdge",
+                      "source":  "start_c1fbd",
+                      "target":  "input_195af",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__input_195afright_handle-knowledge_retriever_ba9b1left_handle",
+                      "type":  "customEdge",
+                      "source":  "input_195af",
+                      "target":  "knowledge_retriever_ba9b1",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__knowledge_retriever_ba9b1right_handle-agent_f1be7left_handle",
+                      "type":  "customEdge",
+                      "source":  "knowledge_retriever_ba9b1",
+                      "target":  "agent_f1be7",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__agent_f1be7right_handle-output_dd0cfleft_handle",
+                      "type":  "customEdge",
+                      "source":  "agent_f1be7",
+                      "target":  "output_dd0cf",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__input_195afright_handle-qa_retriever_6f891left_handle",
+                      "type":  "customEdge",
+                      "source":  "input_195af",
+                      "target":  "qa_retriever_6f891",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__qa_retriever_6f891right_handle-agent_f1be7left_handle",
+                      "type":  "customEdge",
+                      "source":  "qa_retriever_6f891",
+                      "target":  "agent_f1be7",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__output_dd0cfright_handle-input_cf4f2left_handle",
+                      "type":  "customEdge",
+                      "source":  "output_dd0cf",
+                      "target":  "input_cf4f2",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__input_cf4f2right_handle-agent_4121fleft_handle",
+                      "type":  "customEdge",
+                      "source":  "input_cf4f2",
+                      "target":  "agent_4121f",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__agent_4121fright_handle-output_056f8left_handle",
+                      "type":  "customEdge",
+                      "source":  "agent_4121f",
+                      "target":  "output_056f8",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  },
+                  {
+                      "id":  "xy-edge__output_056f8right_handle-end_ccddfleft_handle",
+                      "type":  "customEdge",
+                      "source":  "output_056f8",
+                      "target":  "end_ccddf",
+                      "animated":  true,
+                      "sourceHandle":  "right_handle",
+                      "targetHandle":  "left_handle"
+                  }
+              ],
+    "viewport":  {
+                     "x":  286.9385109552543,
+                     "y":  97.84974191634785,
+                     "zoom":  0.49225509496918163
+                 },
+    "source":  "localhost:3001"
+}

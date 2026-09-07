@@ -1,0 +1,1344 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "type": "file",
+      "name": "7301-stalled-availability-refresh.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "summary": "回归测试：模拟模型可用性刷新停滞并验证恢复刷新机制。",
+      "tags": [
+        "test",
+        "regression",
+        "refresh",
+        "availability"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts:stallNextCredentialList",
+      "type": "function",
+      "name": "stallNextCredentialList",
+      "filePath": "packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "lineRange": [
+        28,
+        51
+      ],
+      "summary": "使下一次凭据列表请求停滞以模拟刷新卡住。",
+      "tags": [
+        "test",
+        "fixture",
+        "refresh",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "type": "file",
+      "name": "7443-model-command-cached-match.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "summary": "回归测试：验证 model 命令在缓存匹配场景下的行为。",
+      "tags": [
+        "test",
+        "regression",
+        "model",
+        "command"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "type": "file",
+      "name": "pre-prompt-compaction-no-continue.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "summary": "回归测试：验证预提示压缩后不允许继续的行为。",
+      "tags": [
+        "test",
+        "regression",
+        "compaction",
+        "prompt"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts:createUsage",
+      "type": "function",
+      "name": "createUsage",
+      "filePath": "packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "lineRange": [
+        5,
+        14
+      ],
+      "summary": "构造测试用用量对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "type": "file",
+      "name": "tree-during-streaming.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "summary": "回归测试：验证流式输出期间触发 tree 命令的行为。",
+      "tags": [
+        "test",
+        "regression",
+        "streaming",
+        "tree"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/test-harness.test.ts",
+      "type": "file",
+      "name": "test-harness.test.ts",
+      "filePath": "packages/coding-agent/test/test-harness.test.ts",
+      "summary": "测试 coding-agent 测试 harness 自身的运行行为。",
+      "tags": [
+        "test",
+        "harness",
+        "self-test",
+        "coding-agent"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/coding-agent/test/test-harness.ts",
+      "type": "file",
+      "name": "test-harness.ts",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "summary": "提供 coding-agent 测试辅助：faux 模型、流式 delta、harness 创建与资源加载器。",
+      "tags": [
+        "test",
+        "harness",
+        "fixture",
+        "faux-model",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:buildUsage",
+      "type": "function",
+      "name": "buildUsage",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        100,
+        113
+      ],
+      "summary": "构造测试用模型用量对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:buildAssistantMessage",
+      "type": "function",
+      "name": "buildAssistantMessage",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        117,
+        164
+      ],
+      "summary": "构造测试用助手消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:chunkString",
+      "type": "function",
+      "name": "chunkString",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        171,
+        180
+      ],
+      "summary": "将字符串按长度分块。",
+      "tags": [
+        "utility",
+        "chunking",
+        "string"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:streamWithDeltas",
+      "type": "function",
+      "name": "streamWithDeltas",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        186,
+        258
+      ],
+      "summary": "模拟流式响应，分片发送消息 delta。",
+      "tags": [
+        "test",
+        "streaming",
+        "mock",
+        "delta"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:createFauxStreamFn",
+      "type": "function",
+      "name": "createFauxStreamFn",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        288,
+        321
+      ],
+      "summary": "创建 faux 流式回调函数。",
+      "tags": [
+        "test",
+        "faux",
+        "streaming",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:createHarnessWithResourceLoader",
+      "type": "function",
+      "name": "createHarnessWithResourceLoader",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        371,
+        455
+      ],
+      "summary": "创建带资源加载器的测试 harness。",
+      "tags": [
+        "test",
+        "harness",
+        "resource-loader",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:createHarness",
+      "type": "function",
+      "name": "createHarness",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        457,
+        464
+      ],
+      "summary": "创建默认测试 harness。",
+      "tags": [
+        "test",
+        "harness",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/test-harness.ts:createHarnessWithExtensions",
+      "type": "function",
+      "name": "createHarnessWithExtensions",
+      "filePath": "packages/coding-agent/test/test-harness.ts",
+      "lineRange": [
+        466,
+        471
+      ],
+      "summary": "创建带扩展的测试 harness。",
+      "tags": [
+        "test",
+        "harness",
+        "extensions",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/tool-result-images.test.ts",
+      "type": "file",
+      "name": "tool-result-images.test.ts",
+      "filePath": "packages/coding-agent/test/tool-result-images.test.ts",
+      "summary": "测试工具结果中的图片处理：PNG/BMP 构造与尺寸读取。",
+      "tags": [
+        "test",
+        "images",
+        "tool-result",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/tool-result-images.test.ts:createPng",
+      "type": "function",
+      "name": "createPng",
+      "filePath": "packages/coding-agent/test/tool-result-images.test.ts",
+      "lineRange": [
+        19,
+        35
+      ],
+      "summary": "构造测试用 PNG 图片字节。",
+      "tags": [
+        "test",
+        "fixture",
+        "png",
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/tool-result-images.test.ts:createTinyBmp1x1Red24bpp",
+      "type": "function",
+      "name": "createTinyBmp1x1Red24bpp",
+      "filePath": "packages/coding-agent/test/tool-result-images.test.ts",
+      "lineRange": [
+        42,
+        56
+      ],
+      "summary": "构造 1x1 红色 24bpp BMP 字节。",
+      "tags": [
+        "test",
+        "fixture",
+        "bmp",
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/utilities.ts",
+      "type": "file",
+      "name": "utilities.ts",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "summary": "提供 coding-agent 测试工具函数：认证存储、API key 解析、会话构建与测试树创建。",
+      "tags": [
+        "test",
+        "utility",
+        "fixture",
+        "auth",
+        "session"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:loadAuthStorage",
+      "type": "function",
+      "name": "loadAuthStorage",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        53,
+        63
+      ],
+      "summary": "加载认证存储对象。",
+      "tags": [
+        "test",
+        "auth",
+        "fixture",
+        "storage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:resolveApiKey",
+      "type": "function",
+      "name": "resolveApiKey",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        81,
+        104
+      ],
+      "summary": "解析 provider 的测试 API key。",
+      "tags": [
+        "test",
+        "auth",
+        "api-key",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:hasAuthForProvider",
+      "type": "function",
+      "name": "hasAuthForProvider",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        109,
+        112
+      ],
+      "summary": "判断 provider 是否已配置测试认证。",
+      "tags": [
+        "test",
+        "auth",
+        "provider",
+        "check"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:getRealAuthStorage",
+      "type": "function",
+      "name": "getRealAuthStorage",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        121,
+        123
+      ],
+      "summary": "获取真实认证存储实例。",
+      "tags": [
+        "test",
+        "auth",
+        "storage",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:userMsg",
+      "type": "function",
+      "name": "userMsg",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        128,
+        130
+      ],
+      "summary": "构造用户消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:assistantMsg",
+      "type": "function",
+      "name": "assistantMsg",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        135,
+        153
+      ],
+      "summary": "构造助手消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:createTestExtensionsResult",
+      "type": "function",
+      "name": "createTestExtensionsResult",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        184,
+        207
+      ],
+      "summary": "构造扩展加载测试结果。",
+      "tags": [
+        "test",
+        "fixture",
+        "extensions"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:createTestResourceLoader",
+      "type": "function",
+      "name": "createTestResourceLoader",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        213,
+        233
+      ],
+      "summary": "创建测试资源加载器。",
+      "tags": [
+        "test",
+        "fixture",
+        "resource-loader"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:createTestSession",
+      "type": "function",
+      "name": "createTestSession",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        239,
+        284
+      ],
+      "summary": "创建测试会话并注入配置。",
+      "tags": [
+        "test",
+        "fixture",
+        "session"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/utilities.ts:buildTestTree",
+      "type": "function",
+      "name": "buildTestTree",
+      "filePath": "packages/coding-agent/test/utilities.ts",
+      "lineRange": [
+        297,
+        321
+      ],
+      "summary": "构建测试用的会话树结构。",
+      "tags": [
+        "test",
+        "fixture",
+        "tree",
+        "session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "type": "file",
+      "name": "branch-cache.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "summary": "实现 SQLite 分支缓存：重建、扩展缓存分支并将条目追加到分支缓存表。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "cache",
+        "storage"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:deleteBranchCache",
+      "type": "function",
+      "name": "deleteBranchCache",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "lineRange": [
+        14,
+        17
+      ],
+      "summary": "删除指定分支的缓存行。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "cache",
+        "delete"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:rebuildBranchCache",
+      "type": "function",
+      "name": "rebuildBranchCache",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "lineRange": [
+        19,
+        33
+      ],
+      "summary": "重建分支缓存（清空后重新写入）。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "cache",
+        "rebuild"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:buildCachedBranch",
+      "type": "function",
+      "name": "buildCachedBranch",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "lineRange": [
+        35,
+        56
+      ],
+      "summary": "构造缓存分支对象并写入存储。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "cache",
+        "build"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:extendBranch",
+      "type": "function",
+      "name": "extendBranch",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "lineRange": [
+        58,
+        72
+      ],
+      "summary": "扩展现有分支的缓存。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "extend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:appendEntryToBranchCache",
+      "type": "function",
+      "name": "appendEntryToBranchCache",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "lineRange": [
+        74,
+        105
+      ],
+      "summary": "将条目追加到分支缓存表。",
+      "tags": [
+        "sqlite",
+        "branch",
+        "cache",
+        "append"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "type": "file",
+      "name": "migrations.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "summary": "实现 SQLite schema 迁移：加载 SQL 文件、确保迁移表并顺序应用迁移。",
+      "tags": [
+        "sqlite",
+        "migration",
+        "schema",
+        "ddl"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:loadMigrations",
+      "type": "function",
+      "name": "loadMigrations",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "加载全部迁移 SQL 文件。",
+      "tags": [
+        "sqlite",
+        "migration",
+        "loading"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:applyMigrations",
+      "type": "function",
+      "name": "applyMigrations",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "lineRange": [
+        34,
+        51
+      ],
+      "summary": "顺序应用未执行的迁移并记录到迁移表。",
+      "tags": [
+        "sqlite",
+        "migration",
+        "apply",
+        "ddl"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "target": "function:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts:stallNextCredentialList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "target": "file:packages/coding-agent/test/suite/harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "target": "file:packages/coding-agent/test/suite/harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "target": "function:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts:createUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "target": "file:packages/coding-agent/test/suite/harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "target": "file:packages/coding-agent/test/suite/harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "target": "file:packages/coding-agent/test/utilities.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.test.ts",
+      "target": "file:packages/coding-agent/test/test-harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:buildUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:buildAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:chunkString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:streamWithDeltas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createFauxStreamFn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createFauxStreamFn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createHarnessWithResourceLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createHarness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createHarness",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createHarnessWithExtensions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "function:packages/coding-agent/test/test-harness.ts:createHarnessWithExtensions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/src/core/agent-session.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/src/core/session-manager.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.ts",
+      "target": "file:packages/coding-agent/test/utilities.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/tool-result-images.test.ts",
+      "target": "function:packages/coding-agent/test/tool-result-images.test.ts:createPng",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/tool-result-images.test.ts",
+      "target": "function:packages/coding-agent/test/tool-result-images.test.ts:createTinyBmp1x1Red24bpp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/tool-result-images.test.ts",
+      "target": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:loadAuthStorage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:resolveApiKey",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:resolveApiKey",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:hasAuthForProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:hasAuthForProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:getRealAuthStorage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:getRealAuthStorage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:userMsg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:userMsg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:assistantMsg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:assistantMsg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestExtensionsResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestExtensionsResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestResourceLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestResourceLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:createTestSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:buildTestTree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "function:packages/coding-agent/test/utilities.ts:buildTestTree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/ai/src/providers/all.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/agent-session.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/event-bus.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/session-manager.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/utilities.ts",
+      "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:deleteBranchCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:deleteBranchCache",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:rebuildBranchCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:rebuildBranchCache",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:buildCachedBranch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:buildCachedBranch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:extendBranch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:appendEntryToBranchCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts:appendEntryToBranchCache",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/storage/branch-entries.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/storage/branch-tips.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/branch-cache.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:loadMigrations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:loadMigrations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:applyMigrations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/migrations.ts:applyMigrations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/migrations.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7301-stalled-availability-refresh.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/7443-model-command-cached-match.test.ts",
+      "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/pre-prompt-compaction-no-continue.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/tree-during-streaming.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/test-harness.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/tool-result-images.test.ts",
+      "target": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

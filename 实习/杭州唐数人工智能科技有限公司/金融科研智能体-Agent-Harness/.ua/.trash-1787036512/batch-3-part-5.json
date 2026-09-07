@@ -1,0 +1,1661 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/compat.ts",
+   "type": "file",
+   "name": "compat.ts",
+   "filePath": "packages/ai/src/compat.ts",
+   "summary": "AI 兼容层：注册/解析 API provider，提供统一 stream/complete 接口与内置 provider 注册。",
+   "tags": [
+    "provider",
+    "registry",
+    "compat",
+    "facade"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:wrapStream",
+   "type": "function",
+   "name": "wrapStream",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    102,
+    112
+   ],
+   "summary": "包装流式 API 为统一接口。",
+   "tags": [
+    "compat",
+    "wrapper"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:wrapStreamSimple",
+   "type": "function",
+   "name": "wrapStreamSimple",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    114,
+    124
+   ],
+   "summary": "包装非流式 API 为统一接口。",
+   "tags": [
+    "compat",
+    "wrapper"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:registerApiProvider",
+   "type": "function",
+   "name": "registerApiProvider",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    126,
+    138
+   ],
+   "summary": "注册 API provider 到注册表。",
+   "tags": [
+    "registry",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:getApiProvider",
+   "type": "function",
+   "name": "getApiProvider",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    140,
+    142
+   ],
+   "summary": "按 api 获取 provider。",
+   "tags": [
+    "registry",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:getApiProviders",
+   "type": "function",
+   "name": "getApiProviders",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    144,
+    146
+   ],
+   "summary": "列出全部 provider。",
+   "tags": [
+    "registry",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:unregisterApiProviders",
+   "type": "function",
+   "name": "unregisterApiProviders",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    148,
+    154
+   ],
+   "summary": "按 source 注销 provider。",
+   "tags": [
+    "registry",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:registerFauxProvider",
+   "type": "function",
+   "name": "registerFauxProvider",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    160,
+    176
+   ],
+   "summary": "注册 faux（测试）provider。",
+   "tags": [
+    "registry",
+    "test"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:registerBuiltInApiProviders",
+   "type": "function",
+   "name": "registerBuiltInApiProviders",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    198,
+    205
+   ],
+   "summary": "注册全部内置 provider。",
+   "tags": [
+    "registry",
+    "builtin"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:resetApiProviders",
+   "type": "function",
+   "name": "resetApiProviders",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    207,
+    211
+   ],
+   "summary": "重置 provider 注册表。",
+   "tags": [
+    "registry",
+    "reset"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    250,
+    264
+   ],
+   "summary": "统一流式入口：按模型路由到对应 provider。",
+   "tags": [
+    "facade",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:complete",
+   "type": "function",
+   "name": "complete",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    266,
+    273
+   ],
+   "summary": "统一非流式入口。",
+   "tags": [
+    "facade",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    275,
+    289
+   ],
+   "summary": "统一简化流式入口。",
+   "tags": [
+    "facade",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/compat.ts:completeSimple",
+   "type": "function",
+   "name": "completeSimple",
+   "filePath": "packages/ai/src/compat.ts",
+   "lineRange": [
+    291,
+    298
+   ],
+   "summary": "统一简化非流式入口。",
+   "tags": [
+    "facade",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/env-api-keys.ts",
+   "type": "file",
+   "name": "env-api-keys.ts",
+   "filePath": "packages/ai/src/env-api-keys.ts",
+   "summary": "环境变量 API key 解析：按 provider 查找候选 env 变量，支持 Vertex ADC 与多 key 验证。",
+   "tags": [
+    "env",
+    "api-key",
+    "provider",
+    "auth"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/env-api-keys.ts:hasVertexAdcCredentials",
+   "type": "function",
+   "name": "hasVertexAdcCredentials",
+   "filePath": "packages/ai/src/env-api-keys.ts",
+   "lineRange": [
+    35,
+    66
+   ],
+   "summary": "检测 Vertex ADC 凭据是否可用。",
+   "tags": [
+    "gcp",
+    "auth"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/env-api-keys.ts:getApiKeyEnvVars",
+   "type": "function",
+   "name": "getApiKeyEnvVars",
+   "filePath": "packages/ai/src/env-api-keys.ts",
+   "lineRange": [
+    68,
+    119
+   ],
+   "summary": "按 provider 生成候选 API key 环境变量。",
+   "tags": [
+    "env",
+    "api-key"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/env-api-keys.ts:findEnvKeys",
+   "type": "function",
+   "name": "findEnvKeys",
+   "filePath": "packages/ai/src/env-api-keys.ts",
+   "lineRange": [
+    130,
+    136
+   ],
+   "summary": "查找实际存在的环境变量 key。",
+   "tags": [
+    "env",
+    "api-key"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/env-api-keys.ts:getEnvApiKey",
+   "type": "function",
+   "name": "getEnvApiKey",
+   "filePath": "packages/ai/src/env-api-keys.ts",
+   "lineRange": [
+    145,
+    187
+   ],
+   "summary": "解析 provider 的最终 API key。",
+   "tags": [
+    "env",
+    "api-key"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/image-models.ts",
+   "type": "file",
+   "name": "image-models.ts",
+   "filePath": "packages/ai/src/image-models.ts",
+   "summary": "图像模型注册表查询：按 provider 获取图像模型与 provider 列表。",
+   "tags": [
+    "image-models",
+    "registry",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/image-models.ts:getImageModel",
+   "type": "function",
+   "name": "getImageModel",
+   "filePath": "packages/ai/src/image-models.ts",
+   "lineRange": [
+    23,
+    29
+   ],
+   "summary": "按 provider 与 id 获取图像模型。",
+   "tags": [
+    "image-models",
+    "lookup"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/image-models.ts:getImageProviders",
+   "type": "function",
+   "name": "getImageProviders",
+   "filePath": "packages/ai/src/image-models.ts",
+   "lineRange": [
+    31,
+    33
+   ],
+   "summary": "列出图像 provider。",
+   "tags": [
+    "image-models",
+    "registry"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/image-models.ts:getImageModels",
+   "type": "function",
+   "name": "getImageModels",
+   "filePath": "packages/ai/src/image-models.ts",
+   "lineRange": [
+    35,
+    42
+   ],
+   "summary": "按 provider 列出图像模型。",
+   "tags": [
+    "image-models",
+    "registry"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/images-api-registry.ts",
+   "type": "file",
+   "name": "images-api-registry.ts",
+   "filePath": "packages/ai/src/images-api-registry.ts",
+   "summary": "图像生成 API provider 注册表：包装与注册 generateImages provider。",
+   "tags": [
+    "images",
+    "registry",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/images-api-registry.ts:wrapGenerateImages",
+   "type": "function",
+   "name": "wrapGenerateImages",
+   "filePath": "packages/ai/src/images-api-registry.ts",
+   "lineRange": [
+    26,
+    36
+   ],
+   "summary": "包装图像生成 API。",
+   "tags": [
+    "wrapper",
+    "images"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/images-api-registry.ts:registerImagesApiProvider",
+   "type": "function",
+   "name": "registerImagesApiProvider",
+   "filePath": "packages/ai/src/images-api-registry.ts",
+   "lineRange": [
+    38,
+    49
+   ],
+   "summary": "注册图像生成 provider。",
+   "tags": [
+    "registry",
+    "images"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/images-api-registry.ts:getImagesApiProvider",
+   "type": "function",
+   "name": "getImagesApiProvider",
+   "filePath": "packages/ai/src/images-api-registry.ts",
+   "lineRange": [
+    51,
+    53
+   ],
+   "summary": "获取图像生成 provider。",
+   "tags": [
+    "registry",
+    "images"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/images.ts",
+   "type": "file",
+   "name": "images.ts",
+   "filePath": "packages/ai/src/images.ts",
+   "summary": "图像生成入口：解析 API provider 并转发 generateImages 调用。",
+   "tags": [
+    "images",
+    "generation",
+    "entry-point"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/images.ts:generateImages",
+   "type": "function",
+   "name": "generateImages",
+   "filePath": "packages/ai/src/images.ts",
+   "lineRange": [
+    14,
+    21
+   ],
+   "summary": "生成图像：解析 provider 并转发调用。",
+   "tags": [
+    "images",
+    "generation"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/legacy-api-aliases.ts",
+   "type": "file",
+   "name": "legacy-api-aliases.ts",
+   "filePath": "packages/ai/src/legacy-api-aliases.ts",
+   "summary": "Legacy API 别名 barrel：将旧模块路径 re-export 到新实现。",
+   "tags": [
+    "barrel",
+    "compat",
+    "re-export",
+    "legacy"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:wrapStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:wrapStreamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerApiProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerApiProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:getApiProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:getApiProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:getApiProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:getApiProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:unregisterApiProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:unregisterApiProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerFauxProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerFauxProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerBuiltInApiProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:registerBuiltInApiProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:resetApiProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:resetApiProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:complete",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:complete",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:completeSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "function:packages/ai/src/compat.ts:completeSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/google-vertex.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/providers/all.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/providers/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:hasVertexAdcCredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:getApiKeyEnvVars",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:findEnvKeys",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:findEnvKeys",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:getEnvApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "function:packages/ai/src/env-api-keys.ts:getEnvApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageModel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageProviders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageProviders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "function:packages/ai/src/image-models.ts:getImageModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "function:packages/ai/src/images-api-registry.ts:wrapGenerateImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "function:packages/ai/src/images-api-registry.ts:registerImagesApiProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "function:packages/ai/src/images-api-registry.ts:registerImagesApiProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "function:packages/ai/src/images-api-registry.ts:getImagesApiProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "function:packages/ai/src/images-api-registry.ts:getImagesApiProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "function:packages/ai/src/images.ts:generateImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "function:packages/ai/src/images.ts:generateImages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/src/images-api-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/src/providers/images/register-builtins.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/google-vertex.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/legacy-api-aliases.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/abort.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-adaptive-thinking-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/baseten-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/baseten-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/cache-retention.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/compat-env.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/context-overflow.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/deferred-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/empty.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/env-api-keys.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/faux-provider.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/fireworks-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/fireworks-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/image-tool-result.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/image-models.ts",
+   "target": "file:packages/ai/test/images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/test/images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/max-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/mistral-reasoning-mode.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/mistral-tool-schema.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-empty-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-response-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-cache-affinity-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-reasoning-replay-e2e.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openrouter-cache-control-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/openrouter-cache-write-repro.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/test/openrouter-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/test/provider-error-body-passthrough.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/qwen-token-plan-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/responseid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/sampling-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/stream.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/supports-xhigh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images-api-registry.ts",
+   "target": "file:packages/ai/test/telemetry-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images.ts",
+   "target": "file:packages/ai/test/telemetry-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/together-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/together-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/tokens.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/tool-call-id-normalization.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/total-tokens.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/xhigh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/xiaomi-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/ai/test/zen.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,1041 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "type": "file",
+   "name": "runtime-credentials.test.ts",
+   "filePath": "packages/coding-agent/test/runtime-credentials.test.ts",
+   "summary": "测试运行时凭据的读写与作用域解析。",
+   "tags": [
+    "test",
+    "auth",
+    "凭据"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "file",
+   "name": "sdk-openrouter-attribution.test.ts",
+   "filePath": "packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "summary": "测试 SDK 对 OpenRouter 请求的 attribution 元数据。",
+   "tags": [
+    "test",
+    "sdk",
+    "openrouter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "file",
+   "name": "sdk-stream-options.test.ts",
+   "filePath": "packages/coding-agent/test/sdk-stream-options.test.ts",
+   "summary": "测试 SDK 流式选项的传递与默认行为。",
+   "tags": [
+    "test",
+    "sdk",
+    "流式"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "type": "file",
+   "name": "session-cwd.test.ts",
+   "filePath": "packages/coding-agent/test/session-cwd.test.ts",
+   "summary": "测试会话工作目录校验与缺失 cwd 的错误处理。",
+   "tags": [
+    "test",
+    "session",
+    "cwd"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-cwd.test.ts:writeSessionFile",
+   "type": "function",
+   "name": "writeSessionFile",
+   "filePath": "packages/coding-agent/test/session-cwd.test.ts",
+   "lineRange": [
+    15,
+    26
+   ],
+   "summary": "写入会话文件的辅助函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/build-context.test.ts",
+   "type": "file",
+   "name": "build-context.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/build-context.test.ts",
+   "summary": "测试会话上下文的构建与条目转换逻辑。",
+   "tags": [
+    "test",
+    "session-manager",
+    "上下文"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-manager/build-context.test.ts:msg",
+   "type": "function",
+   "name": "msg",
+   "filePath": "packages/coding-agent/test/session-manager/build-context.test.ts",
+   "lineRange": [
+    14,
+    39
+   ],
+   "summary": "构造消息条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-manager/build-context.test.ts:compaction",
+   "type": "function",
+   "name": "compaction",
+   "filePath": "packages/coding-agent/test/session-manager/build-context.test.ts",
+   "lineRange": [
+    41,
+    51
+   ],
+   "summary": "构造压缩条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/custom-session-id.test.ts",
+   "type": "file",
+   "name": "custom-session-id.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/custom-session-id.test.ts",
+   "summary": "测试自定义会话 ID 的支持与校验。",
+   "tags": [
+    "test",
+    "session-manager",
+    "会话ID"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/file-operations.test.ts",
+   "type": "file",
+   "name": "file-operations.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/file-operations.test.ts",
+   "summary": "测试会话管理器的文件操作与条目保存行为。",
+   "tags": [
+    "test",
+    "session-manager",
+    "文件操作"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/labels.test.ts",
+   "type": "file",
+   "name": "labels.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/labels.test.ts",
+   "summary": "测试会话标签（label）的读写与展示。",
+   "tags": [
+    "test",
+    "session-manager",
+    "标签"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/migration.test.ts",
+   "type": "file",
+   "name": "migration.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/migration.test.ts",
+   "summary": "测试会话格式迁移逻辑。",
+   "tags": [
+    "test",
+    "session-manager",
+    "迁移"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/save-entry.test.ts",
+   "type": "file",
+   "name": "save-entry.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/save-entry.test.ts",
+   "summary": "测试会话条目的保存与写入流程。",
+   "tags": [
+    "test",
+    "session-manager",
+    "写入"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-manager/tree-traversal.test.ts",
+   "type": "file",
+   "name": "tree-traversal.test.ts",
+   "filePath": "packages/coding-agent/test/session-manager/tree-traversal.test.ts",
+   "summary": "测试会话树的遍历与父/子会话关系。",
+   "tags": [
+    "test",
+    "session-manager",
+    "树遍历"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "type": "file",
+   "name": "agent-session-bash-persistence.test.ts",
+   "filePath": "packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "summary": "测试会话中 bash 状态的持久化与复用（harness 套件）。",
+   "tags": [
+    "test",
+    "bash",
+    "持久化",
+    "suite"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts:createControlledBashOperations",
+   "type": "function",
+   "name": "createControlledBashOperations",
+   "filePath": "packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "lineRange": [
+    18,
+    29
+   ],
+   "summary": "构造受控 bash 操作集。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "type": "file",
+   "name": "agent-session-compaction.test.ts",
+   "filePath": "packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "summary": "harness 套件：测试会话压缩在真实会话流程中的触发与结果。",
+   "tags": [
+    "test",
+    "compaction",
+    "suite"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:createUsage",
+   "type": "function",
+   "name": "createUsage",
+   "filePath": "packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "lineRange": [
+    16,
+    25
+   ],
+   "summary": "构造用量对象。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:createAssistant",
+   "type": "function",
+   "name": "createAssistant",
+   "filePath": "packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "lineRange": [
+    27,
+    48
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:useSummaryStreamFn",
+   "type": "function",
+   "name": "useSummaryStreamFn",
+   "filePath": "packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "lineRange": [
+    50,
+    68
+   ],
+   "summary": "设置摘要流函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:seedCompactableSession",
+   "type": "function",
+   "name": "seedCompactableSession",
+   "filePath": "packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "lineRange": [
+    70,
+    86
+   ],
+   "summary": "准备可压缩的会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "type": "file",
+   "name": "agent-session-model-extension.test.ts",
+   "filePath": "packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "summary": "harness 套件：测试会话中模型扩展（model extension）的应用。",
+   "tags": [
+    "test",
+    "model",
+    "extensions",
+    "suite"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "file",
+   "name": "agent-session-prompt.test.ts",
+   "filePath": "packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "summary": "harness 套件：测试会话系统提示词与模板的应用。",
+   "tags": [
+    "test",
+    "prompt",
+    "suite",
+    "提示词"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "type": "file",
+   "name": "agent-session-queue.test.ts",
+   "filePath": "packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "summary": "harness 套件：测试会话消息队列与并发运行行为。",
+   "tags": [
+    "test",
+    "queue",
+    "suite",
+    "并发"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/agent-session-queue.test.ts:createWaitingHarness",
+   "type": "function",
+   "name": "createWaitingHarness",
+   "filePath": "packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "lineRange": [
+    8,
+    58
+   ],
+   "summary": "构造带等待的 harness 实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "target": "function:packages/coding-agent/test/session-cwd.test.ts:writeSessionFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/build-context.test.ts",
+   "target": "function:packages/coding-agent/test/session-manager/build-context.test.ts:msg",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/build-context.test.ts",
+   "target": "function:packages/coding-agent/test/session-manager/build-context.test.ts:compaction",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts:createControlledBashOperations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:createUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:createAssistant",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:useSummaryStreamFn",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-compaction.test.ts:seedCompactableSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "target": "function:packages/coding-agent/test/suite/agent-session-queue.test.ts:createWaitingHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "target": "file:packages/coding-agent/src/core/runtime-credentials.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-cwd.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/build-context.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/custom-session-id.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/file-operations.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/labels.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/migration.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/save-entry.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/tree-traversal.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-manager/tree-traversal.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/runtime-credentials.ts",
+   "target": "file:packages/coding-agent/test/runtime-credentials.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/sdk-openrouter-attribution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/sdk-stream-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "target": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-cwd.ts",
+   "target": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-cwd.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/build-context.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/custom-session-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/file-operations.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/labels.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/save-entry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-manager/tree-traversal.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-bash-persistence.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-model-extension.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/agent-session-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/coding-agent/test/suite/agent-session-queue.test.ts:createWaitingHarness",
+   "target": "function:packages/coding-agent/test/suite/harness.ts:createHarness",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "type": "document",
+      "name": "planner.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "summary": "定义 planner 子代理的系统提示词：接收 scout 提供的上下文与需求，输出含目标、编号步骤、待改文件、新文件与风险的实现计划；自身只读不修改，计划由 worker 按原样执行。",
+      "tags": [
+        "subagent",
+        "planning",
+        "提示词模板",
+        "agent-definition",
+        "workflow"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Markdown 带 YAML frontmatter（name/description/tools/model），作为子代理提示词模板。"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/agents/reviewer.md",
+      "type": "document",
+      "name": "reviewer.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents/reviewer.md",
+      "summary": "定义 reviewer 子代理的系统提示词：以只读方式（git diff/log/show）审查代码质量、安全性与可维护性，输出按 Critical/Warnings/Suggestions 分级并附文件与行号的意见。",
+      "tags": [
+        "subagent",
+        "code-review",
+        "安全审查",
+        "agent-definition",
+        "workflow"
+      ],
+      "complexity": "simple",
+      "languageNotes": "frontmatter 声明 bash 工具，但提示词强制 bash 仅用于只读命令。"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/agents/scout.md",
+      "type": "document",
+      "name": "scout.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents/scout.md",
+      "summary": "定义 scout 子代理的系统提示词：快速侦察代码库并返回结构化上下文（涉及文件与行范围、关键代码、架构说明、入手点），供未读过这些文件的其它子代理直接使用。",
+      "tags": [
+        "subagent",
+        "代码侦察",
+        "context-handoff",
+        "agent-definition",
+        "workflow"
+      ],
+      "complexity": "simple",
+      "languageNotes": "按任务推断侦察深度（quick/medium/thorough）并输出精确文件行范围。"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "type": "document",
+      "name": "worker.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "summary": "定义 worker 子代理的系统提示词：在隔离上下文窗口中自主完成委派任务、可调用全部工具，结束时汇报完成内容与改动文件，并可转交 reviewer 复审。",
+      "tags": [
+        "subagent",
+        "任务执行",
+        "agent-definition",
+        "workflow",
+        "tool-use"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/agents/scout.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/agents/planner.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/subagent/agents/worker.md",
+      "target": "document:packages/coding-agent/examples/extensions/subagent/agents/reviewer.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

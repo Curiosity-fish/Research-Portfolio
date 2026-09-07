@@ -1,0 +1,999 @@
+{
+ "nodes": [
+  {
+   "id": "file:.tfa/extensions/import-repro.ts",
+   "type": "file",
+   "name": "import-repro.ts",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "summary": "本地扩展脚本：复现会话导入问题，解析 session JSONL、导出 HTML 并重写会话 cwd。",
+   "tags": [
+    "extension",
+    "脚本",
+    "调试",
+    "repro"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:parseRef",
+   "type": "function",
+   "name": "parseRef",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    58,
+    78
+   ],
+   "summary": "解析引用字符串。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:parseSessionJsonl",
+   "type": "function",
+   "name": "parseSessionJsonl",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    80,
+    94
+   ],
+   "summary": "解析会话 JSONL 内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:decodeExportedHtml",
+   "type": "function",
+   "name": "decodeExportedHtml",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    96,
+    118
+   ],
+   "summary": "解码导出的 HTML。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:getWindowsDrivePathParts",
+   "type": "function",
+   "name": "getWindowsDrivePathParts",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    139,
+    152
+   ],
+   "summary": "拆分 Windows 盘符路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:getCwdRewriteVariants",
+   "type": "function",
+   "name": "getCwdRewriteVariants",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    154,
+    170
+   ],
+   "summary": "计算 cwd 重写变体。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:rewriteSessionCwd",
+   "type": "function",
+   "name": "rewriteSessionCwd",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    198,
+    220
+   ],
+   "summary": "重写会话中的 cwd 路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:findIssueGistId",
+   "type": "function",
+   "name": "findIssueGistId",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    236,
+    261
+   ],
+   "summary": "查找问题相关的 gist ID。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/import-repro.ts:fetchGistSession",
+   "type": "function",
+   "name": "fetchGistSession",
+   "filePath": ".tfa/extensions/import-repro.ts",
+   "lineRange": [
+    263,
+    281
+   ],
+   "summary": "从 gist 拉取会话数据。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:.tfa/extensions/tps.ts",
+   "type": "file",
+   "name": "tps.ts",
+   "filePath": ".tfa/extensions/tps.ts",
+   "summary": "本地扩展脚本：基于 ai 包与 coding-agent 公共 API 的 TPS 扩展入口。",
+   "tags": [
+    "extension",
+    "脚本",
+    "tps"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/auto-commit-on-exit.ts",
+   "type": "file",
+   "name": "auto-commit-on-exit.ts",
+   "filePath": "packages/coding-agent/examples/extensions/auto-commit-on-exit.ts",
+   "summary": "扩展示例：会话退出时自动提交当前工作区改动。",
+   "tags": [
+    "example",
+    "extensions",
+    "git",
+    "自动提交"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/bash-spawn-hook.ts",
+   "type": "file",
+   "name": "bash-spawn-hook.ts",
+   "filePath": "packages/coding-agent/examples/extensions/bash-spawn-hook.ts",
+   "summary": "扩展示例：为 bash 工具添加 spawn 钩子，在命令执行前/后注入行为。",
+   "tags": [
+    "example",
+    "extensions",
+    "bash",
+    "hook"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/bookmark.ts",
+   "type": "file",
+   "name": "bookmark.ts",
+   "filePath": "packages/coding-agent/examples/extensions/bookmark.ts",
+   "summary": "扩展示例：提供书签功能，记录当前会话位置并支持跳转。",
+   "tags": [
+    "example",
+    "extensions",
+    "书签"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/claude-rules.ts",
+   "type": "file",
+   "name": "claude-rules.ts",
+   "filePath": "packages/coding-agent/examples/extensions/claude-rules.ts",
+   "summary": "扩展示例：加载 Claude 风格的规则文件（CLAUDE.md）注入系统提示词。",
+   "tags": [
+    "example",
+    "extensions",
+    "claude-rules",
+    "提示词"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/claude-rules.ts:findMarkdownFiles",
+   "type": "function",
+   "name": "findMarkdownFiles",
+   "filePath": "packages/coding-agent/examples/extensions/claude-rules.ts",
+   "lineRange": [
+    27,
+    47
+   ],
+   "summary": "递归查找规则 markdown 文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/claude-rules.ts:claudeRulesExtension",
+   "type": "function",
+   "name": "claudeRulesExtension",
+   "filePath": "packages/coding-agent/examples/extensions/claude-rules.ts",
+   "lineRange": [
+    49,
+    86
+   ],
+   "summary": "创建 claude-rules 扩展实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/commands.ts",
+   "type": "file",
+   "name": "commands.ts",
+   "filePath": "packages/coding-agent/examples/extensions/commands.ts",
+   "summary": "扩展示例：注册自定义斜杠命令，演示命令分发与处理。",
+   "tags": [
+    "example",
+    "extensions",
+    "commands",
+    "斜杠命令"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/commands.ts:commandsExtension",
+   "type": "function",
+   "name": "commandsExtension",
+   "filePath": "packages/coding-agent/examples/extensions/commands.ts",
+   "lineRange": [
+    15,
+    72
+   ],
+   "summary": "创建自定义命令扩展实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/confirm-destructive.ts",
+   "type": "file",
+   "name": "confirm-destructive.ts",
+   "filePath": "packages/coding-agent/examples/extensions/confirm-destructive.ts",
+   "summary": "扩展示例：对破坏性命令（如删除/覆盖）增加确认流程。",
+   "tags": [
+    "example",
+    "extensions",
+    "安全",
+    "确认"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-compaction.ts",
+   "type": "file",
+   "name": "custom-compaction.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-compaction.ts",
+   "summary": "扩展示例：自定义压缩（compaction）逻辑，演示压缩钩子。",
+   "tags": [
+    "example",
+    "extensions",
+    "compaction"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-header.ts",
+   "type": "file",
+   "name": "custom-header.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-header.ts",
+   "summary": "扩展示例：向模型请求注入自定义请求头（含 TFA 吉祥物）。",
+   "tags": [
+    "example",
+    "extensions",
+    "请求头"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-header.ts:getTfaMascot",
+   "type": "function",
+   "name": "getTfaMascot",
+   "filePath": "packages/coding-agent/examples/extensions/custom-header.ts",
+   "lineRange": [
+    13,
+    45
+   ],
+   "summary": "返回 TFA 吉祥物文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "summary": "扩展示例：实现自定义 Anthropic provider，包含 OAuth PKCE 登录、token 刷新与消息流转换。",
+   "tags": [
+    "example",
+    "extensions",
+    "provider",
+    "anthropic",
+    "oauth"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:generatePKCE",
+   "type": "function",
+   "name": "generatePKCE",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    59,
+    76
+   ],
+   "summary": "生成 PKCE 验证码与挑战。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:loginAnthropic",
+   "type": "function",
+   "name": "loginAnthropic",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    78,
+    125
+   ],
+   "summary": "执行 Anthropic OAuth 登录。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:refreshAnthropicToken",
+   "type": "function",
+   "name": "refreshAnthropicToken",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    127,
+    154
+   ],
+   "summary": "刷新 Anthropic 访问令牌。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertContentBlocks",
+   "type": "function",
+   "name": "convertContentBlocks",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    189,
+    216
+   ],
+   "summary": "转换 Anthropic 内容块为内部格式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertMessages",
+   "type": "function",
+   "name": "convertMessages",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    218,
+    306
+   ],
+   "summary": "转换 Anthropic 消息格式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertTools",
+   "type": "function",
+   "name": "convertTools",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    308,
+    318
+   ],
+   "summary": "转换 Anthropic 工具定义格式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    320,
+    333
+   ],
+   "summary": "映射停止原因。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:streamCustomAnthropic",
+   "type": "function",
+   "name": "streamCustomAnthropic",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "lineRange": [
+    335,
+    569
+   ],
+   "summary": "流式转发 Anthropic 响应。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/dirty-repo-guard.ts",
+   "type": "file",
+   "name": "dirty-repo-guard.ts",
+   "filePath": "packages/coding-agent/examples/extensions/dirty-repo-guard.ts",
+   "summary": "扩展示例：检测 git 工作区是否有未提交改动并提示确认。",
+   "tags": [
+    "example",
+    "extensions",
+    "git",
+    "安全"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/dirty-repo-guard.ts:checkDirtyRepo",
+   "type": "function",
+   "name": "checkDirtyRepo",
+   "filePath": "packages/coding-agent/examples/extensions/dirty-repo-guard.ts",
+   "lineRange": [
+    10,
+    45
+   ],
+   "summary": "检查仓库是否存在未提交改动。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "type": "file",
+   "name": "doom-component.ts",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "summary": "doom-overlay 示例组件：在 TUI 中以半块字符渲染 DOOM 画面。",
+   "tags": [
+    "example",
+    "extensions",
+    "doom",
+    "tui",
+    "渲染"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts:renderHalfBlock",
+   "type": "function",
+   "name": "renderHalfBlock",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "lineRange": [
+    13,
+    45
+   ],
+   "summary": "渲染半块字符。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts:DoomOverlayComponent",
+   "type": "class",
+   "name": "DoomOverlayComponent",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "lineRange": [
+    47,
+    132
+   ],
+   "summary": "DOOM 覆盖层 TUI 组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "type": "file",
+   "name": "doom-engine.ts",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "summary": "doom-overlay 示例引擎：实现 DOOM 游戏状态机与渲染计算。",
+   "tags": [
+    "example",
+    "extensions",
+    "doom",
+    "引擎"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts:DoomEngine",
+   "type": "class",
+   "name": "DoomEngine",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "lineRange": [
+    27,
+    173
+   ],
+   "summary": "DOOM 游戏引擎，维护状态并计算帧画面。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "type": "file",
+   "name": "doom-keys.ts",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "summary": "doom-overlay 示例：将键盘输入映射为 DOOM 操作。",
+   "tags": [
+    "example",
+    "extensions",
+    "doom",
+    "键盘映射"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts:mapKeyToDoom",
+   "type": "function",
+   "name": "mapKeyToDoom",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "lineRange": [
+    43,
+    104
+   ],
+   "summary": "将按键事件映射为 DOOM 操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "summary": "doom-overlay 扩展入口：组装组件、引擎与 WAD 查找，注册为扩展。",
+   "tags": [
+    "example",
+    "extensions",
+    "doom",
+    "入口点"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:parseRef",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:parseSessionJsonl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:decodeExportedHtml",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:getWindowsDrivePathParts",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:getCwdRewriteVariants",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:rewriteSessionCwd",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:findIssueGistId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "function:.tfa/extensions/import-repro.ts:fetchGistSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/claude-rules.ts",
+   "target": "function:packages/coding-agent/examples/extensions/claude-rules.ts:findMarkdownFiles",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/claude-rules.ts",
+   "target": "function:packages/coding-agent/examples/extensions/claude-rules.ts:claudeRulesExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/claude-rules.ts",
+   "target": "function:packages/coding-agent/examples/extensions/claude-rules.ts:claudeRulesExtension",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/commands.ts",
+   "target": "function:packages/coding-agent/examples/extensions/commands.ts:commandsExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/commands.ts",
+   "target": "function:packages/coding-agent/examples/extensions/commands.ts:commandsExtension",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-header.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-header.ts:getTfaMascot",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:generatePKCE",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:loginAnthropic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:refreshAnthropicToken",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertContentBlocks",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:convertTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts:streamCustomAnthropic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dirty-repo-guard.ts",
+   "target": "function:packages/coding-agent/examples/extensions/dirty-repo-guard.ts:checkDirtyRepo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts:renderHalfBlock",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts:DoomOverlayComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts:DoomOverlayComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "target": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts:DoomEngine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "target": "class:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts:DoomEngine",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts:mapKeyToDoom",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts:mapKeyToDoom",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:.tfa/extensions/import-repro.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:.tfa/extensions/tps.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:.tfa/extensions/tps.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/auto-commit-on-exit.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/bash-spawn-hook.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/bookmark.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/claude-rules.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/commands.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/confirm-destructive.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-compaction.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-compaction.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-header.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-anthropic/index.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/dirty-repo-guard.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-keys.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-component.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom-engine.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "target": "file:packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/doom-overlay/index.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

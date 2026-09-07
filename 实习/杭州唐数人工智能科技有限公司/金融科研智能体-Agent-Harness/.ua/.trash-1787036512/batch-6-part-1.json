@@ -1,0 +1,888 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "type": "file",
+   "name": "google-vertex-api-key-resolution.test.ts",
+   "filePath": "packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "summary": "Google Vertex API key 解析测试：覆盖默认/显式 key 与 ADC 回退。",
+   "tags": [
+    "test",
+    "vertex",
+    "api-key"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/image-model-data.test.ts",
+   "type": "file",
+   "name": "image-model-data.test.ts",
+   "filePath": "packages/ai/test/image-model-data.test.ts",
+   "summary": "图像模型数据完整性测试。",
+   "tags": [
+    "test",
+    "image-models",
+    "data"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/image-tool-result.test.ts",
+   "type": "file",
+   "name": "image-tool-result.test.ts",
+   "filePath": "packages/ai/test/image-tool-result.test.ts",
+   "summary": "工具结果图像处理测试：验证图像在 function_call 输出中的保留。",
+   "tags": [
+    "test",
+    "image",
+    "tool-result"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/image-tool-result.test.ts:handleToolWithImageResult",
+   "type": "function",
+   "name": "handleToolWithImageResult",
+   "filePath": "packages/ai/test/image-tool-result.test.ts",
+   "lineRange": [
+    30,
+    109
+   ],
+   "summary": "验证纯图像工具结果处理。",
+   "tags": [
+    "test",
+    "image"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/image-tool-result.test.ts:handleToolWithTextAndImageResult",
+   "type": "function",
+   "name": "handleToolWithTextAndImageResult",
+   "filePath": "packages/ai/test/image-tool-result.test.ts",
+   "lineRange": [
+    118,
+    207
+   ],
+   "summary": "验证图文混合工具结果处理。",
+   "tags": [
+    "test",
+    "image"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/images.test.ts",
+   "type": "file",
+   "name": "images.test.ts",
+   "filePath": "packages/ai/test/images.test.ts",
+   "summary": "图像生成测试：基础生成、图文输出与图像输入处理。",
+   "tags": [
+    "test",
+    "images",
+    "generation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/images.test.ts:basicImageGeneration",
+   "type": "function",
+   "name": "basicImageGeneration",
+   "filePath": "packages/ai/test/images.test.ts",
+   "lineRange": [
+    14,
+    25
+   ],
+   "summary": "基础图像生成测试。",
+   "tags": [
+    "test",
+    "images"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/images.test.ts:handleTextAndImageOutput",
+   "type": "function",
+   "name": "handleTextAndImageOutput",
+   "filePath": "packages/ai/test/images.test.ts",
+   "lineRange": [
+    27,
+    45
+   ],
+   "summary": "图文输出处理测试。",
+   "tags": [
+    "test",
+    "images"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/images.test.ts:handleImageInput",
+   "type": "function",
+   "name": "handleImageInput",
+   "filePath": "packages/ai/test/images.test.ts",
+   "lineRange": [
+    47,
+    69
+   ],
+   "summary": "图像输入处理测试。",
+   "tags": [
+    "test",
+    "images"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "type": "file",
+   "name": "interleaved-thinking.test.ts",
+   "filePath": "packages/ai/test/interleaved-thinking.test.ts",
+   "summary": "交错 thinking 测试：验证思考与工具调用交替出现的流处理。",
+   "tags": [
+    "test",
+    "thinking",
+    "interleaved"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/interleaved-thinking.test.ts:asCalculatorArguments",
+   "type": "function",
+   "name": "asCalculatorArguments",
+   "filePath": "packages/ai/test/interleaved-thinking.test.ts",
+   "lineRange": [
+    31,
+    47
+   ],
+   "summary": "构造计算器工具参数。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/interleaved-thinking.test.ts:evaluateCalculatorCall",
+   "type": "function",
+   "name": "evaluateCalculatorCall",
+   "filePath": "packages/ai/test/interleaved-thinking.test.ts",
+   "lineRange": [
+    49,
+    61
+   ],
+   "summary": "执行计算器工具调用。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/interleaved-thinking.test.ts:assertSecondToolCallWithInterleavedThinking",
+   "type": "function",
+   "name": "assertSecondToolCallWithInterleavedThinking",
+   "filePath": "packages/ai/test/interleaved-thinking.test.ts",
+   "lineRange": [
+    63,
+    118
+   ],
+   "summary": "断言交错 thinking 下的第二次工具调用。",
+   "tags": [
+    "test",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/lax-message-content.test.ts",
+   "type": "file",
+   "name": "lax-message-content.test.ts",
+   "filePath": "packages/ai/test/lax-message-content.test.ts",
+   "summary": "宽松消息内容兼容性测试。",
+   "tags": [
+    "test",
+    "message",
+    "compat"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/lax-message-content.test.ts:makeTextOnlyModel",
+   "type": "function",
+   "name": "makeTextOnlyModel",
+   "filePath": "packages/ai/test/lax-message-content.test.ts",
+   "lineRange": [
+    15,
+    28
+   ],
+   "summary": "构造纯文本模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/max-thinking.test.ts",
+   "type": "file",
+   "name": "max-thinking.test.ts",
+   "filePath": "packages/ai/test/max-thinking.test.ts",
+   "summary": "max thinking token 限制测试。",
+   "tags": [
+    "test",
+    "thinking",
+    "budget"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "type": "file",
+   "name": "mistral-raw-stop-reason.test.ts",
+   "filePath": "packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "summary": "Mistral 原始 stop reason 透传测试。",
+   "tags": [
+    "test",
+    "mistral",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/mistral-reasoning-mode.test.ts",
+   "type": "file",
+   "name": "mistral-reasoning-mode.test.ts",
+   "filePath": "packages/ai/test/mistral-reasoning-mode.test.ts",
+   "summary": "Mistral reasoning 模式 payload 测试。",
+   "tags": [
+    "test",
+    "mistral",
+    "reasoning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/mistral-reasoning-mode.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/mistral-reasoning-mode.test.ts",
+   "lineRange": [
+    17,
+    43
+   ],
+   "summary": "捕获 Mistral 请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/mistral-tool-schema.test.ts",
+   "type": "file",
+   "name": "mistral-tool-schema.test.ts",
+   "filePath": "packages/ai/test/mistral-tool-schema.test.ts",
+   "summary": "Mistral 工具 schema 转换测试。",
+   "tags": [
+    "test",
+    "mistral",
+    "tool-schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/node-http-proxy.test.ts",
+   "type": "file",
+   "name": "node-http-proxy.test.ts",
+   "filePath": "packages/ai/test/node-http-proxy.test.ts",
+   "summary": "HTTP 代理解析测试（含 no_proxy 环境变量）。",
+   "tags": [
+    "test",
+    "proxy",
+    "env"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/oauth.ts",
+   "type": "file",
+   "name": "oauth.ts",
+   "filePath": "packages/ai/test/oauth.ts",
+   "summary": "OAuth 测试工具：加载/保存 auth storage 并按 provider 解析 API key。",
+   "tags": [
+    "test",
+    "oauth",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/oauth.ts:loadAuthStorage",
+   "type": "function",
+   "name": "loadAuthStorage",
+   "filePath": "packages/ai/test/oauth.ts",
+   "lineRange": [
+    29,
+    39
+   ],
+   "summary": "加载 auth storage。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/oauth.ts:resolveApiKey",
+   "type": "function",
+   "name": "resolveApiKey",
+   "filePath": "packages/ai/test/oauth.ts",
+   "lineRange": [
+    57,
+    85
+   ],
+   "summary": "按 provider 解析 API key。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "type": "file",
+   "name": "openai-codex-cache-affinity-e2e.test.ts",
+   "filePath": "packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "summary": "Codex 会话缓存亲和性端到端测试。",
+   "tags": [
+    "test",
+    "codex",
+    "cache",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-codex-stream.test.ts",
+   "type": "file",
+   "name": "openai-codex-stream.test.ts",
+   "filePath": "packages/ai/test/openai-codex-stream.test.ts",
+   "summary": "OpenAI Codex 流式响应测试：SSE 事件、WebSocket 与请求体解析。",
+   "tags": [
+    "test",
+    "codex",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/openai-codex-stream.test.ts:buildSSEPayload",
+   "type": "function",
+   "name": "buildSSEPayload",
+   "filePath": "packages/ai/test/openai-codex-stream.test.ts",
+   "lineRange": [
+    49,
+    94
+   ],
+   "summary": "构造 Codex SSE 响应负载。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "type": "file",
+   "name": "openai-completions-cache-control-format.test.ts",
+   "filePath": "packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "summary": "Chat Completions 缓存控制格式测试：验证 Anthropic 缓存标记注入。",
+   "tags": [
+    "test",
+    "completions",
+    "cache-control"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-cache-control-format.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "lineRange": [
+    74,
+    104
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-cache-control-format.test.ts:expectAnthropicCacheMarkers",
+   "type": "function",
+   "name": "expectAnthropicCacheMarkers",
+   "filePath": "packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "lineRange": [
+    110,
+    123
+   ],
+   "summary": "断言 Anthropic 缓存标记。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-empty-tools.test.ts",
+   "type": "file",
+   "name": "openai-completions-empty-tools.test.ts",
+   "filePath": "packages/ai/test/openai-completions-empty-tools.test.ts",
+   "summary": "Chat Completions 空工具列表处理测试。",
+   "tags": [
+    "test",
+    "completions",
+    "empty-tools"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "type": "file",
+   "name": "openai-completions-prompt-cache.test.ts",
+   "filePath": "packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "summary": "Chat Completions prompt cache key 测试。",
+   "tags": [
+    "test",
+    "completions",
+    "prompt-cache"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "target": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-vertex-api-key-resolution.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-model-data.test.ts",
+   "target": "file:packages/ai/scripts/generate-image-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "function:packages/ai/test/image-tool-result.test.ts:handleToolWithImageResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "function:packages/ai/test/image-tool-result.test.ts:handleToolWithTextAndImageResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/image-tool-result.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "function:packages/ai/test/images.test.ts:basicImageGeneration",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "function:packages/ai/test/images.test.ts:handleTextAndImageOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "function:packages/ai/test/images.test.ts:handleImageInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "file:packages/ai/src/image-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "file:packages/ai/src/images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "function:packages/ai/test/interleaved-thinking.test.ts:asCalculatorArguments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "function:packages/ai/test/interleaved-thinking.test.ts:evaluateCalculatorCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "function:packages/ai/test/interleaved-thinking.test.ts:assertSecondToolCallWithInterleavedThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "file:packages/ai/src/utils/typebox-helpers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/interleaved-thinking.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/lax-message-content.test.ts",
+   "target": "function:packages/ai/test/lax-message-content.test.ts:makeTextOnlyModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/lax-message-content.test.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/lax-message-content.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/max-thinking.test.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/max-thinking.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/max-thinking.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-reasoning-mode.test.ts",
+   "target": "function:packages/ai/test/mistral-reasoning-mode.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/mistral-reasoning-mode.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-reasoning-mode.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-tool-schema.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/mistral-tool-schema.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/node-http-proxy.test.ts",
+   "target": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth.ts",
+   "target": "function:packages/ai/test/oauth.ts:loadAuthStorage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/oauth.ts",
+   "target": "function:packages/ai/test/oauth.ts:resolveApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/oauth.ts",
+   "target": "function:packages/ai/test/oauth.ts:resolveApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/oauth.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth.ts",
+   "target": "file:packages/ai/src/providers/all.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-cache-affinity-e2e.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-stream.test.ts",
+   "target": "function:packages/ai/test/openai-codex-stream.test.ts:buildSSEPayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-stream.test.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-stream.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "target": "function:packages/ai/test/openai-completions-cache-control-format.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "target": "function:packages/ai/test/openai-completions-cache-control-format.test.ts:expectAnthropicCacheMarkers",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-cache-control-format.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-empty-tools.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-prompt-cache.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

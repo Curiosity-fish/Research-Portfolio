@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/sessions.md",
+      "type": "document",
+      "name": "sessions.md",
+      "filePath": "packages/coding-agent/docs/sessions.md",
+      "summary": "packages/coding-agent/docs/sessions.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/settings.md",
+      "type": "document",
+      "name": "settings.md",
+      "filePath": "packages/coding-agent/docs/settings.md",
+      "summary": "packages/coding-agent/docs/settings.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/shell-aliases.md",
+      "type": "document",
+      "name": "shell-aliases.md",
+      "filePath": "packages/coding-agent/docs/shell-aliases.md",
+      "summary": "packages/coding-agent/docs/shell-aliases.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/skills.md",
+      "type": "document",
+      "name": "skills.md",
+      "filePath": "packages/coding-agent/docs/skills.md",
+      "summary": "packages/coding-agent/docs/skills.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/terminal-setup.md",
+      "type": "document",
+      "name": "terminal-setup.md",
+      "filePath": "packages/coding-agent/docs/terminal-setup.md",
+      "summary": "packages/coding-agent/docs/terminal-setup.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/termux.md",
+      "type": "document",
+      "name": "termux.md",
+      "filePath": "packages/coding-agent/docs/termux.md",
+      "summary": "packages/coding-agent/docs/termux.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/themes.md",
+      "type": "document",
+      "name": "themes.md",
+      "filePath": "packages/coding-agent/docs/themes.md",
+      "summary": "packages/coding-agent/docs/themes.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/tmux.md",
+      "type": "document",
+      "name": "tmux.md",
+      "filePath": "packages/coding-agent/docs/tmux.md",
+      "summary": "packages/coding-agent/docs/tmux.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/tui.md",
+      "type": "document",
+      "name": "tui.md",
+      "filePath": "packages/coding-agent/docs/tui.md",
+      "summary": "packages/coding-agent/docs/tui.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/usage.md",
+      "type": "document",
+      "name": "usage.md",
+      "filePath": "packages/coding-agent/docs/usage.md",
+      "summary": "packages/coding-agent/docs/usage.md"
+    },
+    {
+      "tags": [
+        "docs"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/docs/windows.md",
+      "type": "document",
+      "name": "windows.md",
+      "filePath": "packages/coding-agent/docs/windows.md",
+      "summary": "packages/coding-agent/docs/windows.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/coding-agent/docs/sessions.md",
+      "target": "file:packages/coding-agent/src/core/session-manager.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/settings.md",
+      "target": "file:packages/coding-agent/src/config.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/themes.md",
+      "target": "config:packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/tui.md",
+      "target": "file:packages/coding-agent/src/modes/interactive/components/armin.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/usage.md",
+      "target": "file:packages/coding-agent/src/cli.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/terminal-setup.md",
+      "target": "document:packages/coding-agent/docs/termux.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/terminal-setup.md",
+      "target": "document:packages/coding-agent/docs/tmux.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/terminal-setup.md",
+      "target": "document:packages/coding-agent/docs/windows.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/termux.md",
+      "target": "document:packages/coding-agent/docs/tmux.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/termux.md",
+      "target": "document:packages/coding-agent/docs/windows.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/docs/tmux.md",
+      "target": "document:packages/coding-agent/docs/windows.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

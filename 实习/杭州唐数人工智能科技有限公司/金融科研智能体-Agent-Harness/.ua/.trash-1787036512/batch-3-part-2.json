@@ -1,0 +1,2028 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "type": "file",
+   "name": "azure-openai-responses.ts",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "summary": "Azure OpenAI Responses API provider：部署名映射、base URL 规范化与请求构建。",
+   "tags": [
+    "provider",
+    "azure",
+    "api",
+    "openai"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:parseDeploymentNameMap",
+   "type": "function",
+   "name": "parseDeploymentNameMap",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    28,
+    39
+   ],
+   "summary": "解析部署名映射配置。",
+   "tags": [
+    "azure",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    68,
+    159
+   ],
+   "summary": "Azure Responses 流式主实现。",
+   "tags": [
+    "streaming",
+    "azure"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    161,
+    179
+   ],
+   "summary": "Azure 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:normalizeAzureBaseUrl",
+   "type": "function",
+   "name": "normalizeAzureBaseUrl",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    181,
+    210
+   ],
+   "summary": "规范化 Azure base URL。",
+   "tags": [
+    "azure",
+    "url"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:resolveAzureConfig",
+   "type": "function",
+   "name": "resolveAzureConfig",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    216,
+    249
+   ],
+   "summary": "解析 Azure 资源/部署配置。",
+   "tags": [
+    "azure",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    251,
+    268
+   ],
+   "summary": "创建 Azure 客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/azure-openai-responses.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/azure-openai-responses.ts",
+   "lineRange": [
+    270,
+    330
+   ],
+   "summary": "构建 Azure 请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "file",
+   "name": "bedrock-converse-stream.ts",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "summary": "AWS Bedrock Converse API provider：事件流解析、内容块处理、模型能力探测与错误诊断。",
+   "tags": [
+    "provider",
+    "bedrock",
+    "api",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    107,
+    327
+   ],
+   "summary": "Bedrock Converse 流式主实现：事件解析与输出构建。",
+   "tags": [
+    "streaming",
+    "bedrock"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:formatBedrockError",
+   "type": "function",
+   "name": "formatBedrockError",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    357,
+    374
+   ],
+   "summary": "格式化 Bedrock 错误信息。",
+   "tags": [
+    "error",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:appendBedrockFailureDiagnostic",
+   "type": "function",
+   "name": "appendBedrockFailureDiagnostic",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    403,
+    422
+   ],
+   "summary": "追加 Bedrock 失败诊断信息。",
+   "tags": [
+    "error",
+    "diagnostics"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:addCustomHeadersMiddleware",
+   "type": "function",
+   "name": "addCustomHeadersMiddleware",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    444,
+    458
+   ],
+   "summary": "为 Bedrock 客户端添加自定义 header 中间件。",
+   "tags": [
+    "middleware",
+    "headers"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    460,
+    506
+   ],
+   "summary": "Bedrock 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockStart",
+   "type": "function",
+   "name": "handleContentBlockStart",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    508,
+    529
+   ],
+   "summary": "处理内容块开始事件。",
+   "tags": [
+    "event",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockDelta",
+   "type": "function",
+   "name": "handleContentBlockDelta",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    531,
+    587
+   ],
+   "summary": "处理内容块增量事件。",
+   "tags": [
+    "event",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleMetadata",
+   "type": "function",
+   "name": "handleMetadata",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    589,
+    602
+   ],
+   "summary": "处理元数据事件（用量等）。",
+   "tags": [
+    "event",
+    "streaming"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockStop",
+   "type": "function",
+   "name": "handleContentBlockStop",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    604,
+    630
+   ],
+   "summary": "处理内容块结束事件。",
+   "tags": [
+    "event",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsAdaptiveThinking",
+   "type": "function",
+   "name": "supportsAdaptiveThinking",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    645,
+    657
+   ],
+   "summary": "判断模型是否支持自适应 thinking。",
+   "tags": [
+    "model",
+    "capability"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsNativeXhighEffort",
+   "type": "function",
+   "name": "supportsNativeXhighEffort",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    659,
+    669
+   ],
+   "summary": "判断模型是否支持原生 xhigh effort。",
+   "tags": [
+    "model",
+    "capability"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:mapThinkingLevelToEffort",
+   "type": "function",
+   "name": "mapThinkingLevelToEffort",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    671,
+    691
+   ],
+   "summary": "映射 thinking 级别到 Bedrock effort。",
+   "tags": [
+    "thinking",
+    "mapping"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:isAnthropicClaudeModel",
+   "type": "function",
+   "name": "isAnthropicClaudeModel",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    712,
+    722
+   ],
+   "summary": "判断是否为 Anthropic Claude 模型。",
+   "tags": [
+    "model",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsPromptCaching",
+   "type": "function",
+   "name": "supportsPromptCaching",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    736,
+    755
+   ],
+   "summary": "判断模型与环境是否支持 prompt 缓存。",
+   "tags": [
+    "cache",
+    "capability"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:buildSystemPrompt",
+   "type": "function",
+   "name": "buildSystemPrompt",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    769,
+    787
+   ],
+   "summary": "构建含缓存配置的系统提示。",
+   "tags": [
+    "prompt",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertToolResultContent",
+   "type": "function",
+   "name": "convertToolResultContent",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    803,
+    815
+   ],
+   "summary": "转换工具结果内容块。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertMessages",
+   "type": "function",
+   "name": "convertMessages",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    817,
+    980
+   ],
+   "summary": "转换消息为 Bedrock 消息格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertToolConfig",
+   "type": "function",
+   "name": "convertToolConfig",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    982,
+    1017
+   ],
+   "summary": "转换工具配置为 Bedrock 格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1019,
+    1034
+   ],
+   "summary": "映射 Bedrock stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:getConfiguredBedrockCredentials",
+   "type": "function",
+   "name": "getConfiguredBedrockCredentials",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1045,
+    1057
+   ],
+   "summary": "从环境读取 Bedrock 凭据。",
+   "tags": [
+    "aws",
+    "auth"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:getStandardBedrockEndpointRegion",
+   "type": "function",
+   "name": "getStandardBedrockEndpointRegion",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1059,
+    1071
+   ],
+   "summary": "从端点推断标准 Bedrock 区域。",
+   "tags": [
+    "aws",
+    "region"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:shouldUseExplicitBedrockEndpoint",
+   "type": "function",
+   "name": "shouldUseExplicitBedrockEndpoint",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1073,
+    1084
+   ],
+   "summary": "判断是否应使用显式端点。",
+   "tags": [
+    "aws",
+    "endpoint"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:buildAdditionalModelRequestFields",
+   "type": "function",
+   "name": "buildAdditionalModelRequestFields",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1096,
+    1144
+   ],
+   "summary": "构建附加模型请求字段。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/bedrock-converse-stream.ts:createImageBlock",
+   "type": "function",
+   "name": "createImageBlock",
+   "filePath": "packages/ai/src/api/bedrock-converse-stream.ts",
+   "lineRange": [
+    1146,
+    1173
+   ],
+   "summary": "创建 Bedrock 图像内容块。",
+   "tags": [
+    "image",
+    "conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "file",
+   "name": "constrained-sampling.ts",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "summary": "受约束采样工具：为工具参数注入 JSON Schema 严格模式或 grammar 采样配置。",
+   "tags": [
+    "sampling",
+    "tool",
+    "json-schema",
+    "grammar"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:getGrammarToolInput",
+   "type": "function",
+   "name": "getGrammarToolInput",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    21,
+    31
+   ],
+   "summary": "获取工具参数的 grammar 输入。",
+   "tags": [
+    "grammar",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:appendGrammarToolInputJsonDelta",
+   "type": "function",
+   "name": "appendGrammarToolInputJsonDelta",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    33,
+    63
+   ],
+   "summary": "追加 grammar 工具输入的 JSON 增量。",
+   "tags": [
+    "grammar",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:inferGrammarInputProperty",
+   "type": "function",
+   "name": "inferGrammarInputProperty",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    65,
+    82
+   ],
+   "summary": "推断 grammar 输入属性名。",
+   "tags": [
+    "grammar",
+    "inference"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:resolveJsonSchemaStrictSampling",
+   "type": "function",
+   "name": "resolveJsonSchemaStrictSampling",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    84,
+    99
+   ],
+   "summary": "解析 JSON Schema 严格采样配置。",
+   "tags": [
+    "json-schema",
+    "sampling"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:resolveGrammarConstrainedSampling",
+   "type": "function",
+   "name": "resolveGrammarConstrainedSampling",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    101,
+    134
+   ],
+   "summary": "解析 grammar 受约束采样配置。",
+   "tags": [
+    "grammar",
+    "sampling"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/constrained-sampling.ts:createGrammarToolInputProperties",
+   "type": "function",
+   "name": "createGrammarToolInputProperties",
+   "filePath": "packages/ai/src/api/constrained-sampling.ts",
+   "lineRange": [
+    136,
+    148
+   ],
+   "summary": "为工具集创建 grammar 输入属性。",
+   "tags": [
+    "grammar",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "type": "file",
+   "name": "github-copilot-headers.ts",
+   "filePath": "packages/ai/src/api/github-copilot-headers.ts",
+   "summary": "GitHub Copilot 动态请求头构建：推断发起方与视觉输入能力。",
+   "tags": [
+    "github",
+    "copilot",
+    "headers",
+    "provider"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/github-copilot-headers.ts:inferCopilotInitiator",
+   "type": "function",
+   "name": "inferCopilotInitiator",
+   "filePath": "packages/ai/src/api/github-copilot-headers.ts",
+   "lineRange": [
+    5,
+    8
+   ],
+   "summary": "推断 Copilot 请求发起方。",
+   "tags": [
+    "github",
+    "inference"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/github-copilot-headers.ts:hasCopilotVisionInput",
+   "type": "function",
+   "name": "hasCopilotVisionInput",
+   "filePath": "packages/ai/src/api/github-copilot-headers.ts",
+   "lineRange": [
+    11,
+    21
+   ],
+   "summary": "判断消息是否包含视觉输入。",
+   "tags": [
+    "vision",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/github-copilot-headers.ts:buildCopilotDynamicHeaders",
+   "type": "function",
+   "name": "buildCopilotDynamicHeaders",
+   "filePath": "packages/ai/src/api/github-copilot-headers.ts",
+   "lineRange": [
+    23,
+    37
+   ],
+   "summary": "构建 Copilot 动态请求头。",
+   "tags": [
+    "headers",
+    "builder"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/api/google-generative-ai.ts",
+   "type": "file",
+   "name": "google-generative-ai.ts",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "summary": "Google Generative AI API provider：请求/流构建与 thinking 级别映射。",
+   "tags": [
+    "provider",
+    "google",
+    "gemini",
+    "api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    52,
+    294
+   ],
+   "summary": "Gemini 流式主实现：请求构建与 SSE 消费。",
+   "tags": [
+    "streaming",
+    "gemini"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    296,
+    332
+   ],
+   "summary": "Gemini 非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    334,
+    353
+   ],
+   "summary": "创建 Gemini API 客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    355,
+    409
+   ],
+   "summary": "构建 Gemini 请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:getDisabledThinkingConfig",
+   "type": "function",
+   "name": "getDisabledThinkingConfig",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    426,
+    442
+   ],
+   "summary": "生成禁用 thinking 的配置。",
+   "tags": [
+    "thinking",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:getThinkingLevel",
+   "type": "function",
+   "name": "getThinkingLevel",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    444,
+    475
+   ],
+   "summary": "映射 thinking 级别到 Gemini 配置。",
+   "tags": [
+    "thinking",
+    "mapping"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-generative-ai.ts:getGoogleBudget",
+   "type": "function",
+   "name": "getGoogleBudget",
+   "filePath": "packages/ai/src/api/google-generative-ai.ts",
+   "lineRange": [
+    477,
+    517
+   ],
+   "summary": "计算思考 token 预算。",
+   "tags": [
+    "budget",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/google-shared.ts",
+   "type": "file",
+   "name": "google-shared.ts",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "summary": "Google provider 共享转换：消息/工具转换、stop reason 映射与重试逻辑。",
+   "tags": [
+    "google",
+    "gemini",
+    "conversion",
+    "shared"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:isThinkingPart",
+   "type": "function",
+   "name": "isThinkingPart",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    35,
+    37
+   ],
+   "summary": "判断内容块是否为 thinking 部分。",
+   "tags": [
+    "thinking",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:retainThoughtSignature",
+   "type": "function",
+   "name": "retainThoughtSignature",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    48,
+    51
+   ],
+   "summary": "保留思考签名。",
+   "tags": [
+    "thinking",
+    "signature"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:requiresToolCallId",
+   "type": "function",
+   "name": "requiresToolCallId",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    72,
+    79
+   ],
+   "summary": "判断模型是否要求工具调用 id。",
+   "tags": [
+    "tool",
+    "capability"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:convertMessages",
+   "type": "function",
+   "name": "convertMessages",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    98,
+    248
+   ],
+   "summary": "转换消息为 Gemini 消息格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:sanitizeForOpenApi",
+   "type": "function",
+   "name": "sanitizeForOpenApi",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    264,
+    275
+   ],
+   "summary": "净化 JSON Schema 供 OpenAPI 使用。",
+   "tags": [
+    "schema",
+    "sanitize"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:convertTools",
+   "type": "function",
+   "name": "convertTools",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    285,
+    301
+   ],
+   "summary": "转换工具为 Gemini 工具格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:supportsGoogleStrictToolSampling",
+   "type": "function",
+   "name": "supportsGoogleStrictToolSampling",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    304,
+    307
+   ],
+   "summary": "判断模型是否支持严格工具采样。",
+   "tags": [
+    "tool",
+    "capability"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:mapToolChoice",
+   "type": "function",
+   "name": "mapToolChoice",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    310,
+    321
+   ],
+   "summary": "映射工具选择策略。",
+   "tags": [
+    "tool",
+    "mapping"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:resolveGoogleFunctionCallingMode",
+   "type": "function",
+   "name": "resolveGoogleFunctionCallingMode",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    323,
+    336
+   ],
+   "summary": "解析函数调用模式。",
+   "tags": [
+    "tool",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    341,
+    368
+   ],
+   "summary": "映射 Gemini stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:mapStopReasonString",
+   "type": "function",
+   "name": "mapStopReasonString",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    373,
+    382
+   ],
+   "summary": "映射字符串形式的 stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/google-shared.ts:retryGoogleRequest",
+   "type": "function",
+   "name": "retryGoogleRequest",
+   "filePath": "packages/ai/src/api/google-shared.ts",
+   "lineRange": [
+    393,
+    414
+   ],
+   "summary": "按策略重试 Google API 请求。",
+   "tags": [
+    "retry",
+    "provider"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:parseDeploymentNameMap",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:normalizeAzureBaseUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:resolveAzureConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "function:packages/ai/src/api/azure-openai-responses.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:formatBedrockError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:appendBedrockFailureDiagnostic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:addCustomHeadersMiddleware",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockStart",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockDelta",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleMetadata",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:handleContentBlockStop",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsAdaptiveThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsNativeXhighEffort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:mapThinkingLevelToEffort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:isAnthropicClaudeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:supportsPromptCaching",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:buildSystemPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertToolResultContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:convertToolConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:getConfiguredBedrockCredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:getStandardBedrockEndpointRegion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:shouldUseExplicitBedrockEndpoint",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:buildAdditionalModelRequestFields",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "function:packages/ai/src/api/bedrock-converse-stream.ts:createImageBlock",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/node-http-proxy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:getGrammarToolInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:getGrammarToolInput",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:appendGrammarToolInputJsonDelta",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:appendGrammarToolInputJsonDelta",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:inferGrammarInputProperty",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:resolveJsonSchemaStrictSampling",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:resolveJsonSchemaStrictSampling",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:resolveGrammarConstrainedSampling",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:resolveGrammarConstrainedSampling",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:createGrammarToolInputProperties",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "function:packages/ai/src/api/constrained-sampling.ts:createGrammarToolInputProperties",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:inferCopilotInitiator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:inferCopilotInitiator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:hasCopilotVisionInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:hasCopilotVisionInput",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:buildCopilotDynamicHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "function:packages/ai/src/api/github-copilot-headers.ts:buildCopilotDynamicHeaders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:getDisabledThinkingConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:getThinkingLevel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "function:packages/ai/src/api/google-generative-ai.ts:getGoogleBudget",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:isThinkingPart",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:isThinkingPart",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:retainThoughtSignature",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:retainThoughtSignature",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:requiresToolCallId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:requiresToolCallId",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:convertMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:convertMessages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:sanitizeForOpenApi",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:convertTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:convertTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:supportsGoogleStrictToolSampling",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:supportsGoogleStrictToolSampling",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapToolChoice",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapToolChoice",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:resolveGoogleFunctionCallingMode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:resolveGoogleFunctionCallingMode",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapStopReason",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapStopReasonString",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:mapStopReasonString",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:retryGoogleRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "function:packages/ai/src/api/google-shared.ts:retryGoogleRequest",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/constrained-sampling.ts",
+   "target": "file:packages/ai/test/constrained-sampling.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-generative-ai.ts",
+   "target": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-shared-convert-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-shared-retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/google-shared.ts",
+   "target": "file:packages/ai/test/google-thinking-signature.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "target": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,499 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/coding-agent/examples/extensions/doom-overlay/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/README.md",
+      "summary": "DOOM overlay 演示扩展文档:在 tfa 中以 35 FPS 渲染 DOOM,说明控件、WAD 自动下载、半块字符渲染原理与宽高比计算。",
+      "tags": [
+        "documentation",
+        "extension",
+        "doom",
+        "overlay"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/build.sh",
+      "type": "file",
+      "name": "build.sh",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/build.sh",
+      "summary": "用 Emscripten 将 doomgeneric 编译为 WebAssembly 的构建脚本:检查 emcc、克隆 doomgeneric、复制平台文件并导出 DG_* 接口。",
+      "tags": [
+        "script",
+        "build",
+        "emscripten",
+        "wasm"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "type": "file",
+      "name": "doomgeneric_pi.c",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "doomgeneric 的 tfa 平台实现:通过 framebuffer、分辨率、按键环形队列、时间与窗口标题等 DG_* 接口对接 JS 层(无音频)。",
+      "tags": [
+        "c",
+        "doom",
+        "platform",
+        "bridge"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/coding-agent/examples/extensions/gondolin/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/examples/extensions/gondolin/package.json",
+      "summary": "gondolin 扩展示例包清单:声明 ./index.ts 扩展入口,依赖 @earendil-works/gondolin 微 VM。",
+      "tags": [
+        "configuration",
+        "extension",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/plan-mode/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/extensions/plan-mode/README.md",
+      "summary": "plan mode 只读探索扩展文档:禁用写工具、bash 白名单、Plan 步骤提取、[DONE:n] 进度标记与会话持久化。",
+      "tags": [
+        "documentation",
+        "extension",
+        "plan-mode",
+        "guide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/coding-agent/examples/extensions/sandbox/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/examples/extensions/sandbox/package.json",
+      "summary": "sandbox 扩展示例包清单:声明 ./index.ts 扩展入口,依赖 @anthropic-ai/sandbox-runtime 做 OS 级沙箱。",
+      "tags": [
+        "configuration",
+        "extension",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/extensions/subagent/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/README.md",
+      "summary": "subagent 扩展文档:隔离上下文的多进程子代理、并行流式输出、Markdown 渲染、用量统计与中止支持,含目录结构与安装方法。",
+      "tags": [
+        "documentation",
+        "extension",
+        "subagent",
+        "multi-agent"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/coding-agent/examples/extensions/with-deps/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/examples/extensions/with-deps/package.json",
+      "summary": "带第三方依赖的扩展示例包清单:声明 ./index.ts 扩展入口并依赖 ms。",
+      "tags": [
+        "configuration",
+        "extension",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/examples/sdk/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/examples/sdk/README.md",
+      "summary": "tfa-coding-agent SDK 编程式用法示例文档:覆盖 13 个从最小会话到全控制的示例,并给出 Quick Reference。",
+      "tags": [
+        "documentation",
+        "sdk",
+        "examples",
+        "guide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/coding-agent/install-lock/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/install-lock/package.json",
+      "summary": "TFA 安装器使用的锁文件根包:固定 tfa-coding-agent 版本,并对 protobufjs/rimraf 设置覆盖版本。",
+      "tags": [
+        "configuration",
+        "installer",
+        "lockfile",
+        "package-manifest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/scripts/migrate-sessions.sh",
+      "type": "file",
+      "name": "migrate-sessions.sh",
+      "filePath": "packages/coding-agent/scripts/migrate-sessions.sh",
+      "summary": "把 v0.30.0 时代误存到 ~/.tfa/agent/*.jsonl 的会话迁移到 sessions/<encoded-cwd>/ 目录,支持 --dry-run 预览。",
+      "tags": [
+        "script",
+        "migration",
+        "sessions",
+        "shell"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/src/client/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/coding-agent/src/client/index.ts",
+      "summary": "client 包 barrel:重导出 RemoteSession 远程会话类与 transcript 快照/进度状态工具。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "client",
+        "remote-session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/src/core/export-html/template.css",
+      "type": "file",
+      "name": "template.css",
+      "filePath": "packages/coding-agent/src/core/export-html/template.css",
+      "summary": "会话导出 HTML 的自包含样式表:提供聊天区、侧边栏、工具卡片、消息气泡等布局与浅色主题。",
+      "tags": [
+        "css",
+        "export",
+        "styling",
+        "frontend"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenWidth",
+      "type": "function",
+      "name": "DG_GetScreenWidth",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "返回 DOOM framebuffer 宽度(DOOMGENERIC_RESX)。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenHeight",
+      "type": "function",
+      "name": "DG_GetScreenHeight",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "返回 DOOM framebuffer 高度(DOOMGENERIC_RESY)。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        31,
+        32
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_PushKeyEvent",
+      "type": "function",
+      "name": "DG_PushKeyEvent",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "从 JS 侧将按键事件(pressed+key)推入环形队列供 DOOM 读取。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        41
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_Init",
+      "type": "function",
+      "name": "DG_Init",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "doomgeneric 初始化回调,当前无初始化逻辑。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        43,
+        45
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_DrawFrame",
+      "type": "function",
+      "name": "DG_DrawFrame",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "帧绘制回调,帧数据在 DG_ScreenBuffer 中由 JS 经 DG_GetFrameBuffer 读取。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        47,
+        49
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SleepMs",
+      "type": "function",
+      "name": "DG_SleepMs",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "休眠回调,空实现(时间由 JS 层控制)。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        51,
+        54
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetTicksMs",
+      "type": "function",
+      "name": "DG_GetTicksMs",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "通过 emscripten_get_now 返回毫秒时间戳。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        56,
+        58
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetKey",
+      "type": "function",
+      "name": "DG_GetKey",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "从按键队列弹出事件;有事件返回 1,否则返回 0。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        60,
+        68
+      ]
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SetWindowTitle",
+      "type": "function",
+      "name": "DG_SetWindowTitle",
+      "filePath": "packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "summary": "设置窗口标题回调,空实现。",
+      "tags": [
+        "c",
+        "doom",
+        "platform"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        70,
+        72
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenWidth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenWidth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenHeight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetScreenHeight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_PushKeyEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_PushKeyEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_Init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_Init",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_DrawFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_DrawFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SleepMs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SleepMs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetTicksMs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetTicksMs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetKey",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_GetKey",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SetWindowTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "target": "function:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c:DG_SetWindowTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/doom-overlay/README.md",
+      "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/build.sh",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/doom-overlay/README.md",
+      "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/build.sh",
+      "target": "file:packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/coding-agent/examples/sdk/README.md",
+      "target": "document:packages/coding-agent/examples/README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/coding-agent/install-lock/package.json",
+      "target": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

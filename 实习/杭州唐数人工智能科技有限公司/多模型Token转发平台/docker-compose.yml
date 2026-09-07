@@ -1,0 +1,80 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: school-api-v1-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: school_api_v1
+    ports:
+      - "15432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d school_api_v1"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: school-api-v1-redis
+    ports:
+      - "16379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: school-api-v1-migrate
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      APP_DATABASE__URL: postgres://postgres:postgres@postgres:5432/school_api_v1?sslmode=disable
+      APP_MIGRATIONS_PATH: /app/migrations
+    entrypoint: ["/app/migrate"]
+    command: ["up"]
+    restart: "no"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: school-api-v1-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      # Explicitly empty: container configuration comes from environment
+      # variables only, so a stray APP_CONFIG_PATH from the host .env must
+      # not point the process at a YAML file that does not exist in the image.
+      APP_CONFIG_PATH: ""
+      APP_SERVER__PORT: "8080"
+      APP_SERVER__ENV: development
+      APP_SERVER__LOG_LEVEL: info
+      APP_DATABASE__URL: postgres://postgres:postgres@postgres:5432/school_api_v1?sslmode=disable
+      APP_REDIS__URL: redis://redis:6379/0
+      APP_JWT__SECRET: ${APP_JWT__SECRET:?JWT secret is required}
+      APP_JWT__EXPIRE_HOURS: "24"
+      APP_ENCRYPTION__KEY: ${APP_ENCRYPTION__KEY:?encryption key is required}
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

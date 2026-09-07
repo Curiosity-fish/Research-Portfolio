@@ -1,0 +1,594 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/shell/web/src/style.css",
+      "type": "file",
+      "name": "style.css",
+      "filePath": "packages/shell/web/src/style.css",
+      "summary": "金融科技 Agent 前端设计系统样式(淡蓝主题):定义 CSS 变量、深浅色 data-theme 切换及布局/组件/工具卡片样式。",
+      "tags": [
+        "css",
+        "design-system",
+        "theming",
+        "frontend"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/vite.config.ts",
+      "type": "file",
+      "name": "vite.config.ts",
+      "filePath": "packages/shell/web/vite.config.ts",
+      "summary": "Web 前端 Vite 配置:启用 Vue 插件,开发服务器端口 5173,并把 /api 代理到后端 8787。",
+      "tags": [
+        "build-system",
+        "vite",
+        "proxy",
+        "vue"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/tui/native/darwin/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/tui/native/darwin/README.md",
+      "summary": "Darwin 原生预编译构建文档:双架构构建、xcrun/clang 工具链、osxcross 交叉编译与 SDK 许可说明。",
+      "tags": [
+        "documentation",
+        "native",
+        "darwin",
+        "build"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/darwin/build.sh",
+      "type": "file",
+      "name": "build.sh",
+      "filePath": "packages/tui/native/darwin/build.sh",
+      "summary": "编译 darwin-modifiers N-API 插件的脚本:支持 CC/SDKROOT 交叉编译,产出 arm64/x64 两个 .node 预编译文件。",
+      "tags": [
+        "script",
+        "native",
+        "build",
+        "darwin"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/tui/native/darwin/prebuilds/darwin-arm64/darwin-modifiers.node",
+      "type": "file",
+      "name": "darwin-modifiers.node",
+      "filePath": "packages/tui/native/darwin/prebuilds/darwin-arm64/darwin-modifiers.node",
+      "summary": "Darwin arm64 预编译 N-API 二进制(darwin-modifiers.node)。",
+      "tags": [
+        "native",
+        "prebuild",
+        "binary",
+        "darwin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/darwin/prebuilds/darwin-x64/darwin-modifiers.node",
+      "type": "file",
+      "name": "darwin-modifiers.node",
+      "filePath": "packages/tui/native/darwin/prebuilds/darwin-x64/darwin-modifiers.node",
+      "summary": "Darwin x64 预编译 N-API 二进制(darwin-modifiers.node)。",
+      "tags": [
+        "native",
+        "prebuild",
+        "binary",
+        "darwin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "type": "file",
+      "name": "darwin-modifiers.c",
+      "filePath": "packages/tui/native/darwin/src/darwin-modifiers.c",
+      "summary": "基于 CoreGraphics 检测修饰键是否按下的 N-API 插件:导出 isModifierPressed,运行时动态解析 N-API 符号。",
+      "tags": [
+        "c",
+        "napi",
+        "darwin",
+        "key-modifiers"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/tui/native/win32/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/tui/native/win32/README.md",
+      "summary": "Windows 原生预编译构建文档:MSVC VsDevCmd 定位、amd64/arm64 构建与 MinGW 交叉编译(TFA_TUI_WIN32_TOOLCHAIN)。",
+      "tags": [
+        "documentation",
+        "native",
+        "win32",
+        "build"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/win32/build.mjs",
+      "type": "file",
+      "name": "build.mjs",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "Windows N-API 插件构建器:定位 Visual Studio 开发环境或 MinGW 编译器,构建 win32-console-mode 并安装到 prebuilds。",
+      "tags": [
+        "script",
+        "build",
+        "native",
+        "win32",
+        "msvc"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/tui/native/win32/prebuilds/win32-arm64/win32-console-mode.node",
+      "type": "file",
+      "name": "win32-console-mode.node",
+      "filePath": "packages/tui/native/win32/prebuilds/win32-arm64/win32-console-mode.node",
+      "summary": "Windows arm64 预编译 N-API 二进制(win32-console-mode.node)。",
+      "tags": [
+        "native",
+        "prebuild",
+        "binary",
+        "win32"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/win32/prebuilds/win32-x64/win32-console-mode.node",
+      "type": "file",
+      "name": "win32-console-mode.node",
+      "filePath": "packages/tui/native/win32/prebuilds/win32-x64/win32-console-mode.node",
+      "summary": "Windows x64 预编译 N-API 二进制(win32-console-mode.node)。",
+      "tags": [
+        "native",
+        "prebuild",
+        "binary",
+        "win32"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "type": "file",
+      "name": "win32-console-mode.c",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "启用 Windows 虚拟终端输入并检测修饰键的 N-API 插件:仅链接 kernel32,运行时解析 N-API 与 user32 符号。",
+      "tags": [
+        "c",
+        "napi",
+        "win32",
+        "console"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/tui/test/bug-regression-isimageline-startswith-bug.test.ts",
+      "type": "file",
+      "name": "bug-regression-isimageline-startswith-bug.test.ts",
+      "filePath": "packages/tui/test/bug-regression-isimageline-startswith-bug.test.ts",
+      "summary": "isImageLine 用 startsWith 导致 TUI 崩溃的回归测试:验证改用 includes 后,含图片转义序列的行不再触发宽度崩溃。",
+      "tags": [
+        "test",
+        "regression",
+        "tui",
+        "image"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/tui/native/darwin/build.sh:build",
+      "type": "function",
+      "name": "build",
+      "filePath": "packages/tui/native/darwin/build.sh",
+      "summary": "针对指定架构调用 clang 以 bundle 方式编译 N-API 插件,并安装到 prebuilds 目录。",
+      "tags": [
+        "script",
+        "native",
+        "build"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        59
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/darwin/src/darwin-modifiers.c:is_modifier_pressed",
+      "type": "function",
+      "name": "is_modifier_pressed",
+      "filePath": "packages/tui/native/darwin/src/darwin-modifiers.c",
+      "summary": "解析参数中的修饰键名,通过 CoreGraphics 当前事件标志判断该键是否按下并返回布尔值。",
+      "tags": [
+        "c",
+        "napi",
+        "darwin"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        31,
+        56
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/darwin/src/darwin-modifiers.c:napi_register_module_v1",
+      "type": "function",
+      "name": "napi_register_module_v1",
+      "filePath": "packages/tui/native/darwin/src/darwin-modifiers.c",
+      "summary": "注册 N-API 模块,导出 isModifierPressed 函数。",
+      "tags": [
+        "c",
+        "napi",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        58,
+        70
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/build.mjs:findVisualStudioDevCmd",
+      "type": "function",
+      "name": "findVisualStudioDevCmd",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "通过 vswhere/注册表定位 VsDevCmd.bat 与 MSVC 安装路径。",
+      "tags": [
+        "build",
+        "win32",
+        "msvc"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        57,
+        91
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/build.mjs:canUseMsvc",
+      "type": "function",
+      "name": "canUseMsvc",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "校验 MSVC 开发环境可用性(检查 VsDevCmd 与目标架构支持)。",
+      "tags": [
+        "build",
+        "win32",
+        "msvc"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        93,
+        108
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/build.mjs:resolveMingwCompiler",
+      "type": "function",
+      "name": "resolveMingwCompiler",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "解析 MinGW 交叉编译器路径(CC_X64/CC_ARM64 或 PATH)。",
+      "tags": [
+        "build",
+        "win32",
+        "mingw"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        110,
+        119
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/build.mjs:buildWithMsvc",
+      "type": "function",
+      "name": "buildWithMsvc",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "通过 VsDevCmd 初始化 amd64/arm64 环境并调用 cl.exe/link.exe 编译插件。",
+      "tags": [
+        "build",
+        "win32",
+        "msvc"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        130,
+        166
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/build.mjs:buildWithMingw",
+      "type": "function",
+      "name": "buildWithMingw",
+      "filePath": "packages/tui/native/win32/build.mjs",
+      "summary": "用 MinGW gcc 编译 win32-console-mode 插件。",
+      "tags": [
+        "build",
+        "win32",
+        "mingw"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        168,
+        198
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/src/win32-console-mode.c:get_async_key_state_symbol",
+      "type": "function",
+      "name": "get_async_key_state_symbol",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "惰性解析 user32.dll 的 GetAsyncKeyState 函数指针。",
+      "tags": [
+        "c",
+        "napi",
+        "win32"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        38,
+        50
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/src/win32-console-mode.c:enable_virtual_terminal_input",
+      "type": "function",
+      "name": "enable_virtual_terminal_input",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "为控制台输入启用 ENABLE_VIRTUAL_TERMINAL_INPUT,失败时恢复原模式。",
+      "tags": [
+        "c",
+        "napi",
+        "win32",
+        "console"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        65,
+        78
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/src/win32-console-mode.c:is_modifier_pressed",
+      "type": "function",
+      "name": "is_modifier_pressed",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "通过 GetAsyncKeyState 判断指定修饰键是否按下。",
+      "tags": [
+        "c",
+        "napi",
+        "win32",
+        "key-modifiers"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        80,
+        101
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/src/win32-console-mode.c:set_function_export",
+      "type": "function",
+      "name": "set_function_export",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "创建 N-API 函数并挂到 exports 对象上。",
+      "tags": [
+        "c",
+        "napi",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        103,
+        113
+      ]
+    },
+    {
+      "id": "function:packages/tui/native/win32/src/win32-console-mode.c:napi_register_module_v1",
+      "type": "function",
+      "name": "napi_register_module_v1",
+      "filePath": "packages/tui/native/win32/src/win32-console-mode.c",
+      "summary": "注册 N-API 模块,导出 enableVirtualTerminalInput 与 isModifierPressed。",
+      "tags": [
+        "c",
+        "napi",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        115,
+        119
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/tui/native/darwin/build.sh",
+      "target": "function:packages/tui/native/darwin/build.sh:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "target": "function:packages/tui/native/darwin/src/darwin-modifiers.c:is_modifier_pressed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "target": "function:packages/tui/native/darwin/src/darwin-modifiers.c:napi_register_module_v1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "function:packages/tui/native/win32/build.mjs:findVisualStudioDevCmd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "function:packages/tui/native/win32/build.mjs:canUseMsvc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "function:packages/tui/native/win32/build.mjs:resolveMingwCompiler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "function:packages/tui/native/win32/build.mjs:buildWithMsvc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "function:packages/tui/native/win32/build.mjs:buildWithMingw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:get_async_key_state_symbol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:enable_virtual_terminal_input",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:is_modifier_pressed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:set_function_export",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:napi_register_module_v1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "target": "function:packages/tui/native/darwin/src/darwin-modifiers.c:napi_register_module_v1",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "target": "function:packages/tui/native/win32/src/win32-console-mode.c:napi_register_module_v1",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:packages/tui/native/darwin/README.md",
+      "target": "file:packages/tui/native/darwin/build.sh",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/tui/native/darwin/README.md",
+      "target": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/tui/native/win32/README.md",
+      "target": "file:packages/tui/native/win32/build.mjs",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/tui/native/win32/README.md",
+      "target": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/tui/native/darwin/build.sh",
+      "target": "file:packages/tui/native/darwin/src/darwin-modifiers.c",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "file:packages/tui/native/win32/src/win32-console-mode.c",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/tui/native/darwin/build.sh",
+      "target": "file:packages/tui/native/darwin/prebuilds/darwin-arm64/darwin-modifiers.node",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/tui/native/darwin/build.sh",
+      "target": "file:packages/tui/native/darwin/prebuilds/darwin-x64/darwin-modifiers.node",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "file:packages/tui/native/win32/prebuilds/win32-arm64/win32-console-mode.node",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/tui/native/win32/build.mjs",
+      "target": "file:packages/tui/native/win32/prebuilds/win32-x64/win32-console-mode.node",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/web/vite.config.ts",
+      "target": "file:packages/shell/web/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

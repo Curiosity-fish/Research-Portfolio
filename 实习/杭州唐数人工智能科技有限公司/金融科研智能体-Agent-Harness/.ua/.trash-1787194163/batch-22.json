@@ -1,0 +1,552 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/src/server/http-server.ts",
+   "type": "file",
+   "name": "http-server.ts",
+   "filePath": "packages/shell/src/server/http-server.ts",
+   "summary": "基于 Hono 的本地 HTTP 服务器：提供 REST API（会话/模型/配置/工具/项目 CRUD、API Key 管理、消息发送/插话/中止）、SSE 事件流与静态文件托管，并完成错误规范化与参数校验。",
+   "tags": [
+    "api-handler",
+    "server",
+    "sse",
+    "http"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/shell/src/server/http-server.ts:createApp",
+   "type": "function",
+   "name": "createApp",
+   "filePath": "packages/shell/src/server/http-server.ts",
+   "lineRange": [
+    65,
+    323
+   ],
+   "summary": "创建 Hono 应用并注册全部 REST/SSE 路由，负责请求解析、参数校验、调用 TfaServerService 与 TfaSessionRuntime，并统一输出 JSON 错误体。",
+   "tags": [
+    "api-handler",
+    "router",
+    "validation"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+   "type": "function",
+   "name": "startHttpServer",
+   "filePath": "packages/shell/src/server/http-server.ts",
+   "lineRange": [
+    343,
+    401
+   ],
+   "summary": "启动 HTTP 服务器并封装为 ReadableStream 的 SSE 响应流，处理优雅关闭与资源释放。",
+   "tags": [
+    "server",
+    "sse",
+    "lifecycle"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/src/server/project-store.ts",
+   "type": "file",
+   "name": "project-store.ts",
+   "filePath": "packages/shell/src/server/project-store.ts",
+   "summary": "基于本地 JSON 文件的项目存储服务：提供项目 CRUD、会话与项目归属迁移、会话移除等能力，持久化到磁盘并在内存缓存。",
+   "tags": [
+    "data-model",
+    "storage",
+    "service",
+    "serialization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+   "type": "class",
+   "name": "ProjectStore",
+   "filePath": "packages/shell/src/server/project-store.ts",
+   "lineRange": [
+    40,
+    153
+   ],
+   "summary": "项目存储类，封装项目列表的加载、保存与 CRUD，支持将会话移入/移出项目并维护 updatedAt 时间戳。",
+   "tags": [
+    "data-model",
+    "storage",
+    "service"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/src/server/server-entry.ts",
+   "type": "file",
+   "name": "server-entry.ts",
+   "filePath": "packages/shell/src/server/server-entry.ts",
+   "summary": "Web 服务器 CLI 入口：解析命令行与环境变量参数，装配 faux 模型、金融工具注册表与运行时工厂后启动 HTTP 服务器，并注册进程退出钩子。",
+   "tags": [
+    "entry-point",
+    "cli",
+    "server"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+   "type": "function",
+   "name": "startWebServer",
+   "filePath": "packages/shell/src/server/server-entry.ts",
+   "lineRange": [
+    19,
+    56
+   ],
+   "summary": "组装运行时依赖（faux 模型、默认金融工具、注册表）并调用 startHttpServer 启动服务，同时注册优雅关闭回调。",
+   "tags": [
+    "entry-point",
+    "bootstrap",
+    "server"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/shell/src/server/server-entry.ts:parseWebArgs",
+   "type": "function",
+   "name": "parseWebArgs",
+   "filePath": "packages/shell/src/server/server-entry.ts",
+   "lineRange": [
+    58,
+    67
+   ],
+   "summary": "从 process.argv 解析 web 子命令参数（端口、host 等），并合并环境变量默认值。",
+   "tags": [
+    "cli",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/src/server/session-service.ts",
+   "type": "file",
+   "name": "session-service.ts",
+   "filePath": "packages/shell/src/server/session-service.ts",
+   "summary": "会话服务层：管理 LiveShellSession 生命周期，桥接 AgentSession/模型运行时，提供会话列表、模型与配置查询、API Key 持久化、项目操作、会话重命名/导出等能力。",
+   "tags": [
+    "service",
+    "session",
+    "model",
+    "authentication"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/shell/src/server/session-service.ts:LiveShellSession",
+   "type": "class",
+   "name": "LiveShellSession",
+   "filePath": "packages/shell/src/server/session-service.ts",
+   "lineRange": [
+    92,
+    193
+   ],
+   "summary": "包装单个 AgentSession 的活跃会话：维护订阅监听器、进度状态、模型/思考级别设置，并转发 prompt/steer/abort 等事件到后端会话。",
+   "tags": [
+    "session",
+    "event-handler",
+    "proxy"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+   "type": "class",
+   "name": "ShellSessionService",
+   "filePath": "packages/shell/src/server/session-service.ts",
+   "lineRange": [
+    199,
+    501
+   ],
+   "summary": "核心会话服务实现：惰性创建模型运行时（含 faux 模式）、凭证读写（auth.json）、会话创建/打开/删除/导出、项目操作与模型解析。",
+   "tags": [
+    "service",
+    "session",
+    "factory",
+    "authentication"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/shell/test/http-server.test.ts",
+   "type": "file",
+   "name": "http-server.test.ts",
+   "filePath": "packages/shell/test/http-server.test.ts",
+   "summary": "HTTP 服务器的集成测试：通过 faux 模型装配测试上下文，覆盖 REST 接口与 SSE 事件流（含多事件帧解析）。",
+   "tags": [
+    "test",
+    "http",
+    "sse",
+    "integration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/shell/test/http-server.test.ts:createTestContext",
+   "type": "function",
+   "name": "createTestContext",
+   "filePath": "packages/shell/test/http-server.test.ts",
+   "lineRange": [
+    18,
+    28
+   ],
+   "summary": "创建临时工作目录并装配 faux 模型与测试用 createApp，注册清理钩子。",
+   "tags": [
+    "test",
+    "fixture",
+    "setup"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/test/http-server.test.ts:jsonRequest",
+   "type": "function",
+   "name": "jsonRequest",
+   "filePath": "packages/shell/test/http-server.test.ts",
+   "lineRange": [
+    30,
+    44
+   ],
+   "summary": "构造测试用 HTTP JSON 请求并返回响应。",
+   "tags": [
+    "test",
+    "http",
+    "helper"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/test/http-server.test.ts:readSse",
+   "type": "function",
+   "name": "readSse",
+   "filePath": "packages/shell/test/http-server.test.ts",
+   "lineRange": [
+    51,
+    75
+   ],
+   "summary": "从流式响应体读取并解析 SSE 帧，返回事件名与数据数组。",
+   "tags": [
+    "test",
+    "sse",
+    "helper"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/test/project-store.test.ts",
+   "type": "file",
+   "name": "project-store.test.ts",
+   "filePath": "packages/shell/test/project-store.test.ts",
+   "summary": "ProjectStore 的单元测试：覆盖项目创建、查询与持久化行为。",
+   "tags": [
+    "test",
+    "storage",
+    "unit"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "file:packages/server/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "file:packages/shell/src/server/session-service.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/project-store.ts",
+   "target": "file:packages/server/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/core/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/core/runtime-factory.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/fintech/echo-market.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/fintech/registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/server/http-server.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "file:packages/shell/src/server/session-service.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/protocol/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/server/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/shell/src/core/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/shell/src/server/progress.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/shell/src/server/project-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "file:packages/shell/src/server/snapshot.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "file:packages/shell/src/core/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "file:packages/shell/src/server/http-server.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "file:packages/shell/src/server/session-service.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/test/project-store.test.ts",
+   "target": "file:packages/shell/src/server/project-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "function:packages/shell/src/server/http-server.ts:createApp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/project-store.ts",
+   "target": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "function:packages/shell/src/server/server-entry.ts:parseWebArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "class:packages/shell/src/server/session-service.ts:LiveShellSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "function:packages/shell/test/http-server.test.ts:createTestContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "function:packages/shell/test/http-server.test.ts:jsonRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/test/http-server.test.ts",
+   "target": "function:packages/shell/test/http-server.test.ts:readSse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "function:packages/shell/src/server/http-server.ts:createApp",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/src/server/project-store.ts",
+   "target": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/src/server/server-entry.ts",
+   "target": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/src/server/session-service.ts",
+   "target": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+   "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+   "target": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/shell/test/http-server.test.ts:createTestContext",
+   "target": "function:packages/shell/src/server/http-server.ts:createApp",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/src/server/http-server.ts",
+   "target": "file:packages/shell/test/http-server.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/shell/src/server/project-store.ts",
+   "target": "file:packages/shell/test/project-store.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

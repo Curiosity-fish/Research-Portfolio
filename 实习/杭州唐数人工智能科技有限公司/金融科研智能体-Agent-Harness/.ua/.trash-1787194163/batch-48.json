@@ -1,0 +1,59 @@
+{
+ "nodes": [
+  {
+   "id": "document:findings.md",
+   "type": "document",
+   "name": "findings.md",
+   "filePath": "findings.md",
+   "summary": "代码库现状梳理：记录 Web 后端入口（REST+SSE+静态托管）、会话服务、AuthStorage 持久化、AgentSession 能力与 Vue 3 前端组件布局等关键发现。",
+   "tags": [
+    "documentation",
+    "findings",
+    "overview"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "document:progress.md",
+   "type": "document",
+   "name": "progress.md",
+   "filePath": "progress.md",
+   "summary": "项目进度日志：按日期记录后端接口、API Key 持久化、前端视觉重设计（金融终端深色风格）的完成情况与验证结果，并注明既有无关类型错误。",
+   "tags": [
+    "documentation",
+    "progress",
+    "changelog"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:task_plan.md",
+   "type": "document",
+   "name": "task_plan.md",
+   "filePath": "task_plan.md",
+   "summary": "Web 前端全功能实现计划：以 0-9 阶段表格规划后端接口、API 客户端、全局状态、模型设置、工具面板、主题切换等升级，并记录产品决策。",
+   "tags": [
+    "documentation",
+    "planning",
+    "roadmap"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "document:progress.md",
+   "target": "document:task_plan.md",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:findings.md",
+   "target": "document:progress.md",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

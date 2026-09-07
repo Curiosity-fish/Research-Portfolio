@@ -1,0 +1,870 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/coding-agent/examples/extensions/shutdown-command.ts",
+      "type": "file",
+      "name": "shutdown-command.ts",
+      "filePath": "packages/coding-agent/examples/extensions/shutdown-command.ts",
+      "summary": "示例扩展：注册关机/退出命令并确认用户意图，演示命令注册。",
+      "tags": [
+        "example",
+        "extension",
+        "command",
+        "shutdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "type": "file",
+      "name": "ssh.ts",
+      "filePath": "packages/coding-agent/examples/extensions/ssh.ts",
+      "summary": "示例扩展：通过 SSH 将 read/write/edit/bash 操作转发到远程主机，演示远程 ops 封装。",
+      "tags": [
+        "example",
+        "extension",
+        "ssh",
+        "remote",
+        "ops"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/ssh.ts:sshExec",
+      "type": "function",
+      "name": "sshExec",
+      "filePath": "packages/coding-agent/examples/extensions/ssh.ts",
+      "lineRange": [
+        29,
+        45
+      ],
+      "summary": "通过 SSH 在远程主机执行命令并返回输出。",
+      "tags": [
+        "ssh",
+        "exec",
+        "remote"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteReadOps",
+      "type": "function",
+      "name": "createRemoteReadOps",
+      "filePath": "packages/coding-agent/examples/extensions/ssh.ts",
+      "lineRange": [
+        47,
+        62
+      ],
+      "summary": "创建基于 SSH 的远程文件读取操作。",
+      "tags": [
+        "ssh",
+        "remote",
+        "read",
+        "ops"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteWriteOps",
+      "type": "function",
+      "name": "createRemoteWriteOps",
+      "filePath": "packages/coding-agent/examples/extensions/ssh.ts",
+      "lineRange": [
+        64,
+        73
+      ],
+      "summary": "创建基于 SSH 的远程文件写入操作。",
+      "tags": [
+        "ssh",
+        "remote",
+        "write",
+        "ops"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteBashOps",
+      "type": "function",
+      "name": "createRemoteBashOps",
+      "filePath": "packages/coding-agent/examples/extensions/ssh.ts",
+      "lineRange": [
+        81,
+        112
+      ],
+      "summary": "创建基于 SSH 的远程 bash 操作集合，串行执行远程命令。",
+      "tags": [
+        "ssh",
+        "remote",
+        "bash",
+        "ops"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/status-line.ts",
+      "type": "file",
+      "name": "status-line.ts",
+      "filePath": "packages/coding-agent/examples/extensions/status-line.ts",
+      "summary": "示例扩展：在状态栏显示自定义信息，演示 UI 状态行 hook。",
+      "tags": [
+        "example",
+        "extension",
+        "status-line",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "summary": "子代理扩展的辅助模块：从目录发现并加载 agent 定义，格式化列表。",
+      "tags": [
+        "example",
+        "extension",
+        "subagent",
+        "loader"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:loadAgentsFromDir",
+      "type": "function",
+      "name": "loadAgentsFromDir",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "lineRange": [
+        26,
+        75
+      ],
+      "summary": "从目录加载 agent 定义文件并解析元数据。",
+      "tags": [
+        "subagent",
+        "loader",
+        "directory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:findNearestProjectAgentsDir",
+      "type": "function",
+      "name": "findNearestProjectAgentsDir",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "lineRange": [
+        85,
+        95
+      ],
+      "summary": "向上查找最近的 agents 目录。",
+      "tags": [
+        "subagent",
+        "path",
+        "discovery"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:discoverAgents",
+      "type": "function",
+      "name": "discoverAgents",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "lineRange": [
+        97,
+        116
+      ],
+      "summary": "发现项目中所有可用 agent 并返回其列表。",
+      "tags": [
+        "subagent",
+        "discovery",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:formatAgentList",
+      "type": "function",
+      "name": "formatAgentList",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "lineRange": [
+        118,
+        126
+      ],
+      "summary": "将 agent 列表格式化为可读文本。",
+      "tags": [
+        "subagent",
+        "formatting",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "summary": "子代理扩展主实现：调用外部 PI（Pi）agent 执行并行子任务并汇总结果，支持并发限制与输出格式化。",
+      "tags": [
+        "example",
+        "extension",
+        "subagent",
+        "parallel",
+        "orchestration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:formatUsageStats",
+      "type": "function",
+      "name": "formatUsageStats",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        45,
+        69
+      ],
+      "summary": "格式化 token 用量统计信息。",
+      "tags": [
+        "subagent",
+        "usage",
+        "formatting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:formatToolCall",
+      "type": "function",
+      "name": "formatToolCall",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        71,
+        137
+      ],
+      "summary": "格式化工具调用信息用于展示。",
+      "tags": [
+        "subagent",
+        "tool",
+        "formatting"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getFinalOutput",
+      "type": "function",
+      "name": "getFinalOutput",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        170,
+        180
+      ],
+      "summary": "从 agent 结果中提取最终输出文本。",
+      "tags": [
+        "subagent",
+        "output",
+        "extraction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:truncateParallelOutput",
+      "type": "function",
+      "name": "truncateParallelOutput",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        193,
+        202
+      ],
+      "summary": "截断并行子任务的输出以避免过长。",
+      "tags": [
+        "subagent",
+        "truncation",
+        "parallel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getDisplayItems",
+      "type": "function",
+      "name": "getDisplayItems",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        206,
+        217
+      ],
+      "summary": "生成结果展示条目列表。",
+      "tags": [
+        "subagent",
+        "ui",
+        "items"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:mapWithConcurrencyLimit",
+      "type": "function",
+      "name": "mapWithConcurrencyLimit",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        219,
+        237
+      ],
+      "summary": "以受限并发执行异步映射操作。",
+      "tags": [
+        "concurrency",
+        "utility",
+        "async"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getPiInvocation",
+      "type": "function",
+      "name": "getPiInvocation",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        249,
+        263
+      ],
+      "summary": "构造调用外部 Pi agent 的命令行参数。",
+      "tags": [
+        "subagent",
+        "pi",
+        "invocation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/subagent/index.ts:runSingleAgent",
+      "type": "function",
+      "name": "runSingleAgent",
+      "filePath": "packages/coding-agent/examples/extensions/subagent/index.ts",
+      "lineRange": [
+        267,
+        429
+      ],
+      "summary": "运行单个子代理任务：构造 prompt、调用 Pi、解析结果并支持进度显示。",
+      "tags": [
+        "subagent",
+        "orchestration",
+        "execution"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/system-prompt-header.ts",
+      "type": "file",
+      "name": "system-prompt-header.ts",
+      "filePath": "packages/coding-agent/examples/extensions/system-prompt-header.ts",
+      "summary": "示例扩展：向系统提示词头部注入额外文本，演示 prompt 头部 hook。",
+      "tags": [
+        "example",
+        "extension",
+        "prompt",
+        "system-prompt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/timed-confirm.ts",
+      "type": "file",
+      "name": "timed-confirm.ts",
+      "filePath": "packages/coding-agent/examples/extensions/timed-confirm.ts",
+      "summary": "示例扩展：带超时的确认提示（timed confirm），演示交互 hook。",
+      "tags": [
+        "example",
+        "extension",
+        "confirm",
+        "timer"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/titlebar-spinner.ts",
+      "type": "file",
+      "name": "titlebar-spinner.ts",
+      "filePath": "packages/coding-agent/examples/extensions/titlebar-spinner.ts",
+      "summary": "示例扩展：在标题栏显示进度 spinner，演示标题栏 UI hook。",
+      "tags": [
+        "example",
+        "extension",
+        "titlebar",
+        "spinner"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/tool-override.ts",
+      "type": "file",
+      "name": "tool-override.ts",
+      "filePath": "packages/coding-agent/examples/extensions/tool-override.ts",
+      "summary": "示例扩展：覆盖 bash 工具行为并记录路径访问日志，演示工具覆盖机制。",
+      "tags": [
+        "example",
+        "extension",
+        "tool",
+        "override",
+        "logging"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/tool-override.ts:logAccess",
+      "type": "function",
+      "name": "logAccess",
+      "filePath": "packages/coding-agent/examples/extensions/tool-override.ts",
+      "lineRange": [
+        47,
+        60
+      ],
+      "summary": "记录工具对文件路径的访问日志。",
+      "tags": [
+        "logging",
+        "file-io",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/trigger-compact.ts",
+      "type": "file",
+      "name": "trigger-compact.ts",
+      "filePath": "packages/coding-agent/examples/extensions/trigger-compact.ts",
+      "summary": "示例扩展：手动触发会话压缩（compact），演示压缩控制 API。",
+      "tags": [
+        "example",
+        "extension",
+        "compact",
+        "session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/widget-placement.ts",
+      "type": "file",
+      "name": "widget-placement.ts",
+      "filePath": "packages/coding-agent/examples/extensions/widget-placement.ts",
+      "summary": "极简示例扩展：设置 widget 放置位置，演示布局配置。",
+      "tags": [
+        "example",
+        "extension",
+        "widget",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/widget-placement.ts:widgetPlacementExtension",
+      "type": "function",
+      "name": "widgetPlacementExtension",
+      "filePath": "packages/coding-agent/examples/extensions/widget-placement.ts",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "设置 widget 放置位置的极简扩展示例（默认导出）。",
+      "tags": [
+        "extension",
+        "widget",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/with-deps/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/coding-agent/examples/extensions/with-deps/index.ts",
+      "summary": "示例扩展：展示带依赖（hooks 组合）的扩展结构。",
+      "tags": [
+        "example",
+        "extension",
+        "dependencies",
+        "structure"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/working-indicator.ts",
+      "type": "file",
+      "name": "working-indicator.ts",
+      "filePath": "packages/coding-agent/examples/extensions/working-indicator.ts",
+      "summary": "示例扩展：显示 agent 工作状态指示器（忙碌/等待/描述模式），演示状态 hook。",
+      "tags": [
+        "example",
+        "extension",
+        "status",
+        "indicator"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/working-indicator.ts:getIndicator",
+      "type": "function",
+      "name": "getIndicator",
+      "filePath": "packages/coding-agent/examples/extensions/working-indicator.ts",
+      "lineRange": [
+        41,
+        69
+      ],
+      "summary": "根据工作状态生成指示器文本。",
+      "tags": [
+        "status",
+        "indicator",
+        "formatting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/working-indicator.ts:describeMode",
+      "type": "function",
+      "name": "describeMode",
+      "filePath": "packages/coding-agent/examples/extensions/working-indicator.ts",
+      "lineRange": [
+        71,
+        84
+      ],
+      "summary": "将运行模式描述为可读文本。",
+      "tags": [
+        "status",
+        "mode",
+        "description"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/working-message-test.ts",
+      "type": "file",
+      "name": "working-message-test.ts",
+      "filePath": "packages/coding-agent/examples/extensions/working-message-test.ts",
+      "summary": "示例扩展：测试工作消息显示行为的辅助示例。",
+      "tags": [
+        "example",
+        "extension",
+        "message",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/01-minimal.ts",
+      "type": "file",
+      "name": "01-minimal.ts",
+      "filePath": "packages/coding-agent/examples/sdk/01-minimal.ts",
+      "summary": "SDK 最小示例：演示创建 coding-agent 客户端的最小代码路径。",
+      "tags": [
+        "example",
+        "sdk",
+        "minimal",
+        "quickstart"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/examples/extensions/shutdown-command.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "target": "function:packages/coding-agent/examples/extensions/ssh.ts:sshExec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "target": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteReadOps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "target": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteWriteOps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "target": "function:packages/coding-agent/examples/extensions/ssh.ts:createRemoteBashOps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/ssh.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/status-line.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:loadAgentsFromDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:findNearestProjectAgentsDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:discoverAgents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:discoverAgents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:formatAgentList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:formatAgentList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:formatUsageStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:formatToolCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getFinalOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:truncateParallelOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getDisplayItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:mapWithConcurrencyLimit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:getPiInvocation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/index.ts:runSingleAgent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "file:packages/coding-agent/examples/extensions/subagent/agents.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/subagent/index.ts",
+      "target": "file:packages/tui/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/system-prompt-header.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/timed-confirm.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/titlebar-spinner.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/tool-override.ts",
+      "target": "function:packages/coding-agent/examples/extensions/tool-override.ts:logAccess",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/tool-override.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/tool-override.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/trigger-compact.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/widget-placement.ts",
+      "target": "function:packages/coding-agent/examples/extensions/widget-placement.ts:widgetPlacementExtension",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/widget-placement.ts",
+      "target": "function:packages/coding-agent/examples/extensions/widget-placement.ts:widgetPlacementExtension",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/widget-placement.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/with-deps/index.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/working-indicator.ts",
+      "target": "function:packages/coding-agent/examples/extensions/working-indicator.ts:getIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/working-indicator.ts",
+      "target": "function:packages/coding-agent/examples/extensions/working-indicator.ts:describeMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/working-indicator.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/working-message-test.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/01-minimal.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/coding-agent/examples/extensions/subagent/index.ts:runSingleAgent",
+      "target": "function:packages/coding-agent/examples/extensions/subagent/agents.ts:discoverAgents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

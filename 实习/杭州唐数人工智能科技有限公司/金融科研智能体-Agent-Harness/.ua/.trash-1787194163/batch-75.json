@@ -1,0 +1,347 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/web/src/App.vue",
+   "type": "file",
+   "name": "App.vue",
+   "filePath": "packages/shell/web/src/App.vue",
+   "summary": "应用根组件：编排首页/对话视图，串联会话状态仓库，提供项目创建/移动/重命名/删除、会话打开/删除/导出、模型切换等交互。",
+   "tags": [
+    "component",
+    "vue",
+    "entry-point",
+    "state"
+   ],
+   "complexity": "complex",
+   "languageNotes": "Vue 3 <script setup> SFC，深度绑定 session-store 状态。"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "file",
+   "name": "AppIcon.vue",
+   "filePath": "packages/shell/web/src/components/AppIcon.vue",
+   "summary": "内联 SVG 图标组件：以 name 属性映射约 20 个 Lucide 风格路径，支持 size 参数与 currentColor 着色。",
+   "tags": [
+    "component",
+    "vue",
+    "icon",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ChatView.vue",
+   "type": "file",
+   "name": "ChatView.vue",
+   "filePath": "packages/shell/web/src/components/ChatView.vue",
+   "summary": "聊天消息滚动容器：监听消息数量与末条内容变化自动滚动到底部，通过 slot 透出 header/message。",
+   "tags": [
+    "component",
+    "vue",
+    "chat",
+    "scrolling"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ConnectionBadge.vue",
+   "type": "file",
+   "name": "ConnectionBadge.vue",
+   "filePath": "packages/shell/web/src/components/ConnectionBadge.vue",
+   "summary": "连接状态徽标：根据 connected/hasSession 显示「Agent 服务已连接/连接失败/服务就绪」及指示点颜色。",
+   "tags": [
+    "component",
+    "vue",
+    "status",
+    "ui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/EmptyState.vue",
+   "type": "file",
+   "name": "EmptyState.vue",
+   "filePath": "packages/shell/web/src/components/EmptyState.vue",
+   "summary": "首页工作台：含 logo 与标题、常用语快捷提问、PromptBox 输入区、最近项目卡片（最多 4 个）与创建项目入口。",
+   "tags": [
+    "component",
+    "vue",
+    "home",
+    "project"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/MessageItem.vue",
+   "type": "file",
+   "name": "MessageItem.vue",
+   "filePath": "packages/shell/web/src/components/MessageItem.vue",
+   "summary": "消息条目组件：内置手写 Markdown 渲染（代码块、标题、列表、表格、引用、行内样式）、思考折叠、工具调用卡片与复制按钮。",
+   "tags": [
+    "component",
+    "vue",
+    "markdown",
+    "chat"
+   ],
+   "complexity": "complex",
+   "languageNotes": "自研正则式 Markdown 渲染，避免引入第三方依赖。"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ModelPicker.vue",
+   "type": "file",
+   "name": "ModelPicker.vue",
+   "filePath": "packages/shell/web/src/components/ModelPicker.vue",
+   "summary": "模型选择器：从 store.models 派生按 provider 分组的选项，显示当前模型与思考级别。",
+   "tags": [
+    "component",
+    "vue",
+    "model",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ModelSettingsDrawer.vue",
+   "type": "file",
+   "name": "ModelSettingsDrawer.vue",
+   "filePath": "packages/shell/web/src/components/ModelSettingsDrawer.vue",
+   "summary": "模型设置抽屉：配置供应商与 API Key（保存/移除）、当前会话思考级别、已认证供应商列表与配置路径展示。",
+   "tags": [
+    "component",
+    "vue",
+    "settings",
+    "authentication",
+    "drawer"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ProjectPicker.vue",
+   "type": "file",
+   "name": "ProjectPicker.vue",
+   "filePath": "packages/shell/web/src/components/ProjectPicker.vue",
+   "summary": "项目选择模态框：支持创建项目（名称+可选文件夹）与移动会话到项目两种模式，含焦点管理与 Esc/Tab 键盘支持。",
+   "tags": [
+    "component",
+    "vue",
+    "modal",
+    "project",
+    "accessibility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/PromptBox.vue",
+   "type": "file",
+   "name": "PromptBox.vue",
+   "filePath": "packages/shell/web/src/components/PromptBox.vue",
+   "summary": "消息输入组件：多行 textarea 输入、发送/停止/插话按钮、模型选择与思考级别提示、快捷键与自动聚焦。",
+   "tags": [
+    "component",
+    "vue",
+    "chat",
+    "input"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/SessionList.vue",
+   "type": "file",
+   "name": "SessionList.vue",
+   "filePath": "packages/shell/web/src/components/SessionList.vue",
+   "summary": "会话侧栏列表：按项目分组与未归属会话展示，支持搜索、折叠、右键上下文菜单（重命名/移动/导出/删除）、连接状态与主题切换入口。",
+   "tags": [
+    "component",
+    "vue",
+    "session",
+    "sidebar",
+    "context-menu"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ThemeToggle.vue",
+   "type": "file",
+   "name": "ThemeToggle.vue",
+   "filePath": "packages/shell/web/src/components/ThemeToggle.vue",
+   "summary": "主题切换按钮：读写 localStorage（tfa-theme），切换 <html> data-theme 与 meta theme-color。",
+   "tags": [
+    "component",
+    "vue",
+    "theme",
+    "toggle"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ToolCallCard.vue",
+   "type": "file",
+   "name": "ToolCallCard.vue",
+   "filePath": "packages/shell/web/src/components/ToolCallCard.vue",
+   "summary": "工具调用卡片：展示工具名、执行状态（执行中/完成/错误）、格式化输入与结果文本。",
+   "tags": [
+    "component",
+    "vue",
+    "tool",
+    "chat"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/components/ToolsDrawer.vue",
+   "type": "file",
+   "name": "ToolsDrawer.vue",
+   "filePath": "packages/shell/web/src/components/ToolsDrawer.vue",
+   "summary": "金融工具抽屉：列出后端注册的金融工具（名称、标签、描述），空态提示在 fintech 目录注册。",
+   "tags": [
+    "component",
+    "vue",
+    "tools",
+    "drawer"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/ChatView.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/EmptyState.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/MessageItem.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/ModelSettingsDrawer.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/ProjectPicker.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/PromptBox.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/SessionList.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/App.vue",
+   "target": "file:packages/shell/web/src/components/ToolsDrawer.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/ThemeToggle.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/EmptyState.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/EmptyState.vue",
+   "target": "file:packages/shell/web/src/components/PromptBox.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/MessageItem.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/MessageItem.vue",
+   "target": "file:packages/shell/web/src/components/ToolCallCard.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/ModelSettingsDrawer.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/ProjectPicker.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/PromptBox.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/SessionList.vue",
+   "target": "file:packages/shell/web/src/components/AppIcon.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/SessionList.vue",
+   "target": "file:packages/shell/web/src/components/ConnectionBadge.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:packages/shell/web/src/components/SessionList.vue",
+   "target": "file:packages/shell/web/src/components/ThemeToggle.vue",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  }
+ ]
+}

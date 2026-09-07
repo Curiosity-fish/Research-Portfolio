@@ -1,0 +1,843 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/first-time-setup-fork.test.ts",
+   "type": "file",
+   "name": "first-time-setup-fork.test.ts",
+   "filePath": "packages/coding-agent/test/first-time-setup-fork.test.ts",
+   "summary": "测试首次启动界面在 fork 场景下的行为。",
+   "tags": [
+    "test",
+    "startup-ui",
+    "fork"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "type": "file",
+   "name": "first-time-setup.test.ts",
+   "filePath": "packages/coding-agent/test/first-time-setup.test.ts",
+   "summary": "测试首次启动设置界面与配置初始化流程。",
+   "tags": [
+    "test",
+    "startup-ui",
+    "设置"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/frontmatter.test.ts",
+   "type": "file",
+   "name": "frontmatter.test.ts",
+   "filePath": "packages/coding-agent/test/frontmatter.test.ts",
+   "summary": "测试 frontmatter 解析与剥离工具函数。",
+   "tags": [
+    "test",
+    "frontmatter",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/git-update.test.ts",
+   "type": "file",
+   "name": "git-update.test.ts",
+   "filePath": "packages/coding-agent/test/git-update.test.ts",
+   "summary": "测试通过 git 方式更新 agent 的流程，覆盖版本检查与命令执行。",
+   "tags": [
+    "test",
+    "git",
+    "更新"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/git-update.test.ts:git",
+   "type": "function",
+   "name": "git",
+   "filePath": "packages/coding-agent/test/git-update.test.ts",
+   "lineRange": [
+    19,
+    28
+   ],
+   "summary": "执行 git 命令的辅助函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/http-dispatcher.test.ts",
+   "type": "file",
+   "name": "http-dispatcher.test.ts",
+   "filePath": "packages/coding-agent/test/http-dispatcher.test.ts",
+   "summary": "测试 HTTP 调度器（http-dispatcher）对请求的分发与处理。",
+   "tags": [
+    "test",
+    "http",
+    "dispatcher"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/image-process.test.ts",
+   "type": "file",
+   "name": "image-process.test.ts",
+   "filePath": "packages/coding-agent/test/image-process.test.ts",
+   "summary": "测试图片处理工具对图片的缩放与 MIME 规范化。",
+   "tags": [
+    "test",
+    "图片处理",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/image-process.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "function",
+   "name": "createTinyBmp1x1Red24bpp",
+   "filePath": "packages/coding-agent/test/image-process.test.ts",
+   "lineRange": [
+    5,
+    19
+   ],
+   "summary": "生成 1x1 红色 24bpp BMP 图片字节。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "type": "file",
+   "name": "image-resize-callers.test.ts",
+   "filePath": "packages/coding-agent/test/image-resize-callers.test.ts",
+   "summary": "测试图片缩放调用方对图片输入的处理路径。",
+   "tags": [
+    "test",
+    "图片缩放",
+    "integration"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/initial-message.test.ts",
+   "type": "file",
+   "name": "initial-message.test.ts",
+   "filePath": "packages/coding-agent/test/initial-message.test.ts",
+   "summary": "测试 CLI 初始消息（initial-message）的构造逻辑。",
+   "tags": [
+    "test",
+    "cli",
+    "初始消息"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/management-http.test.ts",
+   "type": "file",
+   "name": "management-http.test.ts",
+   "filePath": "packages/coding-agent/test/management-http.test.ts",
+   "summary": "测试管理 HTTP 请求工具的重试逻辑。",
+   "tags": [
+    "test",
+    "http",
+    "重试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "type": "file",
+   "name": "max-thinking.test.ts",
+   "filePath": "packages/coding-agent/test/max-thinking.test.ts",
+   "summary": "测试最大思考级别配置对参数与主题的影响。",
+   "tags": [
+    "test",
+    "thinking",
+    "配置"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/mermaid.test.ts",
+   "type": "file",
+   "name": "mermaid.test.ts",
+   "filePath": "packages/coding-agent/test/mermaid.test.ts",
+   "summary": "测试 mermaid markdown 转换器对图表代码块的主题化渲染。",
+   "tags": [
+    "test",
+    "mermaid",
+    "渲染"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/mermaid.test.ts:transformMermaid",
+   "type": "function",
+   "name": "transformMermaid",
+   "filePath": "packages/coding-agent/test/mermaid.test.ts",
+   "lineRange": [
+    15,
+    25
+   ],
+   "summary": "对 mermaid 文本执行转换的测试辅助函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "file",
+   "name": "package-command-paths.test.ts",
+   "filePath": "packages/coding-agent/test/package-command-paths.test.ts",
+   "summary": "测试包管理命令中的路径解析与默认目录行为，覆盖 config/package 子命令。",
+   "tags": [
+    "test",
+    "cli",
+    "包管理",
+    "路径"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/package-manager-ssh.test.ts",
+   "type": "file",
+   "name": "package-manager-ssh.test.ts",
+   "filePath": "packages/coding-agent/test/package-manager-ssh.test.ts",
+   "summary": "测试包管理器在 SSH 场景下的安装与更新行为。",
+   "tags": [
+    "test",
+    "package-manager",
+    "ssh"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/package-manager.test.ts",
+   "type": "file",
+   "name": "package-manager.test.ts",
+   "filePath": "packages/coding-agent/test/package-manager.test.ts",
+   "summary": "全面测试包管理器：安装检测、命令构造、包源解析与错误处理。",
+   "tags": [
+    "test",
+    "package-manager",
+    "集成"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/path-utils.test.ts",
+   "type": "file",
+   "name": "path-utils.test.ts",
+   "filePath": "packages/coding-agent/test/path-utils.test.ts",
+   "summary": "测试工具路径工具（tools/path-utils）的路径规范化与解析逻辑。",
+   "tags": [
+    "test",
+    "path-utils",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/paths.test.ts",
+   "type": "file",
+   "name": "paths.test.ts",
+   "filePath": "packages/coding-agent/test/paths.test.ts",
+   "summary": "测试 utils/paths 的路径处理函数在多种平台场景下的行为。",
+   "tags": [
+    "test",
+    "paths",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/prompt-templates.test.ts",
+   "type": "file",
+   "name": "prompt-templates.test.ts",
+   "filePath": "packages/coding-agent/test/prompt-templates.test.ts",
+   "summary": "测试提示词模板加载、参数替换与命令参数解析逻辑。",
+   "tags": [
+    "test",
+    "prompt-templates",
+    "提示词"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/git-update.test.ts",
+   "target": "function:packages/coding-agent/test/git-update.test.ts:git",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-process.test.ts",
+   "target": "function:packages/coding-agent/test/image-process.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/mermaid.test.ts",
+   "target": "function:packages/coding-agent/test/mermaid.test.ts:transformMermaid",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/first-time-setup-fork.test.ts",
+   "target": "file:packages/coding-agent/src/cli/startup-ui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "target": "file:packages/coding-agent/src/cli/startup-ui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/frontmatter.test.ts",
+   "target": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/git-update.test.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/git-update.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/git-update.test.ts",
+   "target": "file:packages/coding-agent/test/test-network-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/http-dispatcher.test.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-process.test.ts",
+   "target": "file:packages/coding-agent/src/utils/image-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-process.test.ts",
+   "target": "file:packages/coding-agent/src/utils/mime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "target": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/read.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "target": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/initial-message.test.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/initial-message.test.ts",
+   "target": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/management-http.test.ts",
+   "target": "file:packages/coding-agent/src/utils/management-http.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/mermaid.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/mermaid.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/mermaid.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/mermaid.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/main.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "target": "file:packages/coding-agent/test/test-network-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-manager-ssh.test.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-manager-ssh.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-manager.test.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/package-manager.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/path-utils.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/paths.test.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/prompt-templates.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/prompt-templates.test.ts",
+   "target": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/startup-ui.ts",
+   "target": "file:packages/coding-agent/test/first-time-setup-fork.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/startup-ui.ts",
+   "target": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/first-time-setup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "file:packages/coding-agent/test/frontmatter.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/test/git-update.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/git-update.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "target": "file:packages/coding-agent/test/http-dispatcher.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "file:packages/coding-agent/test/image-process.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/read.ts",
+   "target": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "file:packages/coding-agent/test/image-resize-callers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/test/initial-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "target": "file:packages/coding-agent/test/initial-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/management-http.ts",
+   "target": "file:packages/coding-agent/test/management-http.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/max-thinking.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/mermaid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/mermaid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "file:packages/coding-agent/test/mermaid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/mermaid.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/test/package-command-paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/test/package-manager-ssh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/package-manager-ssh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/test/package-manager.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/package-manager.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "target": "file:packages/coding-agent/test/path-utils.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/prompt-templates.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "target": "file:packages/coding-agent/test/prompt-templates.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

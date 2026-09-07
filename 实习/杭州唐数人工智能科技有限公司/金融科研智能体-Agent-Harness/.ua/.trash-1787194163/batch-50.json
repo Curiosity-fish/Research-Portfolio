@@ -1,0 +1,305 @@
+{
+ "nodes": [
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/05319b90f780277db2163b59529a257d13ef5019c22d68f37f992ac3a2bb05c4.json",
+   "type": "config",
+   "name": "05319b90f780277db2163b59529a257d13ef5019c22d68f37f992ac3a2bb05c4.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/05319b90f780277db2163b59529a257d13ef5019c22d68f37f992ac3a2bb05c4.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/agent/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/0c88e286d08c6ab801abe5b3682f7d6d8779138e94f430e439927763ae6c1b7b.json",
+   "type": "config",
+   "name": "0c88e286d08c6ab801abe5b3682f7d6d8779138e94f430e439927763ae6c1b7b.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/0c88e286d08c6ab801abe5b3682f7d6d8779138e94f430e439927763ae6c1b7b.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/agent/tsconfig.build.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/0d03265b5bac070b36fc886d790aff8b7740ab2e7df3eb085986c1a1ef6cf2cb.json",
+   "type": "config",
+   "name": "0d03265b5bac070b36fc886d790aff8b7740ab2e7df3eb085986c1a1ef6cf2cb.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/0d03265b5bac070b36fc886d790aff8b7740ab2e7df3eb085986c1a1ef6cf2cb.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/shell/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/106998d7eb734fd5c3ec5602d752ac3f559e4835ea60978623a8f7ebca4e426f.json",
+   "type": "config",
+   "name": "106998d7eb734fd5c3ec5602d752ac3f559e4835ea60978623a8f7ebca4e426f.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/106998d7eb734fd5c3ec5602d752ac3f559e4835ea60978623a8f7ebca4e426f.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/evals/tsconfig.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/150af8892eeb39ce5a35f9561c5e9b0ff0b0e8101e5cdd133e6e4576af5e8877.json",
+   "type": "config",
+   "name": "150af8892eeb39ce5a35f9561c5e9b0ff0b0e8101e5cdd133e6e4576af5e8877.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/150af8892eeb39ce5a35f9561c5e9b0ff0b0e8101e5cdd133e6e4576af5e8877.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/client/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/155019897375e2407f3073acade144479958b25382efce6557f9fe0a79f636a1.json",
+   "type": "config",
+   "name": "155019897375e2407f3073acade144479958b25382efce6557f9fe0a79f636a1.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/155019897375e2407f3073acade144479958b25382efce6557f9fe0a79f636a1.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/examples/extensions/sandbox/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/184f4c24dcdb4d642e39ac04749679b40686fb177fa929a87225bef8638ece22.json",
+   "type": "config",
+   "name": "184f4c24dcdb4d642e39ac04749679b40686fb177fa929a87225bef8638ece22.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/184f4c24dcdb4d642e39ac04749679b40686fb177fa929a87225bef8638ece22.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/tui/native/darwin/build.sh 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/1d4951d5276da000e7c6a210fbf21a2a60d5b527ec3079c9ad3145dbb1837f82.json",
+   "type": "config",
+   "name": "1d4951d5276da000e7c6a210fbf21a2a60d5b527ec3079c9ad3145dbb1837f82.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/1d4951d5276da000e7c6a210fbf21a2a60d5b527ec3079c9ad3145dbb1837f82.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/examples/extensions/doom-overlay/doom/doomgeneric_pi.c 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/2416fc3e397d7600239f462bb41d0b0d437551741240ed271cbdf9a397590602.json",
+   "type": "config",
+   "name": "2416fc3e397d7600239f462bb41d0b0d437551741240ed271cbdf9a397590602.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/2416fc3e397d7600239f462bb41d0b0d437551741240ed271cbdf9a397590602.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 .husky/pre-commit 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/257f9a648ae85535e0231de0a6d680f3a186766c3febb3286fc9fd19906654cc.json",
+   "type": "config",
+   "name": "257f9a648ae85535e0231de0a6d680f3a186766c3febb3286fc9fd19906654cc.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/257f9a648ae85535e0231de0a6d680f3a186766c3febb3286fc9fd19906654cc.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/tsconfig.examples.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/25dabebe9ba656f7e1e8563875efc6b4c4675f1a68a15a49dcbbad11480757ec.json",
+   "type": "config",
+   "name": "25dabebe9ba656f7e1e8563875efc6b4c4675f1a68a15a49dcbbad11480757ec.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/25dabebe9ba656f7e1e8563875efc6b4c4675f1a68a15a49dcbbad11480757ec.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/install-lock/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/2c847244cfb92c76bf774743c2e8d9baa6a8a03556a8dcc7c9bc048d5f93167c.json",
+   "type": "config",
+   "name": "2c847244cfb92c76bf774743c2e8d9baa6a8a03556a8dcc7c9bc048d5f93167c.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/2c847244cfb92c76bf774743c2e8d9baa6a8a03556a8dcc7c9bc048d5f93167c.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/server/tsconfig.test.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/2ce7796cd13537429a6855b1a49ea2ee75f363faf730949a70baf77f9d232b70.json",
+   "type": "config",
+   "name": "2ce7796cd13537429a6855b1a49ea2ee75f363faf730949a70baf77f9d232b70.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/2ce7796cd13537429a6855b1a49ea2ee75f363faf730949a70baf77f9d232b70.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/shell/web/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/300eec018ffdd17aef8fd99d0b4b2d4b6d395c5cffd928191be58fbc4459bc42.json",
+   "type": "config",
+   "name": "300eec018ffdd17aef8fd99d0b4b2d4b6d395c5cffd928191be58fbc4459bc42.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/300eec018ffdd17aef8fd99d0b4b2d4b6d395c5cffd928191be58fbc4459bc42.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/shell/tsconfig.test.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/36d213da79084d53360e816e9d2f71da25e0f8f893a77e411c9b1d36f8495e3d.json",
+   "type": "config",
+   "name": "36d213da79084d53360e816e9d2f71da25e0f8f893a77e411c9b1d36f8495e3d.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/36d213da79084d53360e816e9d2f71da25e0f8f893a77e411c9b1d36f8495e3d.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/protocol/tsconfig.test.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/3e652e190aec27ef180e49c16ec317b989ee5e8ece1dde1b453ffc447fc1910b.json",
+   "type": "config",
+   "name": "3e652e190aec27ef180e49c16ec317b989ee5e8ece1dde1b453ffc447fc1910b.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/3e652e190aec27ef180e49c16ec317b989ee5e8ece1dde1b453ffc447fc1910b.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/40b40c8c692abda176393dca6bc9b57f87b9289af5084031a3f80fc5f6939c43.json",
+   "type": "config",
+   "name": "40b40c8c692abda176393dca6bc9b57f87b9289af5084031a3f80fc5f6939c43.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/40b40c8c692abda176393dca6bc9b57f87b9289af5084031a3f80fc5f6939c43.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 tfa-test.sh 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/459dfe83b649348bd799b63e41e91d9e2948d83c0a758e7a23eee57cb75442da.json",
+   "type": "config",
+   "name": "459dfe83b649348bd799b63e41e91d9e2948d83c0a758e7a23eee57cb75442da.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/459dfe83b649348bd799b63e41e91d9e2948d83c0a758e7a23eee57cb75442da.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/src/modes/interactive/theme/light.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/4b5cddafac30c7a1b68537cd5a3554e47135136601d9d72a4591cd76410b6be6.json",
+   "type": "config",
+   "name": "4b5cddafac30c7a1b68537cd5a3554e47135136601d9d72a4591cd76410b6be6.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/4b5cddafac30c7a1b68537cd5a3554e47135136601d9d72a4591cd76410b6be6.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/src/modes/interactive/theme/dark.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  },
+  {
+   "id": "config:graphify-out/cache/ast/v0.9.23/4c027a0c0d1fae37fdecbcc74a472a6a1eeaa672a85f2c919aa39f992e6d13a9.json",
+   "type": "config",
+   "name": "4c027a0c0d1fae37fdecbcc74a472a6a1eeaa672a85f2c919aa39f992e6d13a9.json",
+   "filePath": "graphify-out/cache/ast/v0.9.23/4c027a0c0d1fae37fdecbcc74a472a6a1eeaa672a85f2c919aa39f992e6d13a9.json",
+   "summary": "Graphify AST 缓存：单行 JSON 记录源文件 packages/coding-agent/examples/extensions/gondolin/package.json 的 AST 节点与 contains/imports 关系，供增量知识图谱构建。",
+   "tags": [
+    "cache",
+    "graphify",
+    "ast",
+    "configuration"
+   ],
+   "complexity": "simple",
+   "languageNotes": "单行紧凑 JSON，包含 nodes 与 edges 数组，键为规范化路径。"
+  }
+ ],
+ "edges": []
+}

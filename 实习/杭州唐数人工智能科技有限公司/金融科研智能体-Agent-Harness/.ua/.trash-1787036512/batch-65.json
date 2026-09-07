@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/server/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/server/CHANGELOG.md",
+      "summary": "server 包变更日志：记录协议适配器加固（生命周期状态、标识符、时间戳校验、稀疏数组）与 toProtocolToolResultMessage 需传入原始 ToolCall 的破坏性变更及历史版本记录。",
+      "tags": [
+        "documentation",
+        "changelog",
+        "server",
+        "protocol"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/server/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/server/README.md",
+      "summary": "介绍实验性 tfa-server 包：TfaServer 会话服务器核心与 listener 组合、Unix 传输 preset、transport 测试工具，以及 tfa-ai 与 tfa-protocol 之间的协议桥接函数。",
+      "tags": [
+        "documentation",
+        "server",
+        "session",
+        "protocol",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/server/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/server/package.json",
+      "summary": "server 包元数据：exports 含主入口、./testing 与 ./unix 子路径，脚本 build/dev/test/typecheck，依赖 tfa-ai 与 tfa-protocol。",
+      "tags": [
+        "configuration",
+        "server",
+        "build-system",
+        "npm"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/server/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/server/tsconfig.build.json",
+      "summary": "server 构建用 tsconfig：继承根 tsconfig.base，outDir/rootDir 指向 dist/src，仅编译 src 源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/server/tsconfig.test.json",
+      "type": "config",
+      "name": "tsconfig.test.json",
+      "filePath": "packages/server/tsconfig.test.json",
+      "summary": "server 测试用 tsconfig：noEmit + NodeNext，types 含 node 与 vitest，并将 @earendil-works/tfa-protocol 映射到 protocol 包源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "test",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/server/README.md",
+      "target": "file:packages/server/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/server/README.md",
+      "target": "file:packages/server/src/transports/unix/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/server/README.md",
+      "target": "file:packages/server/src/testing/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/server/CHANGELOG.md",
+      "target": "document:packages/server/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/server/package.json",
+      "target": "config:packages/server/tsconfig.build.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/tsconfig.build.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/tsconfig.test.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/tsconfig.build.json",
+      "target": "file:packages/server/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/tsconfig.test.json",
+      "target": "file:packages/server/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/tsconfig.test.json",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/package.json",
+      "target": "config:packages/protocol/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/server/package.json",
+      "target": "config:packages/ai/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

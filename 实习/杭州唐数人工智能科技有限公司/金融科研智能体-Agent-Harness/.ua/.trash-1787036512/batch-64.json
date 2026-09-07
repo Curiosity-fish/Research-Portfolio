@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/protocol/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/protocol/CHANGELOG.md",
+      "summary": "protocol 包变更日志：记录未发布版本的破坏性变更（收紧 assistant/tool 转录生命周期 schema）与新增的传输无关 CBOR 协议 schema、编解码与长度前缀 framing。",
+      "tags": [
+        "documentation",
+        "changelog",
+        "protocol",
+        "发布记录"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/protocol/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/protocol/README.md",
+      "summary": "介绍 tfa-protocol 包：运行时无关的 schema、类型、CBOR 编码与字节流 framing（uint32-be 长度前缀 + CBOR 消息），含 encode/decode、增量解码器与帧大小/嵌套深度等安全限制。",
+      "tags": [
+        "documentation",
+        "protocol",
+        "cbor",
+        "framing",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/protocol/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/protocol/package.json",
+      "summary": "protocol 包元数据：exports 暴露主入口，脚本含 build（tsgo）、test（vitest）、clean 与 prepublishOnly，运行时依赖 typebox。",
+      "tags": [
+        "configuration",
+        "protocol",
+        "build-system",
+        "npm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/protocol/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/protocol/tsconfig.build.json",
+      "summary": "protocol 构建用 tsconfig：继承根 tsconfig.base，outDir/rootDir 指向 dist/src，仅编译 src 下的源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/protocol/tsconfig.test.json",
+      "type": "config",
+      "name": "tsconfig.test.json",
+      "filePath": "packages/protocol/tsconfig.test.json",
+      "summary": "protocol 测试用 tsconfig：noEmit + NodeNext 模块解析，types 含 node 与 vitest，覆盖 src 与 test。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "test",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/protocol/README.md",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/protocol/CHANGELOG.md",
+      "target": "document:packages/protocol/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/protocol/package.json",
+      "target": "config:packages/protocol/tsconfig.build.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/protocol/tsconfig.build.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/protocol/tsconfig.test.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/protocol/tsconfig.build.json",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/protocol/tsconfig.test.json",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

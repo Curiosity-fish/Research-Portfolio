@@ -1,0 +1,62 @@
+{
+ "nodes": [
+  {
+   "id": "config:graphify-out/.graphify_analysis.json",
+   "type": "config",
+   "name": ".graphify_analysis.json",
+   "filePath": "graphify-out/.graphify_analysis.json",
+   "summary": "Graphify 分析输出：社区划分（communities）等图分析结果，标识各文件/符号所属社区。",
+   "tags": [
+    "graph",
+    "analysis",
+    "knowledge-graph",
+    "output"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "config:graphify-out/graph.json",
+   "type": "config",
+   "name": "graph.json",
+   "filePath": "graphify-out/graph.json",
+   "summary": "Graphify 知识图谱数据：以 nodes/edges 形式描述项目文件与符号及其依赖/引用关系的完整图结构。",
+   "tags": [
+    "graph",
+    "knowledge-graph",
+    "data",
+    "output"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "config:graphify-out/manifest.json",
+   "type": "config",
+   "name": "manifest.json",
+   "filePath": "graphify-out/manifest.json",
+   "summary": "Graphify 扫描清单：记录项目内每个文件的 mtime 与 ast_hash/semantic_hash 指纹，用于增量重建判断。",
+   "tags": [
+    "graph",
+    "manifest",
+    "hash",
+    "output"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "config:graphify-out/graph.json",
+   "target": "config:graphify-out/.graphify_analysis.json",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "config:graphify-out/manifest.json",
+   "target": "config:graphify-out/graph.json",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

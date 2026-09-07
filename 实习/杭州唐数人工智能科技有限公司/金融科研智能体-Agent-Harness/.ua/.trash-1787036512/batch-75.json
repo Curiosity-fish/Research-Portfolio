@@ -1,0 +1,539 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/server/test/fixtures/stale-socket-server.mjs",
+      "type": "file",
+      "name": "stale-socket-server.mjs",
+      "filePath": "packages/server/test/fixtures/stale-socket-server.mjs",
+      "summary": "测试夹具:创建监听指定 Unix socket 路径的 net 服务器并在就绪时通知父进程,用于模拟陈旧 socket 场景。",
+      "tags": [
+        "fixture",
+        "test",
+        "socket",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/server/vitest.config.ts",
+      "summary": "server 包 vitest 配置:alias protocol 包到源码入口。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/scripts/prepare-dist.mjs",
+      "type": "file",
+      "name": "prepare-dist.mjs",
+      "filePath": "packages/session-backends/sqlite-node/scripts/prepare-dist.mjs",
+      "summary": "构建前准备脚本:清理 dist 目录并复制 sqlite migrations 到 dist/sqlite/migrations。",
+      "tags": [
+        "script",
+        "build",
+        "sqlite",
+        "migrations"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/index.ts",
+      "summary": "sqlite session 后端 barrel:重导出迁移、SqliteSessionRepository、搜索后端与相关类型。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "sqlite",
+        "session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/session-backends/sqlite-node/vitest.config.ts",
+      "summary": "sqlite-node vitest 配置:alias telemetry/ai/agent 等 workspace 包并启用 v8 覆盖率。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest",
+        "coverage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/shell/docs/runbook.md",
+      "type": "document",
+      "name": "runbook.md",
+      "filePath": "packages/shell/docs/runbook.md",
+      "summary": "tfa-shell(Windows)运行手册:构建、CLI 用法、Web 服务与 REST API 摘要、离线模式、金融工具接入三步法与测试说明。",
+      "tags": [
+        "documentation",
+        "runbook",
+        "shell",
+        "windows"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/shell/src/fintech/datasources/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/shell/src/fintech/datasources/README.md",
+      "summary": "金融数据源接入指南:MarketDataSource 接口、注册到 FintechToolRegistry、注入 CLI/Web 会话的步骤,及常见数据源形态与错误处理约定。",
+      "tags": [
+        "documentation",
+        "fintech",
+        "datasource",
+        "guide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/shell/src/index.ts",
+      "summary": "tfa-shell 公共导出面 barrel:导出 CLI 入口(shellMain)、ShellSessionService、HTTP 服务与 FintechToolRegistry/MarketDataSource 金融扩展机制。",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "shell",
+        "fintech"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/test/smoke.test.ts",
+      "type": "file",
+      "name": "smoke.test.ts",
+      "filePath": "packages/shell/test/smoke.test.ts",
+      "summary": "tfa-shell 导出冒烟测试:验证核心符号(createShellRuntimeFactory、ShellSessionService、shellMain、startHttpServer 等)可加载。",
+      "tags": [
+        "test",
+        "smoke",
+        "exports"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/shell/vitest.config.ts",
+      "summary": "shell 包 vitest 配置:启用全局模式与 node 环境。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/web/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "packages/shell/web/src/main.ts",
+      "summary": "Web 前端入口:创建 Vue 应用,挂载 App 根组件并引入全局样式。",
+      "tags": [
+        "entry-point",
+        "vue",
+        "frontend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/web/src/App.vue",
+      "type": "file",
+      "name": "App.vue",
+      "filePath": "packages/shell/web/src/App.vue",
+      "summary": "应用根组件:组合会话/项目/模型/工具状态,处理首页与对话视图切换、发送/插话/中止、设置抽屉与主题。",
+      "tags": [
+        "component",
+        "vue",
+        "root",
+        "shell"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "file",
+      "name": "AppIcon.vue",
+      "filePath": "packages/shell/web/src/components/AppIcon.vue",
+      "summary": "零依赖 Lucide 风格线性图标集组件,内置 25 个图标的路径数据。",
+      "tags": [
+        "component",
+        "icon",
+        "vue"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ChatView.vue",
+      "type": "file",
+      "name": "ChatView.vue",
+      "filePath": "packages/shell/web/src/components/ChatView.vue",
+      "summary": "聊天滚动容器组件:监听条目数量与内容变化,自动滚动到底部,支持 header/message 插槽。",
+      "tags": [
+        "component",
+        "chat",
+        "scroll",
+        "vue"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ConnectionBadge.vue",
+      "type": "file",
+      "name": "ConnectionBadge.vue",
+      "filePath": "packages/shell/web/src/components/ConnectionBadge.vue",
+      "summary": "连接状态徽标组件:展示 Agent 服务已连接/失败/就绪三种状态。",
+      "tags": [
+        "component",
+        "status",
+        "vue"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/EmptyState.vue",
+      "type": "file",
+      "name": "EmptyState.vue",
+      "filePath": "packages/shell/web/src/components/EmptyState.vue",
+      "summary": "首页空状态(金融研究工作台):常用语快捷提问、最近项目列表、模型选择与新建会话入口。",
+      "tags": [
+        "component",
+        "home",
+        "vue",
+        "fintech"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/MessageItem.vue",
+      "type": "file",
+      "name": "MessageItem.vue",
+      "filePath": "packages/shell/web/src/components/MessageItem.vue",
+      "summary": "单条消息渲染组件:内置轻量 Markdown 渲染(代码块/表格/列表/引用/链接)、思考折叠与一键复制。",
+      "tags": [
+        "component",
+        "message",
+        "markdown",
+        "vue"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ModelPicker.vue",
+      "type": "file",
+      "name": "ModelPicker.vue",
+      "filePath": "packages/shell/web/src/components/ModelPicker.vue",
+      "summary": "模型选择下拉组件:按 provider 分组展示模型,未认证模型加标记。",
+      "tags": [
+        "component",
+        "model",
+        "select",
+        "vue"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ModelSettingsDrawer.vue",
+      "type": "file",
+      "name": "ModelSettingsDrawer.vue",
+      "filePath": "packages/shell/web/src/components/ModelSettingsDrawer.vue",
+      "summary": "模型设置抽屉:配置/移除各 provider 的 API Key、设置思考级别,并刷新模型与配置。",
+      "tags": [
+        "component",
+        "settings",
+        "api-key",
+        "vue"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ProjectPicker.vue",
+      "type": "file",
+      "name": "ProjectPicker.vue",
+      "filePath": "packages/shell/web/src/components/ProjectPicker.vue",
+      "summary": "项目创建/会话移动模态框:支持焦点圈定(Tab/Escape)、创建项目与移动到项目/无项目。",
+      "tags": [
+        "component",
+        "project",
+        "modal",
+        "vue"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/PromptBox.vue",
+      "type": "file",
+      "name": "PromptBox.vue",
+      "filePath": "packages/shell/web/src/components/PromptBox.vue",
+      "summary": "提示输入框组件:Enter 发送/Shift+Enter 换行、生成中插话与停止、模型选择与工具抽屉入口。",
+      "tags": [
+        "component",
+        "input",
+        "prompt",
+        "vue"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/SessionList.vue",
+      "type": "file",
+      "name": "SessionList.vue",
+      "filePath": "packages/shell/web/src/components/SessionList.vue",
+      "summary": "侧边栏会话列表组件:项目分组、搜索过滤、右键菜单(重命名/删除/移动/导出)、新建与设置入口。",
+      "tags": [
+        "component",
+        "session",
+        "sidebar",
+        "vue"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ThemeToggle.vue",
+      "type": "file",
+      "name": "ThemeToggle.vue",
+      "filePath": "packages/shell/web/src/components/ThemeToggle.vue",
+      "summary": "浅色/深色主题切换按钮:持久化到 localStorage 并更新 data-theme 与 meta 主题色。",
+      "tags": [
+        "component",
+        "theme",
+        "toggle",
+        "vue"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ToolCallCard.vue",
+      "type": "file",
+      "name": "ToolCallCard.vue",
+      "filePath": "packages/shell/web/src/components/ToolCallCard.vue",
+      "summary": "工具调用卡片组件:显示工具状态(执行中/完成/失败/错误)、输入参数与结果文本/图片。",
+      "tags": [
+        "component",
+        "tool-call",
+        "card",
+        "vue"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/web/src/components/ToolsDrawer.vue",
+      "type": "file",
+      "name": "ToolsDrawer.vue",
+      "filePath": "packages/shell/web/src/components/ToolsDrawer.vue",
+      "summary": "金融工具列表抽屉:展示服务注册的金融工具名称与描述,空时提示注册方法。",
+      "tags": [
+        "component",
+        "tools",
+        "drawer",
+        "vue"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/shell/test/smoke.test.ts",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/web/src/main.ts",
+      "target": "file:packages/shell/web/src/App.vue",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/web/src/main.ts",
+      "target": "file:packages/shell/web/src/style.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/smoke.test.ts",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/ChatView.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/EmptyState.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/MessageItem.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/ModelSettingsDrawer.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/ProjectPicker.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/PromptBox.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/SessionList.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/App.vue",
+      "target": "file:packages/shell/web/src/components/ToolsDrawer.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/EmptyState.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/EmptyState.vue",
+      "target": "file:packages/shell/web/src/components/PromptBox.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/MessageItem.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/MessageItem.vue",
+      "target": "file:packages/shell/web/src/components/ToolCallCard.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/ProjectPicker.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/PromptBox.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/PromptBox.vue",
+      "target": "file:packages/shell/web/src/components/ModelPicker.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/SessionList.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/SessionList.vue",
+      "target": "file:packages/shell/web/src/components/ConnectionBadge.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/SessionList.vue",
+      "target": "file:packages/shell/web/src/components/ThemeToggle.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/shell/web/src/components/ThemeToggle.vue",
+      "target": "file:packages/shell/web/src/components/AppIcon.vue",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/shell/docs/runbook.md",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/shell/src/fintech/datasources/README.md",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/vitest.config.ts",
+      "target": "file:packages/shell/test/smoke.test.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

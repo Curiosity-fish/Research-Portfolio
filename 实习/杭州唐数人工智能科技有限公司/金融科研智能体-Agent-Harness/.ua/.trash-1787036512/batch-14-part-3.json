@@ -1,0 +1,955 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "file",
+   "name": "compaction-extensions.test.ts",
+   "filePath": "packages/coding-agent/test/compaction-extensions.test.ts",
+   "summary": "测试压缩扩展钩子（BeforeCompact/SessionCompact）在会话压缩流程中的调用。",
+   "tags": [
+    "test",
+    "compaction",
+    "extensions",
+    "钩子"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/compaction-serialization.test.ts",
+   "type": "file",
+   "name": "compaction-serialization.test.ts",
+   "filePath": "packages/coding-agent/test/compaction-serialization.test.ts",
+   "summary": "测试压缩模块的会话序列化逻辑。",
+   "tags": [
+    "test",
+    "compaction",
+    "序列化"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "type": "file",
+   "name": "compaction-summary-reasoning.test.ts",
+   "filePath": "packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "summary": "测试压缩摘要生成对推理内容（reasoning）的处理。",
+   "tags": [
+    "test",
+    "compaction",
+    "摘要",
+    "reasoning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction-summary-reasoning.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "lineRange": [
+    23,
+    36
+   ],
+   "summary": "构造测试用模型对象。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/compaction.test.ts",
+   "type": "file",
+   "name": "compaction.test.ts",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "summary": "全面测试压缩模块：切割点、摘要生成与压缩执行。",
+   "tags": [
+    "test",
+    "compaction",
+    "核心"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createMockUsage",
+   "type": "function",
+   "name": "createMockUsage",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    42,
+    51
+   ],
+   "summary": "构造模拟用量。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    57,
+    68
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createMessageEntry",
+   "type": "function",
+   "name": "createMessageEntry",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    83,
+    94
+   ],
+   "summary": "构造消息条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createCompactionEntry",
+   "type": "function",
+   "name": "createCompactionEntry",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    96,
+    109
+   ],
+   "summary": "构造压缩条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createModelChangeEntry",
+   "type": "function",
+   "name": "createModelChangeEntry",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    111,
+    123
+   ],
+   "summary": "构造模型变更条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createThinkingLevelEntry",
+   "type": "function",
+   "name": "createThinkingLevelEntry",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    125,
+    136
+   ],
+   "summary": "构造思考级别条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:createCustomMessageEntry",
+   "type": "function",
+   "name": "createCustomMessageEntry",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    138,
+    151
+   ],
+   "summary": "构造自定义消息条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/compaction.test.ts:extractText",
+   "type": "function",
+   "name": "extractText",
+   "filePath": "packages/coding-agent/test/compaction.test.ts",
+   "lineRange": [
+    153,
+    187
+   ],
+   "summary": "从消息中提取文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "type": "file",
+   "name": "config-value-migration.test.ts",
+   "filePath": "packages/coding-agent/test/config-value-migration.test.ts",
+   "summary": "测试配置值迁移逻辑（migrations.ts）。",
+   "tags": [
+    "test",
+    "config",
+    "迁移"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "file",
+   "name": "credential-print.test.ts",
+   "filePath": "packages/coding-agent/test/credential-print.test.ts",
+   "summary": "测试凭据打印命令（credential-print）的输出与校验。",
+   "tags": [
+    "test",
+    "auth",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "file",
+   "name": "custom-message.test.ts",
+   "filePath": "packages/coding-agent/test/custom-message.test.ts",
+   "summary": "测试自定义消息组件与消息转换工具。",
+   "tags": [
+    "test",
+    "custom-message",
+    "tui",
+    "渲染"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "type": "file",
+   "name": "extensions-input-event.test.ts",
+   "filePath": "packages/coding-agent/test/extensions-input-event.test.ts",
+   "summary": "测试扩展输入事件（InputEvent）的分发与处理。",
+   "tags": [
+    "test",
+    "extensions",
+    "input-event"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-registry.test.ts",
+   "type": "file",
+   "name": "model-registry.test.ts",
+   "filePath": "packages/coding-agent/test/model-registry.test.ts",
+   "summary": "全面测试模型注册表的 provider 注册、模型解析与凭据管理。",
+   "tags": [
+    "test",
+    "model-registry",
+    "provider"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/model-resolver.test.ts",
+   "type": "file",
+   "name": "model-resolver.test.ts",
+   "filePath": "packages/coding-agent/test/model-resolver.test.ts",
+   "summary": "测试模型解析器对模型选择与 provider 解析的行为。",
+   "tags": [
+    "test",
+    "model-resolver",
+    "模型"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "target": "function:packages/coding-agent/test/compaction-summary-reasoning.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createMockUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createMessageEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createCompactionEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createModelChangeEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createThinkingLevelEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:createCustomMessageEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "function:packages/coding-agent/test/compaction.test.ts:extractText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-serialization.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-serialization.test.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/compaction.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "target": "file:packages/coding-agent/src/migrations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/credential-print.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/credential-print.test.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/credential-print.test.ts",
+   "target": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/credential-print.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/credential-print.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/coding-agent/src/core/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/custom-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-message.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-registry.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-registry.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-registry.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-registry.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-resolver.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-resolver.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-extensions.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-serialization.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/compaction/utils.ts",
+   "target": "file:packages/coding-agent/test/compaction-serialization.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "target": "file:packages/coding-agent/test/compaction-summary-reasoning.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "target": "file:packages/coding-agent/test/compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/compaction.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "file:packages/coding-agent/test/config-value-migration.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "target": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "target": "file:packages/coding-agent/test/credential-print.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/messages.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/custom-message.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/custom-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "target": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "target": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/extensions-input-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/model-registry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/model-registry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-registry.ts",
+   "target": "file:packages/coding-agent/test/model-registry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-resolver.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/coding-agent/test/model-resolver.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

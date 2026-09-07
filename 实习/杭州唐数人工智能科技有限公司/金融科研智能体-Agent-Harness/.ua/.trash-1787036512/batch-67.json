@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "config:packages/shell/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/shell/package.json",
+      "summary": "金融科技 agent 壳（tfa-shell）包：bin 暴露 tfa-shell → dist/cli.js，main 为 dist/index.js，脚本含 dev/build/test/typecheck，依赖 tfa-ai、tfa-coding-agent、tfa-protocol、tfa-server 与 hono。",
+      "tags": [
+        "configuration",
+        "shell",
+        "cli",
+        "build-system",
+        "npm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/shell/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/shell/tsconfig.build.json",
+      "summary": "shell 构建用 tsconfig：继承根 tsconfig.base，outDir/rootDir 指向 dist/src，编译 src 并排除 web 目录。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/shell/tsconfig.test.json",
+      "type": "config",
+      "name": "tsconfig.test.json",
+      "filePath": "packages/shell/tsconfig.test.json",
+      "summary": "shell 测试用 tsconfig：noEmit，覆盖 src 与 test，排除 node_modules、dist 与 web 目录。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "test",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "file:packages/shell/src/cli.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "config:packages/shell/tsconfig.build.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/tsconfig.build.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/tsconfig.test.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/tsconfig.build.json",
+      "target": "file:packages/shell/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "config:packages/ai/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "config:packages/coding-agent/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "config:packages/protocol/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/package.json",
+      "target": "config:packages/server/package.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

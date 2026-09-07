@@ -1,0 +1,4 @@
+  [OK] 'RAG架构，向量化存储学业相关知识文档' => 'RAG 架构（向量数据库：Milvus 2.4 Standalone；Embedding 模型：BGE-M3，'
+  [OK] '提供智能体管理后台，支持 Prompt 版本管理、' => '采用 Dify 开源版（v0.10.x）作为智能体编排与管理平台，支持 Prompt 版本管理、'
+
+Done. Total IDs used now: 24

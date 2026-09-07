@@ -1,0 +1,990 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/ai/src/providers/openai.ts",
+      "type": "file",
+      "name": "openai.ts",
+      "filePath": "packages/ai/src/providers/openai.ts",
+      "summary": "实现 OpenAI provider 定义。",
+      "tags": [
+        "provider",
+        "openai",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/openai.ts:openaiProvider",
+      "type": "function",
+      "name": "openaiProvider",
+      "filePath": "packages/ai/src/providers/openai.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 OpenAI provider 定义。",
+      "tags": [
+        "provider",
+        "openai",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/opencode-go.models.ts",
+      "type": "file",
+      "name": "opencode-go.models.ts",
+      "filePath": "packages/ai/src/providers/opencode-go.models.ts",
+      "summary": "定义 OpenCode Go 内置模型数据常量。",
+      "tags": [
+        "models",
+        "opencode",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/opencode-go.ts",
+      "type": "file",
+      "name": "opencode-go.ts",
+      "filePath": "packages/ai/src/providers/opencode-go.ts",
+      "summary": "实现 OpenCode Go provider 定义。",
+      "tags": [
+        "provider",
+        "opencode",
+        "go",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/opencode-go.ts:opencodeGoProvider",
+      "type": "function",
+      "name": "opencodeGoProvider",
+      "filePath": "packages/ai/src/providers/opencode-go.ts",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "返回 OpenCode Go provider 定义。",
+      "tags": [
+        "provider",
+        "opencode",
+        "go",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/opencode.models.ts",
+      "type": "file",
+      "name": "opencode.models.ts",
+      "filePath": "packages/ai/src/providers/opencode.models.ts",
+      "summary": "定义 OpenCode 内置模型数据常量。",
+      "tags": [
+        "models",
+        "opencode",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/opencode.ts",
+      "type": "file",
+      "name": "opencode.ts",
+      "filePath": "packages/ai/src/providers/opencode.ts",
+      "summary": "实现 OpenCode provider 定义，支持多协议兼容 API。",
+      "tags": [
+        "provider",
+        "opencode",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/opencode.ts:opencodeProvider",
+      "type": "function",
+      "name": "opencodeProvider",
+      "filePath": "packages/ai/src/providers/opencode.ts",
+      "lineRange": [
+        9,
+        24
+      ],
+      "summary": "返回 OpenCode provider 定义，支持多协议兼容 API。",
+      "tags": [
+        "provider",
+        "opencode",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/openrouter-images.ts",
+      "type": "file",
+      "name": "openrouter-images.ts",
+      "filePath": "packages/ai/src/providers/openrouter-images.ts",
+      "summary": "实现 OpenRouter 图片生成 provider 定义。",
+      "tags": [
+        "provider",
+        "openrouter",
+        "images",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/openrouter-images.ts:openrouterImagesProvider",
+      "type": "function",
+      "name": "openrouterImagesProvider",
+      "filePath": "packages/ai/src/providers/openrouter-images.ts",
+      "lineRange": [
+        7,
+        22
+      ],
+      "summary": "返回 OpenRouter 图片生成 provider 定义。",
+      "tags": [
+        "provider",
+        "openrouter",
+        "images",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/openrouter.models.ts",
+      "type": "file",
+      "name": "openrouter.models.ts",
+      "filePath": "packages/ai/src/providers/openrouter.models.ts",
+      "summary": "定义 OpenRouter 内置模型数据常量。",
+      "tags": [
+        "models",
+        "openrouter",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/openrouter.ts",
+      "type": "file",
+      "name": "openrouter.ts",
+      "filePath": "packages/ai/src/providers/openrouter.ts",
+      "summary": "实现 OpenRouter provider 定义，支持 OAuth 认证。",
+      "tags": [
+        "provider",
+        "openrouter",
+        "oauth",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/openrouter.ts:openrouterProvider",
+      "type": "function",
+      "name": "openrouterProvider",
+      "filePath": "packages/ai/src/providers/openrouter.ts",
+      "lineRange": [
+        7,
+        23
+      ],
+      "summary": "返回 OpenRouter provider 定义，支持 OAuth 认证。",
+      "tags": [
+        "provider",
+        "openrouter",
+        "oauth",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/qwen-token-plan-cn.models.ts",
+      "type": "file",
+      "name": "qwen-token-plan-cn.models.ts",
+      "filePath": "packages/ai/src/providers/qwen-token-plan-cn.models.ts",
+      "summary": "定义 Qwen Token Plan 中国区内置模型数据常量。",
+      "tags": [
+        "models",
+        "qwen",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "type": "file",
+      "name": "qwen-token-plan-cn.ts",
+      "filePath": "packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "summary": "实现 Qwen Token Plan 中国区 provider 定义。",
+      "tags": [
+        "provider",
+        "qwen",
+        "cn",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/qwen-token-plan-cn.ts:qwenTokenPlanCnProvider",
+      "type": "function",
+      "name": "qwenTokenPlanCnProvider",
+      "filePath": "packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Qwen Token Plan 中国区 provider 定义。",
+      "tags": [
+        "provider",
+        "qwen",
+        "cn",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/qwen-token-plan.models.ts",
+      "type": "file",
+      "name": "qwen-token-plan.models.ts",
+      "filePath": "packages/ai/src/providers/qwen-token-plan.models.ts",
+      "summary": "定义 Qwen Token Plan 内置模型数据常量。",
+      "tags": [
+        "models",
+        "qwen",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "type": "file",
+      "name": "qwen-token-plan.ts",
+      "filePath": "packages/ai/src/providers/qwen-token-plan.ts",
+      "summary": "实现 Qwen Token Plan provider 定义。",
+      "tags": [
+        "provider",
+        "qwen",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/qwen-token-plan.ts:qwenTokenPlanProvider",
+      "type": "function",
+      "name": "qwenTokenPlanProvider",
+      "filePath": "packages/ai/src/providers/qwen-token-plan.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Qwen Token Plan provider 定义。",
+      "tags": [
+        "provider",
+        "qwen",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/radius-config.ts",
+      "type": "file",
+      "name": "radius-config.ts",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "summary": "实现 Radius 网关配置解析：加载配置、校验模型、规范化 URL 与凭据。",
+      "tags": [
+        "radius",
+        "config",
+        "gateway",
+        "parsing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:isRadiusGatewayModel",
+      "type": "function",
+      "name": "isRadiusGatewayModel",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        26,
+        40
+      ],
+      "summary": "判断模型是否为 Radius 网关模型。",
+      "tags": [
+        "radius",
+        "gateway",
+        "model",
+        "check"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:normalizeRadiusGatewayUrl",
+      "type": "function",
+      "name": "normalizeRadiusGatewayUrl",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        52,
+        55
+      ],
+      "summary": "规范化 Radius 网关 URL。",
+      "tags": [
+        "radius",
+        "url",
+        "normalization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:getRadiusCredentialConfig",
+      "type": "function",
+      "name": "getRadiusCredentialConfig",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        57,
+        59
+      ],
+      "summary": "获取 Radius 网关凭据配置。",
+      "tags": [
+        "radius",
+        "credential",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:getRadiusModelsFromConfig",
+      "type": "function",
+      "name": "getRadiusModelsFromConfig",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        61,
+        68
+      ],
+      "summary": "从配置中提取 Radius 模型列表。",
+      "tags": [
+        "radius",
+        "models",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:getRadiusModels",
+      "type": "function",
+      "name": "getRadiusModels",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        70,
+        73
+      ],
+      "summary": "返回 Radius 模型列表。",
+      "tags": [
+        "radius",
+        "models",
+        "query"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius-config.ts:loadRadiusGatewayConfig",
+      "type": "function",
+      "name": "loadRadiusGatewayConfig",
+      "filePath": "packages/ai/src/providers/radius-config.ts",
+      "lineRange": [
+        80,
+        96
+      ],
+      "summary": "加载并解析 Radius 网关配置文件。",
+      "tags": [
+        "radius",
+        "config",
+        "loading",
+        "gateway"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/providers/radius.ts",
+      "type": "file",
+      "name": "radius.ts",
+      "filePath": "packages/ai/src/providers/radius.ts",
+      "summary": "实现 Radius provider 定义，基于网关配置与 TFA Messages API。",
+      "tags": [
+        "provider",
+        "radius",
+        "gateway",
+        "definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/radius.ts:radiusProvider",
+      "type": "function",
+      "name": "radiusProvider",
+      "filePath": "packages/ai/src/providers/radius.ts",
+      "lineRange": [
+        20,
+        82
+      ],
+      "summary": "返回 Radius provider 定义，基于网关配置与 TFA Messages API。",
+      "tags": [
+        "provider",
+        "radius",
+        "gateway",
+        "definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/ai/src/providers/together.models.ts",
+      "type": "file",
+      "name": "together.models.ts",
+      "filePath": "packages/ai/src/providers/together.models.ts",
+      "summary": "定义 Together 内置模型数据常量。",
+      "tags": [
+        "models",
+        "together",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "function:packages/ai/src/providers/openai.ts:openaiProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "function:packages/ai/src/providers/openai.ts:openaiProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openai.ts",
+      "target": "file:packages/ai/src/providers/openai.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "function:packages/ai/src/providers/opencode-go.ts:opencodeGoProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "function:packages/ai/src/providers/opencode-go.ts:opencodeGoProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode-go.ts",
+      "target": "file:packages/ai/src/providers/opencode-go.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "function:packages/ai/src/providers/opencode.ts:opencodeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "function:packages/ai/src/providers/opencode.ts:opencodeProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/api/google-generative-ai.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/opencode.ts",
+      "target": "file:packages/ai/src/providers/opencode.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "function:packages/ai/src/providers/openrouter-images.ts:openrouterImagesProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "function:packages/ai/src/providers/openrouter-images.ts:openrouterImagesProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "file:packages/ai/src/api/openrouter-images.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter-images.ts",
+      "target": "file:packages/ai/src/images-models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "function:packages/ai/src/providers/openrouter.ts:openrouterProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "function:packages/ai/src/providers/openrouter.ts:openrouterProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/openrouter.ts",
+      "target": "file:packages/ai/src/providers/openrouter.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "function:packages/ai/src/providers/qwen-token-plan-cn.ts:qwenTokenPlanCnProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "function:packages/ai/src/providers/qwen-token-plan-cn.ts:qwenTokenPlanCnProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan-cn.ts",
+      "target": "file:packages/ai/src/providers/qwen-token-plan-cn.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "function:packages/ai/src/providers/qwen-token-plan.ts:qwenTokenPlanProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "function:packages/ai/src/providers/qwen-token-plan.ts:qwenTokenPlanProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/qwen-token-plan.ts",
+      "target": "file:packages/ai/src/providers/qwen-token-plan.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:isRadiusGatewayModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:normalizeRadiusGatewayUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:normalizeRadiusGatewayUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusCredentialConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusCredentialConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusModelsFromConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusModelsFromConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:loadRadiusGatewayConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "function:packages/ai/src/providers/radius-config.ts:loadRadiusGatewayConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius-config.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "function:packages/ai/src/providers/radius.ts:radiusProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "function:packages/ai/src/providers/radius.ts:radiusProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "file:packages/ai/src/api/tfa-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/radius.ts",
+      "target": "file:packages/ai/src/providers/radius-config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/ai/src/providers/radius.ts:radiusProvider",
+      "target": "function:packages/ai/src/providers/radius-config.ts:loadRadiusGatewayConfig",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/ai/src/providers/radius.ts:radiusProvider",
+      "target": "function:packages/ai/src/providers/radius-config.ts:getRadiusModels",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

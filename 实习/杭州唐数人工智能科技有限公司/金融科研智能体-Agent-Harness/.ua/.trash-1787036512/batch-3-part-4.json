@@ -1,0 +1,1066 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "file",
+   "name": "openai-responses.ts",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "summary": "OpenAI Responses API provider：请求构建、会话亲和与 service tier 定价。",
+   "tags": [
+    "provider",
+    "openai",
+    "responses",
+    "api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:getCompat",
+   "type": "function",
+   "name": "getCompat",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    67,
+    77
+   ],
+   "summary": "获取模型兼容配置。",
+   "tags": [
+    "compat",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    101,
+    194
+   ],
+   "summary": "OpenAI Responses 流式主实现。",
+   "tags": [
+    "streaming",
+    "openai"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    196,
+    211
+   ],
+   "summary": "非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    213,
+    255
+   ],
+   "summary": "创建 Responses 客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    257,
+    336
+   ],
+   "summary": "构建 Responses 请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:getServiceTierCostMultiplier",
+   "type": "function",
+   "name": "getServiceTierCostMultiplier",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    338,
+    350
+   ],
+   "summary": "获取 service tier 成本乘数。",
+   "tags": [
+    "pricing",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/openai-responses.ts:applyServiceTierPricing",
+   "type": "function",
+   "name": "applyServiceTierPricing",
+   "filePath": "packages/ai/src/api/openai-responses.ts",
+   "lineRange": [
+    352,
+    365
+   ],
+   "summary": "应用 service tier 定价。",
+   "tags": [
+    "pricing",
+    "usage"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/api/openrouter-images.ts",
+   "type": "file",
+   "name": "openrouter-images.ts",
+   "filePath": "packages/ai/src/api/openrouter-images.ts",
+   "summary": "OpenRouter 图像生成 provider：请求构建、生成流与用量解析。",
+   "tags": [
+    "provider",
+    "openrouter",
+    "images",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openrouter-images.ts:generateImages",
+   "type": "function",
+   "name": "generateImages",
+   "filePath": "packages/ai/src/api/openrouter-images.ts",
+   "lineRange": [
+    40,
+    115
+   ],
+   "summary": "OpenRouter 图像生成流式实现。",
+   "tags": [
+    "images",
+    "generation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openrouter-images.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/openrouter-images.ts",
+   "lineRange": [
+    117,
+    130
+   ],
+   "summary": "创建 OpenRouter 图像客户端。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openrouter-images.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/openrouter-images.ts",
+   "lineRange": [
+    136,
+    163
+   ],
+   "summary": "构建图像生成请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/openrouter-images.ts:parseUsage",
+   "type": "function",
+   "name": "parseUsage",
+   "filePath": "packages/ai/src/api/openrouter-images.ts",
+   "lineRange": [
+    165,
+    196
+   ],
+   "summary": "解析图像生成用量。",
+   "tags": [
+    "usage",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/simple-options.ts",
+   "type": "file",
+   "name": "simple-options.ts",
+   "filePath": "packages/ai/src/api/simple-options.ts",
+   "summary": "简单 provider 通用选项构建：maxTokens 截断、reasoning 调整与基础参数。",
+   "tags": [
+    "provider",
+    "options",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/simple-options.ts:clampMaxTokensToContext",
+   "type": "function",
+   "name": "clampMaxTokensToContext",
+   "filePath": "packages/ai/src/api/simple-options.ts",
+   "lineRange": [
+    15,
+    19
+   ],
+   "summary": "将 maxTokens 限制在上下文窗口内。",
+   "tags": [
+    "options",
+    "clamp"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/simple-options.ts:buildBaseOptions",
+   "type": "function",
+   "name": "buildBaseOptions",
+   "filePath": "packages/ai/src/api/simple-options.ts",
+   "lineRange": [
+    21,
+    52
+   ],
+   "summary": "构建基础请求选项。",
+   "tags": [
+    "options",
+    "builder"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/simple-options.ts:clampReasoning",
+   "type": "function",
+   "name": "clampReasoning",
+   "filePath": "packages/ai/src/api/simple-options.ts",
+   "lineRange": [
+    57,
+    59
+   ],
+   "summary": "限制 reasoning effort 范围。",
+   "tags": [
+    "reasoning",
+    "clamp"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/simple-options.ts:adjustMaxTokensForThinking",
+   "type": "function",
+   "name": "adjustMaxTokensForThinking",
+   "filePath": "packages/ai/src/api/simple-options.ts",
+   "lineRange": [
+    61,
+    86
+   ],
+   "summary": "为 thinking 调整 maxTokens。",
+   "tags": [
+    "thinking",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/tfa-messages.ts",
+   "type": "file",
+   "name": "tfa-messages.ts",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "summary": "TFA Messages（Pi 协议）provider：事件转换、错误格式化与重写诊断。",
+   "tags": [
+    "provider",
+    "tfa",
+    "messages",
+    "api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:formatPiMessagesResponseError",
+   "type": "function",
+   "name": "formatPiMessagesResponseError",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    121,
+    131
+   ],
+   "summary": "格式化 Pi Messages 响应错误。",
+   "tags": [
+    "error",
+    "format"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:createPiMessagesResponseError",
+   "type": "function",
+   "name": "createPiMessagesResponseError",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    133,
+    152
+   ],
+   "summary": "创建 Pi Messages 响应错误对象。",
+   "tags": [
+    "error",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:createEmptyUsage",
+   "type": "function",
+   "name": "createEmptyUsage",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    154,
+    163
+   ],
+   "summary": "创建空用量对象。",
+   "tags": [
+    "usage",
+    "factory"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:appendRewriteDiagnostic",
+   "type": "function",
+   "name": "appendRewriteDiagnostic",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    165,
+    174
+   ],
+   "summary": "追加消息重写诊断。",
+   "tags": [
+    "diagnostics",
+    "rewrite"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:createEventConverter",
+   "type": "function",
+   "name": "createEventConverter",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    176,
+    264
+   ],
+   "summary": "创建事件转换器。",
+   "tags": [
+    "conversion",
+    "factory"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:createErrorEvent",
+   "type": "function",
+   "name": "createErrorEvent",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    313,
+    335
+   ],
+   "summary": "创建错误事件。",
+   "tags": [
+    "events",
+    "error"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    345,
+    419
+   ],
+   "summary": "TFA Messages 流式主实现。",
+   "tags": [
+    "streaming",
+    "tfa"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/tfa-messages.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    421,
+    433
+   ],
+   "summary": "非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/ai/src/api/tfa-messages.ts:TfaMessagesResponseError",
+   "type": "class",
+   "name": "TfaMessagesResponseError",
+   "filePath": "packages/ai/src/api/tfa-messages.ts",
+   "lineRange": [
+    94,
+    104
+   ],
+   "summary": "TFA Messages 响应错误类，携带模型与 URL 上下文。",
+   "tags": [
+    "error",
+    "class"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "file",
+   "name": "transform-messages.ts",
+   "filePath": "packages/ai/src/api/transform-messages.ts",
+   "summary": "跨 provider 消息转换：图片降级/占位与工具调用 id 归一化。",
+   "tags": [
+    "conversion",
+    "messages",
+    "provider",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/transform-messages.ts:replaceImagesWithPlaceholder",
+   "type": "function",
+   "name": "replaceImagesWithPlaceholder",
+   "filePath": "packages/ai/src/api/transform-messages.ts",
+   "lineRange": [
+    15,
+    33
+   ],
+   "summary": "将图像内容替换为占位文本。",
+   "tags": [
+    "image",
+    "conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/transform-messages.ts:downgradeUnsupportedImages",
+   "type": "function",
+   "name": "downgradeUnsupportedImages",
+   "filePath": "packages/ai/src/api/transform-messages.ts",
+   "lineRange": [
+    35,
+    57
+   ],
+   "summary": "降级不支持的图像内容。",
+   "tags": [
+    "image",
+    "conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/transform-messages.ts:transformMessages",
+   "type": "function",
+   "name": "transformMessages",
+   "filePath": "packages/ai/src/api/transform-messages.ts",
+   "lineRange": [
+    64,
+    223
+   ],
+   "summary": "跨 provider 转换消息列表。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/bedrock-provider.ts",
+   "type": "file",
+   "name": "bedrock-provider.ts",
+   "filePath": "packages/ai/src/bedrock-provider.ts",
+   "summary": "Bedrock provider 入口的薄封装文件。",
+   "tags": [
+    "provider",
+    "bedrock",
+    "entry-point"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:getCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:getServiceTierCostMultiplier",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "function:packages/ai/src/api/openai-responses.ts:applyServiceTierPricing",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/api/openai-prompt-cache.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/deferred-tools.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "function:packages/ai/src/api/openrouter-images.ts:generateImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "function:packages/ai/src/api/openrouter-images.ts:generateImages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "function:packages/ai/src/api/openrouter-images.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "function:packages/ai/src/api/openrouter-images.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "function:packages/ai/src/api/openrouter-images.ts:parseUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:clampMaxTokensToContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:clampMaxTokensToContext",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:buildBaseOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:buildBaseOptions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:clampReasoning",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:clampReasoning",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:adjustMaxTokensForThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "function:packages/ai/src/api/simple-options.ts:adjustMaxTokensForThinking",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "file:packages/ai/src/utils/estimate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:formatPiMessagesResponseError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:createPiMessagesResponseError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:createEmptyUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:appendRewriteDiagnostic",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:createEventConverter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:createErrorEvent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "function:packages/ai/src/api/tfa-messages.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "class:packages/ai/src/api/tfa-messages.ts:TfaMessagesResponseError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "class:packages/ai/src/api/tfa-messages.ts:TfaMessagesResponseError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "function:packages/ai/src/api/transform-messages.ts:replaceImagesWithPlaceholder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "function:packages/ai/src/api/transform-messages.ts:downgradeUnsupportedImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "function:packages/ai/src/api/transform-messages.ts:transformMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "function:packages/ai/src/api/transform-messages.ts:transformMessages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/bedrock-provider.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/cache-retention.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "file:packages/ai/test/context-estimate.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openrouter-images.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "file:packages/ai/test/lax-message-content.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/provider-error-body-regression.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/simple-options.ts",
+   "target": "file:packages/ai/test/telemetry-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/tfa-messages.ts",
+   "target": "file:packages/ai/test/tfa-messages.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/transform-messages.ts",
+   "target": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

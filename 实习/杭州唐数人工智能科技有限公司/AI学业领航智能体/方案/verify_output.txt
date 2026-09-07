@@ -1,0 +1,15 @@
+ZIP OK, files: 12
+w:del count: 12
+w:ins count: 12
+  OK: DeepSeek-V3
+  OK: Milvus 2.4 Standalone
+  OK: BGE-M3
+  OK: Dify
+  OK: DolphinScheduler
+  OK: DataX
+  OK: Canal
+  OK: Vue 3.4
+  OK: Spring Boot 3.3
+  OK: MySQL 8.0
+  OK: Docker Compose
+  OK: CAS

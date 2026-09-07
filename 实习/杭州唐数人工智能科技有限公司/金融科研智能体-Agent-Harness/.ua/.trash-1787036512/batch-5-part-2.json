@@ -1,0 +1,1186 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "type": "file",
+   "name": "cross-provider-handoff.test.ts",
+   "filePath": "packages/ai/test/cross-provider-handoff.test.ts",
+   "summary": "跨 provider 会话交接测试：验证消息序列在 provider 间正确延续。",
+   "tags": [
+    "test",
+    "cross-provider",
+    "handoff",
+    "e2e"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/cross-provider-handoff.test.ts:hasApiKey",
+   "type": "function",
+   "name": "hasApiKey",
+   "filePath": "packages/ai/test/cross-provider-handoff.test.ts",
+   "lineRange": [
+    162,
+    174
+   ],
+   "summary": "检查 provider 对是否具备 API key。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/cross-provider-handoff.test.ts:dumpFailurePayload",
+   "type": "function",
+   "name": "dumpFailurePayload",
+   "filePath": "packages/ai/test/cross-provider-handoff.test.ts",
+   "lineRange": [
+    189,
+    199
+   ],
+   "summary": "输出失败请求详情。",
+   "tags": [
+    "test",
+    "debug"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/cross-provider-handoff.test.ts:generateContext",
+   "type": "function",
+   "name": "generateContext",
+   "filePath": "packages/ai/test/cross-provider-handoff.test.ts",
+   "lineRange": [
+    205,
+    333
+   ],
+   "summary": "生成跨 provider 交接测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/deferred-tools.test.ts",
+   "type": "file",
+   "name": "deferred-tools.test.ts",
+   "filePath": "packages/ai/test/deferred-tools.test.ts",
+   "summary": "延迟加载工具（deferred tools）测试：校验拆分、加载与消息转换。",
+   "tags": [
+    "test",
+    "deferred-tools",
+    "tool"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/deferred-tools.test.ts:makeAssistantToolCall",
+   "type": "function",
+   "name": "makeAssistantToolCall",
+   "filePath": "packages/ai/test/deferred-tools.test.ts",
+   "lineRange": [
+    87,
+    105
+   ],
+   "summary": "构造 assistant 工具调用消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/deferred-tools.test.ts:makeToolResult",
+   "type": "function",
+   "name": "makeToolResult",
+   "filePath": "packages/ai/test/deferred-tools.test.ts",
+   "lineRange": [
+    107,
+    117
+   ],
+   "summary": "构造工具结果消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/deferred-tools.test.ts:makeKimiModel",
+   "type": "function",
+   "name": "makeKimiModel",
+   "filePath": "packages/ai/test/deferred-tools.test.ts",
+   "lineRange": [
+    126,
+    140
+   ],
+   "summary": "构造 Kimi（延迟工具）模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/deferred-tools.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/deferred-tools.test.ts",
+   "lineRange": [
+    142,
+    154
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/empty.test.ts",
+   "type": "file",
+   "name": "empty.test.ts",
+   "filePath": "packages/ai/test/empty.test.ts",
+   "summary": "空消息测试：覆盖空字符串、纯空白与空 assistant 消息的请求行为。",
+   "tags": [
+    "test",
+    "empty",
+    "message"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/empty.test.ts:testEmptyMessage",
+   "type": "function",
+   "name": "testEmptyMessage",
+   "filePath": "packages/ai/test/empty.test.ts",
+   "lineRange": [
+    20,
+    43
+   ],
+   "summary": "验证空内容消息。",
+   "tags": [
+    "test",
+    "empty"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/empty.test.ts:testEmptyStringMessage",
+   "type": "function",
+   "name": "testEmptyStringMessage",
+   "filePath": "packages/ai/test/empty.test.ts",
+   "lineRange": [
+    45,
+    68
+   ],
+   "summary": "验证空字符串消息。",
+   "tags": [
+    "test",
+    "empty"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/empty.test.ts:testWhitespaceOnlyMessage",
+   "type": "function",
+   "name": "testWhitespaceOnlyMessage",
+   "filePath": "packages/ai/test/empty.test.ts",
+   "lineRange": [
+    70,
+    93
+   ],
+   "summary": "验证纯空白消息。",
+   "tags": [
+    "test",
+    "empty"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/empty.test.ts:testEmptyAssistantMessage",
+   "type": "function",
+   "name": "testEmptyAssistantMessage",
+   "filePath": "packages/ai/test/empty.test.ts",
+   "lineRange": [
+    95,
+    144
+   ],
+   "summary": "验证空 assistant 消息。",
+   "tags": [
+    "test",
+    "empty"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/env-api-keys.test.ts",
+   "type": "file",
+   "name": "env-api-keys.test.ts",
+   "filePath": "packages/ai/test/env-api-keys.test.ts",
+   "summary": "环境变量 API key 解析测试。",
+   "tags": [
+    "test",
+    "env",
+    "api-key"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/error-body.test.ts",
+   "type": "file",
+   "name": "error-body.test.ts",
+   "filePath": "packages/ai/test/error-body.test.ts",
+   "summary": "provider 错误正文归一化测试。",
+   "tags": [
+    "test",
+    "error",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/faux-provider.test.ts",
+   "type": "file",
+   "name": "faux-provider.test.ts",
+   "filePath": "packages/ai/test/faux-provider.test.ts",
+   "summary": "faux（模拟）provider 行为测试：事件流与 usage 计算。",
+   "tags": [
+    "test",
+    "faux-provider",
+    "fixture"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "file",
+   "name": "fetch-option.test.ts",
+   "filePath": "packages/ai/test/fetch-option.test.ts",
+   "summary": "自定义 fetch 选项测试：确保请求使用传入的 fetch 实现。",
+   "tags": [
+    "test",
+    "fetch",
+    "options"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/fetch-option.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/ai/test/fetch-option.test.ts",
+   "lineRange": [
+    18,
+    31
+   ],
+   "summary": "创建测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/fetch-option.test.ts:mockFetches",
+   "type": "function",
+   "name": "mockFetches",
+   "filePath": "packages/ai/test/fetch-option.test.ts",
+   "lineRange": [
+    33,
+    46
+   ],
+   "summary": "构造 mock fetch。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/fireworks-models.test.ts",
+   "type": "file",
+   "name": "fireworks-models.test.ts",
+   "filePath": "packages/ai/test/fireworks-models.test.ts",
+   "summary": "Fireworks 模型（Fireworks AI Anthropic 兼容）请求捕获测试。",
+   "tags": [
+    "test",
+    "fireworks",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/fireworks-models.test.ts:createFireworksModel",
+   "type": "function",
+   "name": "createFireworksModel",
+   "filePath": "packages/ai/test/fireworks-models.test.ts",
+   "lineRange": [
+    148,
+    164
+   ],
+   "summary": "创建 Fireworks 模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/fireworks-models.test.ts:createAnthropicModel",
+   "type": "function",
+   "name": "createAnthropicModel",
+   "filePath": "packages/ai/test/fireworks-models.test.ts",
+   "lineRange": [
+    166,
+    179
+   ],
+   "summary": "创建 Anthropic 兼容模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/fireworks-models.test.ts:captureAnthropicRequest",
+   "type": "function",
+   "name": "captureAnthropicRequest",
+   "filePath": "packages/ai/test/fireworks-models.test.ts",
+   "lineRange": [
+    201,
+    242
+   ],
+   "summary": "捕获 Anthropic 请求。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "type": "file",
+   "name": "github-copilot-anthropic.test.ts",
+   "filePath": "packages/ai/test/github-copilot-anthropic.test.ts",
+   "summary": "GitHub Copilot Anthropic 请求头与模型测试。",
+   "tags": [
+    "test",
+    "github",
+    "copilot",
+    "anthropic"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "type": "file",
+   "name": "google-raw-stop-reason.test.ts",
+   "filePath": "packages/ai/test/google-raw-stop-reason.test.ts",
+   "summary": "Google 原始 stop reason 透传测试。",
+   "tags": [
+    "test",
+    "google",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-shared-convert-tools.test.ts",
+   "type": "file",
+   "name": "google-shared-convert-tools.test.ts",
+   "filePath": "packages/ai/test/google-shared-convert-tools.test.ts",
+   "summary": "Google 共享工具转换测试。",
+   "tags": [
+    "test",
+    "google",
+    "tool-conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "type": "file",
+   "name": "google-shared-gemini3-unsigned-tool-call.test.ts",
+   "filePath": "packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "summary": "Gemini 3 未签名工具调用（thought signature）兼容测试。",
+   "tags": [
+    "test",
+    "google",
+    "gemini3",
+    "signature"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts:makeGemini3Model",
+   "type": "function",
+   "name": "makeGemini3Model",
+   "filePath": "packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "lineRange": [
+    5,
+    22
+   ],
+   "summary": "构造 Gemini 3 测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "lineRange": [
+    24,
+    78
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "type": "file",
+   "name": "google-shared-image-tool-result-routing.test.ts",
+   "filePath": "packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "summary": "Google 图像工具结果路由测试。",
+   "tags": [
+    "test",
+    "google",
+    "image",
+    "routing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-image-tool-result-routing.test.ts:makeModel",
+   "type": "function",
+   "name": "makeModel",
+   "filePath": "packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "lineRange": [
+    5,
+    22
+   ],
+   "summary": "构造测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-image-tool-result-routing.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "lineRange": [
+    24,
+    76
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-shared-retry.test.ts",
+   "type": "file",
+   "name": "google-shared-retry.test.ts",
+   "filePath": "packages/ai/test/google-shared-retry.test.ts",
+   "summary": "Google 共享重试逻辑测试。",
+   "tags": [
+    "test",
+    "google",
+    "retry"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "type": "file",
+   "name": "google-shared-signed-empty-blocks.test.ts",
+   "filePath": "packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "summary": "Google 签名空内容块处理测试。",
+   "tags": [
+    "test",
+    "google",
+    "signature",
+    "empty-blocks"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-signed-empty-blocks.test.ts:makeModel",
+   "type": "function",
+   "name": "makeModel",
+   "filePath": "packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "lineRange": [
+    11,
+    24
+   ],
+   "summary": "构造测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-shared-signed-empty-blocks.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "lineRange": [
+    28,
+    55
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "type": "file",
+   "name": "google-thinking-disable.test.ts",
+   "filePath": "packages/ai/test/google-thinking-disable.test.ts",
+   "summary": "Google 禁用 thinking 的 payload 与端到端测试。",
+   "tags": [
+    "test",
+    "google",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-thinking-disable.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/google-thinking-disable.test.ts",
+   "lineRange": [
+    21,
+    33
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-thinking-disable.test.ts:runWithoutReasoning",
+   "type": "function",
+   "name": "runWithoutReasoning",
+   "filePath": "packages/ai/test/google-thinking-disable.test.ts",
+   "lineRange": [
+    39,
+    78
+   ],
+   "summary": "在禁用 thinking 下运行请求。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/google-thinking-disable.test.ts:expectThinkingDisabledE2E",
+   "type": "function",
+   "name": "expectThinkingDisabledE2E",
+   "filePath": "packages/ai/test/google-thinking-disable.test.ts",
+   "lineRange": [
+    80,
+    90
+   ],
+   "summary": "端到端断言 thinking 已禁用。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/google-thinking-signature.test.ts",
+   "type": "file",
+   "name": "google-thinking-signature.test.ts",
+   "filePath": "packages/ai/test/google-thinking-signature.test.ts",
+   "summary": "Google thinking 签名保留测试。",
+   "tags": [
+    "test",
+    "google",
+    "thinking",
+    "signature"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "function:packages/ai/test/cross-provider-handoff.test.ts:hasApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "function:packages/ai/test/cross-provider-handoff.test.ts:dumpFailurePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "function:packages/ai/test/cross-provider-handoff.test.ts:generateContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cross-provider-handoff.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "function:packages/ai/test/deferred-tools.test.ts:makeAssistantToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "function:packages/ai/test/deferred-tools.test.ts:makeToolResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "function:packages/ai/test/deferred-tools.test.ts:makeKimiModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "function:packages/ai/test/deferred-tools.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/deferred-tools.test.ts",
+   "target": "file:packages/ai/src/utils/estimate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "function:packages/ai/test/empty.test.ts:testEmptyMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "function:packages/ai/test/empty.test.ts:testEmptyStringMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "function:packages/ai/test/empty.test.ts:testWhitespaceOnlyMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "function:packages/ai/test/empty.test.ts:testEmptyAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/empty.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/env-api-keys.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/error-body.test.ts",
+   "target": "file:packages/ai/src/utils/error-body.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/faux-provider.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/faux-provider.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "function:packages/ai/test/fetch-option.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "function:packages/ai/test/fetch-option.test.ts:mockFetches",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/mistral-conversations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/openrouter-images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/api/tfa-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fetch-option.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "function:packages/ai/test/fireworks-models.test.ts:createFireworksModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "function:packages/ai/test/fireworks-models.test.ts:createAnthropicModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "function:packages/ai/test/fireworks-models.test.ts:captureAnthropicRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/fireworks-models.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/api/google-generative-ai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/api/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-convert-tools.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-convert-tools.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "target": "function:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts:makeGemini3Model",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "target": "function:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "target": "function:packages/ai/test/google-shared-image-tool-result-routing.test.ts:makeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "target": "function:packages/ai/test/google-shared-image-tool-result-routing.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-image-tool-result-routing.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-retry.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "target": "function:packages/ai/test/google-shared-signed-empty-blocks.test.ts:makeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "target": "function:packages/ai/test/google-shared-signed-empty-blocks.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-shared-signed-empty-blocks.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/google-thinking-disable.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/google-thinking-disable.test.ts:runWithoutReasoning",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/google-thinking-disable.test.ts:expectThinkingDisabledE2E",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-disable.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/google-thinking-signature.test.ts",
+   "target": "file:packages/ai/src/api/google-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

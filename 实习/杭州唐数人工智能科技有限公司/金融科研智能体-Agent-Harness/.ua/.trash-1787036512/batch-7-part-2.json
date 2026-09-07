@@ -1,0 +1,997 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "type": "file",
+   "name": "tool-call-without-result.test.ts",
+   "filePath": "packages/ai/test/tool-call-without-result.test.ts",
+   "summary": "缺少工具结果的调用处理测试。",
+   "tags": [
+    "test",
+    "tool-call",
+    "error-handling"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/tool-call-without-result.test.ts:testToolCallWithoutResult",
+   "type": "function",
+   "name": "testToolCallWithoutResult",
+   "filePath": "packages/ai/test/tool-call-without-result.test.ts",
+   "lineRange": [
+    32,
+    91
+   ],
+   "summary": "验证缺少工具结果的调用处理。",
+   "tags": [
+    "test",
+    "tool-call"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/total-tokens.test.ts",
+   "type": "file",
+   "name": "total-tokens.test.ts",
+   "filePath": "packages/ai/test/total-tokens.test.ts",
+   "summary": "总 token 统计一致性测试（含缓存）。",
+   "tags": [
+    "test",
+    "tokens",
+    "usage"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/total-tokens.test.ts:testTotalTokensWithCache",
+   "type": "function",
+   "name": "testTotalTokensWithCache",
+   "filePath": "packages/ai/test/total-tokens.test.ts",
+   "lineRange": [
+    47,
+    84
+   ],
+   "summary": "验证缓存场景的总 token 一致性。",
+   "tags": [
+    "test",
+    "tokens"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "type": "file",
+   "name": "transform-messages-copilot-openai-to-anthropic.test.ts",
+   "filePath": "packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "summary": "Copilot OpenAI 消息转 Anthropic 格式测试。",
+   "tags": [
+    "test",
+    "transform-messages",
+    "conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts:makeCopilotClaudeModel",
+   "type": "function",
+   "name": "makeCopilotClaudeModel",
+   "filePath": "packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "lineRange": [
+    14,
+    27
+   ],
+   "summary": "构造 Copilot Claude 模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts:makeAssistantMessage",
+   "type": "function",
+   "name": "makeAssistantMessage",
+   "filePath": "packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "lineRange": [
+    29,
+    47
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "type": "file",
+   "name": "unicode-surrogate.test.ts",
+   "filePath": "packages/ai/test/unicode-surrogate.test.ts",
+   "summary": "Unicode 代理对与 emoji 在工具结果中的测试。",
+   "tags": [
+    "test",
+    "unicode",
+    "surrogate"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/unicode-surrogate.test.ts:testEmojiInToolResults",
+   "type": "function",
+   "name": "testEmojiInToolResults",
+   "filePath": "packages/ai/test/unicode-surrogate.test.ts",
+   "lineRange": [
+    35,
+    120
+   ],
+   "summary": "验证工具结果中的 emoji。",
+   "tags": [
+    "test",
+    "unicode"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/unicode-surrogate.test.ts:testRealWorldLinkedInData",
+   "type": "function",
+   "name": "testRealWorldLinkedInData",
+   "filePath": "packages/ai/test/unicode-surrogate.test.ts",
+   "lineRange": [
+    122,
+    209
+   ],
+   "summary": "验证真实世界数据中的代理对。",
+   "tags": [
+    "test",
+    "unicode"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/unicode-surrogate.test.ts:testUnpairedHighSurrogate",
+   "type": "function",
+   "name": "testUnpairedHighSurrogate",
+   "filePath": "packages/ai/test/unicode-surrogate.test.ts",
+   "lineRange": [
+    211,
+    283
+   ],
+   "summary": "验证未配对高代理对。",
+   "tags": [
+    "test",
+    "unicode"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/uuid.test.ts",
+   "type": "file",
+   "name": "uuid.test.ts",
+   "filePath": "packages/ai/test/uuid.test.ts",
+   "summary": "UUIDv7 时间戳与格式测试。",
+   "tags": [
+    "test",
+    "uuid",
+    "unit"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/validation.test.ts",
+   "type": "file",
+   "name": "validation.test.ts",
+   "filePath": "packages/ai/test/validation.test.ts",
+   "summary": "工具参数校验与强制转换测试。",
+   "tags": [
+    "test",
+    "validation",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/validation.test.ts:createToolCallWithPlainSchema",
+   "type": "function",
+   "name": "createToolCallWithPlainSchema",
+   "filePath": "packages/ai/test/validation.test.ts",
+   "lineRange": [
+    7,
+    34
+   ],
+   "summary": "构造带纯 schema 的工具调用。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/xhigh.test.ts",
+   "type": "file",
+   "name": "xhigh.test.ts",
+   "filePath": "packages/ai/test/xhigh.test.ts",
+   "summary": "xhigh reasoning 端到端测试。",
+   "tags": [
+    "test",
+    "xhigh",
+    "reasoning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/xhigh.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/xhigh.test.ts",
+   "lineRange": [
+    5,
+    15
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/xiaomi-models.test.ts",
+   "type": "file",
+   "name": "xiaomi-models.test.ts",
+   "filePath": "packages/ai/test/xiaomi-models.test.ts",
+   "summary": "小米（Xiaomi）模型注册测试。",
+   "tags": [
+    "test",
+    "xiaomi",
+    "models"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "type": "file",
+   "name": "xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "filePath": "packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "summary": "小米 token plan + Anthropic 空签名冒烟测试。",
+   "tags": [
+    "test",
+    "xiaomi",
+    "anthropic",
+    "smoke"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts:makeInitialContext",
+   "type": "function",
+   "name": "makeInitialContext",
+   "filePath": "packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "lineRange": [
+    36,
+    47
+   ],
+   "summary": "构造初始上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts:captureReplayPayload",
+   "type": "function",
+   "name": "captureReplayPayload",
+   "filePath": "packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "lineRange": [
+    53,
+    71
+   ],
+   "summary": "捕获重放 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/zen.test.ts",
+   "type": "file",
+   "name": "zen.test.ts",
+   "filePath": "packages/ai/test/zen.test.ts",
+   "summary": "Zen 模型注册测试。",
+   "tags": [
+    "test",
+    "zen",
+    "models"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "summary": "示例扩展：实现 GitLab Duo 自定义 provider，含 OAuth PKCE 登录、token 刷新与流式推理。",
+   "tags": [
+    "extension",
+    "provider",
+    "gitlab",
+    "oauth"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:getDirectAccessToken",
+   "type": "function",
+   "name": "getDirectAccessToken",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "lineRange": [
+    183,
+    208
+   ],
+   "summary": "获取 GitLab 直接访问 token。",
+   "tags": [
+    "oauth",
+    "token"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:generatePKCE",
+   "type": "function",
+   "name": "generatePKCE",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "lineRange": [
+    218,
+    231
+   ],
+   "summary": "生成 PKCE code_verifier/code_challenge。",
+   "tags": [
+    "oauth",
+    "pkce"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:loginGitLab",
+   "type": "function",
+   "name": "loginGitLab",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "lineRange": [
+    233,
+    275
+   ],
+   "summary": "执行 OAuth 设备授权登录流程。",
+   "tags": [
+    "oauth",
+    "login"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:refreshGitLabToken",
+   "type": "function",
+   "name": "refreshGitLabToken",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "lineRange": [
+    277,
+    301
+   ],
+   "summary": "刷新 GitLab OAuth token。",
+   "tags": [
+    "oauth",
+    "token"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:streamGitLabDuo",
+   "type": "function",
+   "name": "streamGitLabDuo",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "lineRange": [
+    307,
+    376
+   ],
+   "summary": "GitLab Duo 流式推理实现。",
+   "tags": [
+    "provider",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "type": "file",
+   "name": "test.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "summary": "GitLab Duo provider 扩展的手动测试入口。",
+   "tags": [
+    "test",
+    "extension",
+    "gitlab",
+    "provider"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "lineRange": [
+    19,
+    80
+   ],
+   "summary": "手动测试 GitLab Duo provider 的登录与流式调用。",
+   "tags": [
+    "test",
+    "entry-point"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/sdk/12-full-control.ts",
+   "type": "file",
+   "name": "12-full-control.ts",
+   "filePath": "packages/coding-agent/examples/sdk/12-full-control.ts",
+   "summary": "SDK 示例：演示 AgentSession 全流程控制（创建会话、运行与事件订阅）。",
+   "tags": [
+    "example",
+    "sdk",
+    "agent-session"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/bun/register-bedrock.ts",
+   "type": "file",
+   "name": "register-bedrock.ts",
+   "filePath": "packages/coding-agent/src/bun/register-bedrock.ts",
+   "summary": "Bun 运行时下注册 Bedrock provider 的引导文件。",
+   "tags": [
+    "bun",
+    "bedrock",
+    "register",
+    "entry-point"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "type": "file",
+   "name": "sdk-session-manager.test.ts",
+   "filePath": "packages/coding-agent/test/sdk-session-manager.test.ts",
+   "summary": "SDK 会话管理器测试。",
+   "tags": [
+    "test",
+    "sdk",
+    "session-manager"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/telemetry/src/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/telemetry/src/index.ts",
+   "summary": "Telemetry 包：定义 telemetry schema、span 类型与 noop 实现。",
+   "tags": [
+    "telemetry",
+    "schema",
+    "package"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/telemetry/src/index.ts:defineTelemetrySchema",
+   "type": "function",
+   "name": "defineTelemetrySchema",
+   "filePath": "packages/telemetry/src/index.ts",
+   "lineRange": [
+    89,
+    91
+   ],
+   "summary": "定义并校验 telemetry schema。",
+   "tags": [
+    "telemetry",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/telemetry/test/telemetry.test.ts",
+   "type": "file",
+   "name": "telemetry.test.ts",
+   "filePath": "packages/telemetry/test/telemetry.test.ts",
+   "summary": "Telemetry schema 校验测试。",
+   "tags": [
+    "test",
+    "telemetry",
+    "schema"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/telemetry/test/telemetry.test.ts:unreadable",
+   "type": "function",
+   "name": "unreadable",
+   "filePath": "packages/telemetry/test/telemetry.test.ts",
+   "lineRange": [
+    13,
+    25
+   ],
+   "summary": "构造不可读值并断言错误。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "function:packages/ai/test/tool-call-without-result.test.ts:testToolCallWithoutResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/tool-call-without-result.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "function:packages/ai/test/total-tokens.test.ts:testTotalTokensWithCache",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/total-tokens.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "target": "function:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts:makeCopilotClaudeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "target": "function:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts:makeAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "function:packages/ai/test/unicode-surrogate.test.ts:testEmojiInToolResults",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "function:packages/ai/test/unicode-surrogate.test.ts:testRealWorldLinkedInData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "function:packages/ai/test/unicode-surrogate.test.ts:testUnpairedHighSurrogate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/unicode-surrogate.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/uuid.test.ts",
+   "target": "file:packages/ai/src/utils/uuid.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/validation.test.ts",
+   "target": "function:packages/ai/test/validation.test.ts:createToolCallWithPlainSchema",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/validation.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/validation.test.ts",
+   "target": "file:packages/ai/src/utils/validation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xhigh.test.ts",
+   "target": "function:packages/ai/test/xhigh.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xhigh.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xhigh.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xiaomi-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "target": "function:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts:makeInitialContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "target": "function:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts:captureReplayPayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xiaomi-token-plan-ams-anthropic-empty-signature-smoke.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/zen.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/zen.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:getDirectAccessToken",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:generatePKCE",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:loginGitLab",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:refreshGitLabToken",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:streamGitLabDuo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:streamGitLabDuo",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "target": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/sdk/12-full-control.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/sdk/12-full-control.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/register-bedrock.ts",
+   "target": "file:packages/ai/src/bedrock-provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/register-bedrock.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "target": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/telemetry/src/index.ts",
+   "target": "function:packages/telemetry/src/index.ts:defineTelemetrySchema",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/telemetry/src/index.ts",
+   "target": "function:packages/telemetry/src/index.ts:defineTelemetrySchema",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/telemetry/test/telemetry.test.ts",
+   "target": "function:packages/telemetry/test/telemetry.test.ts:unreadable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/telemetry/test/telemetry.test.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:streamGitLabDuo",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:getDirectAccessToken",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:loginGitLab",
+   "target": "function:packages/coding-agent/examples/extensions/custom-provider-gitlab-duo/index.ts:generatePKCE",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

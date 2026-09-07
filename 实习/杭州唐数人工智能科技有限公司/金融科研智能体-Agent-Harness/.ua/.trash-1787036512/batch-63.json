@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/evals/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/evals/README.md",
+      "summary": "TFA evals 使用指南：说明如何运行行为评测（npm run eval + provider/model）、如何用 createTfaCodingAgentHarness 编写评测与配置 harness、转换输出以及用 evalHarnessTable 编写对比评测集。",
+      "tags": [
+        "documentation",
+        "evals",
+        "测试",
+        "vitest",
+        "harness"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/evals/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/evals/package.json",
+      "summary": "evals 包元数据与脚本：提供 eval（node scripts/run-evals.mjs）、test（vitest）与 clean 脚本，devDependencies 含 vitest-evals、tfa-ai 与 tfa-coding-agent。",
+      "tags": [
+        "configuration",
+        "evals",
+        "build-system",
+        "npm",
+        "scripts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/evals/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/evals/tsconfig.json",
+      "summary": "evals 包 TypeScript 配置：继承仓库根 tsconfig，noEmit + NodeNext 模块解析，types 含 node 与 vitest，覆盖 src 下的评测源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/evals/README.md",
+      "target": "file:packages/evals/scripts/run-evals.mjs",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/evals/README.md",
+      "target": "file:packages/evals/src/tfa-harness.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/evals/README.md",
+      "target": "file:packages/evals/src/vitest-evals/harness-table.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/evals/package.json",
+      "target": "file:packages/evals/scripts/run-evals.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/evals/package.json",
+      "target": "file:packages/evals/vitest.test.config.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/evals/tsconfig.json",
+      "target": "file:packages/evals/src/tfa-harness.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/evals/tsconfig.json",
+      "target": "config:tsconfig.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

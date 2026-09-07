@@ -1,0 +1,1083 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/web/src/api/client.ts",
+   "type": "file",
+   "name": "client.ts",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "summary": "Shell Web 的 API client：封装会话/模型/配置等请求与错误处理。",
+   "tags": [
+    "api-client",
+    "rpc",
+    "frontend"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "class",
+   "name": "ApiClient",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "summary": "Shell Web API 客户端，封装各类请求。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    40,
+    179
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/api/client.ts:request",
+   "type": "function",
+   "name": "request",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "summary": "执行 API 请求并处理响应/错误。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    19,
+    38
+   ]
+  },
+  {
+   "id": "file:packages/shell/web/src/api/types.ts",
+   "type": "file",
+   "name": "types.ts",
+   "filePath": "packages/shell/web/src/api/types.ts",
+   "summary": "Shell Web API 类型定义：请求/响应与事件消息类型。",
+   "tags": [
+    "type-definition",
+    "api",
+    "frontend"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/state/projects.ts",
+   "type": "file",
+   "name": "projects.ts",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "summary": "会话按项目分组与归属判断的工具函数。",
+   "tags": [
+    "utility",
+    "projects",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "function",
+   "name": "groupSessions",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "summary": "将会话按项目分组。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    21,
+    39
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "function",
+   "name": "sessionProjectId",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "summary": "返回会话所属项目 ID。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    42,
+    47
+   ]
+  },
+  {
+   "id": "file:packages/shell/web/src/state/session-store.ts",
+   "type": "file",
+   "name": "session-store.ts",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "会话状态管理：CRUD、模型/工具/项目配置、提示发送、事件处理与快照刷新。",
+   "tags": [
+    "state",
+    "store",
+    "session",
+    "frontend"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "function",
+   "name": "transcriptItems",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 transcriptItems：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    55,
+    55
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "function",
+   "name": "refreshSessions",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "刷新会话列表。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    59,
+    65
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "function",
+   "name": "refreshModels",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 refreshModels：刷新Models 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    67,
+    73
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "function",
+   "name": "refreshConfig",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 refreshConfig：刷新Config 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    75,
+    81
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "function",
+   "name": "refreshTools",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 refreshTools：刷新Tools 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    83,
+    89
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "function",
+   "name": "refreshProjects",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 refreshProjects：刷新Projects 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    91,
+    97
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "function",
+   "name": "configureApiKey",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "配置 provider API key。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    99,
+    109
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "function",
+   "name": "removeApiKey",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 removeApiKey：删除ApiKey 相关逻辑，参数：provider。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    111,
+    121
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "function",
+   "name": "renameSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 renameSession：实现其核心逻辑，参数：sessionId、name。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    123,
+    134
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "function",
+   "name": "exportSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 exportSession：导出Session 相关逻辑，参数：sessionId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    136,
+    138
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "function",
+   "name": "openSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 openSession：打开Session 相关逻辑，参数：sessionId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    140,
+    154
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "function",
+   "name": "createSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "创建新会话。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    156,
+    169
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:nextSessionName",
+   "type": "function",
+   "name": "nextSessionName",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 nextSessionName：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    172,
+    182
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "function",
+   "name": "deleteSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 deleteSession：删除Session 相关逻辑，参数：sessionId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    184,
+    200
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "function",
+   "name": "deleteCurrentSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 deleteCurrentSession：删除CurrentSession 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    202,
+    205
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "function",
+   "name": "createProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 createProject：创建Project 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    207,
+    216
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "function",
+   "name": "updateProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 updateProject：更新Project 相关逻辑，参数：id、input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    218,
+    227
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "function",
+   "name": "deleteProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 deleteProject：删除Project 相关逻辑，参数：id。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    229,
+    238
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "function",
+   "name": "moveSessionProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 moveSessionProject：移动SessionProject 相关逻辑，参数：sessionId、projectId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    240,
+    249
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "function",
+   "name": "sendPrompt",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "发送提示并处理事件流。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    251,
+    262
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "function",
+   "name": "sendSteer",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 sendSteer：发送Steer 相关逻辑，参数：text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    264,
+    272
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "function",
+   "name": "abortCurrent",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 abortCurrent：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    274,
+    281
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "function",
+   "name": "switchModel",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 switchModel：实现其核心逻辑，参数：provider、id。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    283,
+    290
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "function",
+   "name": "setThinking",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "函数 setThinking：设置Thinking 相关逻辑，参数：thinkingLevel。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    292,
+    302
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:handleEvent",
+   "type": "function",
+   "name": "handleEvent",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "处理服务端推送事件。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    309,
+    319
+   ]
+  },
+  {
+   "id": "file:packages/shell/web/src/state/transcript.ts",
+   "type": "file",
+   "name": "transcript.ts",
+   "filePath": "packages/shell/web/src/state/transcript.ts",
+   "summary": "会话转写状态：事件/进度快照的应用与选择。",
+   "tags": [
+    "state",
+    "transcript",
+    "frontend"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/transcript.ts:createTranscriptState",
+   "type": "function",
+   "name": "createTranscriptState",
+   "filePath": "packages/shell/web/src/state/transcript.ts",
+   "summary": "函数 createTranscriptState：创建TranscriptState 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    15,
+    17
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptSnapshot",
+   "type": "function",
+   "name": "applyTranscriptSnapshot",
+   "filePath": "packages/shell/web/src/state/transcript.ts",
+   "summary": "应用完整转写快照。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    19,
+    29
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptProgress",
+   "type": "function",
+   "name": "applyTranscriptProgress",
+   "filePath": "packages/shell/web/src/state/transcript.ts",
+   "summary": "应用转写进度快照。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    49,
+    85
+   ]
+  },
+  {
+   "id": "function:packages/shell/web/src/state/transcript.ts:selectTranscript",
+   "type": "function",
+   "name": "selectTranscript",
+   "filePath": "packages/shell/web/src/state/transcript.ts",
+   "summary": "选择当前转写内容。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    88,
+    110
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "function:packages/shell/web/src/api/client.ts:request",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:nextSessionName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:handleEvent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/api/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/state/transcript.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:createTranscriptState",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:createTranscriptState",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptSnapshot",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptSnapshot",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptProgress",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:applyTranscriptProgress",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:selectTranscript",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "function:packages/shell/web/src/state/transcript.ts:selectTranscript",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/transcript.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

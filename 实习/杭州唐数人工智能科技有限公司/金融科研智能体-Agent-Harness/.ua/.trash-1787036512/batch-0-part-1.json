@@ -1,0 +1,1138 @@
+{
+ "nodes": [
+  {
+   "id": "file:.tfa/extensions/prompt-url-widget.ts",
+   "type": "file",
+   "name": "prompt-url-widget.ts",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "summary": "TFA 状态栏扩展：解析当前 prompt 中的 GitHub issue/PR/安全公告引用，拉取元数据并渲染可点击挂件，支持从 draft 草稿读取引用。",
+   "tags": [
+    "extension",
+    "widget",
+    "github",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:extractPromptMatch",
+   "type": "function",
+   "name": "extractPromptMatch",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    42,
+    59
+   ],
+   "summary": "从 prompt 文本中解析 GitHub issue/PR/安全公告引用。",
+   "tags": [
+    "parsing",
+    "github"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:parseAdvisoryUrl",
+   "type": "function",
+   "name": "parseAdvisoryUrl",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    67,
+    78
+   ],
+   "summary": "解析 GitHub 安全公告 URL，提取仓库与 advisory id。",
+   "tags": [
+    "parsing",
+    "url"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:unquoteYamlValue",
+   "type": "function",
+   "name": "unquoteYamlValue",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    80,
+    89
+   ],
+   "summary": "去除 YAML 值两端的引号。",
+   "tags": [
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:readAdvisoryRefFromDraft",
+   "type": "function",
+   "name": "readAdvisoryRefFromDraft",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    97,
+    108
+   ],
+   "summary": "从 .tfa/drafts 草稿文件中读取安全公告引用内容。",
+   "tags": [
+    "fs",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:fetchAdvisoryMetadata",
+   "type": "function",
+   "name": "fetchAdvisoryMetadata",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    117,
+    136
+   ],
+   "summary": "调用 gh CLI 获取安全公告元数据并格式化。",
+   "tags": [
+    "github",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:fetchGhMetadata",
+   "type": "function",
+   "name": "fetchGhMetadata",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    138,
+    160
+   ],
+   "summary": "按 issue/PR/advisory 类型拉取 GitHub 元数据并构建展示文本。",
+   "tags": [
+    "github",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:.tfa/extensions/prompt-url-widget.ts:promptUrlWidgetExtension",
+   "type": "function",
+   "name": "promptUrlWidgetExtension",
+   "filePath": ".tfa/extensions/prompt-url-widget.ts",
+   "lineRange": [
+    172,
+    270
+   ],
+   "summary": "扩展主函数：注册状态栏 widget，展示并刷新当前 prompt 关联的 GitHub 链接。",
+   "tags": [
+    "extension",
+    "widget"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:.tfa/extensions/redraws.ts",
+   "type": "file",
+   "name": "redraws.ts",
+   "filePath": ".tfa/extensions/redraws.ts",
+   "summary": "TFA 扩展：注册 /tui 命令，统计并通知用户当前 TUI 的全量重绘次数。",
+   "tags": [
+    "extension",
+    "command",
+    "tui",
+    "debug"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "type": "file",
+   "name": "border-status-editor.ts",
+   "filePath": "packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "summary": "示例扩展：演示自定义 TUI 边框与状态栏，根据可用宽度自适应计算左右边框布局。",
+   "tags": [
+    "extension",
+    "example",
+    "tui",
+    "border"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/border-status-editor.ts:fitBorder",
+   "type": "function",
+   "name": "fitBorder",
+   "filePath": "packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "lineRange": [
+    10,
+    40
+   ],
+   "summary": "根据可用宽度与边框字符自适应计算左右边框布局。",
+   "tags": [
+    "layout",
+    "border"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/border-status-editor.ts:EmptyFooter",
+   "type": "class",
+   "name": "EmptyFooter",
+   "filePath": "packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "lineRange": [
+    63,
+    69
+   ],
+   "summary": "空 footer 组件占位，配合边框编辑器演示。",
+   "tags": [
+    "component",
+    "footer"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/built-in-tool-renderer.ts",
+   "type": "file",
+   "name": "built-in-tool-renderer.ts",
+   "filePath": "packages/coding-agent/examples/extensions/built-in-tool-renderer.ts",
+   "summary": "示例扩展：以同名注册方式覆盖内置工具（read/bash/edit/write）的渲染，委托原实现执行而只替换展示逻辑。",
+   "tags": [
+    "extension",
+    "example",
+    "tool-rendering",
+    "override"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/custom-footer.ts",
+   "type": "file",
+   "name": "custom-footer.ts",
+   "filePath": "packages/coding-agent/examples/extensions/custom-footer.ts",
+   "summary": "示例扩展：通过 ctx.ui.setFooter() 自定义底部状态栏，展示 git 分支、token 统计与扩展状态。",
+   "tags": [
+    "extension",
+    "example",
+    "footer",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/entry-renderer.ts",
+   "type": "file",
+   "name": "entry-renderer.ts",
+   "filePath": "packages/coding-agent/examples/extensions/entry-renderer.ts",
+   "summary": "示例扩展：演示 registerEntryRenderer 与 appendEntry，在聊天中渲染不会发送给 LLM 的持久化状态卡片。",
+   "tags": [
+    "extension",
+    "example",
+    "entry-renderer",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "type": "file",
+   "name": "github-issue-autocomplete.ts",
+   "filePath": "packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "summary": "示例扩展：为 TUI 输入框提供 GitHub issue 自动补全 provider，解析当前 git 仓库并过滤候选 issue。",
+   "tags": [
+    "extension",
+    "example",
+    "autocomplete",
+    "github"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:parseGitHubRepo",
+   "type": "function",
+   "name": "parseGitHubRepo",
+   "filePath": "packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "lineRange": [
+    28,
+    40
+   ],
+   "summary": "从 git remote URL 解析 owner/repo。",
+   "tags": [
+    "parsing",
+    "github"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:resolveGitHubRepo",
+   "type": "function",
+   "name": "resolveGitHubRepo",
+   "filePath": "packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "lineRange": [
+    42,
+    61
+   ],
+   "summary": "通过 git 命令解析当前目录所属仓库。",
+   "tags": [
+    "github",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:filterIssues",
+   "type": "function",
+   "name": "filterIssues",
+   "filePath": "packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "lineRange": [
+    71,
+    89
+   ],
+   "summary": "按查询文本过滤 issue 候选列表。",
+   "tags": [
+    "filter",
+    "autocomplete"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:createIssueAutocompleteProvider",
+   "type": "function",
+   "name": "createIssueAutocompleteProvider",
+   "filePath": "packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "lineRange": [
+    91,
+    128
+   ],
+   "summary": "创建自动补全 provider，串起仓库解析与 issue 获取。",
+   "tags": [
+    "autocomplete",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/message-renderer.ts",
+   "type": "file",
+   "name": "message-renderer.ts",
+   "filePath": "packages/coding-agent/examples/extensions/message-renderer.ts",
+   "summary": "示例扩展：演示 registerMessageRenderer 自定义状态消息在 TUI 中的着色与可展开详情。",
+   "tags": [
+    "extension",
+    "example",
+    "message-renderer",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "type": "file",
+   "name": "minimal-mode.ts",
+   "filePath": "packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "summary": "示例扩展：演示 minimal 工具展示模式，用 ctrl+o 在标准/展开/精简视图间切换，覆盖多个内置工具的渲染。",
+   "tags": [
+    "extension",
+    "example",
+    "tool-rendering",
+    "minimal-mode"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/minimal-mode.ts:createBuiltInTools",
+   "type": "function",
+   "name": "createBuiltInTools",
+   "filePath": "packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "lineRange": [
+    46,
+    56
+   ],
+   "summary": "按 cwd 创建一组内置工具实例并缓存。",
+   "tags": [
+    "factory",
+    "tools"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/modal-editor.ts",
+   "type": "file",
+   "name": "modal-editor.ts",
+   "filePath": "packages/coding-agent/examples/extensions/modal-editor.ts",
+   "summary": "示例扩展：实现模态编辑器组件，处理输入与渲染，演示 TUI 弹层编辑交互。",
+   "tags": [
+    "extension",
+    "example",
+    "editor",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/modal-editor.ts:ModalEditor",
+   "type": "class",
+   "name": "ModalEditor",
+   "filePath": "packages/coding-agent/examples/extensions/modal-editor.ts",
+   "lineRange": [
+    28,
+    79
+   ],
+   "summary": "模态编辑器组件，处理输入与渲染。",
+   "tags": [
+    "component",
+    "editor"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "type": "file",
+   "name": "overlay-qa-tests.ts",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "summary": "示例扩展 QA 测试集：覆盖 overlay/sidepanel 布局、焦点管理、流式输入、动画与百分比尺寸等场景的演示组件集。",
+   "tags": [
+    "extension",
+    "test",
+    "overlay",
+    "qa"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:hslToRgb",
+   "type": "function",
+   "name": "hslToRgb",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    856,
+    876
+   ],
+   "summary": "将 HSL 颜色转换为 RGB，用于动画渲染。",
+   "tags": [
+    "color",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:BaseOverlay",
+   "type": "class",
+   "name": "BaseOverlay",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    305,
+    333
+   ],
+   "summary": "overlay 测试基础组件，提供主题盒与失效刷新。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:AnchorTestComponent",
+   "type": "class",
+   "name": "AnchorTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    336,
+    372
+   ],
+   "summary": "测试锚点对齐的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:MarginTestComponent",
+   "type": "class",
+   "name": "MarginTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    375,
+    412
+   ],
+   "summary": "测试 margin 边距布局的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StackOverlayComponent",
+   "type": "class",
+   "name": "StackOverlayComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    415,
+    457
+   ],
+   "summary": "测试多个 overlay 叠加顺序的组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingOverflowComponent",
+   "type": "class",
+   "name": "StreamingOverflowComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    460,
+    590
+   ],
+   "summary": "测试流式内容溢出的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay",
+    "overflow"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:EdgeTestComponent",
+   "type": "class",
+   "name": "EdgeTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    593,
+    625
+   ],
+   "summary": "测试边缘对齐的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:PercentTestComponent",
+   "type": "class",
+   "name": "PercentTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    628,
+    665
+   ],
+   "summary": "测试百分比尺寸的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:MaxHeightTestComponent",
+   "type": "class",
+   "name": "MaxHeightTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    668,
+    700
+   ],
+   "summary": "测试最大高度约束的 overlay 组件。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:SidepanelComponent",
+   "type": "class",
+   "name": "SidepanelComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    703,
+    761
+   ],
+   "summary": "侧边栏 overlay 组件，测试固定侧栏布局。",
+   "tags": [
+    "test",
+    "sidepanel"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:AnimationDemoComponent",
+   "type": "class",
+   "name": "AnimationDemoComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    764,
+    853
+   ],
+   "summary": "演示颜色渐变与移动动画的 overlay 组件。",
+   "tags": [
+    "test",
+    "animation"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:ToggleDemoComponent",
+   "type": "class",
+   "name": "ToggleDemoComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    879,
+    937
+   ],
+   "summary": "演示开关控件与状态切换的组件。",
+   "tags": [
+    "test",
+    "toggle"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:PassiveDemoController",
+   "type": "class",
+   "name": "PassiveDemoController",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    941,
+    1014
+   ],
+   "summary": "被动式 overlay 控制器：管理多个面板的输入与清理。",
+   "tags": [
+    "controller",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:TimerPanel",
+   "type": "class",
+   "name": "TimerPanel",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    1016,
+    1030
+   ],
+   "summary": "定时器面板，每秒 tick 刷新显示。",
+   "tags": [
+    "timer",
+    "panel"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:FocusDemoController",
+   "type": "class",
+   "name": "FocusDemoController",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    1044,
+    1164
+   ],
+   "summary": "焦点管理演示控制器：在多个面板间移动与循环焦点。",
+   "tags": [
+    "focus",
+    "controller"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:FocusPanel",
+   "type": "class",
+   "name": "FocusPanel",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    1166,
+    1247
+   ],
+   "summary": "支持焦点循环的 overlay 面板。",
+   "tags": [
+    "focus",
+    "panel"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingInputController",
+   "type": "class",
+   "name": "StreamingInputController",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    1251,
+    1380
+   ],
+   "summary": "流式输入演示控制器：模拟输入流并管理面板生命周期。",
+   "tags": [
+    "streaming",
+    "controller"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingInputPanel",
+   "type": "class",
+   "name": "StreamingInputPanel",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "lineRange": [
+    1382,
+    1450
+   ],
+   "summary": "流式输入面板，渲染增量文本。",
+   "tags": [
+    "streaming",
+    "panel"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/examples/extensions/overlay-test.ts",
+   "type": "file",
+   "name": "overlay-test.ts",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-test.ts",
+   "summary": "示例扩展：演示 overlay 覆盖层组件的打开/关闭、输入处理与自定义渲染。",
+   "tags": [
+    "extension",
+    "example",
+    "overlay",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/examples/extensions/overlay-test.ts:OverlayTestComponent",
+   "type": "class",
+   "name": "OverlayTestComponent",
+   "filePath": "packages/coding-agent/examples/extensions/overlay-test.ts",
+   "lineRange": [
+    31,
+    153
+   ],
+   "summary": "通用 overlay 测试组件，支持打开/关闭与自定义内容渲染。",
+   "tags": [
+    "test",
+    "overlay"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:extractPromptMatch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:parseAdvisoryUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:unquoteYamlValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:readAdvisoryRefFromDraft",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:fetchAdvisoryMetadata",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:fetchGhMetadata",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:promptUrlWidgetExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "function:.tfa/extensions/prompt-url-widget.ts:promptUrlWidgetExtension",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:.tfa/extensions/prompt-url-widget.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:.tfa/extensions/redraws.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:.tfa/extensions/redraws.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "target": "function:packages/coding-agent/examples/extensions/border-status-editor.ts:fitBorder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "target": "class:packages/coding-agent/examples/extensions/border-status-editor.ts:EmptyFooter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/built-in-tool-renderer.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/built-in-tool-renderer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-footer.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-footer.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/custom-footer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/entry-renderer.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/entry-renderer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:parseGitHubRepo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:resolveGitHubRepo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:filterIssues",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "function:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts:createIssueAutocompleteProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/github-issue-autocomplete.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/message-renderer.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/message-renderer.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "target": "function:packages/coding-agent/examples/extensions/minimal-mode.ts:createBuiltInTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/minimal-mode.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/modal-editor.ts",
+   "target": "class:packages/coding-agent/examples/extensions/modal-editor.ts:ModalEditor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/modal-editor.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/modal-editor.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "function:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:hslToRgb",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:BaseOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:AnchorTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:MarginTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StackOverlayComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingOverflowComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:EdgeTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:PercentTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:MaxHeightTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:SidepanelComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:AnimationDemoComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:ToggleDemoComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:PassiveDemoController",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:TimerPanel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:FocusDemoController",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:FocusPanel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingInputController",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-qa-tests.ts:StreamingInputPanel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-qa-tests.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-test.ts",
+   "target": "class:packages/coding-agent/examples/extensions/overlay-test.ts:OverlayTestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/examples/extensions/overlay-test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

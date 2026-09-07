@@ -1,0 +1,2699 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/agent/src/agent-loop.ts",
+   "type": "file",
+   "name": "agent-loop.ts",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "summary": "实现 agent 主循环：流式响应 assistant 消息、执行工具调用（串行/并行）、处理截断与结果消息生成。",
+   "tags": [
+    "agent",
+    "主循环",
+    "工具执行",
+    "流式"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:agentLoop",
+   "type": "function",
+   "name": "agentLoop",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    31,
+    54
+   ],
+   "summary": "单步 agent 循环入口。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:agentLoopContinue",
+   "type": "function",
+   "name": "agentLoopContinue",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    64,
+    93
+   ],
+   "summary": "继续 agent 循环。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:runAgentLoop",
+   "type": "function",
+   "name": "runAgentLoop",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    95,
+    118
+   ],
+   "summary": "运行 agent 循环并返回结果。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:runAgentLoopContinue",
+   "type": "function",
+   "name": "runAgentLoopContinue",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    120,
+    143
+   ],
+   "summary": "继续运行 agent 循环。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:runLoop",
+   "type": "function",
+   "name": "runLoop",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    155,
+    275
+   ],
+   "summary": "agent 主循环实现，驱动消息生成与工具执行。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:streamAssistantResponse",
+   "type": "function",
+   "name": "streamAssistantResponse",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    281,
+    372
+   ],
+   "summary": "流式获取 assistant 响应。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:failToolCallsFromTruncatedMessage",
+   "type": "function",
+   "name": "failToolCallsFromTruncatedMessage",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    381,
+    406
+   ],
+   "summary": "将截断消息中的工具调用标记为失败。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:executeToolCalls",
+   "type": "function",
+   "name": "executeToolCalls",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    411,
+    426
+   ],
+   "summary": "执行消息中的工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:executeToolCallsSequential",
+   "type": "function",
+   "name": "executeToolCallsSequential",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    433,
+    487
+   ],
+   "summary": "串行执行工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:executeToolCallsParallel",
+   "type": "function",
+   "name": "executeToolCallsParallel",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    489,
+    554
+   ],
+   "summary": "并行执行工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:prepareToolCallArguments",
+   "type": "function",
+   "name": "prepareToolCallArguments",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    586,
+    598
+   ],
+   "summary": "准备工具调用参数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:prepareToolCall",
+   "type": "function",
+   "name": "prepareToolCall",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    600,
+    664
+   ],
+   "summary": "准备单个工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:executePreparedToolCall",
+   "type": "function",
+   "name": "executePreparedToolCall",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    666,
+    707
+   ],
+   "summary": "执行已准备的工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:finalizeExecutedToolCall",
+   "type": "function",
+   "name": "finalizeExecutedToolCall",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    709,
+    754
+   ],
+   "summary": "收尾已执行的工具调用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/agent-loop.ts:createToolResultMessage",
+   "type": "function",
+   "name": "createToolResultMessage",
+   "filePath": "packages/agent/src/agent-loop.ts",
+   "lineRange": [
+    773,
+    787
+   ],
+   "summary": "构造工具结果消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/src/agent.ts",
+   "type": "file",
+   "name": "agent.ts",
+   "filePath": "packages/agent/src/agent.ts",
+   "summary": "实现 Agent 类：封装 agent 状态、消息队列与主循环调用，提供运行与事件接口。",
+   "tags": [
+    "agent",
+    "状态管理",
+    "消息队列",
+    "核心"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/agent.ts:createMutableAgentState",
+   "type": "function",
+   "name": "createMutableAgentState",
+   "filePath": "packages/agent/src/agent.ts",
+   "lineRange": [
+    68,
+    95
+   ],
+   "summary": "创建可变 agent 状态。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/agent.ts:PendingMessageQueue",
+   "type": "class",
+   "name": "PendingMessageQueue",
+   "filePath": "packages/agent/src/agent.ts",
+   "lineRange": [
+    125,
+    159
+   ],
+   "summary": "待处理消息队列。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/agent.ts:Agent",
+   "type": "class",
+   "name": "Agent",
+   "filePath": "packages/agent/src/agent.ts",
+   "lineRange": [
+    173,
+    588
+   ],
+   "summary": "agent 门面，协调状态、队列与主循环。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/agent/src/harness/agent-harness.ts",
+   "type": "file",
+   "name": "agent-harness.ts",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "summary": "实现 harness 层 AgentHarness：管理多 lane 运行、操作编排、错误类型与执行环境，是 agent 包的可编程接口。",
+   "tags": [
+    "harness",
+    "agent",
+    "运行编排",
+    "错误处理"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:LaneBusy",
+   "type": "class",
+   "name": "LaneBusy",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    27,
+    32
+   ],
+   "summary": "lane 忙错误类型。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:MissingIdentities",
+   "type": "class",
+   "name": "MissingIdentities",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    33,
+    38
+   ],
+   "summary": "缺少身份信息错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:NoActiveRun",
+   "type": "class",
+   "name": "NoActiveRun",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    39,
+    39
+   ],
+   "summary": "无活动运行错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:NoActiveOperation",
+   "type": "class",
+   "name": "NoActiveOperation",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    40,
+    40
+   ],
+   "summary": "无活动操作错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:NothingToResume",
+   "type": "class",
+   "name": "NothingToResume",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    41,
+    41
+   ],
+   "summary": "无可恢复内容错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:InvalidMessage",
+   "type": "class",
+   "name": "InvalidMessage",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    42,
+    42
+   ],
+   "summary": "无效消息错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:UnknownSkill",
+   "type": "class",
+   "name": "UnknownSkill",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    43,
+    43
+   ],
+   "summary": "未知技能错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:UnknownTemplate",
+   "type": "class",
+   "name": "UnknownTemplate",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    44,
+    44
+   ],
+   "summary": "未知模板错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:UnknownTarget",
+   "type": "class",
+   "name": "UnknownTarget",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    45,
+    45
+   ],
+   "summary": "未知目标错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:UnknownQueueItem",
+   "type": "class",
+   "name": "UnknownQueueItem",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    46,
+    50
+   ],
+   "summary": "未知队列项错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:LaneExists",
+   "type": "class",
+   "name": "LaneExists",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    51,
+    51
+   ],
+   "summary": "lane 已存在错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:InvalidLane",
+   "type": "class",
+   "name": "InvalidLane",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    52,
+    52
+   ],
+   "summary": "无效 lane 错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:NothingToCompact",
+   "type": "class",
+   "name": "NothingToCompact",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    53,
+    53
+   ],
+   "summary": "无可压缩内容错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:Closed",
+   "type": "class",
+   "name": "Closed",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    54,
+    54
+   ],
+   "summary": "已关闭错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:HarnessFault",
+   "type": "class",
+   "name": "HarnessFault",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    56,
+    64
+   ],
+   "summary": "harness 内部故障错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:HarnessClosed",
+   "type": "class",
+   "name": "HarnessClosed",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    66,
+    71
+   ],
+   "summary": "harness 已关闭错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:HarnessNotImplemented",
+   "type": "class",
+   "name": "HarnessNotImplemented",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    73,
+    81
+   ],
+   "summary": "harness 未实现错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:UnavailableRegistry",
+   "type": "class",
+   "name": "UnavailableRegistry",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    218,
+    234
+   ],
+   "summary": "注册表不可用错误。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/agent/src/harness/agent-harness.ts:AgentHarness",
+   "type": "class",
+   "name": "AgentHarness",
+   "filePath": "packages/agent/src/harness/agent-harness.ts",
+   "lineRange": [
+    322,
+    525
+   ],
+   "summary": "harness 运行时，编排 agent 会话与操作。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "type": "file",
+   "name": "branch-summarization.ts",
+   "filePath": "packages/agent/src/harness/compaction/branch-summarization.ts",
+   "summary": "harness 分支摘要：收集分支条目、准备输入并调用模型生成分支摘要。",
+   "tags": [
+    "harness",
+    "compaction",
+    "分支摘要"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/branch-summarization.ts:collectEntriesForBranchSummary",
+   "type": "function",
+   "name": "collectEntriesForBranchSummary",
+   "filePath": "packages/agent/src/harness/compaction/branch-summarization.ts",
+   "lineRange": [
+    82,
+    111
+   ],
+   "summary": "收集分支摘要所需条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/branch-summarization.ts:getMessageFromEntry",
+   "type": "function",
+   "name": "getMessageFromEntry",
+   "filePath": "packages/agent/src/harness/compaction/branch-summarization.ts",
+   "lineRange": [
+    112,
+    129
+   ],
+   "summary": "从条目获取消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "type": "function",
+   "name": "prepareBranchEntries",
+   "filePath": "packages/agent/src/harness/compaction/branch-summarization.ts",
+   "lineRange": [
+    132,
+    171
+   ],
+   "summary": "准备分支摘要输入。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "type": "function",
+   "name": "generateBranchSummary",
+   "filePath": "packages/agent/src/harness/compaction/branch-summarization.ts",
+   "lineRange": [
+    208,
+    280
+   ],
+   "summary": "生成分支摘要。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "type": "file",
+   "name": "compaction.ts",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "summary": "harness 压缩核心：token 估算、切割点查找、摘要生成与上下文压缩执行。",
+   "tags": [
+    "harness",
+    "compaction",
+    "token估算",
+    "摘要"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:extractFileOperations",
+   "type": "function",
+   "name": "extractFileOperations",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    44,
+    67
+   ],
+   "summary": "从消息提取文件操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:getMessageFromEntry",
+   "type": "function",
+   "name": "getMessageFromEntry",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    68,
+    79
+   ],
+   "summary": "从条目获取消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:completeSimpleWithRetries",
+   "type": "function",
+   "name": "completeSimpleWithRetries",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    102,
+    122
+   ],
+   "summary": "带重试的简单完成流程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:combineUsage",
+   "type": "function",
+   "name": "combineUsage",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    124,
+    145
+   ],
+   "summary": "合并用量统计。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:calculateContextTokens",
+   "type": "function",
+   "name": "calculateContextTokens",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    165,
+    167
+   ],
+   "summary": "计算上下文 token。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:getAssistantUsage",
+   "type": "function",
+   "name": "getAssistantUsage",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    168,
+    181
+   ],
+   "summary": "获取 assistant 用量。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:getLastAssistantUsage",
+   "type": "function",
+   "name": "getLastAssistantUsage",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    184,
+    193
+   ],
+   "summary": "获取最后一条 assistant 用量。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:estimateContextTokens",
+   "type": "function",
+   "name": "estimateContextTokens",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    216,
+    244
+   ],
+   "summary": "估算上下文 token。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:shouldCompact",
+   "type": "function",
+   "name": "shouldCompact",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    247,
+    250
+   ],
+   "summary": "判断是否应压缩。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTextAndImageContentChars",
+   "type": "function",
+   "name": "estimateTextAndImageContentChars",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    254,
+    268
+   ],
+   "summary": "估算内容字符数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTokens",
+   "type": "function",
+   "name": "estimateTokens",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    271,
+    311
+   ],
+   "summary": "估算 token 数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:findValidCutPoints",
+   "type": "function",
+   "name": "findValidCutPoints",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    312,
+    344
+   ],
+   "summary": "查找合法切割点。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:findTurnStartIndex",
+   "type": "function",
+   "name": "findTurnStartIndex",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    347,
+    361
+   ],
+   "summary": "查找轮次起始。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:findCutPoint",
+   "type": "function",
+   "name": "findCutPoint",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    374,
+    422
+   ],
+   "summary": "查找最优切割点。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummary",
+   "type": "function",
+   "name": "generateSummary",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    501,
+    526
+   ],
+   "summary": "生成压缩摘要。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummaryWithUsage",
+   "type": "function",
+   "name": "generateSummaryWithUsage",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    529,
+    593
+   ],
+   "summary": "生成摘要并记录用量。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:prepareCompaction",
+   "type": "function",
+   "name": "prepareCompaction",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    616,
+    687
+   ],
+   "summary": "准备压缩输入。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:compact",
+   "type": "function",
+   "name": "compact",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    707,
+    794
+   ],
+   "summary": "执行压缩。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/compaction.ts:generateTurnPrefixSummary",
+   "type": "function",
+   "name": "generateTurnPrefixSummary",
+   "filePath": "packages/agent/src/harness/compaction/compaction.ts",
+   "lineRange": [
+    795,
+    848
+   ],
+   "summary": "生成轮次前缀摘要。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/compaction/utils.ts",
+   "type": "file",
+   "name": "utils.ts",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "summary": "harness 压缩工具：文件操作提取、文件列表与序列化。",
+   "tags": [
+    "harness",
+    "compaction",
+    "工具函数"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/utils.ts:createFileOps",
+   "type": "function",
+   "name": "createFileOps",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "lineRange": [
+    15,
+    21
+   ],
+   "summary": "创建文件操作列表。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "function",
+   "name": "extractFileOpsFromMessage",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "lineRange": [
+    24,
+    51
+   ],
+   "summary": "从消息提取文件操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/utils.ts:computeFileLists",
+   "type": "function",
+   "name": "computeFileLists",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "lineRange": [
+    54,
+    59
+   ],
+   "summary": "计算文件列表。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/utils.ts:formatFileOperations",
+   "type": "function",
+   "name": "formatFileOperations",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "lineRange": [
+    62,
+    72
+   ],
+   "summary": "格式化文件操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "function",
+   "name": "serializeConversation",
+   "filePath": "packages/agent/src/harness/compaction/utils.ts",
+   "lineRange": [
+    91,
+    132
+   ],
+   "summary": "序列化会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/env/nodejs.ts",
+   "type": "file",
+   "name": "nodejs.ts",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "summary": "实现 Node.js 执行环境（NodeExecutionEnv）：文件系统、shell 执行、子进程管理与路径解析的适配实现。",
+   "tags": [
+    "harness",
+    "执行环境",
+    "nodejs",
+    "文件系统"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:resolveTimeoutMs",
+   "type": "function",
+   "name": "resolveTimeoutMs",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    37,
+    48
+   ],
+   "summary": "解析超时毫秒数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:resolvePath",
+   "type": "function",
+   "name": "resolvePath",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    50,
+    64
+   ],
+   "summary": "解析路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:fileKindFromStats",
+   "type": "function",
+   "name": "fileKindFromStats",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    66,
+    75
+   ],
+   "summary": "根据 stat 判断文件类型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:fileInfoFromStats",
+   "type": "function",
+   "name": "fileInfoFromStats",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    77,
+    90
+   ],
+   "summary": "从 stat 构造文件信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:toFileError",
+   "type": "function",
+   "name": "toFileError",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    96,
+    118
+   ],
+   "summary": "将错误转换为文件错误。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:runCommand",
+   "type": "function",
+   "name": "runCommand",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    133,
+    166
+   ],
+   "summary": "执行 shell 命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:getShellConfig",
+   "type": "function",
+   "name": "getShellConfig",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    193,
+    235
+   ],
+   "summary": "获取 shell 配置。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:getShellEnv",
+   "type": "function",
+   "name": "getShellEnv",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    237,
+    248
+   ],
+   "summary": "获取 shell 环境。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:killProcessTree",
+   "type": "function",
+   "name": "killProcessTree",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    250,
+    273
+   ],
+   "summary": "终止进程树。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/env/nodejs.ts:waitForChildProcess",
+   "type": "function",
+   "name": "waitForChildProcess",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    275,
+    342
+   ],
+   "summary": "等待子进程结束。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/agent/src/harness/env/nodejs.ts:NodeExecutionEnv",
+   "type": "class",
+   "name": "NodeExecutionEnv",
+   "filePath": "packages/agent/src/harness/env/nodejs.ts",
+   "lineRange": [
+    344,
+    675
+   ],
+   "summary": "Node.js 执行环境实现。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/agent/src/harness/messages.ts",
+   "type": "file",
+   "name": "messages.ts",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "summary": "harness 消息工具：将执行结果转为文本并构造摘要/分支/自定义消息，转换为 LLM 消息格式。",
+   "tags": [
+    "harness",
+    "messages",
+    "转换"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/src/harness/messages.ts:bashExecutionToText",
+   "type": "function",
+   "name": "bashExecutionToText",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "lineRange": [
+    63,
+    79
+   ],
+   "summary": "将 bash 执行结果转为文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/messages.ts:createBranchSummaryMessage",
+   "type": "function",
+   "name": "createBranchSummaryMessage",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "lineRange": [
+    81,
+    92
+   ],
+   "summary": "构造分支摘要消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/messages.ts:createCompactionSummaryMessage",
+   "type": "function",
+   "name": "createCompactionSummaryMessage",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "lineRange": [
+    94,
+    105
+   ],
+   "summary": "构造压缩摘要消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/messages.ts:createCustomMessage",
+   "type": "function",
+   "name": "createCustomMessage",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "lineRange": [
+    107,
+    122
+   ],
+   "summary": "构造自定义消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "function",
+   "name": "convertToLlm",
+   "filePath": "packages/agent/src/harness/messages.ts",
+   "lineRange": [
+    124,
+    168
+   ],
+   "summary": "转换为 LLM 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:agentLoop",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:agentLoop",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:agentLoopContinue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:agentLoopContinue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:runAgentLoop",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:runAgentLoop",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:runAgentLoopContinue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:runAgentLoopContinue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:runLoop",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:streamAssistantResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:failToolCallsFromTruncatedMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:executeToolCalls",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:executeToolCallsSequential",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:executeToolCallsParallel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:prepareToolCallArguments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:prepareToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:executePreparedToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:finalizeExecutedToolCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "function:packages/agent/src/agent-loop.ts:createToolResultMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "function:packages/agent/src/agent.ts:createMutableAgentState",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "class:packages/agent/src/agent.ts:PendingMessageQueue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "class:packages/agent/src/agent.ts:Agent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "class:packages/agent/src/agent.ts:Agent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:LaneBusy",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:LaneBusy",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:MissingIdentities",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:MissingIdentities",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NoActiveRun",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NoActiveRun",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NoActiveOperation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NoActiveOperation",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NothingToResume",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NothingToResume",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:InvalidMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:InvalidMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownSkill",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownSkill",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownTemplate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownTemplate",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownTarget",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownTarget",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownQueueItem",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnknownQueueItem",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:LaneExists",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:LaneExists",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:InvalidLane",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:InvalidLane",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NothingToCompact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:NothingToCompact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:Closed",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:Closed",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessFault",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessFault",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessClosed",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessClosed",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessNotImplemented",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:HarnessNotImplemented",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:UnavailableRegistry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:AgentHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "class:packages/agent/src/harness/agent-harness.ts:AgentHarness",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:collectEntriesForBranchSummary",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:collectEntriesForBranchSummary",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:getMessageFromEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:extractFileOperations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:getMessageFromEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:completeSimpleWithRetries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:completeSimpleWithRetries",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:combineUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:calculateContextTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:calculateContextTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:getAssistantUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:getLastAssistantUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:getLastAssistantUsage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateContextTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateContextTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:shouldCompact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:shouldCompact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTextAndImageContentChars",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTokens",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTokens",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:findValidCutPoints",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:findTurnStartIndex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:findTurnStartIndex",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:findCutPoint",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:findCutPoint",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummary",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummary",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummaryWithUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummaryWithUsage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:prepareCompaction",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:prepareCompaction",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:compact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:compact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:generateTurnPrefixSummary",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:createFileOps",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:createFileOps",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:computeFileLists",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:computeFileLists",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:formatFileOperations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:formatFileOperations",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:resolveTimeoutMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:resolvePath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:fileKindFromStats",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:fileInfoFromStats",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:toFileError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:runCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:getShellConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:getShellEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:killProcessTree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "function:packages/agent/src/harness/env/nodejs.ts:waitForChildProcess",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "class:packages/agent/src/harness/env/nodejs.ts:NodeExecutionEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "class:packages/agent/src/harness/env/nodejs.ts:NodeExecutionEnv",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:bashExecutionToText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:bashExecutionToText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createBranchSummaryMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createBranchSummaryMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createCompactionSummaryMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createCompactionSummaryMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createCustomMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:createCustomMessage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "file:packages/agent/src/stream-fn.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent-loop.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "file:packages/agent/src/agent-loop.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "file:packages/agent/src/stream-fn.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/agent.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/agent/src/harness/result.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/agent/src/harness/session/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/agent-harness.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/harness/compaction/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/harness/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/harness/session/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/harness/compaction/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/harness/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/harness/session/context.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/harness/session/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/compaction.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/compaction/utils.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/env/nodejs.ts",
+   "target": "file:packages/agent/src/harness/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "file:packages/agent/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/messages.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:getMessageFromEntry",
+   "target": "function:packages/agent/src/harness/messages.ts:createBranchSummaryMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:getMessageFromEntry",
+   "target": "function:packages/agent/src/harness/messages.ts:createCompactionSummaryMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:createFileOps",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:prepareBranchEntries",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:estimateTokens",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "target": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "target": "function:packages/agent/src/harness/compaction/compaction.ts:completeSimpleWithRetries",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:computeFileLists",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/branch-summarization.ts:generateBranchSummary",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:formatFileOperations",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:extractFileOperations",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:createFileOps",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:extractFileOperations",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:getMessageFromEntry",
+   "target": "function:packages/agent/src/harness/messages.ts:createBranchSummaryMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:getMessageFromEntry",
+   "target": "function:packages/agent/src/harness/messages.ts:createCompactionSummaryMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummaryWithUsage",
+   "target": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:generateSummaryWithUsage",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:prepareCompaction",
+   "target": "function:packages/agent/src/harness/session/context.ts:buildSessionContext",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:prepareCompaction",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:extractFileOpsFromMessage",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:compact",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:computeFileLists",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:compact",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:formatFileOperations",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:generateTurnPrefixSummary",
+   "target": "function:packages/agent/src/harness/messages.ts:convertToLlm",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/agent/src/harness/compaction/compaction.ts:generateTurnPrefixSummary",
+   "target": "function:packages/agent/src/harness/compaction/utils.ts:serializeConversation",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

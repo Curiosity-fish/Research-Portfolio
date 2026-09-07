@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "tags": [
+        "npm",
+        "lockfile",
+        "shrinkwrap",
+        "依赖锁定"
+      ],
+      "complexity": "moderate",
+      "id": "config:packages/coding-agent/npm-shrinkwrap.json",
+      "type": "config",
+      "name": "npm-shrinkwrap.json",
+      "filePath": "packages/coding-agent/npm-shrinkwrap.json",
+      "summary": "tfa-coding-agent 的 npm shrinkwrap 锁文件，固定依赖树（packages/requires 映射），用于可复现安装与发布。"
+    },
+    {
+      "tags": [
+        "package-config",
+        "npm",
+        "cli",
+        "build"
+      ],
+      "complexity": "moderate",
+      "id": "config:packages/coding-agent/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/coding-agent/package.json",
+      "summary": "tfa-coding-agent 包（packages/coding-agent）的 package.json，定义 coding agent CLI（bin: tfa → dist/cli.js）、exports（./rpc-entry、./client）、tfaConfig（configDir .tfa）、构建/测试脚本、依赖与 overrides。"
+    },
+    {
+      "tags": [
+        "tsconfig",
+        "typescript",
+        "build"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/coding-agent/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/coding-agent/tsconfig.build.json",
+      "summary": "tfa-coding-agent 构建 TypeScript 配置，继承根 tsconfig.base.json 并编译 src 目录。"
+    },
+    {
+      "tags": [
+        "tsconfig",
+        "typescript",
+        "examples",
+        "paths"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/coding-agent/tsconfig.examples.json",
+      "type": "config",
+      "name": "tsconfig.examples.json",
+      "filePath": "packages/coding-agent/tsconfig.examples.json",
+      "summary": "examples 的 TypeScript 检查配置（noEmit），配置 @earendil-works/tfa-coding-agent 等 path 映射，include examples/**/*.ts。"
+    },
+    {
+      "tags": [
+        "docs",
+        "changelog",
+        "版本记录"
+      ],
+      "complexity": "complex",
+      "id": "document:packages/coding-agent/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/coding-agent/CHANGELOG.md",
+      "summary": "tfa-coding-agent 的完整版本变更日志（5398 行，至 0.83.0），记录 New Features / Breaking Changes / Added / Changed / Fixed 条目。"
+    },
+    {
+      "tags": [
+        "docs",
+        "usage-guide",
+        "coding-agent",
+        "cli"
+      ],
+      "complexity": "moderate",
+      "id": "document:packages/coding-agent/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/README.md",
+      "summary": "tfa-coding-agent 的用户文档：快速开始、providers 与 models、交互模式（editor/commands/键盘快捷键/消息队列）、sessions（管理/分支/compaction）与 settings 等。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/coding-agent/package.json",
+      "target": "file:packages/coding-agent/src/cli.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/coding-agent/package.json",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/coding-agent/npm-shrinkwrap.json",
+      "target": "config:packages/coding-agent/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/coding-agent/tsconfig.build.json",
+      "target": "file:packages/coding-agent/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/coding-agent/tsconfig.examples.json",
+      "target": "file:packages/coding-agent/examples/extensions/border-status-editor.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/coding-agent/README.md",
+      "target": "file:packages/coding-agent/src/main.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/CHANGELOG.md",
+      "target": "document:packages/coding-agent/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "type": "file",
+      "name": "jsonl-storage.test.ts",
+      "filePath": "packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "summary": "测试基于 JSONL 文件的会话存储（repository）的持久化、重开与迁移行为。",
+      "tags": [
+        "test",
+        "session",
+        "jsonl",
+        "storage",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/session/jsonl-storage.test.ts:createUsage",
+      "type": "function",
+      "name": "createUsage",
+      "filePath": "packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "lineRange": [
+        37,
+        52
+      ],
+      "summary": "构造测试用的用量对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "type": "file",
+      "name": "jsonl.test.ts",
+      "filePath": "packages/agent/test/harness/session/jsonl.test.ts",
+      "summary": "测试 JSONL 会话目录结构、session 路径解析与默认工作目录逻辑。",
+      "tags": [
+        "test",
+        "session",
+        "jsonl",
+        "paths"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/session/jsonl.test.ts:withDefaultSessionCwd",
+      "type": "function",
+      "name": "withDefaultSessionCwd",
+      "filePath": "packages/agent/test/harness/session/jsonl.test.ts",
+      "lineRange": [
+        28,
+        42
+      ],
+      "summary": "在默认会话工作目录上下文中执行测试回调。",
+      "tags": [
+        "test",
+        "fixture",
+        "paths"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/session/memory.test.ts",
+      "type": "file",
+      "name": "memory.test.ts",
+      "filePath": "packages/agent/test/harness/session/memory.test.ts",
+      "summary": "验证内存会话存储（memory session）的基础读写与生命周期。",
+      "tags": [
+        "test",
+        "session",
+        "memory",
+        "storage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/skills.test.ts",
+      "type": "file",
+      "name": "skills.test.ts",
+      "filePath": "packages/agent/test/harness/skills.test.ts",
+      "summary": "测试 skills 模块的加载、解析与路径定位逻辑。",
+      "tags": [
+        "test",
+        "harness",
+        "skills",
+        "fixture"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/agent/test/harness/system-prompt.test.ts",
+      "type": "file",
+      "name": "system-prompt.test.ts",
+      "filePath": "packages/agent/test/harness/system-prompt.test.ts",
+      "summary": "测试系统提示词（system-prompt）的生成内容。",
+      "tags": [
+        "test",
+        "harness",
+        "system-prompt",
+        "prompt"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/agent/test/harness/tools.test.ts",
+      "type": "file",
+      "name": "tools.test.ts",
+      "filePath": "packages/agent/test/harness/tools.test.ts",
+      "summary": "测试 harness 工具（read/write/edit/bash）在自定义执行环境下的行为，包括阻塞、超时与慢速输出。",
+      "tags": [
+        "test",
+        "harness",
+        "tools",
+        "concurrency"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/tools.test.ts:createTinyBmp",
+      "type": "function",
+      "name": "createTinyBmp",
+      "filePath": "packages/agent/test/harness/tools.test.ts",
+      "lineRange": [
+        118,
+        132
+      ],
+      "summary": "生成最小的 1x1 BMP 图片字节序列用于测试。",
+      "tags": [
+        "test",
+        "fixture",
+        "image",
+        "bmp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/agent/test/harness/tools.test.ts:BlockingEditExecutionEnv",
+      "type": "class",
+      "name": "BlockingEditExecutionEnv",
+      "filePath": "packages/agent/test/harness/tools.test.ts",
+      "lineRange": [
+        69,
+        92
+      ],
+      "summary": "模拟 edit 写入被阻塞的执行环境，用于测试并发写入行为。",
+      "tags": [
+        "test",
+        "mock",
+        "execution-env",
+        "concurrency"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/truncate.test.ts",
+      "type": "file",
+      "name": "truncate.test.ts",
+      "filePath": "packages/agent/test/harness/truncate.test.ts",
+      "summary": "测试 truncate 工具的字节截断边界与抽样字节限制逻辑。",
+      "tags": [
+        "test",
+        "utility",
+        "truncation",
+        "bytes"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/agent/test/harness/truncate.test.ts:assertMatchesBufferTail",
+      "type": "function",
+      "name": "assertMatchesBufferTail",
+      "filePath": "packages/agent/test/harness/truncate.test.ts",
+      "lineRange": [
+        18,
+        36
+      ],
+      "summary": "断言缓冲区尾部与期望字节序列匹配。",
+      "tags": [
+        "test",
+        "assertion",
+        "bytes"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/truncate.test.ts:sampledByteLimits",
+      "type": "function",
+      "name": "sampledByteLimits",
+      "filePath": "packages/agent/test/harness/truncate.test.ts",
+      "lineRange": [
+        38,
+        62
+      ],
+      "summary": "生成一组抽样的字节上限用于截断测试。",
+      "tags": [
+        "test",
+        "fixture",
+        "bytes"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/utils/calculate.ts",
+      "type": "file",
+      "name": "calculate.ts",
+      "filePath": "packages/agent/test/utils/calculate.ts",
+      "summary": "测试辅助模块：提供计算工具 calculate 及带用量统计的工厂函数，供 e2e 测试注册使用。",
+      "tags": [
+        "test",
+        "utility",
+        "tool",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/utils/calculate.ts:calculate",
+      "type": "function",
+      "name": "calculate",
+      "filePath": "packages/agent/test/utils/calculate.ts",
+      "lineRange": [
+        10,
+        17
+      ],
+      "summary": "使用 Function 构造器求值算术表达式并返回结果。",
+      "tags": [
+        "utility",
+        "calculator",
+        "eval"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/utils/calculate.ts:createCalculateToolWithUsage",
+      "type": "function",
+      "name": "createCalculateToolWithUsage",
+      "filePath": "packages/agent/test/utils/calculate.ts",
+      "lineRange": [
+        35,
+        40
+      ],
+      "summary": "创建带用量统计的 calculate 工具定义。",
+      "tags": [
+        "fixture",
+        "tool",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/utils/get-current-time.ts",
+      "type": "file",
+      "name": "get-current-time.ts",
+      "filePath": "packages/agent/test/utils/get-current-time.ts",
+      "summary": "测试辅助模块：提供当前时间工具 getCurrentTime，支持相对时间偏移。",
+      "tags": [
+        "test",
+        "utility",
+        "tool",
+        "fixture",
+        "time"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/utils/get-current-time.ts:getCurrentTime",
+      "type": "function",
+      "name": "getCurrentTime",
+      "filePath": "packages/agent/test/utils/get-current-time.ts",
+      "lineRange": [
+        6,
+        28
+      ],
+      "summary": "返回当前时间的多种格式化表示，支持相对时间偏移参数。",
+      "tags": [
+        "utility",
+        "time",
+        "formatting"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "function:packages/agent/test/harness/session/jsonl-storage.test.ts:createUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "function:packages/agent/test/harness/session/jsonl.test.ts:withDefaultSessionCwd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/session/testing/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/memory.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/memory.test.ts",
+      "target": "file:packages/agent/src/harness/session/testing/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/skills.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/skills.test.ts",
+      "target": "file:packages/agent/src/harness/skills.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/skills.test.ts",
+      "target": "file:packages/agent/test/harness/session-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/system-prompt.test.ts",
+      "target": "file:packages/agent/src/harness/system-prompt.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "function:packages/agent/test/harness/tools.test.ts:createTinyBmp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "class:packages/agent/test/harness/tools.test.ts:BlockingEditExecutionEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/bash.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/edit.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/read.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/write.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/utils/truncate.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/test/harness/session-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/truncate.test.ts",
+      "target": "function:packages/agent/test/harness/truncate.test.ts:assertMatchesBufferTail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/truncate.test.ts",
+      "target": "function:packages/agent/test/harness/truncate.test.ts:sampledByteLimits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/truncate.test.ts",
+      "target": "file:packages/agent/src/harness/utils/truncate.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "function:packages/agent/test/utils/calculate.ts:calculate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "function:packages/agent/test/utils/calculate.ts:calculate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "function:packages/agent/test/utils/calculate.ts:createCalculateToolWithUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "function:packages/agent/test/utils/calculate.ts:createCalculateToolWithUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/utils/calculate.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/utils/get-current-time.ts",
+      "target": "function:packages/agent/test/utils/get-current-time.ts:getCurrentTime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/utils/get-current-time.ts",
+      "target": "function:packages/agent/test/utils/get-current-time.ts:getCurrentTime",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/agent/test/utils/get-current-time.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-storage.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/session/testing/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/memory.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/memory.test.ts",
+      "target": "file:packages/agent/src/harness/session/testing/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/skills.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/skills.test.ts",
+      "target": "file:packages/agent/src/harness/skills.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/system-prompt.test.ts",
+      "target": "file:packages/agent/src/harness/system-prompt.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/bash.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/edit.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/read.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/tools/write.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/tools.test.ts",
+      "target": "file:packages/agent/src/harness/utils/truncate.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/truncate.test.ts",
+      "target": "file:packages/agent/src/harness/utils/truncate.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "function:packages/agent/test/harness/truncate.test.ts:assertMatchesBufferTail",
+      "target": "function:packages/agent/src/harness/utils/truncate.ts:truncateTail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

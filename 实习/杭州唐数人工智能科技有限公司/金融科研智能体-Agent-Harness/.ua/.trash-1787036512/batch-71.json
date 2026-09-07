@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/build-binaries.sh",
+      "type": "file",
+      "name": "build-binaries.sh",
+      "filePath": "scripts/build-binaries.sh",
+      "summary": "本地构建 tfa 全平台二进制(镜像 CI workflow):支持跳过安装/依赖/构建、离线模型数据、单平台构建(--platform)与自定义输出目录。",
+      "tags": [
+        "script",
+        "build",
+        "binaries",
+        "release",
+        "ci-cd"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/create-source-archive.sh",
+      "type": "file",
+      "name": "create-source-archive.sh",
+      "filePath": "scripts/create-source-archive.sh",
+      "summary": "为 GitHub release 创建确定性源码归档:校验版本与 coding-agent package.json 一致,用 git read-tree/write-tree 生成可重现 tar.gz,并验证必需路径与生成模型数据。",
+      "tags": [
+        "script",
+        "archive",
+        "release",
+        "deterministic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/update-source-imports-to-ts.sh",
+      "type": "file",
+      "name": "update-source-imports-to-ts.sh",
+      "filePath": "scripts/update-source-imports-to-ts.sh",
+      "summary": "批量把包源码中的相对 import 说明符从 .js 重写为 .ts,配合 TypeScript 的 rewriteRelativeImportExtensions 在构建输出时还原为 .js。",
+      "tags": [
+        "script",
+        "migration",
+        "typescript",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/create-source-archive.sh",
+      "target": "file:scripts/build-binaries.sh",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

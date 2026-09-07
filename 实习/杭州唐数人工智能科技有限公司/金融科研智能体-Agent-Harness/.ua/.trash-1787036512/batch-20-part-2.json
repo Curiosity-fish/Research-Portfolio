@@ -1,0 +1,1451 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/agent/test/agent-loop.test.ts",
+      "type": "file",
+      "name": "agent-loop.test.ts",
+      "filePath": "packages/agent/test/agent-loop.test.ts",
+      "summary": "针对 agent 主循环（agent-loop）的大型集成测试，覆盖消息流转、模型调用与工具执行等场景。",
+      "tags": [
+        "test",
+        "agent",
+        "integration",
+        "agent-loop"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/agent-loop.test.ts:createUsage",
+      "type": "function",
+      "name": "createUsage",
+      "filePath": "packages/agent/test/agent-loop.test.ts",
+      "lineRange": [
+        29,
+        38
+      ],
+      "summary": "构造测试用的用量（usage）对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/agent-loop.test.ts:createModel",
+      "type": "function",
+      "name": "createModel",
+      "filePath": "packages/agent/test/agent-loop.test.ts",
+      "lineRange": [
+        40,
+        53
+      ],
+      "summary": "构造测试用的模型 mock 对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/agent-loop.test.ts:createAssistantMessage",
+      "type": "function",
+      "name": "createAssistantMessage",
+      "filePath": "packages/agent/test/agent-loop.test.ts",
+      "lineRange": [
+        55,
+        69
+      ],
+      "summary": "构造助手（assistant）消息对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/e2e.test.ts",
+      "type": "file",
+      "name": "e2e.test.ts",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "summary": "端到端测试，验证注册、基础提示、工具执行、中止、状态更新与多轮对话等完整运行流程。",
+      "tags": [
+        "test",
+        "e2e",
+        "agent",
+        "integration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/e2e.test.ts:basicPrompt",
+      "type": "function",
+      "name": "basicPrompt",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "lineRange": [
+        39,
+        60
+      ],
+      "summary": "验证基础提示词下单轮模型响应的测试用例。",
+      "tags": [
+        "test",
+        "e2e",
+        "prompt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/e2e.test.ts:toolExecution",
+      "type": "function",
+      "name": "toolExecution",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "lineRange": [
+        62,
+        100
+      ],
+      "summary": "验证 agent 执行工具并返回结果的测试用例。",
+      "tags": [
+        "test",
+        "e2e",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/e2e.test.ts:abortExecution",
+      "type": "function",
+      "name": "abortExecution",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "lineRange": [
+        102,
+        128
+      ],
+      "summary": "验证中止信号能终止正在运行的 agent 的测试用例。",
+      "tags": [
+        "test",
+        "e2e",
+        "abort"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/e2e.test.ts:stateUpdates",
+      "type": "function",
+      "name": "stateUpdates",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "lineRange": [
+        130,
+        161
+      ],
+      "summary": "验证状态更新回调收到正确会话状态的测试用例。",
+      "tags": [
+        "test",
+        "e2e",
+        "state"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/e2e.test.ts:multiTurnConversation",
+      "type": "function",
+      "name": "multiTurnConversation",
+      "filePath": "packages/agent/test/e2e.test.ts",
+      "lineRange": [
+        163,
+        183
+      ],
+      "summary": "验证多轮对话中消息上下文累积的测试用例。",
+      "tags": [
+        "test",
+        "e2e",
+        "conversation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "type": "file",
+      "name": "agent-harness-scaffold.test.ts",
+      "filePath": "packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "summary": "测试 agent harness 脚手架：会话创建、harness 构建与操作开始回调。",
+      "tags": [
+        "test",
+        "harness",
+        "scaffold",
+        "agent"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "type": "file",
+      "name": "branch-summarization.test.ts",
+      "filePath": "packages/agent/test/harness/branch-summarization.test.ts",
+      "summary": "验证分支摘要（branch summarization）对消息序列的处理行为。",
+      "tags": [
+        "test",
+        "harness",
+        "compaction",
+        "branch-summary"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/compaction.test.ts",
+      "type": "file",
+      "name": "compaction.test.ts",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "summary": "测试 compaction 模块，覆盖 thinking 级别、模型变更与消息条目创建等压缩逻辑。",
+      "tags": [
+        "test",
+        "harness",
+        "compaction",
+        "session"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createMockUsage",
+      "type": "function",
+      "name": "createMockUsage",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        48,
+        57
+      ],
+      "summary": "构造 mock 用量（usage）对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createAssistantMessage",
+      "type": "function",
+      "name": "createAssistantMessage",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        67,
+        78
+      ],
+      "summary": "构造测试用助手消息。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createMessageEntry",
+      "type": "function",
+      "name": "createMessageEntry",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        80,
+        89
+      ],
+      "summary": "构造普通消息条目（entry）。",
+      "tags": [
+        "test",
+        "fixture",
+        "entry"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createCompactionEntry",
+      "type": "function",
+      "name": "createCompactionEntry",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        91,
+        106
+      ],
+      "summary": "构造压缩（compaction）消息条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "compaction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createThinkingLevelEntry",
+      "type": "function",
+      "name": "createThinkingLevelEntry",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        108,
+        117
+      ],
+      "summary": "构造带思考级别字段的条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "thinking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createModelChangeEntry",
+      "type": "function",
+      "name": "createModelChangeEntry",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        119,
+        129
+      ],
+      "summary": "构造模型变更条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createFauxModel",
+      "type": "function",
+      "name": "createFauxModel",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        135,
+        149
+      ],
+      "summary": "构造返回固定响应的模拟模型。",
+      "tags": [
+        "test",
+        "fixture",
+        "model",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/compaction.test.ts:createModelsWithSimpleResponses",
+      "type": "function",
+      "name": "createModelsWithSimpleResponses",
+      "filePath": "packages/agent/test/harness/compaction.test.ts",
+      "lineRange": [
+        151,
+        160
+      ],
+      "summary": "构造一组返回简单响应的模拟模型。",
+      "tags": [
+        "test",
+        "fixture",
+        "model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "type": "file",
+      "name": "nodejs-env.test.ts",
+      "filePath": "packages/agent/test/harness/nodejs-env.test.ts",
+      "summary": "测试 Node.js 执行环境的子进程执行、超时与输出捕获行为。",
+      "tags": [
+        "test",
+        "harness",
+        "nodejs",
+        "exec"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/nodejs-env.test.ts:withTimeout",
+      "type": "function",
+      "name": "withTimeout",
+      "filePath": "packages/agent/test/harness/nodejs-env.test.ts",
+      "lineRange": [
+        15,
+        32
+      ],
+      "summary": "为 Promise 添加超时控制，超时则拒绝。",
+      "tags": [
+        "test",
+        "timeout",
+        "async"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/nodejs-env.test.ts:createInheritedStdioCommand",
+      "type": "function",
+      "name": "createInheritedStdioCommand",
+      "filePath": "packages/agent/test/harness/nodejs-env.test.ts",
+      "lineRange": [
+        38,
+        50
+      ],
+      "summary": "构造继承 stdio 的子进程命令参数。",
+      "tags": [
+        "test",
+        "exec",
+        "stdio"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "type": "file",
+      "name": "prompt-templates.test.ts",
+      "filePath": "packages/agent/test/harness/prompt-templates.test.ts",
+      "summary": "测试 prompt 模板渲染与 skills 资源格式化的相关内容。",
+      "tags": [
+        "test",
+        "harness",
+        "prompt",
+        "skills"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/agent/test/harness/reducer.test.ts",
+      "type": "file",
+      "name": "reducer.test.ts",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "summary": "针对会话 reducer 的全面测试，覆盖各类事件条目、恢复切片与非法输入处理。",
+      "tags": [
+        "test",
+        "harness",
+        "reducer",
+        "session"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:assistantMessage",
+      "type": "function",
+      "name": "assistantMessage",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        44,
+        61
+      ],
+      "summary": "构造助手消息条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:toolResultMessage",
+      "type": "function",
+      "name": "toolResultMessage",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        63,
+        72
+      ],
+      "summary": "构造工具结果消息条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "message",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:runStarted",
+      "type": "function",
+      "name": "runStarted",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        89,
+        102
+      ],
+      "summary": "构造 run 开始事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "event"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:compactionStarted",
+      "type": "function",
+      "name": "compactionStarted",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        104,
+        114
+      ],
+      "summary": "构造压缩开始事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "compaction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:navigationStarted",
+      "type": "function",
+      "name": "navigationStarted",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        116,
+        126
+      ],
+      "summary": "构造导航开始事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "navigation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:attempt",
+      "type": "function",
+      "name": "attempt",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        128,
+        147
+      ],
+      "summary": "构造一次运行尝试（attempt）事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "event"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:toolStarted",
+      "type": "function",
+      "name": "toolStarted",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        161,
+        182
+      ],
+      "summary": "构造工具开始事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:queueCancelled",
+      "type": "function",
+      "name": "queueCancelled",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        193,
+        203
+      ],
+      "summary": "构造队列取消事件条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "queue"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:usageRecord",
+      "type": "function",
+      "name": "usageRecord",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        212,
+        231
+      ],
+      "summary": "构造用量记录条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:compactionEntry",
+      "type": "function",
+      "name": "compactionEntry",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        233,
+        244
+      ],
+      "summary": "构造压缩条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "compaction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:branchSummaryEntry",
+      "type": "function",
+      "name": "branchSummaryEntry",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        246,
+        256
+      ],
+      "summary": "构造分支摘要条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "branch-summary"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:recoverySlice",
+      "type": "function",
+      "name": "recoverySlice",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        258,
+        270
+      ],
+      "summary": "构造恢复切片（recovery slice）条目。",
+      "tags": [
+        "test",
+        "fixture",
+        "recovery"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:reductionInput",
+      "type": "function",
+      "name": "reductionInput",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        278,
+        296
+      ],
+      "summary": "构造 reducer 的输入数据。",
+      "tags": [
+        "test",
+        "fixture",
+        "reducer"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/reducer.test.ts:validPrefixes",
+      "type": "function",
+      "name": "validPrefixes",
+      "filePath": "packages/agent/test/harness/reducer.test.ts",
+      "lineRange": [
+        466,
+        477
+      ],
+      "summary": "枚举用于校验 reducer 输入的有效前缀集合。",
+      "tags": [
+        "test",
+        "validation",
+        "reducer"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/resource-formatting.test.ts",
+      "type": "file",
+      "name": "resource-formatting.test.ts",
+      "filePath": "packages/agent/test/harness/resource-formatting.test.ts",
+      "summary": "验证 prompt 模板中资源格式化（resource formatting）的行为。",
+      "tags": [
+        "test",
+        "harness",
+        "prompt",
+        "formatting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/session-test-utils.ts",
+      "type": "file",
+      "name": "session-test-utils.ts",
+      "filePath": "packages/agent/test/harness/session-test-utils.ts",
+      "summary": "提供测试辅助函数 createTempDir，供 harness 测试创建唯一临时目录。",
+      "tags": [
+        "test",
+        "utility",
+        "fixture",
+        "tempdir"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/agent/test/harness/session-test-utils.ts:createTempDir",
+      "type": "function",
+      "name": "createTempDir",
+      "filePath": "packages/agent/test/harness/session-test-utils.ts",
+      "lineRange": [
+        8,
+        13
+      ],
+      "summary": "在系统临时目录创建唯一子目录并返回其路径。",
+      "tags": [
+        "test",
+        "fixture",
+        "tempdir"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "type": "file",
+      "name": "jsonl-codec.test.ts",
+      "filePath": "packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "summary": "测试 JSONL 编解码器的 header 与 mutation 记录往返序列化。",
+      "tags": [
+        "test",
+        "session",
+        "jsonl",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "function:packages/agent/test/agent-loop.test.ts:createUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "function:packages/agent/test/agent-loop.test.ts:createModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "function:packages/agent/test/agent-loop.test.ts:createAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/agent-loop.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "function:packages/agent/test/e2e.test.ts:basicPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "function:packages/agent/test/e2e.test.ts:toolExecution",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "function:packages/agent/test/e2e.test.ts:abortExecution",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "function:packages/agent/test/e2e.test.ts:stateUpdates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "function:packages/agent/test/e2e.test.ts:multiTurnConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "file:packages/agent/test/utils/calculate.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/harness/agent-harness.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createMockUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createMessageEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createCompactionEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createThinkingLevelEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createModelChangeEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createFauxModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "function:packages/agent/test/harness/compaction.test.ts:createModelsWithSimpleResponses",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/compaction/compaction.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/session/context.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/session/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "function:packages/agent/test/harness/nodejs-env.test.ts:withTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "function:packages/agent/test/harness/nodejs-env.test.ts:createInheritedStdioCommand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/utils/shell-output.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/test/harness/session-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "target": "file:packages/agent/src/harness/prompt-templates.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "target": "file:packages/agent/test/harness/session-test-utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:assistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:toolResultMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:runStarted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:compactionStarted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:navigationStarted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:attempt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:toolStarted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:queueCancelled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:usageRecord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:compactionEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:branchSummaryEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:recoverySlice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:reductionInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "function:packages/agent/test/harness/reducer.test.ts:validPrefixes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/agent/src/harness/reducer.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/agent/src/harness/session/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/resource-formatting.test.ts",
+      "target": "file:packages/agent/src/harness/prompt-templates.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/resource-formatting.test.ts",
+      "target": "file:packages/agent/src/harness/skills.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session-test-utils.ts",
+      "target": "function:packages/agent/test/harness/session-test-utils.ts:createTempDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/agent/test/harness/session-test-utils.ts",
+      "target": "function:packages/agent/test/harness/session-test-utils.ts:createTempDir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/jsonl/codec.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/jsonl/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/state.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/agent-loop.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/agent-loop.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/e2e.test.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/harness/agent-harness.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/agent-harness-scaffold.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/harness/compaction/branch-summarization.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/harness/session/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/branch-summarization.test.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/compaction/compaction.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/session/context.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/session/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/agent/src/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/compaction.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/nodejs-env.test.ts",
+      "target": "file:packages/agent/src/harness/utils/shell-output.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "target": "file:packages/agent/src/harness/env/nodejs.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/prompt-templates.test.ts",
+      "target": "file:packages/agent/src/harness/prompt-templates.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/agent/src/harness/reducer.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/agent/src/harness/session/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/reducer.test.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/resource-formatting.test.ts",
+      "target": "file:packages/agent/src/harness/prompt-templates.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/resource-formatting.test.ts",
+      "target": "file:packages/agent/src/harness/skills.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/jsonl/codec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/jsonl/types.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/agent/test/harness/session/jsonl-codec.test.ts",
+      "target": "file:packages/agent/src/harness/session/state.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "function:packages/agent/test/e2e.test.ts:toolExecution",
+      "target": "function:packages/agent/test/utils/calculate.ts:calculate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

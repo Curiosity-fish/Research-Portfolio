@@ -1,0 +1,809 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/tui/test/overlay-options.test.ts",
+   "type": "file",
+   "name": "overlay-options.test.ts",
+   "filePath": "packages/tui/test/overlay-options.test.ts",
+   "summary": "Overlay 选项（对齐、边距、尺寸）的测试。",
+   "tags": [
+    "test",
+    "overlay",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/test/overlay-options.test.ts:StaticOverlay",
+   "type": "class",
+   "name": "StaticOverlay",
+   "filePath": "packages/tui/test/overlay-options.test.ts",
+   "summary": "测试用静态 overlay 组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    7,
+    23
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/overlay-options.test.ts:EmptyContent",
+   "type": "class",
+   "name": "EmptyContent",
+   "filePath": "packages/tui/test/overlay-options.test.ts",
+   "summary": "测试用空内容组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    25,
+    30
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/overlay-short-content.test.ts",
+   "type": "file",
+   "name": "overlay-short-content.test.ts",
+   "filePath": "packages/tui/test/overlay-short-content.test.ts",
+   "summary": "Overlay 短内容渲染的回归测试。",
+   "tags": [
+    "test",
+    "overlay",
+    "regression"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/test/overlay-short-content.test.ts:SimpleContent",
+   "type": "class",
+   "name": "SimpleContent",
+   "filePath": "packages/tui/test/overlay-short-content.test.ts",
+   "summary": "测试用简单内容组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    7,
+    18
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/overlay-short-content.test.ts:SimpleOverlay",
+   "type": "class",
+   "name": "SimpleOverlay",
+   "filePath": "packages/tui/test/overlay-short-content.test.ts",
+   "summary": "测试用简单 overlay 组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    20,
+    25
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "type": "file",
+   "name": "regression-overlay-cjk-boundary.test.ts",
+   "filePath": "packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "summary": "CJK 字符在 overlay 边界处渲染的回归测试。",
+   "tags": [
+    "test",
+    "overlay",
+    "cjk",
+    "regression"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/test/select-list.test.ts",
+   "type": "file",
+   "name": "select-list.test.ts",
+   "filePath": "packages/tui/test/select-list.test.ts",
+   "summary": "SelectList 组件导航与渲染的测试。",
+   "tags": [
+    "test",
+    "select-list"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/tui/test/stdin-buffer.test.ts",
+   "type": "file",
+   "name": "stdin-buffer.test.ts",
+   "filePath": "packages/tui/test/stdin-buffer.test.ts",
+   "summary": "stdin 缓冲切分与序列识别逻辑的测试。",
+   "tags": [
+    "test",
+    "stdin-buffer",
+    "terminal"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/tui/test/terminal-image.test.ts",
+   "type": "file",
+   "name": "terminal-image.test.ts",
+   "filePath": "packages/tui/test/terminal-image.test.ts",
+   "summary": "terminal-image 编码、能力探测与图片解析的测试。",
+   "tags": [
+    "test",
+    "image",
+    "terminal"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/tui/test/terminal-image.test.ts:withEnv",
+   "type": "function",
+   "name": "withEnv",
+   "filePath": "packages/tui/test/terminal-image.test.ts",
+   "summary": "函数 withEnv：实现其核心逻辑，参数：overrides、fn。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    47,
+    65
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/test-themes.ts",
+   "type": "file",
+   "name": "test-themes.ts",
+   "filePath": "packages/tui/test/test-themes.ts",
+   "summary": "TUI 测试共享主题色板定义。",
+   "tags": [
+    "test-util",
+    "theme",
+    "data"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/test/truncated-text.test.ts",
+   "type": "file",
+   "name": "truncated-text.test.ts",
+   "filePath": "packages/tui/test/truncated-text.test.ts",
+   "summary": "TruncatedText 组件行为的测试。",
+   "tags": [
+    "test",
+    "truncated-text"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "type": "file",
+   "name": "tui-overlay-style-leak.test.ts",
+   "filePath": "packages/tui/test/tui-overlay-style-leak.test.ts",
+   "summary": "Overlay 样式泄漏的回归测试。",
+   "tags": [
+    "test",
+    "overlay",
+    "regression"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/tui-overlay-style-leak.test.ts:StaticLines",
+   "type": "class",
+   "name": "StaticLines",
+   "filePath": "packages/tui/test/tui-overlay-style-leak.test.ts",
+   "summary": "类 StaticLines：提供相关能力。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    8,
+    20
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/tui-overlay-style-leak.test.ts:StaticOverlay",
+   "type": "class",
+   "name": "StaticOverlay",
+   "filePath": "packages/tui/test/tui-overlay-style-leak.test.ts",
+   "summary": "类 StaticOverlay：提供相关能力。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    34
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/tui-render.test.ts",
+   "type": "file",
+   "name": "tui-render.test.ts",
+   "filePath": "packages/tui/test/tui-render.test.ts",
+   "summary": "TUI 整体渲染的集成测试。",
+   "tags": [
+    "test",
+    "tui",
+    "render"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/test/tui-render.test.ts:TestComponent",
+   "type": "class",
+   "name": "TestComponent",
+   "filePath": "packages/tui/test/tui-render.test.ts",
+   "summary": "测试用组件。",
+   "tags": [
+    "class",
+    "component",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    19,
+    25
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/tui-render.test.ts:InputComponent",
+   "type": "class",
+   "name": "InputComponent",
+   "filePath": "packages/tui/test/tui-render.test.ts",
+   "summary": "测试用输入组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    27,
+    38
+   ]
+  },
+  {
+   "id": "class:packages/tui/test/tui-render.test.ts:LoggingVirtualTerminal",
+   "type": "class",
+   "name": "LoggingVirtualTerminal",
+   "filePath": "packages/tui/test/tui-render.test.ts",
+   "summary": "测试用记录日志的虚拟终端。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    40,
+    55
+   ]
+  },
+  {
+   "id": "function:packages/tui/test/tui-render.test.ts:withEnv",
+   "type": "function",
+   "name": "withEnv",
+   "filePath": "packages/tui/test/tui-render.test.ts",
+   "summary": "函数 withEnv：实现其核心逻辑，参数：updates、run。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    57,
+    79
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/tui-shrink.test.ts",
+   "type": "file",
+   "name": "tui-shrink.test.ts",
+   "filePath": "packages/tui/test/tui-shrink.test.ts",
+   "summary": "TUI 尺寸不足（shrink）时渲染的测试。",
+   "tags": [
+    "test",
+    "tui",
+    "shrink"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/test/tui-shrink.test.ts:Lines",
+   "type": "class",
+   "name": "Lines",
+   "filePath": "packages/tui/test/tui-shrink.test.ts",
+   "summary": "测试用行容器组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    7,
+    19
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/wrap-ansi.test.ts",
+   "type": "file",
+   "name": "wrap-ansi.test.ts",
+   "filePath": "packages/tui/test/wrap-ansi.test.ts",
+   "summary": "ANSI 感知换行的测试。",
+   "tags": [
+    "test",
+    "wrap",
+    "ansi"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/tui/test/overlay-options.test.ts",
+   "target": "class:packages/tui/test/overlay-options.test.ts:StaticOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-options.test.ts",
+   "target": "class:packages/tui/test/overlay-options.test.ts:EmptyContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-options.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-options.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-options.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/overlay-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/overlay-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/overlay-short-content.test.ts",
+   "target": "class:packages/tui/test/overlay-short-content.test.ts:SimpleContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-short-content.test.ts",
+   "target": "class:packages/tui/test/overlay-short-content.test.ts:SimpleOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/overlay-short-content.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-short-content.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/overlay-short-content.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/overlay-short-content.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/overlay-short-content.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/regression-overlay-cjk-boundary.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/select-list.test.ts",
+   "target": "file:packages/tui/src/components/select-list.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/select-list.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "file:packages/tui/test/select-list.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/select-list.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/stdin-buffer.test.ts",
+   "target": "file:packages/tui/src/stdin-buffer.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/stdin-buffer.ts",
+   "target": "file:packages/tui/test/stdin-buffer.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/terminal-image.test.ts",
+   "target": "function:packages/tui/test/terminal-image.test.ts:withEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/terminal-image.test.ts",
+   "target": "file:packages/tui/src/components/image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/terminal-image.test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/terminal-image.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/test/terminal-image.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/terminal-image.ts",
+   "target": "file:packages/tui/test/terminal-image.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/terminal-image.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/test-themes.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/tui/test/test-themes.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/truncated-text.test.ts",
+   "target": "file:packages/tui/src/components/truncated-text.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/truncated-text.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/truncated-text.ts",
+   "target": "file:packages/tui/test/truncated-text.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/truncated-text.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "target": "class:packages/tui/test/tui-overlay-style-leak.test.ts:StaticLines",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "target": "class:packages/tui/test/tui-overlay-style-leak.test.ts:StaticOverlay",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/tui-overlay-style-leak.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "class:packages/tui/test/tui-render.test.ts:TestComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "class:packages/tui/test/tui-render.test.ts:InputComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "class:packages/tui/test/tui-render.test.ts:LoggingVirtualTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "function:packages/tui/test/tui-render.test.ts:withEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "file:packages/tui/src/components/image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-render.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/test/tui-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/terminal-image.ts",
+   "target": "file:packages/tui/test/tui-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/tui-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/tui-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/tui-shrink.test.ts",
+   "target": "class:packages/tui/test/tui-shrink.test.ts:Lines",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/tui-shrink.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-shrink.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/tui-shrink.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/tui/test/tui-shrink.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/tui/test/tui-shrink.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/wrap-ansi.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/wrap-ansi.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

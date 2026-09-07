@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "tags": [
+        "docs",
+        "skill",
+        "example",
+        "extension"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+      "summary": "dynamic-resources 扩展示例提供的示例 skill（frontmatter 声明 name/description），由扩展的 resources_discover 事件动态加载并注入 harness。"
+    },
+    {
+      "tags": [
+        "theme",
+        "json",
+        "example",
+        "extension"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.json",
+      "type": "config",
+      "name": "dynamic.json",
+      "filePath": "packages/coding-agent/examples/extensions/dynamic-resources/dynamic.json",
+      "summary": "dynamic-resources 示例的主题（theme）配置，定义 vars 调色板与 colors token 映射（遵循 theme-schema），演示扩展通过 resources_discover 动态提供 JSON 资源。"
+    },
+    {
+      "tags": [
+        "docs",
+        "prompt-template",
+        "example",
+        "extension"
+      ],
+      "complexity": "simple",
+      "id": "document:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.md",
+      "type": "document",
+      "name": "dynamic.md",
+      "filePath": "packages/coding-agent/examples/extensions/dynamic-resources/dynamic.md",
+      "summary": "dynamic-resources 示例的 prompt template（frontmatter 含 description），提示模型总结仓库结构并提及构建/测试命令，由 resources_discover 动态加载。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+      "target": "file:packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.json",
+      "target": "file:packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.md",
+      "target": "file:packages/coding-agent/examples/extensions/dynamic-resources/index.ts",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+      "target": "config:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.md",
+      "target": "config:packages/coding-agent/examples/extensions/dynamic-resources/dynamic.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

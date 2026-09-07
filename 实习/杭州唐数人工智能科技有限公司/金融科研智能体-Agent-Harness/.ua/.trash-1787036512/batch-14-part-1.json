@@ -1,0 +1,866 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "type": "file",
+   "name": "print-mode.ts",
+   "filePath": "packages/coding-agent/src/modes/print-mode.ts",
+   "summary": "实现 print 模式（runPrintMode）：以纯文本打印会话事件输出，用于脚本化/管道场景。",
+   "tags": [
+    "mode",
+    "print",
+    "cli",
+    "输出"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/print-mode.ts:runPrintMode",
+   "type": "function",
+   "name": "runPrintMode",
+   "filePath": "packages/coding-agent/src/modes/print-mode.ts",
+   "lineRange": [
+    33,
+    169
+   ],
+   "summary": "运行 print 模式主流程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "type": "file",
+   "name": "jsonl.ts",
+   "filePath": "packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "summary": "提供 JSONL 行读写工具：序列化 JSON 行并附加行读取器以按行解析协议消息。",
+   "tags": [
+    "rpc",
+    "jsonl",
+    "协议"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:serializeJsonLine",
+   "type": "function",
+   "name": "serializeJsonLine",
+   "filePath": "packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "lineRange": [
+    10,
+    12
+   ],
+   "summary": "将对象序列化为 JSONL 行。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:attachJsonlLineReader",
+   "type": "function",
+   "name": "attachJsonlLineReader",
+   "filePath": "packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "lineRange": [
+    21,
+    58
+   ],
+   "summary": "为流附加按行解析的 JSONL 读取器。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "type": "file",
+   "name": "rpc-client.ts",
+   "filePath": "packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "summary": "实现 RPC 客户端（RpcClient）：与 RPC 服务进程通信，发送命令、监听事件并维护会话状态。",
+   "tags": [
+    "rpc",
+    "client",
+    "进程通信",
+    "事件"
+   ],
+   "complexity": "complex",
+   "languageNotes": "超大类（601 行、45 个方法），覆盖 RPC 协议的全部客户端行为。"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/rpc/rpc-client.ts:RpcClient",
+   "type": "class",
+   "name": "RpcClient",
+   "filePath": "packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "lineRange": [
+    56,
+    601
+   ],
+   "summary": "RPC 协议客户端。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "type": "file",
+   "name": "rpc-mode.ts",
+   "filePath": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "summary": "实现 RPC 模式（runRpcMode）：在子进程中提供 JSON-RPC 服务，处理命令、会话与扩展 UI 请求。",
+   "tags": [
+    "rpc",
+    "mode",
+    "服务",
+    "json-rpc"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/rpc/rpc-mode.ts:runRpcMode",
+   "type": "function",
+   "name": "runRpcMode",
+   "filePath": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "lineRange": [
+    54,
+    817
+   ],
+   "summary": "运行 RPC 模式服务主流程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "type": "file",
+   "name": "rpc-types.ts",
+   "filePath": "packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "summary": "定义 RPC 模式共享类型：命令、响应、会话状态与 UI 请求/响应类型（re-export 组合）。",
+   "tags": [
+    "rpc",
+    "types",
+    "协议"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/abort.ts",
+   "type": "file",
+   "name": "abort.ts",
+   "filePath": "packages/coding-agent/src/utils/abort.ts",
+   "summary": "提供 abort 信号工具：构造操作信号并实现与 abort 信号的竞速。",
+   "tags": [
+    "utility",
+    "abort",
+    "异步"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/abort.ts:operationSignal",
+   "type": "function",
+   "name": "operationSignal",
+   "filePath": "packages/coding-agent/src/utils/abort.ts",
+   "lineRange": [
+    9,
+    11
+   ],
+   "summary": "构造操作信号。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "function",
+   "name": "raceWithAbortSignal",
+   "filePath": "packages/coding-agent/src/utils/abort.ts",
+   "lineRange": [
+    14,
+    48
+   ],
+   "summary": "将 Promise 与 abort 信号竞速。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/json.ts",
+   "type": "file",
+   "name": "json.ts",
+   "filePath": "packages/coding-agent/src/utils/json.ts",
+   "summary": "提供 JSON 工具：剥离 JSON 注释（stripJsonComments）。",
+   "tags": [
+    "utility",
+    "json",
+    "解析"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/json.ts:stripJsonComments",
+   "type": "function",
+   "name": "stripJsonComments",
+   "filePath": "packages/coding-agent/src/utils/json.ts",
+   "lineRange": [
+    2,
+    6
+   ],
+   "summary": "移除 JSON 文本中的注释。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/sleep.ts",
+   "type": "file",
+   "name": "sleep.ts",
+   "filePath": "packages/coding-agent/src/utils/sleep.ts",
+   "summary": "提供延时工具函数 sleep。",
+   "tags": [
+    "utility",
+    "异步"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/sleep.ts:sleep",
+   "type": "function",
+   "name": "sleep",
+   "filePath": "packages/coding-agent/src/utils/sleep.ts",
+   "lineRange": [
+    4,
+    18
+   ],
+   "summary": "延时指定毫秒数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+   "type": "file",
+   "name": "tool-result-images.ts",
+   "filePath": "packages/coding-agent/src/utils/tool-result-images.ts",
+   "summary": "规范化工具结果中的图片数据（normalizeToolResultImages），供渲染与模型输入使用。",
+   "tags": [
+    "utility",
+    "图片",
+    "工具结果"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tool-result-images.ts:normalizeToolResultImages",
+   "type": "function",
+   "name": "normalizeToolResultImages",
+   "filePath": "packages/coding-agent/src/utils/tool-result-images.ts",
+   "lineRange": [
+    22,
+    62
+   ],
+   "summary": "规范化工具结果中的图片项。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "file",
+   "name": "agent-session-auto-compaction-queue.test.ts",
+   "filePath": "packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "summary": "测试自动压缩队列：会话在消息排队时自动触发压缩的行为。",
+   "tags": [
+    "test",
+    "compaction",
+    "队列",
+    "agent-session"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "file",
+   "name": "agent-session-branching.test.ts",
+   "filePath": "packages/coding-agent/test/agent-session-branching.test.ts",
+   "summary": "测试会话分支（branching）：fork 与切换分支时的上下文处理。",
+   "tags": [
+    "test",
+    "branching",
+    "agent-session"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "function:packages/coding-agent/src/modes/print-mode.ts:runPrintMode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "function:packages/coding-agent/src/modes/print-mode.ts:runPrintMode",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:serializeJsonLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:serializeJsonLine",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:attachJsonlLineReader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:attachJsonlLineReader",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "class:packages/coding-agent/src/modes/rpc/rpc-client.ts:RpcClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "class:packages/coding-agent/src/modes/rpc/rpc-client.ts:RpcClient",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/rpc-mode.ts:runRpcMode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "function:packages/coding-agent/src/modes/rpc/rpc-mode.ts:runRpcMode",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/abort.ts",
+   "target": "function:packages/coding-agent/src/utils/abort.ts:operationSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/abort.ts",
+   "target": "function:packages/coding-agent/src/utils/abort.ts:operationSignal",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/abort.ts",
+   "target": "function:packages/coding-agent/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/abort.ts",
+   "target": "function:packages/coding-agent/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/json.ts",
+   "target": "function:packages/coding-agent/src/utils/json.ts:stripJsonComments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/json.ts",
+   "target": "function:packages/coding-agent/src/utils/json.ts:stripJsonComments",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/sleep.ts",
+   "target": "function:packages/coding-agent/src/utils/sleep.ts:sleep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/sleep.ts",
+   "target": "function:packages/coding-agent/src/utils/sleep.ts:sleep",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+   "target": "function:packages/coding-agent/src/utils/tool-result-images.ts:normalizeToolResultImages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+   "target": "function:packages/coding-agent/src/utils/tool-result-images.ts:normalizeToolResultImages",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/coding-agent/src/core/output-guard.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/coding-agent/src/modes/json-event.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/print-mode.ts",
+   "target": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/modes/json-event.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-client.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/core/output-guard.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/modes/json-event.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/jsonl.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/coding-agent/src/core/compaction/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-types.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tool-result-images.ts",
+   "target": "file:packages/coding-agent/src/utils/image-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "target": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/agent-session-branching.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/coding-agent/src/modes/rpc/rpc-mode.ts:runRpcMode",
+   "target": "function:packages/coding-agent/src/modes/rpc/jsonl.ts:attachJsonlLineReader",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

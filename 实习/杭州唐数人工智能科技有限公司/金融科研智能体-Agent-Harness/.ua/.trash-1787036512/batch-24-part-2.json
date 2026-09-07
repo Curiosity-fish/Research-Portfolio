@@ -1,0 +1,1237 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "type": "file",
+      "name": "azure-openai-responses.ts",
+      "filePath": "packages/ai/src/providers/azure-openai-responses.ts",
+      "summary": "实现 Azure OpenAI Responses provider 定义。",
+      "tags": [
+        "provider",
+        "azure",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/azure-openai-responses.ts:azureOpenAIResponsesProvider",
+      "type": "function",
+      "name": "azureOpenAIResponsesProvider",
+      "filePath": "packages/ai/src/providers/azure-openai-responses.ts",
+      "lineRange": [
+        6,
+        14
+      ],
+      "summary": "返回 Azure OpenAI Responses provider 定义。",
+      "tags": [
+        "provider",
+        "azure",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/baseten.models.ts",
+      "type": "file",
+      "name": "baseten.models.ts",
+      "filePath": "packages/ai/src/providers/baseten.models.ts",
+      "summary": "定义 Baseten 内置模型数据常量。",
+      "tags": [
+        "models",
+        "baseten",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/baseten.ts",
+      "type": "file",
+      "name": "baseten.ts",
+      "filePath": "packages/ai/src/providers/baseten.ts",
+      "summary": "实现 Baseten provider 定义。",
+      "tags": [
+        "provider",
+        "baseten",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/baseten.ts:basetenProvider",
+      "type": "function",
+      "name": "basetenProvider",
+      "filePath": "packages/ai/src/providers/baseten.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Baseten provider 定义。",
+      "tags": [
+        "provider",
+        "baseten",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cerebras.models.ts",
+      "type": "file",
+      "name": "cerebras.models.ts",
+      "filePath": "packages/ai/src/providers/cerebras.models.ts",
+      "summary": "定义 Cerebras 内置模型数据常量。",
+      "tags": [
+        "models",
+        "cerebras",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cerebras.ts",
+      "type": "file",
+      "name": "cerebras.ts",
+      "filePath": "packages/ai/src/providers/cerebras.ts",
+      "summary": "实现 Cerebras provider 定义。",
+      "tags": [
+        "provider",
+        "cerebras",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cerebras.ts:cerebrasProvider",
+      "type": "function",
+      "name": "cerebrasProvider",
+      "filePath": "packages/ai/src/providers/cerebras.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Cerebras provider 定义。",
+      "tags": [
+        "provider",
+        "cerebras",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-ai-gateway.models.ts",
+      "type": "file",
+      "name": "cloudflare-ai-gateway.models.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-ai-gateway.models.ts",
+      "summary": "定义 Cloudflare AI Gateway 内置模型数据常量。",
+      "tags": [
+        "models",
+        "cloudflare",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "type": "file",
+      "name": "cloudflare-ai-gateway.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "summary": "实现 Cloudflare AI Gateway provider 定义，支持 Anthropic/OpenAI 兼容端点。",
+      "tags": [
+        "provider",
+        "cloudflare",
+        "gateway",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-ai-gateway.ts:cloudflareAIGatewayProvider",
+      "type": "function",
+      "name": "cloudflareAIGatewayProvider",
+      "filePath": "packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "lineRange": [
+        9,
+        23
+      ],
+      "summary": "返回 Cloudflare AI Gateway provider 定义，支持 Anthropic/OpenAI 兼容端点。",
+      "tags": [
+        "provider",
+        "cloudflare",
+        "gateway"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "type": "file",
+      "name": "cloudflare-auth.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-auth.ts",
+      "summary": "实现 Cloudflare 认证解析：从环境变量解析 Workers AI 与 AI Gateway 的 API key。",
+      "tags": [
+        "auth",
+        "cloudflare",
+        "env",
+        "resolution"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-auth.ts:resolveValue",
+      "type": "function",
+      "name": "resolveValue",
+      "filePath": "packages/ai/src/providers/cloudflare-auth.ts",
+      "lineRange": [
+        10,
+        29
+      ],
+      "summary": "解析配置值（环境变量或直接值）。",
+      "tags": [
+        "auth",
+        "config",
+        "resolution",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-auth.ts:resolveCloudflareEnv",
+      "type": "function",
+      "name": "resolveCloudflareEnv",
+      "filePath": "packages/ai/src/providers/cloudflare-auth.ts",
+      "lineRange": [
+        31,
+        52
+      ],
+      "summary": "解析 Cloudflare 相关环境变量配置。",
+      "tags": [
+        "auth",
+        "cloudflare",
+        "env",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareWorkersAIAuth",
+      "type": "function",
+      "name": "cloudflareWorkersAIAuth",
+      "filePath": "packages/ai/src/providers/cloudflare-auth.ts",
+      "lineRange": [
+        54,
+        72
+      ],
+      "summary": "构造 Cloudflare Workers AI 认证。",
+      "tags": [
+        "auth",
+        "cloudflare",
+        "workers-ai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareAIGatewayAuth",
+      "type": "function",
+      "name": "cloudflareAIGatewayAuth",
+      "filePath": "packages/ai/src/providers/cloudflare-auth.ts",
+      "lineRange": [
+        74,
+        103
+      ],
+      "summary": "构造 Cloudflare AI Gateway 认证。",
+      "tags": [
+        "auth",
+        "cloudflare",
+        "gateway"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "type": "file",
+      "name": "cloudflare-stream.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-stream.ts",
+      "summary": "实现 Cloudflare 流式调用辅助：解析模型名并构造流式请求。",
+      "tags": [
+        "cloudflare",
+        "streaming",
+        "utility",
+        "model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-stream.ts:resolveCloudflareModel",
+      "type": "function",
+      "name": "resolveCloudflareModel",
+      "filePath": "packages/ai/src/providers/cloudflare-stream.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "解析 Cloudflare 模型名。",
+      "tags": [
+        "cloudflare",
+        "model",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-stream.ts:cloudflareStreams",
+      "type": "function",
+      "name": "cloudflareStreams",
+      "filePath": "packages/ai/src/providers/cloudflare-stream.ts",
+      "lineRange": [
+        21,
+        28
+      ],
+      "summary": "构造 Cloudflare 流式请求函数。",
+      "tags": [
+        "cloudflare",
+        "streaming",
+        "request"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-workers-ai.models.ts",
+      "type": "file",
+      "name": "cloudflare-workers-ai.models.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-workers-ai.models.ts",
+      "summary": "定义 Cloudflare Workers AI 内置模型数据常量。",
+      "tags": [
+        "models",
+        "cloudflare",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "type": "file",
+      "name": "cloudflare-workers-ai.ts",
+      "filePath": "packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "summary": "实现 Cloudflare Workers AI provider 定义。",
+      "tags": [
+        "provider",
+        "cloudflare",
+        "workers-ai",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/cloudflare-workers-ai.ts:cloudflareWorkersAIProvider",
+      "type": "function",
+      "name": "cloudflareWorkersAIProvider",
+      "filePath": "packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "lineRange": [
+        7,
+        15
+      ],
+      "summary": "返回 Cloudflare Workers AI provider 定义。",
+      "tags": [
+        "provider",
+        "cloudflare",
+        "workers-ai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/deepseek.models.ts",
+      "type": "file",
+      "name": "deepseek.models.ts",
+      "filePath": "packages/ai/src/providers/deepseek.models.ts",
+      "summary": "定义 DeepSeek 内置模型数据常量。",
+      "tags": [
+        "models",
+        "deepseek",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/deepseek.ts",
+      "type": "file",
+      "name": "deepseek.ts",
+      "filePath": "packages/ai/src/providers/deepseek.ts",
+      "summary": "实现 DeepSeek provider 定义。",
+      "tags": [
+        "provider",
+        "deepseek",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/deepseek.ts:deepseekProvider",
+      "type": "function",
+      "name": "deepseekProvider",
+      "filePath": "packages/ai/src/providers/deepseek.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 DeepSeek provider 定义。",
+      "tags": [
+        "provider",
+        "deepseek",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/faux.ts",
+      "type": "file",
+      "name": "faux.ts",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "summary": "实现 faux（模拟）provider：生成确定性假文本、思考与工具调用，用于测试与演示。",
+      "tags": [
+        "provider",
+        "mock",
+        "test",
+        "streaming",
+        "faux"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:fauxText",
+      "type": "function",
+      "name": "fauxText",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        52,
+        54
+      ],
+      "summary": "生成确定性的假文本。",
+      "tags": [
+        "faux",
+        "text",
+        "generation",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:fauxThinking",
+      "type": "function",
+      "name": "fauxThinking",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "生成假思考内容。",
+      "tags": [
+        "faux",
+        "thinking",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:fauxToolCall",
+      "type": "function",
+      "name": "fauxToolCall",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        60,
+        67
+      ],
+      "summary": "生成假的工具调用。",
+      "tags": [
+        "faux",
+        "tool",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:fauxAssistantMessage",
+      "type": "function",
+      "name": "fauxAssistantMessage",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        76,
+        99
+      ],
+      "summary": "构造假的助手消息内容。",
+      "tags": [
+        "faux",
+        "message",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:contentToText",
+      "type": "function",
+      "name": "contentToText",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        164,
+        176
+      ],
+      "summary": "将消息内容转换为文本。",
+      "tags": [
+        "utility",
+        "message",
+        "text"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:assistantContentToText",
+      "type": "function",
+      "name": "assistantContentToText",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        178,
+        190
+      ],
+      "summary": "将助手消息内容转换为文本。",
+      "tags": [
+        "utility",
+        "message",
+        "text"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:serializeContext",
+      "type": "function",
+      "name": "serializeContext",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        206,
+        218
+      ],
+      "summary": "序列化上下文消息。",
+      "tags": [
+        "utility",
+        "serialization",
+        "context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:withUsageEstimate",
+      "type": "function",
+      "name": "withUsageEstimate",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        229,
+        267
+      ],
+      "summary": "为响应附加用量估算。",
+      "tags": [
+        "usage",
+        "estimation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:splitStringByTokenSize",
+      "type": "function",
+      "name": "splitStringByTokenSize",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        269,
+        279
+      ],
+      "summary": "按 token 大小拆分字符串。",
+      "tags": [
+        "tokens",
+        "splitting",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:cloneMessage",
+      "type": "function",
+      "name": "cloneMessage",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        281,
+        291
+      ],
+      "summary": "深拷贝消息对象。",
+      "tags": [
+        "utility",
+        "clone",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:createDeferredMessage",
+      "type": "function",
+      "name": "createDeferredMessage",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        293,
+        305
+      ],
+      "summary": "创建延迟完成的消息对象。",
+      "tags": [
+        "async",
+        "deferred",
+        "message"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:createErrorMessage",
+      "type": "function",
+      "name": "createErrorMessage",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        307,
+        319
+      ],
+      "summary": "构造错误消息对象。",
+      "tags": [
+        "error",
+        "message",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:streamWithDeltas",
+      "type": "function",
+      "name": "streamWithDeltas",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        338,
+        434
+      ],
+      "summary": "模拟流式响应：按时间片发送增量消息。",
+      "tags": [
+        "streaming",
+        "mock",
+        "simulation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:createFauxCore",
+      "type": "function",
+      "name": "createFauxCore",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        436,
+        673
+      ],
+      "summary": "创建 faux provider 核心逻辑（文本、工具调用与流式输出）。",
+      "tags": [
+        "faux",
+        "provider",
+        "core",
+        "creation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/ai/src/providers/faux.ts:fauxProvider",
+      "type": "function",
+      "name": "fauxProvider",
+      "filePath": "packages/ai/src/providers/faux.ts",
+      "lineRange": [
+        685,
+        708
+      ],
+      "summary": "返回 faux provider 定义，供测试与演示使用。",
+      "tags": [
+        "provider",
+        "faux",
+        "mock",
+        "definition"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "function:packages/ai/src/providers/azure-openai-responses.ts:azureOpenAIResponsesProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "function:packages/ai/src/providers/azure-openai-responses.ts:azureOpenAIResponsesProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "file:packages/ai/src/api/azure-openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/azure-openai-responses.ts",
+      "target": "file:packages/ai/src/providers/azure-openai-responses.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "function:packages/ai/src/providers/baseten.ts:basetenProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "function:packages/ai/src/providers/baseten.ts:basetenProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/baseten.ts",
+      "target": "file:packages/ai/src/providers/baseten.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "function:packages/ai/src/providers/cerebras.ts:cerebrasProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "function:packages/ai/src/providers/cerebras.ts:cerebrasProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cerebras.ts",
+      "target": "file:packages/ai/src/providers/cerebras.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-ai-gateway.ts:cloudflareAIGatewayProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-ai-gateway.ts:cloudflareAIGatewayProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-ai-gateway.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:resolveValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:resolveCloudflareEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareWorkersAIAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareWorkersAIAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareAIGatewayAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-auth.ts:cloudflareAIGatewayAuth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "file:packages/ai/src/auth/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-stream.ts:resolveCloudflareModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-stream.ts:resolveCloudflareModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-stream.ts:cloudflareStreams",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-stream.ts:cloudflareStreams",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-workers-ai.ts:cloudflareWorkersAIProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "function:packages/ai/src/providers/cloudflare-workers-ai.ts:cloudflareWorkersAIProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-auth.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-stream.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+      "target": "file:packages/ai/src/providers/cloudflare-workers-ai.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "function:packages/ai/src/providers/deepseek.ts:deepseekProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "function:packages/ai/src/providers/deepseek.ts:deepseekProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/deepseek.ts",
+      "target": "file:packages/ai/src/providers/deepseek.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxThinking",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxThinking",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxToolCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxToolCall",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxAssistantMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:contentToText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:assistantContentToText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:serializeContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:withUsageEstimate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:splitStringByTokenSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:cloneMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:createDeferredMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:createErrorMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:streamWithDeltas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:createFauxCore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:createFauxCore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "function:packages/ai/src/providers/faux.ts:fauxProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "file:packages/ai/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/faux.ts",
+      "target": "file:packages/ai/src/utils/event-stream.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

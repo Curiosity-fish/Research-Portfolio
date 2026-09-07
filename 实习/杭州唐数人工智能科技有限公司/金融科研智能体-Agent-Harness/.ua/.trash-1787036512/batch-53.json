@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "tags": [
+        "package-config",
+        "npm",
+        "monorepo",
+        "build"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/agent/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/agent/package.json",
+      "summary": "tfa-agent-core 包（packages/agent）的 package.json，声明包名/版本、main 与 types 导出入口、构建脚本及运行时依赖，是 npm 发布与构建的核心配置。"
+    },
+    {
+      "tags": [
+        "tsconfig",
+        "typescript",
+        "build",
+        "monorepo"
+      ],
+      "complexity": "simple",
+      "id": "config:packages/agent/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/agent/tsconfig.build.json",
+      "summary": "tfa-agent-core 构建专用 TypeScript 配置，继承 ../../tsconfig.base.json 并限定编译 src 目录（排除 node_modules/dist 等），用于产物构建。"
+    },
+    {
+      "tags": [
+        "docs",
+        "changelog",
+        "版本记录"
+      ],
+      "complexity": "moderate",
+      "id": "document:packages/agent/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/agent/CHANGELOG.md",
+      "summary": "tfa-agent-core 的版本变更日志，记录 Unreleased 及历史版本（至 0.83.0）的 Breaking Changes / Added / Fixed 条目。"
+    },
+    {
+      "tags": [
+        "docs",
+        "usage-guide",
+        "agent-core",
+        "快速上手"
+      ],
+      "complexity": "moderate",
+      "id": "document:packages/agent/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/agent/README.md",
+      "summary": "tfa-agent-core 的使用文档，介绍安装、快速开始、核心概念（AgentMessage 与 LLM Message 对比）、消息流与事件流（prompt/continue 事件序列、工具调用事件）以及 Agent Options 与 Agent State。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/agent/package.json",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/agent/package.json",
+      "target": "file:packages/agent/src/agent.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/agent/tsconfig.build.json",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/agent/README.md",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/agent/README.md",
+      "target": "file:packages/agent/src/agent.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/agent/CHANGELOG.md",
+      "target": "document:packages/agent/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

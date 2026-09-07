@@ -1,0 +1,19 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/web/index.html",
+   "type": "file",
+   "name": "index.html",
+   "filePath": "packages/shell/web/index.html",
+   "summary": "Vue SPA 的 HTML 外壳：配置 zh-CN 语言、meta 描述/theme-color、favicon，内联脚本在首帧前从 localStorage 应用主题，并挂载 /src/main.ts 入口。",
+   "tags": [
+    "markup",
+    "html",
+    "entry-point",
+    "web"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": []
+}

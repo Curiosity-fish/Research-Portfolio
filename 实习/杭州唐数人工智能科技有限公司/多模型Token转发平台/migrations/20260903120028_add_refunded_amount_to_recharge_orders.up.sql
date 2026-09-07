@@ -1,0 +1,1 @@
+ALTER TABLE recharge_orders ADD COLUMN IF NOT EXISTS refunded_amount BIGINT NOT NULL DEFAULT 0;

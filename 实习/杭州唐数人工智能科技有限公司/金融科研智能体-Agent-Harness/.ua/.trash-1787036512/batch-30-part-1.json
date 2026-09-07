@@ -1,0 +1,1212 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/providers/zai.models.ts",
+   "type": "file",
+   "name": "zai.models.ts",
+   "filePath": "packages/ai/src/providers/zai.models.ts",
+   "summary": "导出 ZAI 内置模型目录数据，供 model-catalog 展平与 provider 模块引用。",
+   "tags": [
+    "data-model",
+    "model-catalog",
+    "zai"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/src/providers/zai.ts",
+   "type": "file",
+   "name": "zai.ts",
+   "filePath": "packages/ai/src/providers/zai.ts",
+   "summary": "提供智谱 ZAI provider 工厂，通过 OpenAI Completions 兼容 API 与 env API key 认证创建 provider 实例。",
+   "tags": [
+    "provider",
+    "factory",
+    "llm-api"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "type": "function",
+   "name": "zaiProvider",
+   "filePath": "packages/ai/src/providers/zai.ts",
+   "summary": "构建智谱 ZAI provider，装配 OpenAI Completions 兼容 API 与 env key 认证。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    6,
+    15
+   ]
+  },
+  {
+   "id": "file:packages/ai/src/utils/abort.ts",
+   "type": "file",
+   "name": "abort.ts",
+   "filePath": "packages/ai/src/utils/abort.ts",
+   "summary": "AbortSignal 工具函数集：创建 operation signal，并将异步操作与 abort signal 竞争以支持中途取消。",
+   "tags": [
+    "utility",
+    "async",
+    "abort"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/utils/abort.ts:operationSignal",
+   "type": "function",
+   "name": "operationSignal",
+   "filePath": "packages/ai/src/utils/abort.ts",
+   "summary": "函数 operationSignal：实现其核心逻辑，参数：signal。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "function:packages/ai/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "function",
+   "name": "raceWithAbortSignal",
+   "filePath": "packages/ai/src/utils/abort.ts",
+   "summary": "将异步操作与 abort signal 竞争，取消时抛出中止错误。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    17,
+    50
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "file",
+   "name": "anthropic-auth-token.test.ts",
+   "filePath": "packages/ai/test/anthropic-auth-token.test.ts",
+   "summary": "Anthropic Auth Token 认证模式的集成测试，覆盖 token 注入与消息流式输出。",
+   "tags": [
+    "test",
+    "auth",
+    "anthropic"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/images-models.test.ts",
+   "type": "file",
+   "name": "images-models.test.ts",
+   "filePath": "packages/ai/test/images-models.test.ts",
+   "summary": "图片生成模型的测试：验证内置图片 provider 与模型的能力与输出。",
+   "tags": [
+    "test",
+    "images",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/images-models.test.ts:testImageModel",
+   "type": "function",
+   "name": "testImageModel",
+   "filePath": "packages/ai/test/images-models.test.ts",
+   "summary": "函数 testImageModel：测试ImageModel 相关逻辑，参数：provider、id。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    14,
+    25
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/images-models.test.ts:okResult",
+   "type": "function",
+   "name": "okResult",
+   "filePath": "packages/ai/test/images-models.test.ts",
+   "summary": "函数 okResult：实现其核心逻辑，参数：model。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    27,
+    36
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/images-models.test.ts:testProvider",
+   "type": "function",
+   "name": "testProvider",
+   "filePath": "packages/ai/test/images-models.test.ts",
+   "summary": "函数 testProvider：测试Provider 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    43,
+    69
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "type": "file",
+   "name": "kimi-coding-oauth.test.ts",
+   "filePath": "packages/ai/test/kimi-coding-oauth.test.ts",
+   "summary": "Kimi Coding OAuth 设备码授权流程的测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "kimi"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/kimi-coding-oauth.test.ts:deviceAuthorizationResponse",
+   "type": "function",
+   "name": "deviceAuthorizationResponse",
+   "filePath": "packages/ai/test/kimi-coding-oauth.test.ts",
+   "summary": "函数 deviceAuthorizationResponse：实现其核心逻辑，参数：overrides。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    32
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "file",
+   "name": "models-runtime.test.ts",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "模型运行时的大型集成测试：覆盖 env key、OAuth、流式输出、工具调用与思考级别。",
+   "tags": [
+    "test",
+    "runtime",
+    "llm-api",
+    "oauth"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/models-runtime.test.ts:testModel",
+   "type": "function",
+   "name": "testModel",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "函数 testModel：测试Model 相关逻辑，参数：provider、id。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    9,
+    22
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/models-runtime.test.ts:doneMessage",
+   "type": "function",
+   "name": "doneMessage",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "函数 doneMessage：实现其核心逻辑，参数：model、text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    24,
+    42
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/models-runtime.test.ts:testProvider",
+   "type": "function",
+   "name": "testProvider",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "函数 testProvider：测试Provider 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    55,
+    82
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/models-runtime.test.ts:envKeyAuth",
+   "type": "function",
+   "name": "envKeyAuth",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "函数 envKeyAuth：实现其核心逻辑，参数：key。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    86,
+    95
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/models-runtime.test.ts:testOAuth",
+   "type": "function",
+   "name": "testOAuth",
+   "filePath": "packages/ai/test/models-runtime.test.ts",
+   "summary": "函数 testOAuth：测试OAuth 相关逻辑，参数：overrides。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    97,
+    107
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "file",
+   "name": "oauth-auth.test.ts",
+   "filePath": "packages/ai/test/oauth-auth.test.ts",
+   "summary": "OAuth 认证通用流程的测试，覆盖多 provider 的授权交互与凭据存储。",
+   "tags": [
+    "test",
+    "oauth",
+    "auth"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "file",
+   "name": "openrouter-oauth.test.ts",
+   "filePath": "packages/ai/test/openrouter-oauth.test.ts",
+   "summary": "OpenRouter OAuth 流程与图片模型认证的测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "openrouter"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/radius-oauth.test.ts",
+   "type": "file",
+   "name": "radius-oauth.test.ts",
+   "filePath": "packages/ai/test/radius-oauth.test.ts",
+   "summary": "Radius OAuth 授权交互流程的测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "radius"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/scratch.ts",
+   "type": "file",
+   "name": "scratch.ts",
+   "filePath": "packages/ai/test/scratch.ts",
+   "summary": "临时调试脚本（scratch），用于手工验证模型 API 调用行为。",
+   "tags": [
+    "script",
+    "scratch",
+    "llm-api"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "file",
+   "name": "xai-responses.test.ts",
+   "filePath": "packages/ai/test/xai-responses.test.ts",
+   "summary": "xAI Responses API 的集成测试，验证流式响应与请求捕获。",
+   "tags": [
+    "test",
+    "xai",
+    "llm-api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/xai-responses.test.ts:completedResponse",
+   "type": "function",
+   "name": "completedResponse",
+   "filePath": "packages/ai/test/xai-responses.test.ts",
+   "summary": "函数 completedResponse：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    14,
+    34
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/xai-responses.test.ts:captureRequest",
+   "type": "function",
+   "name": "captureRequest",
+   "filePath": "packages/ai/test/xai-responses.test.ts",
+   "summary": "函数 captureRequest：实现其核心逻辑，参数：model、context、options。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    36,
+    56
+   ]
+  },
+  {
+   "id": "file:scripts/generate-thinking-capabilities.mjs",
+   "type": "file",
+   "name": "generate-thinking-capabilities.mjs",
+   "filePath": "scripts/generate-thinking-capabilities.mjs",
+   "summary": "从模型能力元数据生成 thinking capabilities 能力文档的 Node 脚本。",
+   "tags": [
+    "script",
+    "docs-generation",
+    "thinking"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/providers/zai.models.ts",
+   "target": "file:packages/ai/src/model-catalog.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "file:packages/ai/src/auth/helpers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai.ts",
+   "target": "file:packages/ai/src/providers/zai.models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort.ts",
+   "target": "function:packages/ai/src/utils/abort.ts:operationSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort.ts",
+   "target": "function:packages/ai/src/utils/abort.ts:operationSignal",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort.ts",
+   "target": "function:packages/ai/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/abort.ts",
+   "target": "function:packages/ai/src/utils/abort.ts:raceWithAbortSignal",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "target": "file:packages/ai/src/providers/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/env-api-keys.ts",
+   "target": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/anthropic.ts",
+   "target": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/anthropic-auth-token.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "function:packages/ai/test/images-models.test.ts:testImageModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "function:packages/ai/test/images-models.test.ts:okResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "function:packages/ai/test/images-models.test.ts:testProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "file:packages/ai/src/images-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "file:packages/ai/src/providers/all.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/images-models.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/images-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images-models.ts",
+   "target": "file:packages/ai/test/images-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/all.ts",
+   "target": "file:packages/ai/test/images-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/images-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "target": "function:packages/ai/test/kimi-coding-oauth.test.ts:deviceAuthorizationResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+   "target": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/kimi-coding-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "function:packages/ai/test/models-runtime.test.ts:testModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "function:packages/ai/test/models-runtime.test.ts:doneMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "function:packages/ai/test/models-runtime.test.ts:testProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "function:packages/ai/test/models-runtime.test.ts:envKeyAuth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "function:packages/ai/test/models-runtime.test.ts:testOAuth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/auth/credential-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/models-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/models-runtime.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/credential-store.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models-store.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "file:packages/ai/test/models-runtime.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/credential-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/openai-codex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/openrouter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/xai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/providers/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/oauth-auth.test.ts",
+   "target": "file:packages/ai/src/providers/github-copilot.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/credential-store.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/kimi-coding.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/openai-codex.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/openrouter.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/xai.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/oauth.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/anthropic.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/github-copilot.ts",
+   "target": "file:packages/ai/test/oauth-auth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/credential-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/openrouter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/images-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/providers/openrouter-images.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "target": "file:packages/ai/src/providers/openrouter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/credential-store.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/openrouter.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/images-models.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/openrouter-images.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/openrouter.ts",
+   "target": "file:packages/ai/test/openrouter-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/radius-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/radius.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/radius-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/radius.ts",
+   "target": "file:packages/ai/test/radius-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/radius-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/scratch.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/scratch.ts",
+   "target": "file:packages/ai/src/providers/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/scratch.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/scratch.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/anthropic.ts",
+   "target": "file:packages/ai/test/scratch.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/scratch.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "function:packages/ai/test/xai-responses.test.ts:completedResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "function:packages/ai/test/xai-responses.test.ts:captureRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "file:packages/ai/src/providers/xai.models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "file:packages/ai/src/providers/xai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xai-responses.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/openai-responses.ts",
+   "target": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/xai.models.ts",
+   "target": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/xai.ts",
+   "target": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/xai-responses.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:scripts/generate-thinking-capabilities.mjs",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "target": "function:packages/ai/src/models.ts:createProvider",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "target": "function:packages/ai/src/auth/helpers.ts:envApiKeyAuth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai.ts:zaiProvider",
+   "target": "function:packages/ai/src/api/openai-completions.lazy.ts:openAICompletionsApi",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/test/images-models.test.ts:testProvider",
+   "target": "function:packages/ai/src/images-models.ts:createImagesProvider",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/test/xai-responses.test.ts:captureRequest",
+   "target": "function:packages/ai/src/providers/xai.ts:xaiProvider",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

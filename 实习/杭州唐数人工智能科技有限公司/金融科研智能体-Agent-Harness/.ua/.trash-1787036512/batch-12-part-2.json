@@ -1,0 +1,847 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "type": "file",
+   "name": "3616-settings-inmemory-reload.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "summary": "回归测试设置管理器内存重载的行为。",
+   "tags": [
+    "test",
+    "settings-manager",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts",
+   "type": "file",
+   "name": "5208-late-bash-output.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts",
+   "summary": "回归测试 bash 工具延迟输出的事件派发行为。",
+   "tags": [
+    "test",
+    "bash",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts",
+   "type": "file",
+   "name": "5303-bash-output-truncation.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts",
+   "summary": "回归测试 bash 输出截断逻辑。",
+   "tags": [
+    "test",
+    "bash",
+    "截断",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6104-find-root-relativization.test.ts",
+   "type": "file",
+   "name": "6104-find-root-relativization.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6104-find-root-relativization.test.ts",
+   "summary": "回归测试 find 结果路径相对根目录的规范化。",
+   "tags": [
+    "test",
+    "find",
+    "路径",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "type": "file",
+   "name": "7187-malformed-package-manifest.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "summary": "回归测试畸形包清单文件的错误处理。",
+   "tags": [
+    "test",
+    "package-manager",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "type": "file",
+   "name": "7193-event-bus-lifecycle.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "summary": "回归测试事件总线生命周期与扩展加载的交互。",
+   "tags": [
+    "test",
+    "event-bus",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "type": "file",
+   "name": "7497-session-discovery-symlink.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "summary": "回归测试会话发现对符号链接路径的处理。",
+   "tags": [
+    "test",
+    "session",
+    "symlink",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7572-provider-retry-settings-merge.test.ts",
+   "type": "file",
+   "name": "7572-provider-retry-settings-merge.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7572-provider-retry-settings-merge.test.ts",
+   "summary": "回归测试 provider 重试设置的合并行为。",
+   "tags": [
+    "test",
+    "provider",
+    "重试",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "type": "file",
+   "name": "extension-factory-cache.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "summary": "回归测试扩展工厂缓存（extension factory cache）的复用行为。",
+   "tags": [
+    "test",
+    "extensions",
+    "缓存",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts:writeCountingExtension",
+   "type": "function",
+   "name": "writeCountingExtension",
+   "filePath": "packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "lineRange": [
+    25,
+    38
+   ],
+   "summary": "写入带计数器的测试扩展。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/system-prompt.test.ts",
+   "type": "file",
+   "name": "system-prompt.test.ts",
+   "filePath": "packages/coding-agent/test/system-prompt.test.ts",
+   "summary": "测试系统提示词构建（buildSystemPrompt）的组装逻辑。",
+   "tags": [
+    "test",
+    "system-prompt",
+    "提示词"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/test-network-env.ts",
+   "type": "file",
+   "name": "test-network-env.ts",
+   "filePath": "packages/coding-agent/test/test-network-env.ts",
+   "summary": "测试环境辅助模块：允许测试启用网络访问。",
+   "tags": [
+    "test",
+    "utility",
+    "网络"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-network-env.ts:allowNetwork",
+   "type": "function",
+   "name": "allowNetwork",
+   "filePath": "packages/coding-agent/test/test-network-env.ts",
+   "lineRange": [
+    4,
+    6
+   ],
+   "summary": "允许当前测试使用网络。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/tfa-user-agent.test.ts",
+   "type": "file",
+   "name": "tfa-user-agent.test.ts",
+   "filePath": "packages/coding-agent/test/tfa-user-agent.test.ts",
+   "summary": "测试用户代理字符串工具。",
+   "tags": [
+    "test",
+    "user-agent",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "file",
+   "name": "tool-execution-component.test.ts",
+   "filePath": "packages/coding-agent/test/tool-execution-component.test.ts",
+   "summary": "测试工具执行组件（ToolExecutionComponent）对多种工具调用与结果的渲染。",
+   "tags": [
+    "test",
+    "tui",
+    "工具执行",
+    "渲染"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tool-execution-component.test.ts:createBaseToolDefinition",
+   "type": "function",
+   "name": "createBaseToolDefinition",
+   "filePath": "packages/coding-agent/test/tool-execution-component.test.ts",
+   "lineRange": [
+    14,
+    25
+   ],
+   "summary": "构造基础工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "file",
+   "name": "tools.test.ts",
+   "filePath": "packages/coding-agent/test/tools.test.ts",
+   "summary": "全面测试工具层：bash、edit-diff 与 shell 相关工具的行为与回归场景。",
+   "tags": [
+    "test",
+    "tools",
+    "bash",
+    "集成"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tools.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "function",
+   "name": "createTinyBmp1x1Red24bpp",
+   "filePath": "packages/coding-agent/test/tools.test.ts",
+   "lineRange": [
+    37,
+    51
+   ],
+   "summary": "生成 1x1 红色 24bpp BMP 图片字节。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/trust-manager.test.ts",
+   "type": "file",
+   "name": "trust-manager.test.ts",
+   "filePath": "packages/coding-agent/test/trust-manager.test.ts",
+   "summary": "测试信任管理器（trust-manager）对目录信任状态的读写。",
+   "tags": [
+    "test",
+    "trust",
+    "配置"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/version-check.test.ts",
+   "type": "file",
+   "name": "version-check.test.ts",
+   "filePath": "packages/coding-agent/test/version-check.test.ts",
+   "summary": "测试版本检查工具的版本比较与更新提示逻辑。",
+   "tags": [
+    "test",
+    "版本检查",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:scripts/repro-5893-wsl-bash.mjs",
+   "type": "file",
+   "name": "repro-5893-wsl-bash.mjs",
+   "filePath": "scripts/repro-5893-wsl-bash.mjs",
+   "summary": "问题复现脚本：复现 WSL 下 bash 工具的行为差异，用于调试 5893 号问题。",
+   "tags": [
+    "script",
+    "repro",
+    "bash",
+    "wsl"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:scripts/repro-5893-wsl-bash.mjs:runCase",
+   "type": "function",
+   "name": "runCase",
+   "filePath": "scripts/repro-5893-wsl-bash.mjs",
+   "lineRange": [
+    17,
+    33
+   ],
+   "summary": "运行单个复现用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts:writeCountingExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-network-env.ts",
+   "target": "function:packages/coding-agent/test/test-network-env.ts:allowNetwork",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-network-env.ts",
+   "target": "function:packages/coding-agent/test/test-network-env.ts:allowNetwork",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "function:packages/coding-agent/test/tool-execution-component.test.ts:createBaseToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "function:packages/coding-agent/test/tools.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:scripts/repro-5893-wsl-bash.mjs",
+   "target": "function:scripts/repro-5893-wsl-bash.mjs:runCase",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts",
+   "target": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6104-find-root-relativization.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/find.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "target": "file:packages/coding-agent/src/core/event-bus.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7572-provider-retry-settings-merge.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/system-prompt.test.ts",
+   "target": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tfa-user-agent.test.ts",
+   "target": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/read.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/write.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tools.test.ts",
+   "target": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-manager.test.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/version-check.test.ts",
+   "target": "file:packages/coding-agent/src/utils/version-check.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/version-check.test.ts",
+   "target": "file:packages/coding-agent/test/test-network-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:scripts/repro-5893-wsl-bash.mjs",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6104-find-root-relativization.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/package-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7187-malformed-package-manifest.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/event-bus.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7193-event-bus-lifecycle.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7497-session-discovery-symlink.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7572-provider-retry-settings-merge.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/extension-factory-cache.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "target": "file:packages/coding-agent/test/system-prompt.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "target": "file:packages/coding-agent/test/tfa-user-agent.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/read.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/write.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/tool-execution-component.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "target": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "file:packages/coding-agent/test/tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "file:packages/coding-agent/test/trust-manager.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "file:packages/coding-agent/test/version-check.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

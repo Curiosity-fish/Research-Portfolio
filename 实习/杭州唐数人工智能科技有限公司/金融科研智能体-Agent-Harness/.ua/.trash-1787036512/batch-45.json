@@ -1,0 +1,285 @@
+{
+ "nodes": [
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "type": "table",
+   "name": "001_initial.sql",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "summary": "sqlite-node 会话后端初始迁移：定义 sessions、entries、lanes、records、facts 等 11 张表及配套索引，支撑会话树、分支、并行车道与 token 统计。",
+   "tags": [
+    "database",
+    "migration",
+    "sqlite",
+    "schema"
+   ],
+   "complexity": "complex",
+   "languageNotes": "单个迁移文件同时包含表、视图（WITH 子句）与索引定义。"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:sessions",
+   "type": "table",
+   "name": "sessions",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    1,
+    9
+   ],
+   "summary": "会话主表：id、created_at、cwd、parent_session_id（会话树）与 metadata JSON。",
+   "tags": [
+    "session",
+    "sqlite",
+    "schema"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:entries",
+   "type": "table",
+   "name": "entries",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    13,
+    23
+   ],
+   "summary": "会话条目表：按 session+seq 排序的事件流，含 parent_id、类型、时间戳与 payload。",
+   "tags": [
+    "session",
+    "sqlite",
+    "event-stream"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:session_sequences",
+   "type": "table",
+   "name": "session_sequences",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    29,
+    55
+   ],
+   "summary": "会话序列/统计视图：维护 next_seq、消息数以及 cached/uncached token 与成本合计。",
+   "tags": [
+    "session",
+    "sqlite",
+    "statistics"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:session_stats",
+   "type": "table",
+   "name": "session_stats",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    34,
+    55
+   ],
+   "summary": "会话统计视图：聚合 message_count、token 与 cost 数据。",
+   "tags": [
+    "session",
+    "sqlite",
+    "statistics"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:branch_entries",
+   "type": "table",
+   "name": "branch_entries",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    45,
+    55
+   ],
+   "summary": "分支条目视图：按 session+branch 过滤的条目索引。",
+   "tags": [
+    "session",
+    "sqlite",
+    "branch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:lanes",
+   "type": "table",
+   "name": "lanes",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    60,
+    82
+   ],
+   "summary": "车道表：记录并行执行车道、叶子节点与打开的 operation id，并关联 records 操作记录。",
+   "tags": [
+    "session",
+    "sqlite",
+    "lane"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:records",
+   "type": "table",
+   "name": "records",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    68,
+    82
+   ],
+   "summary": "操作记录表：车道内按 seq 排序的 run/operation 记录。",
+   "tags": [
+    "session",
+    "sqlite",
+    "operation"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:lane_moves",
+   "type": "table",
+   "name": "lane_moves",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    87,
+    95
+   ],
+   "summary": "车道移动表：记录叶子节点在车道间的移动历史。",
+   "tags": [
+    "session",
+    "sqlite",
+    "lane"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:facts",
+   "type": "table",
+   "name": "facts",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    97,
+    106
+   ],
+   "summary": "事实表：会话级键值事实（kind/value），带唯一键索引。",
+   "tags": [
+    "session",
+    "sqlite",
+    "facts"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:branch_tips",
+   "type": "table",
+   "name": "branch_tips",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    108,
+    113
+   ],
+   "summary": "分支指针表：记录各分支当前指向的条目位置。",
+   "tags": [
+    "session",
+    "sqlite",
+    "branch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:writer_leases",
+   "type": "table",
+   "name": "writer_leases",
+   "filePath": "packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "lineRange": [
+    118,
+    123
+   ],
+   "summary": "写入者租约表：用于并发写入互斥。",
+   "tags": [
+    "session",
+    "sqlite",
+    "locking"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:sessions",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:entries",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:session_sequences",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:session_stats",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:branch_entries",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:lanes",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:records",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:lane_moves",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:facts",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:branch_tips",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql",
+   "target": "table:packages/session-backends/sqlite-node/src/sqlite/migrations/001_initial.sql:writer_leases",
+   "type": "migrates",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

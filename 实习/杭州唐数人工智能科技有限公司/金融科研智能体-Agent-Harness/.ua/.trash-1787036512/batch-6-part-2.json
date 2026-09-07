@@ -1,0 +1,912 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/openai-completions-raw-stop-reason.test.ts",
+   "type": "file",
+   "name": "openai-completions-raw-stop-reason.test.ts",
+   "filePath": "packages/ai/test/openai-completions-raw-stop-reason.test.ts",
+   "summary": "Chat Completions 原始 stop reason 测试。",
+   "tags": [
+    "test",
+    "completions",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "type": "file",
+   "name": "openai-completions-reasoning-details.test.ts",
+   "filePath": "packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "summary": "Chat Completions reasoning details 流事件测试。",
+   "tags": [
+    "test",
+    "completions",
+    "reasoning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-reasoning-details.test.ts:model",
+   "type": "function",
+   "name": "model",
+   "filePath": "packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "lineRange": [
+    47,
+    60
+   ],
+   "summary": "构造测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-reasoning-details.test.ts:toolCallChunk",
+   "type": "function",
+   "name": "toolCallChunk",
+   "filePath": "packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "lineRange": [
+    70,
+    81
+   ],
+   "summary": "构造工具调用 chunk。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-response-model.test.ts",
+   "type": "file",
+   "name": "openai-completions-response-model.test.ts",
+   "filePath": "packages/ai/test/openai-completions-response-model.test.ts",
+   "summary": "Chat Completions 响应模型（OpenRouter auto）测试。",
+   "tags": [
+    "test",
+    "completions",
+    "response-model"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-response-model.test.ts:openRouterAuto",
+   "type": "function",
+   "name": "openRouterAuto",
+   "filePath": "packages/ai/test/openai-completions-response-model.test.ts",
+   "lineRange": [
+    41,
+    54
+   ],
+   "summary": "OpenRouter auto 响应模型测试。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-retry.test.ts",
+   "type": "file",
+   "name": "openai-completions-retry.test.ts",
+   "filePath": "packages/ai/test/openai-completions-retry.test.ts",
+   "summary": "Chat Completions 重试与退避测试。",
+   "tags": [
+    "test",
+    "completions",
+    "retry"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "type": "file",
+   "name": "openai-completions-thinking-as-text.test.ts",
+   "filePath": "packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "summary": "Chat Completions 将 thinking 输出为文本的测试。",
+   "tags": [
+    "test",
+    "completions",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-thinking-as-text.test.ts:buildModel",
+   "type": "function",
+   "name": "buildModel",
+   "filePath": "packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "lineRange": [
+    53,
+    67
+   ],
+   "summary": "构造测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-thinking-as-text.test.ts:buildAssistant",
+   "type": "function",
+   "name": "buildAssistant",
+   "filePath": "packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "lineRange": [
+    69,
+    80
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "type": "file",
+   "name": "openai-completions-thinking-token-budget.test.ts",
+   "filePath": "packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "summary": "Chat Completions thinking token 预算测试。",
+   "tags": [
+    "test",
+    "completions",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-thinking-token-budget.test.ts:capture",
+   "type": "function",
+   "name": "capture",
+   "filePath": "packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "lineRange": [
+    59,
+    84
+   ],
+   "summary": "捕获请求参数。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "type": "file",
+   "name": "openai-completions-tool-choice.test.ts",
+   "filePath": "packages/ai/test/openai-completions-tool-choice.test.ts",
+   "summary": "Chat Completions 工具选择与 strict 模式测试。",
+   "tags": [
+    "test",
+    "completions",
+    "tool-choice"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-tool-choice.test.ts:captureSimpleParams",
+   "type": "function",
+   "name": "captureSimpleParams",
+   "filePath": "packages/ai/test/openai-completions-tool-choice.test.ts",
+   "lineRange": [
+    83,
+    104
+   ],
+   "summary": "捕获简化请求参数。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "type": "file",
+   "name": "openai-completions-tool-result-images.test.ts",
+   "filePath": "packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "summary": "Chat Completions 工具结果图像传递测试。",
+   "tags": [
+    "test",
+    "completions",
+    "image"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-tool-result-images.test.ts:buildToolResult",
+   "type": "function",
+   "name": "buildToolResult",
+   "filePath": "packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "lineRange": [
+    50,
+    62
+   ],
+   "summary": "构造工具结果消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-completions-tool-result-images.test.ts:buildEmptyToolResult",
+   "type": "function",
+   "name": "buildEmptyToolResult",
+   "filePath": "packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "lineRange": [
+    64,
+    73
+   ],
+   "summary": "构造空工具结果消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-cache-affinity-e2e.test.ts",
+   "type": "file",
+   "name": "openai-responses-cache-affinity-e2e.test.ts",
+   "filePath": "packages/ai/test/openai-responses-cache-affinity-e2e.test.ts",
+   "summary": "OpenAI Responses 会话缓存亲和性端到端测试。",
+   "tags": [
+    "test",
+    "responses",
+    "cache",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "type": "file",
+   "name": "openai-responses-compat.test.ts",
+   "filePath": "packages/ai/test/openai-responses-compat.test.ts",
+   "summary": "OpenAI Responses 兼容性测试：捕获请求头并校验 provider 解析。",
+   "tags": [
+    "test",
+    "responses",
+    "compat"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-compat.test.ts:getHeader",
+   "type": "function",
+   "name": "getHeader",
+   "filePath": "packages/ai/test/openai-responses-compat.test.ts",
+   "lineRange": [
+    14,
+    28
+   ],
+   "summary": "读取响应头。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-compat.test.ts:captureOpenAIResponseHeaders",
+   "type": "function",
+   "name": "captureOpenAIResponseHeaders",
+   "filePath": "packages/ai/test/openai-responses-compat.test.ts",
+   "lineRange": [
+    30,
+    67
+   ],
+   "summary": "捕获 Responses 请求头。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "type": "file",
+   "name": "openai-responses-empty-tool-result.test.ts",
+   "filePath": "packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "summary": "OpenAI Responses 空工具结果测试。",
+   "tags": [
+    "test",
+    "responses",
+    "tool-result"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-empty-tool-result.test.ts:buildEmptyToolResult",
+   "type": "function",
+   "name": "buildEmptyToolResult",
+   "filePath": "packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "lineRange": [
+    15,
+    24
+   ],
+   "summary": "构造空工具结果消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "type": "file",
+   "name": "openai-responses-foreign-toolcall-id.test.ts",
+   "filePath": "packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "summary": "OpenAI Responses 外部工具调用 id 处理测试。",
+   "tags": [
+    "test",
+    "responses",
+    "tool-call"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "type": "file",
+   "name": "openai-responses-message-id.test.ts",
+   "filePath": "packages/ai/test/openai-responses-message-id.test.ts",
+   "summary": "OpenAI Responses 消息 id 处理测试。",
+   "tags": [
+    "test",
+    "responses",
+    "message-id"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "type": "file",
+   "name": "openai-responses-partial-json-cleanup.test.ts",
+   "filePath": "packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "summary": "OpenAI Responses 部分 JSON 清理测试。",
+   "tags": [
+    "test",
+    "responses",
+    "json-cleanup"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-partial-json-cleanup.test.ts:createOutput",
+   "type": "function",
+   "name": "createOutput",
+   "filePath": "packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "lineRange": [
+    7,
+    25
+   ],
+   "summary": "创建输出对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-reasoning-replay-e2e.test.ts",
+   "type": "file",
+   "name": "openai-responses-reasoning-replay-e2e.test.ts",
+   "filePath": "packages/ai/test/openai-responses-reasoning-replay-e2e.test.ts",
+   "summary": "OpenAI Responses reasoning 重放端到端测试。",
+   "tags": [
+    "test",
+    "responses",
+    "reasoning",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "type": "file",
+   "name": "openai-responses-terminal-event.test.ts",
+   "filePath": "packages/ai/test/openai-responses-terminal-event.test.ts",
+   "summary": "OpenAI Responses 终止事件（terminal event）测试。",
+   "tags": [
+    "test",
+    "responses",
+    "terminal-event"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-terminal-event.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/ai/test/openai-responses-terminal-event.test.ts",
+   "lineRange": [
+    53,
+    66
+   ],
+   "summary": "创建测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-terminal-event.test.ts:createOutput",
+   "type": "function",
+   "name": "createOutput",
+   "filePath": "packages/ai/test/openai-responses-terminal-event.test.ts",
+   "lineRange": [
+    68,
+    86
+   ],
+   "summary": "创建输出对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "type": "file",
+   "name": "openai-responses-tool-result-images.test.ts",
+   "filePath": "packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "summary": "OpenAI Responses 工具结果图像保留测试。",
+   "tags": [
+    "test",
+    "responses",
+    "image"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/openai-responses-tool-result-images.test.ts:verifyToolResultImagesStayInFunctionCallOutput",
+   "type": "function",
+   "name": "verifyToolResultImagesStayInFunctionCallOutput",
+   "filePath": "packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "lineRange": [
+    35,
+    144
+   ],
+   "summary": "验证图像保留在 function_call 输出中。",
+   "tags": [
+    "test",
+    "image"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/openai-completions-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "target": "function:packages/ai/test/openai-completions-reasoning-details.test.ts:model",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "target": "function:packages/ai/test/openai-completions-reasoning-details.test.ts:toolCallChunk",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-reasoning-details.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-response-model.test.ts",
+   "target": "function:packages/ai/test/openai-completions-response-model.test.ts:openRouterAuto",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-response-model.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-response-model.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-retry.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-retry.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "target": "function:packages/ai/test/openai-completions-thinking-as-text.test.ts:buildModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "target": "function:packages/ai/test/openai-completions-thinking-as-text.test.ts:buildAssistant",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-as-text.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "target": "function:packages/ai/test/openai-completions-thinking-token-budget.test.ts:capture",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-thinking-token-budget.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "target": "function:packages/ai/test/openai-completions-tool-choice.test.ts:captureSimpleParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-choice.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "target": "function:packages/ai/test/openai-completions-tool-result-images.test.ts:buildToolResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "target": "function:packages/ai/test/openai-completions-tool-result-images.test.ts:buildEmptyToolResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-completions-tool-result-images.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-cache-affinity-e2e.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-cache-affinity-e2e.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "target": "function:packages/ai/test/openai-responses-compat.test.ts:getHeader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "target": "function:packages/ai/test/openai-responses-compat.test.ts:captureOpenAIResponseHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-compat.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "target": "function:packages/ai/test/openai-responses-empty-tool-result.test.ts:buildEmptyToolResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-empty-tool-result.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-foreign-toolcall-id.test.ts",
+   "target": "file:packages/ai/src/utils/hash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-message-id.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "target": "function:packages/ai/test/openai-responses-partial-json-cleanup.test.ts:createOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-partial-json-cleanup.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-reasoning-replay-e2e.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-reasoning-replay-e2e.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "function:packages/ai/test/openai-responses-terminal-event.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "function:packages/ai/test/openai-responses-terminal-event.test.ts:createOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-terminal-event.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "target": "function:packages/ai/test/openai-responses-tool-result-images.test.ts:verifyToolResultImagesStayInFunctionCallOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/openai-responses-tool-result-images.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

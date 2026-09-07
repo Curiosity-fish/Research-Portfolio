@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/shell/web/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "packages/shell/web/index.html",
+      "summary": "金融科技 Agent Web 应用入口 HTML：加载 /src/main.ts 模块，head 内联脚本在 DOM 解析前依据 localStorage 的 tfa-theme 设置 data-theme 以避免主题闪烁，页面面向中文用户。",
+      "tags": [
+        "markup",
+        "入口点",
+        "vue",
+        "theme",
+        "web"
+      ],
+      "complexity": "simple",
+      "languageNotes": "内联脚本先于渲染读取 localStorage 设置 data-theme，防止首屏主题闪烁。"
+    },
+    {
+      "id": "config:packages/shell/web/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/shell/web/package.json",
+      "summary": "Web 壳包配置：vite dev/build/preview 与 vue-tsc typecheck 脚本，运行时依赖 vue，devDependencies 含 vite、@vitejs/plugin-vue 与 vue-tsc。",
+      "tags": [
+        "configuration",
+        "web",
+        "vite",
+        "vue",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/shell/web/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/shell/web/tsconfig.json",
+      "summary": "Web 端 TypeScript 配置：ES2022 + bundler 模块解析，lib 含 DOM，strict 与 noEmit，覆盖 src 与 vite.config.ts。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "vite",
+        "vue",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/shell/web/index.html",
+      "target": "file:packages/shell/web/src/main.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/web/package.json",
+      "target": "file:packages/shell/web/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/web/package.json",
+      "target": "file:packages/shell/web/vite.config.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/web/package.json",
+      "target": "config:packages/shell/web/tsconfig.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/shell/web/tsconfig.json",
+      "target": "file:packages/shell/web/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

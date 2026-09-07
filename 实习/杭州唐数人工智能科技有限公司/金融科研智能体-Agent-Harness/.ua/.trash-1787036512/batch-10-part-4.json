@@ -1,0 +1,1254 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "file",
+   "name": "trust-manager.ts",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "summary": "实现项目信任管理：维护信任文件、查找最近信任条目、以文件锁串行化信任状态写入，并提供 ProjectTrustStore 类。",
+   "tags": [
+    "信任管理",
+    "安全",
+    "持久化"
+   ],
+   "complexity": "moderate",
+   "languageNotes": "使用同步文件锁（acquireTrustLockSync）避免并发写信任文件。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:findNearestTrustEntry",
+   "type": "function",
+   "name": "findNearestTrustEntry",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    43,
+    57
+   ],
+   "summary": "查找离指定路径最近的信任条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustParentPath",
+   "type": "function",
+   "name": "getProjectTrustParentPath",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    59,
+    63
+   ],
+   "summary": "获取项目信任配置的父路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustOptions",
+   "type": "function",
+   "name": "getProjectTrustOptions",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    65,
+    95
+   ],
+   "summary": "读取项目信任选项。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:readTrustFile",
+   "type": "function",
+   "name": "readTrustFile",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    97,
+    122
+   ],
+   "summary": "读取信任文件内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:writeTrustFile",
+   "type": "function",
+   "name": "writeTrustFile",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    124,
+    134
+   ],
+   "summary": "写入信任文件内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:acquireTrustLockSync",
+   "type": "function",
+   "name": "acquireTrustLockSync",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    136,
+    166
+   ],
+   "summary": "同步获取信任文件锁。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/trust-manager.ts:hasTrustRequiringProjectResources",
+   "type": "function",
+   "name": "hasTrustRequiringProjectResources",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    184,
+    206
+   ],
+   "summary": "判断是否需要项目资源信任确认。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/trust-manager.ts:ProjectTrustStore",
+   "type": "class",
+   "name": "ProjectTrustStore",
+   "filePath": "packages/coding-agent/src/core/trust-manager.ts",
+   "lineRange": [
+    208,
+    244
+   ],
+   "summary": "封装项目信任状态的读取与写入。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/extensions/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/src/extensions/index.ts",
+   "summary": "扩展桶入口：导出内置扩展列表（builtInExtensions），供扩展加载器注册。",
+   "tags": [
+    "barrel",
+    "entry-point",
+    "扩展"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/main.ts",
+   "type": "file",
+   "name": "main.ts",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "summary": "CLI 主入口：解析参数、加载配置与设置、创建 session manager、处理 fork/交互模式，并驱动主循环直至退出。",
+   "tags": [
+    "entry-point",
+    "cli",
+    "agent核心",
+    "main"
+   ],
+   "complexity": "complex",
+   "languageNotes": "大型命令式入口脚本，包含 stdin 管道读取与多种运行模式分发。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:readPipedStdin",
+   "type": "function",
+   "name": "readPipedStdin",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    67,
+    84
+   ],
+   "summary": "读取管道传入的标准输入。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:resolveAppMode",
+   "type": "function",
+   "name": "resolveAppMode",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    109,
+    120
+   ],
+   "summary": "解析应用运行模式（交互/RPC/打印等）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:runCredentialPrintCommand",
+   "type": "function",
+   "name": "runCredentialPrintCommand",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    130,
+    174
+   ],
+   "summary": "执行凭据打印命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:prepareInitialMessage",
+   "type": "function",
+   "name": "prepareInitialMessage",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    176,
+    195
+   ],
+   "summary": "准备初始用户消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:resolveSessionPath",
+   "type": "function",
+   "name": "resolveSessionPath",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    218,
+    244
+   ],
+   "summary": "解析会话文件路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:promptConfirm",
+   "type": "function",
+   "name": "promptConfirm",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    247,
+    258
+   ],
+   "summary": "提示用户确认。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:validateForkFlags",
+   "type": "function",
+   "name": "validateForkFlags",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    260,
+    274
+   ],
+   "summary": "校验 fork 相关命令行标志。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:validateSessionIdFlags",
+   "type": "function",
+   "name": "validateSessionIdFlags",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    276,
+    297
+   ],
+   "summary": "校验会话 ID 标志。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:createSessionManager",
+   "type": "function",
+   "name": "createSessionManager",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    319,
+    410
+   ],
+   "summary": "创建会话管理器实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:buildSessionOptions",
+   "type": "function",
+   "name": "buildSessionOptions",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    412,
+    508
+   ],
+   "summary": "构建会话选项配置。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/main.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/coding-agent/src/main.ts",
+   "lineRange": [
+    528,
+    931
+   ],
+   "summary": "CLI 主函数，编排参数解析、初始化与运行循环。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/src/modes/index.ts",
+   "summary": "模式桶（barrel）：汇总导出交互模式、打印模式与 RPC 模式的类型与入口函数。",
+   "tags": [
+    "barrel",
+    "entry-point",
+    "运行模式"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "type": "file",
+   "name": "config-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "summary": "实现配置选择器组件（ConfigSelectorComponent）：按分组展示模型/工具等资源列表，支持搜索、选择与多选操作。",
+   "tags": [
+    "component",
+    "tui",
+    "配置选择",
+    "interactive"
+   ],
+   "complexity": "complex",
+   "languageNotes": "大型 TUI 组件，含 40+ 方法用于资源列表渲染与交互。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:formatBaseDir",
+   "type": "function",
+   "name": "formatBaseDir",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    66,
+    81
+   ],
+   "summary": "格式化基础目录显示文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:getGroupLabel",
+   "type": "function",
+   "name": "getGroupLabel",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    83,
+    97
+   ],
+   "summary": "获取分组标签。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:buildGroups",
+   "type": "function",
+   "name": "buildGroups",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    99,
+    180
+   ],
+   "summary": "根据配置构建资源分组。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ConfigSelectorHeader",
+   "type": "class",
+   "name": "ConfigSelectorHeader",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    187,
+    220
+   ],
+   "summary": "配置选择器头部渲染组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ResourceList",
+   "type": "class",
+   "name": "ResourceList",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    222,
+    864
+   ],
+   "summary": "资源列表渲染与交互主体，含搜索与选择逻辑。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ConfigSelectorComponent",
+   "type": "class",
+   "name": "ConfigSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "lineRange": [
+    866,
+    942
+   ],
+   "summary": "配置选择器主组件，整合头部与列表。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "type": "file",
+   "name": "mermaid.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "summary": "实现 Mermaid 图表 Markdown 转换器（createMermaidMarkdownTransformer），为 TUI 渲染添加主题样式与代码块处理。",
+   "tags": [
+    "mermaid",
+    "markdown",
+    "渲染",
+    "transformer"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:codeSpan",
+   "type": "function",
+   "name": "codeSpan",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "lineRange": [
+    18,
+    36
+   ],
+   "summary": "为代码块内容添加跨度标记。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:styleSpan",
+   "type": "function",
+   "name": "styleSpan",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "lineRange": [
+    38,
+    53
+   ],
+   "summary": "为内容添加样式跨度。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:createMermaidMarkdownTransformer",
+   "type": "function",
+   "name": "createMermaidMarkdownTransformer",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "lineRange": [
+    60,
+    89
+   ],
+   "summary": "创建 mermaid markdown 转换器。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "type": "file",
+   "name": "tool-execution.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "summary": "实现工具执行组件（ToolExecutionComponent）：渲染工具调用过程、流式输出、结果与错误状态。",
+   "tags": [
+    "component",
+    "tui",
+    "工具执行",
+    "interactive"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "class",
+   "name": "ToolExecutionComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "lineRange": [
+    22,
+    386
+   ],
+   "summary": "渲染工具调用生命周期与结果的 TUI 组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:findNearestTrustEntry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustParentPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustParentPath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:getProjectTrustOptions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:readTrustFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:writeTrustFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:acquireTrustLockSync",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:hasTrustRequiringProjectResources",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:hasTrustRequiringProjectResources",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "class:packages/coding-agent/src/core/trust-manager.ts:ProjectTrustStore",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "class:packages/coding-agent/src/core/trust-manager.ts:ProjectTrustStore",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:readPipedStdin",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:resolveAppMode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:runCredentialPrintCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:prepareInitialMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:resolveSessionPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:promptConfirm",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:validateForkFlags",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:validateSessionIdFlags",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:createSessionManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:buildSessionOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "function:packages/coding-agent/src/main.ts:main",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:formatBaseDir",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:getGroupLabel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/config-selector.ts:buildGroups",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ConfigSelectorHeader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ResourceList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ConfigSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/config-selector.ts:ConfigSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:codeSpan",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:styleSpan",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:createMermaidMarkdownTransformer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/mermaid.ts:createMermaidMarkdownTransformer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/index.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/extensions/index.ts",
+   "target": "file:packages/coding-agent/src/extensions/llama/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/credential-print.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/initial-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/list-models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/project-trust.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/session-picker.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/cli/startup-ui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-services.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/auth-guidance.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/export-html/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/output-guard.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/project-trust.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/session-cwd.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/timings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/migrations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/modes/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/main.ts",
+   "target": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/config-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/mermaid.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/tools/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/core/timings.ts:resetTimings",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handlePackageCommand",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handleConfigCommand",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/core/timings.ts:time",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/core/trust-manager.ts:hasTrustRequiringProjectResources",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/main.ts:main",
+   "target": "function:packages/coding-agent/src/core/timings.ts:printTimings",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

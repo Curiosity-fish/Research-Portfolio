@@ -1,0 +1,1763 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/tui/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/tui/vitest.config.ts",
+      "summary": "tui 包 vitest 配置:仅包含 test/wrap-ansi.test.ts。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/check-browser-smoke.mjs",
+      "type": "file",
+      "name": "check-browser-smoke.mjs",
+      "filePath": "scripts/check-browser-smoke.mjs",
+      "summary": "浏览器 smoke 检查:用 esbuild 打包 ai/agent 入口验证浏览器兼容性,并为未水合的模型 JSON 提供空模块桩。",
+      "tags": [
+        "script",
+        "smoke",
+        "esbuild",
+        "browser"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/check-lockfile-commit.mjs",
+      "type": "file",
+      "name": "check-lockfile-commit.mjs",
+      "filePath": "scripts/check-lockfile-commit.mjs",
+      "summary": "检查提交是否意外修改 lockfile:比对 git HEAD 与工作区 lockfile 差异,允许 workspace 内部变更,支持 TFA_ALLOW_LOCKFILE_CHANGE。",
+      "tags": [
+        "script",
+        "check",
+        "lockfile",
+        "git"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/check-pinned-deps.mjs",
+      "type": "file",
+      "name": "check-pinned-deps.mjs",
+      "filePath": "scripts/check-pinned-deps.mjs",
+      "summary": "检查所有 package.json 的依赖使用精确版本(排除内部 workspace 与 git/url 说明符)。",
+      "tags": [
+        "script",
+        "check",
+        "dependencies",
+        "pinning"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/check-ts-relative-imports.mjs",
+      "type": "file",
+      "name": "check-ts-relative-imports.mjs",
+      "filePath": "scripts/check-ts-relative-imports.mjs",
+      "summary": "检查 TS 源码中的相对导入是否以 .js 结尾(期望 .ts),遍历各包 src 目录并解析 import 节点。",
+      "tags": [
+        "script",
+        "check",
+        "typescript",
+        "imports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/cost.ts",
+      "type": "file",
+      "name": "cost.ts",
+      "filePath": "scripts/cost.ts",
+      "summary": "统计指定工作目录会话在 N 天内的 token/成本:遍历会话 JSONL,按日汇总 usage 并输出报告。",
+      "tags": [
+        "script",
+        "cost",
+        "tokens",
+        "analytics"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/diff-model-catalog.mjs",
+      "type": "file",
+      "name": "diff-model-catalog.mjs",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "对比 HEAD 与工作区的模型目录 JSON 差异(含 thinking 级别),输出规范化的逐行 diff,用于审查模型数据变更。",
+      "tags": [
+        "script",
+        "diff",
+        "model-catalog",
+        "release"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/edit-tool-stats.mjs",
+      "type": "file",
+      "name": "edit-tool-stats.mjs",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "分析编辑工具调用统计:扫描会话、分类替换大小/参数风格/错误,输出人类可读或 JSON 报告,支持过滤与排行。",
+      "tags": [
+        "script",
+        "analytics",
+        "edit-tool",
+        "sessions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "type": "file",
+      "name": "generate-coding-agent-install-lock.mjs",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "从根 lockfile 生成 coding-agent 安装锁文件包(install-lock):裁剪内部 workspace、重解析外部依赖并校验安装脚本,支持 --check。",
+      "tags": [
+        "script",
+        "lockfile",
+        "installer",
+        "generation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "type": "file",
+      "name": "generate-coding-agent-shrinkwrap.mjs",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "从根 lockfile 生成 coding-agent 的 npm-shrinkwrap.json:转换 workspace 依赖、校验外部依赖完整性与安装脚本白名单。",
+      "tags": [
+        "script",
+        "shrinkwrap",
+        "lockfile",
+        "generation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/local-release.mjs",
+      "type": "file",
+      "name": "local-release.mjs",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "本地发布演练:构建并 pack 可发布包,在仓库外的隔离目录安装 tarball 测试真实发布流程。",
+      "tags": [
+        "script",
+        "release",
+        "pack",
+        "testing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/profile-coding-agent-node.mjs",
+      "type": "file",
+      "name": "profile-coding-agent-node.mjs",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "对 coding-agent 启动/回合做性能分析(node 或 bun):运行 TUI/RPC 基准,解析 startup timings 并输出汇总报告。",
+      "tags": [
+        "script",
+        "profiling",
+        "benchmark",
+        "startup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/check-lockfile-commit.mjs:getLockfilePackageChanges",
+      "type": "function",
+      "name": "getLockfilePackageChanges",
+      "filePath": "scripts/check-lockfile-commit.mjs",
+      "summary": "比对 git HEAD 与工作区 lockfile,返回新增/删除/变更的包条目。",
+      "tags": [
+        "script",
+        "lockfile",
+        "git"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        33,
+        48
+      ]
+    },
+    {
+      "id": "function:scripts/check-lockfile-commit.mjs:summarizeLockfileChange",
+      "type": "function",
+      "name": "summarizeLockfileChange",
+      "filePath": "scripts/check-lockfile-commit.mjs",
+      "summary": "把 lockfile 变更汇总为人类可读的包名@版本列表说明。",
+      "tags": [
+        "script",
+        "lockfile",
+        "report"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        58,
+        75
+      ]
+    },
+    {
+      "id": "function:scripts/check-pinned-deps.mjs:collectPackageJsonFiles",
+      "type": "function",
+      "name": "collectPackageJsonFiles",
+      "filePath": "scripts/check-pinned-deps.mjs",
+      "summary": "递归收集目录树中的 package.json 文件(忽略 .git/dist/node_modules)。",
+      "tags": [
+        "script",
+        "filesystem",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        22
+      ]
+    },
+    {
+      "id": "function:scripts/check-ts-relative-imports.mjs:collectTypescriptFiles",
+      "type": "function",
+      "name": "collectTypescriptFiles",
+      "filePath": "scripts/check-ts-relative-imports.mjs",
+      "summary": "递归收集目录树中的 .ts 源文件(排除 .d.ts 与构建目录)。",
+      "tags": [
+        "script",
+        "filesystem",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        21
+      ]
+    },
+    {
+      "id": "function:scripts/diff-model-catalog.mjs:printUsage",
+      "type": "function",
+      "name": "printUsage",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "输出命令行用法说明。",
+      "tags": [
+        "script",
+        "cli",
+        "help"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        21
+      ]
+    },
+    {
+      "id": "function:scripts/diff-model-catalog.mjs:run",
+      "type": "function",
+      "name": "run",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "同步执行命令并捕获输出/退出码。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        23,
+        34
+      ]
+    },
+    {
+      "id": "function:scripts/diff-model-catalog.mjs:canonicalizeJson",
+      "type": "function",
+      "name": "canonicalizeJson",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "按固定键序规范化 JSON 值以便稳定 diff。",
+      "tags": [
+        "script",
+        "json",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        105,
+        114
+      ]
+    },
+    {
+      "id": "function:scripts/diff-model-catalog.mjs:formatJsonForDiff",
+      "type": "function",
+      "name": "formatJsonForDiff",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "把 JSON 值格式化为适合 diff 的多行文本(含排序)。",
+      "tags": [
+        "script",
+        "json",
+        "diff"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        116,
+        130
+      ]
+    },
+    {
+      "id": "function:scripts/diff-model-catalog.mjs:writeChangedLines",
+      "type": "function",
+      "name": "writeChangedLines",
+      "filePath": "scripts/diff-model-catalog.mjs",
+      "summary": "提取 diff 输出中的变更行写入文件。",
+      "tags": [
+        "script",
+        "diff",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        136,
+        145
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "解析命令行参数(目录、JSON 输出、过滤、排行与时间范围等)。",
+      "tags": [
+        "script",
+        "cli",
+        "args"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        13,
+        62
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:printHelp",
+      "type": "function",
+      "name": "printHelp",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "输出命令行帮助信息。",
+      "tags": [
+        "script",
+        "cli",
+        "help"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        64,
+        80
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:resolveAutoSinceMs",
+      "type": "function",
+      "name": "resolveAutoSinceMs",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "根据自动扩展文件 mtime 或显式 --since 解析统计起始时间。",
+      "tags": [
+        "script",
+        "time",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        96,
+        114
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:analyzeReplacement",
+      "type": "function",
+      "name": "analyzeReplacement",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "分析一次替换的前缀/后缀/插入位置与新增文本占比。",
+      "tags": [
+        "script",
+        "analytics",
+        "edit-tool"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        157,
+        193
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:quantile",
+      "type": "function",
+      "name": "quantile",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "计算数值数组的分位数。",
+      "tags": [
+        "script",
+        "statistics",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        199,
+        209
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:classifyErrorKind",
+      "type": "function",
+      "name": "classifyErrorKind",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "根据错误文本与匹配结果分类工具失败类型。",
+      "tags": [
+        "script",
+        "analytics",
+        "error"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        243,
+        257
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:getArgStyle",
+      "type": "function",
+      "name": "getArgStyle",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "根据参数形状推断参数风格(位置/命名/混合)。",
+      "tags": [
+        "script",
+        "analytics",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        259,
+        268
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:analyzeToolArguments",
+      "type": "function",
+      "name": "analyzeToolArguments",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "解析并分类编辑工具的参数类型与风格。",
+      "tags": [
+        "script",
+        "analytics",
+        "edit-tool"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        270,
+        337
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:summarizeGroups",
+      "type": "function",
+      "name": "summarizeGroups",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "按分组键汇总记录并生成带统计量的组摘要。",
+      "tags": [
+        "script",
+        "analytics",
+        "report"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        352,
+        382
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:buildSameFileClusterStats",
+      "type": "function",
+      "name": "buildSameFileClusterStats",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "统计同文件连续编辑簇的规模分布。",
+      "tags": [
+        "script",
+        "analytics",
+        "report"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        384,
+        410
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:buildInflationBuckets",
+      "type": "function",
+      "name": "buildInflationBuckets",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "构建内容膨胀比的分桶统计。",
+      "tags": [
+        "script",
+        "analytics",
+        "report"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        412,
+        434
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:buildWorstExamples",
+      "type": "function",
+      "name": "buildWorstExamples",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "挑选替换量最大的示例记录。",
+      "tags": [
+        "script",
+        "analytics",
+        "report"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        444,
+        466
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:buildSummary",
+      "type": "function",
+      "name": "buildSummary",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "汇总所有记录并生成完整统计摘要结构。",
+      "tags": [
+        "script",
+        "analytics",
+        "report"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        468,
+        573
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:printHumanReport",
+      "type": "function",
+      "name": "printHumanReport",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "把摘要渲染为人类可读的分组表格报告。",
+      "tags": [
+        "script",
+        "report",
+        "cli"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        583,
+        696
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:scanSessions",
+      "type": "function",
+      "name": "scanSessions",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "扫描会话目录中的 JSONL,过滤时间范围并提取编辑工具记录。",
+      "tags": [
+        "script",
+        "sessions",
+        "scan"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        698,
+        790
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:applyFilters",
+      "type": "function",
+      "name": "applyFilters",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "对记录应用模型/扩展/失败等过滤条件。",
+      "tags": [
+        "script",
+        "filter",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        792,
+        805
+      ]
+    },
+    {
+      "id": "function:scripts/edit-tool-stats.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/edit-tool-stats.mjs",
+      "summary": "程序入口:解析参数、扫描、构建摘要并输出报告。",
+      "tags": [
+        "script",
+        "entry-point",
+        "cli"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        807,
+        829
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:sortedPackageEntry",
+      "type": "function",
+      "name": "sortedPackageEntry",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "对包条目键(版本/解析/依赖等)排序并裁剪非必要字段。",
+      "tags": [
+        "script",
+        "lockfile",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        46,
+        80
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:copyPackageJsonEntry",
+      "type": "function",
+      "name": "copyPackageJsonEntry",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "生成安装器 package.json 的包条目(映射内部 workspace)。",
+      "tags": [
+        "script",
+        "lockfile",
+        "generation"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        91,
+        114
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:packageNameFromLockPath",
+      "type": "function",
+      "name": "packageNameFromLockPath",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "从 lockfile 路径解析包名(含 scoped 包)。",
+      "tags": [
+        "script",
+        "lockfile",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        116,
+        128
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:getInternalWorkspaces",
+      "type": "function",
+      "name": "getInternalWorkspaces",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "识别 lockfile 中的内部 workspace 包集合。",
+      "tags": [
+        "script",
+        "lockfile",
+        "workspaces"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        139,
+        157
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:resolveExternalDependency",
+      "type": "function",
+      "name": "resolveExternalDependency",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "解析外部依赖的版本来源并校验下载 URL。",
+      "tags": [
+        "script",
+        "lockfile",
+        "dependency"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        159,
+        200
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:addInternalWorkspace",
+      "type": "function",
+      "name": "addInternalWorkspace",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "把内部 workspace 包加入安装锁队列并复制条目。",
+      "tags": [
+        "script",
+        "lockfile",
+        "workspaces"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        202,
+        214
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:addExternalPackage",
+      "type": "function",
+      "name": "addExternalPackage",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "把外部包加入安装锁并校验来源。",
+      "tags": [
+        "script",
+        "lockfile",
+        "dependency"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        216,
+        229
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:createInstallerPackageJson",
+      "type": "function",
+      "name": "createInstallerPackageJson",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "生成安装器根 package.json(名称/版本/依赖/overrides)。",
+      "tags": [
+        "script",
+        "generation",
+        "package-manifest"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        231,
+        248
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:createRootLockEntry",
+      "type": "function",
+      "name": "createRootLockEntry",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "为安装锁生成根 lockfile 条目。",
+      "tags": [
+        "script",
+        "lockfile",
+        "generation"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        250,
+        260
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:validateGeneratedFiles",
+      "type": "function",
+      "name": "validateGeneratedFiles",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "校验生成的锁文件与 package.json 的依赖一致性及安装脚本白名单。",
+      "tags": [
+        "script",
+        "validation",
+        "lockfile"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        262,
+        356
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-install-lock.mjs:generateInstallLock",
+      "type": "function",
+      "name": "generateInstallLock",
+      "filePath": "scripts/generate-coding-agent-install-lock.mjs",
+      "summary": "主流程:读取根 lockfile、解析 workspace 与外部依赖、生成并写出安装锁文件。",
+      "tags": [
+        "script",
+        "entry-point",
+        "lockfile"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        358,
+        404
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:sortedPackageEntry",
+      "type": "function",
+      "name": "sortedPackageEntry",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "对 shrinkwrap 包条目键排序并裁剪字段。",
+      "tags": [
+        "script",
+        "shrinkwrap",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        43,
+        77
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:copyPackageJsonEntry",
+      "type": "function",
+      "name": "copyPackageJsonEntry",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "生成 shrinkwrap 包条目(映射内部 workspace)。",
+      "tags": [
+        "script",
+        "shrinkwrap",
+        "generation"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        88,
+        111
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:packageNameFromLockPath",
+      "type": "function",
+      "name": "packageNameFromLockPath",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "从 lockfile 路径解析包名(含 scoped 包)。",
+      "tags": [
+        "script",
+        "lockfile",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        113,
+        125
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:getInternalWorkspaces",
+      "type": "function",
+      "name": "getInternalWorkspaces",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "识别 lockfile 中的内部 workspace 包集合。",
+      "tags": [
+        "script",
+        "lockfile",
+        "workspaces"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        132,
+        150
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:resolveExternalDependency",
+      "type": "function",
+      "name": "resolveExternalDependency",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "解析外部依赖版本来源并校验下载 URL。",
+      "tags": [
+        "script",
+        "lockfile",
+        "dependency"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        152,
+        193
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:addInternalWorkspace",
+      "type": "function",
+      "name": "addInternalWorkspace",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "把内部 workspace 包加入 shrinkwrap 队列。",
+      "tags": [
+        "script",
+        "shrinkwrap",
+        "workspaces"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        195,
+        207
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:addExternalPackage",
+      "type": "function",
+      "name": "addExternalPackage",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "把外部包加入 shrinkwrap 并校验来源。",
+      "tags": [
+        "script",
+        "shrinkwrap",
+        "dependency"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        209,
+        222
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:validateShrinkwrap",
+      "type": "function",
+      "name": "validateShrinkwrap",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "校验 shrinkwrap 完整性与安装脚本白名单。",
+      "tags": [
+        "script",
+        "validation",
+        "shrinkwrap"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        224,
+        288
+      ]
+    },
+    {
+      "id": "function:scripts/generate-coding-agent-shrinkwrap.mjs:generateShrinkwrap",
+      "type": "function",
+      "name": "generateShrinkwrap",
+      "filePath": "scripts/generate-coding-agent-shrinkwrap.mjs",
+      "summary": "主流程:生成并写出 npm-shrinkwrap.json,支持 --check。",
+      "tags": [
+        "script",
+        "entry-point",
+        "shrinkwrap"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        290,
+        335
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:printUsage",
+      "type": "function",
+      "name": "printUsage",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "输出命令行用法说明。",
+      "tags": [
+        "script",
+        "cli",
+        "help"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        34
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "解析命令行参数(目标目录、架构、跳过步骤等)。",
+      "tags": [
+        "script",
+        "cli",
+        "args"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        36,
+        85
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:run",
+      "type": "function",
+      "name": "run",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "同步执行命令并输出结果,失败时中止。",
+      "tags": [
+        "script",
+        "utility",
+        "process"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        87,
+        101
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:prepareOutputDirectory",
+      "type": "function",
+      "name": "prepareOutputDirectory",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "创建隔离的发布输出目录并复制源码/生成文件。",
+      "tags": [
+        "script",
+        "build",
+        "release"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        116,
+        136
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:buildBunBinaryRelease",
+      "type": "function",
+      "name": "buildBunBinaryRelease",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "构建 bun 二进制发布产物并打包。",
+      "tags": [
+        "script",
+        "build",
+        "bun"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        150,
+        170
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:createPiShim",
+      "type": "function",
+      "name": "createPiShim",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "生成 pi 命令行 shim 脚本。",
+      "tags": [
+        "script",
+        "generation",
+        "release"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        172,
+        185
+      ]
+    },
+    {
+      "id": "function:scripts/local-release.mjs:packPackage",
+      "type": "function",
+      "name": "packPackage",
+      "filePath": "scripts/local-release.mjs",
+      "summary": "对指定包执行 npm pack 并返回 tarball 路径。",
+      "tags": [
+        "script",
+        "pack",
+        "release"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        187,
+        199
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:printHelp",
+      "type": "function",
+      "name": "printHelp",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "输出命令行帮助信息。",
+      "tags": [
+        "script",
+        "cli",
+        "help"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        18,
+        49
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "解析命令行参数(runtime、mode、profile 目录、标签等)。",
+      "tags": [
+        "script",
+        "cli",
+        "args"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        73,
+        168
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:summarize",
+      "type": "function",
+      "name": "summarize",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "对数值数组输出均值/中位数/最大最小值。",
+      "tags": [
+        "script",
+        "statistics",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        205,
+        216
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:parseStartupTimings",
+      "type": "function",
+      "name": "parseStartupTimings",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "从 stderr 输出解析各阶段的启动耗时。",
+      "tags": [
+        "script",
+        "parsing",
+        "profiling"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        218,
+        242
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:summarizeTimingMaps",
+      "type": "function",
+      "name": "summarizeTimingMaps",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "汇总多轮运行的阶段耗时统计。",
+      "tags": [
+        "script",
+        "statistics",
+        "profiling"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        244,
+        262
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:waitForExit",
+      "type": "function",
+      "name": "waitForExit",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "等待子进程退出并捕获错误前缀。",
+      "tags": [
+        "script",
+        "process",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        268,
+        279
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:runBuild",
+      "type": "function",
+      "name": "runBuild",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "构建 coding-agent 包(或使用已有 dist)。",
+      "tags": [
+        "script",
+        "build",
+        "utility"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        281,
+        331
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:getRuntimeCommand",
+      "type": "function",
+      "name": "getRuntimeCommand",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "根据 runtime/mode 构造待分析的启动命令。",
+      "tags": [
+        "script",
+        "profiling",
+        "command"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        333,
+        360
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:createBenchmarkEnv",
+      "type": "function",
+      "name": "createBenchmarkEnv",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "创建隔离的 agent 目录与基准环境变量。",
+      "tags": [
+        "script",
+        "benchmark",
+        "env"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        362,
+        377
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:runTuiBenchmarkRun",
+      "type": "function",
+      "name": "runTuiBenchmarkRun",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "运行 TUI 启动基准并收集 stderr 时序。",
+      "tags": [
+        "script",
+        "benchmark",
+        "tui"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        379,
+        423
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:splitJsonLines",
+      "type": "function",
+      "name": "splitJsonLines",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "从缓冲区按行切分 JSON 并回调处理。",
+      "tags": [
+        "script",
+        "parsing",
+        "utility"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        425,
+        436
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:runRpcBenchmarkRun",
+      "type": "function",
+      "name": "runRpcBenchmarkRun",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "运行 RPC 模式基准并解析 JSONL 输出。",
+      "tags": [
+        "script",
+        "benchmark",
+        "rpc"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        438,
+        525
+      ]
+    },
+    {
+      "id": "function:scripts/profile-coding-agent-node.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/profile-coding-agent-node.mjs",
+      "summary": "程序入口:解析参数、构建、运行各轮基准并输出汇总报告。",
+      "tags": [
+        "script",
+        "entry-point",
+        "benchmark"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        534,
+        635
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/check-lockfile-commit.mjs",
+      "target": "function:scripts/check-lockfile-commit.mjs:getLockfilePackageChanges",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/check-lockfile-commit.mjs",
+      "target": "function:scripts/check-lockfile-commit.mjs:summarizeLockfileChange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/check-pinned-deps.mjs",
+      "target": "function:scripts/check-pinned-deps.mjs:collectPackageJsonFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/check-ts-relative-imports.mjs",
+      "target": "function:scripts/check-ts-relative-imports.mjs:collectTypescriptFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/diff-model-catalog.mjs",
+      "target": "function:scripts/diff-model-catalog.mjs:printUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/diff-model-catalog.mjs",
+      "target": "function:scripts/diff-model-catalog.mjs:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/diff-model-catalog.mjs",
+      "target": "function:scripts/diff-model-catalog.mjs:canonicalizeJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/diff-model-catalog.mjs",
+      "target": "function:scripts/diff-model-catalog.mjs:formatJsonForDiff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/diff-model-catalog.mjs",
+      "target": "function:scripts/diff-model-catalog.mjs:writeChangedLines",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:printHelp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:resolveAutoSinceMs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:analyzeReplacement",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:quantile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:classifyErrorKind",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:getArgStyle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:analyzeToolArguments",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:summarizeGroups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:buildSameFileClusterStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:buildInflationBuckets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:buildWorstExamples",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:buildSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:printHumanReport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:scanSessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:applyFilters",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/edit-tool-stats.mjs",
+      "target": "function:scripts/edit-tool-stats.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:sortedPackageEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:copyPackageJsonEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:packageNameFromLockPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:getInternalWorkspaces",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:resolveExternalDependency",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:addInternalWorkspace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:addExternalPackage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:createInstallerPackageJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:createRootLockEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:validateGeneratedFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "function:scripts/generate-coding-agent-install-lock.mjs:generateInstallLock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:sortedPackageEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:copyPackageJsonEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:packageNameFromLockPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:getInternalWorkspaces",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:resolveExternalDependency",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:addInternalWorkspace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:addExternalPackage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:validateShrinkwrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "target": "function:scripts/generate-coding-agent-shrinkwrap.mjs:generateShrinkwrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:printUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:prepareOutputDirectory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:buildBunBinaryRelease",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:createPiShim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/local-release.mjs",
+      "target": "function:scripts/local-release.mjs:packPackage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:printHelp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:summarize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:parseStartupTimings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:summarizeTimingMaps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:waitForExit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:runBuild",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:getRuntimeCommand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:createBenchmarkEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:runTuiBenchmarkRun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:splitJsonLines",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:runRpcBenchmarkRun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/profile-coding-agent-node.mjs",
+      "target": "function:scripts/profile-coding-agent-node.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-coding-agent-install-lock.mjs",
+      "target": "file:scripts/generate-coding-agent-shrinkwrap.mjs",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

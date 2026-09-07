@@ -1,0 +1,984 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "type": "file",
+   "name": "zai-coding-cn.ts",
+   "filePath": "packages/ai/src/providers/zai-coding-cn.ts",
+   "summary": "提供智谱 ZAI Coding（国内版）的 provider 工厂，基于 OpenAI Completions 兼容接口与 env API key 认证装配 provider。",
+   "tags": [
+    "provider",
+    "factory",
+    "llm-api",
+    "zai"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "type": "function",
+   "name": "zaiCodingCnProvider",
+   "filePath": "packages/ai/src/providers/zai-coding-cn.ts",
+   "summary": "构建智谱 ZAI Coding（国内版）provider，装配 OpenAI Completions 兼容 API 与 env key 认证。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    6,
+    15
+   ]
+  },
+  {
+   "id": "file:packages/ai/src/utils/retry.ts",
+   "type": "file",
+   "name": "retry.ts",
+   "filePath": "packages/ai/src/utils/retry.ts",
+   "summary": "LLM 调用的重试工具：定义重试策略、可重试错误分类与可取消的指数退避重试逻辑。",
+   "tags": [
+    "utility",
+    "retry",
+    "error-handling",
+    "llm-api"
+   ],
+   "complexity": "complex",
+   "languageNotes": "基于指数退避与可重试错误分类的重试策略实现。"
+  },
+  {
+   "id": "function:packages/ai/src/utils/retry.ts:sleep",
+   "type": "function",
+   "name": "sleep",
+   "filePath": "packages/ai/src/utils/retry.ts",
+   "summary": "可取消的延时函数。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    126,
+    142
+   ]
+  },
+  {
+   "id": "function:packages/ai/src/utils/retry.ts:retryAssistantCall",
+   "type": "function",
+   "name": "retryAssistantCall",
+   "filePath": "packages/ai/src/utils/retry.ts",
+   "summary": "按重试策略执行 assistant 调用，支持退避、取消与进度回调。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    162,
+    211
+   ]
+  },
+  {
+   "id": "function:packages/ai/src/utils/retry.ts:isRetryableAssistantError",
+   "type": "function",
+   "name": "isRetryableAssistantError",
+   "filePath": "packages/ai/src/utils/retry.ts",
+   "summary": "函数 isRetryableAssistantError：判断RetryableAssistantError 相关逻辑，参数：message。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    222,
+    227
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "type": "file",
+   "name": "anthropic-oauth.test.ts",
+   "filePath": "packages/ai/test/anthropic-oauth.test.ts",
+   "summary": "Anthropic OAuth 授权流程的测试，mock OAuth 交互并验证令牌获取。",
+   "tags": [
+    "test",
+    "oauth",
+    "anthropic"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-oauth.test.ts:getUrl",
+   "type": "function",
+   "name": "getUrl",
+   "filePath": "packages/ai/test/anthropic-oauth.test.ts",
+   "summary": "函数 getUrl：获取Url 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    16,
+    27
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "type": "file",
+   "name": "github-copilot-oauth.test.ts",
+   "filePath": "packages/ai/test/github-copilot-oauth.test.ts",
+   "summary": "GitHub Copilot OAuth 登录与模型刷新流程的集成测试，覆盖设备码授权交互。",
+   "tags": [
+    "test",
+    "oauth",
+    "github-copilot"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/github-copilot-oauth.test.ts:getUrl",
+   "type": "function",
+   "name": "getUrl",
+   "filePath": "packages/ai/test/github-copilot-oauth.test.ts",
+   "summary": "函数 getUrl：获取Url 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    18,
+    29
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/github-copilot-oauth.test.ts:loginGitHubCopilotForTest",
+   "type": "function",
+   "name": "loginGitHubCopilotForTest",
+   "filePath": "packages/ai/test/github-copilot-oauth.test.ts",
+   "summary": "测试辅助：驱动 GitHub Copilot OAuth 登录流程。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    31,
+    56
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/github-copilot-oauth.test.ts:refreshGitHubCopilotModelsForTest",
+   "type": "function",
+   "name": "refreshGitHubCopilotModelsForTest",
+   "filePath": "packages/ai/test/github-copilot-oauth.test.ts",
+   "summary": "测试辅助：刷新 GitHub Copilot 模型列表。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    58,
+    94
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/model-catalog-types.test.ts",
+   "type": "file",
+   "name": "model-catalog-types.test.ts",
+   "filePath": "packages/ai/test/model-catalog-types.test.ts",
+   "summary": "模型目录类型兼容性的类型级测试，校验 provider 模型常量结构。",
+   "tags": [
+    "test",
+    "type-definition",
+    "model-catalog"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/oauth-device-code.test.ts",
+   "type": "file",
+   "name": "oauth-device-code.test.ts",
+   "filePath": "packages/ai/test/oauth-device-code.test.ts",
+   "summary": "OAuth 设备码（device code）授权流程的测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "device-code"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "type": "file",
+   "name": "openai-codex-oauth.test.ts",
+   "filePath": "packages/ai/test/openai-codex-oauth.test.ts",
+   "summary": "OpenAI Codex OAuth 设备码登录流程的集成测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "openai"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/openai-codex-oauth.test.ts:createAccessToken",
+   "type": "function",
+   "name": "createAccessToken",
+   "filePath": "packages/ai/test/openai-codex-oauth.test.ts",
+   "summary": "函数 createAccessToken：创建AccessToken 相关逻辑，参数：accountId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    20,
+    30
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/openai-codex-oauth.test.ts:deviceAuthPendingResponse",
+   "type": "function",
+   "name": "deviceAuthPendingResponse",
+   "filePath": "packages/ai/test/openai-codex-oauth.test.ts",
+   "summary": "函数 deviceAuthPendingResponse：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    32,
+    44
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/openai-codex-oauth.test.ts:loginOpenAICodexDeviceCodeForTest",
+   "type": "function",
+   "name": "loginOpenAICodexDeviceCodeForTest",
+   "filePath": "packages/ai/test/openai-codex-oauth.test.ts",
+   "summary": "测试辅助：驱动 OpenAI Codex 设备码登录。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    46,
+    68
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/providers.test.ts",
+   "type": "file",
+   "name": "providers.test.ts",
+   "filePath": "packages/ai/test/providers.test.ts",
+   "summary": "多 provider 行为测试：验证各内置 provider 的模型解析、认证、推理级别与调用。",
+   "tags": [
+    "test",
+    "provider",
+    "llm-api"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/retry.test.ts",
+   "type": "file",
+   "name": "retry.test.ts",
+   "filePath": "packages/ai/test/retry.test.ts",
+   "summary": "重试工具的行为测试：验证退避、可重试错误分类与取消语义。",
+   "tags": [
+    "test",
+    "retry",
+    "unit-test"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/xai-oauth.test.ts",
+   "type": "file",
+   "name": "xai-oauth.test.ts",
+   "filePath": "packages/ai/test/xai-oauth.test.ts",
+   "summary": "xAI OAuth 登录与刷新令牌流程的测试。",
+   "tags": [
+    "test",
+    "oauth",
+    "xai"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/xai-oauth.test.ts:deviceCodeResponse",
+   "type": "function",
+   "name": "deviceCodeResponse",
+   "filePath": "packages/ai/test/xai-oauth.test.ts",
+   "summary": "函数 deviceCodeResponse：实现其核心逻辑，参数：overrides。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    25,
+    34
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/xai-oauth.test.ts:loginXaiForTest",
+   "type": "function",
+   "name": "loginXaiForTest",
+   "filePath": "packages/ai/test/xai-oauth.test.ts",
+   "summary": "测试辅助：驱动 xAI OAuth 登录。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    53,
+    69
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/bun/cli.ts",
+   "type": "file",
+   "name": "cli.ts",
+   "filePath": "packages/coding-agent/src/bun/cli.ts",
+   "summary": "Bun 运行时下的 coding-agent CLI 入口点：注册 Bun OAuth 流程并启动 CLI。",
+   "tags": [
+    "entry-point",
+    "cli",
+    "bun"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "type": "file",
+   "name": "restore-sandbox-env.ts",
+   "filePath": "packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "summary": "Bun 沙箱启动时恢复构建期保存的环境变量，避免沙箱隔离导致配置丢失。",
+   "tags": [
+    "utility",
+    "bun",
+    "sandbox"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/bun/restore-sandbox-env.ts:restoreSandboxEnv",
+   "type": "function",
+   "name": "restoreSandboxEnv",
+   "filePath": "packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "summary": "恢复 Bun 沙箱构建期保存的环境变量。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    19,
+    36
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "file:packages/ai/src/auth/helpers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/zai-coding-cn.ts",
+   "target": "file:packages/ai/src/providers/zai-coding-cn.models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "function:packages/ai/src/utils/retry.ts:sleep",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "function:packages/ai/src/utils/retry.ts:retryAssistantCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "function:packages/ai/src/utils/retry.ts:retryAssistantCall",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "function:packages/ai/src/utils/retry.ts:isRetryableAssistantError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "function:packages/ai/src/utils/retry.ts:isRetryableAssistantError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "target": "function:packages/ai/test/anthropic-oauth.test.ts:getUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/anthropic.ts",
+   "target": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/anthropic-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "function:packages/ai/test/github-copilot-oauth.test.ts:getUrl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "function:packages/ai/test/github-copilot-oauth.test.ts:loginGitHubCopilotForTest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "function:packages/ai/test/github-copilot-oauth.test.ts:refreshGitHubCopilotModelsForTest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/credential-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "target": "file:packages/ai/src/providers/github-copilot.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/credential-store.ts",
+   "target": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/github-copilot.ts",
+   "target": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/github-copilot.ts",
+   "target": "file:packages/ai/test/github-copilot-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/model-catalog-types.test.ts",
+   "target": "file:packages/ai/src/providers/github-copilot.models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/model-catalog-types.test.ts",
+   "target": "file:packages/ai/src/providers/xai.models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/github-copilot.models.ts",
+   "target": "file:packages/ai/test/model-catalog-types.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/xai.models.ts",
+   "target": "file:packages/ai/test/model-catalog-types.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/oauth-device-code.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/device-code.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/device-code.ts",
+   "target": "file:packages/ai/test/oauth-device-code.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "target": "function:packages/ai/test/openai-codex-oauth.test.ts:createAccessToken",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "target": "function:packages/ai/test/openai-codex-oauth.test.ts:deviceAuthPendingResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "target": "function:packages/ai/test/openai-codex-oauth.test.ts:loginOpenAICodexDeviceCodeForTest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/openai-codex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/openai-codex.ts",
+   "target": "file:packages/ai/test/openai-codex-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/api/lazy.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/auth/helpers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/models-store.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/all.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/amazon-bedrock.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/anthropic.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/providers/google-vertex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/providers.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/lazy.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/helpers.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models-store.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/models.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/all.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/amazon-bedrock.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/anthropic.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/cloudflare-ai-gateway.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/cloudflare-workers-ai.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/faux.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/providers/google-vertex.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/types.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/event-stream.ts",
+   "target": "file:packages/ai/test/providers.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/retry.test.ts",
+   "target": "file:packages/ai/src/providers/faux.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/retry.test.ts",
+   "target": "file:packages/ai/src/utils/retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/providers/faux.ts",
+   "target": "file:packages/ai/test/retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/utils/retry.ts",
+   "target": "file:packages/ai/test/retry.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/xai-oauth.test.ts",
+   "target": "function:packages/ai/test/xai-oauth.test.ts:deviceCodeResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xai-oauth.test.ts",
+   "target": "function:packages/ai/test/xai-oauth.test.ts:loginXaiForTest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/xai-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/oauth/xai.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/xai-oauth.test.ts",
+   "target": "file:packages/ai/src/auth/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/auth/oauth/xai.ts",
+   "target": "file:packages/ai/test/xai-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/auth/types.ts",
+   "target": "file:packages/ai/test/xai-oauth.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/cli.ts",
+   "target": "file:packages/ai/src/bun-oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/cli.ts",
+   "target": "file:packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/cli.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "target": "function:packages/coding-agent/src/bun/restore-sandbox-env.ts:restoreSandboxEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/bun/restore-sandbox-env.ts",
+   "target": "function:packages/coding-agent/src/bun/restore-sandbox-env.ts:restoreSandboxEnv",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "target": "function:packages/ai/src/models.ts:createProvider",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "target": "function:packages/ai/src/auth/helpers.ts:envApiKeyAuth",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/src/providers/zai-coding-cn.ts:zaiCodingCnProvider",
+   "target": "function:packages/ai/src/api/openai-completions.lazy.ts:openAICompletionsApi",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

@@ -1,0 +1,580 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "type": "file",
+   "name": "auth.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/auth.ts",
+   "summary": "实验性 CLI 的认证输入解析（token/环境变量）。",
+   "tags": [
+    "cli",
+    "auth",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/auth.ts:parseAuthInput",
+   "type": "function",
+   "name": "parseAuthInput",
+   "filePath": "packages/coding-agent/src/cli/experimental/auth.ts",
+   "summary": "解析认证输入（token/环境变量）。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    10,
+    21
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "type": "file",
+   "name": "cli.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/cli.ts",
+   "summary": "实验性 CLI 入口：按子命令转发参数。",
+   "tags": [
+    "cli",
+    "entry-point",
+    "experimental"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "type": "file",
+   "name": "command-options.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/command-options.ts",
+   "summary": "命令选项定义：transport、auth 与遗留选项解析。",
+   "tags": [
+    "cli",
+    "options",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command-options.ts:transportOption",
+   "type": "function",
+   "name": "transportOption",
+   "filePath": "packages/coding-agent/src/cli/experimental/command-options.ts",
+   "summary": "函数 transportOption：实现其核心逻辑，参数：name。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    9,
+    16
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseAuth",
+   "type": "function",
+   "name": "parseAuth",
+   "filePath": "packages/coding-agent/src/cli/experimental/command-options.ts",
+   "summary": "函数 parseAuth：解析Auth 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    18,
+    23
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseLegacyOptions",
+   "type": "function",
+   "name": "parseLegacyOptions",
+   "filePath": "packages/coding-agent/src/cli/experimental/command-options.ts",
+   "summary": "函数 parseLegacyOptions：解析LegacyOptions 相关逻辑，参数：input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    25,
+    33
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command-options.ts:unsupportedLegacyOptions",
+   "type": "function",
+   "name": "unsupportedLegacyOptions",
+   "filePath": "packages/coding-agent/src/cli/experimental/command-options.ts",
+   "summary": "函数 unsupportedLegacyOptions：实现其核心逻辑，参数：command、input。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    35,
+    38
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "type": "file",
+   "name": "command.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/command.ts",
+   "summary": "实验性 Command 抽象：选项定义、参数解析与执行管线。",
+   "tags": [
+    "cli",
+    "command",
+    "framework"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/cli/experimental/command.ts:Command",
+   "type": "class",
+   "name": "Command",
+   "filePath": "packages/coding-agent/src/cli/experimental/command.ts",
+   "summary": "实验性 CLI 命令抽象：选项定义、解析与执行。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    63,
+    205
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command.ts:valueOption",
+   "type": "function",
+   "name": "valueOption",
+   "filePath": "packages/coding-agent/src/cli/experimental/command.ts",
+   "summary": "定义带解析器的命令选项。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    27
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/command.ts:stringOption",
+   "type": "function",
+   "name": "stringOption",
+   "filePath": "packages/coding-agent/src/cli/experimental/command.ts",
+   "summary": "函数 stringOption：实现其核心逻辑，参数：name。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    29,
+    31
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "type": "file",
+   "name": "client.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "summary": "client 子命令：连接本地 agent 服务端。",
+   "tags": [
+    "cli",
+    "command",
+    "client"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "type": "file",
+   "name": "server.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "summary": "server 子命令：启动本地 agent 服务。",
+   "tags": [
+    "cli",
+    "command",
+    "server"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "type": "file",
+   "name": "tfa.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "summary": "tfa 子命令：运行 TFA agent 会话。",
+   "tags": [
+    "cli",
+    "command",
+    "tfa"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "type": "file",
+   "name": "transport-address.ts",
+   "filePath": "packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "summary": "传输地址解析（unix socket/tcp），含路径选项处理。",
+   "tags": [
+    "cli",
+    "transport",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/cli/experimental/transport-address.ts:parseTransportAddress",
+   "type": "function",
+   "name": "parseTransportAddress",
+   "filePath": "packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "summary": "解析传输地址（unix/tcp）并处理路径选项。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    10,
+    48
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/test/experimental-cli-command.test.ts",
+   "type": "file",
+   "name": "experimental-cli-command.test.ts",
+   "filePath": "packages/coding-agent/test/experimental-cli-command.test.ts",
+   "summary": "实验性 CLI 命令行为的测试。",
+   "tags": [
+    "test",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/experimental-cli-resolution.test.ts",
+   "type": "file",
+   "name": "experimental-cli-resolution.test.ts",
+   "filePath": "packages/coding-agent/test/experimental-cli-resolution.test.ts",
+   "summary": "实验性 CLI 模块/命令解析的测试。",
+   "tags": [
+    "test",
+    "cli",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/auth.ts:parseAuthInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/auth.ts:parseAuthInput",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:transportOption",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:transportOption",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseAuth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseAuth",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseLegacyOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseLegacyOptions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:unsupportedLegacyOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command-options.ts:unsupportedLegacyOptions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "class:packages/coding-agent/src/cli/experimental/command.ts:Command",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "class:packages/coding-agent/src/cli/experimental/command.ts:Command",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command.ts:valueOption",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command.ts:valueOption",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command.ts:stringOption",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/command.ts:stringOption",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/client.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/server.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/auth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/command.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/commands/tfa.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/transport-address.ts:parseTransportAddress",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/transport-address.ts",
+   "target": "function:packages/coding-agent/src/cli/experimental/transport-address.ts:parseTransportAddress",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/experimental-cli-command.test.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "target": "file:packages/coding-agent/test/experimental-cli-command.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/test/experimental-cli-resolution.test.ts",
+   "target": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/experimental/cli.ts",
+   "target": "file:packages/coding-agent/test/experimental-cli-resolution.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/coding-agent/src/cli/experimental/command-options.ts:parseLegacyOptions",
+   "target": "function:packages/coding-agent/src/cli/args.ts:parseArgs",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

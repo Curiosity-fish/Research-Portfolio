@@ -1,0 +1,2138 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/utils/mime.ts",
+   "type": "file",
+   "name": "mime.ts",
+   "filePath": "packages/coding-agent/src/utils/mime.ts",
+   "summary": "提供图片 MIME 类型检测工具：识别受支持的图片类型、从文件内容嗅探类型，并判断是否为 BMP/动画 PNG。",
+   "tags": [
+    "utility",
+    "mime",
+    "图片处理"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeType",
+   "type": "function",
+   "name": "detectSupportedImageMimeType",
+   "filePath": "packages/coding-agent/src/utils/mime.ts",
+   "lineRange": [
+    6,
+    23
+   ],
+   "summary": "根据内容判断是否为受支持的图片 MIME 类型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeTypeFromFile",
+   "type": "function",
+   "name": "detectSupportedImageMimeTypeFromFile",
+   "filePath": "packages/coding-agent/src/utils/mime.ts",
+   "lineRange": [
+    25,
+    34
+   ],
+   "summary": "从文件路径读取内容并检测图片 MIME 类型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/mime.ts:isAnimatedPng",
+   "type": "function",
+   "name": "isAnimatedPng",
+   "filePath": "packages/coding-agent/src/utils/mime.ts",
+   "lineRange": [
+    42,
+    55
+   ],
+   "summary": "判断 PNG 是否为动画（APNG）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/mime.ts:isBmp",
+   "type": "function",
+   "name": "isBmp",
+   "filePath": "packages/coding-agent/src/utils/mime.ts",
+   "lineRange": [
+    57,
+    81
+   ],
+   "summary": "判断内容是否为 BMP 位图。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "file",
+   "name": "paths.ts",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "summary": "提供路径处理工具集：规范化路径、解析相对/绝对路径、获取 cwd 相对路径，以及 Windows shell 路径与云同步忽略标记处理。",
+   "tags": [
+    "utility",
+    "路径处理",
+    "filesystem"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:canonicalizePath",
+   "type": "function",
+   "name": "canonicalizePath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    28,
+    34
+   ],
+   "summary": "对路径进行规范化（解析 . 与 ..，转换为绝对路径）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:getFileRevision",
+   "type": "function",
+   "name": "getFileRevision",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    36,
+    43
+   ],
+   "summary": "获取文件的修订信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:isLocalPath",
+   "type": "function",
+   "name": "isLocalPath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    50,
+    64
+   ],
+   "summary": "判断路径是否为本地路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:normalizeWindowsShellPath",
+   "type": "function",
+   "name": "normalizeWindowsShellPath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    67,
+    73
+   ],
+   "summary": "将 Windows shell 路径转换为标准形式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:normalizePath",
+   "type": "function",
+   "name": "normalizePath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    75,
+    100
+   ],
+   "summary": "规范化路径分隔符并处理大小写。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:resolvePath",
+   "type": "function",
+   "name": "resolvePath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    102,
+    106
+   ],
+   "summary": "解析路径为绝对路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:getCwdRelativePath",
+   "type": "function",
+   "name": "getCwdRelativePath",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    108,
+    117
+   ],
+   "summary": "返回相对于当前工作目录的路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:formatPathRelativeToCwdOrAbsolute",
+   "type": "function",
+   "name": "formatPathRelativeToCwdOrAbsolute",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    119,
+    122
+   ],
+   "summary": "将路径格式化为相对 cwd 或绝对路径形式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/paths.ts:markPathIgnoredByCloudSync",
+   "type": "function",
+   "name": "markPathIgnoredByCloudSync",
+   "filePath": "packages/coding-agent/src/utils/paths.ts",
+   "lineRange": [
+    124,
+    139
+   ],
+   "summary": "标记路径以被云同步忽略。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "file",
+   "name": "shell.ts",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "summary": "提供 shell 相关工具：查找 bash、读取 shell 配置与环境变量、净化二进制输出，以及子进程树管理与终止。",
+   "tags": [
+    "utility",
+    "shell",
+    "进程管理"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:findBashOnPath",
+   "type": "function",
+   "name": "findBashOnPath",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    24,
+    58
+   ],
+   "summary": "在 PATH 中查找 bash 可执行文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:getShellConfig",
+   "type": "function",
+   "name": "getShellConfig",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    67,
+    120
+   ],
+   "summary": "读取 shell 配置（如 bash 路径与参数）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:getShellEnv",
+   "type": "function",
+   "name": "getShellEnv",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    122,
+    134
+   ],
+   "summary": "构造 shell 执行所需的环境变量。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:sanitizeBinaryOutput",
+   "type": "function",
+   "name": "sanitizeBinaryOutput",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    144,
+    174
+   ],
+   "summary": "净化输出中的二进制/不可打印内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:trackDetachedChildPid",
+   "type": "function",
+   "name": "trackDetachedChildPid",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    182,
+    184
+   ],
+   "summary": "登记一个分离子进程的 PID。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:untrackDetachedChildPid",
+   "type": "function",
+   "name": "untrackDetachedChildPid",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    186,
+    188
+   ],
+   "summary": "取消登记分离子进程的 PID。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:killTrackedDetachedChildren",
+   "type": "function",
+   "name": "killTrackedDetachedChildren",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    190,
+    195
+   ],
+   "summary": "终止所有被登记的子进程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/shell.ts:killProcessTree",
+   "type": "function",
+   "name": "killProcessTree",
+   "filePath": "packages/coding-agent/src/utils/shell.ts",
+   "lineRange": [
+    200,
+    225
+   ],
+   "summary": "递归终止进程树。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "type": "file",
+   "name": "tfa-user-agent.ts",
+   "filePath": "packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "summary": "提供 TFA 用户代理字符串（getTfaUserAgent），用于版本检查与网络请求标识。",
+   "tags": [
+    "utility",
+    "user-agent",
+    "网络"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tfa-user-agent.ts:getTfaUserAgent",
+   "type": "function",
+   "name": "getTfaUserAgent",
+   "filePath": "packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "lineRange": [
+    1,
+    4
+   ],
+   "summary": "返回 TFA 的用户代理字符串。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "type": "file",
+   "name": "tools-manager.ts",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "summary": "实现外部工具管理器（ensureTool）：检测、下载并安装外部 CLI 工具，支持压缩包解压与递归查找。",
+   "tags": [
+    "utility",
+    "工具管理",
+    "下载",
+    "安装"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:getToolPath",
+   "type": "function",
+   "name": "getToolPath",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    86,
+    105
+   ],
+   "summary": "获取工具的已安装路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:getLatestVersion",
+   "type": "function",
+   "name": "getLatestVersion",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    108,
+    123
+   ],
+   "summary": "获取工具的最新版本号。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:downloadFile",
+   "type": "function",
+   "name": "downloadFile",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    126,
+    139
+   ],
+   "summary": "下载文件到本地。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:findBinaryRecursively",
+   "type": "function",
+   "name": "findBinaryRecursively",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    141,
+    161
+   ],
+   "summary": "递归查找可执行二进制文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:formatSpawnFailure",
+   "type": "function",
+   "name": "formatSpawnFailure",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    163,
+    176
+   ],
+   "summary": "格式化 spawn 失败错误信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:getWindowsTarCommand",
+   "type": "function",
+   "name": "getWindowsTarCommand",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    193,
+    202
+   ],
+   "summary": "获取 Windows 下解压 tar 的命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:extractZipArchive",
+   "type": "function",
+   "name": "extractZipArchive",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    204,
+    240
+   ],
+   "summary": "解压 zip 压缩包。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:downloadTool",
+   "type": "function",
+   "name": "downloadTool",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    243,
+    318
+   ],
+   "summary": "下载并解压工具。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/tools-manager.ts:ensureTool",
+   "type": "function",
+   "name": "ensureTool",
+   "filePath": "packages/coding-agent/src/utils/tools-manager.ts",
+   "lineRange": [
+    328,
+    371
+   ],
+   "summary": "确保工具已安装并返回其路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/version-check.ts",
+   "type": "file",
+   "name": "version-check.ts",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "summary": "提供版本检查工具：比较版本号、获取最新 release 信息并提示是否有新版本可更新。",
+   "tags": [
+    "utility",
+    "版本检查",
+    "更新"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:formatVersionCheckError",
+   "type": "function",
+   "name": "formatVersionCheckError",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    15,
+    32
+   ],
+   "summary": "格式化版本检查失败的错误信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:comparePackageVersions",
+   "type": "function",
+   "name": "comparePackageVersions",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    34,
+    41
+   ],
+   "summary": "比较两个版本号的大小。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:isNewerPackageVersion",
+   "type": "function",
+   "name": "isNewerPackageVersion",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    43,
+    49
+   ],
+   "summary": "判断候选版本是否比当前版本更新。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiRelease",
+   "type": "function",
+   "name": "getLatestPiRelease",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    51,
+    88
+   ],
+   "summary": "从远端获取最新 release 信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiVersion",
+   "type": "function",
+   "name": "getLatestPiVersion",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    90,
+    95
+   ],
+   "summary": "获取最新版本号。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/version-check.ts:checkForNewPiVersion",
+   "type": "function",
+   "name": "checkForNewPiVersion",
+   "filePath": "packages/coding-agent/src/utils/version-check.ts",
+   "lineRange": [
+    97,
+    109
+   ],
+   "summary": "检查是否存在新版本并返回更新提示。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "type": "file",
+   "name": "windows-self-update.ts",
+   "filePath": "packages/coding-agent/src/utils/windows-self-update.ts",
+   "summary": "提供 Windows 自更新辅助逻辑：隔离目录管理、原生依赖清理与隔离，避免更新时文件被占用。",
+   "tags": [
+    "utility",
+    "windows",
+    "自更新"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/windows-self-update.ts:getQuarantineRoot",
+   "type": "function",
+   "name": "getQuarantineRoot",
+   "filePath": "packages/coding-agent/src/utils/windows-self-update.ts",
+   "lineRange": [
+    12,
+    24
+   ],
+   "summary": "获取隔离目录的根路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/windows-self-update.ts:getLoadedSharedObjectsInPackageDir",
+   "type": "function",
+   "name": "getLoadedSharedObjectsInPackageDir",
+   "filePath": "packages/coding-agent/src/utils/windows-self-update.ts",
+   "lineRange": [
+    26,
+    48
+   ],
+   "summary": "查找包目录中被加载的共享对象文件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/windows-self-update.ts:cleanupWindowsSelfUpdateQuarantine",
+   "type": "function",
+   "name": "cleanupWindowsSelfUpdateQuarantine",
+   "filePath": "packages/coding-agent/src/utils/windows-self-update.ts",
+   "lineRange": [
+    50,
+    60
+   ],
+   "summary": "清理 Windows 自更新隔离目录。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/windows-self-update.ts:quarantineWindowsNativeDependencies",
+   "type": "function",
+   "name": "quarantineWindowsNativeDependencies",
+   "filePath": "packages/coding-agent/src/utils/windows-self-update.ts",
+   "lineRange": [
+    62,
+    84
+   ],
+   "summary": "隔离原生依赖文件以支持自更新。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "file",
+   "name": "agent-session-dynamic-tools.test.ts",
+   "filePath": "packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "summary": "测试 agent 会话动态工具加载与资源加载器行为，覆盖动态添加工具的会话场景。",
+   "tags": [
+    "test",
+    "agent-session",
+    "动态工具"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/args.test.ts",
+   "type": "file",
+   "name": "args.test.ts",
+   "filePath": "packages/coding-agent/test/args.test.ts",
+   "summary": "测试 CLI 参数解析（args）的各种命令行参数组合与校验逻辑。",
+   "tags": [
+    "test",
+    "cli",
+    "参数解析"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "type": "file",
+   "name": "bash-close-hang-windows.test.ts",
+   "filePath": "packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "summary": "回归测试 Windows 下 bash 子进程关闭时的挂起问题，验证 stdio 继承与清理逻辑。",
+   "tags": [
+    "test",
+    "bash",
+    "windows",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:createInheritedStdioCommand",
+   "type": "function",
+   "name": "createInheritedStdioCommand",
+   "filePath": "packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "lineRange": [
+    13,
+    26
+   ],
+   "summary": "构造继承 stdio 的命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:cleanupDetachedChild",
+   "type": "function",
+   "name": "cleanupDetachedChild",
+   "filePath": "packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "lineRange": [
+    28,
+    41
+   ],
+   "summary": "清理分离的子进程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:withTimeout",
+   "type": "function",
+   "name": "withTimeout",
+   "filePath": "packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "lineRange": [
+    43,
+    61
+   ],
+   "summary": "给异步操作加上超时包装。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/block-images.test.ts",
+   "type": "file",
+   "name": "block-images.test.ts",
+   "filePath": "packages/coding-agent/test/block-images.test.ts",
+   "summary": "测试在配置禁用图片时读取工具与文件处理对图片的拦截行为。",
+   "tags": [
+    "test",
+    "图片",
+    "配置"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/block-images.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "function",
+   "name": "createTinyBmp1x1Red24bpp",
+   "filePath": "packages/coding-agent/test/block-images.test.ts",
+   "lineRange": [
+    13,
+    27
+   ],
+   "summary": "生成 1x1 红色 24bpp BMP 图片字节。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/config.test.ts",
+   "type": "file",
+   "name": "config.test.ts",
+   "filePath": "packages/coding-agent/test/config.test.ts",
+   "summary": "测试配置系统（config.ts）的解析、环境变量读取与默认值逻辑，覆盖多种安装方式检测。",
+   "tags": [
+    "test",
+    "config",
+    "配置"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/config.test.ts:createNpmPrefixInstall",
+   "type": "function",
+   "name": "createNpmPrefixInstall",
+   "filePath": "packages/coding-agent/test/config.test.ts",
+   "lineRange": [
+    51,
+    61
+   ],
+   "summary": "构造 npm prefix 安装检测用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/config.test.ts:createPnpmGlobalInstall",
+   "type": "function",
+   "name": "createPnpmGlobalInstall",
+   "filePath": "packages/coding-agent/test/config.test.ts",
+   "lineRange": [
+    63,
+    88
+   ],
+   "summary": "构造 pnpm 全局安装检测用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/config.test.ts:createYarnGlobalInstall",
+   "type": "function",
+   "name": "createYarnGlobalInstall",
+   "filePath": "packages/coding-agent/test/config.test.ts",
+   "lineRange": [
+    90,
+    104
+   ],
+   "summary": "构造 yarn 全局安装检测用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/config.test.ts:createBunGlobalInstall",
+   "type": "function",
+   "name": "createBunGlobalInstall",
+   "filePath": "packages/coding-agent/test/config.test.ts",
+   "lineRange": [
+    106,
+    122
+   ],
+   "summary": "构造 bun 全局安装检测用例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "type": "file",
+   "name": "edit-tool-legacy-input.test.ts",
+   "filePath": "packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "summary": "测试 edit 工具对旧版输入格式的兼容处理。",
+   "tags": [
+    "test",
+    "edit",
+    "兼容性"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "file",
+   "name": "edit-tool-no-full-redraw.test.ts",
+   "filePath": "packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "summary": "测试 edit 工具结果渲染不触发全量重绘的行为，验证 TUI 渲染效率。",
+   "tags": [
+    "test",
+    "edit",
+    "tui",
+    "渲染"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts:waitForRenderedText",
+   "type": "function",
+   "name": "waitForRenderedText",
+   "filePath": "packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "lineRange": [
+    41,
+    58
+   ],
+   "summary": "等待 TUI 渲染出指定文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts:FakeTerminal",
+   "type": "class",
+   "name": "FakeTerminal",
+   "filePath": "packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "lineRange": [
+    11,
+    35
+   ],
+   "summary": "模拟终端以捕获渲染输出。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/extensions-discovery.test.ts",
+   "type": "file",
+   "name": "extensions-discovery.test.ts",
+   "filePath": "packages/coding-agent/test/extensions-discovery.test.ts",
+   "summary": "测试扩展发现（extensions loader）对目录内扩展的扫描与加载行为。",
+   "tags": [
+    "test",
+    "extensions",
+    "发现"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "file",
+   "name": "extensions-runner.test.ts",
+   "filePath": "packages/coding-agent/test/extensions-runner.test.ts",
+   "summary": "测试扩展运行时（runner）的事件分发、工具注册与生命周期钩子行为。",
+   "tags": [
+    "test",
+    "extensions",
+    "runtime"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "type": "file",
+   "name": "file-mutation-queue.test.ts",
+   "filePath": "packages/coding-agent/test/file-mutation-queue.test.ts",
+   "summary": "测试文件变更队列对并发编辑同一文件的串行化控制。",
+   "tags": [
+    "test",
+    "file-mutation-queue",
+    "并发"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeType",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeTypeFromFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:detectSupportedImageMimeTypeFromFile",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:isAnimatedPng",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "function:packages/coding-agent/src/utils/mime.ts:isBmp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:canonicalizePath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:canonicalizePath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:getFileRevision",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:getFileRevision",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:isLocalPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:isLocalPath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:normalizeWindowsShellPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:normalizeWindowsShellPath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:normalizePath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:normalizePath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:resolvePath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:resolvePath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:getCwdRelativePath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:getCwdRelativePath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:formatPathRelativeToCwdOrAbsolute",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:formatPathRelativeToCwdOrAbsolute",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:markPathIgnoredByCloudSync",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:markPathIgnoredByCloudSync",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:findBashOnPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:getShellConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:getShellConfig",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:getShellEnv",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:getShellEnv",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:sanitizeBinaryOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:sanitizeBinaryOutput",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:trackDetachedChildPid",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:trackDetachedChildPid",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:untrackDetachedChildPid",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:untrackDetachedChildPid",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:killTrackedDetachedChildren",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:killTrackedDetachedChildren",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:killProcessTree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "function:packages/coding-agent/src/utils/shell.ts:killProcessTree",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "target": "function:packages/coding-agent/src/utils/tfa-user-agent.ts:getTfaUserAgent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "target": "function:packages/coding-agent/src/utils/tfa-user-agent.ts:getTfaUserAgent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:getToolPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:getToolPath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:getLatestVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:downloadFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:findBinaryRecursively",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:formatSpawnFailure",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:getWindowsTarCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:extractZipArchive",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:downloadTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:ensureTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "function:packages/coding-agent/src/utils/tools-manager.ts:ensureTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:formatVersionCheckError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:formatVersionCheckError",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:comparePackageVersions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:comparePackageVersions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:isNewerPackageVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:isNewerPackageVersion",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiRelease",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiRelease",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiVersion",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:checkForNewPiVersion",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "function:packages/coding-agent/src/utils/version-check.ts:checkForNewPiVersion",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:getQuarantineRoot",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:getLoadedSharedObjectsInPackageDir",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:cleanupWindowsSelfUpdateQuarantine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:cleanupWindowsSelfUpdateQuarantine",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:quarantineWindowsNativeDependencies",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "function:packages/coding-agent/src/utils/windows-self-update.ts:quarantineWindowsNativeDependencies",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "target": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:createInheritedStdioCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "target": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:cleanupDetachedChild",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "target": "function:packages/coding-agent/test/bash-close-hang-windows.test.ts:withTimeout",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/block-images.test.ts",
+   "target": "function:packages/coding-agent/test/block-images.test.ts:createTinyBmp1x1Red24bpp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/config.test.ts",
+   "target": "function:packages/coding-agent/test/config.test.ts:createNpmPrefixInstall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/config.test.ts",
+   "target": "function:packages/coding-agent/test/config.test.ts:createPnpmGlobalInstall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/config.test.ts",
+   "target": "function:packages/coding-agent/test/config.test.ts:createYarnGlobalInstall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/config.test.ts",
+   "target": "function:packages/coding-agent/test/config.test.ts:createBunGlobalInstall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "function:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts:waitForRenderedText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "class:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts:FakeTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/shell.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/management-http.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "file:packages/coding-agent/src/utils/management-http.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/version-check.ts",
+   "target": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/args.test.ts",
+   "target": "file:packages/coding-agent/src/cli/args.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "target": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/block-images.test.ts",
+   "target": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/block-images.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/block-images.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/read.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/config.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-discovery.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-registry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "target": "file:packages/coding-agent/src/core/tools/write.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/agent-session-dynamic-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/args.ts",
+   "target": "file:packages/coding-agent/test/args.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/bash-executor.ts",
+   "target": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/test/bash-close-hang-windows.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/cli/file-processor.ts",
+   "target": "file:packages/coding-agent/test/block-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/block-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/read.ts",
+   "target": "file:packages/coding-agent/test/block-images.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/config.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-legacy-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/edit-tool-no-full-redraw.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "target": "file:packages/coding-agent/test/extensions-discovery.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/runner.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-registry.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/extensions-runner.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "target": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/write.ts",
+   "target": "file:packages/coding-agent/test/file-mutation-queue.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/mime.ts",
+   "target": "file:packages/coding-agent/test/image-process.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/paths.ts",
+   "target": "file:packages/coding-agent/test/paths.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "function:packages/coding-agent/src/utils/version-check.ts:getLatestPiRelease",
+   "target": "function:packages/coding-agent/src/utils/tfa-user-agent.ts:getTfaUserAgent",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/utils/windows-self-update.ts:getLoadedSharedObjectsInPackageDir",
+   "target": "function:packages/coding-agent/src/utils/paths.ts:getCwdRelativePath",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

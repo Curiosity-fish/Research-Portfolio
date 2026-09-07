@@ -1,0 +1,14 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 3,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Fixed 区段合理：183/4171（约 4.4%）节点 ID 重复被清理，123 条 tested_by 边翻正、65 条被丢弃，未见系统性 type/complexity 偏差。",
+    "5 条被丢弃的 calls 边全部源于 re-export 混淆：visibleWidth 实际定义于 packages/tui/src/utils.ts（tui.ts 仅为 re-export），encodeCbor 实际定义于 packages/protocol/src/cbor/encoder.ts（decoder.ts 无此函数）。未在 re-export 位置创建虚假节点；将 3 条唯一边（wordWrapLine 的 x4 重复去重为 1 条、createScrollBorder 1 条、encodeProtocolMessage 1 条）重映射到真实定义节点并恢复，weight=0.8。",
+    "importMap 跨批次校验：1414 个条目共 3308 条 import 关系，其中两端 file 节点均存在的 3308 条全部已有对应 imports 边；229 条关系涉及图内不存在的文件节点（如 .tfa/ 扩展与未分析文件），未添加任何推测性边。",
+    "目标文件 packages/tui/src/tui.ts 与 packages/protocol/src/cbor/decoder.ts 均已确认无对应函数定义，无需新建节点。"
+  ]
+}

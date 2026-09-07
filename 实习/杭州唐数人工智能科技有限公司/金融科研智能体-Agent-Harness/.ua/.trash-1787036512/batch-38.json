@@ -1,0 +1,884 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/scripts/check-model-data.ts",
+   "type": "file",
+   "name": "check-model-data.ts",
+   "filePath": "packages/ai/scripts/check-model-data.ts",
+   "summary": "模型数据完整性检查脚本：验证生成数据与 manifest 一致。",
+   "tags": [
+    "script",
+    "validation",
+    "model-data"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/scripts/generate-models.ts",
+   "type": "file",
+   "name": "generate-models.ts",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "模型目录生成脚本：从多个来源（models.dev/OpenRouter/NVIDIA/AI Gateway/Baseten）抓取并生成模型元数据。",
+   "tags": [
+    "script",
+    "codegen",
+    "model-data",
+    "providers"
+   ],
+   "complexity": "complex",
+   "languageNotes": "大型代码生成脚本（约 2900 行），集中从多个模型目录来源抓取并合并元数据。"
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:readGeneratorOptions",
+   "type": "function",
+   "name": "readGeneratorOptions",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "解析生成脚本命令行选项。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    35,
+    78
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:withOpenAiLongContextPricing",
+   "type": "function",
+   "name": "withOpenAiLongContextPricing",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 withOpenAiLongContextPricing：实现其核心逻辑，参数：cost。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    354,
+    367
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:supportsDirectReasoningEffort",
+   "type": "function",
+   "name": "supportsDirectReasoningEffort",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 supportsDirectReasoningEffort：判断DirectReasoningEffort 相关逻辑，参数：model。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    454,
+    470
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:getTogetherThinkingLevelMap",
+   "type": "function",
+   "name": "getTogetherThinkingLevelMap",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 getTogetherThinkingLevelMap：获取TogetherThinkingLevelMap 相关逻辑，参数：modelId、reasoning。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    487,
+    496
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:isAnthropicAdaptiveThinkingModel",
+   "type": "function",
+   "name": "isAnthropicAdaptiveThinkingModel",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 isAnthropicAdaptiveThinkingModel：判断AnthropicAdaptiveThinkingModel 相关逻辑，参数：modelId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    522,
+    538
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:isAnthropicTemperatureUnsupportedModel",
+   "type": "function",
+   "name": "isAnthropicTemperatureUnsupportedModel",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 isAnthropicTemperatureUnsupportedModel：判断AnthropicTemperatureUnsupportedModel 相关逻辑，参数：modelId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    540,
+    550
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:detectOpenAICompletionsCompat",
+   "type": "function",
+   "name": "detectOpenAICompletionsCompat",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "检测模型的 OpenAI Completions 兼容标记。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    586,
+    672
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:openAICompletionsCompatDelta",
+   "type": "function",
+   "name": "openAICompletionsCompatDelta",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 openAICompletionsCompatDelta：打开AICompletionsCompatDelta 相关逻辑，参数：compat。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    678,
+    688
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:applyThinkingLevelMetadata",
+   "type": "function",
+   "name": "applyThinkingLevelMetadata",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "应用思考级别元数据。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    771,
+    901
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:getAnthropicMessagesCompat",
+   "type": "function",
+   "name": "getAnthropicMessagesCompat",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "函数 getAnthropicMessagesCompat：获取AnthropicMessagesCompat 相关逻辑，参数：provider、modelId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    903,
+    912
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:getModelsDevCost",
+   "type": "function",
+   "name": "getModelsDevCost",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "归一化 models.dev 成本数据。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    928,
+    950
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:fetchNvidiaNimModelIds",
+   "type": "function",
+   "name": "fetchNvidiaNimModelIds",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "抓取 NVIDIA NIM 模型 ID。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    952,
+    972
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:fetchOpenRouterModels",
+   "type": "function",
+   "name": "fetchOpenRouterModels",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "抓取 OpenRouter 模型列表。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    974,
+    1034
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:fetchAiGatewayModels",
+   "type": "function",
+   "name": "fetchAiGatewayModels",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "抓取 AI Gateway 模型列表。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    1036,
+    1094
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:processBasetenModels",
+   "type": "function",
+   "name": "processBasetenModels",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "处理 Baseten 模型数据。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    1096,
+    1188
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:loadModelsDevData",
+   "type": "function",
+   "name": "loadModelsDevData",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "加载并规范化 models.dev 模型数据。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    1190,
+    2179
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-models.ts:generateModels",
+   "type": "function",
+   "name": "generateModels",
+   "filePath": "packages/ai/scripts/generate-models.ts",
+   "summary": "生成模型目录数据：从多个来源抓取、合并兼容标记并写入包。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    2181,
+    2861
+   ]
+  },
+  {
+   "id": "file:packages/ai/scripts/model-data.ts",
+   "type": "file",
+   "name": "model-data.ts",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "模型数据校验工具：结构校验、manifest 生成与哈希。",
+   "tags": [
+    "utility",
+    "validation",
+    "model-data"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:readJsonObject",
+   "type": "function",
+   "name": "readJsonObject",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "函数 readJsonObject：读取JsonObject 相关逻辑，参数：path、description、errors。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    46,
+    59
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:readProviderStructure",
+   "type": "function",
+   "name": "readProviderStructure",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "函数 readProviderStructure：读取ProviderStructure 相关逻辑，参数：path、providerId。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    61,
+    76
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:readModelDataProviderIds",
+   "type": "function",
+   "name": "readModelDataProviderIds",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "函数 readModelDataProviderIds：读取ModelDataProviderIds 相关逻辑，参数：packageRoot。",
+   "tags": [
+    "function",
+    "provider"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    78,
+    87
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:readModelDataStructure",
+   "type": "function",
+   "name": "readModelDataStructure",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "读取并校验模型数据结构。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    89,
+    109
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:modelDataStructureHash",
+   "type": "function",
+   "name": "modelDataStructureHash",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "计算模型数据结构哈希。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    111,
+    118
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:createModelDataManifest",
+   "type": "function",
+   "name": "createModelDataManifest",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "创建模型数据 manifest。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    120,
+    131
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:validateModelValue",
+   "type": "function",
+   "name": "validateModelValue",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "函数 validateModelValue：校验ModelValue 相关逻辑，参数：value、providerId、modelId、expectedApi、errors。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    133,
+    178
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:validateModelDataDirectory",
+   "type": "function",
+   "name": "validateModelDataDirectory",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "校验模型数据目录结构与值。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    186,
+    268
+   ]
+  },
+  {
+   "id": "function:packages/ai/scripts/model-data.ts:validateGeneratedModelData",
+   "type": "function",
+   "name": "validateGeneratedModelData",
+   "filePath": "packages/ai/scripts/model-data.ts",
+   "summary": "校验生成后的模型数据与 manifest 一致。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    270,
+    273
+   ]
+  },
+  {
+   "id": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "type": "file",
+   "name": "models-dev-reasoning-options.ts",
+   "filePath": "packages/ai/scripts/models-dev-reasoning-options.ts",
+   "summary": "models.dev 推理选项到 thinking level 的映射工具。",
+   "tags": [
+    "utility",
+    "reasoning",
+    "model-data"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/scripts/models-dev-reasoning-options.ts:getEffortThinkingLevelMap",
+   "type": "function",
+   "name": "getEffortThinkingLevelMap",
+   "filePath": "packages/ai/scripts/models-dev-reasoning-options.ts",
+   "summary": "将推理选项映射为 thinking level。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    18,
+    30
+   ]
+  },
+  {
+   "id": "file:packages/ai/src/api/cloudflare.ts",
+   "type": "file",
+   "name": "cloudflare.ts",
+   "filePath": "packages/ai/src/api/cloudflare.ts",
+   "summary": "Cloudflare AI 网关相关的轻量 API 入口封装。",
+   "tags": [
+    "api",
+    "cloudflare",
+    "llm-api"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/model-data-validation.test.ts",
+   "type": "file",
+   "name": "model-data-validation.test.ts",
+   "filePath": "packages/ai/test/model-data-validation.test.ts",
+   "summary": "model-data 校验逻辑的测试。",
+   "tags": [
+    "test",
+    "validation",
+    "model-data"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/model-data-validation.test.ts:createFixture",
+   "type": "function",
+   "name": "createFixture",
+   "filePath": "packages/ai/test/model-data-validation.test.ts",
+   "summary": "创建模型数据测试夹具。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    21,
+    62
+   ]
+  },
+  {
+   "id": "function:packages/ai/test/model-data-validation.test.ts:writeFixtureData",
+   "type": "function",
+   "name": "writeFixtureData",
+   "filePath": "packages/ai/test/model-data-validation.test.ts",
+   "summary": "写入夹具数据文件。",
+   "tags": [
+    "function",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    64,
+    77
+   ]
+  },
+  {
+   "id": "file:packages/ai/test/reasoning-options.test.ts",
+   "type": "file",
+   "name": "reasoning-options.test.ts",
+   "filePath": "packages/ai/test/reasoning-options.test.ts",
+   "summary": "推理选项到 thinking level 映射的测试。",
+   "tags": [
+    "test",
+    "reasoning"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/scripts/check-model-data.ts",
+   "target": "file:packages/ai/scripts/model-data.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:readGeneratorOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:withOpenAiLongContextPricing",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:supportsDirectReasoningEffort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:getTogetherThinkingLevelMap",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:isAnthropicAdaptiveThinkingModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:isAnthropicTemperatureUnsupportedModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:detectOpenAICompletionsCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:openAICompletionsCompatDelta",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:applyThinkingLevelMetadata",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:getAnthropicMessagesCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:getModelsDevCost",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:fetchNvidiaNimModelIds",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:fetchOpenRouterModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:fetchAiGatewayModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:processBasetenModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:loadModelsDevData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "function:packages/ai/scripts/generate-models.ts:generateModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "file:packages/ai/scripts/model-data.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "file:packages/ai/src/api/cloudflare.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-models.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readJsonObject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readProviderStructure",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readModelDataProviderIds",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readModelDataProviderIds",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readModelDataStructure",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:readModelDataStructure",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:modelDataStructureHash",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:modelDataStructureHash",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:createModelDataManifest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:createModelDataManifest",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:validateModelValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:validateModelDataDirectory",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:validateModelDataDirectory",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:validateGeneratedModelData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "function:packages/ai/scripts/model-data.ts:validateGeneratedModelData",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "target": "function:packages/ai/scripts/models-dev-reasoning-options.ts:getEffortThinkingLevelMap",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "target": "function:packages/ai/scripts/models-dev-reasoning-options.ts:getEffortThinkingLevelMap",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/model-data-validation.test.ts",
+   "target": "function:packages/ai/test/model-data-validation.test.ts:createFixture",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/model-data-validation.test.ts",
+   "target": "function:packages/ai/test/model-data-validation.test.ts:writeFixtureData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/model-data-validation.test.ts",
+   "target": "file:packages/ai/scripts/model-data.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/model-data.ts",
+   "target": "file:packages/ai/test/model-data-validation.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/test/reasoning-options.test.ts",
+   "target": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/models-dev-reasoning-options.ts",
+   "target": "file:packages/ai/test/reasoning-options.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

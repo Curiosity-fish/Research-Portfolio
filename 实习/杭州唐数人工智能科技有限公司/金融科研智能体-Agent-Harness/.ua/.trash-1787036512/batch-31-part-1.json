@@ -1,0 +1,1302 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "file",
+   "name": "interactive-mode-status.test.ts",
+   "filePath": "packages/coding-agent/test/interactive-mode-status.test.ts",
+   "summary": "TUI 交互模式状态（连接、运行、就绪指示）的集成测试，验证 status bar 渲染。",
+   "tags": [
+    "test",
+    "tui",
+    "status"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/test/interactive-mode-status.test.ts:TestFocusableComponent",
+   "type": "class",
+   "name": "TestFocusableComponent",
+   "filePath": "packages/coding-agent/test/interactive-mode-status.test.ts",
+   "summary": "类 TestFocusableComponent：组件。",
+   "tags": [
+    "class",
+    "component",
+    "test-util"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    24,
+    51
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "type": "file",
+   "name": "alt-screen-flash.ts",
+   "filePath": "packages/tui/src/components/alt-screen-flash.ts",
+   "summary": "备用屏幕切换时抑制闪烁的容器组件 AltScreenFlashContainer。",
+   "tags": [
+    "component",
+    "alt-screen",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/components/alt-screen-flash.ts:AltScreenFlashContainer",
+   "type": "class",
+   "name": "AltScreenFlashContainer",
+   "filePath": "packages/tui/src/components/alt-screen-flash.ts",
+   "summary": "抑制备用屏幕切换闪烁的容器。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    13,
+    51
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/cancellable-loader.ts",
+   "type": "file",
+   "name": "cancellable-loader.ts",
+   "filePath": "packages/tui/src/components/cancellable-loader.ts",
+   "summary": "支持取消的加载指示器组件 CancellableLoader。",
+   "tags": [
+    "component",
+    "loader",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/components/cancellable-loader.ts:CancellableLoader",
+   "type": "class",
+   "name": "CancellableLoader",
+   "filePath": "packages/tui/src/components/cancellable-loader.ts",
+   "summary": "可取消的加载指示器组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    13,
+    40
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/image.ts",
+   "type": "file",
+   "name": "image.ts",
+   "filePath": "packages/tui/src/components/image.ts",
+   "summary": "终端内嵌图片组件：解析图片元数据并按可用列宽渲染。",
+   "tags": [
+    "component",
+    "image",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/image.ts:Image",
+   "type": "class",
+   "name": "Image",
+   "filePath": "packages/tui/src/components/image.ts",
+   "summary": "终端内嵌图片渲染组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    25,
+    127
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/loader.ts",
+   "type": "file",
+   "name": "loader.ts",
+   "filePath": "packages/tui/src/components/loader.ts",
+   "summary": "简单加载指示器组件 Loader，以动画帧切换显示状态。",
+   "tags": [
+    "component",
+    "loader",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/loader.ts:Loader",
+   "type": "class",
+   "name": "Loader",
+   "filePath": "packages/tui/src/components/loader.ts",
+   "summary": "加载指示器组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    17,
+    92
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/markdown.ts",
+   "type": "file",
+   "name": "markdown.ts",
+   "filePath": "packages/tui/src/components/markdown.ts",
+   "summary": "Markdown 渲染组件：块级/行内语法解析、样式化文本与 LaTeX 片段支持。",
+   "tags": [
+    "component",
+    "markdown",
+    "tui",
+    "renderer"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/components/markdown.ts:Markdown",
+   "type": "class",
+   "name": "Markdown",
+   "filePath": "packages/tui/src/components/markdown.ts",
+   "summary": "Markdown 渲染组件：解析块级/行内语法并输出样式化终端文本。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    236,
+    1010
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/markdown.ts:tokenizeInlineLatex",
+   "type": "function",
+   "name": "tokenizeInlineLatex",
+   "filePath": "packages/tui/src/components/markdown.ts",
+   "summary": "识别行内 LaTeX 并分词。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    52,
+    99
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/markdown.ts:tokenizeBlockLatex",
+   "type": "function",
+   "name": "tokenizeBlockLatex",
+   "filePath": "packages/tui/src/components/markdown.ts",
+   "summary": "识别块级 LaTeX 并分词。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    101,
+    121
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/components/markdown.ts:trimPartialClosingFences",
+   "type": "function",
+   "name": "trimPartialClosingFences",
+   "filePath": "packages/tui/src/components/markdown.ts",
+   "summary": "函数 trimPartialClosingFences：实现其核心逻辑，参数：tokens。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    146,
+    169
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/select-list.ts",
+   "type": "file",
+   "name": "select-list.ts",
+   "filePath": "packages/tui/src/components/select-list.ts",
+   "summary": "可滚动选择列表组件：键盘导航、高亮与选中态管理。",
+   "tags": [
+    "component",
+    "select-list",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/select-list.ts:SelectList",
+   "type": "class",
+   "name": "SelectList",
+   "filePath": "packages/tui/src/components/select-list.ts",
+   "summary": "可滚动选择列表组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    40,
+    229
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/spacer.ts",
+   "type": "file",
+   "name": "spacer.ts",
+   "filePath": "packages/tui/src/components/spacer.ts",
+   "summary": "布局占位组件 Spacer，用于撑开 flex 空间。",
+   "tags": [
+    "component",
+    "layout",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/components/spacer.ts:Spacer",
+   "type": "class",
+   "name": "Spacer",
+   "filePath": "packages/tui/src/components/spacer.ts",
+   "summary": "布局占位组件。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    6,
+    28
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/components/truncated-text.ts",
+   "type": "file",
+   "name": "truncated-text.ts",
+   "filePath": "packages/tui/src/components/truncated-text.ts",
+   "summary": "按可用宽度截断并带省略号的文本组件 TruncatedText。",
+   "tags": [
+    "component",
+    "text",
+    "truncation",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/src/components/truncated-text.ts:TruncatedText",
+   "type": "class",
+   "name": "TruncatedText",
+   "filePath": "packages/tui/src/components/truncated-text.ts",
+   "summary": "按宽度截断的文本组件。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    7,
+    65
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/keybindings.ts",
+   "type": "file",
+   "name": "keybindings.ts",
+   "filePath": "packages/tui/src/keybindings.ts",
+   "summary": "按键绑定管理：keymap 规范化、注册、查询与默认绑定。",
+   "tags": [
+    "utility",
+    "keybindings",
+    "config"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/keybindings.ts:KeybindingsManager",
+   "type": "class",
+   "name": "KeybindingsManager",
+   "filePath": "packages/tui/src/keybindings.ts",
+   "summary": "按键绑定管理器：注册、规范化与查询。",
+   "tags": [
+    "class",
+    "manager"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    191,
+    267
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keybindings.ts:normalizeKeys",
+   "type": "function",
+   "name": "normalizeKeys",
+   "filePath": "packages/tui/src/keybindings.ts",
+   "summary": "函数 normalizeKeys：规范化Keys 相关逻辑，参数：keys。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    177,
+    189
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keybindings.ts:setKeybindings",
+   "type": "function",
+   "name": "setKeybindings",
+   "filePath": "packages/tui/src/keybindings.ts",
+   "summary": "函数 setKeybindings：设置Keybindings 相关逻辑，参数：keybindings。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    271,
+    273
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keybindings.ts:getKeybindings",
+   "type": "function",
+   "name": "getKeybindings",
+   "filePath": "packages/tui/src/keybindings.ts",
+   "summary": "函数 getKeybindings：获取Keybindings 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    275,
+    280
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/keys.ts",
+   "type": "file",
+   "name": "keys.ts",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "终端按键序列解析：支持 kitty keyboard protocol、legacy CSI 序列与修饰键归一化。",
+   "tags": [
+    "utility",
+    "key-parsing",
+    "kitty",
+    "terminal"
+   ],
+   "complexity": "complex",
+   "languageNotes": "实现 kitty keyboard protocol 与 legacy CSI/SS3 序列解析，处理多种终端模式与修饰键归一化。"
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:setKittyProtocolActive",
+   "type": "function",
+   "name": "setKittyProtocolActive",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 setKittyProtocolActive：设置KittyProtocolActive 相关逻辑，参数：active。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    31,
+    33
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:isKittyProtocolActive",
+   "type": "function",
+   "name": "isKittyProtocolActive",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 isKittyProtocolActive：判断KittyProtocolActive 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    38,
+    40
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:isKeyRelease",
+   "type": "function",
+   "name": "isKeyRelease",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 isKeyRelease：判断KeyRelease 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    527,
+    551
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:isKeyRepeat",
+   "type": "function",
+   "name": "isKeyRepeat",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 isKeyRepeat：判断KeyRepeat 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    557,
+    577
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:parseKittySequence",
+   "type": "function",
+   "name": "parseKittySequence",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "解析 kitty keyboard protocol 序列。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    587,
+    651
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:matchesKittySequence",
+   "type": "function",
+   "name": "matchesKittySequence",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 matchesKittySequence：匹配esKittySequence 相关逻辑，参数：data、expectedCodepoint、expectedModifier。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    653,
+    694
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:rawCtrlChar",
+   "type": "function",
+   "name": "rawCtrlChar",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 rawCtrlChar：实现其核心逻辑，参数：key。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    749,
+    760
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:formatKeyNameWithModifiers",
+   "type": "function",
+   "name": "formatKeyNameWithModifiers",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 formatKeyNameWithModifiers：格式化KeyNameWithModifiers 相关逻辑，参数：keyName、modifier。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    776,
+    786
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:parseKeyId",
+   "type": "function",
+   "name": "parseKeyId",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 parseKeyId：解析KeyId 相关逻辑，参数：keyId。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    788,
+    801
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:matchesKey",
+   "type": "function",
+   "name": "matchesKey",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "判断按键数据是否匹配给定 key id。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    820,
+    1204
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:formatParsedKey",
+   "type": "function",
+   "name": "formatParsedKey",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 formatParsedKey：格式化ParsedKey 相关逻辑，参数：codepoint、modifier、baseLayoutKey。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1212,
+    1249
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:parseKey",
+   "type": "function",
+   "name": "parseKey",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "解析按键数据为规范按键事件。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    1251,
+    1327
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:decodeKittyPrintable",
+   "type": "function",
+   "name": "decodeKittyPrintable",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 decodeKittyPrintable：解码KittyPrintable 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1350,
+    1383
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:decodeModifyOtherKeysPrintable",
+   "type": "function",
+   "name": "decodeModifyOtherKeysPrintable",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 decodeModifyOtherKeysPrintable：解码ModifyOtherKeysPrintable 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1385,
+    1397
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/keys.ts:decodePrintableKey",
+   "type": "function",
+   "name": "decodePrintableKey",
+   "filePath": "packages/tui/src/keys.ts",
+   "summary": "函数 decodePrintableKey：解码PrintableKey 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1399,
+    1401
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/kill-ring.ts",
+   "type": "file",
+   "name": "kill-ring.ts",
+   "filePath": "packages/tui/src/kill-ring.ts",
+   "summary": "Emacs 风格 kill-ring：删除文本环的保存、回环与粘贴。",
+   "tags": [
+    "utility",
+    "kill-ring",
+    "editing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/src/kill-ring.ts:KillRing",
+   "type": "class",
+   "name": "KillRing",
+   "filePath": "packages/tui/src/kill-ring.ts",
+   "summary": "Emacs 风格 kill-ring 数据结构。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    8,
+    46
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "class:packages/coding-agent/test/interactive-mode-status.test.ts:TestFocusableComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/oauth-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/oauth-selector.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui-main-screen.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/tui.ts",
+   "target": "file:packages/coding-agent/test/interactive-mode-status.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "target": "class:packages/tui/src/components/alt-screen-flash.ts:AltScreenFlashContainer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "target": "class:packages/tui/src/components/alt-screen-flash.ts:AltScreenFlashContainer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/cancellable-loader.ts",
+   "target": "class:packages/tui/src/components/cancellable-loader.ts:CancellableLoader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/cancellable-loader.ts",
+   "target": "class:packages/tui/src/components/cancellable-loader.ts:CancellableLoader",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/cancellable-loader.ts",
+   "target": "file:packages/tui/src/components/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/cancellable-loader.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "class:packages/tui/src/components/image.ts:Image",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "class:packages/tui/src/components/image.ts:Image",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/loader.ts",
+   "target": "class:packages/tui/src/components/loader.ts:Loader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/loader.ts",
+   "target": "class:packages/tui/src/components/loader.ts:Loader",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/loader.ts",
+   "target": "file:packages/tui/src/components/text.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/loader.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "class:packages/tui/src/components/markdown.ts:Markdown",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "class:packages/tui/src/components/markdown.ts:Markdown",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "function:packages/tui/src/components/markdown.ts:tokenizeInlineLatex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "function:packages/tui/src/components/markdown.ts:tokenizeBlockLatex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "function:packages/tui/src/components/markdown.ts:trimPartialClosingFences",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "file:packages/tui/src/latex.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/markdown.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "class:packages/tui/src/components/select-list.ts:SelectList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "class:packages/tui/src/components/select-list.ts:SelectList",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/select-list.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/spacer.ts",
+   "target": "class:packages/tui/src/components/spacer.ts:Spacer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/spacer.ts",
+   "target": "class:packages/tui/src/components/spacer.ts:Spacer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/spacer.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/truncated-text.ts",
+   "target": "class:packages/tui/src/components/truncated-text.ts:TruncatedText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/components/truncated-text.ts",
+   "target": "class:packages/tui/src/components/truncated-text.ts:TruncatedText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/components/truncated-text.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/truncated-text.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "class:packages/tui/src/keybindings.ts:KeybindingsManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "class:packages/tui/src/keybindings.ts:KeybindingsManager",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "function:packages/tui/src/keybindings.ts:normalizeKeys",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "function:packages/tui/src/keybindings.ts:setKeybindings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "function:packages/tui/src/keybindings.ts:setKeybindings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "function:packages/tui/src/keybindings.ts:getKeybindings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "function:packages/tui/src/keybindings.ts:getKeybindings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keybindings.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:setKittyProtocolActive",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:setKittyProtocolActive",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKittyProtocolActive",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKittyProtocolActive",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKeyRelease",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKeyRelease",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKeyRepeat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:isKeyRepeat",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:parseKittySequence",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:matchesKittySequence",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:rawCtrlChar",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:formatKeyNameWithModifiers",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:parseKeyId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:matchesKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:matchesKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:formatParsedKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:parseKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:parseKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:decodeKittyPrintable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:decodeKittyPrintable",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:decodeModifyOtherKeysPrintable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:decodePrintableKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "function:packages/tui/src/keys.ts:decodePrintableKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/kill-ring.ts",
+   "target": "class:packages/tui/src/kill-ring.ts:KillRing",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/kill-ring.ts",
+   "target": "class:packages/tui/src/kill-ring.ts:KillRing",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/tui/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/tui/CHANGELOG.md",
+      "summary": "tfa-tui 包的变更日志,按版本(至 0.83.0)记录 Added/Changed/Fixed 等改动历史,共 300+ 小节。",
+      "tags": [
+        "documentation",
+        "changelog",
+        "releases"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:packages/tui/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/tui/README.md",
+      "summary": "tfa-tui 终端 UI 框架的完整使用文档,覆盖差分渲染、可互换渲染器、内置组件、主题、行内图片、自动补全与自定义组件开发。",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "api-reference",
+        "tui"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:packages/tui/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/tui/package.json",
+      "summary": "tfa-tui 包清单,定义构建/测试脚本、darwin/win32 原生模块构建命令、发布文件列表与 Node >=22.19.0 引擎要求。",
+      "tags": [
+        "configuration",
+        "package-manifest",
+        "build-system",
+        "tui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/tui/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/tui/tsconfig.build.json",
+      "summary": "tfa-tui 构建用 TypeScript 配置,继承仓库 tsconfig.base.json,输出到 dist 并仅包含 src。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/tui/README.md",
+      "target": "config:packages/tui/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/tui/README.md",
+      "target": "document:packages/tui/CHANGELOG.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/tui/package.json",
+      "target": "config:packages/tui/tsconfig.build.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,2170 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "type": "file",
+   "name": "edit-diff.ts",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "summary": "实现基于 diff 的编辑算法：行尾规范化、模糊匹配、替换行区间计算、统一 diff 生成，以及多种错误场景的友好提示。",
+   "tags": [
+    "tool",
+    "edit",
+    "diff",
+    "文本处理"
+   ],
+   "complexity": "complex",
+   "languageNotes": "包含 fuzzy 匹配与逐行保真的 diff 应用逻辑，是编辑工具的核心算法模块。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:detectLineEnding",
+   "type": "function",
+   "name": "detectLineEnding",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    10,
+    16
+   ],
+   "summary": "检测文本使用的换行符类型。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeToLF",
+   "type": "function",
+   "name": "normalizeToLF",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    18,
+    20
+   ],
+   "summary": "将文本换行规范化为 LF。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:restoreLineEndings",
+   "type": "function",
+   "name": "restoreLineEndings",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    22,
+    24
+   ],
+   "summary": "将 LF 文本恢复为原始换行风格。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeForFuzzyMatch",
+   "type": "function",
+   "name": "normalizeForFuzzyMatch",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    33,
+    54
+   ],
+   "summary": "规范化文本用于模糊匹配（忽略空白差异等）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getReplacementLineRange",
+   "type": "function",
+   "name": "getReplacementLineRange",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    83,
+    108
+   ],
+   "summary": "根据位置与行数推导替换行区间。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyReplacements",
+   "type": "function",
+   "name": "applyReplacements",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    110,
+    119
+   ],
+   "summary": "对内容应用一组替换操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyReplacementsPreservingUnchangedLines",
+   "type": "function",
+   "name": "applyReplacementsPreservingUnchangedLines",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    131,
+    172
+   ],
+   "summary": "应用替换时尽量保留未改动行的原文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:fuzzyFindText",
+   "type": "function",
+   "name": "fuzzyFindText",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    206,
+    244
+   ],
+   "summary": "在内容中模糊查找目标文本位置。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:stripBom",
+   "type": "function",
+   "name": "stripBom",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    247,
+    249
+   ],
+   "summary": "移除文本开头的 BOM 字符。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getNotFoundError",
+   "type": "function",
+   "name": "getNotFoundError",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    257,
+    266
+   ],
+   "summary": "构造文本未找到时的错误消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getDuplicateError",
+   "type": "function",
+   "name": "getDuplicateError",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    268,
+    277
+   ],
+   "summary": "构造存在重复匹配时的错误消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyEditsToNormalizedContent",
+   "type": "function",
+   "name": "applyEditsToNormalizedContent",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    304,
+    366
+   ],
+   "summary": "将编辑操作应用到规范化后的内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateUnifiedPatch",
+   "type": "function",
+   "name": "generateUnifiedPatch",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    369,
+    374
+   ],
+   "summary": "生成统一格式的 diff patch 文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateDiffString",
+   "type": "function",
+   "name": "generateDiffString",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    380,
+    503
+   ],
+   "summary": "生成可展示的 diff 字符串，含上下文与标记。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditsDiff",
+   "type": "function",
+   "name": "computeEditsDiff",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    518,
+    547
+   ],
+   "summary": "计算原始内容与目标内容之间的编辑差异。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditDiff",
+   "type": "function",
+   "name": "computeEditDiff",
+   "filePath": "packages/coding-agent/src/core/tools/edit-diff.ts",
+   "lineRange": [
+    553,
+    560
+   ],
+   "summary": "计算单个编辑操作对应的 diff 结果。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "type": "file",
+   "name": "edit.ts",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "summary": "实现 edit 工具：校验输入、构造编辑调用与结果渲染组件，基于旧文本替换生成统一 diff 供用户确认。",
+   "tags": [
+    "tool",
+    "edit",
+    "文件编辑",
+    "diff"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:prepareEditArguments",
+   "type": "function",
+   "name": "prepareEditArguments",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    94,
+    118
+   ],
+   "summary": "预处理 edit 工具的参数（如去除 BOM、规范化换行）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:getEditCallRenderComponent",
+   "type": "function",
+   "name": "getEditCallRenderComponent",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    156,
+    168
+   ],
+   "summary": "获取当前 edit 调用的渲染组件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:getRenderablePreviewInput",
+   "type": "function",
+   "name": "getRenderablePreviewInput",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    170,
+    193
+   ],
+   "summary": "获取可渲染的预览输入内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:formatEditResult",
+   "type": "function",
+   "name": "formatEditResult",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    200,
+    227
+   ],
+   "summary": "格式化 edit 执行结果文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:getEditHeaderBg",
+   "type": "function",
+   "name": "getEditHeaderBg",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    229,
+    244
+   ],
+   "summary": "返回 edit 结果头部的背景色样式。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:buildEditCallComponent",
+   "type": "function",
+   "name": "buildEditCallComponent",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    246,
+    265
+   ],
+   "summary": "构建 edit 调用的渲染组件数据。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:setEditPreview",
+   "type": "function",
+   "name": "setEditPreview",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    267,
+    285
+   ],
+   "summary": "设置编辑预览内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "function",
+   "name": "createEditToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    287,
+    433
+   ],
+   "summary": "创建 edit 工具定义（schema 与渲染）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "function",
+   "name": "createEditTool",
+   "filePath": "packages/coding-agent/src/core/tools/edit.ts",
+   "lineRange": [
+    435,
+    437
+   ],
+   "summary": "创建可调用的 edit 工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "type": "file",
+   "name": "file-mutation-queue.ts",
+   "filePath": "packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "summary": "提供文件变更串行化队列（withFileMutationQueue），避免并发编辑同一文件造成冲突，并区分缺失路径错误。",
+   "tags": [
+    "utility",
+    "并发控制",
+    "文件编辑"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/file-mutation-queue.ts:getMutationQueueKey",
+   "type": "function",
+   "name": "getMutationQueueKey",
+   "filePath": "packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "lineRange": [
+    16,
+    26
+   ],
+   "summary": "计算文件变更队列的键值。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/file-mutation-queue.ts:withFileMutationQueue",
+   "type": "function",
+   "name": "withFileMutationQueue",
+   "filePath": "packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "lineRange": [
+    32,
+    61
+   ],
+   "summary": "在队列中串行执行文件变更操作。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/find.ts",
+   "type": "file",
+   "name": "find.ts",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "summary": "实现 find 工具：基于 glob 模式搜索文件/目录，结果相对化展示，支持排除规则与渲染组件。",
+   "tags": [
+    "tool",
+    "find",
+    "文件搜索"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/find.ts:relativizeFindResultPath",
+   "type": "function",
+   "name": "relativizeFindResultPath",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "lineRange": [
+    17,
+    27
+   ],
+   "summary": "将搜索结果路径相对化以精简展示。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/find.ts:formatFindCall",
+   "type": "function",
+   "name": "formatFindCall",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "lineRange": [
+    68,
+    83
+   ],
+   "summary": "格式化 find 调用描述。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/find.ts:formatFindResult",
+   "type": "function",
+   "name": "formatFindResult",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "lineRange": [
+    85,
+    116
+   ],
+   "summary": "格式化 find 搜索结果输出。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "function",
+   "name": "createFindToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "lineRange": [
+    118,
+    371
+   ],
+   "summary": "创建 find 工具定义（schema 与渲染）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "function",
+   "name": "createFindTool",
+   "filePath": "packages/coding-agent/src/core/tools/find.ts",
+   "lineRange": [
+    373,
+    375
+   ],
+   "summary": "创建可调用的 find 工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "type": "file",
+   "name": "grep.ts",
+   "filePath": "packages/coding-agent/src/core/tools/grep.ts",
+   "summary": "实现 grep 工具：在目录中执行正则搜索，支持多文件输出、行号与结果格式化渲染。",
+   "tags": [
+    "tool",
+    "grep",
+    "搜索"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepCall",
+   "type": "function",
+   "name": "formatGrepCall",
+   "filePath": "packages/coding-agent/src/core/tools/grep.ts",
+   "lineRange": [
+    68,
+    86
+   ],
+   "summary": "格式化 grep 调用描述。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepResult",
+   "type": "function",
+   "name": "formatGrepResult",
+   "filePath": "packages/coding-agent/src/core/tools/grep.ts",
+   "lineRange": [
+    88,
+    121
+   ],
+   "summary": "格式化 grep 搜索结果输出。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "function",
+   "name": "createGrepToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/grep.ts",
+   "lineRange": [
+    123,
+    381
+   ],
+   "summary": "创建 grep 工具定义（schema 与渲染）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "function",
+   "name": "createGrepTool",
+   "filePath": "packages/coding-agent/src/core/tools/grep.ts",
+   "lineRange": [
+    383,
+    385
+   ],
+   "summary": "创建可调用的 grep 工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "summary": "工具桶（barrel）：汇总导出 bash/edit/find/grep/ls/read/write 等内置工具的定义与工厂函数，并提供按名称创建工具的统一入口。",
+   "tags": [
+    "barrel",
+    "entry-point",
+    "工具注册",
+    "tools"
+   ],
+   "complexity": "moderate",
+   "languageNotes": "典型的 TypeScript barrel 文件，大量 re-export 与类型汇总。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "type": "function",
+   "name": "createToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    96,
+    115
+   ],
+   "summary": "按工具名称分发创建对应的工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "type": "function",
+   "name": "createTool",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    117,
+    136
+   ],
+   "summary": "按工具名称分发创建对应的工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "type": "function",
+   "name": "createCodingToolDefinitions",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    138,
+    145
+   ],
+   "summary": "创建全部编码类工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "type": "function",
+   "name": "createReadOnlyToolDefinitions",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    147,
+    154
+   ],
+   "summary": "创建全部只读工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "type": "function",
+   "name": "createAllToolDefinitions",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    156,
+    166
+   ],
+   "summary": "创建全部工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "type": "function",
+   "name": "createCodingTools",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    168,
+    175
+   ],
+   "summary": "创建全部编码类工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "type": "function",
+   "name": "createReadOnlyTools",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    177,
+    184
+   ],
+   "summary": "创建全部只读工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "type": "function",
+   "name": "createAllTools",
+   "filePath": "packages/coding-agent/src/core/tools/index.ts",
+   "lineRange": [
+    186,
+    196
+   ],
+   "summary": "创建全部工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "type": "file",
+   "name": "ls.ts",
+   "filePath": "packages/coding-agent/src/core/tools/ls.ts",
+   "summary": "实现 ls 工具：列出目录内容并格式化展示文件/目录条目。",
+   "tags": [
+    "tool",
+    "ls",
+    "文件系统"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/ls.ts:formatLsResult",
+   "type": "function",
+   "name": "formatLsResult",
+   "filePath": "packages/coding-agent/src/core/tools/ls.ts",
+   "lineRange": [
+    62,
+    93
+   ],
+   "summary": "格式化 ls 结果输出（含类型标记）。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "function",
+   "name": "createLsToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/ls.ts",
+   "lineRange": [
+    95,
+    221
+   ],
+   "summary": "创建 ls 工具定义。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "function",
+   "name": "createLsTool",
+   "filePath": "packages/coding-agent/src/core/tools/ls.ts",
+   "lineRange": [
+    223,
+    225
+   ],
+   "summary": "创建可调用的 ls 工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:detectLineEnding",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:detectLineEnding",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeToLF",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeToLF",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:restoreLineEndings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:restoreLineEndings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeForFuzzyMatch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:normalizeForFuzzyMatch",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getReplacementLineRange",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyReplacements",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyReplacementsPreservingUnchangedLines",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyReplacementsPreservingUnchangedLines",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:fuzzyFindText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:fuzzyFindText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:stripBom",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:stripBom",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getNotFoundError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:getDuplicateError",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyEditsToNormalizedContent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:applyEditsToNormalizedContent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateUnifiedPatch",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateUnifiedPatch",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateDiffString",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:generateDiffString",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditsDiff",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditsDiff",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditDiff",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditDiff",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:prepareEditArguments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:getEditCallRenderComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:getRenderablePreviewInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:formatEditResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:getEditHeaderBg",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:buildEditCallComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:setEditPreview",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "target": "function:packages/coding-agent/src/core/tools/file-mutation-queue.ts:getMutationQueueKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "target": "function:packages/coding-agent/src/core/tools/file-mutation-queue.ts:withFileMutationQueue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "target": "function:packages/coding-agent/src/core/tools/file-mutation-queue.ts:withFileMutationQueue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:relativizeFindResultPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:relativizeFindResultPath",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:formatFindCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:formatFindResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepCall",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:formatLsResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit-diff.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/tools/file-mutation-queue.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/diff.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/core/tools/truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/find.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/core/tools/truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/coding-agent/src/utils/tools-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/edit.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/find.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/grep.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/read.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/index.ts",
+   "target": "file:packages/coding-agent/src/core/tools/write.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/core/tools/path-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/core/tools/truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/ls.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/edit-diff.ts:computeEditsDiff",
+   "target": "function:packages/coding-agent/src/core/tools/path-utils.ts:resolveToCwd",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/edit.ts:formatEditResult",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:str",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "target": "function:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts:wrapToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:formatFindCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:str",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:formatFindCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:shortenPath",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:formatFindCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:invalidArgText",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:formatFindResult",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:getTextOutput",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:formatFindResult",
+   "target": "function:packages/coding-agent/src/core/tools/truncate.ts:formatSize",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "target": "function:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts:wrapToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:str",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:shortenPath",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepCall",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:invalidArgText",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepResult",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:getTextOutput",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:formatGrepResult",
+   "target": "function:packages/coding-agent/src/core/tools/truncate.ts:formatSize",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "target": "function:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts:wrapToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createToolDefinition",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createTool",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllToolDefinitions",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createCodingTools",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createReadOnlyTools",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/read.ts:createReadTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/edit.ts:createEditTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/write.ts:createWriteTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/grep.ts:createGrepTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/find.ts:createFindTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/index.ts:createAllTools",
+   "target": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/ls.ts:formatLsResult",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:getTextOutput",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/ls.ts:formatLsResult",
+   "target": "function:packages/coding-agent/src/core/tools/truncate.ts:formatSize",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/ls.ts:createLsTool",
+   "target": "function:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts:wrapToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

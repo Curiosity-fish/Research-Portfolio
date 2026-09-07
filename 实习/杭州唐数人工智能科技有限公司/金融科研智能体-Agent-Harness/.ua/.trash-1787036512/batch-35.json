@@ -1,0 +1,1044 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/evals/src/extensions.eval.ts",
+   "type": "file",
+   "name": "extensions.eval.ts",
+   "filePath": "packages/evals/src/extensions.eval.ts",
+   "summary": "扩展作者向 eval harness 的用例：验证系统提示转换与扩展加载。",
+   "tags": [
+    "eval",
+    "extensions",
+    "harness"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/evals/src/extensions.eval.ts:createExtensionAuthoringHarness",
+   "type": "function",
+   "name": "createExtensionAuthoringHarness",
+   "filePath": "packages/evals/src/extensions.eval.ts",
+   "summary": "函数 createExtensionAuthoringHarness：创建ExtensionAuthoringHarness 相关逻辑，参数：name、transformSystemPrompt。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    18,
+    39
+   ]
+  },
+  {
+   "id": "file:packages/evals/src/smoke.eval.ts",
+   "type": "file",
+   "name": "smoke.eval.ts",
+   "filePath": "packages/evals/src/smoke.eval.ts",
+   "summary": "冒烟 eval：最小化端到端 agent 运行验证。",
+   "tags": [
+    "eval",
+    "smoke",
+    "e2e"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/evals/src/tfa-harness.ts",
+   "type": "file",
+   "name": "tfa-harness.ts",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "TFA coding-agent 的 eval harness：运行真实 agent 会话并收集事件/产物。",
+   "tags": [
+    "harness",
+    "eval",
+    "agent"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/evals/src/tfa-harness.ts:resolveModelSelection",
+   "type": "function",
+   "name": "resolveModelSelection",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "函数 resolveModelSelection：解析ModelSelection 相关逻辑，参数：explicitModel、environment。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    46,
+    56
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/tfa-harness.ts:toTranscriptEvents",
+   "type": "function",
+   "name": "toTranscriptEvents",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "将消息转换为 transcript 事件。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    58,
+    88
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/tfa-harness.ts:promptAgent",
+   "type": "function",
+   "name": "promptAgent",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "向 agent 会话发送提示并等待完成。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    90,
+    107
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/tfa-harness.ts:runTfaCodingAgent",
+   "type": "function",
+   "name": "runTfaCodingAgent",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "运行 TFA coding-agent 会话并收集事件/产物。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    109,
+    244
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/tfa-harness.ts:createTfaCodingAgentHarness",
+   "type": "function",
+   "name": "createTfaCodingAgentHarness",
+   "filePath": "packages/evals/src/tfa-harness.ts",
+   "summary": "创建 TFA agent eval harness 工厂。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    252,
+    259
+   ]
+  },
+  {
+   "id": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "file",
+   "name": "artifacts.ts",
+   "filePath": "packages/evals/src/vitest-evals/artifacts.ts",
+   "summary": "eval 产物管理：记录会话/源码产物并持久化引用到磁盘。",
+   "tags": [
+    "utility",
+    "eval",
+    "artifacts"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSessionArtifact",
+   "type": "function",
+   "name": "recordEvalSessionArtifact",
+   "filePath": "packages/evals/src/vitest-evals/artifacts.ts",
+   "summary": "记录 eval 会话产物。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    51,
+    73
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSourceArtifact",
+   "type": "function",
+   "name": "recordEvalSourceArtifact",
+   "filePath": "packages/evals/src/vitest-evals/artifacts.ts",
+   "summary": "函数 recordEvalSourceArtifact：实现其核心逻辑，参数：task、runId、attachment。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    75,
+    85
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/artifacts.ts:persistEvalArtifactReferences",
+   "type": "function",
+   "name": "persistEvalArtifactReferences",
+   "filePath": "packages/evals/src/vitest-evals/artifacts.ts",
+   "summary": "将产物引用持久化到磁盘。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    87,
+    113
+   ]
+  },
+  {
+   "id": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "type": "file",
+   "name": "harness-table.ts",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "harness 对比表格：规范化输入、分组、迭代产物收集与对比执行。",
+   "tags": [
+    "utility",
+    "eval",
+    "harness",
+    "table"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:parseEvalHarnessIterationArtifact",
+   "type": "function",
+   "name": "parseEvalHarnessIterationArtifact",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "函数 parseEvalHarnessIterationArtifact：解析EvalHarnessIterationArtifact 相关逻辑，参数：value。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    46,
+    64
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:canonicalizeJson",
+   "type": "function",
+   "name": "canonicalizeJson",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "规范化 JSON 值用于输入键推导。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    66,
+    98
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:deriveEvalGroupKey",
+   "type": "function",
+   "name": "deriveEvalGroupKey",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "函数 deriveEvalGroupKey：实现其核心逻辑，参数：input、repetition。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    110,
+    112
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:validateOptions",
+   "type": "function",
+   "name": "validateOptions",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "函数 validateOptions：校验Options 相关逻辑，参数：evalSet、baseline、candidates、repetitions。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    114,
+    128
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:withIterationArtifact",
+   "type": "function",
+   "name": "withIterationArtifact",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "函数 withIterationArtifact：实现其核心逻辑，参数：harness、plan。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    130,
+    155
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/harness-table.ts:evalHarnessTable",
+   "type": "function",
+   "name": "evalHarnessTable",
+   "filePath": "packages/evals/src/vitest-evals/harness-table.ts",
+   "summary": "执行 harness 对比表并生成迭代产物。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    165,
+    193
+   ]
+  },
+  {
+   "id": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "type": "file",
+   "name": "reporter.ts",
+   "filePath": "packages/evals/src/vitest-evals/reporter.ts",
+   "summary": "Vitest 自定义 reporter：收集 harness 观测并追加运行报告。",
+   "tags": [
+    "reporter",
+    "eval",
+    "vitest"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/evals/src/vitest-evals/reporter.ts:EvalHarnessReporter",
+   "type": "class",
+   "name": "EvalHarnessReporter",
+   "filePath": "packages/evals/src/vitest-evals/reporter.ts",
+   "summary": "Vitest reporter：汇总 harness 观测。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    89,
+    113
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/reporter.ts:appendHarnessRunReport",
+   "type": "function",
+   "name": "appendHarnessRunReport",
+   "filePath": "packages/evals/src/vitest-evals/reporter.ts",
+   "summary": "函数 appendHarnessRunReport：追加HarnessRunReport 相关逻辑，参数：test。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    14,
+    51
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/reporter.ts:collectHarnessObservations",
+   "type": "function",
+   "name": "collectHarnessObservations",
+   "filePath": "packages/evals/src/vitest-evals/reporter.ts",
+   "summary": "函数 collectHarnessObservations：实现其核心逻辑，参数：modules。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    53,
+    87
+   ]
+  },
+  {
+   "id": "file:packages/evals/src/vitest-evals/setup.ts",
+   "type": "file",
+   "name": "setup.ts",
+   "filePath": "packages/evals/src/vitest-evals/setup.ts",
+   "summary": "vitest-evals 测试环境 setup（注入运行配置）。",
+   "tags": [
+    "setup",
+    "eval",
+    "vitest"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/evals/src/vitest-evals/summary.ts",
+   "type": "file",
+   "name": "summary.ts",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "harness 对比汇总：配对观测、统计指标（正确率/成本/时长）与报告格式化。",
+   "tags": [
+    "utility",
+    "eval",
+    "summary",
+    "statistics"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:groupObservations",
+   "type": "function",
+   "name": "groupObservations",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "按 harness/分组聚合观测。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    112,
+    141
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:collectDiagnostics",
+   "type": "function",
+   "name": "collectDiagnostics",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 collectDiagnostics：实现其核心逻辑，参数：harnesses、groups。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    164,
+    194
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:pairObservations",
+   "type": "function",
+   "name": "pairObservations",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 pairObservations：实现其核心逻辑，参数：groups、baselineHarness、candidateHarness。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    196,
+    210
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:summarizeMetric",
+   "type": "function",
+   "name": "summarizeMetric",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 summarizeMetric：汇总Metric 相关逻辑，参数：pairs、select、totalPairs。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    212,
+    245
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:summarizeCorrectness",
+   "type": "function",
+   "name": "summarizeCorrectness",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 summarizeCorrectness：汇总Correctness 相关逻辑，参数：pairs、totalPairs。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    247,
+    282
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:compareHarnesses",
+   "type": "function",
+   "name": "compareHarnesses",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 compareHarnesses：比较Harnesses 相关逻辑，参数：baseline、candidate、groups。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    284,
+    298
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:summarizeHarnessComparisons",
+   "type": "function",
+   "name": "summarizeHarnessComparisons",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "汇总 harness 对比结果。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    300,
+    328
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:formatMetric",
+   "type": "function",
+   "name": "formatMetric",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "函数 formatMetric：格式化Metric 相关逻辑，参数：label、metric、formatValue、formatDelta、comparisonPairs。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    352,
+    372
+   ]
+  },
+  {
+   "id": "function:packages/evals/src/vitest-evals/summary.ts:formatHarnessComparisonReport",
+   "type": "function",
+   "name": "formatHarnessComparisonReport",
+   "filePath": "packages/evals/src/vitest-evals/summary.ts",
+   "summary": "格式化对比报告文本。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    374,
+    438
+   ]
+  },
+  {
+   "id": "file:packages/evals/test/tfa-harness.test.ts",
+   "type": "file",
+   "name": "tfa-harness.test.ts",
+   "filePath": "packages/evals/test/tfa-harness.test.ts",
+   "summary": "tfa-harness 工具的单元测试。",
+   "tags": [
+    "test",
+    "harness"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/evals/test/vitest-evals/artifacts.test.ts",
+   "type": "file",
+   "name": "artifacts.test.ts",
+   "filePath": "packages/evals/test/vitest-evals/artifacts.test.ts",
+   "summary": "artifacts 产物管理模块的测试。",
+   "tags": [
+    "test",
+    "artifacts"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/evals/test/vitest-evals/harness-table.test.ts",
+   "type": "file",
+   "name": "harness-table.test.ts",
+   "filePath": "packages/evals/test/vitest-evals/harness-table.test.ts",
+   "summary": "harness-table 模块的测试。",
+   "tags": [
+    "test",
+    "harness-table"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/evals/test/vitest-evals/harness-table.test.ts:createFakeHarness",
+   "type": "function",
+   "name": "createFakeHarness",
+   "filePath": "packages/evals/test/vitest-evals/harness-table.test.ts",
+   "summary": "函数 createFakeHarness：创建FakeHarness 相关逻辑，参数：name。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    33,
+    44
+   ]
+  },
+  {
+   "id": "file:packages/evals/test/vitest-evals/summary.test.ts",
+   "type": "file",
+   "name": "summary.test.ts",
+   "filePath": "packages/evals/test/vitest-evals/summary.test.ts",
+   "summary": "summary 对比汇总模块的测试。",
+   "tags": [
+    "test",
+    "summary"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/evals/test/vitest-evals/summary.test.ts:observation",
+   "type": "function",
+   "name": "observation",
+   "filePath": "packages/evals/test/vitest-evals/summary.test.ts",
+   "summary": "函数 observation：实现其核心逻辑，参数：harness、testName、result、metrics、baseline、candidates。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    11,
+    34
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/evals/src/extensions.eval.ts",
+   "target": "function:packages/evals/src/extensions.eval.ts:createExtensionAuthoringHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/extensions.eval.ts",
+   "target": "file:packages/evals/src/tfa-harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/extensions.eval.ts",
+   "target": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/extensions.eval.ts",
+   "target": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "file:packages/evals/src/extensions.eval.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "file:packages/evals/src/extensions.eval.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "file:packages/evals/src/extensions.eval.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/src/smoke.eval.ts",
+   "target": "file:packages/evals/src/tfa-harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "file:packages/evals/src/smoke.eval.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:resolveModelSelection",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:resolveModelSelection",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:toTranscriptEvents",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:promptAgent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:runTfaCodingAgent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:createTfaCodingAgentHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "function:packages/evals/src/tfa-harness.ts:createTfaCodingAgentHarness",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSessionArtifact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSessionArtifact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSourceArtifact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:recordEvalSourceArtifact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:persistEvalArtifactReferences",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "function:packages/evals/src/vitest-evals/artifacts.ts:persistEvalArtifactReferences",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:parseEvalHarnessIterationArtifact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:parseEvalHarnessIterationArtifact",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:canonicalizeJson",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:deriveEvalGroupKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:deriveEvalGroupKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:validateOptions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:withIterationArtifact",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:evalHarnessTable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "function:packages/evals/src/vitest-evals/harness-table.ts:evalHarnessTable",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "class:packages/evals/src/vitest-evals/reporter.ts:EvalHarnessReporter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "function:packages/evals/src/vitest-evals/reporter.ts:appendHarnessRunReport",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "function:packages/evals/src/vitest-evals/reporter.ts:collectHarnessObservations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/reporter.ts",
+   "target": "file:packages/evals/src/vitest-evals/summary.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/setup.ts",
+   "target": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:groupObservations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:collectDiagnostics",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:pairObservations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:summarizeMetric",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:summarizeCorrectness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:compareHarnesses",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:summarizeHarnessComparisons",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:summarizeHarnessComparisons",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:formatMetric",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:formatHarnessComparisonReport",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "function:packages/evals/src/vitest-evals/summary.ts:formatHarnessComparisonReport",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/evals/test/tfa-harness.test.ts",
+   "target": "file:packages/evals/src/tfa-harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/tfa-harness.ts",
+   "target": "file:packages/evals/test/tfa-harness.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/test/vitest-evals/artifacts.test.ts",
+   "target": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/artifacts.ts",
+   "target": "file:packages/evals/test/vitest-evals/artifacts.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/test/vitest-evals/harness-table.test.ts",
+   "target": "function:packages/evals/test/vitest-evals/harness-table.test.ts:createFakeHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/test/vitest-evals/harness-table.test.ts",
+   "target": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/harness-table.ts",
+   "target": "file:packages/evals/test/vitest-evals/harness-table.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/evals/test/vitest-evals/summary.test.ts",
+   "target": "function:packages/evals/test/vitest-evals/summary.test.ts:observation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/evals/test/vitest-evals/summary.test.ts",
+   "target": "file:packages/evals/src/vitest-evals/summary.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/src/vitest-evals/summary.ts",
+   "target": "file:packages/evals/test/vitest-evals/summary.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

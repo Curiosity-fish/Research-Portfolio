@@ -1,0 +1,1336 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/tui/src/terminal-colors.ts",
+   "type": "file",
+   "name": "terminal-colors.ts",
+   "filePath": "packages/tui/src/terminal-colors.ts",
+   "summary": "终端颜色方案解析：OSC 11 背景色查询与 RGB 解析。",
+   "tags": [
+    "utility",
+    "terminal",
+    "colors"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/tui/src/terminal-colors.ts:parseOscHexChannel",
+   "type": "function",
+   "name": "parseOscHexChannel",
+   "filePath": "packages/tui/src/terminal-colors.ts",
+   "summary": "函数 parseOscHexChannel：解析OscHexChannel 相关逻辑，参数：channel。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    17,
+    26
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/terminal-colors.ts:isOsc11BackgroundColorResponse",
+   "type": "function",
+   "name": "isOsc11BackgroundColorResponse",
+   "filePath": "packages/tui/src/terminal-colors.ts",
+   "summary": "函数 isOsc11BackgroundColorResponse：判断Osc11BackgroundColorResponse 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    31,
+    33
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/terminal-colors.ts:parseOsc11BackgroundColor",
+   "type": "function",
+   "name": "parseOsc11BackgroundColor",
+   "filePath": "packages/tui/src/terminal-colors.ts",
+   "summary": "函数 parseOsc11BackgroundColor：解析Osc11BackgroundColor 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    35,
+    65
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/terminal-colors.ts:parseTerminalColorSchemeReport",
+   "type": "function",
+   "name": "parseTerminalColorSchemeReport",
+   "filePath": "packages/tui/src/terminal-colors.ts",
+   "summary": "函数 parseTerminalColorSchemeReport：解析TerminalColorSchemeReport 相关逻辑，参数：data。",
+   "tags": [
+    "function",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    67,
+    73
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/tui-alt-screen.ts",
+   "type": "file",
+   "name": "tui-alt-screen.ts",
+   "filePath": "packages/tui/src/tui-alt-screen.ts",
+   "summary": "备用屏幕渲染实现 TuiAltScreen：分层渲染、overlay 与视图控制。",
+   "tags": [
+    "tui",
+    "alt-screen",
+    "renderer"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/tui-alt-screen.ts:TuiAltScreen",
+   "type": "class",
+   "name": "TuiAltScreen",
+   "filePath": "packages/tui/src/tui-alt-screen.ts",
+   "summary": "备用屏幕渲染实现：分层输出、overlay 与视图管理。",
+   "tags": [
+    "class",
+    "terminal"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    105,
+    890
+   ]
+  },
+  {
+   "id": "file:packages/tui/src/utils.ts",
+   "type": "file",
+   "name": "utils.ts",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "TUI 通用工具：字符宽度、ANSI 序列处理、换行、截断与 OSC 8 链接。",
+   "tags": [
+    "utility",
+    "ansi",
+    "text",
+    "terminal"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/tui/src/utils.ts:AnsiCodeTracker",
+   "type": "class",
+   "name": "AnsiCodeTracker",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "跟踪文本中 ANSI 序列的位置，供换行/截断使用。",
+   "tags": [
+    "class",
+    "code"
+   ],
+   "complexity": "complex",
+   "lineRange": [
+    507,
+    727
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:getGraphemeSegmenter",
+   "type": "function",
+   "name": "getGraphemeSegmenter",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 getGraphemeSegmenter：获取GraphemeSegmenter 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    10,
+    12
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:getWordSegmenter",
+   "type": "function",
+   "name": "getWordSegmenter",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 getWordSegmenter：获取WordSegmenter 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    17,
+    19
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:couldBeEmoji",
+   "type": "function",
+   "name": "couldBeEmoji",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 couldBeEmoji：实现其核心逻辑，参数：segment。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    27,
+    37
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:truncateFragmentToWidth",
+   "type": "function",
+   "name": "truncateFragmentToWidth",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 truncateFragmentToWidth：实现其核心逻辑，参数：text、maxWidth。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    67,
+    145
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:finalizeTruncatedResult",
+   "type": "function",
+   "name": "finalizeTruncatedResult",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 finalizeTruncatedResult：实现其核心逻辑，参数：prefix、prefixWidth、ellipsis、ellipsisWidth、maxWidth、pad。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    147,
+    167
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:graphemeWidth",
+   "type": "function",
+   "name": "graphemeWidth",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 graphemeWidth：实现其核心逻辑，参数：segment。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    174,
+    235
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "function",
+   "name": "visibleWidth",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "计算字符串的显示宽度（含宽字符）。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    240,
+    295
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:stripTerminalSequences",
+   "type": "function",
+   "name": "stripTerminalSequences",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "去除文本中的终端控制序列。",
+   "tags": [
+    "function",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    298,
+    312
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:getGraphemeCellRange",
+   "type": "function",
+   "name": "getGraphemeCellRange",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 getGraphemeCellRange：获取GraphemeCellRange 相关逻辑，参数：line、column。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    320,
+    341
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:getOsc8LinkAtColumn",
+   "type": "function",
+   "name": "getOsc8LinkAtColumn",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 getOsc8LinkAtColumn：获取Osc8LinkAtColumn 相关逻辑，参数：line、column。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    344,
+    366
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:normalizeTerminalOutput",
+   "type": "function",
+   "name": "normalizeTerminalOutput",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 normalizeTerminalOutput：规范化TerminalOutput 相关逻辑，参数：str。",
+   "tags": [
+    "function",
+    "terminal"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    379,
+    401
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:extractAnsiCode",
+   "type": "function",
+   "name": "extractAnsiCode",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 extractAnsiCode：提取AnsiCode 相关逻辑，参数：str、pos。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    406,
+    444
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:parseOsc8Hyperlink",
+   "type": "function",
+   "name": "parseOsc8Hyperlink",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 parseOsc8Hyperlink：解析Osc8Hyperlink 相关逻辑，参数：ansiCode。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    454,
+    472
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:getActiveOsc8Close",
+   "type": "function",
+   "name": "getActiveOsc8Close",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 getActiveOsc8Close：获取ActiveOsc8Close 相关逻辑，参数：prefix。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    482,
+    502
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:updateTrackerFromText",
+   "type": "function",
+   "name": "updateTrackerFromText",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 updateTrackerFromText：更新TrackerFromText 相关逻辑，参数：text、tracker。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    729,
+    740
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:splitIntoTokensWithAnsi",
+   "type": "function",
+   "name": "splitIntoTokensWithAnsi",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 splitIntoTokensWithAnsi：切分IntoTokensWithAnsi 相关逻辑，参数：text。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    745,
+    819
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:wrapTextWithAnsi",
+   "type": "function",
+   "name": "wrapTextWithAnsi",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "按宽度换行并保留 ANSI 样式。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    832,
+    855
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:wrapSingleLine",
+   "type": "function",
+   "name": "wrapSingleLine",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 wrapSingleLine：实现其核心逻辑，参数：line、width。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    857,
+    936
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "function",
+   "name": "isWhitespaceChar",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 isWhitespaceChar：判断WhitespaceChar 相关逻辑，参数：char。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    943,
+    945
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:isPunctuationChar",
+   "type": "function",
+   "name": "isPunctuationChar",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 isPunctuationChar：判断PunctuationChar 相关逻辑，参数：char。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    950,
+    952
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:breakLongWord",
+   "type": "function",
+   "name": "breakLongWord",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 breakLongWord：实现其核心逻辑，参数：word、width、tracker。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    954,
+    1021
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:applyBackgroundToLine",
+   "type": "function",
+   "name": "applyBackgroundToLine",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 applyBackgroundToLine：应用BackgroundToLine 相关逻辑，参数：line、width、bgFn。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1031,
+    1040
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:truncateToWidth",
+   "type": "function",
+   "name": "truncateToWidth",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "按显示宽度截断文本并加省略号。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    1053,
+    1189
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:sliceByColumn",
+   "type": "function",
+   "name": "sliceByColumn",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 sliceByColumn：实现其核心逻辑，参数：line、startCol、length、strict。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1195,
+    1197
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:sliceWithWidth",
+   "type": "function",
+   "name": "sliceWithWidth",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 sliceWithWidth：实现其核心逻辑，参数：line、startCol、length、strict。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    1200,
+    1245
+   ]
+  },
+  {
+   "id": "function:packages/tui/src/utils.ts:extractSegments",
+   "type": "function",
+   "name": "extractSegments",
+   "filePath": "packages/tui/src/utils.ts",
+   "summary": "函数 extractSegments：提取Segments 相关逻辑，参数：line、beforeEnd、afterStart、afterLen、strictAfter。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    1255,
+    1326
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/autocomplete.test.ts",
+   "type": "file",
+   "name": "autocomplete.test.ts",
+   "filePath": "packages/tui/test/autocomplete.test.ts",
+   "summary": "自动补全 provider 的测试（fd 路径、命令、作用域补全）。",
+   "tags": [
+    "test",
+    "autocomplete",
+    "tui"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/tui/test/autocomplete.test.ts:resolveFdPath",
+   "type": "function",
+   "name": "resolveFdPath",
+   "filePath": "packages/tui/test/autocomplete.test.ts",
+   "summary": "函数 resolveFdPath：解析FdPath 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    9,
+    18
+   ]
+  },
+  {
+   "id": "function:packages/tui/test/autocomplete.test.ts:setupFolder",
+   "type": "function",
+   "name": "setupFolder",
+   "filePath": "packages/tui/test/autocomplete.test.ts",
+   "summary": "函数 setupFolder：设置upFolder 相关逻辑，参数：baseDir、structure。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    25,
+    37
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/image-test.ts",
+   "type": "file",
+   "name": "image-test.ts",
+   "filePath": "packages/tui/test/image-test.ts",
+   "summary": "终端图片渲染的测试脚本。",
+   "tags": [
+    "test",
+    "image",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/test/key-tester.ts",
+   "type": "file",
+   "name": "key-tester.ts",
+   "filePath": "packages/tui/test/key-tester.ts",
+   "summary": "按键测试工具：记录按键事件的 KeyLogger 组件。",
+   "tags": [
+    "test-util",
+    "keys",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/key-tester.ts:KeyLogger",
+   "type": "class",
+   "name": "KeyLogger",
+   "filePath": "packages/tui/test/key-tester.ts",
+   "summary": "按键测试工具组件，记录按键事件。",
+   "tags": [
+    "class",
+    "test-util"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    11,
+    102
+   ]
+  },
+  {
+   "id": "file:packages/tui/test/layout.test.ts",
+   "type": "file",
+   "name": "layout.test.ts",
+   "filePath": "packages/tui/test/layout.test.ts",
+   "summary": "布局引擎测量与摆放的测试。",
+   "tags": [
+    "test",
+    "layout"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:parseOscHexChannel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:isOsc11BackgroundColorResponse",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:isOsc11BackgroundColorResponse",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:parseOsc11BackgroundColor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:parseOsc11BackgroundColor",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:parseTerminalColorSchemeReport",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/terminal-colors.ts",
+   "target": "function:packages/tui/src/terminal-colors.ts:parseTerminalColorSchemeReport",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "class:packages/tui/src/tui-alt-screen.ts:TuiAltScreen",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "class:packages/tui/src/tui-alt-screen.ts:TuiAltScreen",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/components/alt-screen-flash.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/components/scroll-view.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/layout.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/tui-alt-screen.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "class:packages/tui/src/utils.ts:AnsiCodeTracker",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getGraphemeSegmenter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getGraphemeSegmenter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getWordSegmenter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getWordSegmenter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:couldBeEmoji",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:truncateFragmentToWidth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:finalizeTruncatedResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:graphemeWidth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:visibleWidth",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:stripTerminalSequences",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:stripTerminalSequences",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getGraphemeCellRange",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getGraphemeCellRange",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getOsc8LinkAtColumn",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getOsc8LinkAtColumn",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:normalizeTerminalOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:normalizeTerminalOutput",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:extractAnsiCode",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:extractAnsiCode",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:parseOsc8Hyperlink",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:getActiveOsc8Close",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:updateTrackerFromText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:splitIntoTokensWithAnsi",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:wrapTextWithAnsi",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:wrapTextWithAnsi",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:wrapSingleLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:isWhitespaceChar",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:isPunctuationChar",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:isPunctuationChar",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:breakLongWord",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:applyBackgroundToLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:applyBackgroundToLine",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:truncateToWidth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:truncateToWidth",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:sliceByColumn",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:sliceByColumn",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:sliceWithWidth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:sliceWithWidth",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:extractSegments",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "function:packages/tui/src/utils.ts:extractSegments",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/tui/test/autocomplete.test.ts",
+   "target": "function:packages/tui/test/autocomplete.test.ts:resolveFdPath",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/autocomplete.test.ts",
+   "target": "function:packages/tui/test/autocomplete.test.ts:setupFolder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/autocomplete.test.ts",
+   "target": "file:packages/tui/src/autocomplete.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/autocomplete.ts",
+   "target": "file:packages/tui/test/autocomplete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/editor.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/components/image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/components/spacer.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/components/text.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/image-test.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/image.ts",
+   "target": "file:packages/tui/test/image-test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/spacer.ts",
+   "target": "file:packages/tui/test/image-test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "file:packages/tui/test/image-test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "class:packages/tui/test/key-tester.ts:KeyLogger",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "file:packages/tui/src/keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "file:packages/tui/src/terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "file:packages/tui/src/tui-main-screen.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "file:packages/tui/src/tui.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/key-tester.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/keys.ts",
+   "target": "file:packages/tui/test/key-tester.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/key-tester.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/components/h-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/components/scroll-view.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/components/text.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/components/v-stack.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/layout.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/terminal-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/layout.test.ts",
+   "target": "file:packages/tui/src/utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/components/h-stack.ts",
+   "target": "file:packages/tui/test/layout.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/scroll-view.ts",
+   "target": "file:packages/tui/test/layout.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/text.ts",
+   "target": "file:packages/tui/test/layout.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/components/v-stack.ts",
+   "target": "file:packages/tui/test/layout.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/utils.ts",
+   "target": "file:packages/tui/test/layout.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

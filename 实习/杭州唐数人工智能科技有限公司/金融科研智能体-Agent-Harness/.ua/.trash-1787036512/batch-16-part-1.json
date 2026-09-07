@@ -1,0 +1,1334 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/model-selector.test.ts",
+   "type": "file",
+   "name": "model-selector.test.ts",
+   "filePath": "packages/coding-agent/test/model-selector.test.ts",
+   "summary": "测试模型选择器（model-selector）的渲染与选择行为。",
+   "tags": [
+    "test",
+    "model-selector",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "file",
+   "name": "oauth-selector.test.ts",
+   "filePath": "packages/coding-agent/test/oauth-selector.test.ts",
+   "summary": "测试 OAuth 选择器（oauth-selector）的登录交互行为。",
+   "tags": [
+    "test",
+    "oauth",
+    "tui",
+    "选择器"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/scrollbar-theme.test.ts",
+   "type": "file",
+   "name": "scrollbar-theme.test.ts",
+   "filePath": "packages/coding-agent/test/scrollbar-theme.test.ts",
+   "summary": "测试滚动条主题的配色渲染。",
+   "tags": [
+    "test",
+    "theme",
+    "scrollbar",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "type": "file",
+   "name": "session-info-modified-timestamp.test.ts",
+   "filePath": "packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "summary": "测试会话信息的修改时间戳展示。",
+   "tags": [
+    "test",
+    "session",
+    "时间戳"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-info-modified-timestamp.test.ts:createSessionFile",
+   "type": "function",
+   "name": "createSessionFile",
+   "filePath": "packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "lineRange": [
+    10,
+    40
+   ],
+   "summary": "创建会话文件的辅助函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "file",
+   "name": "session-selector-path-delete.test.ts",
+   "filePath": "packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "summary": "测试会话选择器中路径删除与会话清理的行为。",
+   "tags": [
+    "test",
+    "session-selector",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-selector-path-delete.test.ts:makeSession",
+   "type": "function",
+   "name": "makeSession",
+   "filePath": "packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "lineRange": [
+    37,
+    50
+   ],
+   "summary": "创建测试会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-selector-path-delete.test.ts:createSymlinkedSessionPaths",
+   "type": "function",
+   "name": "createSymlinkedSessionPaths",
+   "filePath": "packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "lineRange": [
+    52,
+    84
+   ],
+   "summary": "构造带符号链接的会话路径。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "file",
+   "name": "session-selector-rename.test.ts",
+   "filePath": "packages/coding-agent/test/session-selector-rename.test.ts",
+   "summary": "测试会话选择器的重命名交互。",
+   "tags": [
+    "test",
+    "session-selector",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-selector-rename.test.ts:makeSession",
+   "type": "function",
+   "name": "makeSession",
+   "filePath": "packages/coding-agent/test/session-selector-rename.test.ts",
+   "lineRange": [
+    14,
+    26
+   ],
+   "summary": "创建测试会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "type": "file",
+   "name": "session-selector-search.test.ts",
+   "filePath": "packages/coding-agent/test/session-selector-search.test.ts",
+   "summary": "测试会话选择器搜索（session-selector-search）的过滤行为。",
+   "tags": [
+    "test",
+    "session-selector",
+    "搜索"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/session-selector-search.test.ts:makeSession",
+   "type": "function",
+   "name": "makeSession",
+   "filePath": "packages/coding-agent/test/session-selector-search.test.ts",
+   "lineRange": [
+    5,
+    19
+   ],
+   "summary": "创建测试会话。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "type": "file",
+   "name": "settings-selector.test.ts",
+   "filePath": "packages/coding-agent/test/settings-selector.test.ts",
+   "summary": "测试设置选择器（settings-selector）的渲染与交互。",
+   "tags": [
+    "test",
+    "settings-selector",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "type": "file",
+   "name": "status-indicator.test.ts",
+   "filePath": "packages/coding-agent/test/status-indicator.test.ts",
+   "summary": "测试状态指示器（status-indicator）的渲染。",
+   "tags": [
+    "test",
+    "status-indicator",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "type": "file",
+   "name": "streaming-render-debug.ts",
+   "filePath": "packages/coding-agent/test/streaming-render-debug.ts",
+   "summary": "流式渲染调试脚本：驱动 assistant 消息组件渲染观察流式输出。",
+   "tags": [
+    "script",
+    "debug",
+    "渲染",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/streaming-render-debug.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/coding-agent/test/streaming-render-debug.ts",
+   "lineRange": [
+    43,
+    95
+   ],
+   "summary": "调试脚本主流程。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "file",
+   "name": "3217-scoped-model-order.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "summary": "回归测试 scoped 模型的选择顺序。",
+   "tags": [
+    "test",
+    "model-selector",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "type": "file",
+   "name": "5080-signal-shutdown-extension-cleanup.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "summary": "回归测试信号关闭时扩展清理钩子的执行。",
+   "tags": [
+    "test",
+    "信号处理",
+    "extensions",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts:createContext",
+   "type": "function",
+   "name": "createContext",
+   "filePath": "packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "lineRange": [
+    69,
+    91
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "file",
+   "name": "5433-extension-oauth-prompt-input.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "summary": "回归测试扩展 OAuth 提示输入（login-dialog）的交互。",
+   "tags": [
+    "test",
+    "oauth",
+    "extensions",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "type": "file",
+   "name": "5724-sigterm-signal-exit.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "summary": "回归测试 SIGTERM 信号下的退出行为。",
+   "tags": [
+    "test",
+    "信号处理",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts:deferred",
+   "type": "function",
+   "name": "deferred",
+   "filePath": "packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "lineRange": [
+    28,
+    37
+   ],
+   "summary": "构造延迟 Promise 的辅助函数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "file",
+   "name": "6949-unavailable-scoped-model.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "summary": "回归测试 scoped 模型不可用时的选择器行为。",
+   "tags": [
+    "test",
+    "model-selector",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts:createInteractiveContext",
+   "type": "function",
+   "name": "createInteractiveContext",
+   "filePath": "packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "lineRange": [
+    11,
+    40
+   ],
+   "summary": "构造交互模式上下文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "file",
+   "name": "6999-models-json-hot-reload.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "summary": "回归测试 models.json 热重载后的模型选择器刷新。",
+   "tags": [
+    "test",
+    "models",
+    "热重载",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts:observeRefreshRender",
+   "type": "function",
+   "name": "observeRefreshRender",
+   "filePath": "packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "lineRange": [
+    14,
+    29
+   ],
+   "summary": "观察刷新渲染。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts:modelsJson",
+   "type": "function",
+   "name": "modelsJson",
+   "filePath": "packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "lineRange": [
+    31,
+    42
+   ],
+   "summary": "构造 models.json 内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "target": "function:packages/coding-agent/test/session-info-modified-timestamp.test.ts:createSessionFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "function:packages/coding-agent/test/session-selector-path-delete.test.ts:makeSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "function:packages/coding-agent/test/session-selector-path-delete.test.ts:createSymlinkedSessionPaths",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "function:packages/coding-agent/test/session-selector-rename.test.ts:makeSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "target": "function:packages/coding-agent/test/session-selector-search.test.ts:makeSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "target": "function:packages/coding-agent/test/streaming-render-debug.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts:createContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts:deferred",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts:createInteractiveContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts:observeRefreshRender",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts:modelsJson",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-selector.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-selector.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/model-selector.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/oauth-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/scrollbar-theme.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/login-dialog.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "target": "file:packages/coding-agent/test/model-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/model-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/model-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/oauth-selector.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/scrollbar-theme.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/session-info-modified-timestamp.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "file:packages/coding-agent/test/session-selector-search.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "target": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/login-dialog.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

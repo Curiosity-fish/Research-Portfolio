@@ -1,0 +1,61 @@
+{
+ "nodes": [
+  {
+   "id": "file:graphify-out/.graphify_root",
+   "type": "file",
+   "name": ".graphify_root",
+   "filePath": "graphify-out/.graphify_root",
+   "summary": "Graphify 根目录标记文件：内容为项目根路径文本，用于标识工作区根位置。",
+   "tags": [
+    "graphify",
+    "marker",
+    "configuration"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:graphify-out/cache/last_query_stamp",
+   "type": "file",
+   "name": "last_query_stamp",
+   "filePath": "graphify-out/cache/last_query_stamp",
+   "summary": "Graphify 最近查询时间戳标记文件：记录最后一次查询的 Unix 时间戳。",
+   "tags": [
+    "graphify",
+    "cache",
+    "marker",
+    "timestamp"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "config:graphify-out/cache/stat-index.json",
+   "type": "config",
+   "name": "stat-index.json",
+   "filePath": "graphify-out/cache/stat-index.json",
+   "summary": "Graphify 文件统计索引：为每个被扫描文件记录 size、mtime、word_count 与内容 hash，用于增量变更检测与缓存失效。",
+   "tags": [
+    "graphify",
+    "cache",
+    "index",
+    "configuration"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "config:graphify-out/cache/stat-index.json",
+   "target": "file:graphify-out/.graphify_root",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "config:graphify-out/cache/stat-index.json",
+   "target": "file:graphify-out/cache/last_query_stamp",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

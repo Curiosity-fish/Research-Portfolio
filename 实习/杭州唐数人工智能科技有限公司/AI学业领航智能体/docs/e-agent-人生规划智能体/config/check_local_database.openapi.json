@@ -1,0 +1,26 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Academic Navigation E-Agent Check",
+    "version": "1.0.0",
+    "description": "用于 E-Agent 验证本地学业数据库连接的最小 OpenAPI Schema。"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:18080"
+    }
+  ],
+  "paths": {
+    "/api/eagent/health": {
+      "get": {
+        "operationId": "check_local_database",
+        "summary": "验证本地数据库连接",
+        "responses": {
+          "200": {
+            "description": "数据库连接正常，返回数据库名称、时间和关键表行数"
+          }
+        }
+      }
+    }
+  }
+}

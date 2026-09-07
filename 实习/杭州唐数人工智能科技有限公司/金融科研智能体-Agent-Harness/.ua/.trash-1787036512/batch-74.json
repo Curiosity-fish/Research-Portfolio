@@ -1,0 +1,374 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/coding-agent/test/fixtures/empty-agent/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "packages/coding-agent/test/fixtures/empty-agent/.gitkeep",
+      "summary": "空目录占位文件,保证 empty-agent 夹具目录存在于版本库。",
+      "tags": [
+        "fixture",
+        "gitkeep",
+        "marker"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/fixtures/empty-cwd/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "packages/coding-agent/test/fixtures/empty-cwd/.gitkeep",
+      "summary": "空目录占位文件,保证 empty-cwd 夹具目录存在于版本库。",
+      "tags": [
+        "fixture",
+        "gitkeep",
+        "marker"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/fixtures/fake-external-editor.mjs",
+      "type": "file",
+      "name": "fake-external-editor.mjs",
+      "filePath": "packages/coding-agent/test/fixtures/fake-external-editor.mjs",
+      "summary": "模拟外部编辑器的夹具:把打开文件的内容、目录条目与权限写入捕获 JSON,并支持 --fail/--empty 行为。",
+      "tags": [
+        "fixture",
+        "test",
+        "editor",
+        "mjs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/fixtures/large-session.jsonl",
+      "type": "file",
+      "name": "large-session.jsonl",
+      "filePath": "packages/coding-agent/test/fixtures/large-session.jsonl",
+      "summary": "大数据量会话 JSONL 测试夹具:多轮 provider 消息与 usage/cost 数据,用于大数据场景测试。",
+      "tags": [
+        "fixture",
+        "test-data",
+        "jsonl",
+        "session"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills-collision/first/calendar/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills-collision/first/calendar/SKILL.md",
+      "summary": "技能冲突测试夹具:目录中第一个名为 calendar 的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills-collision/second/calendar/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills-collision/second/calendar/SKILL.md",
+      "summary": "技能冲突测试夹具:冲突场景中的第二个同名 calendar 技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/consecutive-hyphens/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/consecutive-hyphens/SKILL.md",
+      "summary": "技能校验测试夹具:技能名含连续连字符的非法场景。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/disable-model-invocation/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/disable-model-invocation/SKILL.md",
+      "summary": "技能测试夹具:含 disable-model-invocation 元数据的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/invalid-name-chars/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/invalid-name-chars/SKILL.md",
+      "summary": "技能校验测试夹具:技能名含非法字符的场景。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/invalid-yaml/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/invalid-yaml/SKILL.md",
+      "summary": "技能测试夹具:frontmatter 为无效 YAML 的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/long-name/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/long-name/SKILL.md",
+      "summary": "技能校验测试夹具:技能名过长的场景。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/missing-description/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/missing-description/SKILL.md",
+      "summary": "技能校验测试夹具:缺少 description 字段的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/multiline-description/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/multiline-description/SKILL.md",
+      "summary": "技能测试夹具:description 为多行的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/name-mismatch/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/name-mismatch/SKILL.md",
+      "summary": "技能校验测试夹具:目录名与 frontmatter name 不一致的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/nested/child-skill/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/nested/child-skill/SKILL.md",
+      "summary": "技能测试夹具:位于子目录中的嵌套技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/no-frontmatter/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/no-frontmatter/SKILL.md",
+      "summary": "技能测试夹具:完全没有 YAML frontmatter 的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/root-skill-preferred/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/root-skill-preferred/SKILL.md",
+      "summary": "技能解析测试夹具:根目录技能(应在与子技能冲突时优先)。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/root-skill-preferred/nested-child/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/root-skill-preferred/nested-child/SKILL.md",
+      "summary": "技能解析测试夹具:应被根技能覆盖而忽略的嵌套子技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/unknown-field/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/unknown-field/SKILL.md",
+      "summary": "技能测试夹具:frontmatter 含未知字段的技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/coding-agent/test/fixtures/skills/valid-skill/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "packages/coding-agent/test/fixtures/skills/valid-skill/SKILL.md",
+      "summary": "技能测试夹具:符合 Agent Skills 标准的合规技能。",
+      "tags": [
+        "fixture",
+        "test",
+        "skill",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/restore-sandbox-env.test.ts",
+      "type": "file",
+      "name": "restore-sandbox-env.test.ts",
+      "filePath": "packages/coding-agent/test/restore-sandbox-env.test.ts",
+      "summary": "验证 restoreSandboxEnv:在 bun 运行时从文件恢复被 sandbox 清除的环境变量,并在非 bun 环境不做任何操作。",
+      "tags": [
+        "test",
+        "bun",
+        "environment",
+        "sandbox"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/coding-agent/test/suite/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/coding-agent/test/suite/README.md",
+      "summary": "harness 新测试套件使用约定:位于 test/suite、使用 harness.ts 与 faux provider、保持 CI 安全,并规定回归测试命名。",
+      "tags": [
+        "documentation",
+        "test",
+        "suite",
+        "conventions"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/2791-fswatch-error-crash.test.ts",
+      "type": "file",
+      "name": "2791-fswatch-error-crash.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/2791-fswatch-error-crash.test.ts",
+      "summary": "issue #2791 回归测试:验证 theme FSWatcher 收到 error 事件时进程不崩溃(已挂错误处理),通过子进程验证退出码。",
+      "tags": [
+        "test",
+        "regression",
+        "fswatch",
+        "crash"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/evals/scripts/run-evals.mjs",
+      "type": "file",
+      "name": "run-evals.mjs",
+      "filePath": "packages/evals/scripts/run-evals.mjs",
+      "summary": "eval 运行器:解析 --provider/--model 或环境变量默认值,把剩余参数转发给 vitest 并创建带时间戳的工件目录。",
+      "tags": [
+        "script",
+        "evals",
+        "test-runner",
+        "cli"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/protocol/vitest.config.ts",
+      "type": "file",
+      "name": "vitest.config.ts",
+      "filePath": "packages/protocol/vitest.config.ts",
+      "summary": "protocol 包 vitest 配置:启用全局模式与 node 环境。",
+      "tags": [
+        "test",
+        "configuration",
+        "vitest"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/test/restore-sandbox-env.test.ts",
+      "target": "file:packages/coding-agent/src/bun/restore-sandbox-env.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/test/suite/README.md",
+      "target": "file:packages/coding-agent/test/suite/regressions/2791-fswatch-error-crash.test.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/coding-agent/test/fixtures/skills-collision/first/calendar/SKILL.md",
+      "target": "document:packages/coding-agent/test/fixtures/skills-collision/second/calendar/SKILL.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

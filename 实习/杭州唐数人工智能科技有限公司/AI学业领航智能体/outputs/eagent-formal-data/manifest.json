@@ -1,0 +1,42 @@
+﻿{
+    "generated_at":  "2026-08-14 10:27:41",
+    "source":  {
+                   "type":  "mysql",
+                   "host":  "127.0.0.1",
+                   "database":  "academic_nav"
+               },
+    "tables":  {
+                   "t_school_cache":  12,
+                   "t_major":  8,
+                   "t_department":  2,
+                   "t_gpa_history":  10240,
+                   "t_intervention_record":  0,
+                   "t_user_public":  2698,
+                   "t_course_class":  1536,
+                   "t_course":  48,
+                   "t_health_report":  2560,
+                   "t_volunteer":  2560,
+                   "t_teacher":  128,
+                   "t_competition":  580,
+                   "t_student":  2560,
+                   "t_grade":  61440,
+                   "t_profile_score":  12800,
+                   "t_major_plan":  32,
+                   "t_job_cache":  15,
+                   "t_psychology":  2560,
+                   "t_attendance":  2560,
+                   "t_class":  64,
+                   "t_alert":  3734
+               },
+    "sensitive_fields_excluded":  [
+                                      "t_user.password",
+                                      "t_user.avatar_url",
+                                      "t_psychology.note",
+                                      "t_health_report.report_url"
+                                  ],
+    "usage":  [
+                  "tables/ for offline validation and formal handoff",
+                  "knowledge_package/ for E-Agent document and QA knowledge base",
+                  "Do not upload live student tables to E-Agent; use the backend API tools instead."
+              ]
+}

@@ -1,0 +1,30 @@
+:eastAsia="宋体" w:cs="宋体"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+                <w:lang w:eastAsia="zh-CN"/>
+              </w:rPr>
+              <w:t>）提供智能体管理后台，支持 Prompt 版本管理、</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia" w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+              </w:rPr>
+              <w:t>调</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia" w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+                <w:lang w:eastAsia="zh-CN"/>
+              </w:rPr>
+              <w:t>试、运行效果监控。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w14:paraId="1EE5EA33">
+        <w

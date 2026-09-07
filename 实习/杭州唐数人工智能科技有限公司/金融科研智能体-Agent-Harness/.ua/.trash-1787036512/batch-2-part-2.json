@@ -1,0 +1,729 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/utils/open-browser.ts",
+   "type": "file",
+   "name": "open-browser.ts",
+   "filePath": "packages/coding-agent/src/utils/open-browser.ts",
+   "summary": "跨平台打开系统浏览器访问 URL。",
+   "tags": [
+    "browser",
+    "utility",
+    "opener"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/open-browser.ts:openBrowser",
+   "type": "function",
+   "name": "openBrowser",
+   "filePath": "packages/coding-agent/src/utils/open-browser.ts",
+   "lineRange": [
+    10,
+    24
+   ],
+   "summary": "打开系统浏览器访问目标 URL。",
+   "tags": [
+    "browser",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "type": "file",
+   "name": "syntax-highlight.ts",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "summary": "基于 HTML span 标签解析与主题作用域映射的语法高亮渲染工具。",
+   "tags": [
+    "syntax-highlight",
+    "html",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getScopeFromSpanTag",
+   "type": "function",
+   "name": "getScopeFromSpanTag",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    17,
+    31
+   ],
+   "summary": "从 span 标签解析高亮作用域。",
+   "tags": [
+    "parsing",
+    "highlight"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getScopeFormatter",
+   "type": "function",
+   "name": "getScopeFormatter",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    33,
+    56
+   ],
+   "summary": "获取作用域对应的样式格式化函数。",
+   "tags": [
+    "highlight",
+    "theme"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getActiveFormatter",
+   "type": "function",
+   "name": "getActiveFormatter",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    58,
+    70
+   ],
+   "summary": "选择激活中的样式格式化函数。",
+   "tags": [
+    "highlight",
+    "theme"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:renderHighlightedHtml",
+   "type": "function",
+   "name": "renderHighlightedHtml",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    80,
+    132
+   ],
+   "summary": "渲染 HTML 为带主题高亮的文本。",
+   "tags": [
+    "highlight",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:highlight",
+   "type": "function",
+   "name": "highlight",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    134,
+    142
+   ],
+   "summary": "对代码应用语法高亮。",
+   "tags": [
+    "highlight",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/syntax-highlight.ts:supportsLanguage",
+   "type": "function",
+   "name": "supportsLanguage",
+   "filePath": "packages/coding-agent/src/utils/syntax-highlight.ts",
+   "lineRange": [
+    144,
+    146
+   ],
+   "summary": "判断是否支持指定语言。",
+   "tags": [
+    "language",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/ansi-utils.test.ts",
+   "type": "file",
+   "name": "ansi-utils.test.ts",
+   "filePath": "packages/coding-agent/test/ansi-utils.test.ts",
+   "summary": "ansi 工具测试：验证 stripAnsi/ansiRegex 与参考实现一致并覆盖兼容性输入。",
+   "tags": [
+    "test",
+    "ansi",
+    "unit"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/ansi-utils.test.ts:getCompatibilityInputs",
+   "type": "function",
+   "name": "getCompatibilityInputs",
+   "filePath": "packages/coding-agent/test/ansi-utils.test.ts",
+   "lineRange": [
+    20,
+    74
+   ],
+   "summary": "生成兼容性测试输入集。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "type": "file",
+   "name": "assistant-message.test.ts",
+   "filePath": "packages/coding-agent/test/assistant-message.test.ts",
+   "summary": "assistant 消息组件渲染测试：验证思考块隐藏与输出缩进。",
+   "tags": [
+    "test",
+    "tui",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/assistant-message.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/coding-agent/test/assistant-message.test.ts",
+   "lineRange": [
+    12,
+    33
+   ],
+   "summary": "构造 assistant 消息测试对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "type": "file",
+   "name": "bash-execution-width.test.ts",
+   "filePath": "packages/coding-agent/test/bash-execution-width.test.ts",
+   "summary": "bash 执行组件在不同终端宽度下的渲染测试。",
+   "tags": [
+    "test",
+    "tui",
+    "width"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/bash-execution-width.test.ts:createTuiStub",
+   "type": "function",
+   "name": "createTuiStub",
+   "filePath": "packages/coding-agent/test/bash-execution-width.test.ts",
+   "lineRange": [
+    11,
+    28
+   ],
+   "summary": "按指定列宽创建 TUI stub。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/changelog.test.ts",
+   "type": "file",
+   "name": "changelog.test.ts",
+   "filePath": "packages/coding-agent/test/changelog.test.ts",
+   "summary": "changelog 解析与链接归一化测试。",
+   "tags": [
+    "test",
+    "changelog",
+    "unit"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "type": "file",
+   "name": "custom-editor-history-keybindings.test.ts",
+   "filePath": "packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "summary": "自定义编辑器历史导航键位测试。",
+   "tags": [
+    "test",
+    "keybindings",
+    "editor"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/experimental.test.ts",
+   "type": "file",
+   "name": "experimental.test.ts",
+   "filePath": "packages/coding-agent/test/experimental.test.ts",
+   "summary": "实验特性开关函数测试。",
+   "tags": [
+    "test",
+    "feature-flag",
+    "unit"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "type": "file",
+   "name": "export-html-whitespace.test.ts",
+   "filePath": "packages/coding-agent/test/export-html-whitespace.test.ts",
+   "summary": "导出 HTML 时空白字符处理测试。",
+   "tags": [
+    "test",
+    "export-html",
+    "unit"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/external-editor.test.ts",
+   "type": "file",
+   "name": "external-editor.test.ts",
+   "filePath": "packages/coding-agent/test/external-editor.test.ts",
+   "summary": "外部编辑器调用测试（含环境变量注入）。",
+   "tags": [
+    "test",
+    "editor",
+    "unit"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/external-editor.test.ts:runExternalEditor",
+   "type": "function",
+   "name": "runExternalEditor",
+   "filePath": "packages/coding-agent/test/external-editor.test.ts",
+   "lineRange": [
+    17,
+    33
+   ],
+   "summary": "带 fixture 标记运行外部编辑器测试。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/footer-data-provider.test.ts",
+   "type": "file",
+   "name": "footer-data-provider.test.ts",
+   "filePath": "packages/coding-agent/test/footer-data-provider.test.ts",
+   "summary": "footer 数据提供者测试：覆盖 reftable/普通仓库的 git 分支解析。",
+   "tags": [
+    "test",
+    "footer",
+    "git"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/footer-data-provider.test.ts:createReftableWorktree",
+   "type": "function",
+   "name": "createReftableWorktree",
+   "filePath": "packages/coding-agent/test/footer-data-provider.test.ts",
+   "lineRange": [
+    61,
+    78
+   ],
+   "summary": "创建 reftable 格式的 git worktree。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/footer-width.test.ts",
+   "type": "file",
+   "name": "footer-width.test.ts",
+   "filePath": "packages/coding-agent/test/footer-width.test.ts",
+   "summary": "footer 组件在不同宽度下的渲染与 token 统计测试。",
+   "tags": [
+    "test",
+    "footer",
+    "width"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/footer-width.test.ts:createSession",
+   "type": "function",
+   "name": "createSession",
+   "filePath": "packages/coding-agent/test/footer-width.test.ts",
+   "lineRange": [
+    17,
+    88
+   ],
+   "summary": "构造测试会话与模型上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/footer-width.test.ts:createFooterData",
+   "type": "function",
+   "name": "createFooterData",
+   "filePath": "packages/coding-agent/test/footer-width.test.ts",
+   "lineRange": [
+    90,
+    102
+   ],
+   "summary": "构造 footer 数据对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/utils/open-browser.ts",
+   "target": "function:packages/coding-agent/src/utils/open-browser.ts:openBrowser",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/open-browser.ts",
+   "target": "function:packages/coding-agent/src/utils/open-browser.ts:openBrowser",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getScopeFromSpanTag",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getScopeFormatter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:getActiveFormatter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:renderHighlightedHtml",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:renderHighlightedHtml",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:highlight",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:highlight",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:supportsLanguage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "function:packages/coding-agent/src/utils/syntax-highlight.ts:supportsLanguage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "file:packages/coding-agent/src/utils/html.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/ansi-utils.test.ts",
+   "target": "function:packages/coding-agent/test/ansi-utils.test.ts:getCompatibilityInputs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/ansi-utils.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "function:packages/coding-agent/test/assistant-message.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/assistant-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/user-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/assistant-message.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "target": "function:packages/coding-agent/test/bash-execution-width.test.ts:createTuiStub",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/bash-execution.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/bash-execution-width.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/changelog.test.ts",
+   "target": "file:packages/coding-agent/src/utils/changelog.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/custom-editor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "target": "file:packages/tui/test/test-themes.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/custom-editor-history-keybindings.test.ts",
+   "target": "file:packages/tui/test/virtual-terminal.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/experimental.test.ts",
+   "target": "file:packages/coding-agent/src/core/experimental.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "target": "file:packages/coding-agent/src/core/export-html/ansi-to-html.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "target": "file:packages/coding-agent/src/core/export-html/tool-renderer.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/export-html-whitespace.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/external-editor.test.ts",
+   "target": "function:packages/coding-agent/test/external-editor.test.ts:runExternalEditor",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/external-editor.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/external-editor.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-data-provider.test.ts",
+   "target": "function:packages/coding-agent/test/footer-data-provider.test.ts:createReftableWorktree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-data-provider.test.ts",
+   "target": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "function:packages/coding-agent/test/footer-width.test.ts:createSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "function:packages/coding-agent/test/footer-width.test.ts:createFooterData",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/footer.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/footer-width.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/src/utils/syntax-highlight.ts:renderHighlightedHtml",
+   "target": "function:packages/coding-agent/src/utils/html.ts:decodeHtmlEntityAt",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

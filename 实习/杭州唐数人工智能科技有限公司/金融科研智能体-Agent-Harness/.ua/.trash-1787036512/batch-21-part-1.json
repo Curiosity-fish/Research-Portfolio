@@ -1,0 +1,631 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/coding-agent/examples/extensions/mac-system-theme.ts",
+      "type": "file",
+      "name": "mac-system-theme.ts",
+      "filePath": "packages/coding-agent/examples/extensions/mac-system-theme.ts",
+      "summary": "示例扩展：检测 macOS 系统是否处于暗色模式，用于调整 TUI 主题。",
+      "tags": [
+        "example",
+        "extension",
+        "mac",
+        "theme"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/mac-system-theme.ts:isDarkMode",
+      "type": "function",
+      "name": "isDarkMode",
+      "filePath": "packages/coding-agent/examples/extensions/mac-system-theme.ts",
+      "lineRange": [
+        14,
+        23
+      ],
+      "summary": "检测 macOS 系统是否处于暗色模式（通过 AppleScript 查询外观偏好）。",
+      "tags": [
+        "theme",
+        "mac",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/model-status.ts",
+      "type": "file",
+      "name": "model-status.ts",
+      "filePath": "packages/coding-agent/examples/extensions/model-status.ts",
+      "summary": "示例扩展：展示当前模型与运行状态，演示 SDK 事件订阅能力。",
+      "tags": [
+        "example",
+        "extension",
+        "model",
+        "status"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/notify.ts",
+      "type": "file",
+      "name": "notify.ts",
+      "filePath": "packages/coding-agent/examples/extensions/notify.ts",
+      "summary": "示例扩展：跨平台系统通知（Windows toast 与 OSC 终端通知），演示输出 hook 用法。",
+      "tags": [
+        "example",
+        "extension",
+        "notification",
+        "platform"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/notify.ts:windowsToastScript",
+      "type": "function",
+      "name": "windowsToastScript",
+      "filePath": "packages/coding-agent/examples/extensions/notify.ts",
+      "lineRange": [
+        13,
+        24
+      ],
+      "summary": "生成用于 Windows 通知的 toast 脚本内容。",
+      "tags": [
+        "notification",
+        "windows",
+        "script"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/permission-gate.ts",
+      "type": "file",
+      "name": "permission-gate.ts",
+      "filePath": "packages/coding-agent/examples/extensions/permission-gate.ts",
+      "summary": "示例扩展：在危险操作前插入权限确认门控，演示工具执行前拦截。",
+      "tags": [
+        "example",
+        "extension",
+        "permission",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/pirate.ts",
+      "type": "file",
+      "name": "pirate.ts",
+      "filePath": "packages/coding-agent/examples/extensions/pirate.ts",
+      "summary": "示例扩展：将消息改写为海盗语气，演示 prompt 内容转换 hook。",
+      "tags": [
+        "example",
+        "extension",
+        "prompt",
+        "fun"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/pirate.ts:pirateExtension",
+      "type": "function",
+      "name": "pirateExtension",
+      "filePath": "packages/coding-agent/examples/extensions/pirate.ts",
+      "lineRange": [
+        15,
+        47
+      ],
+      "summary": "注册演示扩展，将用户消息改写为海盗语气。",
+      "tags": [
+        "extension",
+        "prompt",
+        "hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/project-trust.ts",
+      "type": "file",
+      "name": "project-trust.ts",
+      "filePath": "packages/coding-agent/examples/extensions/project-trust.ts",
+      "summary": "示例扩展：维护项目信任状态并据此调整权限，演示会话状态管理。",
+      "tags": [
+        "example",
+        "extension",
+        "trust",
+        "permission"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "type": "file",
+      "name": "prompt-customizer.ts",
+      "filePath": "packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "summary": "示例扩展：自定义系统提示词与工具使用引导，演示 prompt hook 组合。",
+      "tags": [
+        "example",
+        "extension",
+        "prompt",
+        "tool-guidance"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:addToolGuidance",
+      "type": "function",
+      "name": "addToolGuidance",
+      "filePath": "packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "lineRange": [
+        22,
+        63
+      ],
+      "summary": "向系统提示词追加工具使用引导文本。",
+      "tags": [
+        "prompt",
+        "tool-guidance",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:mergeWithUserAppend",
+      "type": "function",
+      "name": "mergeWithUserAppend",
+      "filePath": "packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "lineRange": [
+        70,
+        84
+      ],
+      "summary": "将用户附加指令与现有提示合并。",
+      "tags": [
+        "prompt",
+        "merge",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:promptCustomizer",
+      "type": "function",
+      "name": "promptCustomizer",
+      "filePath": "packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "lineRange": [
+        86,
+        97
+      ],
+      "summary": "注册 prompt 定制扩展（默认导出），组合工具引导与用户附加内容。",
+      "tags": [
+        "extension",
+        "prompt",
+        "composer"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/protected-paths.ts",
+      "type": "file",
+      "name": "protected-paths.ts",
+      "filePath": "packages/coding-agent/examples/extensions/protected-paths.ts",
+      "summary": "示例扩展：保护文件路径不被写入工具修改，演示工具参数校验。",
+      "tags": [
+        "example",
+        "extension",
+        "file-io",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/provider-payload.ts",
+      "type": "file",
+      "name": "provider-payload.ts",
+      "filePath": "packages/coding-agent/examples/extensions/provider-payload.ts",
+      "summary": "示例扩展：向 LLM provider 请求负载注入附加字段，演示 provider 定制。",
+      "tags": [
+        "example",
+        "extension",
+        "provider",
+        "payload"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/qna.ts",
+      "type": "file",
+      "name": "qna.ts",
+      "filePath": "packages/coding-agent/examples/extensions/qna.ts",
+      "summary": "示例扩展：实现问答（QnA）工具，将用户问题转发给模型回答，演示自定义 tool 注册。",
+      "tags": [
+        "example",
+        "extension",
+        "tool",
+        "qna",
+        "ai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "type": "file",
+      "name": "rainbow-editor.ts",
+      "filePath": "packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "summary": "示例扩展：为编辑器输入框提供彩虹配色渲染的 RainbowEditor 组件。",
+      "tags": [
+        "example",
+        "extension",
+        "editor",
+        "animation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/rainbow-editor.ts:colorize",
+      "type": "function",
+      "name": "colorize",
+      "filePath": "packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "lineRange": [
+        26,
+        42
+      ],
+      "summary": "为文本片段着色，生成彩虹色 ANSI 序列。",
+      "tags": [
+        "color",
+        "ansi",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/coding-agent/examples/extensions/rainbow-editor.ts:RainbowEditor",
+      "type": "class",
+      "name": "RainbowEditor",
+      "filePath": "packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "lineRange": [
+        44,
+        82
+      ],
+      "summary": "渲染编辑器输入框的动画彩虹配色组件，管理动画定时器与帧状态。",
+      "tags": [
+        "component",
+        "animation",
+        "editor",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/reload-runtime.ts",
+      "type": "file",
+      "name": "reload-runtime.ts",
+      "filePath": "packages/coding-agent/examples/extensions/reload-runtime.ts",
+      "summary": "示例扩展：触发运行时配置热重载，演示运行时 API 调用。",
+      "tags": [
+        "example",
+        "extension",
+        "reload",
+        "runtime"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/rpc-demo.ts",
+      "type": "file",
+      "name": "rpc-demo.ts",
+      "filePath": "packages/coding-agent/examples/extensions/rpc-demo.ts",
+      "summary": "示例扩展：通过 RPC 通道调用远端能力，演示进程间通信集成。",
+      "tags": [
+        "example",
+        "extension",
+        "rpc",
+        "integration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "summary": "示例扩展：为 bash 操作提供沙箱化执行环境（配置加载与命令白名单）。",
+      "tags": [
+        "example",
+        "extension",
+        "sandbox",
+        "bash",
+        "security"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:loadConfig",
+      "type": "function",
+      "name": "loadConfig",
+      "filePath": "packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "lineRange": [
+        79,
+        103
+      ],
+      "summary": "加载并解析沙箱配置文件。",
+      "tags": [
+        "sandbox",
+        "config",
+        "loader"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:deepMerge",
+      "type": "function",
+      "name": "deepMerge",
+      "filePath": "packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "lineRange": [
+        105,
+        130
+      ],
+      "summary": "深度合并配置对象，支持嵌套覆盖。",
+      "tags": [
+        "utility",
+        "merge",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:createSandboxedBashOps",
+      "type": "function",
+      "name": "createSandboxedBashOps",
+      "filePath": "packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "lineRange": [
+        132,
+        199
+      ],
+      "summary": "创建沙箱化的 bash 操作实现，校验命令白名单并限制执行。",
+      "tags": [
+        "sandbox",
+        "bash",
+        "security",
+        "ops"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/send-user-message.ts",
+      "type": "file",
+      "name": "send-user-message.ts",
+      "filePath": "packages/coding-agent/examples/extensions/send-user-message.ts",
+      "summary": "示例扩展：模拟向 agent 注入用户消息，演示消息发送 API。",
+      "tags": [
+        "example",
+        "extension",
+        "message",
+        "send"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/extensions/session-name.ts",
+      "type": "file",
+      "name": "session-name.ts",
+      "filePath": "packages/coding-agent/examples/extensions/session-name.ts",
+      "summary": "示例扩展：根据会话内容自动命名会话，演示会话元数据更新。",
+      "tags": [
+        "example",
+        "extension",
+        "session",
+        "naming"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/examples/extensions/mac-system-theme.ts",
+      "target": "function:packages/coding-agent/examples/extensions/mac-system-theme.ts:isDarkMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/mac-system-theme.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/model-status.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/notify.ts",
+      "target": "function:packages/coding-agent/examples/extensions/notify.ts:windowsToastScript",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/notify.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/permission-gate.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/pirate.ts",
+      "target": "function:packages/coding-agent/examples/extensions/pirate.ts:pirateExtension",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/pirate.ts",
+      "target": "function:packages/coding-agent/examples/extensions/pirate.ts:pirateExtension",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/pirate.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/project-trust.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "target": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:addToolGuidance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "target": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:mergeWithUserAppend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "target": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:promptCustomizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "target": "function:packages/coding-agent/examples/extensions/prompt-customizer.ts:promptCustomizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/prompt-customizer.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/protected-paths.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/provider-payload.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/qna.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/qna.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "target": "function:packages/coding-agent/examples/extensions/rainbow-editor.ts:colorize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "target": "class:packages/coding-agent/examples/extensions/rainbow-editor.ts:RainbowEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/rainbow-editor.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/reload-runtime.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/rpc-demo.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:loadConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:deepMerge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "target": "function:packages/coding-agent/examples/extensions/sandbox/index.ts:createSandboxedBashOps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/sandbox/index.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/send-user-message.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/extensions/session-name.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

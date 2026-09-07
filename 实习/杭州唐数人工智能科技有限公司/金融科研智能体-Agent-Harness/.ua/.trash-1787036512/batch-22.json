@@ -1,0 +1,1710 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/coding-agent/examples/sdk/02-custom-model.ts",
+      "type": "file",
+      "name": "02-custom-model.ts",
+      "filePath": "packages/coding-agent/examples/sdk/02-custom-model.ts",
+      "summary": "SDK 示例：演示接入自定义模型 provider 并配置模型参数。",
+      "tags": [
+        "example",
+        "sdk",
+        "custom-model",
+        "provider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/03-custom-prompt.ts",
+      "type": "file",
+      "name": "03-custom-prompt.ts",
+      "filePath": "packages/coding-agent/examples/sdk/03-custom-prompt.ts",
+      "summary": "SDK 示例：演示自定义系统提示词与 prompt 模板。",
+      "tags": [
+        "example",
+        "sdk",
+        "prompt",
+        "customization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/04-skills.ts",
+      "type": "file",
+      "name": "04-skills.ts",
+      "filePath": "packages/coding-agent/examples/sdk/04-skills.ts",
+      "summary": "SDK 示例：演示加载与使用 skills 能力。",
+      "tags": [
+        "example",
+        "sdk",
+        "skills",
+        "loading"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/05-tools.ts",
+      "type": "file",
+      "name": "05-tools.ts",
+      "filePath": "packages/coding-agent/examples/sdk/05-tools.ts",
+      "summary": "SDK 示例：演示定义与注册自定义工具。",
+      "tags": [
+        "example",
+        "sdk",
+        "tools",
+        "registration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/06-extensions.ts",
+      "type": "file",
+      "name": "06-extensions.ts",
+      "filePath": "packages/coding-agent/examples/sdk/06-extensions.ts",
+      "summary": "SDK 示例：演示编写并加载扩展（extensions），覆盖各类 hook。",
+      "tags": [
+        "example",
+        "sdk",
+        "extensions",
+        "hooks"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/07-context-files.ts",
+      "type": "file",
+      "name": "07-context-files.ts",
+      "filePath": "packages/coding-agent/examples/sdk/07-context-files.ts",
+      "summary": "SDK 示例：演示项目上下文文件的加载与使用。",
+      "tags": [
+        "example",
+        "sdk",
+        "context-files",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/08-prompt-templates.ts",
+      "type": "file",
+      "name": "08-prompt-templates.ts",
+      "filePath": "packages/coding-agent/examples/sdk/08-prompt-templates.ts",
+      "summary": "SDK 示例：演示 prompt 模板渲染与变量替换。",
+      "tags": [
+        "example",
+        "sdk",
+        "prompt-templates",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/09-api-keys-and-oauth.ts",
+      "type": "file",
+      "name": "09-api-keys-and-oauth.ts",
+      "filePath": "packages/coding-agent/examples/sdk/09-api-keys-and-oauth.ts",
+      "summary": "SDK 示例：演示 API key 与 OAuth 凭据的配置与存储。",
+      "tags": [
+        "example",
+        "sdk",
+        "oauth",
+        "credentials"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/10-settings.ts",
+      "type": "file",
+      "name": "10-settings.ts",
+      "filePath": "packages/coding-agent/examples/sdk/10-settings.ts",
+      "summary": "SDK 示例：演示读取与修改 agent 设置。",
+      "tags": [
+        "example",
+        "sdk",
+        "settings",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/11-sessions.ts",
+      "type": "file",
+      "name": "11-sessions.ts",
+      "filePath": "packages/coding-agent/examples/sdk/11-sessions.ts",
+      "summary": "SDK 示例：演示会话的创建、切换与生命周期管理。",
+      "tags": [
+        "example",
+        "sdk",
+        "sessions",
+        "lifecycle"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "type": "file",
+      "name": "13-session-runtime.ts",
+      "filePath": "packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "summary": "SDK 示例：演示会话运行时的创建与绑定（createRuntime/bindSession）。",
+      "tags": [
+        "example",
+        "sdk",
+        "session-runtime",
+        "runtime"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/sdk/13-session-runtime.ts:createRuntime",
+      "type": "function",
+      "name": "createRuntime",
+      "filePath": "packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "lineRange": [
+        20,
+        31
+      ],
+      "summary": "创建会话运行时对象（示例）。",
+      "tags": [
+        "example",
+        "sdk",
+        "runtime",
+        "factory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/coding-agent/examples/sdk/13-session-runtime.ts:bindSession",
+      "type": "function",
+      "name": "bindSession",
+      "filePath": "packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "lineRange": [
+        40,
+        50
+      ],
+      "summary": "将会话与运行时绑定并启动（示例）。",
+      "tags": [
+        "example",
+        "sdk",
+        "session",
+        "binding"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/coding-agent/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/coding-agent/src/index.ts",
+      "summary": "coding-agent SDK 的统一出口（barrel），重新导出类型、工具函数、事件系统、扩展运行时与模型注册等全部公共 API。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "sdk",
+        "exports",
+        "api"
+      ],
+      "complexity": "complex",
+      "languageNotes": "TypeScript 桶文件，仅做 re-export，无实现代码。"
+    },
+    {
+      "id": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "type": "file",
+      "name": "git-merge-and-resolve-extension.test.ts",
+      "filePath": "packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "summary": "测试 git merge 冲突自动解决扩展的端到端行为。",
+      "tags": [
+        "test",
+        "extension",
+        "git",
+        "merge"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts:setup",
+      "type": "function",
+      "name": "setup",
+      "filePath": "packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "lineRange": [
+        23,
+        49
+      ],
+      "summary": "初始化 git merge 冲突场景的测试环境。",
+      "tags": [
+        "test",
+        "fixture",
+        "git",
+        "setup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "type": "file",
+      "name": "input-transform-streaming-example.test.ts",
+      "filePath": "packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "summary": "测试输入转换与流式响应的扩展示例行为。",
+      "tags": [
+        "test",
+        "extension",
+        "streaming",
+        "transform"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/input-transform-streaming-example.test.ts:setup",
+      "type": "function",
+      "name": "setup",
+      "filePath": "packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "lineRange": [
+        13,
+        34
+      ],
+      "summary": "初始化输入转换与流式测试环境。",
+      "tags": [
+        "test",
+        "fixture",
+        "streaming",
+        "setup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "type": "file",
+      "name": "6260-inline-extension-naming.test.ts",
+      "filePath": "packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "summary": "回归测试：验证内联扩展命名（6260）的正确性。",
+      "tags": [
+        "test",
+        "regression",
+        "extension",
+        "naming"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "type": "file",
+      "name": "trigger-compact-extension.test.ts",
+      "filePath": "packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "summary": "测试触发压缩（trigger-compact）扩展的上下文创建与行为。",
+      "tags": [
+        "test",
+        "extension",
+        "compact",
+        "context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/coding-agent/test/trigger-compact-extension.test.ts:createContext",
+      "type": "function",
+      "name": "createContext",
+      "filePath": "packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "lineRange": [
+        5,
+        25
+      ],
+      "summary": "构造触发压缩扩展的上下文对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "context",
+        "compact"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/cli.ts",
+      "type": "file",
+      "name": "cli.ts",
+      "filePath": "packages/shell/src/cli.ts",
+      "summary": "shell 包 CLI 入口，直接调用 entry.ts 的 shellMain 启动程序。",
+      "tags": [
+        "entry-point",
+        "cli",
+        "shell"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/core/faux.ts",
+      "type": "file",
+      "name": "faux.ts",
+      "filePath": "packages/shell/src/core/faux.ts",
+      "summary": "提供测试用 faux 模型：将消息转换为文本、设置模拟模型与流式回调。",
+      "tags": [
+        "mock",
+        "model",
+        "faux",
+        "test",
+        "shell"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/core/faux.ts:messageToText",
+      "type": "function",
+      "name": "messageToText",
+      "filePath": "packages/shell/src/core/faux.ts",
+      "lineRange": [
+        6,
+        20
+      ],
+      "summary": "将消息数组转换为纯文本（提取文本内容）。",
+      "tags": [
+        "utility",
+        "message",
+        "text"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/core/faux.ts:setupFauxModel",
+      "type": "function",
+      "name": "setupFauxModel",
+      "filePath": "packages/shell/src/core/faux.ts",
+      "lineRange": [
+        37,
+        77
+      ],
+      "summary": "配置 faux 模拟模型：设置默认流函数与响应转换。",
+      "tags": [
+        "mock",
+        "model",
+        "setup",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/src/core/runtime-factory.ts",
+      "type": "file",
+      "name": "runtime-factory.ts",
+      "filePath": "packages/shell/src/core/runtime-factory.ts",
+      "summary": "创建 shell 运行时工厂（createShellRuntimeFactory），组合会话与模型运行时。",
+      "tags": [
+        "factory",
+        "runtime",
+        "shell",
+        "creation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/core/runtime-factory.ts:createShellRuntimeFactory",
+      "type": "function",
+      "name": "createShellRuntimeFactory",
+      "filePath": "packages/shell/src/core/runtime-factory.ts",
+      "lineRange": [
+        37,
+        65
+      ],
+      "summary": "创建 shell 运行时工厂函数，返回可配置的运行时构造器。",
+      "tags": [
+        "factory",
+        "runtime",
+        "shell"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/src/entry.ts",
+      "type": "file",
+      "name": "entry.ts",
+      "filePath": "packages/shell/src/entry.ts",
+      "summary": "shell 主入口：解析应用模式与参数、打印帮助并启动 shell 主循环。",
+      "tags": [
+        "entry-point",
+        "cli",
+        "shell",
+        "main"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/entry.ts:resolveAppMode",
+      "type": "function",
+      "name": "resolveAppMode",
+      "filePath": "packages/shell/src/entry.ts",
+      "lineRange": [
+        22,
+        33
+      ],
+      "summary": "根据参数解析应用运行模式。",
+      "tags": [
+        "cli",
+        "args",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/entry.ts:printShellHelp",
+      "type": "function",
+      "name": "printShellHelp",
+      "filePath": "packages/shell/src/entry.ts",
+      "lineRange": [
+        35,
+        55
+      ],
+      "summary": "打印 shell CLI 帮助信息。",
+      "tags": [
+        "cli",
+        "help",
+        "output"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/entry.ts:shellMain",
+      "type": "function",
+      "name": "shellMain",
+      "filePath": "packages/shell/src/entry.ts",
+      "lineRange": [
+        61,
+        157
+      ],
+      "summary": "shell 主函数：解析参数、初始化运行时并进入主循环。",
+      "tags": [
+        "entry-point",
+        "cli",
+        "shell",
+        "main"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/src/fintech/datasource.ts",
+      "type": "file",
+      "name": "datasource.ts",
+      "filePath": "packages/shell/src/fintech/datasource.ts",
+      "summary": "定义金融数据源相关类型与 DataSourceUnavailableError 错误类。",
+      "tags": [
+        "fintech",
+        "datasource",
+        "error-handling",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/shell/src/fintech/datasource.ts:DataSourceUnavailableError",
+      "type": "class",
+      "name": "DataSourceUnavailableError",
+      "filePath": "packages/shell/src/fintech/datasource.ts",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "表示金融数据源不可用的错误类。",
+      "tags": [
+        "error-handling",
+        "fintech",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/fintech/echo-market.ts",
+      "type": "file",
+      "name": "echo-market.ts",
+      "filePath": "packages/shell/src/fintech/echo-market.ts",
+      "summary": "定义 echo 行情工具：模拟返回市场行情数据，供 TFA 演示使用。",
+      "tags": [
+        "fintech",
+        "tool",
+        "market",
+        "mock"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/fintech/registry.ts",
+      "type": "file",
+      "name": "registry.ts",
+      "filePath": "packages/shell/src/fintech/registry.ts",
+      "summary": "实现金融工具注册表 FintechToolRegistry，管理自定义工具的注册、列出与转换。",
+      "tags": [
+        "fintech",
+        "registry",
+        "tool",
+        "management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/shell/src/fintech/registry.ts:FintechToolRegistry",
+      "type": "class",
+      "name": "FintechToolRegistry",
+      "filePath": "packages/shell/src/fintech/registry.ts",
+      "lineRange": [
+        18,
+        42
+      ],
+      "summary": "金融工具注册表类：注册、注销、列出工具并转换为自定义工具列表。",
+      "tags": [
+        "registry",
+        "tool",
+        "fintech",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/server/http-server.ts",
+      "type": "file",
+      "name": "http-server.ts",
+      "filePath": "packages/shell/src/server/http-server.ts",
+      "summary": "实现 shell Web 服务器：构建 Express 应用、SSE 事件流、REST 路由与模型/会话代理。",
+      "tags": [
+        "server",
+        "http",
+        "sse",
+        "api",
+        "shell"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/shell/src/server/http-server.ts:createApp",
+      "type": "function",
+      "name": "createApp",
+      "filePath": "packages/shell/src/server/http-server.ts",
+      "lineRange": [
+        65,
+        323
+      ],
+      "summary": "构建 Express 应用：注册 REST 路由、SSE 事件流、模型/会话代理与错误处理中间件。",
+      "tags": [
+        "server",
+        "express",
+        "router",
+        "api"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+      "type": "function",
+      "name": "startHttpServer",
+      "filePath": "packages/shell/src/server/http-server.ts",
+      "lineRange": [
+        343,
+        401
+      ],
+      "summary": "启动 HTTP 服务器并监听指定端口。",
+      "tags": [
+        "server",
+        "http",
+        "startup",
+        "listen"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/server/project-store.ts",
+      "type": "file",
+      "name": "project-store.ts",
+      "filePath": "packages/shell/src/server/project-store.ts",
+      "summary": "实现项目存储 ProjectStore：在 JSON 文件中持久化项目与会话的增删改查。",
+      "tags": [
+        "server",
+        "storage",
+        "project",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+      "type": "class",
+      "name": "ProjectStore",
+      "filePath": "packages/shell/src/server/project-store.ts",
+      "lineRange": [
+        40,
+        153
+      ],
+      "summary": "项目存储类：在 JSON 文件中持久化项目与会话，支持增删改查与移动会话。",
+      "tags": [
+        "storage",
+        "project",
+        "persistence",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/src/server/server-entry.ts",
+      "type": "file",
+      "name": "server-entry.ts",
+      "filePath": "packages/shell/src/server/server-entry.ts",
+      "summary": "shell Web 服务器入口：解析参数、构造默认金融工具并启动 HTTP 服务。",
+      "tags": [
+        "server",
+        "entry-point",
+        "http",
+        "fintech"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "type": "function",
+      "name": "startWebServer",
+      "filePath": "packages/shell/src/server/server-entry.ts",
+      "lineRange": [
+        19,
+        56
+      ],
+      "summary": "启动 Web 服务器：解析参数、装配运行时与工具并调用 HTTP 服务。",
+      "tags": [
+        "server",
+        "entry-point",
+        "startup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/server/server-entry.ts:parseWebArgs",
+      "type": "function",
+      "name": "parseWebArgs",
+      "filePath": "packages/shell/src/server/server-entry.ts",
+      "lineRange": [
+        58,
+        67
+      ],
+      "summary": "解析 Web 服务器启动参数。",
+      "tags": [
+        "cli",
+        "args",
+        "parsing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/server/session-service.ts",
+      "type": "file",
+      "name": "session-service.ts",
+      "filePath": "packages/shell/src/server/session-service.ts",
+      "summary": "实现会话服务 ShellSessionService 与实时会话 LiveShellSession，管理会话生命周期、模型运行时、工具与快照。",
+      "tags": [
+        "server",
+        "session",
+        "service",
+        "runtime",
+        "management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:packages/shell/src/server/session-service.ts:LiveShellSession",
+      "type": "class",
+      "name": "LiveShellSession",
+      "filePath": "packages/shell/src/server/session-service.ts",
+      "lineRange": [
+        92,
+        193
+      ],
+      "summary": "实时会话包装类：桥接 agent 会话与 Web 客户端，支持提示、中止、模型切换与事件订阅。",
+      "tags": [
+        "session",
+        "realtime",
+        "websocket",
+        "bridge",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+      "type": "class",
+      "name": "ShellSessionService",
+      "filePath": "packages/shell/src/server/session-service.ts",
+      "lineRange": [
+        199,
+        501
+      ],
+      "summary": "会话服务类：管理会话、项目、模型、工具与凭据，创建实时会话并导出快照。",
+      "tags": [
+        "service",
+        "session",
+        "management",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/shell/test/fintech-registry.test.ts",
+      "type": "file",
+      "name": "fintech-registry.test.ts",
+      "filePath": "packages/shell/test/fintech-registry.test.ts",
+      "summary": "测试金融工具注册表与 echo 行情工具的注册和列表行为。",
+      "tags": [
+        "test",
+        "fintech",
+        "registry",
+        "tool"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/test/http-server.test.ts",
+      "type": "file",
+      "name": "http-server.test.ts",
+      "filePath": "packages/shell/test/http-server.test.ts",
+      "summary": "测试 HTTP 服务器的 REST/SSE 端点行为，包括 JSON 请求与事件流读取。",
+      "tags": [
+        "test",
+        "server",
+        "http",
+        "sse"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/shell/test/http-server.test.ts:createTestContext",
+      "type": "function",
+      "name": "createTestContext",
+      "filePath": "packages/shell/test/http-server.test.ts",
+      "lineRange": [
+        18,
+        28
+      ],
+      "summary": "创建 HTTP 服务器测试上下文。",
+      "tags": [
+        "test",
+        "fixture",
+        "context",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/test/http-server.test.ts:jsonRequest",
+      "type": "function",
+      "name": "jsonRequest",
+      "filePath": "packages/shell/test/http-server.test.ts",
+      "lineRange": [
+        30,
+        44
+      ],
+      "summary": "发送 JSON 请求并返回响应。",
+      "tags": [
+        "test",
+        "http",
+        "request",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/test/http-server.test.ts:readSse",
+      "type": "function",
+      "name": "readSse",
+      "filePath": "packages/shell/test/http-server.test.ts",
+      "lineRange": [
+        51,
+        75
+      ],
+      "summary": "读取 SSE 事件流中的事件序列。",
+      "tags": [
+        "test",
+        "sse",
+        "stream",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/test/project-store.test.ts",
+      "type": "file",
+      "name": "project-store.test.ts",
+      "filePath": "packages/shell/test/project-store.test.ts",
+      "summary": "测试项目存储的创建、加载、保存与会话移动等行为。",
+      "tags": [
+        "test",
+        "storage",
+        "project",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/shell/test/session-service.test.ts",
+      "type": "file",
+      "name": "session-service.test.ts",
+      "filePath": "packages/shell/test/session-service.test.ts",
+      "summary": "测试会话服务与会话生命周期（创建、打开、关闭与模型配置）。",
+      "tags": [
+        "test",
+        "session",
+        "service",
+        "lifecycle"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/test/session-service.test.ts:waitForIdle",
+      "type": "function",
+      "name": "waitForIdle",
+      "filePath": "packages/shell/test/session-service.test.ts",
+      "lineRange": [
+        34,
+        47
+      ],
+      "summary": "轮询等待会话进入空闲状态。",
+      "tags": [
+        "test",
+        "async",
+        "waiting",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/coding-agent/examples/sdk/02-custom-model.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/03-custom-prompt.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/04-skills.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/05-tools.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/06-extensions.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/07-context-files.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/08-prompt-templates.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/09-api-keys-and-oauth.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/10-settings.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/11-sessions.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "target": "function:packages/coding-agent/examples/sdk/13-session-runtime.ts:createRuntime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "target": "function:packages/coding-agent/examples/sdk/13-session-runtime.ts:bindSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/examples/sdk/13-session-runtime.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "target": "function:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts:setup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "target": "function:packages/coding-agent/test/input-transform-streaming-example.test.ts:setup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/input-transform-streaming.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "target": "function:packages/coding-agent/test/trigger-compact-extension.test.ts:createContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/trigger-compact.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/cli.ts",
+      "target": "file:packages/shell/src/entry.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "function:packages/shell/src/core/faux.ts:messageToText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "function:packages/shell/src/core/faux.ts:setupFauxModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "function:packages/shell/src/core/faux.ts:setupFauxModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/faux.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/runtime-factory.ts",
+      "target": "function:packages/shell/src/core/runtime-factory.ts:createShellRuntimeFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/core/runtime-factory.ts",
+      "target": "function:packages/shell/src/core/runtime-factory.ts:createShellRuntimeFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/core/runtime-factory.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/runtime-factory.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/core/runtime-factory.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "function:packages/shell/src/entry.ts:resolveAppMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "function:packages/shell/src/entry.ts:printShellHelp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "function:packages/shell/src/entry.ts:shellMain",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "function:packages/shell/src/entry.ts:shellMain",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "file:packages/shell/src/core/runtime-factory.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/entry.ts",
+      "target": "file:packages/shell/src/server/server-entry.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/fintech/datasource.ts",
+      "target": "class:packages/shell/src/fintech/datasource.ts:DataSourceUnavailableError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/fintech/datasource.ts",
+      "target": "class:packages/shell/src/fintech/datasource.ts:DataSourceUnavailableError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/fintech/echo-market.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/fintech/registry.ts",
+      "target": "class:packages/shell/src/fintech/registry.ts:FintechToolRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/fintech/registry.ts",
+      "target": "class:packages/shell/src/fintech/registry.ts:FintechToolRegistry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/fintech/registry.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "function:packages/shell/src/server/http-server.ts:createApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "function:packages/shell/src/server/http-server.ts:createApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "file:packages/server/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/http-server.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/project-store.ts",
+      "target": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/project-store.ts",
+      "target": "class:packages/shell/src/server/project-store.ts:ProjectStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/project-store.ts",
+      "target": "file:packages/server/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "function:packages/shell/src/server/server-entry.ts:parseWebArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/core/runtime-factory.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/fintech/echo-market.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/fintech/registry.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/server/http-server.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/server-entry.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "class:packages/shell/src/server/session-service.ts:LiveShellSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/server/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/shell/src/server/progress.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/shell/src/server/project-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/session-service.ts",
+      "target": "file:packages/shell/src/server/snapshot.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/datasource.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/echo-market.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/registry.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "function:packages/shell/test/http-server.test.ts:createTestContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "function:packages/shell/test/http-server.test.ts:jsonRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "function:packages/shell/test/http-server.test.ts:readSse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/server/http-server.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/project-store.test.ts",
+      "target": "file:packages/shell/src/server/project-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/session-service.test.ts",
+      "target": "function:packages/shell/test/session-service.test.ts:waitForIdle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/test/session-service.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/test/session-service.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/git-merge-and-resolve.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/git-merge-and-resolve-extension.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/input-transform-streaming.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/input-transform-streaming-example.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/suite/regressions/6260-inline-extension-naming.test.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "target": "file:packages/coding-agent/examples/extensions/trigger-compact.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/coding-agent/test/trigger-compact-extension.test.ts",
+      "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/datasource.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/echo-market.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/fintech/registry.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/fintech-registry.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/server/http-server.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/http-server.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/project-store.test.ts",
+      "target": "file:packages/shell/src/server/project-store.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/session-service.test.ts",
+      "target": "file:packages/shell/src/core/faux.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/shell/test/session-service.test.ts",
+      "target": "file:packages/shell/src/server/session-service.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "function:packages/shell/src/entry.ts:shellMain",
+      "target": "function:packages/shell/src/core/runtime-factory.ts:createShellRuntimeFactory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/shell/src/entry.ts:shellMain",
+      "target": "function:packages/shell/src/core/faux.ts:setupFauxModel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "target": "function:packages/shell/src/server/http-server.ts:startHttpServer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "target": "class:packages/shell/src/fintech/registry.ts:FintechToolRegistry",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/shell/src/server/http-server.ts:createApp",
+      "target": "class:packages/shell/src/server/session-service.ts:ShellSessionService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/shell/src/server/server-entry.ts:startWebServer",
+      "target": "function:packages/shell/src/core/faux.ts:setupFauxModel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

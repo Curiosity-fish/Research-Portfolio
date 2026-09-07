@@ -1,0 +1,1015 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "type": "file",
+   "name": "generate-telemetry-docs.ts",
+   "filePath": "packages/agent/scripts/generate-telemetry-docs.ts",
+   "summary": "脚本：根据 telemetry schema 渲染生成 telemetry 文档 markdown，支持 --check 校验。",
+   "tags": [
+    "script",
+    "telemetry",
+    "docs",
+    "generator"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/scripts/generate-telemetry-docs.ts:parentDescription",
+   "type": "function",
+   "name": "parentDescription",
+   "filePath": "packages/agent/scripts/generate-telemetry-docs.ts",
+   "lineRange": [
+    25,
+    34
+   ],
+   "summary": "生成父级属性的描述前缀。",
+   "tags": [
+    "docs",
+    "schema"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/scripts/generate-telemetry-docs.ts:renderSchema",
+   "type": "function",
+   "name": "renderSchema",
+   "filePath": "packages/agent/scripts/generate-telemetry-docs.ts",
+   "lineRange": [
+    36,
+    82
+   ],
+   "summary": "将 schema 渲染为 markdown 表格。",
+   "tags": [
+    "docs",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/scripts/generate-telemetry-docs.ts:renderAgentTelemetrySchemaMarkdown",
+   "type": "function",
+   "name": "renderAgentTelemetrySchemaMarkdown",
+   "filePath": "packages/agent/scripts/generate-telemetry-docs.ts",
+   "lineRange": [
+    84,
+    94
+   ],
+   "summary": "渲染 agent telemetry schema 的完整 markdown。",
+   "tags": [
+    "docs",
+    "rendering"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/agent/scripts/generate-telemetry-docs.ts:generateTelemetryDocs",
+   "type": "function",
+   "name": "generateTelemetryDocs",
+   "filePath": "packages/agent/scripts/generate-telemetry-docs.ts",
+   "lineRange": [
+    96,
+    110
+   ],
+   "summary": "生成 telemetry 文档文件并支持 --check 校验。",
+   "tags": [
+    "docs",
+    "generator"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/agent/src/harness/telemetry.ts",
+   "type": "file",
+   "name": "telemetry.ts",
+   "filePath": "packages/agent/src/harness/telemetry.ts",
+   "summary": "Agent harness 的 telemetry 上下文：定义 span/属性 schema 与 startAiSpan/startHarnessSpan 追踪入口。",
+   "tags": [
+    "telemetry",
+    "harness",
+    "tracing",
+    "context"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/src/harness/telemetry.ts:startAiSpan",
+   "type": "function",
+   "name": "startAiSpan",
+   "filePath": "packages/agent/src/harness/telemetry.ts",
+   "lineRange": [
+    137,
+    144
+   ],
+   "summary": "启动 AI 调用 span 并执行回调。",
+   "tags": [
+    "telemetry",
+    "tracing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/src/harness/telemetry.ts:startHarnessSpan",
+   "type": "function",
+   "name": "startHarnessSpan",
+   "filePath": "packages/agent/src/harness/telemetry.ts",
+   "lineRange": [
+    598,
+    611
+   ],
+   "summary": "启动 harness 执行 span 并执行回调。",
+   "tags": [
+    "telemetry",
+    "tracing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/test/agent.test.ts",
+   "type": "file",
+   "name": "agent.test.ts",
+   "filePath": "packages/agent/test/agent.test.ts",
+   "summary": "Agent harness 核心测试：构造 assistant 消息/工具调用流并验证会话行为。",
+   "tags": [
+    "test",
+    "agent",
+    "harness",
+    "integration"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/agent/test/agent.test.ts:createAssistantMessage",
+   "type": "function",
+   "name": "createAssistantMessage",
+   "filePath": "packages/agent/test/agent.test.ts",
+   "lineRange": [
+    32,
+    50
+   ],
+   "summary": "构造 assistant 消息测试对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/test/agent.test.ts:createAssistantToolUseMessage",
+   "type": "function",
+   "name": "createAssistantToolUseMessage",
+   "filePath": "packages/agent/test/agent.test.ts",
+   "lineRange": [
+    54,
+    72
+   ],
+   "summary": "构造 assistant 工具调用消息测试对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/agent/test/agent.test.ts:createDeferred",
+   "type": "function",
+   "name": "createDeferred",
+   "filePath": "packages/agent/test/agent.test.ts",
+   "lineRange": [
+    78,
+    87
+   ],
+   "summary": "创建可手动 resolve 的 Promise。",
+   "tags": [
+    "test",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/agent/test/harness/telemetry.test.ts",
+   "type": "file",
+   "name": "telemetry.test.ts",
+   "filePath": "packages/agent/test/harness/telemetry.test.ts",
+   "summary": "harness telemetry 上下文与 span 属性校验测试。",
+   "tags": [
+    "test",
+    "telemetry",
+    "harness"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/scripts/generate-image-models.ts",
+   "type": "file",
+   "name": "generate-image-models.ts",
+   "filePath": "packages/ai/scripts/generate-image-models.ts",
+   "summary": "脚本：从 OpenRouter 拉取图像模型列表并生成 image-models 数据文件。",
+   "tags": [
+    "script",
+    "image-models",
+    "generator",
+    "openrouter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-image-models.ts:parseOpenRouterImageModels",
+   "type": "function",
+   "name": "parseOpenRouterImageModels",
+   "filePath": "packages/ai/scripts/generate-image-models.ts",
+   "lineRange": [
+    36,
+    90
+   ],
+   "summary": "解析 OpenRouter 图像模型列表。",
+   "tags": [
+    "parsing",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-image-models.ts:fetchOpenRouterImageModels",
+   "type": "function",
+   "name": "fetchOpenRouterImageModels",
+   "filePath": "packages/ai/scripts/generate-image-models.ts",
+   "lineRange": [
+    92,
+    105
+   ],
+   "summary": "从 OpenRouter 拉取图像模型数据。",
+   "tags": [
+    "fetch",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/scripts/generate-image-models.ts:generateImageModelsFile",
+   "type": "function",
+   "name": "generateImageModelsFile",
+   "filePath": "packages/ai/scripts/generate-image-models.ts",
+   "lineRange": [
+    107,
+    146
+   ],
+   "summary": "生成 image-models 数据文件。",
+   "tags": [
+    "generator",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "file",
+   "name": "anthropic-messages.ts",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "summary": "Anthropic Messages API provider：请求构建、SSE 流解析、thinking/工具转换与缓存控制。",
+   "tags": [
+    "provider",
+    "anthropic",
+    "api",
+    "streaming"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:getCacheControl",
+   "type": "function",
+   "name": "getCacheControl",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    59,
+    73
+   ],
+   "summary": "按模型与缓存策略生成 cache_control 配置。",
+   "tags": [
+    "cache",
+    "anthropic"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:convertContentBlocks",
+   "type": "function",
+   "name": "convertContentBlocks",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    117,
+    164
+   ],
+   "summary": "转换消息内容块为 Anthropic 格式。",
+   "tags": [
+    "conversion",
+    "content"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:getAnthropicCompat",
+   "type": "function",
+   "name": "getAnthropicCompat",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    173,
+    186
+   ],
+   "summary": "获取 Anthropic 兼容模式配置。",
+   "tags": [
+    "compat",
+    "config"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:assertRequestAuth",
+   "type": "function",
+   "name": "assertRequestAuth",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    283,
+    293
+   ],
+   "summary": "校验请求认证信息完整。",
+   "tags": [
+    "auth",
+    "validation"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:flushSseEvent",
+   "type": "function",
+   "name": "flushSseEvent",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    316,
+    330
+   ],
+   "summary": "刷新 SSE 事件缓冲。",
+   "tags": [
+    "sse",
+    "streaming"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:decodeSseLine",
+   "type": "function",
+   "name": "decodeSseLine",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    332,
+    356
+   ],
+   "summary": "解码单行 SSE 数据。",
+   "tags": [
+    "sse",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:nextLineBreakIndex",
+   "type": "function",
+   "name": "nextLineBreakIndex",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    358,
+    368
+   ],
+   "summary": "查找下一个换行位置。",
+   "tags": [
+    "parsing",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:consumeLine",
+   "type": "function",
+   "name": "consumeLine",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    370,
+    385
+   ],
+   "summary": "消费并解析一行 SSE 数据。",
+   "tags": [
+    "sse",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:stream",
+   "type": "function",
+   "name": "stream",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    487,
+    774
+   ],
+   "summary": "Anthropic 流式主实现：SSE 解析、thinking 与工具事件转换。",
+   "tags": [
+    "streaming",
+    "provider"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:mapThinkingLevelToEffort",
+   "type": "function",
+   "name": "mapThinkingLevelToEffort",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    781,
+    799
+   ],
+   "summary": "将 thinking 级别映射为 effort。",
+   "tags": [
+    "thinking",
+    "mapping"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:streamSimple",
+   "type": "function",
+   "name": "streamSimple",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    801,
+    841
+   ],
+   "summary": "非流式请求封装。",
+   "tags": [
+    "provider",
+    "api"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:createClient",
+   "type": "function",
+   "name": "createClient",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    847,
+    937
+   ],
+   "summary": "创建 Anthropic API 客户端（含动态 header 与 beta 标志）。",
+   "tags": [
+    "client",
+    "factory"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:buildParams",
+   "type": "function",
+   "name": "buildParams",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    939,
+    1074
+   ],
+   "summary": "构建 Anthropic 请求参数。",
+   "tags": [
+    "request",
+    "builder"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:convertToolResult",
+   "type": "function",
+   "name": "convertToolResult",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    1081,
+    1114
+   ],
+   "summary": "转换工具执行结果为 Anthropic 格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:convertMessages",
+   "type": "function",
+   "name": "convertMessages",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    1116,
+    1281
+   ],
+   "summary": "转换消息列表为 Anthropic 消息格式。",
+   "tags": [
+    "conversion",
+    "messages"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:convertTools",
+   "type": "function",
+   "name": "convertTools",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    1287,
+    1323
+   ],
+   "summary": "转换工具定义为 Anthropic 工具格式。",
+   "tags": [
+    "conversion",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/src/api/anthropic-messages.ts:mapStopReason",
+   "type": "function",
+   "name": "mapStopReason",
+   "filePath": "packages/ai/src/api/anthropic-messages.ts",
+   "lineRange": [
+    1325,
+    1351
+   ],
+   "summary": "映射 Anthropic stop reason。",
+   "tags": [
+    "mapping",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:parentDescription",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:renderSchema",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:renderAgentTelemetrySchemaMarkdown",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:renderAgentTelemetrySchemaMarkdown",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:generateTelemetryDocs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "function:packages/agent/scripts/generate-telemetry-docs.ts:generateTelemetryDocs",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "file:packages/agent/src/harness/telemetry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/src/harness/telemetry.ts",
+   "target": "function:packages/agent/src/harness/telemetry.ts:startAiSpan",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/telemetry.ts",
+   "target": "function:packages/agent/src/harness/telemetry.ts:startAiSpan",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/telemetry.ts",
+   "target": "function:packages/agent/src/harness/telemetry.ts:startHarnessSpan",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/src/harness/telemetry.ts",
+   "target": "function:packages/agent/src/harness/telemetry.ts:startHarnessSpan",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/agent/src/harness/telemetry.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/test/agent.test.ts",
+   "target": "function:packages/agent/test/agent.test.ts:createAssistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/test/agent.test.ts",
+   "target": "function:packages/agent/test/agent.test.ts:createAssistantToolUseMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/test/agent.test.ts",
+   "target": "function:packages/agent/test/agent.test.ts:createDeferred",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/agent/test/agent.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/test/agent.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/test/harness/telemetry.test.ts",
+   "target": "file:packages/agent/scripts/generate-telemetry-docs.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/test/harness/telemetry.test.ts",
+   "target": "file:packages/agent/src/harness/telemetry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/agent/test/harness/telemetry.test.ts",
+   "target": "file:packages/telemetry/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "function:packages/ai/scripts/generate-image-models.ts:parseOpenRouterImageModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "function:packages/ai/scripts/generate-image-models.ts:parseOpenRouterImageModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "function:packages/ai/scripts/generate-image-models.ts:fetchOpenRouterImageModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "function:packages/ai/scripts/generate-image-models.ts:generateImageModelsFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:getCacheControl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:convertContentBlocks",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:getAnthropicCompat",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:assertRequestAuth",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:flushSseEvent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:decodeSseLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:nextLineBreakIndex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:consumeLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:stream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:stream",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:mapThinkingLevelToEffort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:streamSimple",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:streamSimple",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:createClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:buildParams",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:convertToolResult",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:convertMessages",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:convertTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "function:packages/ai/src/api/anthropic-messages.ts:mapStopReason",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/api/github-copilot-headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/api/transform-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/deferred-tools.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/headers.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/json-parse.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/provider-env.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/provider-retry.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/src/utils/sanitize-unicode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/cache-retention.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/fetch-option.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/fireworks-models.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/api/anthropic-messages.ts",
+   "target": "file:packages/ai/test/github-copilot-anthropic.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/scripts/generate-image-models.ts",
+   "target": "file:packages/ai/test/image-model-data.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,880 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "type": "file",
+   "name": "tool-execution.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "summary": "工具执行组件：渲染工具调用/结果、展开状态、图像转换与文本输出。",
+   "tags": [
+    "tui",
+    "tool",
+    "execution",
+    "component"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "class",
+   "name": "ToolExecutionComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "lineRange": [
+    22,
+    386
+   ],
+   "summary": "工具执行组件：调用/结果渲染、展开状态与图像处理。",
+   "tags": [
+    "component",
+    "tool"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "type": "file",
+   "name": "package-manager-cli.ts",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "summary": "包管理 CLI：配置/包命令解析、自更新计划与执行、帮助输出。",
+   "tags": [
+    "cli",
+    "package-manager",
+    "self-update"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:getPackageCommandUsage",
+   "type": "function",
+   "name": "getPackageCommandUsage",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    79,
+    90
+   ],
+   "summary": "获取包命令用法。",
+   "tags": [
+    "cli",
+    "usage"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:printConfigCommandHelp",
+   "type": "function",
+   "name": "printConfigCommandHelp",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    94,
+    107
+   ],
+   "summary": "打印配置命令帮助。",
+   "tags": [
+    "cli",
+    "help"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:printPackageCommandHelp",
+   "type": "function",
+   "name": "printPackageCommandHelp",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    109,
+    187
+   ],
+   "summary": "打印包命令帮助。",
+   "tags": [
+    "cli",
+    "help"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:parsePackageCommand",
+   "type": "function",
+   "name": "parsePackageCommand",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    189,
+    387
+   ],
+   "summary": "解析包管理命令。",
+   "tags": [
+    "cli",
+    "parsing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:refreshModelCatalogs",
+   "type": "function",
+   "name": "refreshModelCatalogs",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    397,
+    423
+   ],
+   "summary": "刷新模型目录。",
+   "tags": [
+    "models",
+    "refresh"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:printSelfUpdateUnavailable",
+   "type": "function",
+   "name": "printSelfUpdateUnavailable",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    425,
+    437
+   ],
+   "summary": "打印自更新不可用提示。",
+   "tags": [
+    "self-update",
+    "message"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:printSelfUpdateNote",
+   "type": "function",
+   "name": "printSelfUpdateNote",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    448,
+    466
+   ],
+   "summary": "打印自更新说明。",
+   "tags": [
+    "self-update",
+    "message"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:getSelfUpdatePlan",
+   "type": "function",
+   "name": "getSelfUpdatePlan",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    476,
+    503
+   ],
+   "summary": "获取自更新计划。",
+   "tags": [
+    "self-update",
+    "planning"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:runSelfUpdate",
+   "type": "function",
+   "name": "runSelfUpdate",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    505,
+    526
+   ],
+   "summary": "执行自更新。",
+   "tags": [
+    "self-update",
+    "execution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:createCommandSettingsManager",
+   "type": "function",
+   "name": "createCommandSettingsManager",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    557,
+    603
+   ],
+   "summary": "创建命令设置管理器。",
+   "tags": [
+    "settings",
+    "factory"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:handleConfigCommand",
+   "type": "function",
+   "name": "handleConfigCommand",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    605,
+    676
+   ],
+   "summary": "处理 config 命令。",
+   "tags": [
+    "cli",
+    "config"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/package-manager-cli.ts:handlePackageCommand",
+   "type": "function",
+   "name": "handlePackageCommand",
+   "filePath": "packages/coding-agent/src/package-manager-cli.ts",
+   "lineRange": [
+    678,
+    889
+   ],
+   "summary": "处理包管理命令。",
+   "tags": [
+    "cli",
+    "package-manager"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/rpc-entry.ts",
+   "type": "file",
+   "name": "rpc-entry.ts",
+   "filePath": "packages/coding-agent/src/rpc-entry.ts",
+   "summary": "RPC 模式入口文件：引导 RPC 服务器。",
+   "tags": [
+    "rpc",
+    "entry-point",
+    "bootstrap"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "file",
+   "name": "child-process.ts",
+   "filePath": "packages/coding-agent/src/utils/child-process.ts",
+   "summary": "子进程工具：spawn 封装与子进程等待/超时处理。",
+   "tags": [
+    "child-process",
+    "spawn",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcess",
+   "type": "function",
+   "name": "spawnProcess",
+   "filePath": "packages/coding-agent/src/utils/child-process.ts",
+   "lineRange": [
+    24,
+    26
+   ],
+   "summary": "启动子进程。",
+   "tags": [
+    "spawn",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcessSync",
+   "type": "function",
+   "name": "spawnProcessSync",
+   "filePath": "packages/coding-agent/src/utils/child-process.ts",
+   "lineRange": [
+    28,
+    36
+   ],
+   "summary": "同步启动子进程。",
+   "tags": [
+    "spawn",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/child-process.ts:waitForChildProcess",
+   "type": "function",
+   "name": "waitForChildProcess",
+   "filePath": "packages/coding-agent/src/utils/child-process.ts",
+   "lineRange": [
+    49,
+    137
+   ],
+   "summary": "等待子进程退出并处理超时/信号。",
+   "tags": [
+    "spawn",
+    "waiting"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "type": "file",
+   "name": "frontmatter.ts",
+   "filePath": "packages/coding-agent/src/utils/frontmatter.ts",
+   "summary": "Frontmatter 解析：提取/解析/剥离 YAML frontmatter。",
+   "tags": [
+    "frontmatter",
+    "yaml",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/frontmatter.ts:extractFrontmatter",
+   "type": "function",
+   "name": "extractFrontmatter",
+   "filePath": "packages/coding-agent/src/utils/frontmatter.ts",
+   "lineRange": [
+    10,
+    26
+   ],
+   "summary": "提取 frontmatter 内容。",
+   "tags": [
+    "frontmatter",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/frontmatter.ts:parseFrontmatter",
+   "type": "function",
+   "name": "parseFrontmatter",
+   "filePath": "packages/coding-agent/src/utils/frontmatter.ts",
+   "lineRange": [
+    28,
+    37
+   ],
+   "summary": "解析 frontmatter 为对象。",
+   "tags": [
+    "frontmatter",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/frontmatter.ts:stripFrontmatter",
+   "type": "function",
+   "name": "stripFrontmatter",
+   "filePath": "packages/coding-agent/src/utils/frontmatter.ts",
+   "lineRange": [
+    39,
+    39
+   ],
+   "summary": "剥离 frontmatter。",
+   "tags": [
+    "frontmatter",
+    "parsing"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/image-process.ts",
+   "type": "file",
+   "name": "image-process.ts",
+   "filePath": "packages/coding-agent/src/utils/image-process.ts",
+   "summary": "图像处理：MIME 规范化、格式转换提示与图像尺寸/质量处理。",
+   "tags": [
+    "image",
+    "processing",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-process.ts:normalizeSupportedImageMimeType",
+   "type": "function",
+   "name": "normalizeSupportedImageMimeType",
+   "filePath": "packages/coding-agent/src/utils/image-process.ts",
+   "lineRange": [
+    33,
+    47
+   ],
+   "summary": "规范化支持的图像 MIME 类型。",
+   "tags": [
+    "image",
+    "mime"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-process.ts:normalizeImage",
+   "type": "function",
+   "name": "normalizeImage",
+   "filePath": "packages/coding-agent/src/utils/image-process.ts",
+   "lineRange": [
+    49,
+    65
+   ],
+   "summary": "规范化图像数据。",
+   "tags": [
+    "image",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-process.ts:processImage",
+   "type": "function",
+   "name": "processImage",
+   "filePath": "packages/coding-agent/src/utils/image-process.ts",
+   "lineRange": [
+    72,
+    119
+   ],
+   "summary": "处理图像（尺寸/质量/转换）。",
+   "tags": [
+    "image",
+    "processing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/management-http.ts",
+   "type": "file",
+   "name": "management-http.ts",
+   "filePath": "packages/coding-agent/src/utils/management-http.ts",
+   "summary": "管理 HTTP 请求工具：带重试的 fetch 封装。",
+   "tags": [
+    "http",
+    "fetch",
+    "retry"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/management-http.ts:fetchWithRetry",
+   "type": "function",
+   "name": "fetchWithRetry",
+   "filePath": "packages/coding-agent/src/utils/management-http.ts",
+   "lineRange": [
+    25,
+    68
+   ],
+   "summary": "带重试的 fetch 请求。",
+   "tags": [
+    "http",
+    "fetch",
+    "retry"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tool-execution.ts:ToolExecutionComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/tools/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:getPackageCommandUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:printConfigCommandHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:printPackageCommandHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:parsePackageCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:refreshModelCatalogs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:printSelfUpdateUnavailable",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:printSelfUpdateNote",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:getSelfUpdatePlan",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:runSelfUpdate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:createCommandSettingsManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handleConfigCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handleConfigCommand",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handlePackageCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:handlePackageCommand",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/cli/config-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/cli/project-trust.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/project-trust.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/utils/version-check.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/coding-agent/src/utils/windows-self-update.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/package-manager-cli.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/rpc-entry.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/rpc-entry.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/rpc-entry.ts",
+   "target": "file:packages/coding-agent/src/main.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcess",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcess",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcessSync",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:spawnProcessSync",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:waitForChildProcess",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/child-process.ts",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:waitForChildProcess",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "function:packages/coding-agent/src/utils/frontmatter.ts:extractFrontmatter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "function:packages/coding-agent/src/utils/frontmatter.ts:parseFrontmatter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "function:packages/coding-agent/src/utils/frontmatter.ts:parseFrontmatter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "function:packages/coding-agent/src/utils/frontmatter.ts:stripFrontmatter",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "target": "function:packages/coding-agent/src/utils/frontmatter.ts:stripFrontmatter",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "function:packages/coding-agent/src/utils/image-process.ts:normalizeSupportedImageMimeType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "function:packages/coding-agent/src/utils/image-process.ts:normalizeImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "function:packages/coding-agent/src/utils/image-process.ts:processImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "function:packages/coding-agent/src/utils/image-process.ts:processImage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-process.ts",
+   "target": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/management-http.ts",
+   "target": "function:packages/coding-agent/src/utils/management-http.ts:fetchWithRetry",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/management-http.ts",
+   "target": "function:packages/coding-agent/src/utils/management-http.ts:fetchWithRetry",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/package-manager-cli.ts:handlePackageCommand",
+   "target": "function:packages/coding-agent/src/package-manager-cli.ts:printPackageCommandHelp",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

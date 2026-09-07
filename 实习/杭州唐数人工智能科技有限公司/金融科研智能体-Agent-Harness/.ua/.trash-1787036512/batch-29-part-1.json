@@ -1,0 +1,1188 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/protocol/test/framing.test.ts",
+      "type": "file",
+      "name": "framing.test.ts",
+      "filePath": "packages/protocol/test/framing.test.ts",
+      "summary": "测试协议消息帧的拼接与解析行为。",
+      "tags": [
+        "test",
+        "protocol",
+        "framing",
+        "bytes"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/protocol/test/protocol.test.ts",
+      "type": "file",
+      "name": "protocol.test.ts",
+      "filePath": "packages/protocol/test/protocol.test.ts",
+      "summary": "测试协议消息编解码、请求/响应匹配与边界情况。",
+      "tags": [
+        "test",
+        "protocol",
+        "serialization",
+        "messages"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/protocol/test/protocol.test.ts:itemMessage",
+      "type": "function",
+      "name": "itemMessage",
+      "filePath": "packages/protocol/test/protocol.test.ts",
+      "lineRange": [
+        43,
+        52
+      ],
+      "summary": "构造测试用协议消息对象。",
+      "tags": [
+        "test",
+        "fixture",
+        "message",
+        "protocol"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/connection.ts",
+      "type": "file",
+      "name": "connection.ts",
+      "filePath": "packages/server/src/connection.ts",
+      "summary": "定义服务器端连接类型并导出 isTerminalConnection 判定函数。",
+      "tags": [
+        "server",
+        "connection",
+        "type-definition",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/connection.ts:isTerminalConnection",
+      "type": "function",
+      "name": "isTerminalConnection",
+      "filePath": "packages/server/src/connection.ts",
+      "lineRange": [
+        34,
+        36
+      ],
+      "summary": "判断连接状态是否为终态。",
+      "tags": [
+        "server",
+        "connection",
+        "state",
+        "check"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "packages/server/src/errors.ts",
+      "summary": "定义服务器错误类型：会话忙、锁定、未找到、未实现与内部错误。",
+      "tags": [
+        "error-handling",
+        "server",
+        "exceptions",
+        "types"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:TfaServerError",
+      "type": "class",
+      "name": "TfaServerError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        12,
+        22
+      ],
+      "summary": "服务器错误基类，携带错误码与详情。",
+      "tags": [
+        "error-handling",
+        "server",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:SessionBusyError",
+      "type": "class",
+      "name": "SessionBusyError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        24,
+        29
+      ],
+      "summary": "表示会话正忙（有其他操作进行中）。",
+      "tags": [
+        "error-handling",
+        "concurrency",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:SessionLockedError",
+      "type": "class",
+      "name": "SessionLockedError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        31,
+        36
+      ],
+      "summary": "表示会话已被其他连接锁定。",
+      "tags": [
+        "error-handling",
+        "locking",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:SessionNotFoundError",
+      "type": "class",
+      "name": "SessionNotFoundError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        38,
+        43
+      ],
+      "summary": "表示会话不存在。",
+      "tags": [
+        "error-handling",
+        "session",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:NotImplementedError",
+      "type": "class",
+      "name": "NotImplementedError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        45,
+        50
+      ],
+      "summary": "表示功能未实现。",
+      "tags": [
+        "error-handling",
+        "not-implemented",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/errors.ts:InternalServerError",
+      "type": "class",
+      "name": "InternalServerError",
+      "filePath": "packages/server/src/errors.ts",
+      "lineRange": [
+        53,
+        58
+      ],
+      "summary": "表示服务器内部错误。",
+      "tags": [
+        "error-handling",
+        "internal",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/server/src/index.ts",
+      "summary": "server 包统一出口（barrel），重新导出服务器公共类型与工厂。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "server",
+        "exports"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/listener.ts",
+      "type": "file",
+      "name": "listener.ts",
+      "filePath": "packages/server/src/listener.ts",
+      "summary": "定义监听器接口（Listener），作为传输层接入点抽象。",
+      "tags": [
+        "server",
+        "listener",
+        "interface",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/protocol.ts",
+      "type": "file",
+      "name": "protocol.ts",
+      "filePath": "packages/server/src/protocol.ts",
+      "summary": "实现协议转换：将领域对象转换为协议 JSON 值、消息与用量/模型元数据。",
+      "tags": [
+        "server",
+        "protocol",
+        "serialization",
+        "conversion"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolJsonValue",
+      "type": "function",
+      "name": "toProtocolJsonValue",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        141,
+        162
+      ],
+      "summary": "将领域值转换为协议 JSON 值。",
+      "tags": [
+        "protocol",
+        "json",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:sanitizeProtocolDetails",
+      "type": "function",
+      "name": "sanitizeProtocolDetails",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        165,
+        185
+      ],
+      "summary": "清洗协议详情中的非法值。",
+      "tags": [
+        "protocol",
+        "sanitization",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolUsage",
+      "type": "function",
+      "name": "toProtocolUsage",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        187,
+        206
+      ],
+      "summary": "将用量对象转换为协议格式。",
+      "tags": [
+        "protocol",
+        "usage",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolModelMetadata",
+      "type": "function",
+      "name": "toProtocolModelMetadata",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        208,
+        228
+      ],
+      "summary": "将模型元数据转换为协议格式。",
+      "tags": [
+        "protocol",
+        "models",
+        "metadata",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolUserContent",
+      "type": "function",
+      "name": "toProtocolUserContent",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        230,
+        244
+      ],
+      "summary": "转换用户消息内容为协议格式。",
+      "tags": [
+        "protocol",
+        "messages",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolUserMessage",
+      "type": "function",
+      "name": "toProtocolUserMessage",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        246,
+        254
+      ],
+      "summary": "转换用户消息为协议消息。",
+      "tags": [
+        "protocol",
+        "messages",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolAssistantContent",
+      "type": "function",
+      "name": "toProtocolAssistantContent",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        256,
+        280
+      ],
+      "summary": "转换助手消息内容为协议格式。",
+      "tags": [
+        "protocol",
+        "messages",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolAssistantMessage",
+      "type": "function",
+      "name": "toProtocolAssistantMessage",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        282,
+        336
+      ],
+      "summary": "转换助手消息为协议消息。",
+      "tags": [
+        "protocol",
+        "messages",
+        "conversion"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolToolContent",
+      "type": "function",
+      "name": "toProtocolToolContent",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        338,
+        351
+      ],
+      "summary": "转换工具调用内容为协议格式。",
+      "tags": [
+        "protocol",
+        "tool",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/protocol.ts:toProtocolToolResultMessage",
+      "type": "function",
+      "name": "toProtocolToolResultMessage",
+      "filePath": "packages/server/src/protocol.ts",
+      "lineRange": [
+        353,
+        381
+      ],
+      "summary": "转换工具结果消息为协议消息。",
+      "tags": [
+        "protocol",
+        "tool",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/server.ts",
+      "type": "file",
+      "name": "server.ts",
+      "filePath": "packages/server/src/server.ts",
+      "summary": "实现 TFA 服务器 TfaServer：接受连接、完成握手、分发请求并管理会话与快照。",
+      "tags": [
+        "server",
+        "protocol",
+        "handshake",
+        "dispatch",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/server/src/server.ts:resolveOptions",
+      "type": "function",
+      "name": "resolveOptions",
+      "filePath": "packages/server/src/server.ts",
+      "lineRange": [
+        380,
+        396
+      ],
+      "summary": "解析服务器选项默认值。",
+      "tags": [
+        "server",
+        "options",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/server.ts:TfaServer",
+      "type": "class",
+      "name": "TfaServer",
+      "filePath": "packages/server/src/server.ts",
+      "lineRange": [
+        39,
+        378
+      ],
+      "summary": "TFA 服务器类：管理连接、握手、请求分发、会话与快照广播。",
+      "tags": [
+        "server",
+        "protocol",
+        "handshake",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/server/src/sessions.ts",
+      "type": "file",
+      "name": "sessions.ts",
+      "filePath": "packages/server/src/sessions.ts",
+      "summary": "实现实时会话管理 LiveSessionManager：创建、获取、运行操作并广播快照。",
+      "tags": [
+        "server",
+        "sessions",
+        "management",
+        "broadcast",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/server/src/sessions.ts:toSummary",
+      "type": "function",
+      "name": "toSummary",
+      "filePath": "packages/server/src/sessions.ts",
+      "lineRange": [
+        28,
+        41
+      ],
+      "summary": "将会话转换为摘要对象。",
+      "tags": [
+        "sessions",
+        "summary",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/sessions.ts:LiveSessionManager",
+      "type": "class",
+      "name": "LiveSessionManager",
+      "filePath": "packages/server/src/sessions.ts",
+      "lineRange": [
+        43,
+        353
+      ],
+      "summary": "实时会话管理器：创建/获取会话、执行操作、管理连接归属并广播快照。",
+      "tags": [
+        "sessions",
+        "management",
+        "broadcast",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/server/src/snapshots.ts",
+      "type": "file",
+      "name": "snapshots.ts",
+      "filePath": "packages/server/src/snapshots.ts",
+      "summary": "实现快照发布器 ServerSnapshotPublisher：版本化快照的获取与广播。",
+      "tags": [
+        "server",
+        "snapshot",
+        "broadcast",
+        "publisher",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:packages/server/src/snapshots.ts:ServerSnapshotPublisher",
+      "type": "class",
+      "name": "ServerSnapshotPublisher",
+      "filePath": "packages/server/src/snapshots.ts",
+      "lineRange": [
+        21,
+        64
+      ],
+      "summary": "快照发布器：维护修订号并序列化广播会话快照。",
+      "tags": [
+        "snapshot",
+        "broadcast",
+        "publisher",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/server/src/testing/client.ts",
+      "type": "file",
+      "name": "client.ts",
+      "filePath": "packages/server/src/testing/client.ts",
+      "summary": "测试客户端：模拟协议对端，发送消息、等待响应并验证帧行为。",
+      "tags": [
+        "test",
+        "client",
+        "mock",
+        "protocol"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/server/src/testing/client.ts:connectUnixTestClient",
+      "type": "function",
+      "name": "connectUnixTestClient",
+      "filePath": "packages/server/src/testing/client.ts",
+      "lineRange": [
+        116,
+        138
+      ],
+      "summary": "通过 Unix socket 连接测试客户端。",
+      "tags": [
+        "test",
+        "client",
+        "unix",
+        "connect"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:packages/server/src/testing/client.ts:ProtocolTestClient",
+      "type": "class",
+      "name": "ProtocolTestClient",
+      "filePath": "packages/server/src/testing/client.ts",
+      "lineRange": [
+        26,
+        114
+      ],
+      "summary": "协议测试客户端：发送帧、等待消息并校验协议行为。",
+      "tags": [
+        "test",
+        "client",
+        "mock",
+        "protocol",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/server/src/testing/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/server/src/testing/index.ts",
+      "summary": "测试辅助统一出口（barrel），重新导出测试客户端、服务器与服务类型。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "test",
+        "exports"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/server/src/testing/server.ts",
+      "type": "file",
+      "name": "server.ts",
+      "filePath": "packages/server/src/testing/server.ts",
+      "summary": "创建测试服务器实例 createTestServer。",
+      "tags": [
+        "test",
+        "server",
+        "factory",
+        "fixture"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/server/src/testing/server.ts:createTestServer",
+      "type": "function",
+      "name": "createTestServer",
+      "filePath": "packages/server/src/testing/server.ts",
+      "lineRange": [
+        15,
+        27
+      ],
+      "summary": "创建带测试服务的服务器实例。",
+      "tags": [
+        "test",
+        "server",
+        "factory"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/protocol/test/framing.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/protocol/test/protocol.test.ts",
+      "target": "function:packages/protocol/test/protocol.test.ts:itemMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/protocol/test/protocol.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/connection.ts",
+      "target": "function:packages/server/src/connection.ts:isTerminalConnection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/connection.ts",
+      "target": "function:packages/server/src/connection.ts:isTerminalConnection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/connection.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/connection.ts",
+      "target": "file:packages/server/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:TfaServerError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:TfaServerError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionBusyError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionBusyError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionLockedError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionLockedError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionNotFoundError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:SessionNotFoundError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:NotImplementedError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:NotImplementedError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:InternalServerError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "class:packages/server/src/errors.ts:InternalServerError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/errors.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/listener.ts",
+      "target": "file:packages/server/src/connection.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolJsonValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolJsonValue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:sanitizeProtocolDetails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:sanitizeProtocolDetails",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolModelMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolModelMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolUserContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolUserMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolUserMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolAssistantContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolAssistantMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolToolContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolToolResultMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "function:packages/server/src/protocol.ts:toProtocolToolResultMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/protocol.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "function:packages/server/src/server.ts:resolveOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "class:packages/server/src/server.ts:TfaServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "class:packages/server/src/server.ts:TfaServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/connection.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/errors.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/listener.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/sessions.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/snapshots.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/server.ts",
+      "target": "file:packages/server/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "function:packages/server/src/sessions.ts:toSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "class:packages/server/src/sessions.ts:LiveSessionManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "class:packages/server/src/sessions.ts:LiveSessionManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "file:packages/server/src/connection.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "file:packages/server/src/errors.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/sessions.ts",
+      "target": "file:packages/server/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/snapshots.ts",
+      "target": "class:packages/server/src/snapshots.ts:ServerSnapshotPublisher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/snapshots.ts",
+      "target": "class:packages/server/src/snapshots.ts:ServerSnapshotPublisher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/snapshots.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/snapshots.ts",
+      "target": "file:packages/server/src/connection.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/snapshots.ts",
+      "target": "file:packages/server/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "function:packages/server/src/testing/client.ts:connectUnixTestClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "function:packages/server/src/testing/client.ts:connectUnixTestClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "class:packages/server/src/testing/client.ts:ProtocolTestClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "class:packages/server/src/testing/client.ts:ProtocolTestClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/testing/client.ts",
+      "target": "file:packages/server/src/testing/service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/testing/server.ts",
+      "target": "function:packages/server/src/testing/server.ts:createTestServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/server/src/testing/server.ts",
+      "target": "function:packages/server/src/testing/server.ts:createTestServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/server/src/testing/server.ts",
+      "target": "file:packages/server/src/server.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/testing/server.ts",
+      "target": "file:packages/server/src/testing/service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/server/src/testing/server.ts",
+      "target": "file:packages/server/src/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/protocol/test/framing.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/protocol/test/protocol.test.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "class:packages/server/src/server.ts:TfaServer",
+      "target": "class:packages/server/src/sessions.ts:LiveSessionManager",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:packages/server/src/server.ts:TfaServer",
+      "target": "class:packages/server/src/snapshots.ts:ServerSnapshotPublisher",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:packages/server/src/server.ts:TfaServer",
+      "target": "class:packages/server/src/errors.ts:TfaServerError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

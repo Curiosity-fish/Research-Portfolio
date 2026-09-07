@@ -1,0 +1,344 @@
+{
+ "nodes": [
+  {
+   "id": "document:AGENTS.md",
+   "type": "document",
+   "name": "AGENTS.md",
+   "filePath": "AGENTS.md",
+   "summary": "仓库开发规则文档：对话风格、代码质量、常用命令、依赖与安装安全、Git 规范、Issue/PR、tmux 交互测试、changelog 与发布流程。",
+   "tags": [
+    "documentation",
+    "development",
+    "rules",
+    "agents"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:CONTRIBUTING.md",
+   "type": "document",
+   "name": "CONTRIBUTING.md",
+   "filePath": "CONTRIBUTING.md",
+   "summary": "贡献指南：贡献哲学、One Rule、贡献门禁、issue 质量门槛、PR 提交流程与 FAQ。",
+   "tags": [
+    "documentation",
+    "development",
+    "contribution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:README.md",
+   "type": "document",
+   "name": "README.md",
+   "filePath": "README.md",
+   "summary": "项目总览 README：包列表、权限与容器化、贡献与开发指引、独立二进制构建、供应链加固与许可证。",
+   "tags": [
+    "documentation",
+    "entry-point",
+    "overview"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:SECURITY.md",
+   "type": "document",
+   "name": "SECURITY.md",
+   "filePath": "SECURITY.md",
+   "summary": "安全策略文档：漏洞报告流程、适用范围、免责项与报告者注意事项。",
+   "tags": [
+    "documentation",
+    "security",
+    "policy"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "config:biome.json",
+   "type": "config",
+   "name": "biome.json",
+   "filePath": "biome.json",
+   "summary": "Biome 配置：定义 linter、formatter 与 files 规则，统一 monorepo 的 lint 与代码格式化。",
+   "tags": [
+    "configuration",
+    "linting",
+    "formatting",
+    "build-system"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "document:findings.md",
+   "type": "document",
+   "name": "findings.md",
+   "filePath": "findings.md",
+   "summary": "planning-with-files 工作流产出：当前阶段发现/结论的简短记录。",
+   "tags": [
+    "documentation",
+    "planning",
+    "notes"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "config:package.json",
+   "type": "config",
+   "name": "package.json",
+   "filePath": "package.json",
+   "summary": "monorepo 根 package.json：npm workspaces 列表、build/test/check/release 等脚本、devDependencies、engines 与 overrides。",
+   "tags": [
+    "configuration",
+    "monorepo",
+    "build-system",
+    "npm"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "document:progress.md",
+   "type": "document",
+   "name": "progress.md",
+   "filePath": "progress.md",
+   "summary": "planning-with-files 工作流进度记录（含 2026-08-11 条目）。",
+   "tags": [
+    "documentation",
+    "planning",
+    "progress"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "document:task_plan.md",
+   "type": "document",
+   "name": "task_plan.md",
+   "filePath": "task_plan.md",
+   "summary": "Web 前端全功能实现计划：阶段划分与决策记录。",
+   "tags": [
+    "documentation",
+    "planning",
+    "frontend"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:test.sh",
+   "type": "file",
+   "name": "test.sh",
+   "filePath": "test.sh",
+   "summary": "隔离环境测试脚本：创建临时 HOME/缓存目录并在清空环境变量后运行 npm test，通过受保护的 cleanup trap 安全清理。",
+   "tags": [
+    "test",
+    "script",
+    "sandbox",
+    "isolation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:tfa-test.bat",
+   "type": "file",
+   "name": "tfa-test.bat",
+   "filePath": "tfa-test.bat",
+   "summary": "Windows 批处理包装器：检测 powershell.exe 后调用 tfa-test.ps1 并透传参数与退出码。",
+   "tags": [
+    "script",
+    "windows",
+    "launcher",
+    "test"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:tfa-test.ps1",
+   "type": "file",
+   "name": "tfa-test.ps1",
+   "filePath": "tfa-test.ps1",
+   "summary": "PowerShell 版 tfa 测试启动器：解析 --no-env 清空 API key 环境变量，用 tsx 运行 coding-agent CLI 并透传参数。",
+   "tags": [
+    "script",
+    "powershell",
+    "launcher",
+    "test"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:tfa-test.sh",
+   "type": "file",
+   "name": "tfa-test.sh",
+   "filePath": "tfa-test.sh",
+   "summary": "bash 版 tfa 测试启动器：支持 --no-env 清空 API key 环境变量，经 tsx 运行 coding-agent CLI。",
+   "tags": [
+    "script",
+    "shell",
+    "launcher",
+    "test"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "config:tsconfig.base.json",
+   "type": "config",
+   "name": "tsconfig.base.json",
+   "filePath": "tsconfig.base.json",
+   "summary": "共享 TypeScript 编译基础配置（compilerOptions），供各 workspace 包继承。",
+   "tags": [
+    "configuration",
+    "typescript",
+    "build-system"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "config:tsconfig.json",
+   "type": "config",
+   "name": "tsconfig.json",
+   "filePath": "tsconfig.json",
+   "summary": "根 tsconfig：extends tsconfig.base.json 并设置 include/exclude 文件集合。",
+   "tags": [
+    "configuration",
+    "typescript",
+    "build-system"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "document:tui-plan.md",
+   "type": "document",
+   "name": "tui-plan.md",
+   "filePath": "tui-plan.md",
+   "summary": "TUI alternate-screen 布局系统详细设计文档（1001 行）：组件树/布局树、渲染缓存策略、VStack/HStack/ScrollView 等公共与内部 API。",
+   "tags": [
+    "documentation",
+    "planning",
+    "tui",
+    "design"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:test.sh:cleanup",
+   "type": "function",
+   "name": "cleanup",
+   "filePath": "test.sh",
+   "lineRange": [
+    16,
+    36
+   ],
+   "summary": "EXIT trap 清理函数：仅删除带 .tfa-test-owned 标记且位于预期前缀下的隔离测试目录，未验证路径拒绝删除。",
+   "tags": [
+    "utility",
+    "cleanup",
+    "sandbox"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:test.sh",
+   "target": "function:test.sh:cleanup",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1.0
+  },
+  {
+   "source": "config:package.json",
+   "target": "file:scripts/release.mjs",
+   "type": "configures",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "config:package.json",
+   "target": "file:scripts/sync-versions.js",
+   "type": "configures",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "config:tsconfig.base.json",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "configures",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "config:tsconfig.json",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "configures",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "config:biome.json",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "configures",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "document:README.md",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "documents",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:README.md",
+   "target": "config:package.json",
+   "type": "documents",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:CONTRIBUTING.md",
+   "target": "document:AGENTS.md",
+   "type": "documents",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:tui-plan.md",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "documents",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "document:AGENTS.md",
+   "target": "file:scripts/release.mjs",
+   "type": "documents",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:tfa-test.bat",
+   "target": "file:tfa-test.ps1",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:tfa-test.sh",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:tfa-test.ps1",
+   "target": "file:packages/coding-agent/src/cli.ts",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  },
+  {
+   "source": "file:test.sh",
+   "target": "config:package.json",
+   "type": "depends_on",
+   "direction": "forward",
+   "weight": 0.6
+  }
+ ]
+}

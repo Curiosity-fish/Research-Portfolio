@@ -1,0 +1,1231 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/abort.test.ts",
+   "type": "file",
+   "name": "abort.test.ts",
+   "filePath": "packages/ai/test/abort.test.ts",
+   "summary": "中止信号测试：验证流式/非流式请求在即时中止、中止后重发等场景的行为。",
+   "tags": [
+    "test",
+    "abort",
+    "integration"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/abort.test.ts:testAbortSignal",
+   "type": "function",
+   "name": "testAbortSignal",
+   "filePath": "packages/ai/test/abort.test.ts",
+   "lineRange": [
+    14,
+    56
+   ],
+   "summary": "验证请求响应中止信号。",
+   "tags": [
+    "test",
+    "abort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/abort.test.ts:testImmediateAbort",
+   "type": "function",
+   "name": "testImmediateAbort",
+   "filePath": "packages/ai/test/abort.test.ts",
+   "lineRange": [
+    58,
+    69
+   ],
+   "summary": "验证立即中止场景。",
+   "tags": [
+    "test",
+    "abort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/abort.test.ts:testAbortThenNewMessage",
+   "type": "function",
+   "name": "testAbortThenNewMessage",
+   "filePath": "packages/ai/test/abort.test.ts",
+   "lineRange": [
+    71,
+    98
+   ],
+   "summary": "验证中止后新消息场景。",
+   "tags": [
+    "test",
+    "abort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-adaptive-thinking-models.test.ts",
+   "type": "file",
+   "name": "anthropic-adaptive-thinking-models.test.ts",
+   "filePath": "packages/ai/test/anthropic-adaptive-thinking-models.test.ts",
+   "summary": "Anthropic 自适应 thinking 模型兼容性测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "thinking"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "type": "file",
+   "name": "anthropic-cache-write-1h-cost.test.ts",
+   "filePath": "packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "summary": "Anthropic 1 小时缓存写入成本测试：校验 cache_control 与用量计算。",
+   "tags": [
+    "test",
+    "anthropic",
+    "cache",
+    "cost"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-cache-write-1h-cost.test.ts:eventsWithCacheCreation",
+   "type": "function",
+   "name": "eventsWithCacheCreation",
+   "filePath": "packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "lineRange": [
+    18,
+    57
+   ],
+   "summary": "生成含缓存创建事件的 SSE 序列。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "type": "file",
+   "name": "anthropic-eager-tool-input-compat.test.ts",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "summary": "Anthropic eager tool input 兼容性测试：捕获请求体并校验工具输入流。",
+   "tags": [
+    "test",
+    "anthropic",
+    "tool",
+    "compat"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-eager-tool-input-compat.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "lineRange": [
+    13,
+    27
+   ],
+   "summary": "创建测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-eager-tool-input-compat.test.ts:captureAnthropicRequest",
+   "type": "function",
+   "name": "captureAnthropicRequest",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "lineRange": [
+    66,
+    102
+   ],
+   "summary": "捕获 Anthropic 请求体。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "type": "file",
+   "name": "anthropic-eager-tool-input-e2e.test.ts",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "summary": "Anthropic eager tool input 端到端测试（需真实 API key）。",
+   "tags": [
+    "test",
+    "anthropic",
+    "e2e",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:getProbePriority",
+   "type": "function",
+   "name": "getProbePriority",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "lineRange": [
+    48,
+    64
+   ],
+   "summary": "获取模型探测优先级。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:selectOneCasePerProvider",
+   "type": "function",
+   "name": "selectOneCasePerProvider",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "lineRange": [
+    66,
+    80
+   ],
+   "summary": "每 provider 选择一个测试用例。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:expectToolEnabledRequestAccepted",
+   "type": "function",
+   "name": "expectToolEnabledRequestAccepted",
+   "filePath": "packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "lineRange": [
+    97,
+    124
+   ],
+   "summary": "断言启用工具流的请求被接受。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "type": "file",
+   "name": "anthropic-empty-thinking-signature-compat.test.ts",
+   "filePath": "packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "summary": "Anthropic 空 thinking 签名兼容性测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "thinking",
+    "compat"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:makeModel",
+   "type": "function",
+   "name": "makeModel",
+   "filePath": "packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "lineRange": [
+    19,
+    33
+   ],
+   "summary": "构造带签名选项的模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "lineRange": [
+    35,
+    65
+   ],
+   "summary": "构造测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "lineRange": [
+    67,
+    79
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "type": "file",
+   "name": "anthropic-force-adaptive-thinking.test.ts",
+   "filePath": "packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "summary": "Anthropic 强制自适应 thinking 配置测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-force-adaptive-thinking.test.ts:makeCustomModel",
+   "type": "function",
+   "name": "makeCustomModel",
+   "filePath": "packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "lineRange": [
+    23,
+    39
+   ],
+   "summary": "构造自定义测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-force-adaptive-thinking.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "lineRange": [
+    41,
+    68
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "type": "file",
+   "name": "anthropic-long-cache-retention-e2e.test.ts",
+   "filePath": "packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "summary": "Anthropic 长缓存保留端到端测试（需真实 API key）。",
+   "tags": [
+    "test",
+    "anthropic",
+    "cache",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:getProbePriority",
+   "type": "function",
+   "name": "getProbePriority",
+   "filePath": "packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "lineRange": [
+    37,
+    51
+   ],
+   "summary": "获取模型探测优先级。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:selectOneCasePerProvider",
+   "type": "function",
+   "name": "selectOneCasePerProvider",
+   "filePath": "packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "lineRange": [
+    53,
+    67
+   ],
+   "summary": "每 provider 选择一个测试用例。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:expectLongCacheRetentionAccepted",
+   "type": "function",
+   "name": "expectLongCacheRetentionAccepted",
+   "filePath": "packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "lineRange": [
+    81,
+    108
+   ],
+   "summary": "断言长缓存保留被接受。",
+   "tags": [
+    "test",
+    "e2e"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "type": "file",
+   "name": "anthropic-opus-4-8-smoke.test.ts",
+   "filePath": "packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "summary": "Anthropic Opus 4.8 冒烟测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "smoke"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-opus-4-8-smoke.test.ts:makeContext",
+   "type": "function",
+   "name": "makeContext",
+   "filePath": "packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "lineRange": [
+    10,
+    22
+   ],
+   "summary": "构造冒烟测试上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "type": "file",
+   "name": "anthropic-sse-parsing.test.ts",
+   "filePath": "packages/ai/test/anthropic-sse-parsing.test.ts",
+   "summary": "Anthropic SSE 解析测试：覆盖 thinking/工具事件与错误流。",
+   "tags": [
+    "test",
+    "anthropic",
+    "sse",
+    "parsing"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "type": "file",
+   "name": "anthropic-temperature-compat.test.ts",
+   "filePath": "packages/ai/test/anthropic-temperature-compat.test.ts",
+   "summary": "Anthropic temperature 兼容性测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "temperature"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-temperature-compat.test.ts:makeCustomModel",
+   "type": "function",
+   "name": "makeCustomModel",
+   "filePath": "packages/ai/test/anthropic-temperature-compat.test.ts",
+   "lineRange": [
+    22,
+    36
+   ],
+   "summary": "构造自定义测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-temperature-compat.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/anthropic-temperature-compat.test.ts",
+   "lineRange": [
+    38,
+    65
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "type": "file",
+   "name": "anthropic-thinking-disable.test.ts",
+   "filePath": "packages/ai/test/anthropic-thinking-disable.test.ts",
+   "summary": "Anthropic 禁用 thinking 的 payload 与端到端行为测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-thinking-disable.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/anthropic-thinking-disable.test.ts",
+   "lineRange": [
+    23,
+    49
+   ],
+   "summary": "捕获请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-thinking-disable.test.ts:makeE2EContext",
+   "type": "function",
+   "name": "makeE2EContext",
+   "filePath": "packages/ai/test/anthropic-thinking-disable.test.ts",
+   "lineRange": [
+    58,
+    70
+   ],
+   "summary": "构造端到端上下文。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/anthropic-thinking-disable.test.ts:runWithoutReasoning",
+   "type": "function",
+   "name": "runWithoutReasoning",
+   "filePath": "packages/ai/test/anthropic-thinking-disable.test.ts",
+   "lineRange": [
+    76,
+    110
+   ],
+   "summary": "在禁用 thinking 下运行请求。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "type": "file",
+   "name": "anthropic-tool-name-normalization.test.ts",
+   "filePath": "packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "summary": "Anthropic 工具名归一化测试。",
+   "tags": [
+    "test",
+    "anthropic",
+    "tool",
+    "normalization"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "type": "file",
+   "name": "azure-openai-base-url.test.ts",
+   "filePath": "packages/ai/test/azure-openai-base-url.test.ts",
+   "summary": "Azure OpenAI base URL 规范化测试。",
+   "tags": [
+    "test",
+    "azure",
+    "base-url"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "type": "file",
+   "name": "azure-openai-responses-reasoning-replay.test.ts",
+   "filePath": "packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "summary": "Azure/Responses reasoning 重放测试：验证推理内容在消息间回放。",
+   "tags": [
+    "test",
+    "azure",
+    "reasoning",
+    "replay"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:createModel",
+   "type": "function",
+   "name": "createModel",
+   "filePath": "packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "lineRange": [
+    7,
+    20
+   ],
+   "summary": "创建测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:createOutput",
+   "type": "function",
+   "name": "createOutput",
+   "filePath": "packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "lineRange": [
+    22,
+    40
+   ],
+   "summary": "创建输出对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:getReplayedReasoning",
+   "type": "function",
+   "name": "getReplayedReasoning",
+   "filePath": "packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "lineRange": [
+    69,
+    79
+   ],
+   "summary": "提取重放的推理内容。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/azure-utils.ts",
+   "type": "file",
+   "name": "azure-utils.ts",
+   "filePath": "packages/ai/test/azure-utils.ts",
+   "summary": "Azure 测试工具：解析部署名映射并检测测试凭据。",
+   "tags": [
+    "test",
+    "azure",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/azure-utils.ts:parseDeploymentNameMap",
+   "type": "function",
+   "name": "parseDeploymentNameMap",
+   "filePath": "packages/ai/test/azure-utils.ts",
+   "lineRange": [
+    5,
+    16
+   ],
+   "summary": "解析部署名映射。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/azure-utils.ts:hasAzureOpenAICredentials",
+   "type": "function",
+   "name": "hasAzureOpenAICredentials",
+   "filePath": "packages/ai/test/azure-utils.ts",
+   "lineRange": [
+    18,
+    22
+   ],
+   "summary": "检测 Azure 测试凭据。",
+   "tags": [
+    "test",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/azure-utils.ts:resolveAzureDeploymentName",
+   "type": "function",
+   "name": "resolveAzureDeploymentName",
+   "filePath": "packages/ai/test/azure-utils.ts",
+   "lineRange": [
+    24,
+    28
+   ],
+   "summary": "解析 Azure 部署名。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/baseten-models.test.ts",
+   "type": "file",
+   "name": "baseten-models.test.ts",
+   "filePath": "packages/ai/test/baseten-models.test.ts",
+   "summary": "Baseten 模型注册与支持检测测试。",
+   "tags": [
+    "test",
+    "baseten",
+    "models"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "function:packages/ai/test/abort.test.ts:testAbortSignal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "function:packages/ai/test/abort.test.ts:testImmediateAbort",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "function:packages/ai/test/abort.test.ts:testAbortThenNewMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/abort.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-adaptive-thinking-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-adaptive-thinking-models.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "target": "function:packages/ai/test/anthropic-cache-write-1h-cost.test.ts:eventsWithCacheCreation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-cache-write-1h-cost.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-eager-tool-input-compat.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-eager-tool-input-compat.test.ts:captureAnthropicRequest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-compat.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:getProbePriority",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:selectOneCasePerProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts:expectToolEnabledRequestAccepted",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-eager-tool-input-e2e.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:makeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "target": "function:packages/ai/test/anthropic-force-adaptive-thinking.test.ts:makeCustomModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "target": "function:packages/ai/test/anthropic-force-adaptive-thinking.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-force-adaptive-thinking.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:getProbePriority",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:selectOneCasePerProvider",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "function:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts:expectLongCacheRetentionAccepted",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-long-cache-retention-e2e.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "target": "function:packages/ai/test/anthropic-opus-4-8-smoke.test.ts:makeContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-opus-4-8-smoke.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-sse-parsing.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-temperature-compat.test.ts:makeCustomModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "target": "function:packages/ai/test/anthropic-temperature-compat.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-temperature-compat.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/anthropic-thinking-disable.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/anthropic-thinking-disable.test.ts:makeE2EContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "target": "function:packages/ai/test/anthropic-thinking-disable.test.ts:runWithoutReasoning",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-thinking-disable.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/anthropic-tool-name-normalization.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "target": "file:packages/ai/src/api/azure-openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-base-url.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:createModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:createOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "function:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts:getReplayedReasoning",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-openai-responses-reasoning-replay.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/azure-utils.ts",
+   "target": "function:packages/ai/test/azure-utils.ts:parseDeploymentNameMap",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-utils.ts",
+   "target": "function:packages/ai/test/azure-utils.ts:hasAzureOpenAICredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-utils.ts",
+   "target": "function:packages/ai/test/azure-utils.ts:hasAzureOpenAICredentials",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/azure-utils.ts",
+   "target": "function:packages/ai/test/azure-utils.ts:resolveAzureDeploymentName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/azure-utils.ts",
+   "target": "function:packages/ai/test/azure-utils.ts:resolveAzureDeploymentName",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/baseten-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/baseten-models.test.ts",
+   "target": "file:packages/ai/src/env-api-keys.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/baseten-models.test.ts",
+   "target": "file:packages/ai/src/models.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

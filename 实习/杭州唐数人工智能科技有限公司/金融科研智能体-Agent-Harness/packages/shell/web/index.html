@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="金融科技 Agent - 基于 TFA 引擎的金融分析与决策助手" />
+    <meta name="theme-color" content="#f7fafc" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>金融科技 Agent</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("tfa-theme") === "dark" ? "dark" : "light";
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* 全局基础样式：盒模型、滚动策略、通用工具类 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* B 档滚动策略：应用根不允许整页滚动，滚动只发生在显式允许的局部容器（弹窗、下拉） */
+#app {
+  overflow: hidden;
+}
+
+/* 页面根节点配方：AdminLayout 的 router-view 容器给高度，页面根节点一律 h-full flex flex-col */
+.page-root {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 卡片容器 */
+.app-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+/* 数字统一用等宽数字，金额/统计对齐更稳 */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}

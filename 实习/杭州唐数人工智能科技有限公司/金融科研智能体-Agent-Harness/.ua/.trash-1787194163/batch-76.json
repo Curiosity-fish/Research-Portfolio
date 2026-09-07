@@ -1,0 +1,20 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/web/src/style.css",
+   "type": "file",
+   "name": "style.css",
+   "filePath": "packages/shell/web/src/style.css",
+   "summary": "全局设计系统样式表：定义淡蓝金融终端主题的设计令牌（颜色、阴影、圆角、字体、间距、层级），支持浅/深色 data-theme 切换，并覆盖应用整体布局与组件基础样式。",
+   "tags": [
+    "css",
+    "design-system",
+    "theme",
+    "styling"
+   ],
+   "complexity": "moderate",
+   "languageNotes": "以 CSS 自定义属性（design tokens）驱动的主题系统，深色通过 :root[data-theme=dark] 覆盖。"
+  }
+ ],
+ "edges": []
+}

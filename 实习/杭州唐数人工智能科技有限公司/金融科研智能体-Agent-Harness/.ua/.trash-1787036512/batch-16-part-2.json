@@ -1,0 +1,1180 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "file",
+   "name": "7153-scoped-models-refresh.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "summary": "回归测试 scoped 模型选择器的刷新行为。",
+   "tags": [
+    "test",
+    "model-selector",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts:openSelector",
+   "type": "function",
+   "name": "openSelector",
+   "filePath": "packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "lineRange": [
+    13,
+    63
+   ],
+   "summary": "打开选择器。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "file",
+   "name": "7209-model-selector-filter-resets-selection.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "summary": "回归测试模型选择器过滤重置选中项的行为。",
+   "tags": [
+    "test",
+    "model-selector",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/startup-session-rebind-duplicate-subscription.test.ts",
+   "type": "file",
+   "name": "startup-session-rebind-duplicate-subscription.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/startup-session-rebind-duplicate-subscription.test.ts",
+   "summary": "回归测试启动会话重绑定时的重复订阅问题。",
+   "tags": [
+    "test",
+    "interactive-mode",
+    "订阅",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "type": "file",
+   "name": "syntax-highlight.test.ts",
+   "filePath": "packages/coding-agent/test/syntax-highlight.test.ts",
+   "summary": "测试语法高亮工具（syntax-highlight）的输出。",
+   "tags": [
+    "test",
+    "语法高亮",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "type": "file",
+   "name": "test-theme-colors.ts",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "summary": "主题颜色测试辅助脚本：颜色转换与对比度验证命令。",
+   "tags": [
+    "script",
+    "theme",
+    "颜色",
+    "测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:rgbToHex",
+   "type": "function",
+   "name": "rgbToHex",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    11,
+    22
+   ],
+   "summary": "将 RGB 转换为十六进制。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:rgbToHsl",
+   "type": "function",
+   "name": "rgbToHsl",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    24,
+    49
+   ],
+   "summary": "将 RGB 转换为 HSL。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:hslToRgb",
+   "type": "function",
+   "name": "hslToRgb",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    51,
+    71
+   ],
+   "summary": "将 HSL 转换为 RGB。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:adjustColorToContrast",
+   "type": "function",
+   "name": "adjustColorToContrast",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    88,
+    112
+   ],
+   "summary": "调整颜色以达到对比度要求。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:cmdContrast",
+   "type": "function",
+   "name": "cmdContrast",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    123,
+    149
+   ],
+   "summary": "对比度测试命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:cmdTest",
+   "type": "function",
+   "name": "cmdTest",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    151,
+    173
+   ],
+   "summary": "运行测试命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/test-theme-colors.ts:cmdTheme",
+   "type": "function",
+   "name": "cmdTheme",
+   "filePath": "packages/coding-agent/test/test-theme-colors.ts",
+   "lineRange": [
+    175,
+    229
+   ],
+   "summary": "主题输出命令。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/theme-detection.test.ts",
+   "type": "file",
+   "name": "theme-detection.test.ts",
+   "filePath": "packages/coding-agent/test/theme-detection.test.ts",
+   "summary": "测试终端主题检测（深浅色）逻辑。",
+   "tags": [
+    "test",
+    "theme",
+    "检测"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/theme-export.test.ts",
+   "type": "file",
+   "name": "theme-export.test.ts",
+   "filePath": "packages/coding-agent/test/theme-export.test.ts",
+   "summary": "测试主题导出功能的输出格式。",
+   "tags": [
+    "test",
+    "theme",
+    "导出"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/theme-picker.test.ts",
+   "type": "file",
+   "name": "theme-picker.test.ts",
+   "filePath": "packages/coding-agent/test/theme-picker.test.ts",
+   "summary": "测试主题选择器（theme-picker）的交互。",
+   "tags": [
+    "test",
+    "theme-picker",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "file",
+   "name": "tree-selector.test.ts",
+   "filePath": "packages/coding-agent/test/tree-selector.test.ts",
+   "summary": "测试会话树选择器（tree-selector）的构建与导航。",
+   "tags": [
+    "test",
+    "tree-selector",
+    "tui",
+    "导航"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tree-selector.test.ts:assistantMessage",
+   "type": "function",
+   "name": "assistantMessage",
+   "filePath": "packages/coding-agent/test/tree-selector.test.ts",
+   "lineRange": [
+    35,
+    59
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tree-selector.test.ts:toolCallOnlyAssistant",
+   "type": "function",
+   "name": "toolCallOnlyAssistant",
+   "filePath": "packages/coding-agent/test/tree-selector.test.ts",
+   "lineRange": [
+    62,
+    86
+   ],
+   "summary": "构造纯工具调用的 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tree-selector.test.ts:modelChange",
+   "type": "function",
+   "name": "modelChange",
+   "filePath": "packages/coding-agent/test/tree-selector.test.ts",
+   "lineRange": [
+    89,
+    98
+   ],
+   "summary": "构造模型变更事件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/tree-selector.test.ts:buildTree",
+   "type": "function",
+   "name": "buildTree",
+   "filePath": "packages/coding-agent/test/tree-selector.test.ts",
+   "lineRange": [
+    101,
+    126
+   ],
+   "summary": "构建会话树。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/truncate-to-width.test.ts",
+   "type": "file",
+   "name": "truncate-to-width.test.ts",
+   "filePath": "packages/coding-agent/test/truncate-to-width.test.ts",
+   "summary": "测试 TUI 文本按宽度截断工具。",
+   "tags": [
+    "test",
+    "tui",
+    "截断"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "file",
+   "name": "trust-selector.test.ts",
+   "filePath": "packages/coding-agent/test/trust-selector.test.ts",
+   "summary": "测试信任选择器（trust-selector）的交互与状态渲染。",
+   "tags": [
+    "test",
+    "trust-selector",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/user-message.test.ts",
+   "type": "file",
+   "name": "user-message.test.ts",
+   "filePath": "packages/coding-agent/test/user-message.test.ts",
+   "summary": "测试用户消息组件（user-message）的渲染。",
+   "tags": [
+    "test",
+    "user-message",
+    "tui"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/tui/src/index.ts",
+   "type": "file",
+   "name": "index.ts",
+   "filePath": "packages/tui/src/index.ts",
+   "summary": "TUI 库总入口（barrel）：集中导出组件、终端能力检测、图片渲染、键盘与颜色工具等全部 TUI 能力。",
+   "tags": [
+    "barrel",
+    "tui",
+    "入口点",
+    "exports"
+   ],
+   "complexity": "simple",
+   "languageNotes": "纯 re-export 桶文件，导出 132 项类型与函数。"
+  },
+  {
+   "id": "file:packages/tui/test/latex.test.ts",
+   "type": "file",
+   "name": "latex.test.ts",
+   "filePath": "packages/tui/test/latex.test.ts",
+   "summary": "测试 TUI 的 LaTeX 渲染工具（renderLatex）。",
+   "tags": [
+    "test",
+    "latex",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/tui/test/terminal-colors.test.ts",
+   "type": "file",
+   "name": "terminal-colors.test.ts",
+   "filePath": "packages/tui/test/terminal-colors.test.ts",
+   "summary": "测试 TUI 终端颜色方案解析与颜色转换。",
+   "tags": [
+    "test",
+    "terminal-colors",
+    "tui"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/tui/test/terminal-colors.test.ts:TestTerminal",
+   "type": "class",
+   "name": "TestTerminal",
+   "filePath": "packages/tui/test/terminal-colors.test.ts",
+   "lineRange": [
+    12,
+    75
+   ],
+   "summary": "模拟终端的测试实现。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/tui/test/terminal-colors.test.ts:InputRecorder",
+   "type": "class",
+   "name": "InputRecorder",
+   "filePath": "packages/tui/test/terminal-colors.test.ts",
+   "lineRange": [
+    77,
+    89
+   ],
+   "summary": "记录终端输入的测试辅助类。",
+   "tags": [
+    "class",
+    "component"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:scripts/tool-stats.ts",
+   "type": "file",
+   "name": "tool-stats.ts",
+   "filePath": "scripts/tool-stats.ts",
+   "summary": "工具统计脚本：解析参数并统计工具使用数据（依赖 open-browser）。",
+   "tags": [
+    "script",
+    "统计",
+    "tools"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:scripts/tool-stats.ts:parseArgs",
+   "type": "function",
+   "name": "parseArgs",
+   "filePath": "scripts/tool-stats.ts",
+   "lineRange": [
+    20,
+    34
+   ],
+   "summary": "解析脚本命令行参数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts:openSelector",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:rgbToHex",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:rgbToHsl",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:hslToRgb",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:adjustColorToContrast",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:cmdContrast",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:cmdTest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "function:packages/coding-agent/test/test-theme-colors.ts:cmdTheme",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "function:packages/coding-agent/test/tree-selector.test.ts:assistantMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "function:packages/coding-agent/test/tree-selector.test.ts:toolCallOnlyAssistant",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "function:packages/coding-agent/test/tree-selector.test.ts:modelChange",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "function:packages/coding-agent/test/tree-selector.test.ts:buildTree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/terminal-colors.test.ts",
+   "target": "class:packages/tui/test/terminal-colors.test.ts:TestTerminal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/tui/test/terminal-colors.test.ts",
+   "target": "class:packages/tui/test/terminal-colors.test.ts:InputRecorder",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:scripts/tool-stats.ts",
+   "target": "function:scripts/tool-stats.ts:parseArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/startup-session-rebind-duplicate-subscription.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "target": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/theme-detection.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/theme-detection.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/theme-picker.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/truncate-to-width.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/user-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/user-message.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/user-message.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/user-message.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/latex.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/test/terminal-colors.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:scripts/tool-stats.ts",
+   "target": "file:packages/coding-agent/src/utils/open-browser.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/model-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/oauth-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/session-selector-path-delete.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/session-selector-rename.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/settings-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/status-indicator.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/streaming-render-debug.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5433-extension-oauth-prompt-input.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6949-unavailable-scoped-model.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6999-models-json-hot-reload.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/scoped-models-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7153-scoped-models-refresh.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/model-selector.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/7209-model-selector-filter-resets-selection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/startup-session-rebind-duplicate-subscription.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/syntax-highlight.ts",
+   "target": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/syntax-highlight.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/test-theme-colors.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/theme-detection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/theme-detection.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/theme-picker.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/tree-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/truncate-to-width.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/keybindings.ts",
+   "target": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/trust-selector.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message.ts",
+   "target": "file:packages/coding-agent/test/user-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/user-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/user-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/tui/test/latex.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/tui/test/terminal-colors.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

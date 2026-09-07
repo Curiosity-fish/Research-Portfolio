@@ -1,0 +1,1534 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "type": "file",
+   "name": "session-selector-search.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "summary": "会话搜索与过滤工具：解析查询语法、匹配会话并按排序模式输出结果。",
+   "tags": [
+    "session",
+    "search",
+    "filter",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:hasSessionName",
+   "type": "function",
+   "name": "hasSessionName",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "lineRange": [
+    30,
+    32
+   ],
+   "summary": "判断会话是否具有名称。",
+   "tags": [
+    "session",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:parseSearchQuery",
+   "type": "function",
+   "name": "parseSearchQuery",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "lineRange": [
+    39,
+    114
+   ],
+   "summary": "解析会话搜索查询语法。",
+   "tags": [
+    "parsing",
+    "search"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:matchSession",
+   "type": "function",
+   "name": "matchSession",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "lineRange": [
+    116,
+    154
+   ],
+   "summary": "按解析后的查询匹配会话。",
+   "tags": [
+    "search",
+    "filter"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:filterAndSortSessions",
+   "type": "function",
+   "name": "filterAndSortSessions",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "lineRange": [
+    156,
+    194
+   ],
+   "summary": "过滤并按排序模式排列会话列表。",
+   "tags": [
+    "search",
+    "sort"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "type": "file",
+   "name": "session-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "summary": "会话选择器：列出/切换/重命名/删除会话，支持树形视图、排序、过滤与作用域切换。",
+   "tags": [
+    "tui",
+    "session",
+    "selector"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:formatSessionDate",
+   "type": "function",
+   "name": "formatSessionDate",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    35,
+    49
+   ],
+   "summary": "格式化会话日期显示。",
+   "tags": [
+    "format",
+    "date"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:buildSessionTree",
+   "type": "function",
+   "name": "buildSessionTree",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    209,
+    254
+   ],
+   "summary": "将会话构建为树形结构。",
+   "tags": [
+    "tree",
+    "session"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:flattenSessionTree",
+   "type": "function",
+   "name": "flattenSessionTree",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    259,
+    278
+   ],
+   "summary": "将树形会话结构扁平化。",
+   "tags": [
+    "tree",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:deleteSessionFile",
+   "type": "function",
+   "name": "deleteSessionFile",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    645,
+    680
+   ],
+   "summary": "删除会话文件并处理确认。",
+   "tags": [
+    "fs",
+    "session"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionSelectorHeader",
+   "type": "class",
+   "name": "SessionSelectorHeader",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    56,
+    187
+   ],
+   "summary": "会话选择器头部：作用域/排序/过滤状态与消息展示。",
+   "tags": [
+    "component",
+    "header"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionList",
+   "type": "class",
+   "name": "SessionList",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    283,
+    638
+   ],
+   "summary": "会话列表：过滤、选择、删除确认与树形前缀渲染。",
+   "tags": [
+    "component",
+    "list"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionSelectorComponent",
+   "type": "class",
+   "name": "SessionSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "lineRange": [
+    685,
+    1031
+   ],
+   "summary": "会话选择器主组件：加载会话、重命名、切换作用域与排序。",
+   "tags": [
+    "component",
+    "session"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "type": "file",
+   "name": "settings-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "summary": "设置选择器：提供主题、警告等设置子菜单，并实现自动/单主题选择逻辑。",
+   "tags": [
+    "tui",
+    "settings",
+    "selector",
+    "theme"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:singleModeThemeItems",
+   "type": "function",
+   "name": "singleModeThemeItems",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    244,
+    253
+   ],
+   "summary": "生成单主题模式的主题选项。",
+   "tags": [
+    "theme",
+    "options"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:defaultAutomaticThemes",
+   "type": "function",
+   "name": "defaultAutomaticThemes",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    261,
+    271
+   ],
+   "summary": "根据当前设置推导默认自动主题列表。",
+   "tags": [
+    "theme",
+    "logic"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:WarningSettingsSubmenu",
+   "type": "class",
+   "name": "WarningSettingsSubmenu",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    132,
+    172
+   ],
+   "summary": "警告设置子菜单。",
+   "tags": [
+    "component",
+    "settings"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:SelectSubmenu",
+   "type": "class",
+   "name": "SelectSubmenu",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    174,
+    236
+   ],
+   "summary": "通用选择子菜单。",
+   "tags": [
+    "component",
+    "settings"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:ThemeSubmenu",
+   "type": "class",
+   "name": "ThemeSubmenu",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    273,
+    479
+   ],
+   "summary": "主题子菜单：单主题/自动主题选择与应用。",
+   "tags": [
+    "component",
+    "theme"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:SettingsSelectorComponent",
+   "type": "class",
+   "name": "SettingsSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "lineRange": [
+    484,
+    880
+   ],
+   "summary": "设置选择器主组件：生成设置列表。",
+   "tags": [
+    "component",
+    "settings"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "type": "file",
+   "name": "show-images-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "summary": "图像展示开关选择器：选择是否在会话中展示图像。",
+   "tags": [
+    "tui",
+    "images",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts:ShowImagesSelectorComponent",
+   "type": "class",
+   "name": "ShowImagesSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "lineRange": [
+    13,
+    50
+   ],
+   "summary": "图像展示开关选择器。",
+   "tags": [
+    "component",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "type": "file",
+   "name": "skill-invocation-message.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "summary": "TUI 组件：渲染技能调用消息，支持展开/折叠。",
+   "tags": [
+    "tui",
+    "skill",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts:SkillInvocationMessageComponent",
+   "type": "class",
+   "name": "SkillInvocationMessageComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "lineRange": [
+    11,
+    55
+   ],
+   "summary": "渲染技能调用消息并可展开细节。",
+   "tags": [
+    "component",
+    "message"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "type": "file",
+   "name": "status-indicator.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "summary": "TUI 状态指示器集合：工作、重试、压缩、分支摘要与空闲等状态提示组件。",
+   "tags": [
+    "tui",
+    "status",
+    "indicator",
+    "component"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:StatusIndicator",
+   "type": "class",
+   "name": "StatusIndicator",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    9,
+    27
+   ],
+   "summary": "状态指示基础组件。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:WorkingStatusIndicator",
+   "type": "class",
+   "name": "WorkingStatusIndicator",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    29,
+    40
+   ],
+   "summary": "工作中状态指示。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:RetryStatusIndicator",
+   "type": "class",
+   "name": "RetryStatusIndicator",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    42,
+    72
+   ],
+   "summary": "重试状态指示，支持中止信号。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:CompactionStatusIndicator",
+   "type": "class",
+   "name": "CompactionStatusIndicator",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    76,
+    91
+   ],
+   "summary": "压缩进行中状态指示。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:BranchSummaryStatusIndicator",
+   "type": "class",
+   "name": "BranchSummaryStatusIndicator",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    93,
+    103
+   ],
+   "summary": "分支摘要状态指示。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:IdleStatus",
+   "type": "class",
+   "name": "IdleStatus",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "lineRange": [
+    105,
+    114
+   ],
+   "summary": "空闲状态指示。",
+   "tags": [
+    "component",
+    "status"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "type": "file",
+   "name": "theme-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "summary": "主题选择器组件：列出可用主题供用户选择。",
+   "tags": [
+    "tui",
+    "theme",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/theme-selector.ts:ThemeSelectorComponent",
+   "type": "class",
+   "name": "ThemeSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "lineRange": [
+    13,
+    67
+   ],
+   "summary": "主题列表选择组件。",
+   "tags": [
+    "component",
+    "theme"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "type": "file",
+   "name": "thinking-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "summary": "思考模式选择器：选择 thinking 模式与相关设置。",
+   "tags": [
+    "tui",
+    "thinking",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts:ThinkingSelectorComponent",
+   "type": "class",
+   "name": "ThinkingSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "lineRange": [
+    24,
+    75
+   ],
+   "summary": "思考模式选择组件。",
+   "tags": [
+    "component",
+    "thinking"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "type": "file",
+   "name": "tree-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "summary": "树形选择器组件：以树/列表视图浏览会话，支持搜索、复制、重命名与折叠展开。",
+   "tags": [
+    "tui",
+    "tree",
+    "selector",
+    "session"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:renderHorizontalViewport",
+   "type": "function",
+   "name": "renderHorizontalViewport",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    62,
+    92
+   ],
+   "summary": "将行裁剪到水平视口宽度。",
+   "tags": [
+    "rendering",
+    "viewport"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:formatHelpKeys",
+   "type": "function",
+   "name": "formatHelpKeys",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1238,
+    1253
+   ],
+   "summary": "格式化帮助按键提示文本。",
+   "tags": [
+    "format",
+    "help"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:compactRawKeys",
+   "type": "function",
+   "name": "compactRawKeys",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1255,
+    1268
+   ],
+   "summary": "压缩键位列表显示。",
+   "tags": [
+    "format",
+    "keybindings"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeList",
+   "type": "class",
+   "name": "TreeList",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    106,
+    1154
+   ],
+   "summary": "树形会话列表：过滤、搜索、复制、标签与折叠渲染。",
+   "tags": [
+    "component",
+    "tree"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:SearchLine",
+   "type": "class",
+   "name": "SearchLine",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1157,
+    1175
+   ],
+   "summary": "搜索输入行组件。",
+   "tags": [
+    "component",
+    "search"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeHelp",
+   "type": "class",
+   "name": "TreeHelp",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1178,
+    1215
+   ],
+   "summary": "树视图帮助提示组件。",
+   "tags": [
+    "component",
+    "help"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:LabelInput",
+   "type": "class",
+   "name": "LabelInput",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1271,
+    1323
+   ],
+   "summary": "标签/重命名输入组件。",
+   "tags": [
+    "component",
+    "input"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeSelectorComponent",
+   "type": "class",
+   "name": "TreeSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "lineRange": [
+    1328,
+    1427
+   ],
+   "summary": "树形选择器主组件：管理搜索、重命名与列表展示。",
+   "tags": [
+    "component",
+    "selector"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "type": "file",
+   "name": "trust-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "summary": "目录信任选择器：选择对工作目录的信任级别并保存决定。",
+   "tags": [
+    "tui",
+    "trust",
+    "security",
+    "selector"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/modes/interactive/components/trust-selector.ts:formatDecision",
+   "type": "function",
+   "name": "formatDecision",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "lineRange": [
+    21,
+    30
+   ],
+   "summary": "格式化信任决定文本。",
+   "tags": [
+    "format",
+    "trust"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/trust-selector.ts:TrustSelectorComponent",
+   "type": "class",
+   "name": "TrustSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "lineRange": [
+    32,
+    134
+   ],
+   "summary": "目录信任级别选择与保存。",
+   "tags": [
+    "component",
+    "trust"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "type": "file",
+   "name": "user-message-selector.ts",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "summary": "用户消息历史选择器：浏览并选择历史用户消息重新发送。",
+   "tags": [
+    "tui",
+    "message",
+    "selector"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts:UserMessageList",
+   "type": "class",
+   "name": "UserMessageList",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "lineRange": [
+    14,
+    105
+   ],
+   "summary": "用户消息列表：渲染与输入处理。",
+   "tags": [
+    "component",
+    "list"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts:UserMessageSelectorComponent",
+   "type": "class",
+   "name": "UserMessageSelectorComponent",
+   "filePath": "packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "lineRange": [
+    110,
+    155
+   ],
+   "summary": "用户消息历史选择器主组件。",
+   "tags": [
+    "component",
+    "selector"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:hasSessionName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:hasSessionName",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:parseSearchQuery",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:parseSearchQuery",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:matchSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:matchSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:filterAndSortSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts:filterAndSortSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:formatSessionDate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:buildSessionTree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:flattenSessionTree",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/session-selector.ts:deleteSessionFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionSelectorHeader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/session-selector.ts:SessionSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/core/keybindings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/session-selector-search.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/session-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:singleModeThemeItems",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:defaultAutomaticThemes",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:WarningSettingsSubmenu",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:SelectSubmenu",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:ThemeSubmenu",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:SettingsSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/settings-selector.ts:SettingsSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts:ShowImagesSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts:ShowImagesSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/show-images-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts:SkillInvocationMessageComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts:SkillInvocationMessageComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/skill-invocation-message.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:StatusIndicator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:StatusIndicator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:WorkingStatusIndicator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:WorkingStatusIndicator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:RetryStatusIndicator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:RetryStatusIndicator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:CompactionStatusIndicator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:CompactionStatusIndicator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:BranchSummaryStatusIndicator",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:BranchSummaryStatusIndicator",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:IdleStatus",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/status-indicator.ts:IdleStatus",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/countdown-timer.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/status-indicator.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/theme-selector.ts:ThemeSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/theme-selector.ts:ThemeSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/theme-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts:ThinkingSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts:ThinkingSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/thinking-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:renderHorizontalViewport",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:formatHelpKeys",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:compactRawKeys",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:SearchLine",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:LabelInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/tree-selector.ts:TreeSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tree-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "function:packages/coding-agent/src/modes/interactive/components/trust-selector.ts:formatDecision",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/trust-selector.ts:TrustSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/trust-selector.ts:TrustSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/coding-agent/src/core/trust-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/trust-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts:UserMessageList",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts:UserMessageSelectorComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "class:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts:UserMessageSelectorComponent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/dynamic-border.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/user-message-selector.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

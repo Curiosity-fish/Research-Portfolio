@@ -1,0 +1,1473 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "type": "file",
+   "name": "remote-catalog-provider.ts",
+   "filePath": "packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "summary": "远程模型目录：合并远端目录与本地模型列表并支持刷新。",
+   "tags": [
+    "catalog",
+    "remote",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:parseCatalog",
+   "type": "function",
+   "name": "parseCatalog",
+   "filePath": "packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "lineRange": [
+    19,
+    31
+   ],
+   "summary": "解析远端目录数据。",
+   "tags": [
+    "catalog",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:remoteModels",
+   "type": "function",
+   "name": "remoteModels",
+   "filePath": "packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "lineRange": [
+    33,
+    42
+   ],
+   "summary": "提取远端模型列表。",
+   "tags": [
+    "catalog",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:withRemoteCatalog",
+   "type": "function",
+   "name": "withRemoteCatalog",
+   "filePath": "packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "lineRange": [
+    45,
+    132
+   ],
+   "summary": "包装 provider 以合并远端目录。",
+   "tags": [
+    "catalog",
+    "provider"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "type": "file",
+   "name": "resolve-config-value.ts",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "summary": "配置值解析：环境变量/模板/命令解析、缓存与 headers 解析。",
+   "tags": [
+    "config",
+    "env",
+    "resolution",
+    "cache"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:parseConfigValueTemplate",
+   "type": "function",
+   "name": "parseConfigValueTemplate",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    28,
+    78
+   ],
+   "summary": "解析配置值模板。",
+   "tags": [
+    "config",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveTemplate",
+   "type": "function",
+   "name": "resolveTemplate",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    101,
+    113
+   ],
+   "summary": "解析模板为最终值。",
+   "tags": [
+    "config",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarName",
+   "type": "function",
+   "name": "getConfigValueEnvVarName",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    115,
+    119
+   ],
+   "summary": "获取配置值环境变量名。",
+   "tags": [
+    "config",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarNames",
+   "type": "function",
+   "name": "getConfigValueEnvVarNames",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    121,
+    124
+   ],
+   "summary": "获取配置值全部环境变量名。",
+   "tags": [
+    "config",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:getMissingConfigValueEnvVarNames",
+   "type": "function",
+   "name": "getMissingConfigValueEnvVarNames",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    126,
+    128
+   ],
+   "summary": "获取缺失的环境变量名。",
+   "tags": [
+    "config",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:isCommandConfigValue",
+   "type": "function",
+   "name": "isCommandConfigValue",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    130,
+    132
+   ],
+   "summary": "判断配置值是否为命令。",
+   "tags": [
+    "config",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:isConfigValueConfigured",
+   "type": "function",
+   "name": "isConfigValueConfigured",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    134,
+    136
+   ],
+   "summary": "判断配置值是否已配置。",
+   "tags": [
+    "config",
+    "detection"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValue",
+   "type": "function",
+   "name": "resolveConfigValue",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    145,
+    151
+   ],
+   "summary": "解析配置值。",
+   "tags": [
+    "config",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:executeWithConfiguredShell",
+   "type": "function",
+   "name": "executeWithConfiguredShell",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    153,
+    183
+   ],
+   "summary": "用配置的 shell 执行命令。",
+   "tags": [
+    "shell",
+    "execution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:executeWithDefaultShell",
+   "type": "function",
+   "name": "executeWithDefaultShell",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    185,
+    196
+   ],
+   "summary": "用默认 shell 执行命令。",
+   "tags": [
+    "shell",
+    "execution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueUncached",
+   "type": "function",
+   "name": "resolveConfigValueUncached",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    221,
+    227
+   ],
+   "summary": "不缓存地解析配置值。",
+   "tags": [
+    "config",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueOrThrow",
+   "type": "function",
+   "name": "resolveConfigValueOrThrow",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    229,
+    251
+   ],
+   "summary": "解析配置值，失败则抛错。",
+   "tags": [
+    "config",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeaders",
+   "type": "function",
+   "name": "resolveHeaders",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    256,
+    269
+   ],
+   "summary": "解析 headers 配置。",
+   "tags": [
+    "headers",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeadersOrThrow",
+   "type": "function",
+   "name": "resolveHeadersOrThrow",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    271,
+    282
+   ],
+   "summary": "解析 headers，失败则抛错。",
+   "tags": [
+    "headers",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resolve-config-value.ts:clearConfigValueCache",
+   "type": "function",
+   "name": "clearConfigValueCache",
+   "filePath": "packages/coding-agent/src/core/resolve-config-value.ts",
+   "lineRange": [
+    285,
+    287
+   ],
+   "summary": "清空配置值缓存。",
+   "tags": [
+    "config",
+    "cache"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "file",
+   "name": "resource-loader.ts",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "summary": "资源加载器：加载扩展、技能、prompt、主题与 AGENTS 文件，检测冲突。",
+   "tags": [
+    "resource-loader",
+    "extensions",
+    "skills",
+    "themes"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resource-loader.ts:resolvePromptInput",
+   "type": "function",
+   "name": "resolvePromptInput",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "lineRange": [
+    53,
+    68
+   ],
+   "summary": "解析 prompt 输入。",
+   "tags": [
+    "prompt",
+    "resolution"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resource-loader.ts:loadContextFileFromDir",
+   "type": "function",
+   "name": "loadContextFileFromDir",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "lineRange": [
+    70,
+    89
+   ],
+   "summary": "从目录加载上下文文件。",
+   "tags": [
+    "context",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resource-loader.ts:findShadowedContextFile",
+   "type": "function",
+   "name": "findShadowedContextFile",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "lineRange": [
+    100,
+    116
+   ],
+   "summary": "查找被遮蔽的上下文文件。",
+   "tags": [
+    "context",
+    "detection"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/resource-loader.ts:loadProjectContextFiles",
+   "type": "function",
+   "name": "loadProjectContextFiles",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "lineRange": [
+    118,
+    156
+   ],
+   "summary": "加载项目上下文文件。",
+   "tags": [
+    "context",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/resource-loader.ts:DefaultResourceLoader",
+   "type": "class",
+   "name": "DefaultResourceLoader",
+   "filePath": "packages/coding-agent/src/core/resource-loader.ts",
+   "lineRange": [
+    195,
+    1096
+   ],
+   "summary": "默认资源加载器：聚合扩展/技能/prompt/主题/AGENTS 文件并检测冲突。",
+   "tags": [
+    "resource-loader",
+    "aggregator"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/sdk.ts",
+   "type": "file",
+   "name": "sdk.ts",
+   "filePath": "packages/coding-agent/src/core/sdk.ts",
+   "summary": "SDK 入口：以编程方式创建 AgentSession 并暴露全部能力。",
+   "tags": [
+    "sdk",
+    "agent-session",
+    "entry-point"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/sdk.ts:createAgentSession",
+   "type": "function",
+   "name": "createAgentSession",
+   "filePath": "packages/coding-agent/src/core/sdk.ts",
+   "lineRange": [
+    169,
+    398
+   ],
+   "summary": "以编程方式创建并启动 AgentSession。",
+   "tags": [
+    "sdk",
+    "factory"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "file",
+   "name": "settings-manager.ts",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "summary": "设置管理器：文件/内存存储、深层合并、持久化与全部设置项的读写。",
+   "tags": [
+    "settings",
+    "manager",
+    "persistence"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/settings-manager.ts:deepMergeObjects",
+   "type": "function",
+   "name": "deepMergeObjects",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "lineRange": [
+    143,
+    160
+   ],
+   "summary": "深层合并设置对象。",
+   "tags": [
+    "settings",
+    "merge"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/settings-manager.ts:parseTimeoutSetting",
+   "type": "function",
+   "name": "parseTimeoutSetting",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "lineRange": [
+    167,
+    176
+   ],
+   "summary": "解析超时设置。",
+   "tags": [
+    "settings",
+    "parsing"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/settings-manager.ts:FileSettingsStorage",
+   "type": "class",
+   "name": "FileSettingsStorage",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "lineRange": [
+    193,
+    260
+   ],
+   "summary": "基于文件的设置存储，带锁与原子写入。",
+   "tags": [
+    "settings",
+    "storage"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/settings-manager.ts:InMemorySettingsStorage",
+   "type": "class",
+   "name": "InMemorySettingsStorage",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "lineRange": [
+    262,
+    277
+   ],
+   "summary": "内存设置存储。",
+   "tags": [
+    "settings",
+    "storage"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/coding-agent/src/core/settings-manager.ts:SettingsManager",
+   "type": "class",
+   "name": "SettingsManager",
+   "filePath": "packages/coding-agent/src/core/settings-manager.ts",
+   "lineRange": [
+    279,
+    1272
+   ],
+   "summary": "设置管理器：加载/迁移/保存并读写全部设置项。",
+   "tags": [
+    "settings",
+    "manager"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/skills.ts",
+   "type": "file",
+   "name": "skills.ts",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "summary": "技能加载：扫描技能目录、校验名称/描述、格式化用于 prompt。",
+   "tags": [
+    "skills",
+    "loader",
+    "validation"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:prefixIgnorePattern",
+   "type": "function",
+   "name": "prefixIgnorePattern",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    24,
+    45
+   ],
+   "summary": "为技能 ignore 模式添加前缀。",
+   "tags": [
+    "ignore",
+    "patterns"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:addIgnoreRules",
+   "type": "function",
+   "name": "addIgnoreRules",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    47,
+    65
+   ],
+   "summary": "添加技能 ignore 规则。",
+   "tags": [
+    "ignore",
+    "patterns"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:validateName",
+   "type": "function",
+   "name": "validateName",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    92,
+    112
+   ],
+   "summary": "校验技能名称。",
+   "tags": [
+    "skills",
+    "validation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:validateDescription",
+   "type": "function",
+   "name": "validateDescription",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    117,
+    127
+   ],
+   "summary": "校验技能描述。",
+   "tags": [
+    "skills",
+    "validation"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:createSkillSourceInfo",
+   "type": "function",
+   "name": "createSkillSourceInfo",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    136,
+    158
+   ],
+   "summary": "创建技能来源信息。",
+   "tags": [
+    "skills",
+    "metadata"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:loadSkillsFromDir",
+   "type": "function",
+   "name": "loadSkillsFromDir",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    168,
+    171
+   ],
+   "summary": "从目录加载技能。",
+   "tags": [
+    "skills",
+    "loader"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:loadSkillsFromDirInternal",
+   "type": "function",
+   "name": "loadSkillsFromDirInternal",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    173,
+    275
+   ],
+   "summary": "递归加载技能目录并应用忽略规则。",
+   "tags": [
+    "skills",
+    "loader"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:loadSkillFromFile",
+   "type": "function",
+   "name": "loadSkillFromFile",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    277,
+    325
+   ],
+   "summary": "从单个文件加载技能。",
+   "tags": [
+    "skills",
+    "loader"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:formatSkillsForPrompt",
+   "type": "function",
+   "name": "formatSkillsForPrompt",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    335,
+    361
+   ],
+   "summary": "将技能格式化为 prompt 文本。",
+   "tags": [
+    "skills",
+    "format"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/skills.ts:loadSkills",
+   "type": "function",
+   "name": "loadSkills",
+   "filePath": "packages/coding-agent/src/core/skills.ts",
+   "lineRange": [
+    387,
+    487
+   ],
+   "summary": "加载全部技能。",
+   "tags": [
+    "skills",
+    "loader"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:parseCatalog",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:remoteModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:withRemoteCatalog",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "function:packages/coding-agent/src/core/remote-catalog-provider.ts:withRemoteCatalog",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "file:packages/coding-agent/src/utils/management-http.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/remote-catalog-provider.ts",
+   "target": "file:packages/coding-agent/src/utils/tfa-user-agent.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:parseConfigValueTemplate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveTemplate",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarName",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarNames",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getConfigValueEnvVarNames",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getMissingConfigValueEnvVarNames",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:getMissingConfigValueEnvVarNames",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:isCommandConfigValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:isCommandConfigValue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:isConfigValueConfigured",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:isConfigValueConfigured",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValue",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValue",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:executeWithConfiguredShell",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:executeWithDefaultShell",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueUncached",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueUncached",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueOrThrow",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveConfigValueOrThrow",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeaders",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeaders",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeadersOrThrow",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:resolveHeadersOrThrow",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:clearConfigValueCache",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "function:packages/coding-agent/src/core/resolve-config-value.ts:clearConfigValueCache",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resolve-config-value.ts",
+   "target": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "function:packages/coding-agent/src/core/resource-loader.ts:resolvePromptInput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "function:packages/coding-agent/src/core/resource-loader.ts:loadContextFileFromDir",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "function:packages/coding-agent/src/core/resource-loader.ts:findShadowedContextFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "function:packages/coding-agent/src/core/resource-loader.ts:loadProjectContextFiles",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "function:packages/coding-agent/src/core/resource-loader.ts:loadProjectContextFiles",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "class:packages/coding-agent/src/core/resource-loader.ts:DefaultResourceLoader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "class:packages/coding-agent/src/core/resource-loader.ts:DefaultResourceLoader",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/event-bus.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/footer-data-provider.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/prompt-templates.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/skills.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/core/timings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "function:packages/coding-agent/src/core/sdk.ts:createAgentSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "function:packages/coding-agent/src/core/sdk.ts:createAgentSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/auth-guidance.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/defaults.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/model-resolver.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/provider-attribution.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/resource-loader.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/timings.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/core/tools/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/sdk.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "function:packages/coding-agent/src/core/settings-manager.ts:deepMergeObjects",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "function:packages/coding-agent/src/core/settings-manager.ts:parseTimeoutSetting",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:FileSettingsStorage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:FileSettingsStorage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:InMemorySettingsStorage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:InMemorySettingsStorage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:SettingsManager",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "class:packages/coding-agent/src/core/settings-manager.ts:SettingsManager",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/src/core/http-dispatcher.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:prefixIgnorePattern",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:addIgnoreRules",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:validateName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:validateDescription",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:createSkillSourceInfo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkillsFromDir",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkillsFromDir",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkillsFromDirInternal",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkillFromFile",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:formatSkillsForPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:formatSkillsForPrompt",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkills",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "function:packages/coding-agent/src/core/skills.ts:loadSkills",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "file:packages/coding-agent/src/core/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "file:packages/coding-agent/src/utils/frontmatter.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/skills.ts",
+   "target": "file:packages/coding-agent/src/utils/paths.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/interactive-tui.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/sdk-session-manager.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

@@ -1,0 +1,914 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "type": "file",
+      "name": "sessions.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "summary": "SQLite 会话行存储函数：插入、读取、删除会话行并解析元数据。",
+      "tags": [
+        "sqlite",
+        "storage",
+        "sessions",
+        "metadata"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:parseMetadata",
+      "type": "function",
+      "name": "parseMetadata",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        22,
+        38
+      ],
+      "summary": "解析会话元数据字符串。",
+      "tags": [
+        "sqlite",
+        "session",
+        "metadata",
+        "parsing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:sessionExists",
+      "type": "function",
+      "name": "sessionExists",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        40,
+        42
+      ],
+      "summary": "判断会话是否存在。",
+      "tags": [
+        "sqlite",
+        "session",
+        "check"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:insertSessionRow",
+      "type": "function",
+      "name": "insertSessionRow",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        53,
+        61
+      ],
+      "summary": "插入会话行。",
+      "tags": [
+        "sqlite",
+        "session",
+        "insert"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRow",
+      "type": "function",
+      "name": "readSessionRow",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        63,
+        82
+      ],
+      "summary": "读取单个会话行。",
+      "tags": [
+        "sqlite",
+        "session",
+        "read"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRows",
+      "type": "function",
+      "name": "readSessionRows",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        84,
+        105
+      ],
+      "summary": "读取会话行列表。",
+      "tags": [
+        "sqlite",
+        "session",
+        "read",
+        "query"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:deleteSessionRow",
+      "type": "function",
+      "name": "deleteSessionRow",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        107,
+        109
+      ],
+      "summary": "删除会话行。",
+      "tags": [
+        "sqlite",
+        "session",
+        "delete"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:parseSessionName",
+      "type": "function",
+      "name": "parseSessionName",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        111,
+        129
+      ],
+      "summary": "解析会话名称。",
+      "tags": [
+        "sqlite",
+        "session",
+        "parsing",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:decodeSessionMetadata",
+      "type": "function",
+      "name": "decodeSessionMetadata",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "lineRange": [
+        131,
+        143
+      ],
+      "summary": "解码会话元数据为对象。",
+      "tags": [
+        "sqlite",
+        "session",
+        "metadata",
+        "decoding"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "type": "file",
+      "name": "writer-leases.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "summary": "SQLite 写入租约存储函数：获取、续约与释放写入租约。",
+      "tags": [
+        "sqlite",
+        "storage",
+        "writer-lease",
+        "concurrency"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:acquireWriterLease",
+      "type": "function",
+      "name": "acquireWriterLease",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "lineRange": [
+        15,
+        35
+      ],
+      "summary": "获取写入租约。",
+      "tags": [
+        "sqlite",
+        "writer-lease",
+        "acquire",
+        "concurrency"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:renewWriterLease",
+      "type": "function",
+      "name": "renewWriterLease",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "lineRange": [
+        37,
+        53
+      ],
+      "summary": "续约写入租约。",
+      "tags": [
+        "sqlite",
+        "writer-lease",
+        "renew"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:releaseWriterLease",
+      "type": "function",
+      "name": "releaseWriterLease",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "lineRange": [
+        55,
+        61
+      ],
+      "summary": "释放写入租约。",
+      "tags": [
+        "sqlite",
+        "writer-lease",
+        "release"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:deleteWriterLease",
+      "type": "function",
+      "name": "deleteWriterLease",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "lineRange": [
+        63,
+        65
+      ],
+      "summary": "删除写入租约行。",
+      "tags": [
+        "sqlite",
+        "writer-lease",
+        "delete"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "summary": "定义 SQLite 会话存储相关的类型与行结构。",
+      "tags": [
+        "type-definition",
+        "sqlite",
+        "storage",
+        "row"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/server/progress.ts",
+      "type": "file",
+      "name": "progress.ts",
+      "filePath": "packages/shell/src/server/progress.ts",
+      "summary": "将会话事件转换为 transcript 进度数据，供 Web 客户端展示实时进度。",
+      "tags": [
+        "server",
+        "progress",
+        "transcript",
+        "conversion"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/server/progress.ts:toTranscriptProgress",
+      "type": "function",
+      "name": "toTranscriptProgress",
+      "filePath": "packages/shell/src/server/progress.ts",
+      "lineRange": [
+        32,
+        156
+      ],
+      "summary": "将事件/消息转换为 transcript 进度对象。",
+      "tags": [
+        "server",
+        "progress",
+        "transcript",
+        "conversion"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/server/progress.ts:findToolCall",
+      "type": "function",
+      "name": "findToolCall",
+      "filePath": "packages/shell/src/server/progress.ts",
+      "lineRange": [
+        158,
+        168
+      ],
+      "summary": "在消息中查找工具调用条目。",
+      "tags": [
+        "utility",
+        "tool",
+        "search"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/shell/src/server/snapshot.ts",
+      "type": "file",
+      "name": "snapshot.ts",
+      "filePath": "packages/shell/src/server/snapshot.ts",
+      "summary": "构建会话快照：汇总会话阶段、transcript 条目与元数据。",
+      "tags": [
+        "server",
+        "snapshot",
+        "session",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/shell/src/server/snapshot.ts:getSessionPhase",
+      "type": "function",
+      "name": "getSessionPhase",
+      "filePath": "packages/shell/src/server/snapshot.ts",
+      "lineRange": [
+        14,
+        19
+      ],
+      "summary": "获取会话当前阶段。",
+      "tags": [
+        "server",
+        "session",
+        "phase",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/server/snapshot.ts:transcriptItemId",
+      "type": "function",
+      "name": "transcriptItemId",
+      "filePath": "packages/shell/src/server/snapshot.ts",
+      "lineRange": [
+        25,
+        30
+      ],
+      "summary": "生成 transcript 条目 ID。",
+      "tags": [
+        "server",
+        "transcript",
+        "id",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/server/snapshot.ts:resolveTranscriptItemId",
+      "type": "function",
+      "name": "resolveTranscriptItemId",
+      "filePath": "packages/shell/src/server/snapshot.ts",
+      "lineRange": [
+        37,
+        46
+      ],
+      "summary": "解析 transcript 条目 ID。",
+      "tags": [
+        "server",
+        "transcript",
+        "id",
+        "resolution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/shell/src/server/snapshot.ts:buildSessionSnapshot",
+      "type": "function",
+      "name": "buildSessionSnapshot",
+      "filePath": "packages/shell/src/server/snapshot.ts",
+      "lineRange": [
+        51,
+        112
+      ],
+      "summary": "构建完整会话快照对象。",
+      "tags": [
+        "server",
+        "snapshot",
+        "build",
+        "session"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/agent-treeshake-smoke-entry.ts",
+      "type": "file",
+      "name": "agent-treeshake-smoke-entry.ts",
+      "filePath": "scripts/agent-treeshake-smoke-entry.ts",
+      "summary": "冒烟测试入口：验证 agent 包可被 tree-shaking 正确打包。",
+      "tags": [
+        "script",
+        "smoke-test",
+        "tree-shaking",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/browser-smoke-entry.ts",
+      "type": "file",
+      "name": "browser-smoke-entry.ts",
+      "filePath": "scripts/browser-smoke-entry.ts",
+      "summary": "浏览器冒烟测试入口：验证 agent/client/protocol 在浏览器环境的可加载性。",
+      "tags": [
+        "script",
+        "smoke-test",
+        "browser",
+        "entry-point"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/session-transcripts.ts",
+      "type": "file",
+      "name": "session-transcripts.ts",
+      "filePath": "scripts/session-transcripts.ts",
+      "summary": "脚本：解析会话文件、以子代理方式生成 transcript 摘要并输出报告。",
+      "tags": [
+        "script",
+        "transcript",
+        "session",
+        "reporting"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/session-transcripts.ts:parseSession",
+      "type": "function",
+      "name": "parseSession",
+      "filePath": "scripts/session-transcripts.ts",
+      "lineRange": [
+        37,
+        56
+      ],
+      "summary": "解析会话文件为结构化数据。",
+      "tags": [
+        "script",
+        "transcript",
+        "parsing",
+        "session"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/session-transcripts.ts:runSubagent",
+      "type": "function",
+      "name": "runSubagent",
+      "filePath": "scripts/session-transcripts.ts",
+      "lineRange": [
+        78,
+        141
+      ],
+      "summary": "以子代理方式运行会话分析并收集结果。",
+      "tags": [
+        "script",
+        "subagent",
+        "execution"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/session-transcripts.ts:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/session-transcripts.ts",
+      "lineRange": [
+        143,
+        404
+      ],
+      "summary": "脚本入口：遍历会话目录、生成 transcript 摘要并输出。",
+      "tags": [
+        "script",
+        "entry-point",
+        "main",
+        "reporting"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:parseMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:sessionExists",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:sessionExists",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:insertSessionRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:insertSessionRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:readSessionRows",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:deleteSessionRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:deleteSessionRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:parseSessionName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:decodeSessionMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts:decodeSessionMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/sessions.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:acquireWriterLease",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:acquireWriterLease",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:renewWriterLease",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:renewWriterLease",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:releaseWriterLease",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:releaseWriterLease",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:deleteWriterLease",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "function:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts:deleteWriterLease",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/storage/writer-leases.ts",
+      "target": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/session-backends/sqlite-node/src/sqlite/types.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "function:packages/shell/src/server/progress.ts:toTranscriptProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "function:packages/shell/src/server/progress.ts:toTranscriptProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "function:packages/shell/src/server/progress.ts:findToolCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/server/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/progress.ts",
+      "target": "file:packages/shell/src/server/snapshot.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:getSessionPhase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:getSessionPhase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:transcriptItemId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:transcriptItemId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:resolveTranscriptItemId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:resolveTranscriptItemId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:buildSessionSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "function:packages/shell/src/server/snapshot.ts:buildSessionSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "file:packages/coding-agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/shell/src/server/snapshot.ts",
+      "target": "file:packages/server/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/agent-treeshake-smoke-entry.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/agent-treeshake-smoke-entry.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/agent-treeshake-smoke-entry.ts",
+      "target": "file:packages/ai/src/providers/anthropic.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/browser-smoke-entry.ts",
+      "target": "file:packages/agent/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/browser-smoke-entry.ts",
+      "target": "file:packages/ai/src/compat.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/browser-smoke-entry.ts",
+      "target": "file:packages/ai/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/browser-smoke-entry.ts",
+      "target": "file:packages/client/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/browser-smoke-entry.ts",
+      "target": "file:packages/protocol/src/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/session-transcripts.ts",
+      "target": "function:scripts/session-transcripts.ts:parseSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/session-transcripts.ts",
+      "target": "function:scripts/session-transcripts.ts:runSubagent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/session-transcripts.ts",
+      "target": "function:scripts/session-transcripts.ts:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/session-transcripts.ts",
+      "target": "file:packages/coding-agent/src/core/session-manager.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/shell/src/server/progress.ts:toTranscriptProgress",
+      "target": "function:packages/shell/src/server/snapshot.ts:resolveTranscriptItemId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

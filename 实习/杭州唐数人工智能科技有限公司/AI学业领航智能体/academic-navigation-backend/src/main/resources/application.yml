@@ -1,0 +1,85 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: academic-navigation
+
+  # 数据库（具体连接信息在 application-dev.yml）
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # MyBatis-Plus
+  mybatis-plus:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.zjnu.academic
+    global-config:
+      db-config:
+        id-type: auto
+        logic-delete-field: deleted
+        logic-delete-value: 1
+        logic-not-delete-value: 0
+    configuration:
+      map-underscore-to-camel-case: true
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  # Flyway 数据库版本管理
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    validate-on-migrate: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# Actuator 监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+# JWT 配置（密钥在 application-dev.yml 中覆盖）
+jwt:
+  expiration: 86400   # 24 小时，单位秒
+  secret: ${JWT_SECRET:changeme-placeholder-override-in-dev-yml}
+
+# SpringDoc
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# 数据源：mock = 本地演示数据；school = 通过校方教务 REST 接口同步
+academic:
+  datasource:
+    provider: mock
+  llm:
+    enabled: true
+    provider: local
+    base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+    model: ${OLLAMA_MODEL:qwen2.5:7b}
+    timeout-seconds: 60
+  agent-memory:
+    mem0:
+      enabled: ${MEM0_ENABLED:false}
+      base-url: ${MEM0_BASE_URL:http://localhost:8888}
+      api-key: ${MEM0_API_KEY:}
+      identity-secret: ${MEM0_IDENTITY_SECRET:}
+      timeout-seconds: ${MEM0_TIMEOUT_SECONDS:8}
+    eagent:
+      base-url: ${EAGENT_BASE_URL:http://localhost:3001}
+      workflow-id: ${EAGENT_LIFE_PLANNING_WORKFLOW_ID:dddf018e4b26470f96b27bc5e622028a}
+      api-key: ${EAGENT_API_KEY:}
+      timeout-seconds: ${EAGENT_TIMEOUT_SECONDS:45}
+  school:
+    base-url: ${SCHOOL_API_BASE_URL:http://localhost:9090}
+    token: ${SCHOOL_API_TOKEN:}
+    connect-timeout: 3000
+    read-timeout: 15000

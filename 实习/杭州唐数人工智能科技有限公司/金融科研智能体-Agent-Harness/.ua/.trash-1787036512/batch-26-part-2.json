@@ -1,0 +1,681 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/ai/src/providers/together.ts",
+      "type": "file",
+      "name": "together.ts",
+      "filePath": "packages/ai/src/providers/together.ts",
+      "summary": "实现 Together provider 定义。",
+      "tags": [
+        "provider",
+        "together",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/together.ts:togetherProvider",
+      "type": "function",
+      "name": "togetherProvider",
+      "filePath": "packages/ai/src/providers/together.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Together provider 定义。",
+      "tags": [
+        "provider",
+        "together",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/vercel-ai-gateway.models.ts",
+      "type": "file",
+      "name": "vercel-ai-gateway.models.ts",
+      "filePath": "packages/ai/src/providers/vercel-ai-gateway.models.ts",
+      "summary": "定义 Vercel AI Gateway 内置模型数据常量。",
+      "tags": [
+        "models",
+        "vercel",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "type": "file",
+      "name": "vercel-ai-gateway.ts",
+      "filePath": "packages/ai/src/providers/vercel-ai-gateway.ts",
+      "summary": "实现 Vercel AI Gateway provider 定义。",
+      "tags": [
+        "provider",
+        "vercel",
+        "gateway",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/vercel-ai-gateway.ts:vercelAIGatewayProvider",
+      "type": "function",
+      "name": "vercelAIGatewayProvider",
+      "filePath": "packages/ai/src/providers/vercel-ai-gateway.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回 Vercel AI Gateway provider 定义。",
+      "tags": [
+        "provider",
+        "vercel",
+        "gateway",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xai.models.ts",
+      "type": "file",
+      "name": "xai.models.ts",
+      "filePath": "packages/ai/src/providers/xai.models.ts",
+      "summary": "定义 xAI 内置模型数据常量。",
+      "tags": [
+        "models",
+        "xai",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xai.ts",
+      "type": "file",
+      "name": "xai.ts",
+      "filePath": "packages/ai/src/providers/xai.ts",
+      "summary": "实现 xAI provider 定义，支持 OAuth 认证。",
+      "tags": [
+        "provider",
+        "xai",
+        "oauth",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/xai.ts:xaiProvider",
+      "type": "function",
+      "name": "xaiProvider",
+      "filePath": "packages/ai/src/providers/xai.ts",
+      "lineRange": [
+        8,
+        28
+      ],
+      "summary": "返回 xAI provider 定义，支持 OAuth 认证。",
+      "tags": [
+        "provider",
+        "xai",
+        "oauth",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-ams.models.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-ams.models.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-ams.models.ts",
+      "summary": "定义小米 Token Plan 美西区内置模型数据常量。",
+      "tags": [
+        "models",
+        "xiaomi",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-ams.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "summary": "实现小米 Token Plan 美西区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "ams",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/xiaomi-token-plan-ams.ts:xiaomiTokenPlanAmsProvider",
+      "type": "function",
+      "name": "xiaomiTokenPlanAmsProvider",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回小米 Token Plan 美西区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "ams",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-cn.models.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-cn.models.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-cn.models.ts",
+      "summary": "定义小米 Token Plan 中国区内置模型数据常量。",
+      "tags": [
+        "models",
+        "xiaomi",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-cn.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "summary": "实现小米 Token Plan 中国区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "cn",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/xiaomi-token-plan-cn.ts:xiaomiTokenPlanCnProvider",
+      "type": "function",
+      "name": "xiaomiTokenPlanCnProvider",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回小米 Token Plan 中国区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "cn",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.models.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-sgp.models.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-sgp.models.ts",
+      "summary": "定义小米 Token Plan 新加坡区内置模型数据常量。",
+      "tags": [
+        "models",
+        "xiaomi",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "type": "file",
+      "name": "xiaomi-token-plan-sgp.ts",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "summary": "实现小米 Token Plan 新加坡区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "sgp",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/xiaomi-token-plan-sgp.ts:xiaomiTokenPlanSgpProvider",
+      "type": "function",
+      "name": "xiaomiTokenPlanSgpProvider",
+      "filePath": "packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回小米 Token Plan 新加坡区 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "sgp",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi.models.ts",
+      "type": "file",
+      "name": "xiaomi.models.ts",
+      "filePath": "packages/ai/src/providers/xiaomi.models.ts",
+      "summary": "定义小米内置模型数据常量。",
+      "tags": [
+        "models",
+        "xiaomi",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/xiaomi.ts",
+      "type": "file",
+      "name": "xiaomi.ts",
+      "filePath": "packages/ai/src/providers/xiaomi.ts",
+      "summary": "实现小米 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/ai/src/providers/xiaomi.ts:xiaomiProvider",
+      "type": "function",
+      "name": "xiaomiProvider",
+      "filePath": "packages/ai/src/providers/xiaomi.ts",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "返回小米 provider 定义。",
+      "tags": [
+        "provider",
+        "xiaomi",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/ai/src/providers/zai-coding-cn.models.ts",
+      "type": "file",
+      "name": "zai-coding-cn.models.ts",
+      "filePath": "packages/ai/src/providers/zai-coding-cn.models.ts",
+      "summary": "定义 Z.ai Coding 中国区内置模型数据常量。",
+      "tags": [
+        "models",
+        "zai",
+        "data",
+        "constant"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "function:packages/ai/src/providers/together.ts:togetherProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "function:packages/ai/src/providers/together.ts:togetherProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/together.ts",
+      "target": "file:packages/ai/src/providers/together.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "function:packages/ai/src/providers/vercel-ai-gateway.ts:vercelAIGatewayProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "function:packages/ai/src/providers/vercel-ai-gateway.ts:vercelAIGatewayProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "file:packages/ai/src/api/anthropic-messages.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/vercel-ai-gateway.ts",
+      "target": "file:packages/ai/src/providers/vercel-ai-gateway.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "function:packages/ai/src/providers/xai.ts:xaiProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "function:packages/ai/src/providers/xai.ts:xaiProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/api/openai-responses.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/auth/oauth/load.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xai.ts",
+      "target": "file:packages/ai/src/providers/xai.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-ams.ts:xiaomiTokenPlanAmsProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-ams.ts:xiaomiTokenPlanAmsProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-ams.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-ams.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-cn.ts:xiaomiTokenPlanCnProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-cn.ts:xiaomiTokenPlanCnProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-cn.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-cn.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-sgp.ts:xiaomiTokenPlanSgpProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "function:packages/ai/src/providers/xiaomi-token-plan-sgp.ts:xiaomiTokenPlanSgpProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.ts",
+      "target": "file:packages/ai/src/providers/xiaomi-token-plan-sgp.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "function:packages/ai/src/providers/xiaomi.ts:xiaomiProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "function:packages/ai/src/providers/xiaomi.ts:xiaomiProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "file:packages/ai/src/api/openai-completions.lazy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "file:packages/ai/src/auth/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "file:packages/ai/src/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/xiaomi.ts",
+      "target": "file:packages/ai/src/providers/xiaomi.models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/ai/src/providers/zai-coding-cn.models.ts",
+      "target": "file:packages/ai/src/model-catalog.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

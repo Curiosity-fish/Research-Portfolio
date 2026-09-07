@@ -1,0 +1,969 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/shell/web/src/api/client.ts",
+   "type": "file",
+   "name": "client.ts",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "summary": "Web 前端 API 客户端：封装 fetch 调用本地后端的 REST/SSE 接口，提供会话、模型、配置、项目、API Key 与消息发送等操作方法。",
+   "tags": [
+    "api-handler",
+    "http",
+    "client",
+    "service"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/shell/web/src/api/client.ts:request",
+   "type": "function",
+   "name": "request",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "lineRange": [
+    19,
+    38
+   ],
+   "summary": "通用 fetch 请求封装：构造 JSON 请求、解析响应并在非 2xx 时抛出带消息的错误。",
+   "tags": [
+    "http",
+    "fetch",
+    "helper"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "class",
+   "name": "ApiClient",
+   "filePath": "packages/shell/web/src/api/client.ts",
+   "lineRange": [
+    40,
+    179
+   ],
+   "summary": "API 客户端类，暴露 listSessions/openSession/createSession/deleteSession、模型与配置、项目 CRUD、API Key 管理及 prompt/steer/abort 等方法。",
+   "tags": [
+    "api-handler",
+    "client",
+    "service"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/api/types.ts",
+   "type": "file",
+   "name": "types.ts",
+   "filePath": "packages/shell/web/src/api/types.ts",
+   "summary": "Web 前端与后端交互的类型定义：会话、消息、模型元数据、项目、配置与工具调用等共享类型。",
+   "tags": [
+    "type-definition",
+    "api",
+    "typescript"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/shell/web/src/state/projects.ts",
+   "type": "file",
+   "name": "projects.ts",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "summary": "会话-项目分组工具：将会话按项目归属分组，并推导会话所属项目。",
+   "tags": [
+    "utility",
+    "state",
+    "grouping"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "function",
+   "name": "groupSessions",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "lineRange": [
+    21,
+    39
+   ],
+   "summary": "把会话列表按项目归属分组为 unassigned 与 projects 结构，供侧栏与首页使用。",
+   "tags": [
+    "utility",
+    "grouping",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "function",
+   "name": "sessionProjectId",
+   "filePath": "packages/shell/web/src/state/projects.ts",
+   "lineRange": [
+    42,
+    47
+   ],
+   "summary": "根据会话 ID 查找其所属项目 ID，未归属时返回 null。",
+   "tags": [
+    "utility",
+    "lookup"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/shell/web/src/state/session-store.ts",
+   "type": "file",
+   "name": "session-store.ts",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "summary": "前端全局响应式会话状态仓库（单例）：维护会话/模型/配置/工具/项目快照，暴露刷新、CRUD、发送消息、切换模型等操作，并通过 SSE 事件流增量更新。",
+   "tags": [
+    "state",
+    "store",
+    "session",
+    "event-handler"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "function",
+   "name": "transcriptItems",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    55,
+    55
+   ],
+   "summary": "导出当前会话的消息条目列表（响应式派生）。",
+   "tags": [
+    "state",
+    "selector"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "function",
+   "name": "refreshSessions",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    59,
+    65
+   ],
+   "summary": "从后端拉取会话列表并写入 store。",
+   "tags": [
+    "state",
+    "fetch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "function",
+   "name": "refreshModels",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    67,
+    73
+   ],
+   "summary": "拉取可用模型列表并刷新快照中的模型引用。",
+   "tags": [
+    "state",
+    "fetch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "function",
+   "name": "refreshConfig",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    75,
+    81
+   ],
+   "summary": "拉取后端配置（agentDir/authPath 等）到 store。",
+   "tags": [
+    "state",
+    "fetch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "function",
+   "name": "refreshTools",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    83,
+    89
+   ],
+   "summary": "拉取已注册金融工具列表。",
+   "tags": [
+    "state",
+    "fetch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "function",
+   "name": "refreshProjects",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    91,
+    97
+   ],
+   "summary": "拉取项目列表并更新分组。",
+   "tags": [
+    "state",
+    "fetch"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "function",
+   "name": "configureApiKey",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    99,
+    109
+   ],
+   "summary": "调用后端配置供应商 API Key 并刷新模型与配置。",
+   "tags": [
+    "authentication",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "function",
+   "name": "removeApiKey",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    111,
+    121
+   ],
+   "summary": "移除指定供应商的 API Key。",
+   "tags": [
+    "authentication",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "function",
+   "name": "renameSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    123,
+    134
+   ],
+   "summary": "重命名当前会话并刷新列表。",
+   "tags": [
+    "session",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "function",
+   "name": "exportSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    136,
+    138
+   ],
+   "summary": "导出当前会话（生成下载）。",
+   "tags": [
+    "session",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "function",
+   "name": "openSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    140,
+    154
+   ],
+   "summary": "打开历史会话并应用其快照。",
+   "tags": [
+    "session",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "function",
+   "name": "createSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    156,
+    169
+   ],
+   "summary": "创建新会话（可指定项目/cwd）并设为当前。",
+   "tags": [
+    "session",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "function",
+   "name": "deleteSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    184,
+    200
+   ],
+   "summary": "删除会话并从项目中移除关联。",
+   "tags": [
+    "session",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "function",
+   "name": "deleteCurrentSession",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    202,
+    205
+   ],
+   "summary": "删除当前会话。",
+   "tags": [
+    "session",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "function",
+   "name": "createProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    207,
+    216
+   ],
+   "summary": "创建项目并刷新列表。",
+   "tags": [
+    "project",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "function",
+   "name": "updateProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    218,
+    227
+   ],
+   "summary": "更新项目名称/文件夹。",
+   "tags": [
+    "project",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "function",
+   "name": "deleteProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    229,
+    238
+   ],
+   "summary": "删除项目，会话保留为无项目。",
+   "tags": [
+    "project",
+    "state"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "function",
+   "name": "moveSessionProject",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    240,
+    249
+   ],
+   "summary": "把会话移动到指定项目或移出项目。",
+   "tags": [
+    "project",
+    "session"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "function",
+   "name": "sendPrompt",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    251,
+    262
+   ],
+   "summary": "发送用户提示词到当前会话并处理响应事件。",
+   "tags": [
+    "session",
+    "chat"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "function",
+   "name": "sendSteer",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    264,
+    272
+   ],
+   "summary": "向生成中的会话发送插话。",
+   "tags": [
+    "session",
+    "chat"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "function",
+   "name": "abortCurrent",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    274,
+    281
+   ],
+   "summary": "中止当前会话生成。",
+   "tags": [
+    "session",
+    "chat"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "function",
+   "name": "switchModel",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    283,
+    290
+   ],
+   "summary": "切换当前会话模型。",
+   "tags": [
+    "model",
+    "session"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "function",
+   "name": "setThinking",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    292,
+    302
+   ],
+   "summary": "设置当前会话思考级别。",
+   "tags": [
+    "model",
+    "session"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:nextSessionName",
+   "type": "function",
+   "name": "nextSessionName",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    172,
+    182
+   ],
+   "summary": "为新建会话生成递增的默认名称。",
+   "tags": [
+    "utility",
+    "naming"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/shell/web/src/state/session-store.ts:handleEvent",
+   "type": "function",
+   "name": "handleEvent",
+   "filePath": "packages/shell/web/src/state/session-store.ts",
+   "lineRange": [
+    309,
+    319
+   ],
+   "summary": "处理后端推送的 SSE 事件，增量更新消息/进度/快照。",
+   "tags": [
+    "event-handler",
+    "sse",
+    "state"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/api/client.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/api/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "file:packages/shell/web/src/state/transcript.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "function:packages/shell/web/src/api/client.ts:request",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:nextSessionName",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:handleEvent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/shell/web/src/api/client.ts",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:groupSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/projects.ts",
+   "target": "function:packages/shell/web/src/state/projects.ts:sessionProjectId",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:transcriptItems",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshSessions",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshModels",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshConfig",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshTools",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:refreshProjects",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:removeApiKey",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:renameSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:exportSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteCurrentSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:createProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:updateProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:deleteProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:moveSessionProject",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:sendSteer",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:abortCurrent",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:switchModel",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/shell/web/src/state/session-store.ts",
+   "target": "function:packages/shell/web/src/state/session-store.ts:setThinking",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/shell/web/src/state/session-store.ts:openSession",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/shell/web/src/state/session-store.ts:sendPrompt",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/shell/web/src/state/session-store.ts:configureApiKey",
+   "target": "class:packages/shell/web/src/api/client.ts:ApiClient",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

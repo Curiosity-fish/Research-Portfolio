@@ -1,0 +1,999 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts",
+   "type": "file",
+   "name": "3688-tree-cancel-compacting.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts",
+   "summary": "回归测试压缩过程中取消会话树切换的行为。",
+   "tags": [
+    "test",
+    "compaction",
+    "会话树",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts",
+   "type": "file",
+   "name": "3982-message-end-cost-override.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts",
+   "summary": "回归测试消息结束时的成本覆盖字段。",
+   "tags": [
+    "test",
+    "成本",
+    "消息",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "file",
+   "name": "4167-thinking-toggle-pending-tool-render.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "summary": "回归测试思考切换时待处理工具渲染的行为。",
+   "tags": [
+    "test",
+    "thinking",
+    "工具渲染",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createFakeInteractiveModeThis",
+   "type": "function",
+   "name": "createFakeInteractiveModeThis",
+   "filePath": "packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "lineRange": [
+    64,
+    88
+   ],
+   "summary": "构造假交互模式实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createAssistantToolCallMessage",
+   "type": "function",
+   "name": "createAssistantToolCallMessage",
+   "filePath": "packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "lineRange": [
+    90,
+    108
+   ],
+   "summary": "构造含工具调用的 assistant 消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createToolResultMessage",
+   "type": "function",
+   "name": "createToolResultMessage",
+   "filePath": "packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "lineRange": [
+    110,
+    119
+   ],
+   "summary": "构造工具结果消息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createSessionEntries",
+   "type": "function",
+   "name": "createSessionEntries",
+   "filePath": "packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "lineRange": [
+    121,
+    134
+   ],
+   "summary": "构造会话条目。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts",
+   "type": "file",
+   "name": "5109-exclude-tools.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts",
+   "summary": "回归测试排除工具（exclude-tools）配置的行为。",
+   "tags": [
+    "test",
+    "tools",
+    "配置",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "type": "file",
+   "name": "5217-compaction-reason.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "summary": "回归测试压缩原因（reason）的记录与传递。",
+   "tags": [
+    "test",
+    "compaction",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts:recordingExtension",
+   "type": "function",
+   "name": "recordingExtension",
+   "filePath": "packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "lineRange": [
+    16,
+    33
+   ],
+   "summary": "构造记录事件的扩展。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts:createCompactionHarness",
+   "type": "function",
+   "name": "createCompactionHarness",
+   "filePath": "packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "lineRange": [
+    35,
+    44
+   ],
+   "summary": "创建压缩测试环境。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "file",
+   "name": "5596-missing-theme-export.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "summary": "回归测试缺失主题导出时的会话行为。",
+   "tags": [
+    "test",
+    "theme",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "type": "file",
+   "name": "5661-uppercase-header-values.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "summary": "回归测试大写请求头值的处理。",
+   "tags": [
+    "test",
+    "请求头",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "type": "file",
+   "name": "5868-rpc-unknown-command-id.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "summary": "回归测试 RPC 未知命令 ID 的错误响应。",
+   "tags": [
+    "test",
+    "rpc",
+    "错误处理",
+    "回归测试"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts:restoreListeners",
+   "type": "function",
+   "name": "restoreListeners",
+   "filePath": "packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "lineRange": [
+    49,
+    63
+   ],
+   "summary": "恢复事件监听器。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts:createRuntimeHost",
+   "type": "function",
+   "name": "createRuntimeHost",
+   "filePath": "packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "lineRange": [
+    72,
+    81
+   ],
+   "summary": "构造运行时宿主。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "file",
+   "name": "5943-session-start-notify.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "summary": "回归测试会话启动通知与 UI 上下文创建。",
+   "tags": [
+    "test",
+    "session-start",
+    "通知",
+    "回归测试"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createUiContext",
+   "type": "function",
+   "name": "createUiContext",
+   "filePath": "packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "lineRange": [
+    10,
+    45
+   ],
+   "summary": "创建 UI 上下文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createReloadCommandContext",
+   "type": "function",
+   "name": "createReloadCommandContext",
+   "filePath": "packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "lineRange": [
+    156,
+    205
+   ],
+   "summary": "创建重载命令上下文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:getMessageText",
+   "type": "function",
+   "name": "getMessageText",
+   "filePath": "packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "lineRange": [
+    209,
+    222
+   ],
+   "summary": "提取消息文本。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createLoadedResourcesContext",
+   "type": "function",
+   "name": "createLoadedResourcesContext",
+   "filePath": "packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "lineRange": [
+    224,
+    253
+   ],
+   "summary": "创建资源加载上下文。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/5996-session-name-newlines.test.ts",
+   "type": "file",
+   "name": "5996-session-name-newlines.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/5996-session-name-newlines.test.ts",
+   "summary": "回归测试会话名称包含换行符的处理。",
+   "tags": [
+    "test",
+    "session-name",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/suite/regressions/6019-explicit-provider-retry-message.test.ts",
+   "type": "file",
+   "name": "6019-explicit-provider-retry-message.test.ts",
+   "filePath": "packages/coding-agent/test/suite/regressions/6019-explicit-provider-retry-message.test.ts",
+   "summary": "回归测试显式 provider 重试消息的展示。",
+   "tags": [
+    "test",
+    "provider",
+    "重试",
+    "回归测试"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createFakeInteractiveModeThis",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createAssistantToolCallMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createToolResultMessage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts:createSessionEntries",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts:recordingExtension",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts:createCompactionHarness",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts:restoreListeners",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts:createRuntimeHost",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createUiContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createReloadCommandContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:getMessageText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "function:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts:createLoadedResourcesContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/coding-agent/src/utils/ansi.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/core/messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/core/session-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "target": "file:packages/coding-agent/test/utilities.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "target": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "target": "file:packages/coding-agent/src/migrations.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "target": "file:packages/coding-agent/test/model-runtime-test-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "target": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/coding-agent/src/core/agent-session.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5996-session-name-newlines.test.ts",
+   "target": "file:packages/coding-agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/5996-session-name-newlines.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6019-explicit-provider-retry-message.test.ts",
+   "target": "file:packages/ai/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/suite/regressions/6019-explicit-provider-retry-message.test.ts",
+   "target": "file:packages/coding-agent/test/suite/harness.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/components/tool-execution.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/ansi.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/4167-thinking-toggle-pending-tool-render.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5217-compaction-reason.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/compat.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/messages.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/session-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/config.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/auth-storage.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/migrations.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session-runtime.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5868-rpc-unknown-command-id.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/agent-session.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/extensions/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/tui/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5943-session-start-notify.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/5996-session-name-newlines.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/ai/src/index.ts",
+   "target": "file:packages/coding-agent/test/suite/regressions/6019-explicit-provider-retry-message.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

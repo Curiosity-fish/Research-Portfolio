@@ -1,0 +1,1052 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "type": "file",
+   "name": "clipboard-image.ts",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "从剪贴板读取图片：跨平台实现（wl-paste/xclip/PowerShell/原生），含格式转换。",
+   "tags": [
+    "utility",
+    "clipboard",
+    "image",
+    "cross-platform"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:isWaylandSession",
+   "type": "function",
+   "name": "isWaylandSession",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 isWaylandSession：判断WaylandSession 相关逻辑，参数：env。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    22,
+    24
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:extensionForImageMimeType",
+   "type": "function",
+   "name": "extensionForImageMimeType",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 extensionForImageMimeType：实现其核心逻辑，参数：mimeType。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    30,
+    43
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:selectPreferredImageMimeType",
+   "type": "function",
+   "name": "selectPreferredImageMimeType",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 selectPreferredImageMimeType：选择PreferredImageMimeType 相关逻辑，参数：mimeTypes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    45,
+    60
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:convertToPng",
+   "type": "function",
+   "name": "convertToPng",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 convertToPng：转换ToPng 相关逻辑，参数：bytes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    71,
+    87
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:runCommand",
+   "type": "function",
+   "name": "runCommand",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 runCommand：运行Command 相关逻辑，参数：command、args、options。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    89,
+    116
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaWlPaste",
+   "type": "function",
+   "name": "readClipboardImageViaWlPaste",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "通过 wl-paste 读取 Wayland 剪贴板图片。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    118,
+    141
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:isWSL",
+   "type": "function",
+   "name": "isWSL",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 isWSL：判断WSL 相关逻辑，参数：env。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    143,
+    154
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaPowerShell",
+   "type": "function",
+   "name": "readClipboardImageViaPowerShell",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "通过 PowerShell 读取 Windows 剪贴板图片。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    161,
+    211
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaXclip",
+   "type": "function",
+   "name": "readClipboardImageViaXclip",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 readClipboardImageViaXclip：读取ClipboardImageViaXclip 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    213,
+    238
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaNativeClipboard",
+   "type": "function",
+   "name": "readClipboardImageViaNativeClipboard",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "函数 readClipboardImageViaNativeClipboard：读取ClipboardImageViaNativeClipboard 相关逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    240,
+    252
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImage",
+   "type": "function",
+   "name": "readClipboardImage",
+   "filePath": "packages/coding-agent/src/utils/clipboard-image.ts",
+   "summary": "跨平台读取剪贴板图片（Wayland/X11/PowerShell/原生）。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    254,
+    300
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "type": "file",
+   "name": "clipboard-native.ts",
+   "filePath": "packages/coding-agent/src/utils/clipboard-native.ts",
+   "summary": "加载原生剪贴板扩展（可选原生模块）的封装。",
+   "tags": [
+    "utility",
+    "clipboard",
+    "native"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard-native.ts:loadClipboardNative",
+   "type": "function",
+   "name": "loadClipboardNative",
+   "filePath": "packages/coding-agent/src/utils/clipboard-native.ts",
+   "summary": "函数 loadClipboardNative：加载ClipboardNative 相关逻辑，参数：requires。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    18,
+    29
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "type": "file",
+   "name": "clipboard.ts",
+   "filePath": "packages/coding-agent/src/utils/clipboard.ts",
+   "summary": "剪贴板工具：文本复制（X11/OSC52/远程会话）、文本读取与图片入口。",
+   "tags": [
+    "utility",
+    "clipboard",
+    "osc52"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard.ts:readClipboardText",
+   "type": "function",
+   "name": "readClipboardText",
+   "filePath": "packages/coding-agent/src/utils/clipboard.ts",
+   "summary": "跨平台读取剪贴板文本。",
+   "tags": [
+    "function",
+    "component"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    53,
+    71
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/clipboard.ts:copyToClipboard",
+   "type": "function",
+   "name": "copyToClipboard",
+   "filePath": "packages/coding-agent/src/utils/clipboard.ts",
+   "summary": "向剪贴板写入文本，支持 X11 与 OSC52 回退。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    73,
+    175
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "type": "file",
+   "name": "exif-orientation.ts",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "读取图片 EXIF 方向并按方向旋转图片（JPEG/WebP/TIFF）。",
+   "tags": [
+    "utility",
+    "image",
+    "exif"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:readOrientationFromTiff",
+   "type": "function",
+   "name": "readOrientationFromTiff",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "函数 readOrientationFromTiff：读取OrientationFromTiff 相关逻辑，参数：bytes、tiffStart。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    5,
+    37
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:findJpegTiffOffset",
+   "type": "function",
+   "name": "findJpegTiffOffset",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "函数 findJpegTiffOffset：查找JpegTiffOffset 相关逻辑，参数：bytes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    39,
+    63
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:findWebpTiffOffset",
+   "type": "function",
+   "name": "findWebpTiffOffset",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "函数 findWebpTiffOffset：查找WebpTiffOffset 相关逻辑，参数：bytes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    65,
+    85
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:hasExifHeader",
+   "type": "function",
+   "name": "hasExifHeader",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "函数 hasExifHeader：判断ExifHeader 相关逻辑，参数：bytes、offset。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    87,
+    96
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:getExifOrientation",
+   "type": "function",
+   "name": "getExifOrientation",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "解析图片 EXIF 方向值。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    98,
+    122
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:rotate90",
+   "type": "function",
+   "name": "rotate90",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "函数 rotate90：实现其核心逻辑，参数：photon、image、dstIndex。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    126,
+    144
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/exif-orientation.ts:applyExifOrientation",
+   "type": "function",
+   "name": "applyExifOrientation",
+   "filePath": "packages/coding-agent/src/utils/exif-orientation.ts",
+   "summary": "按 EXIF 方向旋转图片像素。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    147,
+    183
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "type": "file",
+   "name": "image-convert.ts",
+   "filePath": "packages/coding-agent/src/utils/image-convert.ts",
+   "summary": "图片字节/Base64 到 PNG 的转换工具。",
+   "tags": [
+    "utility",
+    "image",
+    "conversion"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-convert.ts:convertImageBytesToPng",
+   "type": "function",
+   "name": "convertImageBytesToPng",
+   "filePath": "packages/coding-agent/src/utils/image-convert.ts",
+   "summary": "函数 convertImageBytesToPng：转换ImageBytesToPng 相关逻辑，参数：bytes。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    4,
+    24
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-convert.ts:convertToPng",
+   "type": "function",
+   "name": "convertToPng",
+   "filePath": "packages/coding-agent/src/utils/image-convert.ts",
+   "summary": "函数 convertToPng：转换ToPng 相关逻辑，参数：base64Data、mimeType。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    30,
+    49
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "type": "file",
+   "name": "image-resize-core.ts",
+   "filePath": "packages/coding-agent/src/utils/image-resize-core.ts",
+   "summary": "图片缩放核心逻辑：进程内 resize 与编码候选生成。",
+   "tags": [
+    "utility",
+    "image",
+    "resize"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-resize-core.ts:resizeImageInProcess",
+   "type": "function",
+   "name": "resizeImageInProcess",
+   "filePath": "packages/coding-agent/src/utils/image-resize-core.ts",
+   "summary": "函数 resizeImageInProcess：缩放ImageInProcess 相关逻辑，参数：inputBytes、mimeType、options。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    59,
+    164
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/image-resize-worker.ts",
+   "type": "file",
+   "name": "image-resize-worker.ts",
+   "filePath": "packages/coding-agent/src/utils/image-resize-worker.ts",
+   "summary": "Worker 内图片缩放：请求/响应类型守卫与消息协议。",
+   "tags": [
+    "utility",
+    "image",
+    "worker"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "type": "file",
+   "name": "image-resize.ts",
+   "filePath": "packages/coding-agent/src/utils/image-resize.ts",
+   "summary": "图片缩放入口：自动选择进程内或 Worker 路径并格式化尺寸说明。",
+   "tags": [
+    "utility",
+    "image",
+    "resize"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-resize.ts:resizeImageInWorker",
+   "type": "function",
+   "name": "resizeImageInWorker",
+   "filePath": "packages/coding-agent/src/utils/image-resize.ts",
+   "summary": "函数 resizeImageInWorker：缩放ImageInWorker 相关逻辑，参数：workerSpecifier、inputBytes、mimeType、options。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    25,
+    76
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-resize.ts:resizeImage",
+   "type": "function",
+   "name": "resizeImage",
+   "filePath": "packages/coding-agent/src/utils/image-resize.ts",
+   "summary": "缩放图片，自动选择进程内或 Worker 路径。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    85,
+    110
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/image-resize.ts:formatDimensionNote",
+   "type": "function",
+   "name": "formatDimensionNote",
+   "filePath": "packages/coding-agent/src/utils/image-resize.ts",
+   "summary": "函数 formatDimensionNote：格式化DimensionNote 相关逻辑，参数：result。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    116,
+    123
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/src/utils/photon.ts",
+   "type": "file",
+   "name": "photon.ts",
+   "filePath": "packages/coding-agent/src/utils/photon.ts",
+   "summary": "加载 Photon wasm 图片处理库并修补其文件系统读取。",
+   "tags": [
+    "utility",
+    "image",
+    "wasm"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/photon.ts:patchPhotonWasmRead",
+   "type": "function",
+   "name": "patchPhotonWasmRead",
+   "filePath": "packages/coding-agent/src/utils/photon.ts",
+   "summary": "函数 patchPhotonWasmRead：实现其核心逻辑。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "moderate",
+   "lineRange": [
+    54,
+    110
+   ]
+  },
+  {
+   "id": "function:packages/coding-agent/src/utils/photon.ts:loadPhoton",
+   "type": "function",
+   "name": "loadPhoton",
+   "filePath": "packages/coding-agent/src/utils/photon.ts",
+   "summary": "加载 Photon wasm 库并修补其文件读取。",
+   "tags": [
+    "function",
+    "code"
+   ],
+   "complexity": "simple",
+   "lineRange": [
+    116,
+    139
+   ]
+  },
+  {
+   "id": "file:packages/coding-agent/test/clipboard-native.test.ts",
+   "type": "file",
+   "name": "clipboard-native.test.ts",
+   "filePath": "packages/coding-agent/test/clipboard-native.test.ts",
+   "summary": "原生剪贴板扩展加载的测试。",
+   "tags": [
+    "test",
+    "clipboard"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/test/clipboard.test.ts",
+   "type": "file",
+   "name": "clipboard.test.ts",
+   "filePath": "packages/coding-agent/test/clipboard.test.ts",
+   "summary": "剪贴板文本读写（OSC52 等）的测试。",
+   "tags": [
+    "test",
+    "clipboard"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/coding-agent/test/image-processing.test.ts",
+   "type": "file",
+   "name": "image-processing.test.ts",
+   "filePath": "packages/coding-agent/test/image-processing.test.ts",
+   "summary": "图片处理（EXIF 旋转、转换、缩放）的测试。",
+   "tags": [
+    "test",
+    "image",
+    "processing"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:isWaylandSession",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:isWaylandSession",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:extensionForImageMimeType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:extensionForImageMimeType",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:selectPreferredImageMimeType",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:convertToPng",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:runCommand",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaWlPaste",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:isWSL",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaPowerShell",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaXclip",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImageViaNativeClipboard",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-image.ts:readClipboardImage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "target": "file:packages/coding-agent/src/utils/photon.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-native.ts:loadClipboardNative",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard-native.ts:loadClipboardNative",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard.ts:readClipboardText",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard.ts:readClipboardText",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard.ts:copyToClipboard",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "function:packages/coding-agent/src/utils/clipboard.ts:copyToClipboard",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "file:packages/coding-agent/src/utils/clipboard-image.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:readOrientationFromTiff",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:findJpegTiffOffset",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:findWebpTiffOffset",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:hasExifHeader",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:getExifOrientation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:rotate90",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:applyExifOrientation",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "function:packages/coding-agent/src/utils/exif-orientation.ts:applyExifOrientation",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "target": "file:packages/coding-agent/src/utils/photon.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "function:packages/coding-agent/src/utils/image-convert.ts:convertImageBytesToPng",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "function:packages/coding-agent/src/utils/image-convert.ts:convertImageBytesToPng",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "function:packages/coding-agent/src/utils/image-convert.ts:convertToPng",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "function:packages/coding-agent/src/utils/image-convert.ts:convertToPng",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "file:packages/coding-agent/src/utils/photon.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize-core.ts:resizeImageInProcess",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize-core.ts:resizeImageInProcess",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "target": "file:packages/coding-agent/src/utils/exif-orientation.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "target": "file:packages/coding-agent/src/utils/photon.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize-worker.ts",
+   "target": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize.ts:resizeImageInWorker",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize.ts:resizeImage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize.ts:resizeImage",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize.ts:formatDimensionNote",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "function:packages/coding-agent/src/utils/image-resize.ts:formatDimensionNote",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "file:packages/coding-agent/src/utils/image-resize-core.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/photon.ts",
+   "target": "function:packages/coding-agent/src/utils/photon.ts:patchPhotonWasmRead",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/photon.ts",
+   "target": "function:packages/coding-agent/src/utils/photon.ts:loadPhoton",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/photon.ts",
+   "target": "function:packages/coding-agent/src/utils/photon.ts:loadPhoton",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/test/clipboard-native.test.ts",
+   "target": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard-native.ts",
+   "target": "file:packages/coding-agent/test/clipboard-native.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/test/clipboard.test.ts",
+   "target": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/clipboard.ts",
+   "target": "file:packages/coding-agent/test/clipboard.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-processing.test.ts",
+   "target": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/test/image-processing.test.ts",
+   "target": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-convert.ts",
+   "target": "file:packages/coding-agent/test/image-processing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "file:packages/coding-agent/src/utils/image-resize.ts",
+   "target": "file:packages/coding-agent/test/image-processing.test.ts",
+   "type": "tested_by",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

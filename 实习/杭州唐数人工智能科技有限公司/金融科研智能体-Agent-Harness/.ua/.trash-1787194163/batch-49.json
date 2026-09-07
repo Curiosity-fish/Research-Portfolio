@@ -1,0 +1,64 @@
+{
+ "nodes": [
+  {
+   "id": "config:graphify-out/graph.json",
+   "type": "config",
+   "name": "graph.json",
+   "filePath": "graphify-out/graph.json",
+   "summary": "Graphify 全量知识图谱：以图格式（nodes/edges）记录整个 monorepo 的实体与关系（contains/imports 等），是图谱查询与分析的基础数据。",
+   "tags": [
+    "graphify",
+    "knowledge-graph",
+    "configuration",
+    "data"
+   ],
+   "complexity": "complex",
+   "languageNotes": "单行超大 JSON（graphlib 格式），由 graphify 扫描生成。"
+  },
+  {
+   "id": "config:graphify-out/.graphify_analysis.json",
+   "type": "config",
+   "name": ".graphify_analysis.json",
+   "filePath": "graphify-out/.graphify_analysis.json",
+   "summary": "Graphify 分析结果：按社区（community）划分图谱节点，用于高层级结构发现与聚类。",
+   "tags": [
+    "graphify",
+    "analysis",
+    "communities",
+    "configuration"
+   ],
+   "complexity": "complex",
+   "languageNotes": "以 community id 为键的节点分组成员，便于后续社区级分析。"
+  },
+  {
+   "id": "config:graphify-out/manifest.json",
+   "type": "config",
+   "name": "manifest.json",
+   "filePath": "graphify-out/manifest.json",
+   "summary": "Graphify 扫描清单：为每个被索引文件记录 mtime 与 ast/semantic hash，用于增量重扫判断。",
+   "tags": [
+    "graphify",
+    "manifest",
+    "cache",
+    "configuration"
+   ],
+   "complexity": "complex"
+  }
+ ],
+ "edges": [
+  {
+   "source": "config:graphify-out/.graphify_analysis.json",
+   "target": "config:graphify-out/graph.json",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  },
+  {
+   "source": "config:graphify-out/manifest.json",
+   "target": "config:graphify-out/graph.json",
+   "type": "related",
+   "direction": "forward",
+   "weight": 0.5
+  }
+ ]
+}

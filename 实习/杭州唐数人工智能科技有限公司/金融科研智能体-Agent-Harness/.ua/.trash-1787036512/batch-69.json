@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/telemetry/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/telemetry/CHANGELOG.md",
+      "summary": "telemetry 包变更日志：新增基于回调的 telemetry context 契约、共享 no-op context 与类型化可序列化 schema 工具。",
+      "tags": [
+        "documentation",
+        "changelog",
+        "telemetry",
+        "observability"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/telemetry/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/telemetry/README.md",
+      "summary": "介绍 vendor-neutral 的 telemetry 契约与类型化 schema 工具：不含 exporter、不依赖后端，由应用提供 TelemetryContext 适配器。",
+      "tags": [
+        "documentation",
+        "telemetry",
+        "observability",
+        "contracts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/telemetry/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/telemetry/package.json",
+      "summary": "telemetry 包元数据：exports 暴露主入口，脚本含 build（tsgo）、test（vitest）与 clean，无运行时依赖。",
+      "tags": [
+        "configuration",
+        "telemetry",
+        "build-system",
+        "npm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/telemetry/tsconfig.build.json",
+      "type": "config",
+      "name": "tsconfig.build.json",
+      "filePath": "packages/telemetry/tsconfig.build.json",
+      "summary": "telemetry 构建用 tsconfig：继承根 tsconfig.base，outDir/rootDir 指向 dist/src，仅编译 src 源码。",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "tsconfig"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/telemetry/README.md",
+      "target": "file:packages/telemetry/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/telemetry/CHANGELOG.md",
+      "target": "document:packages/telemetry/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/telemetry/package.json",
+      "target": "config:packages/telemetry/tsconfig.build.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/telemetry/tsconfig.build.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/telemetry/tsconfig.build.json",
+      "target": "file:packages/telemetry/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

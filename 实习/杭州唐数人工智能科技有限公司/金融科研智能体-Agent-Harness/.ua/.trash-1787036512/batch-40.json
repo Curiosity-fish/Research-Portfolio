@@ -1,0 +1,84 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/vitest.config.ts",
+   "type": "file",
+   "name": "vitest.config.ts",
+   "filePath": "packages/coding-agent/vitest.config.ts",
+   "summary": "coding-agent 包的 Vitest 测试配置：合并根级 vitest.base.ts 基础配置，启用 node 环境与 30s 超时，默认离线测试（TFA_OFFLINE=1），并为 @earendil-works/tfa-client、@earendil-works/tfa-protocol 等 workspace 包映射源码别名。",
+   "tags": [
+    "test",
+    "vitest",
+    "configuration",
+    "monorepo"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/evals/vitest.config.ts",
+   "type": "file",
+   "name": "vitest.config.ts",
+   "filePath": "packages/evals/vitest.config.ts",
+   "summary": "evals 包的 Vitest 配置：基于基础配置增加 eval 测试匹配（src/**/*.eval.ts）、120s 超时与自定义 reporter，并将 @earendil-works/tfa-coding-agent 映射到源码入口。",
+   "tags": [
+    "test",
+    "vitest",
+    "configuration",
+    "evals"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/evals/vitest.test.config.ts",
+   "type": "file",
+   "name": "vitest.test.config.ts",
+   "filePath": "packages/evals/vitest.test.config.ts",
+   "summary": "evals 包的单元测试 Vitest 配置：限定 test/**/*.test.ts 匹配范围，并复用 coding-agent 源码别名。",
+   "tags": [
+    "test",
+    "vitest",
+    "configuration"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:vitest.base.ts",
+   "type": "file",
+   "name": "vitest.base.ts",
+   "filePath": "vitest.base.ts",
+   "summary": "monorepo 根级共享 Vitest 配置：导出 workspaceSourcePaths 常量将各包入口解析为源码路径，并提供默认的包名到源码的别名规则，供各 workspace 包 mergeConfig 复用。",
+   "tags": [
+    "test",
+    "vitest",
+    "configuration",
+    "shared",
+    "monorepo"
+   ],
+   "complexity": "simple",
+   "languageNotes": "导出 workspaceSourcePaths 常量与默认 defineConfig，供各 workspace 包通过 mergeConfig 组合。"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/vitest.config.ts",
+   "target": "file:vitest.base.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/vitest.config.ts",
+   "target": "file:vitest.base.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/evals/vitest.test.config.ts",
+   "target": "file:vitest.base.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  }
+ ]
+}

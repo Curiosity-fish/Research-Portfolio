@@ -1,0 +1,675 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/coding-agent/src/core/slash-commands.ts",
+   "type": "file",
+   "name": "slash-commands.ts",
+   "filePath": "packages/coding-agent/src/core/slash-commands.ts",
+   "summary": "定义内置的斜杠命令列表（BUILTIN_SLASH_COMMANDS），供 agent 会话在收到斜杠命令时进行匹配与分发。",
+   "tags": [
+    "slash-commands",
+    "常量",
+    "命令分发"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "file",
+   "name": "source-info.ts",
+   "filePath": "packages/coding-agent/src/core/source-info.ts",
+   "summary": "构建与合成 SourceInfo 信息对象，用于描述当前进程来源（正常启动或合成上下文），供遥测与调试输出使用。",
+   "tags": [
+    "utility",
+    "source-info",
+    "遥测"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/source-info.ts:createSourceInfo",
+   "type": "function",
+   "name": "createSourceInfo",
+   "filePath": "packages/coding-agent/src/core/source-info.ts",
+   "lineRange": [
+    14,
+    22
+   ],
+   "summary": "创建描述当前 agent 来源的 SourceInfo 对象。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/source-info.ts:createSyntheticSourceInfo",
+   "type": "function",
+   "name": "createSyntheticSourceInfo",
+   "filePath": "packages/coding-agent/src/core/source-info.ts",
+   "lineRange": [
+    24,
+    40
+   ],
+   "summary": "构建标记为合成的 SourceInfo 对象，用于非标准启动场景。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "type": "file",
+   "name": "system-prompt.ts",
+   "filePath": "packages/coding-agent/src/core/system-prompt.ts",
+   "summary": "根据配置与工具列表构建发送给 LLM 的系统提示词（system prompt），整合身份说明、能力描述与工具使用规范。",
+   "tags": [
+    "system-prompt",
+    "prompt工程",
+    "agent核心"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/system-prompt.ts:buildSystemPrompt",
+   "type": "function",
+   "name": "buildSystemPrompt",
+   "filePath": "packages/coding-agent/src/core/system-prompt.ts",
+   "lineRange": [
+    28,
+    162
+   ],
+   "summary": "组装完整的系统提示词，注入身份、能力与工具说明。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/telemetry.ts",
+   "type": "file",
+   "name": "telemetry.ts",
+   "filePath": "packages/coding-agent/src/core/telemetry.ts",
+   "summary": "提供安装遥测开关判断（isInstallTelemetryEnabled），读取环境变量决定是否启用安装统计。",
+   "tags": [
+    "telemetry",
+    "环境变量",
+    "配置"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/telemetry.ts:isInstallTelemetryEnabled",
+   "type": "function",
+   "name": "isInstallTelemetryEnabled",
+   "filePath": "packages/coding-agent/src/core/telemetry.ts",
+   "lineRange": [
+    8,
+    13
+   ],
+   "summary": "根据环境变量判断安装遥测是否启用。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tfa-manifest.ts",
+   "type": "file",
+   "name": "tfa-manifest.ts",
+   "filePath": "packages/coding-agent/src/core/tfa-manifest.ts",
+   "summary": "读取并校验 .tfa 清单文件（readTfaManifest），为扩展发现与版本信息提供数据来源。",
+   "tags": [
+    "manifest",
+    "配置文件",
+    "解析"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tfa-manifest.ts:readTfaManifest",
+   "type": "function",
+   "name": "readTfaManifest",
+   "filePath": "packages/coding-agent/src/core/tfa-manifest.ts",
+   "lineRange": [
+    16,
+    34
+   ],
+   "summary": "解析 .tfa 清单 JSON 并返回结构化内容。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/timings.ts",
+   "type": "file",
+   "name": "timings.ts",
+   "filePath": "packages/coding-agent/src/core/timings.ts",
+   "summary": "提供操作耗时统计工具（resetTimings/time/printTimings），用于在调试模式下记录与打印各阶段执行时间。",
+   "tags": [
+    "utility",
+    "计时",
+    "调试"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/timings.ts:resetTimings",
+   "type": "function",
+   "name": "resetTimings",
+   "filePath": "packages/coding-agent/src/core/timings.ts",
+   "lineRange": [
+    16,
+    19
+   ],
+   "summary": "清空已记录的计时数据。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/timings.ts:time",
+   "type": "function",
+   "name": "time",
+   "filePath": "packages/coding-agent/src/core/timings.ts",
+   "lineRange": [
+    21,
+    32
+   ],
+   "summary": "记录某个操作的耗时并返回毫秒数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/timings.ts:printTimingGroup",
+   "type": "function",
+   "name": "printTimingGroup",
+   "filePath": "packages/coding-agent/src/core/timings.ts",
+   "lineRange": [
+    34,
+    43
+   ],
+   "summary": "打印一组计时项的名称与耗时。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/timings.ts:printTimings",
+   "type": "function",
+   "name": "printTimings",
+   "filePath": "packages/coding-agent/src/core/timings.ts",
+   "lineRange": [
+    45,
+    50
+   ],
+   "summary": "输出全部计时统计信息。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "type": "file",
+   "name": "bash.ts",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "summary": "实现 bash 工具：在本地 spawn 子进程执行 shell 命令，支持超时、环境变量注入、输出累积与 abort 清理，并提供工具定义与渲染组件。",
+   "tags": [
+    "tool",
+    "bash",
+    "进程管理",
+    "工具定义"
+   ],
+   "complexity": "complex",
+   "languageNotes": "使用 tree-sitter 提取的工厂函数模式：create*ToolDefinition 返回工具定义，create*Tool 返回实际可执行工具。"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:resolveTimeoutMs",
+   "type": "function",
+   "name": "resolveTimeoutMs",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    27,
+    38
+   ],
+   "summary": "解析并校验 bash 命令的超时毫秒数。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:createLocalBashOperations",
+   "type": "function",
+   "name": "createLocalBashOperations",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    82,
+    148
+   ],
+   "summary": "创建本地 bash 执行操作集，封装 spawn、输入写入、输出采集与超时清理。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:resolveSpawnContext",
+   "type": "function",
+   "name": "resolveSpawnContext",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    158,
+    184
+   ],
+   "summary": "解析 spawn 所需上下文，包括 cwd、spawnHook 与会话环境暴露。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:rebuildBashResultRenderComponent",
+   "type": "function",
+   "name": "rebuildBashResultRenderComponent",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    234,
+    314
+   ],
+   "summary": "根据命令执行结果重建 bash 结果渲染组件。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "function",
+   "name": "createBashToolDefinition",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    316,
+    495
+   ],
+   "summary": "创建 bash 工具定义，包含 schema、调用描述与渲染逻辑。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "function",
+   "name": "createBashTool",
+   "filePath": "packages/coding-agent/src/core/tools/bash.ts",
+   "lineRange": [
+    497,
+    505
+   ],
+   "summary": "创建可直接调用的 bash 工具实例。",
+   "tags": [
+    "function",
+    "utility"
+   ],
+   "complexity": "simple"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "function:packages/coding-agent/src/core/source-info.ts:createSourceInfo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "function:packages/coding-agent/src/core/source-info.ts:createSourceInfo",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "function:packages/coding-agent/src/core/source-info.ts:createSyntheticSourceInfo",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "function:packages/coding-agent/src/core/source-info.ts:createSyntheticSourceInfo",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "target": "function:packages/coding-agent/src/core/system-prompt.ts:buildSystemPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "target": "function:packages/coding-agent/src/core/system-prompt.ts:buildSystemPrompt",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/telemetry.ts",
+   "target": "function:packages/coding-agent/src/core/telemetry.ts:isInstallTelemetryEnabled",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/telemetry.ts",
+   "target": "function:packages/coding-agent/src/core/telemetry.ts:isInstallTelemetryEnabled",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tfa-manifest.ts",
+   "target": "function:packages/coding-agent/src/core/tfa-manifest.ts:readTfaManifest",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tfa-manifest.ts",
+   "target": "function:packages/coding-agent/src/core/tfa-manifest.ts:readTfaManifest",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:resetTimings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:resetTimings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:time",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:time",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:printTimingGroup",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:printTimings",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/timings.ts",
+   "target": "function:packages/coding-agent/src/core/timings.ts:printTimings",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:resolveTimeoutMs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createLocalBashOperations",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createLocalBashOperations",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:resolveSpawnContext",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:rebuildBashResultRenderComponent",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashToolDefinition",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/slash-commands.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/slash-commands.ts",
+   "target": "file:packages/coding-agent/src/core/source-info.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/source-info.ts",
+   "target": "file:packages/coding-agent/src/core/package-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "target": "file:packages/coding-agent/src/config.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/system-prompt.ts",
+   "target": "file:packages/coding-agent/src/core/skills.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/telemetry.ts",
+   "target": "file:packages/coding-agent/src/core/settings-manager.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/agent/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/core/extensions/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/core/tools/output-accumulator.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/core/tools/render-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/core/tools/truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/keybinding-hints.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/components/visual-truncate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/modes/interactive/theme/theme.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/utils/child-process.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/coding-agent/src/utils/shell.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/coding-agent/src/core/tools/bash.ts",
+   "target": "file:packages/tui/src/index.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/bash.ts:createLocalBashOperations",
+   "target": "function:packages/coding-agent/src/utils/child-process.ts:waitForChildProcess",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/bash.ts:rebuildBashResultRenderComponent",
+   "target": "function:packages/coding-agent/src/core/tools/render-utils.ts:getTextOutput",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/bash.ts:rebuildBashResultRenderComponent",
+   "target": "function:packages/coding-agent/src/core/tools/truncate.ts:formatSize",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/coding-agent/src/core/tools/bash.ts:createBashTool",
+   "target": "function:packages/coding-agent/src/core/tools/tool-definition-wrapper.ts:wrapToolDefinition",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

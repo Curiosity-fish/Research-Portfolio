@@ -1,0 +1,1122 @@
+{
+ "nodes": [
+  {
+   "id": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "type": "file",
+   "name": "bedrock-convert-messages.test.ts",
+   "filePath": "packages/ai/test/bedrock-convert-messages.test.ts",
+   "summary": "Bedrock 消息转换测试：捕获请求并校验转换后的消息结构。",
+   "tags": [
+    "test",
+    "bedrock",
+    "conversion"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/bedrock-convert-messages.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/bedrock-convert-messages.test.ts",
+   "lineRange": [
+    54,
+    68
+   ],
+   "summary": "捕获 Bedrock 请求 payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "type": "file",
+   "name": "bedrock-credentials.test.ts",
+   "filePath": "packages/ai/test/bedrock-credentials.test.ts",
+   "summary": "Bedrock 凭据解析测试：校验环境变量与 region 解析。",
+   "tags": [
+    "test",
+    "bedrock",
+    "credentials"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "type": "file",
+   "name": "bedrock-custom-headers.test.ts",
+   "filePath": "packages/ai/test/bedrock-custom-headers.test.ts",
+   "summary": "Bedrock 自定义 header 中间件注册测试。",
+   "tags": [
+    "test",
+    "bedrock",
+    "headers"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "type": "file",
+   "name": "bedrock-endpoint-resolution.test.ts",
+   "filePath": "packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "summary": "Bedrock 端点解析测试：显式端点/区域推断与 gov cloud 场景。",
+   "tags": [
+    "test",
+    "bedrock",
+    "endpoint"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "type": "file",
+   "name": "bedrock-error-metadata.test.ts",
+   "filePath": "packages/ai/test/bedrock-error-metadata.test.ts",
+   "summary": "Bedrock 错误元数据测试：验证失败诊断与错误码提取。",
+   "tags": [
+    "test",
+    "bedrock",
+    "error"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/bedrock-error-metadata.test.ts:respondWithFailingStream",
+   "type": "function",
+   "name": "respondWithFailingStream",
+   "filePath": "packages/ai/test/bedrock-error-metadata.test.ts",
+   "lineRange": [
+    77,
+    88
+   ],
+   "summary": "构造失败的响应流。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-models.test.ts",
+   "type": "file",
+   "name": "bedrock-models.test.ts",
+   "filePath": "packages/ai/test/bedrock-models.test.ts",
+   "summary": "Bedrock 模型注册与能力检测测试。",
+   "tags": [
+    "test",
+    "bedrock",
+    "models"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "type": "file",
+   "name": "bedrock-raw-stop-reason.test.ts",
+   "filePath": "packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "summary": "Bedrock 原始 stop reason 透传测试。",
+   "tags": [
+    "test",
+    "bedrock",
+    "stop-reason"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "type": "file",
+   "name": "bedrock-thinking-payload.test.ts",
+   "filePath": "packages/ai/test/bedrock-thinking-payload.test.ts",
+   "summary": "Bedrock thinking payload 测试：校验 effort 映射与请求参数。",
+   "tags": [
+    "test",
+    "bedrock",
+    "thinking"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/bedrock-thinking-payload.test.ts:capturePayload",
+   "type": "function",
+   "name": "capturePayload",
+   "filePath": "packages/ai/test/bedrock-thinking-payload.test.ts",
+   "lineRange": [
+    28,
+    53
+   ],
+   "summary": "捕获 thinking payload。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "file",
+   "name": "bedrock-utils.ts",
+   "filePath": "packages/ai/test/bedrock-utils.ts",
+   "summary": "Bedrock 测试工具：检测测试凭据可用性。",
+   "tags": [
+    "test",
+    "bedrock",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/bedrock-utils.ts:hasBedrockCredentials",
+   "type": "function",
+   "name": "hasBedrockCredentials",
+   "filePath": "packages/ai/test/bedrock-utils.ts",
+   "lineRange": [
+    12,
+    18
+   ],
+   "summary": "检测 Bedrock 测试凭据。",
+   "tags": [
+    "test",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/cache-retention.test.ts",
+   "type": "file",
+   "name": "cache-retention.test.ts",
+   "filePath": "packages/ai/test/cache-retention.test.ts",
+   "summary": "缓存保留（cache retention）跨 provider 测试：校验缓存控制与成本。",
+   "tags": [
+    "test",
+    "cache",
+    "retention"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/cloudflare-stream.test.ts",
+   "type": "file",
+   "name": "cloudflare-stream.test.ts",
+   "filePath": "packages/ai/test/cloudflare-stream.test.ts",
+   "summary": "Cloudflare 流式响应测试。",
+   "tags": [
+    "test",
+    "cloudflare",
+    "streaming"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/cloudflare-utils.ts",
+   "type": "file",
+   "name": "cloudflare-utils.ts",
+   "filePath": "packages/ai/test/cloudflare-utils.ts",
+   "summary": "Cloudflare 测试工具：检测 Workers AI 与 AI Gateway 凭据。",
+   "tags": [
+    "test",
+    "cloudflare",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareWorkersAICredentials",
+   "type": "function",
+   "name": "hasCloudflareWorkersAICredentials",
+   "filePath": "packages/ai/test/cloudflare-utils.ts",
+   "lineRange": [
+    1,
+    3
+   ],
+   "summary": "检测 Workers AI 凭据。",
+   "tags": [
+    "test",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareAiGatewayCredentials",
+   "type": "function",
+   "name": "hasCloudflareAiGatewayCredentials",
+   "filePath": "packages/ai/test/cloudflare-utils.ts",
+   "lineRange": [
+    5,
+    9
+   ],
+   "summary": "检测 AI Gateway 凭据。",
+   "tags": [
+    "test",
+    "env"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "type": "file",
+   "name": "codex-websocket-cached-probe.ts",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "summary": "Codex WebSocket 缓存探测脚本：多轮并发探测会话缓存命中延迟并输出统计。",
+   "tags": [
+    "probe",
+    "codex",
+    "websocket",
+    "cache"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:parseArgs",
+   "type": "function",
+   "name": "parseArgs",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    35,
+    87
+   ],
+   "summary": "解析命令行参数。",
+   "tags": [
+    "probe",
+    "cli"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:printHelp",
+   "type": "function",
+   "name": "printHelp",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    94,
+    104
+   ],
+   "summary": "打印帮助信息。",
+   "tags": [
+    "probe",
+    "cli"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:buildPrompt",
+   "type": "function",
+   "name": "buildPrompt",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    106,
+    121
+   ],
+   "summary": "构建探测 prompt。",
+   "tags": [
+    "probe",
+    "prompt"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:deterministicProbeTool",
+   "type": "function",
+   "name": "deterministicProbeTool",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    123,
+    132
+   ],
+   "summary": "定义确定性探测工具。",
+   "tags": [
+    "probe",
+    "tool"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:executeTool",
+   "type": "function",
+   "name": "executeTool",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    134,
+    144
+   ],
+   "summary": "执行工具调用并返回结果。",
+   "tags": [
+    "probe",
+    "tool"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/codex-websocket-cached-probe.ts:main",
+   "type": "function",
+   "name": "main",
+   "filePath": "packages/ai/test/codex-websocket-cached-probe.ts",
+   "lineRange": [
+    164,
+    294
+   ],
+   "summary": "探测主流程：多轮请求、会话缓存复用与延迟统计。",
+   "tags": [
+    "probe",
+    "entry-point"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "file:packages/ai/test/compat-env.test.ts",
+   "type": "file",
+   "name": "compat-env.test.ts",
+   "filePath": "packages/ai/test/compat-env.test.ts",
+   "summary": "兼容层环境 API key 注入测试。",
+   "tags": [
+    "test",
+    "compat",
+    "env"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/compat-env.test.ts:message",
+   "type": "function",
+   "name": "message",
+   "filePath": "packages/ai/test/compat-env.test.ts",
+   "lineRange": [
+    21,
+    39
+   ],
+   "summary": "构造测试消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/constrained-sampling.test.ts",
+   "type": "file",
+   "name": "constrained-sampling.test.ts",
+   "filePath": "packages/ai/test/constrained-sampling.test.ts",
+   "summary": "受约束采样测试：验证 grammar/严格模式工具参数注入。",
+   "tags": [
+    "test",
+    "sampling",
+    "grammar"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/constrained-sampling.test.ts:makeModel",
+   "type": "function",
+   "name": "makeModel",
+   "filePath": "packages/ai/test/constrained-sampling.test.ts",
+   "lineRange": [
+    13,
+    26
+   ],
+   "summary": "创建测试模型。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/constrained-sampling.test.ts:makeUsage",
+   "type": "function",
+   "name": "makeUsage",
+   "filePath": "packages/ai/test/constrained-sampling.test.ts",
+   "lineRange": [
+    28,
+    37
+   ],
+   "summary": "构造用量对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/constrained-sampling.test.ts:makeOutput",
+   "type": "function",
+   "name": "makeOutput",
+   "filePath": "packages/ai/test/constrained-sampling.test.ts",
+   "lineRange": [
+    39,
+    50
+   ],
+   "summary": "构造输出对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "function:packages/ai/test/constrained-sampling.test.ts:captureToolCallDeltas",
+   "type": "function",
+   "name": "captureToolCallDeltas",
+   "filePath": "packages/ai/test/constrained-sampling.test.ts",
+   "lineRange": [
+    65,
+    75
+   ],
+   "summary": "捕获工具调用增量。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "moderate"
+  },
+  {
+   "id": "file:packages/ai/test/context-estimate.test.ts",
+   "type": "file",
+   "name": "context-estimate.test.ts",
+   "filePath": "packages/ai/test/context-estimate.test.ts",
+   "summary": "上下文 token 估算测试。",
+   "tags": [
+    "test",
+    "estimate",
+    "tokens"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/context-estimate.test.ts:createUsage",
+   "type": "function",
+   "name": "createUsage",
+   "filePath": "packages/ai/test/context-estimate.test.ts",
+   "lineRange": [
+    6,
+    15
+   ],
+   "summary": "构造用量对象。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "function:packages/ai/test/context-estimate.test.ts:createAssistant",
+   "type": "function",
+   "name": "createAssistant",
+   "filePath": "packages/ai/test/context-estimate.test.ts",
+   "lineRange": [
+    17,
+    28
+   ],
+   "summary": "构造 assistant 消息。",
+   "tags": [
+    "test",
+    "fixture"
+   ],
+   "complexity": "simple"
+  },
+  {
+   "id": "file:packages/ai/test/context-overflow.test.ts",
+   "type": "file",
+   "name": "context-overflow.test.ts",
+   "filePath": "packages/ai/test/context-overflow.test.ts",
+   "summary": "上下文溢出行为测试：验证溢出消息处理与恢复。",
+   "tags": [
+    "test",
+    "overflow",
+    "context"
+   ],
+   "complexity": "complex"
+  },
+  {
+   "id": "function:packages/ai/test/context-overflow.test.ts:testContextOverflow",
+   "type": "function",
+   "name": "testContextOverflow",
+   "filePath": "packages/ai/test/context-overflow.test.ts",
+   "lineRange": [
+    51,
+    79
+   ],
+   "summary": "验证上下文溢出场景。",
+   "tags": [
+    "test",
+    "overflow"
+   ],
+   "complexity": "moderate"
+  }
+ ],
+ "edges": [
+  {
+   "source": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "target": "function:packages/ai/test/bedrock-convert-messages.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-convert-messages.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "target": "file:packages/ai/src/providers/all.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-credentials.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-custom-headers.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-endpoint-resolution.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "target": "function:packages/ai/test/bedrock-error-metadata.test.ts:respondWithFailingStream",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-error-metadata.test.ts",
+   "target": "file:packages/ai/src/utils/diagnostics.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-models.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-models.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-models.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-raw-stop-reason.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "target": "function:packages/ai/test/bedrock-thinking-payload.test.ts:capturePayload",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "target": "file:packages/ai/src/api/bedrock-converse-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-thinking-payload.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-utils.ts",
+   "target": "function:packages/ai/test/bedrock-utils.ts:hasBedrockCredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/bedrock-utils.ts",
+   "target": "function:packages/ai/test/bedrock-utils.ts:hasBedrockCredentials",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/cache-retention.test.ts",
+   "target": "file:packages/ai/src/api/anthropic-messages.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cache-retention.test.ts",
+   "target": "file:packages/ai/src/api/openai-completions.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cache-retention.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cache-retention.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cache-retention.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-stream.test.ts",
+   "target": "file:packages/ai/src/providers/cloudflare-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-stream.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-stream.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-utils.ts",
+   "target": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareWorkersAICredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-utils.ts",
+   "target": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareWorkersAICredentials",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-utils.ts",
+   "target": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareAiGatewayCredentials",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/cloudflare-utils.ts",
+   "target": "function:packages/ai/test/cloudflare-utils.ts:hasCloudflareAiGatewayCredentials",
+   "type": "exports",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:parseArgs",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:printHelp",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:buildPrompt",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:deterministicProbeTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:executeTool",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:main",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "file:packages/ai/src/api/openai-codex-responses.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/codex-websocket-cached-probe.ts",
+   "target": "file:packages/coding-agent/src/core/model-runtime.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/compat-env.test.ts",
+   "target": "function:packages/ai/test/compat-env.test.ts:message",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/compat-env.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/compat-env.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/compat-env.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "function:packages/ai/test/constrained-sampling.test.ts:makeModel",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "function:packages/ai/test/constrained-sampling.test.ts:makeUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "function:packages/ai/test/constrained-sampling.test.ts:makeOutput",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "function:packages/ai/test/constrained-sampling.test.ts:captureToolCallDeltas",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "file:packages/ai/src/api/constrained-sampling.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "file:packages/ai/src/api/openai-responses-shared.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/constrained-sampling.test.ts",
+   "target": "file:packages/ai/src/utils/event-stream.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-estimate.test.ts",
+   "target": "function:packages/ai/test/context-estimate.test.ts:createUsage",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/context-estimate.test.ts",
+   "target": "function:packages/ai/test/context-estimate.test.ts:createAssistant",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/context-estimate.test.ts",
+   "target": "file:packages/ai/src/api/simple-options.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-estimate.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-estimate.test.ts",
+   "target": "file:packages/ai/src/utils/estimate.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "function:packages/ai/test/context-overflow.test.ts:testContextOverflow",
+   "type": "contains",
+   "direction": "forward",
+   "weight": 1
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/src/compat.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/src/types.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/src/utils/overflow.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/test/azure-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/test/bedrock-utils.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "file:packages/ai/test/context-overflow.test.ts",
+   "target": "file:packages/ai/test/oauth.ts",
+   "type": "imports",
+   "direction": "forward",
+   "weight": 0.7
+  },
+  {
+   "source": "function:packages/ai/test/codex-websocket-cached-probe.ts:main",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:parseArgs",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/test/codex-websocket-cached-probe.ts:main",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:buildPrompt",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/test/codex-websocket-cached-probe.ts:main",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:executeTool",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  },
+  {
+   "source": "function:packages/ai/test/codex-websocket-cached-probe.ts:parseArgs",
+   "target": "function:packages/ai/test/codex-websocket-cached-probe.ts:printHelp",
+   "type": "calls",
+   "direction": "forward",
+   "weight": 0.8
+  }
+ ]
+}

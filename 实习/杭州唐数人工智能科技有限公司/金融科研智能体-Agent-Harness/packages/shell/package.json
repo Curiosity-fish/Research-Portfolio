@@ -1,0 +1,44 @@
+{
+	"name": "tfa-shell",
+	"version": "0.83.0",
+	"description": "金融科技 agent 壳:基于 tfa 引擎的 CLI + Web 应用层",
+	"type": "module",
+	"private": true,
+	"bin": {
+		"tfa-shell": "./dist/cli.js"
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"clean": "shx rm -rf dist",
+		"dev": "tsgo -p tsconfig.build.json --watch --preserveWatchOutput",
+		"build": "tsgo -p tsconfig.build.json",
+		"test": "vitest --run",
+		"typecheck": "tsgo -p tsconfig.test.json"
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"dependencies": {
+		"@earendil-works/tfa-ai": "^0.83.0",
+		"@earendil-works/tfa-coding-agent": "^0.83.0",
+		"@earendil-works/tfa-protocol": "^0.83.0",
+		"@earendil-works/tfa-server": "^0.83.0",
+		"hono": "4.13.1"
+	},
+	"devDependencies": {
+		"shx": "0.4.0",
+		"tsx": "4.22.1",
+		"typescript": "5.9.3",
+		"vitest": "4.1.9"
+	}
+}
